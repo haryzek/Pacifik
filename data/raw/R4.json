@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "r4-001",
+    "region": "R4",
+    "name": "North Umpqua Highway — OR-138",
+    "category": "scenic_drive",
+    "subcategory": "waterfall_corridor",
+    "lat": 43.2946,
+    "lng": -122.9365,
+    "nearest_town": "Glide, OR",
+    "distance_from_spine_km": 85,
+    "description": "OR-138 sleduje North Umpqua River z dubových a douglaskových lesů u Glide do chladnějšího vulkanického pásma Kaskád. Na jediném dni se tu dají řetězit vodopády, soutěsky, koupací místa a lávová krajina bez pocitu, že člověk objíždí atrakce.",
+    "why_bob": "Je to ideální podcastová silnice pro Boba: dlouhý proud asfaltu podél divoké řeky a každých pár desítek kilometrů důvod vypnout motor a zmizet do lesa.",
+    "time_needed": "4–8 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 125,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "North Umpqua má místy extrémně silný proud, sifony a nebezpečné peřeje; ke koupání používat jen samostatně vybraná bezpečnější místa."
+    },
+    "road_access": "paved",
+    "best_time": "celý den; západní část ráno, horní údolí odpoledne",
+    "season_note_2026": "K 8. 9. 2026 je koridor OR-138 a vybrané rekreační lokality přístupný. V Umpqua National Forest platí Stage 2 fire restrictions; Castle Fire closure zasahuje oblast Tiller, nikoli hlavní vybraný koridor North Umpqua.",
+    "fee": "silnice zdarma; jednotlivá místa mohou mít vlastní poplatek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.2946,-122.9365",
+      "official": "https://www.fs.usda.gov/r06/umpqua/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Oregon_Route_138"
+    },
+    "photo": null,
+    "tags": ["river_road", "waterfalls", "forest", "volcanic", "road_trip"],
+    "rank": 1
+  },
+  {
+    "id": "r4-002",
+    "region": "R4",
+    "name": "Susan Creek Falls",
+    "category": "waterfall",
+    "subcategory": "trail",
+    "lat": 43.3018,
+    "lng": -122.8359,
+    "nearest_town": "Glide, OR",
+    "distance_from_spine_km": 105,
+    "description": "Krátká lesní cesta od North Umpqua vede k přibližně 15metrovému vodopádu padajícímu přes tmavý čedič do kapradinového amfiteátru. Je to tichá, nenáročná zastávka vhodná i jako první protažení po dlouhé jízdě od pobřeží.",
+    "why_bob": "Kapradiny, černá skála, vlhké ticho a minimum cirkusu dávají místu melancholii, kterou by spíš našel v obraze než v seznamu atrakcí.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.4,
+      "elevation_m": 90,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Tůň pod vodopádem není vybraná jako bezpečné koupací místo; mokré kameny jsou kluzké."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdní odpoledne",
+    "season_note_2026": "BLM uvádí Susan Creek Recreation Area v sezoně 2026 jako přístupnou; Susan Creek Campground bývá otevřen přibližně do konce října. Ověřit případná krátkodobá požární omezení.",
+    "fee": "zdarma za trail",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.3018,-122.8359",
+      "official": "https://www.blm.gov/programs/recreation/recreation-activities/oregon-washington/north-umpqua-river",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["waterfall", "fern", "short_walk", "quiet"],
+    "rank": 2
+  },
+  {
+    "id": "r4-003",
+    "region": "R4",
+    "name": "Cavitt Creek Falls Recreation Site",
+    "category": "lake_river",
+    "subcategory": "swimming_hole",
+    "lat": 43.20004,
+    "lng": -123.02167,
+    "nearest_town": "Glide, OR",
+    "distance_from_spine_km": 90,
+    "description": "Cavitt Creek přepadává přes nízkou zhruba dvoumetrovou skalní hranu přímo do široké lesní tůně, kterou BLM výslovně uvádí mezi hlavními rekreačními aktivitami pro koupání. Místo je stranou hlavního vodopádového provozu na OR-138 a mimo víkendy může být překvapivě klidné.",
+    "why_bob": "Tohle je Bobova zastávka na tělo: studená lesní tůň, malý vodopád, skála k sezení a slušná šance mít ji chvíli skoro pro sebe.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "lesní potok a tůň",
+      "temp_c_sept_oct": "10–16",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Před vstupem prohlédnout proud a dopadovou zónu vodopádu, neskákat do neznámé hloubky a po deštích neplavat při zvýšeném průtoku."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "všední den pozdě dopoledne nebo odpoledne",
+    "season_note_2026": "BLM v aktuálních materiálech pro rok 2026 uvádí Cavitt Creek Falls Recreation Site v provozu a koupání jako povolenou aktivitu. V širší oblasti mohou platit požární omezení pro oheň, nikoli zákaz denního vstupu.",
+    "fee": "denní vstup zdarma; kemp přibližně 14 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.20004,-123.02167",
+      "official": "https://www.blm.gov/visit/cavitt-creek-falls-recreation-site",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["cold_swim", "swimming_hole", "waterfall", "forest", "solitude"],
+    "rank": 1
+  },
+  {
+    "id": "r4-004",
+    "region": "R4",
+    "name": "Toketee Falls",
+    "category": "waterfall",
+    "subcategory": "trail",
+    "lat": 43.2634,
+    "lng": -122.4275,
+    "nearest_town": "Idleyld Park, OR",
+    "distance_from_spine_km": 155,
+    "description": "North Umpqua se tu láme ve dvou stupních mezi téměř dokonale vertikálními čedičovými sloupy. Krátká cesta přes starý les a schody končí na vyhlídce, odkud je dobře vidět geometrie sloupcovitého bazaltu i spodní pád.",
+    "why_bob": "Není to jen hezký vodopád; je to voda prorážející strohou sochařskou geometrii čediče, tedy přírodní architektura přesně pro jeho oko.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.3,
+      "elevation_m": 60,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nesestupovat neoficiálními strmými cestami k patě vodopádu; mokrý terén, pádové zóny a proud jsou nebezpečné."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdě odpoledne",
+    "season_note_2026": "Umpqua National Forest uvádí koridor v sezoně 2026 přístupný; k 8. 9. 2026 platí Stage 2 fire restrictions. Vybraný přístup k Toketee není v aktuální Castle Fire closure.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.2634,-122.4275",
+      "official": "https://www.fs.usda.gov/r06/umpqua/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Toketee_Falls"
+    },
+    "photo": null,
+    "tags": ["basalt_columns", "waterfall", "geology", "forest"],
+    "rank": 1
+  },
+  {
+    "id": "r4-005",
+    "region": "R4",
+    "name": "Umpqua Hot Springs",
+    "category": "hot_spring",
+    "subcategory": "natural_soaking_pools",
+    "lat": 43.29513,
+    "lng": -122.3625,
+    "nearest_town": "Idleyld Park, OR",
+    "distance_from_spine_km": 165,
+    "description": "Síra vyvěrá do několika malých přírodních bazénků na prudkém svahu vysoko nad North Umpqua River. Není to spa: krátký strmý přístup, nahota není neobvyklá, voda a bahno jsou syrové a atmosféra závisí na tom, kolik lidí právě dorazilo.",
+    "why_bob": "Nahé máčení nad studenou řekou je přesně jeho anti-resort verze wellness — fyzické, trochu divné a bez luxusního filtru.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 1.3,
+      "elevation_m": 110,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "horké minerální prameny",
+      "temp_c_sept_oct": null,
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "Jde o namáčení, ne plavání. Horká voda může způsobit přehřátí; skála a kořeny jsou kluzké a kvalita přírodní vody není hygienicky garantována."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "hned po východu slunce ve všední den",
+    "season_note_2026": "USFS aktualizoval lokalitu 7. 8. 2026 jako Site Open; povolený je pouze denní vstup od východu do západu slunce a platí poplatek 5 $ za vozidlo. Přístupová silnice se v zimě sezónně zavírá.",
+    "fee": "5 $/vozidlo",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.29513,-122.3625",
+      "official": "https://www.fs.usda.gov/r06/umpqua/recreation/umpqua-hot-springs-trailhead",
+      "wiki": "https://en.wikipedia.org/wiki/Umpqua_Hot_Springs"
+    },
+    "photo": null,
+    "tags": ["hot_spring", "nude_friendly", "river_view", "early_morning"],
+    "rank": 1
+  },
+  {
+    "id": "r4-006",
+    "region": "R4",
+    "name": "Watson Falls",
+    "category": "waterfall",
+    "subcategory": "trail",
+    "lat": 43.245877,
+    "lng": -122.3902,
+    "nearest_town": "Idleyld Park, OR",
+    "distance_from_spine_km": 165,
+    "description": "Watson Creek padá z vysokého čedičového útesu v tenké stříbrné stuze přes mech a starý les; se zhruba 90 metry patří k nejvyšším vodopádům v jihozápadním Oregonu. Trail je krátký, ale závěrem stoupá pod obrovskou mokrou stěnu.",
+    "why_bob": "Má spíš sibeliovskou než pohlednicovou náladu: chladný les, vertikální skála, voda a hluboký zelený prostor.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 1.3,
+      "elevation_m": 90,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Mokré kameny a dřevěné prvky trailu mohou silně klouzat; nepřibližovat se pod padající kamení u stěny."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo zatažený den",
+    "season_note_2026": "USFS uvádí Watson Falls Trailhead jako Site Open; aktuální stránka potvrzuje krátký trail a nulový poplatek. K 8. 9. 2026 v Umpqua NF platí Stage 2 fire restrictions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.245877,-122.3902",
+      "official": "https://www.fs.usda.gov/r06/umpqua/recreation/watson-falls-trailhead",
+      "wiki": "https://en.wikipedia.org/wiki/Watson_Falls"
+    },
+    "photo": null,
+    "tags": ["tall_waterfall", "basalt", "forest", "mist"],
+    "rank": 1
+  },
+  {
+    "id": "r4-007",
+    "region": "R4",
+    "name": "Clearwater Falls",
+    "category": "waterfall",
+    "subcategory": "roadside_waterfall",
+    "lat": 43.2559,
+    "lng": -122.3777,
+    "nearest_town": "Diamond Lake, OR",
+    "distance_from_spine_km": 170,
+    "description": "Nízký, široký vodopád se rozpadá přes mechem porostlé balvany pod hustými jedlemi a cedry. Je skoro u silnice, ale díky stínu, pramenité vodě a zelenému dnu působí jako uzavřený malý svět.",
+    "why_bob": "Je to desetiminutový vstup do úplně jiného tempa: temný mech, studená voda a minimum monumentality, dobré mezi dvěma velkými krajinami.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.4,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Mokré kořeny a balvany kloužou; tůně nejsou vybrány jako doporučené koupací místo."
+    },
+    "road_access": "paved",
+    "best_time": "kdykoli, ideálně měkké zatažené světlo",
+    "season_note_2026": "Lokalita leží na otevřeném OR-138 recreation corridor; k 8. 9. 2026 není hlášena uzávěra tohoto místa. V Umpqua NF platí Stage 2 fire restrictions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.2559,-122.3777",
+      "official": "https://www.fs.usda.gov/r06/umpqua/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Clearwater_Falls_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["moss", "spring_water", "roadside", "forest"],
+    "rank": 2
+  },
+  {
+    "id": "r4-008",
+    "region": "R4",
+    "name": "Lemolo Falls — old trail",
+    "category": "waterfall",
+    "subcategory": "trail",
+    "lat": 43.3212,
+    "lng": -122.2865,
+    "nearest_town": "Diamond Lake, OR",
+    "distance_from_spine_km": 180,
+    "description": "North Umpqua se tu vrhá přibližně 30 metrů přes tmavou vulkanickou stěnu do hluboké lesní rokle. Starší krátký přístup je strmější a syrovější než pohodlnější úseky North Umpqua Trail a dává vodopádu pocit skutečného zapadlého místa.",
+    "why_bob": "Tady už musí trochu opustit civilizaci: lesní spur road, strmý sestup a velký vodopád bez vyhlídkové infrastruktury.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 1.6,
+      "elevation_m": 170,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Pod vodopádem neplavat; silný proud, padající voda, kluzké balvany a strmé břehy."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "dopoledne",
+    "season_note_2026": "USFS uvádí Lemolo Falls Trail v rekreační síti Umpqua NF; přístup využívá několik lesních spur roads. V září 2026 ověřit aktuální stav povrchu a fire alerts, zejména po dešti.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.3212,-122.2865",
+      "official": "https://www.fs.usda.gov/r06/umpqua/recreation/trails/lemolo-falls-trail",
+      "wiki": "https://en.wikipedia.org/wiki/Lemolo_Falls"
+    },
+    "photo": null,
+    "tags": ["remote_waterfall", "forest_road", "gorge", "solitude"],
+    "rank": 2
+  },
+  {
+    "id": "r4-009",
+    "region": "R4",
+    "name": "Diamond Lake — South Shore",
+    "category": "lake_river",
+    "subcategory": "lake_view",
+    "lat": 43.1292,
+    "lng": -122.1324,
+    "nearest_town": "Diamond Lake, OR",
+    "distance_from_spine_km": 195,
+    "description": "Velké horské jezero leží mezi Mount Bailey a ostrým kuželem Mount Thielsen a funguje jako široká severní předsíň Crater Lake. Jižní břeh je dobrý na dlouhé sezení, studený vítr a odrazy hor, ale aktuální stav vody z něj v září 2026 nedělá koupací doporučení.",
+    "why_bob": "I bez plavání je to jeho typ zastávky: velká studená voda, sopky po obou stranách a místo, kde se dá dvě hodiny jen číst a koukat.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.0,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "horské jezero",
+      "temp_c_sept_oct": "10–18",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "K 8. 9. 2026 platí pro Diamond Lake preventivní upozornění na sinice; proto ho v této verzi appky nepovažovat za koupací místo. Před cestou ověřit OHA advisories."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo před západem",
+    "season_note_2026": "USFS/Oregon Health Authority mají k 8. 9. 2026 pro Diamond Lake aktivní blue-green algae precaution. Rekreační oblast je přístupná, ale koupání zde nyní nedoporučuji.",
+    "fee": "podle konkrétního day-use area; některé přístupy zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.1292,-122.1324",
+      "official": "https://www.fs.usda.gov/r06/umpqua/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Diamond_Lake_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["mountain_lake", "Mount_Thielsen", "view", "no_swim_2026"],
+    "rank": 1
+  },
+  {
+    "id": "r4-010",
+    "region": "R4",
+    "name": "Rogue–Umpqua Scenic Byway — OR-230 / OR-62",
+    "category": "scenic_drive",
+    "subcategory": "forest_volcanic_drive",
+    "lat": 43.0937,
+    "lng": -122.1443,
+    "nearest_town": "Diamond Lake, OR",
+    "distance_from_spine_km": 200,
+    "description": "Z Diamond Lake se OR-230 stáčí přes vysoký les k pramenům Rogue a navazuje na OR-62 směrem ke Crater Lake a Prospectu. Silnice přechází přes mladou vulkanickou krajinu, vysoké borovice, lávové proudy a pramenné úseky řeky bez městského přerušení.",
+    "why_bob": "Je to spojnice, která sama stojí za cestu: dlouhé lesní zatáčky, vulkanická zem a možnost poslouchat hudbu hodinu bez jediného komerčního důvodu zastavit.",
+    "time_needed": "2–4 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 105,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Na horních úsecích může už začátkem října přijít první sníh nebo led; po tmě pozor na jeleny."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní dopoledne až odpoledne",
+    "season_note_2026": "Silnice jsou v září běžně otevřené; před říjnovým přejezdem ověřit Oregon TripCheck kvůli časnému sněhu, požáru nebo krátkodobým silničním pracím.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.0937,-122.1443",
+      "official": "https://www.fs.usda.gov/r06/rogue-siskiyou/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Rogue-Umpqua_Scenic_Byway"
+    },
+    "photo": null,
+    "tags": ["scenic_road", "forest", "volcanic", "Rogue_River"],
+    "rank": 1
+  },
+  {
+    "id": "r4-011",
+    "region": "R4",
+    "name": "Rogue Gorge",
+    "category": "geology",
+    "subcategory": "river_gorge",
+    "lat": 42.9124,
+    "lng": -122.4423,
+    "nearest_town": "Union Creek, OR",
+    "distance_from_spine_km": 195,
+    "description": "Rogue River se krátce po svém vzniku stlačí mezi tmavé lávové stěny do úzké, hlučné soutěsky s hlubokými vývařišti. Krátký trail podél hrany ukazuje, jak voda rozřezala mladé vulkanické proudy.",
+    "why_bob": "Je to krásná demonstrace fyziky vody sevřené do černé skály — přesně místo, kde se dívat dlouho, ale ani na sekundu neuvažovat o plavání.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 40,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Rogue River",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": null,
+      "safety": "ABSOLUTNĚ NEPLAVAT: extrémně silný proud, úzká soutěska, hydraulické válce, podvodní kapsy a prakticky nemožný výstup."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo podvečer",
+    "season_note_2026": "Přístup z oblasti Union Creek je v sezoně 2026 běžně otevřený; ověřit pouze případná krátkodobá forest alerts nebo uzávěry po požáru a pádu stromů.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9124,-122.4423",
+      "official": "https://www.fs.usda.gov/r06/rogue-siskiyou/recreation",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["no_swim", "gorge", "lava", "violent_water", "geology"],
+    "rank": 1
+  },
+  {
+    "id": "r4-012",
+    "region": "R4",
+    "name": "Natural Bridge — Rogue River",
+    "category": "geology",
+    "subcategory": "lava_tube_river",
+    "lat": 42.8945,
+    "lng": -122.4612,
+    "nearest_town": "Union Creek, OR",
+    "distance_from_spine_km": 190,
+    "description": "Celá Rogue River zde mizí do staré lávové trubice a o kus dál se znovu vynořuje mezi černými skalami. Krátká smyčka umožňuje sledovat vstup, podzemní úsek i boční otvory v lávě.",
+    "why_bob": "Řeka, která fyzicky zmizí pod zemí, je přesně jeho kombinace zvláštní geologie a lehce lynchovského pocitu, že realita na chvíli nefunguje normálně.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.0,
+      "elevation_m": 45,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Rogue River",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": null,
+      "safety": "ABSOLUTNĚ NEPLAVAT: proud je nasáván do lávových tunelů a sifonů; pád do vody může být fatální."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdě odpoledne",
+    "season_note_2026": "Natural Bridge Recreation Area je v hlavní sezoně 2026 běžně přístupná; před cestou ověřit Rogue River–Siskiyou National Forest alerts.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.8945,-122.4612",
+      "official": "https://www.fs.usda.gov/r06/rogue-siskiyou/recreation",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["no_swim", "lava_tube", "river", "geology", "strange"],
+    "rank": 1
+  },
+  {
+    "id": "r4-013",
+    "region": "R4",
+    "name": "Union Creek Historic District + Beckie's Café",
+    "category": "food_gem",
+    "subcategory": "historic_cafe",
+    "lat": 42.9137,
+    "lng": -122.4467,
+    "nearest_town": "Union Creek, OR",
+    "distance_from_spine_km": 195,
+    "description": "Malý historický resort vzniklý kolem staré lesní silnice má dřevěné cabins, obrovské stromy a Beckie's Café, tradiční zastávku na domácí koláč a jednoduché americké jídlo. Není to designový retro podnik; jeho kouzlo je v tom, že působí jako přeživší kus staré silniční Ameriky.",
+    "why_bob": "Po hodinách v lese je Beckie's přesně Hopperova pauza: kafe, pie, dřevo a pocit, že venku už se stmívá nad Rogue.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Rogue Gorge a Natural Bridge v blízkosti nejsou koupací místa."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní oběd nebo časná večeře",
+    "season_note_2026": "Historický district je přístupný; u Beckie's Café ověřit konkrétní otevírací dobu v den návštěvy, protože na podzim se může zkracovat.",
+    "fee": "podle útraty",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9137,-122.4467",
+      "official": "https://www.unioncreekoregon.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Union_Creek_Historic_District"
+    },
+    "photo": null,
+    "tags": ["roadside_americana", "cafe", "pie", "historic", "Hopper"],
+    "rank": 2
+  },
+  {
+    "id": "r4-014",
+    "region": "R4",
+    "name": "Prospect — Mill Creek Falls, Barr Creek Falls & Avenue of the Giant Boulders",
+    "category": "waterfall",
+    "subcategory": "waterfall_loop",
+    "lat": 42.7466,
+    "lng": -122.4947,
+    "nearest_town": "Prospect, OR",
+    "distance_from_spine_km": 170,
+    "description": "Krátký lesní systém stezek nad Rogue spojuje dva vysoké vodopády a neobvyklé koryto plné obřích vulkanických balvanů. Lze z toho udělat několikakilometrový okruh bez velkého převýšení a bez turistické koncentrace Crater Lake.",
+    "why_bob": "Prospect je dobrá stará silniční základna a tenhle trail mu dá vodu, čedič, les i divné obří balvany v jednom odpoledni.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5.0,
+      "elevation_m": 170,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Neplavat v prudkých úsecích pod vodopády ani mezi obřími balvany; skály jsou kluzké a proud má skryté kapsy."
+    },
+    "road_access": "paved",
+    "best_time": "odpoledne",
+    "season_note_2026": "Prospect State Scenic Viewpoint je běžně přístupný celoročně; během požární sezony ověřit místní alerts a případné dočasné trail closures.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.7466,-122.4947",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Mill_Creek_Falls_(Jackson_County,_Oregon)"
+    },
+    "photo": null,
+    "tags": ["waterfalls", "giant_boulders", "forest", "Prospect"],
+    "rank": 1
+  },
+  {
+    "id": "r4-015",
+    "region": "R4",
+    "name": "Lost Creek Lake — Joseph H. Stewart shore",
+    "category": "lake_river",
+    "subcategory": "reservoir_swim",
+    "lat": 42.6848,
+    "lng": -122.6238,
+    "nearest_town": "Shady Cove, OR",
+    "distance_from_spine_km": 145,
+    "description": "Velká nádrž na Rogue má borovicové břehy, otevřené výhledy na suché svahy jižního Oregonu a několik snadných vstupů k vodě. Není tak divoká jako horské jezero, ale je praktická pro dlouhé studené plavání během přejezdu mezi Medfordem a Crater Lake.",
+    "why_bob": "Když bude po několika hodinách řízení potřebovat místo, kde se prostě svlékne, vleze do chladné vody a znovu se nastartuje, funguje výborně.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "přehradní jezero",
+      "temp_c_sept_oct": "13–20",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Držet se mimo rampy a lodní dráhy; pozor na vítr a rychlý pokles teploty na podzim. OHA 29. 5. 2026 předchozí algae advisory pro Lost Creek Lake zrušila; před vstupem znovu zkontrolovat aktuální seznam."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní dopoledne nebo odpoledne",
+    "season_note_2026": "OHA zrušila předchozí advisory 29. 5. 2026 a k 8. 9. 2026 není Lost Creek Lake na aktuálním seznamu aktivních upozornění. Parkové služby se mohou na podzim omezit, denní přístup však pokračuje.",
+    "fee": "podle konkrétní day-use plochy",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.6848,-122.6238",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Lost_Creek_Lake"
+    },
+    "photo": null,
+    "tags": ["swim", "reservoir", "cold_water", "road_break"],
+    "rank": 2
+  },
+  {
+    "id": "r4-016",
+    "region": "R4",
+    "name": "Applegate Lake — Hart-Tish Park",
+    "category": "lake_river",
+    "subcategory": "lake_swim",
+    "lat": 42.0522,
+    "lng": -123.1189,
+    "nearest_town": "Jacksonville, OR",
+    "distance_from_spine_km": 110,
+    "description": "Applegate Lake leží hluboko v suchých lesních kopcích Siskiyou Mountains a u Hart-Tish je snadno dostupný břeh pro plavání. Koncem září je provoz mnohem klidnější než v létě a okolní hnědozelené svahy už mají téměř kalifornský charakter.",
+    "why_bob": "Je to dobrý jižní kontrapunkt k ledovým kaskádovým jezerům: teplejší voda, suché kopce a možnost po plavání zmizet na silnicích kolem Applegate Valley.",
+    "time_needed": "1,5–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "přehradní jezero",
+      "temp_c_sept_oct": "14–21",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Hladina na podzim klesá a odhaluje kameny či bahno; držet se mimo lodní provoz a ověřit aktuální kvalitu vody."
+    },
+    "road_access": "paved",
+    "best_time": "všední odpoledne",
+    "season_note_2026": "Oblast Applegate Lake je v září typicky v provozu; na přelomu září a října mohou být některé služby Hart-Tish už sezónně omezené. Před odbočkou ověřit aktuální USFS provozní status.",
+    "fee": "může platit day-use poplatek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.0522,-123.1189",
+      "official": "https://www.fs.usda.gov/r06/rogue-siskiyou/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Applegate_Lake"
+    },
+    "photo": null,
+    "tags": ["swim", "dry_hills", "lake", "quiet"],
+    "rank": 2
+  },
+  {
+    "id": "r4-017",
+    "region": "R4",
+    "name": "Upper Table Rock",
+    "category": "geology",
+    "subcategory": "mesa_trail",
+    "lat": 42.4684,
+    "lng": -122.9067,
+    "nearest_town": "Medford, OR",
+    "distance_from_spine_km": 125,
+    "description": "Osamělá lávová tabule se zvedá z Rogue Valley jako zbytek starého bazaltového proudu, jehož okolí eroze dávno odnesla. Výstup vede dubovou savanou na nečekaně plochý vrchol s širokými pohledy přes suché údolí ke Kaskádám a Siskiyou.",
+    "why_bob": "Golden oak savanna, suchá tráva, černý bazalt a velké údolí jsou přímá ozvěna krajiny, která ho u Paso Robles dostala v roce 2017.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5.6,
+      "elevation_m": 220,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Otevřený terén je v září horký; chřestýši a klíšťata jsou možné, u hran mesa pozor na prudké srázy."
+    },
+    "road_access": "paved",
+    "best_time": "poslední 3 h světla",
+    "season_note_2026": "Table Rocks jsou spravované BLM a The Nature Conservancy; hlavní pěší přístup je standardně otevřen celoročně. V září ověřit fire restrictions a případnou dočasnou uzávěru.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.4684,-122.9067",
+      "official": "https://www.blm.gov/visit/table-rocks",
+      "wiki": "https://en.wikipedia.org/wiki/Table_Rocks"
+    },
+    "photo": null,
+    "tags": ["oak_savanna", "mesa", "basalt", "dry_landscape", "sunset"],
+    "rank": 1
+  },
+  {
+    "id": "r4-018",
+    "region": "R4",
+    "name": "Jacksonville Historic District",
+    "category": "town",
+    "subcategory": "historic_town",
+    "lat": 42.3135,
+    "lng": -122.9663,
+    "nearest_town": "Jacksonville, OR",
+    "distance_from_spine_km": 115,
+    "description": "Jacksonville je zachovaný zlatokopecký town s cihlovými fasádami, dřevěnými domy, starými stromy a kompaktním centrem, které se dá projít bez programu. Mimo hlavní festivalové hodiny má večer příjemně prázdnou, trochu filmovou atmosféru.",
+    "why_bob": "Není to důvod jet přes půl státu, ale na jeho trase je to velmi dobrá dávka opravdové staré Ameriky bez outletů a neonového turistického cirkusu.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.5,
+      "elevation_m": 40,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "běžné městské prostředí"
+    },
+    "road_access": "paved",
+    "best_time": "podvečer po odjezdu denních návštěvníků",
+    "season_note_2026": "Historické centrum je veřejný městský prostor a je přístupné celoročně; jednotlivé podniky mají vlastní podzimní hodiny.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.3135,-122.9663",
+      "official": "https://www.jacksonvilleoregon.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Jacksonville,_Oregon"
+    },
+    "photo": null,
+    "tags": ["historic_town", "old_west", "evening", "walk"],
+    "rank": 2
+  },
+  {
+    "id": "r4-019",
+    "region": "R4",
+    "name": "Ashland — Railroad District & Lithia Park",
+    "category": "town",
+    "subcategory": "walkable_town",
+    "lat": 42.1946,
+    "lng": -122.7095,
+    "nearest_town": "Ashland, OR",
+    "distance_from_spine_km": 145,
+    "description": "Ashland je kulturnější a uhlazenější než Bobův ideální roadside town, ale Railroad District má staré sklady, kavárny, knihkupectví a příjemně lidské měřítko. Lithia Park se táhne podél Ashland Creek z centra rovnou do stromů a funguje jako klidné místo na čtení.",
+    "why_bob": "Není to zásadní pilgrimage, ale jako kontrast k pustině nabízí dobré knihy, kafe, trochu intelektuálního života a možnost být anonymní mezi lidmi.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4.0,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Běžná městská opatrnost; nenechávat viditelně věci v autě."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo všední podvečer",
+    "season_note_2026": "Město a Lithia Park jsou otevřené celoročně; konkrétní podniky mají vlastní hodiny. Oregon Shakespeare Festival není důvodem této zastávky a není pro ni nutná rezervace.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.1946,-122.7095",
+      "official": "https://www.ashlandoregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Ashland,_Oregon"
+    },
+    "photo": null,
+    "tags": ["bookish", "cafe", "park", "town_walk"],
+    "rank": 3
+  },
+  {
+    "id": "r4-020",
+    "region": "R4",
+    "name": "Oregon Caves — Discovery Cave Tour",
+    "category": "geology",
+    "subcategory": "marble_cave",
+    "lat": 42.0987,
+    "lng": -123.4088,
+    "nearest_town": "Cave Junction, OR",
+    "distance_from_spine_km": 70,
+    "description": "Rangerem vedená zhruba devadesátiminutová cesta prochází mramorovým jeskynním systémem s úzkými průchody, sintrovými útvary a více než pěti sty schody. Teplota uvnitř se drží kolem 7 °C a celý podzemní systém působí mnohem fyzičtěji než běžná „show cave“.",
+    "why_bob": "Chlad, tma, hluboký čas a tělo v úzkém kamenném prostoru jsou na jeho geologickou a existenciální zvědavost skoro dokonale cílené.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 1.5,
+      "elevation_m": 70,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nízké stropy, přes 500 schodů a úzké průchody; NPS nedoporučuje tour při významném srdečním, plicním nebo pohybovém omezení."
+    },
+    "road_access": "paved",
+    "best_time": "první ranní tour",
+    "season_note_2026": "NPS pro rok 2026 uvádí Discovery Cave Tour od 21. 3. do 1. 11.; v září jsou tour denně, v říjnu je provoz omezen přibližně na pět dní týdně a podle aktuálního kalendáře bývá zavřeno v úterý a středu. Rezervace je doporučená, nikoli nutná měsíce dopředu; mohou být same-day lístky.",
+    "fee": "20 $ dospělý",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.0987,-123.4088",
+      "official": "https://www.nps.gov/orca/planyourvisit/fees.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Oregon_Caves_National_Monument_and_Preserve"
+    },
+    "photo": null,
+    "tags": ["cave", "deep_time", "cold", "marble", "underground"],
+    "rank": 1
+  },
+  {
+    "id": "r4-021",
+    "region": "R4",
+    "name": "Oregon Caves — Big Tree Trail",
+    "category": "forest",
+    "subcategory": "old_growth_trail",
+    "lat": 42.0987,
+    "lng": -123.4088,
+    "nearest_town": "Cave Junction, OR",
+    "distance_from_spine_km": 70,
+    "description": "Strmý lesní okruh stoupá z Oregon Caves přes starý smíšený les k jednomu z největších douglaskových jedlí v Oregonu. Na malé ploše se střídá stinný kaňon, velké kmeny, horský les a otevřenější hřebeny.",
+    "why_bob": "K jeskyni přidává vertikální svět nad zemí — staré stromy, ticho a dost stoupání, aby z turistické zastávky udělal skutečné odpoledne.",
+    "time_needed": "2,5–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5.3,
+      "elevation_m": 335,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Strmé úseky, kořeny a mokré listí; na podzim počítat s rychlým stmíváním."
+    },
+    "road_access": "paved",
+    "best_time": "dopoledne před cave tour nebo časné odpoledne",
+    "season_note_2026": "NPS visitor area je v září–říjnu 2026 přístupná; před túrou zkontrolovat lokální trail conditions, zejména po větru nebo časném sněhu.",
+    "fee": "vstup do monumentu zdarma; cave tour zvlášť",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.0987,-123.4088",
+      "official": "https://www.nps.gov/orca/planyourvisit/hiking-trails.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Oregon_Caves_National_Monument_and_Preserve"
+    },
+    "photo": null,
+    "tags": ["old_growth", "big_tree", "forest", "steep"],
+    "rank": 2
+  },
+  {
+    "id": "r4-022",
+    "region": "R4",
+    "name": "Crater Lake — Rim Village & Sinnott Memorial Overlook",
+    "category": "mountain",
+    "subcategory": "caldera_viewpoint",
+    "lat": 42.9119,
+    "lng": -122.1483,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 205,
+    "description": "První pohled z Rim Village padá téměř 600 metrů dolů k neuvěřitelně modré vodě v kaldeře Mount Mazama; protější stěny a Wizard Island dávají okamžitě čitelné měřítko kolapsu sopky. Sinnott Memorial je zabudovaný přímo do skalního okraje a umožňuje dlouho sedět nad jezerem bez túry.",
+    "why_bob": "Crater Lake je jeho dětský sen a jeden z nejsilnějších možných obrazů hlubokého času: zaniklá hora, prázdnota po ní a voda v obrovském kráteru.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.0,
+      "elevation_m": 30,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Crater Lake",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": null,
+      "safety": "V roce 2026 není otevřen žádný legální pěší přístup ke břehu: Cleetwood Cove je uzavřen po celou sezonu 2026–2028."
+    },
+    "road_access": "paved",
+    "best_time": "ráno po rozptýlení případného kouře nebo poslední hodiny světla",
+    "season_note_2026": "K 17. 8. 2026 NPS uvádí Rim Village, Sinnott Memorial, West Rim Drive, North Entrance Road a část East Rim Drive jako otevřené. Cleetwood Cove je uzavřen celý rok 2026 a zůstane zavřený také 2027–2028. East Rim Drive mezi Park Headquarters a Phantom Ship Overlook je kvůli stavbě uzavřen.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9119,-122.1483",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Crater_Lake"
+    },
+    "photo": null,
+    "tags": ["caldera", "deep_time", "blue_water", "childhood_dream", "no_swim_2026"],
+    "rank": 1
+  },
+  {
+    "id": "r4-023",
+    "region": "R4",
+    "name": "Discovery Point Trail",
+    "category": "mountain",
+    "subcategory": "rim_trail",
+    "lat": 42.9116,
+    "lng": -122.1488,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 205,
+    "description": "Lehká část Rim Trail vede z Rim Village lesem těsně při hraně kaldery k sérii otevřených pohledů na Wizard Island a západní stěnu jezera. Je dost dlouhá, aby se člověk vzdálil od parkoviště, ale nebere celý den.",
+    "why_bob": "Je to nejlepší způsob, jak z ikonického výhledu udělat osobní prostor: po kilometru chůze se dav rozředí a zůstane modrá propast, borovice a vítr.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 3.5,
+      "elevation_m": 120,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Crater Lake",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": null,
+      "safety": "Hrana kaldery je místy nechráněná; nechodit na sněhové převěje ani za okraj trailu. Ke břehu není v roce 2026 legální přístup."
+    },
+    "road_access": "paved",
+    "best_time": "brzy ráno nebo podvečer",
+    "season_note_2026": "Podle NPS Current Conditions z 17. 8. 2026 je West Rim Drive otevřen a trail patří mezi přístupné parkové trasy. Časný říjnový sníh může situaci rychle změnit.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9116,-122.1488",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["rim_walk", "Wizard_Island", "wind", "caldera"],
+    "rank": 1
+  },
+  {
+    "id": "r4-024",
+    "region": "R4",
+    "name": "Watchman Peak Trail",
+    "category": "mountain",
+    "subcategory": "summit_trail",
+    "lat": 42.9291,
+    "lng": -122.1698,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 205,
+    "description": "Krátký, soustavně stoupající trail vede na starou fire lookout nad západní hranou kaldery. Z vrcholu je Wizard Island téměř přímo pod nohama a při čistém vzduchu se západním směrem otevírají Kaskády i vzdálená pustina.",
+    "why_bob": "Tohle je jeho Crater Lake posezení: vítr na hřebeni, geometrie ostrova pod ním a stará lookout jako malá lidská značka v obrovské vulkanické scéně.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2.6,
+      "elevation_m": 130,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Vysoká nadmořská výška, vítr a exponovaný vrchol; vzít teplou vrstvu i za teplého dne."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne; na západ slunce jen s čelovkou na sestup",
+    "season_note_2026": "K 17. 8. 2026 je West Rim Drive otevřen a Watchman Peak přístupný. V říjnu může trail i silnici dočasně uzavřít sníh nebo led.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9291,-122.1698",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/The_Watchman_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["fire_lookout", "sunset", "Wizard_Island", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r4-025",
+    "region": "R4",
+    "name": "Garfield Peak Trail",
+    "category": "mountain",
+    "subcategory": "rim_summit_trail",
+    "lat": 42.9094,
+    "lng": -122.1394,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 205,
+    "description": "Trail stoupá z Rim Village po jižní hraně kaldery přes louky a skalnaté svahy na Garfield Peak. Výhled z vrcholu zahrnuje celé jezero, Wizard Island, Phantom Ship i dlouhé horizonty jižního Oregonu.",
+    "why_bob": "Kdyby měl u Crater Lake udělat jedinou delší túru, tahle mu dá největší pocit prostoru a dovolí sedět vysoko nad jezerem daleko od aut.",
+    "time_needed": "3–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5.8,
+      "elevation_m": 310,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Exponované svahy, prudší okraje a rychlé změny počasí; na podzim může být led."
+    },
+    "road_access": "paved",
+    "best_time": "ráno, případně pozdní odpoledne s rezervou na návrat",
+    "season_note_2026": "K 17. 8. 2026 NPS uvádí parkové trails otevřené s výjimkou výslovně uzavřených lokalit; Garfield Peak mezi nimi není. Po prvním sněhu se podmínky mohou změnit během hodin.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9094,-122.1394",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Garfield_Peak_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["summit", "caldera", "panorama", "solitude"],
+    "rank": 1
+  },
+  {
+    "id": "r4-026",
+    "region": "R4",
+    "name": "Lightning Spring Trail",
+    "category": "forest",
+    "subcategory": "rim_to_spring_trail",
+    "lat": 42.9222,
+    "lng": -122.1717,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 205,
+    "description": "Trail opouští vyhlídkovou hranu Crater Lake a sestupuje do mnohem tiššího vysokohorského lesa k prameni pod Lightning Springs. Je to dobrý únik z monumentality kaldery do borovic, pemzy a ticha.",
+    "why_bob": "Když bude mít po hodinách modrých panoramat dost ikonického obrazu, tady může zmizet do lesa, kde je Crater Lake znovu jen geologie pod nohama.",
+    "time_needed": "2,5–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 6.5,
+      "elevation_m": 250,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "pramen",
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Pramennou vodu bez úpravy nepít; na podzim možnost ledu a spadlých stromů."
+    },
+    "road_access": "paved",
+    "best_time": "dopoledne",
+    "season_note_2026": "K 17. 8. 2026 je West Rim Drive otevřený a trail není mezi uzavřenými trasami. Před říjnovou túrou ověřit sníh a trail status.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9222,-122.1717",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["quiet_forest", "spring", "pumice", "solitude"],
+    "rank": 2
+  },
+  {
+    "id": "r4-027",
+    "region": "R4",
+    "name": "West Rim Drive",
+    "category": "scenic_drive",
+    "subcategory": "caldera_rim_drive",
+    "lat": 42.912,
+    "lng": -122.1487,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 205,
+    "description": "West Rim Drive vede po vysokém okraji kaldery od Rim Village přes Discovery Point, Watchman a několik méně nápadných pulloutů k North Junction. Silnice neustále mění vztah mezi jezerem, Wizard Island, vysokým lesem a vzdálenými Kaskádami.",
+    "why_bob": "Tohle je doslova silnice kolem zhroucené sopky — jedna z těch jízd, kdy nepotřebuje cíl, protože fyzika krajiny se odvíjí přímo za čelním sklem.",
+    "time_needed": "2–4 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 35,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Úzké zatáčky, cyklisté, zvěř a možnost ledu; zastavovat pouze na pulloutech."
+    },
+    "road_access": "paved",
+    "best_time": "ráno a znovu poslední 2 h světla",
+    "season_note_2026": "NPS Current Conditions aktualizované 17. 8. 2026 uvádějí West Rim Drive jako otevřený. Rim roads se standardně uzavírají nejpozději kolem 1. 11., ale první významný sníh může přijít dřív.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.912,-122.1487",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Rim_Drive"
+    },
+    "photo": null,
+    "tags": ["scenic_road", "caldera", "road_trip", "panorama"],
+    "rank": 1
+  },
+  {
+    "id": "r4-028",
+    "region": "R4",
+    "name": "Phantom Ship Overlook",
+    "category": "mountain",
+    "subcategory": "viewpoint",
+    "lat": 42.8964,
+    "lng": -122.0488,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 215,
+    "description": "Z jihovýchodní hrany jezera je nejlépe vidět Phantom Ship, erodovaný zbytek staré horniny vystupující z vody jako černá gotická silueta. Výhled je oproti Rim Village méně symetrický a mnohem podivnější.",
+    "why_bob": "Černé skalní 'plavidlo' na nepřirozeně modré vodě má přesně tu lehce neskutečnou, filmovou kvalitu, kterou na krajině hledá.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.4,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Držet se od hrany kaldery."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "NPS k 17. 8. 2026 uvádí East Rim Drive sjízdný od North Junction až k Phantom Ship Overlook. Úsek dále směrem k Park Headquarters je kvůli stavbě uzavřen, takže se odsud musí stejnou cestou vrátit.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.8964,-122.0488",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Phantom_Ship_(island)"
+    },
+    "photo": null,
+    "tags": ["Phantom_Ship", "strange", "caldera", "viewpoint"],
+    "rank": 1
+  },
+  {
+    "id": "r4-029",
+    "region": "R4",
+    "name": "Cloudcap Overlook",
+    "category": "mountain",
+    "subcategory": "high_viewpoint",
+    "lat": 42.9256,
+    "lng": -122.0301,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 220,
+    "description": "Cloudcap Road stoupá z East Rim Drive na jeden z nejvýše položených automobilově dostupných bodů v parku. Nad řídkým vysokohorským lesem se otevře široký pohled přes hladinu na západní okraj kaldery a často tu fouká výrazně víc než dole.",
+    "why_bob": "Je to místo na kabát, vítr a dlouhé zírání — vysoká pustota nad jezerem, kde lze na chvíli zapomenout na parkoviště v Rim Village.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Silný vítr, vysoká nadmořská výška a rychlé ochlazení."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne při čisté obloze",
+    "season_note_2026": "Cloudcap Road je podle NPS Current Conditions z 17. 8. 2026 otevřená. Na přelomu září a října může být mezi prvními úseky omezenými sněhem nebo ledem.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9256,-122.0301",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["high_viewpoint", "wind", "caldera", "solitude"],
+    "rank": 1
+  },
+  {
+    "id": "r4-030",
+    "region": "R4",
+    "name": "Mount Scott Trail",
+    "category": "mountain",
+    "subcategory": "summit_trail",
+    "lat": 42.9229,
+    "lng": -122.0163,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 220,
+    "description": "Mount Scott je nejvyšší bod Crater Lake National Park a trail stoupá otevřeným vulkanickým svahem k fire lookout s mimořádně širokým horizontem. Z vrcholu je jezero vidět jako celý modrý disk zasazený do zbytků Mount Mazama.",
+    "why_bob": "Jestli chce Crater Lake skutečně pochopit jako objekt v krajině a ne jen stát na jeho hraně, Mount Scott je nejsilnější perspektiva.",
+    "time_needed": "3–4,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 7.2,
+      "elevation_m": 380,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Vysokohorská expozice, vítr, možnost bouřek a v říjnu sněhu nebo ledu; minimum vody a stínu."
+    },
+    "road_access": "paved",
+    "best_time": "ráno při stabilním počasí",
+    "season_note_2026": "K 17. 8. 2026 NPS uvádí relevantní část East Rim Drive od North Junction otevřenou a Mount Scott Trail není na seznamu uzávěr. Přístup může ukončit časný sníh ještě před koncem plánované cesty.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.9229,-122.0163",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Mount_Scott_(Klamath_County,_Oregon)"
+    },
+    "photo": null,
+    "tags": ["summit", "fire_lookout", "caldera_view", "big_sky"],
+    "rank": 1
+  },
+  {
+    "id": "r4-031",
+    "region": "R4",
+    "name": "Pumice Desert",
+    "category": "geology",
+    "subcategory": "pumice_plain",
+    "lat": 43.004,
+    "lng": -122.1156,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 205,
+    "description": "Na sever od kaldery leží překvapivě prázdná plocha světlé pemzy, kde kvůli poréznímu podkladu a mrazu roste jen řídká vegetace. Krátké zastavení u pulloutu působí skoro jako malá vysokohorská poušť vložená mezi lesy.",
+    "why_bob": "Pustá pemzová rovina uprostřed Oregonu je přesně ten nenápadný geologický glitch, kvůli kterému rád sjíždí z hlavní trasy.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Křehké prostředí; držet se povolených ploch a nescházet z trasy zbytečně."
+    },
+    "road_access": "paved",
+    "best_time": "nízké ranní nebo večerní světlo",
+    "season_note_2026": "North Entrance Road je podle NPS k 17. 8. 2026 otevřená. Standardně se uzavírá se zimním počasím, často nejpozději kolem 1. 11., ale časný sníh je možný.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.004,-122.1156",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["pumice", "high_desert_feel", "emptiness", "geology"],
+    "rank": 2
+  },
+  {
+    "id": "r4-032",
+    "region": "R4",
+    "name": "Annie Creek Canyon Trail",
+    "category": "geology",
+    "subcategory": "canyon_trail",
+    "lat": 42.8599,
+    "lng": -122.1684,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 195,
+    "description": "Krátká smyčka sestupuje z Mazama area do úzkého kaňonu vyřezaného do vrstev pemzy a sopečného popela po erupci Mount Mazama. Barevné stěny a pinnacles působí překvapivě pouštně navzdory okolnímu kaskádovému lesu.",
+    "why_bob": "Je to malý kus Badlands schovaný pod Crater Lake — suchá eroze, zvláštní tvary a hluboký čas místo dalšího pohledu na modrou hladinu.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2.7,
+      "elevation_m": 100,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Annie Creek",
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Úzký trail, sypký vulkanický materiál a možnost kluzkých míst u potoka."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní dopoledne",
+    "season_note_2026": "Hwy 62 a Mazama area jsou podle NPS Current Conditions přístupné; Annie Creek Canyon Trail není mezi uzavřenými trasami. Na podzim ověřit případný sníh.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.8599,-122.1684",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["canyon", "pumice", "erosion", "volcanic"],
+    "rank": 2
+  },
+  {
+    "id": "r4-033",
+    "region": "R4",
+    "name": "Godfrey Glen Trail",
+    "category": "mountain",
+    "subcategory": "forest_canyon_walk",
+    "lat": 42.8357,
+    "lng": -122.2058,
+    "nearest_town": "Crater Lake, OR",
+    "distance_from_spine_km": 190,
+    "description": "Lehký lesní okruh vede po hraně kaňonu nad Annie Creek a otevírá pohledy na jehly a stěny vyerodované v měkkém sopečném materiálu. Je nenápadný a často mnohem tišší než rim trails.",
+    "why_bob": "Dobrá volba, když chce po velkých panoramatech něco menšího, melancholického a skoro bez lidí.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.8,
+      "elevation_m": 40,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Hrana kaňonu je místy prudká; mokré jehličí může klouzat."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo podvečer",
+    "season_note_2026": "Hwy 62 je podle NPS Current Conditions otevřená a Godfrey Glen Trail není na seznamu uzávěr. Stav po časném říjnovém sněhu ověřit před cestou.",
+    "fee": "30 $/auto/7 dní Crater Lake NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.8357,-122.2058",
+      "official": "https://www.nps.gov/crla/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["quiet_walk", "pumice", "forest", "canyon"],
+    "rank": 2
+  },
+  {
+    "id": "r4-034",
+    "region": "R4",
+    "name": "Lower Klamath National Wildlife Refuge — Auto Tour",
+    "category": "lake_river",
+    "subcategory": "wildlife_auto_tour",
+    "lat": 41.9958,
+    "lng": -121.6586,
+    "nearest_town": "Klamath Falls, OR / Tulelake, CA",
+    "distance_from_spine_km": 325,
+    "description": "Nízké hráze a šotolinové cesty vedou otevřenou Klamath Basin mezi mělkými mokřady, suchými poli a obrovskou oblohou. V září a říjnu tudy procházejí velké tahy vodních ptáků a dravců; nejlepší je pomalá jízda se zastávkami na hrázích.",
+    "why_bob": "Je to přesně jeho melancholická prázdnota: suchá pánev, ptáci ve velkém měřítku a cesta, po níž může pomalu jet se staženým oknem.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "drive",
+      "distance_km": 30,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Vody refugia nejsou koupací lokalita; zůstat na povolených cestách a respektovat sezónní wildlife closures."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "svítání nebo poslední dvě hodiny světla",
+    "season_note_2026": "USFWS v aktuálních informacích pro 2026 uvádí auto-tour trasu jako návštěvnickou možnost; konkrétní hráze a brány se mohou měnit podle vody, managementu a požárního rizika.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.9958,-121.6586",
+      "official": "https://www.fws.gov/refuge/lower-klamath/visit-us",
+      "wiki": "https://en.wikipedia.org/wiki/Lower_Klamath_National_Wildlife_Refuge"
+    },
+    "photo": null,
+    "tags": ["pelicans", "wetlands", "big_sky", "auto_tour", "solitude"],
+    "rank": 1
+  },
+  {
+    "id": "r4-035",
+    "region": "R4",
+    "name": "Tule Lake National Wildlife Refuge — Auto Tour",
+    "category": "lake_river",
+    "subcategory": "wildlife_auto_tour",
+    "lat": 41.8819,
+    "lng": -121.5684,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 330,
+    "description": "Tule Lake je strohá kombinace mělké vody, rákosin, obdělávaných polí a černých vulkanických kopců na horizontu. Auto-tour umožňuje projíždět krajinou pomalu a zastavovat u hejn pelikánů, hus, kachen a dravců bez nutnosti dlouhé túry.",
+    "why_bob": "Má skoro tarkovskou kvalitu: voda, vítr, ptáci a lávová krajina bez atrakčního rámování.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "drive",
+      "distance_km": 20,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Není to koupací voda; nevstupovat mimo povolené cesty a respektovat dočasné uzávěry."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "brzy ráno nebo podvečer",
+    "season_note_2026": "USFWS v roce 2026 uvádí návštěvnické a auto-tour možnosti jako otevřené; stav jednotlivých hrází se může měnit podle managementu vody a wildlife potřeb.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.8819,-121.5684",
+      "official": "https://www.fws.gov/refuge/tule-lake/visit-us",
+      "wiki": "https://en.wikipedia.org/wiki/Tule_Lake_National_Wildlife_Refuge"
+    },
+    "photo": null,
+    "tags": ["birds", "volcanic_horizon", "wetlands", "auto_tour", "wind"],
+    "rank": 2
+  },
+  {
+    "id": "r4-036",
+    "region": "R4",
+    "name": "Tule Lake National Monument — Segregation Center",
+    "category": "culture",
+    "subcategory": "historic_site",
+    "lat": 41.9552,
+    "lng": -121.4757,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 335,
+    "description": "Místo bývalého Tule Lake Segregation Center připomíná největší a nejrepresivnější z táborů, v nichž americká vláda za druhé světové války věznila lidi japonského původu. Je to neokázalé, psychologicky těžké místo v pusté vulkanické pánvi, kde krajina a historie fungují dohromady.",
+    "why_bob": "Pro psychoterapeuta a milovníka neuhlazených dějin je to silnější než běžné muzeum: instituce, identita, loajalita a moc ve fyzicky prázdném prostoru.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Část historického areálu je přístupná pouze v určených zónách; nevstupovat do uzavřených budov."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "NPS monument je v roce 2026 otevřený, ale přístup do konkrétních historických budov a visitor-center služby jsou sezónní; ověřit denní program před příjezdem.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.9552,-121.4757",
+      "official": "https://www.nps.gov/tule/index.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Tule_Lake_National_Monument"
+    },
+    "photo": null,
+    "tags": ["japanese_american_incarceration", "history", "silence", "volcanic_basin"],
+    "rank": 1
+  },
+  {
+    "id": "r4-037",
+    "region": "R4",
+    "name": "Lava Beds National Monument — Main Park Road",
+    "category": "scenic_drive",
+    "subcategory": "lava_landscape_drive",
+    "lat": 41.8616,
+    "lng": -121.5174,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 340,
+    "description": "Parková silnice protíná lávové pláně, jalovcovou polopoušť a nízké krátery s Mount Shasta v dálce. Není to dramatická horská jízda, spíš dlouhý horizont přes geologicky podivnou, téměř měsíční krajinu s možností odbočovat k jeskyním a historickým místům.",
+    "why_bob": "Je to jeden z nejčistších mixů Bobových obsesí: vulkanismus, pustota, velká obloha, hluboký čas a silnice skrz něj.",
+    "time_needed": "1–2 h bez zastávek, půl dne se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 35,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Po setmění pozor na zvěř; přes den na rychlé změny počasí a požární omezení."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne až soumrak",
+    "season_note_2026": "NPS Current Conditions aktualizované 2. 9. 2026 uvádějí všechny silnice v Lava Beds jako otevřené. Zavřené jsou Balcony, Blue Grotto, Natural Bridge, Ovis, Paradise Alleys a Thunderbolt Cave; Schonchin Butte je zavřený kvůli opravě rozhledny a Fleener Chimneys kvůli vosám.",
+    "fee": "25 $/auto na 7 dní; America the Beautiful pass platí",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.8616,-121.5174",
+      "official": "https://www.nps.gov/labe/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Lava_Beds_National_Monument"
+    },
+    "photo": null,
+    "tags": ["lava", "big_sky", "volcanic", "road", "Mount_Shasta"],
+    "rank": 1
+  },
+  {
+    "id": "r4-038",
+    "region": "R4",
+    "name": "Mushpot Cave",
+    "category": "geology",
+    "subcategory": "lava_tube",
+    "lat": 41.7142,
+    "lng": -121.5098,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 350,
+    "description": "Krátká osvětlená lávová trubice hned u visitor center funguje jako rychlý vstup do podzemní geometrie Lava Beds. Stropy ukazují lávové krápníky, proudové linie a další tvary vzniklé, když tekutá láva odtekla zpod ztuhlé kůry.",
+    "why_bob": "Je to fyzická lekce geologie bez dekorace: pár minut od auta a najednou stojí uvnitř ztuhlého toku.",
+    "time_needed": "30–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 30,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Chladno a vlhko, pevné boty; před vstupem dodržet NPS screening a dekontaminační pravidla kvůli white-nose syndrome netopýrů."
+    },
+    "road_access": "paved",
+    "best_time": "kdykoli za dne; dobré i za vedra",
+    "season_note_2026": "K 2. 9. 2026 není Mushpot Cave na seznamu uzavřených jeskyní. Všechny parkové silnice jsou otevřené; stav znovu ověřit v den návštěvy.",
+    "fee": "v ceně vstupu do Lava Beds",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7142,-121.5098",
+      "official": "https://www.nps.gov/labe/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Mushpot_Cave"
+    },
+    "photo": null,
+    "tags": ["lava_tube", "geology", "underground", "easy"],
+    "rank": 1
+  },
+  {
+    "id": "r4-039",
+    "region": "R4",
+    "name": "Skull Cave",
+    "category": "geology",
+    "subcategory": "lava_tube",
+    "lat": 41.729,
+    "lng": -121.5117,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 350,
+    "description": "Skull Cave má nezvykle velký vstupní tunel a hlubší část s přetrvávajícím ledem, takže působí spíš jako podzemní hala než úzká jeskyně. Krátká samostatná návštěva zahrnuje schody a výrazný teplotní přechod z suché lávové pouště do studeného podzemí.",
+    "why_bob": "Kontrast černé lávy, tmy a starého ledu je přesně ten druh fyzického hlubokého času, který ho baví víc než klasická atrakce.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.0,
+      "elevation_m": 80,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Čelovka nutná mimo osvětlené části; schody mohou být mokré či namrzlé. Dodržet pravidla NPS pro ochranu netopýrů."
+    },
+    "road_access": "paved",
+    "best_time": "poledne nebo horké odpoledne",
+    "season_note_2026": "K 2. 9. 2026 není Skull Cave na seznamu uzavřených jeskyní Lava Beds. Všechny parkové silnice jsou otevřené.",
+    "fee": "v ceně vstupu do Lava Beds",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.729,-121.5117",
+      "official": "https://www.nps.gov/labe/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Lava_Beds_National_Monument"
+    },
+    "photo": null,
+    "tags": ["lava_tube", "ice", "darkness", "geology"],
+    "rank": 1
+  },
+  {
+    "id": "r4-040",
+    "region": "R4",
+    "name": "Valentine Cave",
+    "category": "geology",
+    "subcategory": "lava_tube",
+    "lat": 41.7159,
+    "lng": -121.519,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 350,
+    "description": "Valentine Cave je delší, neosvětlená lávová trubice s relativně hladkým dnem a výraznými proudovými strukturami na stěnách. Dá se projít bez technického lezení, ale pocit samoty a tmy je mnohem silnější než v Mushpot Cave.",
+    "why_bob": "Je to malá sólo expedice do tmy bez turistického spektáklu — geologie, ticho a vlastní kužel čelovky.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 1.5,
+      "elevation_m": 40,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Vzít dvě nezávislá světla, ochranu hlavy, dlouhé rukávy a pevné boty; dodržet pravidla ochrany netopýrů."
+    },
+    "road_access": "paved",
+    "best_time": "přes den; pod zemí je světlo stejně vlastní",
+    "season_note_2026": "K 2. 9. 2026 není Valentine Cave mezi jeskyněmi uzavřenými NPS. Všechny parkové silnice jsou otevřené.",
+    "fee": "v ceně vstupu do Lava Beds",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7159,-121.519",
+      "official": "https://www.nps.gov/labe/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Lava_Beds_National_Monument"
+    },
+    "photo": null,
+    "tags": ["lava_tube", "solitude", "darkness", "self_guided"],
+    "rank": 1
+  },
+  {
+    "id": "r4-041",
+    "region": "R4",
+    "name": "Captain Jack's Stronghold",
+    "category": "culture",
+    "subcategory": "historic_lava_trail",
+    "lat": 41.8387,
+    "lng": -121.5544,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 345,
+    "description": "Stezka se vine labyrintem lávových hřbetů a příkopů, které Modocové využili jako přirozenou pevnost během války v letech 1872–73. Terén vysvětluje historii sám: malá skupina se v rozbité lávě dokázala dlouho bránit mnohem větší armádě.",
+    "why_bob": "Tady se mu spojí McCarthyovská strohost krajiny s konkrétní, nepohodlnou historií násilí a odporu.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2.8,
+      "elevation_m": 80,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Ostrá láva, možné chřestýše a téměř žádný stín; v teple nést vodu a kulturní artefakty nechat na místě."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo podvečer",
+    "season_note_2026": "K 2. 9. 2026 jsou silnice v Lava Beds otevřené a Captain Jack's Stronghold není mezi aktuálními uzávěrami.",
+    "fee": "v ceně vstupu do Lava Beds",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.8387,-121.5544",
+      "official": "https://www.nps.gov/labe/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Captain_Jack%27s_Stronghold"
+    },
+    "photo": null,
+    "tags": ["Modoc_War", "lava", "history", "solitude"],
+    "rank": 1
+  },
+  {
+    "id": "r4-042",
+    "region": "R4",
+    "name": "Petroglyph Point",
+    "category": "culture",
+    "subcategory": "rock_art",
+    "lat": 41.8787,
+    "lng": -121.4987,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 340,
+    "description": "Skalní stěna z vulkanického tufu bývala ostrovem v dávném Tule Lake a nese jednu z největších koncentrací indiánských petroglyfů v Kalifornii. Krátká stezka pod útesem propojuje lidskou stopu s viditelnou změnou hladiny jezera a geologickým časem.",
+    "why_bob": "Je v tom jeho oblíbené měřítko člověk–čas–krajina: symboly vyryté do bývalého ostrova nad dnešní suchou pánví.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nedotýkat se petroglyfů ani měkkého tufu; v teplém počasí pozor na chřestýše a minimum stínu."
+    },
+    "road_access": "paved",
+    "best_time": "šikmé světlo ráno nebo večer",
+    "season_note_2026": "K 2. 9. 2026 jsou parkové silnice otevřené a Petroglyph Point není uveden mezi aktuálními uzávěrami.",
+    "fee": "v ceně vstupu do Lava Beds",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.8787,-121.4987",
+      "official": "https://www.nps.gov/labe/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Petroglyph_Point_Archeological_Site"
+    },
+    "photo": null,
+    "tags": ["petroglyphs", "deep_time", "Modoc", "tuff"],
+    "rank": 1
+  },
+  {
+    "id": "r4-043",
+    "region": "R4",
+    "name": "Lava Beds — night sky at Indian Well Campground",
+    "category": "dark_sky",
+    "subcategory": "stargazing",
+    "lat": 41.7142,
+    "lng": -121.51,
+    "nearest_town": "Tulelake, CA",
+    "distance_from_spine_km": 350,
+    "description": "Indian Well leží hluboko v řídce osídlené vulkanické krajině a po zhasnutí denních návštěvníků nabízí široký tmavý horizont. Stačí dojít pár desítek metrů od auta, sednout si na lávu a nechat oči přivyknout; bez observatoře, jen obloha nad černou pustinou.",
+    "why_bob": "Astrofyzika bez vitríny: temná obloha, láva a pocit, že lidské měřítko na chvíli zmizelo.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "V noci použít červené světlo, vzít teplé vrstvy a dávat pozor na nerovnou lávu; nerušit nocležníky v kempu."
+    },
+    "road_access": "paved",
+    "best_time": "po astronomickém soumraku, ideálně kolem novu",
+    "season_note_2026": "K 2. 9. 2026 NPS uvádí campground loops A a B otevřené a žádné aktuální fire restrictions v monumentu; stav ověřit v den návštěvy.",
+    "fee": "20 $ za kemp; samotné pozorování bez dalšího poplatku nad vstup do parku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7142,-121.51",
+      "official": "https://www.nps.gov/labe/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Lava_Beds_National_Monument"
+    },
+    "photo": null,
+    "tags": ["dark_sky", "stars", "lava", "solitude"],
+    "rank": 1
+  },
+  {
+    "id": "r4-044",
+    "region": "R4",
+    "name": "Smith Rock — Rim & River Trail",
+    "category": "geology",
+    "subcategory": "canyon_walk",
+    "lat": 44.3666,
+    "lng": -121.1408,
+    "nearest_town": "Terrebonne, OR",
+    "distance_from_spine_km": 415,
+    "description": "Z okraje se otevře hluboký kaňon Crooked River sevřený oranžovými tufovými stěnami a čedičovými věžemi, pak lze sejít k řece a jít pod útesy. Krátká kombinace Rim Rock a River Trail dává maximum geologie bez nutnosti lézt na vrchol.",
+    "why_bob": "Je to výjimečná odbočka daleko od pobřeží právě pro něj: suchý kaňon, skála, velké nebe a cesta pod stěnami místo turistické atrakce.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 5.0,
+      "elevation_m": 120,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Crooked River",
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Řeku zde nedoporučuji jako koupací lokalitu; v září může být velmi horko, je málo stínu a v okolí jsou chřestýši."
+    },
+    "road_access": "paved",
+    "best_time": "brzy ráno nebo poslední 2 h světla",
+    "season_note_2026": "Oregon State Parks uvádí Smith Rock v roce 2026 otevřený od úsvitu do soumraku. Běžné sezónní lezecké uzávěry kvůli hnízdění končí přibližně 1. 8. a tuto pěší trasu neblokují.",
+    "fee": "denní parkovací permit, obvykle 5 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.3666,-121.1408",
+      "official": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=36",
+      "wiki": "https://en.wikipedia.org/wiki/Smith_Rock_State_Park"
+    },
+    "photo": null,
+    "tags": ["canyon", "tuff", "high_desert", "river", "big_sky"],
+    "rank": 1
+  },
+  {
+    "id": "r4-045",
+    "region": "R4",
+    "name": "Smith Rock — Misery Ridge Loop",
+    "category": "geology",
+    "subcategory": "ridge_trail",
+    "lat": 44.3666,
+    "lng": -121.1408,
+    "nearest_town": "Terrebonne, OR",
+    "distance_from_spine_km": 415,
+    "description": "Strmý výstup na Misery Ridge rychle získá několik set výškových metrů a otevře pohled přes Monkey Face k řetězci Cascade Range. Sestup kolem zadní strany masivu a podél Crooked River udělá z krátké trasy plnohodnotný pouštní horský okruh.",
+    "why_bob": "Když bude mít chuť se zadýchat, je to kompaktní dávka jeho milovaného amerického Západu: suchá skála, horizont a vulkány v dálce.",
+    "time_needed": "2,5–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 6.0,
+      "elevation_m": 320,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Strmé a místy sypké; za horka vyrážet brzy a nést dost vody. Chřestýši a exponované slunce jsou reálná rizika."
+    },
+    "road_access": "paved",
+    "best_time": "svítání až dopoledne",
+    "season_note_2026": "Oregon State Parks uvádí park v roce 2026 otevřený od úsvitu do soumraku; trasa je běžně přístupná, ale respektovat případné lokální wildlife closures.",
+    "fee": "denní parkovací permit, obvykle 5 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.3666,-121.1408",
+      "official": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=36",
+      "wiki": "https://en.wikipedia.org/wiki/Smith_Rock_State_Park"
+    },
+    "photo": null,
+    "tags": ["ridge", "canyon", "high_desert", "Cascade_views", "hard_walk"],
+    "rank": 1
+  },
+  {
+    "id": "r4-046",
+    "region": "R4",
+    "name": "Paulina Peak",
+    "category": "mountain",
+    "subcategory": "volcanic_viewpoint",
+    "lat": 43.6892209,
+    "lng": -121.2547723,
+    "nearest_town": "La Pine, OR",
+    "distance_from_spine_km": 390,
+    "description": "Vrchol nad Newberry Caldera dává téměř letecký pohled na Paulina Lake, East Lake, Big Obsidian Flow a suchou centrální Oregon. Za čistého dne se na horizontu skládá dlouhá řada Kaskád a pod nohama je čitelná celá struktura obřího štítového vulkánu.",
+    "why_bob": "Tohle je jeho kosmologická geologie v jednom obraze: kaldera, obsidián, vulkány a horizont, kde člověk vypadá směšně malý.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.0,
+      "elevation_m": 60,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Na vrcholu silný vítr a rychlý pokles teploty; poslední úsek silnice může být hrbolatý a po časném sněhu se zavírá."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "pozdní odpoledne při čistém vzduchu",
+    "season_note_2026": "USFS uvádí Paulina Peak road typicky sjízdnou od začátku července do pozdního října nebo začátku listopadu podle sněhu. V září 2026 platí v Deschutes National Forest Stage 2 fire restrictions, které samotný přístup neruší.",
+    "fee": "5 $ recreation fee nebo příslušný pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.6892209,-121.2547723",
+      "official": "https://www.fs.usda.gov/r06/deschutes/recreation/paulina-peak-observation-site",
+      "wiki": "https://en.wikipedia.org/wiki/Paulina_Peak"
+    },
+    "photo": null,
+    "tags": ["caldera", "volcano", "panorama", "big_sky", "geology"],
+    "rank": 1
+  },
+  {
+    "id": "r4-047",
+    "region": "R4",
+    "name": "Big Obsidian Flow",
+    "category": "geology",
+    "subcategory": "obsidian_trail",
+    "lat": 43.6976,
+    "lng": -121.2524,
+    "nearest_town": "La Pine, OR",
+    "distance_from_spine_km": 390,
+    "description": "Nejmladší lávový proud v Oregonu je chaotické pole černého obsidiánu a světlé pemzy uvnitř Newberry Caldera. Krátká smyčka stoupá na proud a ukazuje sklovitou horninu, ostré bloky a výhled přes kalderu; je vizuálně podivnější než běžná láva.",
+    "why_bob": "Černé vulkanické sklo pod nohama je přesně jeho typ krásy: fyzika materiálu, násilná geologie a žádná uhlazenost.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 1.6,
+      "elevation_m": 80,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Obsidián je extrémně ostrý; pevné boty, nic neodnášet a nescházet z vyznačené trasy. V poledne může být povrch velmi horký."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo podvečer",
+    "season_note_2026": "Newberry National Volcanic Monument je v září běžně přístupný; na začátku října může přístup změnit časný sníh. V roce 2026 platí v Deschutes NF Stage 2 fire restrictions; ověřit denní closure mapu.",
+    "fee": "5 $ recreation fee nebo příslušný pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.6976,-121.2524",
+      "official": "https://www.fs.usda.gov/r06/deschutes/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Newberry_Volcano"
+    },
+    "photo": null,
+    "tags": ["obsidian", "lava", "volcano", "strange_landscape"],
+    "rank": 1
+  },
+  {
+    "id": "r4-048",
+    "region": "R4",
+    "name": "East Lake — southwest shore",
+    "category": "lake_river",
+    "subcategory": "caldera_lake_swim",
+    "lat": 43.71798611,
+    "lng": -121.2108917,
+    "nearest_town": "La Pine, OR",
+    "distance_from_spine_km": 395,
+    "description": "East Lake leží v Newberry Caldera mezi borovicemi a nízkými vulkanickými hřebeny; jihozápadní přístup dává snadný vstup k vodě bez horské túry. Mimo víkendové špičky lze najít klidnější úsek břehu a spojit studené koupání s obsidiánovou a kalderovou krajinou.",
+    "why_bob": "Je to pro něj téměř ideální kombinace: chladná voda uvnitř vulkánu, borovice a možnost po plavání sedět s knihou u kaldery.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "kalderové jezero",
+      "temp_c_sept_oct": "8–16",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Studený šok, vítr a rychlé vlnění; držet se blízko břehu a mimo lodní provoz. Před vstupem vždy zkontrolovat OHA cyanobacteria advisories — k 8. 9. 2026 East Lake na aktuálním seznamu advisory není."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní dopoledne až odpoledne; na plavání za slabého větru",
+    "season_note_2026": "USFS stránka East Lake Boating Site uvádí pro sezonu 2026 Site Open. Přístup může na začátku října změnit první sníh; před koupáním znovu ověřit OHA advisories.",
+    "fee": "5 $ recreation fee nebo příslušný pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.71798611,-121.2108917",
+      "official": "https://www.fs.usda.gov/r06/deschutes/recreation/east-lake-boating-site",
+      "wiki": "https://en.wikipedia.org/wiki/East_Lake_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "caldera", "pine", "volcanic_lake"],
+    "rank": 1
+  },
+  {
+    "id": "r4-049",
+    "region": "R4",
+    "name": "Painted Hills — Overlook & Painted Cove",
+    "category": "geology",
+    "subcategory": "badlands_walk",
+    "lat": 44.6534,
+    "lng": -120.2653,
+    "nearest_town": "Mitchell, OR",
+    "distance_from_spine_km": 455,
+    "description": "Vrstvené kopce v odstínech červené, zlaté, černé a šedé jsou erodované paleopůdy, které zapisují desítky milionů let klimatických změn. Overlook a krátký Painted Cove Trail dávají největší vizuální zásah s minimem chůze; za šikmého světla se barvy mění téměř po minutách.",
+    "why_bob": "Je to jedna z mála 450km odboček, kterou bych mu bez váhání vnutila: polopoušť, barva, hluboký čas a krajina skoro mimo planetu.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.5,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Žádná voda ani stín; nešlapat na barevné jílové svahy, které se snadno poškozují. Za mokra může být povrch velmi kluzký."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "poslední 2–3 h před západem",
+    "season_note_2026": "NPS Current Conditions z 8. 9. 2026 neuvádějí uzávěru Painted Hills Unit; návštěvnické trasy jsou přístupné. Po požárech nebo dešti ověřit stav přístupové silnice před takto dlouhou odbočkou.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.6534,-120.2653",
+      "official": "https://www.nps.gov/joda/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Painted_Hills"
+    },
+    "photo": null,
+    "tags": ["badlands", "deep_time", "semi_desert", "color", "big_sky"],
+    "rank": 1
+  },
+  {
+    "id": "r4-050",
+    "region": "R4",
+    "name": "Painted Hills — Carroll Rim Trail",
+    "category": "geology",
+    "subcategory": "ridge_trail",
+    "lat": 44.6492,
+    "lng": -120.2682,
+    "nearest_town": "Mitchell, OR",
+    "distance_from_spine_km": 455,
+    "description": "Krátký, ale znatelně stoupající trail vede na hřbet nad Painted Hills a místo detailu dává širokou kompozici celé barevné pánve a suchých kopců centrálního Oregonu. Je to nejlepší způsob, jak z lokality udělat krajinu, ne jen fotografovaný objekt.",
+    "why_bob": "Bob tu dostane přesně to, co hledá na skále s knihou: odstup, vítr, barevnou pustinu pod sebou a obrovský horizont.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2.6,
+      "elevation_m": 125,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Otevřený svah bez stínu; za horka vzít vodu, za větru opatrnost na hřebeni a neopouštět trail přes křehké barevné vrstvy."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "NPS Current Conditions z 8. 9. 2026 neuvádějí uzávěru Painted Hills Unit ani Carroll Rim Trail; po dešti nebo požáru se stav může změnit, proto ověřit před 450km odbočkou.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.6492,-120.2682",
+      "official": "https://www.nps.gov/joda/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Painted_Hills"
+    },
+    "photo": null,
+    "tags": ["ridge", "badlands", "deep_time", "solitude", "sunset"],
+    "rank": 1
+  }
+]

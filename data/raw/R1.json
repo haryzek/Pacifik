@@ -1,0 +1,2322 @@
+[
+  {
+    "id": "r1-001",
+    "region": "R1",
+    "name": "Pike Place Market — early-morning arcades",
+    "category": "culture",
+    "subcategory": "urban_market",
+    "lat": 47.6097,
+    "lng": -122.3425,
+    "nearest_town": "Seattle, WA",
+    "distance_from_spine_km": 0,
+    "description": "Ne jako turistickou atrakci, ale jako krátký ponor do starého městského organismu: mokrý asfalt, ryby, nakládací rampy, neon, kavárny a pohledy dolů k Elliott Bay. Přijeď kolem sedmé až osmé, kdy už pracují stánkaři, ale hlavní turistická masa ještě nedorazila.",
+    "why_bob": "Brzké ráno tu má přesně ten Hopperovský mix práce, městské samoty, starých výloh, pachů přístavu a probouzejícího se chaosu.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 40,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "7:00–9:00 nebo poslední hodina před zavíráním",
+    "season_note_2026": "otevřeno denně; většina provozů funguje zhruba 10:00–17:00, potravinové provozy začínají dřív",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.6097,-122.3425",
+      "official": "https://www.pikeplacemarket.org/about-pike-place-market/plan-your-visit/",
+      "wiki": "https://en.wikipedia.org/wiki/Pike_Place_Market"
+    },
+    "photo": null,
+    "tags": ["hopper", "urban_grit", "harbor", "early_morning"],
+    "rank": 2
+  },
+  {
+    "id": "r1-002",
+    "region": "R1",
+    "name": "Elliott Bay Book Company",
+    "category": "culture",
+    "subcategory": "bookstore",
+    "lat": 47.6147,
+    "lng": -122.3198,
+    "nearest_town": "Seattle, WA",
+    "distance_from_spine_km": 3,
+    "description": "Velké nezávislé knihkupectví s historií od roku 1973, dřevěnými regály, hlubokým backlistem a pravidelnými autorskými akcemi. Je to místo, kde dává smysl na dvě hodiny přestat cestovat, vzít knihu a prostě zmizet mezi policemi.",
+    "why_bob": "Pro člověka, který road trip potřebuje prokládat dlouhými tichými intervaly s literaturou, je to jedna z mála seattleských zastávek, která není povinnou turistikou.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "deštivé odpoledne nebo večer",
+    "season_note_2026": "aktivní a otevřené v roce 2026; před návštěvou zkontroluj aktuální hodiny a případný autorský program",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.6147,-122.3198",
+      "official": "https://www.elliottbaybook.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Elliott_Bay_Book_Company"
+    },
+    "photo": null,
+    "tags": ["books", "independent", "rainy_day", "slow_time"],
+    "rank": 2
+  },
+  {
+    "id": "r1-003",
+    "region": "R1",
+    "name": "Easy Street Records & Cafe",
+    "category": "culture",
+    "subcategory": "record_store_diner",
+    "lat": 47.5616,
+    "lng": -122.3868,
+    "nearest_town": "Seattle, WA",
+    "distance_from_spine_km": 9,
+    "description": "Nezávislý west-seattleský obchod s deskami spojený s jednoduchým café-dinerem, kde se hudba nežije jako designový koncept. Je tu silná vazba na severozápadní scénu, vinyl, plakáty, instore koncerty a normální jídlo.",
+    "why_bob": "Analogová hudba, americký diner a lokální rocková historie v jednom prostoru jsou mnohem přesnější zásah než další seattleské muzeum.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "pozdní dopoledne; ještě lepší při instore koncertu",
+    "season_note_2026": "aktivní; na období cesty jsou vypsané instore akce včetně Brian Fallon 21. 9. a další live akce 27. 9. 2026; ověř program těsně před návštěvou",
+    "fee": "zdarma mimo případný koncert",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.5616,-122.3868",
+      "official": "https://easystreetonline.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Easy_Street_Records"
+    },
+    "photo": null,
+    "tags": ["vinyl", "rock_history", "diner", "analog"],
+    "rank": 1
+  },
+  {
+    "id": "r1-004",
+    "region": "R1",
+    "name": "Tractor Tavern",
+    "category": "culture",
+    "subcategory": "live_music",
+    "lat": 47.6658,
+    "lng": -122.3828,
+    "nearest_town": "Seattle, WA",
+    "distance_from_spine_km": 9,
+    "description": "Ballardský klub zaměřený na roots rock, folk, blues, Americana, psychedelii a kapely, které pořád znějí jako kapely. Prostor je malý, neokázalý a mnohem bližší hudebnímu baru než koncertnímu průmyslu.",
+    "why_bob": "Je to přesně typ místa, kde může po dni na silnici dostat živou kytaru, hlas a trochu špíny místo naleštěné show.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "alkohol až po řízení"
+    },
+    "road_access": "paved",
+    "best_time": "večer podle programu",
+    "season_note_2026": "program je vypsaný i pro dobu cesty; mimo jiné Temples 26. 9., J. Roddy Walston 4. 10. a Aaron Lee Tasjan 7. 10. 2026; ověř dostupnost vstupenek",
+    "fee": "podle koncertu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.6658,-122.3828",
+      "official": "https://tractortavern.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["live_music", "psychedelic", "roots", "bar_with_soul"],
+    "rank": 1
+  },
+  {
+    "id": "r1-005",
+    "region": "R1",
+    "name": "Twede's Cafe — Double R Diner",
+    "category": "food_gem",
+    "subcategory": "film_location_diner",
+    "lat": 47.4959,
+    "lng": -121.7851,
+    "nearest_town": "North Bend, WA",
+    "distance_from_spine_km": 48,
+    "description": "Skutečný diner použitý jako Double R Diner v Twin Peaks, Fire Walk with Me i návratu seriálu. Uvnitř zůstává dost původního dinerového charakteru, kafe, boxy a cherry pie; merchandising ignoruj.",
+    "why_bob": "Tady se jeho Lynchovská fascinace potkává s opravdovým americkým dinerem, takže návštěva funguje i bez fanouškovského cosplaye.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdní odpoledne mimo fanouškovskou špičku",
+    "season_note_2026": "aktivní provoz v roce 2026; město North Bend ho stále uvádí jako oficiální Twin Peaks lokaci, aktuální hodiny ověř v den návštěvy",
+    "fee": "jen útrata",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.4959,-121.7851",
+      "official": "https://www.twedescafe.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Twede%27s_Cafe"
+    },
+    "photo": null,
+    "tags": ["twin_peaks", "diner", "lynch", "americana"],
+    "rank": 1
+  },
+  {
+    "id": "r1-006",
+    "region": "R1",
+    "name": "Snoqualmie Falls & Salish Lodge exterior",
+    "category": "waterfall",
+    "subcategory": "viewpoint_film_location",
+    "lat": 47.5417,
+    "lng": -121.8377,
+    "nearest_town": "Snoqualmie, WA",
+    "distance_from_spine_km": 43,
+    "description": "Mocný 82metrový vodopád padající do temného kaňonu; nad hranou stojí Salish Lodge, seriálový Great Northern Hotel. Horní vyhlídky jsou snadné, sestup k dolnímu pohledu přidá krátkou, strmější procházku.",
+    "why_bob": "Je to jeden z těch vzácných filmových poutních bodů, kde Lynch nepotřeboval realitu přikrášlit — voda, les, mlha a hotel už samy vypadají jako nevědomí.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.2,
+      "elevation_m": 150,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "řeka pod vodopádem",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": "low",
+      "safety": "žádné koupání u vodopádu; proud, kluzké skály a hydraulika"
+    },
+    "road_access": "paved",
+    "best_time": "brzké ráno, déšť nebo mlha",
+    "season_note_2026": "otevřeno; Salish Lodge a vodopád jsou městem Snoqualmie stále uváděné mezi hlavními Twin Peaks lokacemi",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.5417,-121.8377",
+      "official": "https://www.snoqualmiewa.gov/379/Twin-Peaks",
+      "wiki": "https://en.wikipedia.org/wiki/Snoqualmie_Falls"
+    },
+    "photo": null,
+    "tags": ["twin_peaks", "waterfall", "mist", "lynch"],
+    "rank": 1
+  },
+  {
+    "id": "r1-007",
+    "region": "R1",
+    "name": "Reinig Bridge — Ronette's Bridge",
+    "category": "culture",
+    "subcategory": "film_location",
+    "lat": 47.5299,
+    "lng": -121.8114,
+    "nearest_town": "Snoqualmie, WA",
+    "distance_from_spine_km": 45,
+    "description": "Dnešní pěší most na Snoqualmie Valley Trail je seriálovou Ronette's Bridge, kde se po útoku objeví Ronette Pulaski. Není tu atrakce ani scénografie, jen most, řeka, stromy a zvláštní obyčejnost skutečného místa.",
+    "why_bob": "Právě absence show kolem místa z něj dělá čistý Lynchův moment — banální infrastruktura, která v hlavě nese děsivou emocionální vrstvu.",
+    "time_needed": "20–40 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Snoqualmie River",
+      "temp_c_sept_oct": null,
+      "legal": "unknown",
+      "solitude": "medium",
+      "safety": "proměnlivý proud; most není doporučený koupací přístup"
+    },
+    "road_access": "paved",
+    "best_time": "šedé ráno nebo podvečer",
+    "season_note_2026": "přístupné; město Snoqualmie a North Bend Visitors Bureau lokalitu v roce 2026 nadále uvádějí mezi Twin Peaks místy",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.5299,-121.8114",
+      "official": "https://www.snoqualmiewa.gov/379/Twin-Peaks",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["twin_peaks", "lynch", "river", "quiet"],
+    "rank": 1
+  },
+  {
+    "id": "r1-008",
+    "region": "R1",
+    "name": "Reinig Road — Welcome to Twin Peaks sign site",
+    "category": "culture",
+    "subcategory": "film_location",
+    "lat": 47.525452,
+    "lng": -121.785446,
+    "nearest_town": "Snoqualmie, WA",
+    "distance_from_spine_km": 46,
+    "description": "Obyčejný oblouk venkovské Reinig Road s Mount Si v pozadí, kde stál seriálový nápis Welcome to Twin Peaks. Samotný nápis tu trvale není; podstatný je nezměněný rám obrazu — silnice, dráty, stromy a hora.",
+    "why_bob": "Je to skoro konceptuální anti-atrakce: stojíš v reálném prostoru jednoho z nejsilnějších televizních obrazů a nic ti nepomáhá kromě vlastní paměti.",
+    "time_needed": "10–20 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "úzká veřejná silnice; zastav jen úplně mimo jízdní pruh a respektuj soukromé pozemky"
+    },
+    "road_access": "paved",
+    "best_time": "ráno s nízkou oblačností na Mount Si",
+    "season_note_2026": "místo je přístupné, ale žádný stálý seriálový nápis zde není; město Snoqualmie uvádí původní Lynchovy kresby nápisu v City Hall",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.525452,-121.785446",
+      "official": "https://www.snoqualmiewa.gov/379/Twin-Peaks",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["twin_peaks", "lynch", "roadside", "mount_si"],
+    "rank": 1
+  },
+  {
+    "id": "r1-009",
+    "region": "R1",
+    "name": "DirtFish — Twin Peaks Sheriff's Department exterior",
+    "category": "culture",
+    "subcategory": "film_location",
+    "lat": 47.5304,
+    "lng": -121.8138,
+    "nearest_town": "Snoqualmie, WA",
+    "distance_from_spine_km": 45,
+    "description": "Bývalý areál Weyerhaeuseru, dnes rally škola DirtFish, obsahuje budovu použitou jako Twin Peaks Sheriff's Department a vazbu na Packard Sawmill. Není to opuštěný filmový park, ale živý průmyslový areál, což mu paradoxně pomáhá.",
+    "why_bob": "Starý pilový průmysl, Lynch a skutečná fungující technická krajina dávají dohromady mnohem víc atmosféry než naleštěná filmová atrakce.",
+    "time_needed": "20–40 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "aktivní areál; drž se návštěvnického prostoru a nevstupuj na trať ani do neveřejných budov"
+    },
+    "road_access": "paved",
+    "best_time": "běžná provozní doba",
+    "season_note_2026": "DirtFish je aktivní podnik a město Snoqualmie lokalitu v roce 2026 stále uvádí jako Sheriff's Department; rozsah vstupu dovnitř závisí na provozu",
+    "fee": "zdarma pro běžné krátké zastavení, pokud provoz dovolí",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.5304,-121.8138",
+      "official": "https://www.snoqualmiewa.gov/379/Twin-Peaks",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["twin_peaks", "industrial", "sawmill", "lynch"],
+    "rank": 2
+  },
+  {
+    "id": "r1-010",
+    "region": "R1",
+    "name": "Fort Worden — Artillery Hill batteries",
+    "category": "oddity",
+    "subcategory": "abandoned_fortifications",
+    "lat": 48.1374,
+    "lng": -122.7755,
+    "nearest_town": "Port Townsend, WA",
+    "distance_from_spine_km": 24,
+    "description": "Rozsáhlé betonové pobřežní baterie zarůstající na kopci nad Strait of Juan de Fuca: prázdné chodby, rezavé dveře, temné místnosti a vítr od moře. Dá se poskládat dvou- až šestikilometrové bloumání mezi bateriemi a vyhlídkami.",
+    "why_bob": "Je to washingtonský Stalker bez filmové dekorace — opuštěná vojenská geometrie, vlhkost, ticho, zvuk větru a moře za betonem.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 5,
+      "elevation_m": 130,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "uvnitř baterií tma, schody a nerovné povrchy; vezmi čelovku"
+    },
+    "road_access": "paved",
+    "best_time": "zataženo, mlha nebo pozdní odpoledne",
+    "season_note_2026": "státní park je otevřen; historické baterie jsou přístupné přes den, jednotlivé vnitřní prostory mohou mít lokální uzávěry",
+    "fee": "Discover Pass 10 $/den nebo 30 $/rok",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1374,-122.7755",
+      "official": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+      "wiki": "https://en.wikipedia.org/wiki/Fort_Worden"
+    },
+    "photo": null,
+    "tags": ["abandoned", "military", "stalker_vibe", "fog"],
+    "rank": 1
+  },
+  {
+    "id": "r1-011",
+    "region": "R1",
+    "name": "Point Wilson Lighthouse",
+    "category": "coast",
+    "subcategory": "lighthouse",
+    "lat": 48.1437,
+    "lng": -122.7555,
+    "nearest_town": "Port Townsend, WA",
+    "distance_from_spine_km": 25,
+    "description": "Bílý maják z roku 1914 stojí na exponovaném bodě, kde se potkává Strait of Juan de Fuca s Admiralty Inlet. I bez vstupu do věže funguje kombinace majáku, štěrkové pláže, lodí a otevřené vody skvěle.",
+    "why_bob": "Maják na větrném rozhraní dvou velkých vodních prostorů je skoro učebnicový obraz jeho melancholické pobřežní estetiky.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Strait of Juan de Fuca / Admiralty Inlet",
+      "temp_c_sept_oct": "10–13",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "silné přílivové proudy na Point Wilson; není to doporučené místo ke koupání"
+    },
+    "road_access": "paved",
+    "best_time": "vítr, podvečer; víkend 11:00–16:00 pro případnou prohlídku",
+    "season_note_2026": "areál přístupný přes Fort Worden; prohlídky majáku probíhají v roce 2026 v sobotu a neděli 11:00–16:00 s pauzou 12:30–13:00, bez rezervace",
+    "fee": "prohlídka zdarma/dobrovolný příspěvek; parkování vyžaduje Discover Pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1437,-122.7555",
+      "official": "https://www.pointwilsonlighthouse.org/tour-hours",
+      "wiki": "https://en.wikipedia.org/wiki/Point_Wilson_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "wind", "strait", "melancholy"],
+    "rank": 1
+  },
+  {
+    "id": "r1-012",
+    "region": "R1",
+    "name": "Dungeness Spit — short out-and-back",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 48.1421,
+    "lng": -123.187,
+    "nearest_town": "Sequim, WA",
+    "distance_from_spine_km": 11,
+    "description": "Úzký pás štěrku a naplaveného dřeva se táhne kilometry do Strait of Juan de Fuca, s vodou po obou stranách a horami za zády. Nechoď nutně všech 18 km k majáku; pět až deset kilometrů tam a zpět poskytne stejný pocit lineární prázdnoty.",
+    "why_bob": "Dlouhá holá osa mezi mořem a nebem je přesně typ krajiny, ve které může dvě hodiny jít bez jediného vizuálního rozptýlení.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 8,
+      "elevation_m": 40,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Strait of Juan de Fuca",
+      "temp_c_sept_oct": "10–13",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "studená voda, vítr, proudy a dlouhý exponovaný břeh; ke koupání jsou lepší chráněnější zátoky"
+    },
+    "road_access": "paved",
+    "best_time": "ráno, zataženo; sleduj příliv a vítr",
+    "season_note_2026": "refuge je otevřen od východu slunce do půl hodiny před západem; některé části jsou trvale uzavřené kvůli hnízdění a ochraně živočichů",
+    "fee": "cca 3 $ za rodinu/skupinu; federální pasy uznávány",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1421,-123.187",
+      "official": "https://www.fws.gov/refuge/dungeness/visit-us/activities",
+      "wiki": "https://en.wikipedia.org/wiki/Dungeness_Spit"
+    },
+    "photo": null,
+    "tags": ["spit", "big_sky", "wind", "long_walk"],
+    "rank": 2
+  },
+  {
+    "id": "r1-013",
+    "region": "R1",
+    "name": "Ediz Hook",
+    "category": "coast",
+    "subcategory": "harbor_viewpoint",
+    "lat": 48.1404,
+    "lng": -123.4186,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 4,
+    "description": "Dlouhá nízká kosa zasunutá do Port Angeles Harbor nabízí současně nákladní přístav, oceánské lodě, světla města a přes Strait kanadské pobřeží. Není krásná klasicky; je to spíš pobřežní průmyslový balkon.",
+    "why_bob": "Kombinace studené vody, kontejnerů, lodí a horského horizontu má víc Hopperovy Ameriky než uhlazená městská vyhlídka.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 5,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Strait of Juan de Fuca / Port Angeles Harbor",
+      "temp_c_sept_oct": "10–13",
+      "legal": "unknown",
+      "solitude": "medium",
+      "safety": "lodní provoz, proudy a průmyslový přístav; nekoupat se zde"
+    },
+    "road_access": "paved",
+    "best_time": "soumrak nebo časné ráno",
+    "season_note_2026": "veřejná část Ediz Hook je přístupná; konec kosy obsahuje zařízení Coast Guard, respektuj značené hranice",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1404,-123.4186",
+      "official": "https://www.cityofpa.us/",
+      "wiki": "https://en.wikipedia.org/wiki/Ediz_Hook"
+    },
+    "photo": null,
+    "tags": ["industrial_coast", "hopper", "harbor", "dusk"],
+    "rank": 2
+  },
+  {
+    "id": "r1-014",
+    "region": "R1",
+    "name": "Freshwater Bay County Park",
+    "category": "coast",
+    "subcategory": "cold_water_swim",
+    "lat": 48.1541,
+    "lng": -123.5949,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 8,
+    "description": "Malá zátoka na Strait of Juan de Fuca s veřejnou oblázkovou pláží a lodní rampou, chráněnější než otevřený oceán. Pro zkušeného studenovodního plavce je to rozumný bod na krátké ponoření bez pacifického příboje.",
+    "why_bob": "Je to jednoduchý, neturistický přístup k opravdu studené mořské vodě, pár minut od trasy a s dobrou šancí na klid.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "slaný Strait of Juan de Fuca",
+      "temp_c_sept_oct": "10–13",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "bez plavčíka; studený šok, lodě a při větru vlny; zůstaň blízko břehu"
+    },
+    "road_access": "paved",
+    "best_time": "klidné dopoledne bez silného západního větru",
+    "season_note_2026": "spodní picnic area, lodní rampa a beach access jsou otevřené celoročně; horní picnic area zavírá po 15. 9., což přístup k vodě neblokuje",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1541,-123.5949",
+      "official": "https://www.clallamcountywa.gov/facilities/facility/details/Freshwater-Bay-County-Park-13",
+      "wiki": "https://en.wikipedia.org/wiki/Freshwater_Bay_(Washington)"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "strait", "quiet", "local"],
+    "rank": 1
+  },
+  {
+    "id": "r1-015",
+    "region": "R1",
+    "name": "Salt Creek Recreation Area — Tongue Point",
+    "category": "coast",
+    "subcategory": "tidepools_bunkers",
+    "lat": 48.1633,
+    "lng": -123.698,
+    "nearest_town": "Joyce, WA",
+    "distance_from_spine_km": 17,
+    "description": "Tongue Point vybíhá do Strait of Juan de Fuca jako černá skalnatá platforma plná přílivových jezírek; nad pobřežím zůstaly betonové pozůstatky WWII Camp Hayden. Za odlivu se dá hodinu až dvě bloumat mezi sasankami, hvězdicemi, skálou a vojenskými relikty.",
+    "why_bob": "Spojuje syrový severní oceán, biologický mikrosvět a rezavou vojenskou melancholii v jednom malém prostoru.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Strait of Juan de Fuca",
+      "temp_c_sept_oct": "10–13",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "na Tongue Point ostré a kluzké skály, příliv a proud; na koupání použij raději sousední Crescent Bay"
+    },
+    "road_access": "paved",
+    "best_time": "nízký odliv; ideálně podvečer",
+    "season_note_2026": "county recreation area je otevřená; před sestupem na skály zkontroluj NOAA tide table",
+    "fee": "denní vstup zpravidla zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1633,-123.698",
+      "official": "https://www.clallamcountywa.gov/588/Salt-Creek-Recreation-Area",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["tidepools", "wwii", "rocks", "strait"],
+    "rank": 1
+  },
+  {
+    "id": "r1-016",
+    "region": "R1",
+    "name": "Crescent Bay at Salt Creek",
+    "category": "coast",
+    "subcategory": "cold_water_swim",
+    "lat": 48.1627,
+    "lng": -123.711,
+    "nearest_town": "Joyce, WA",
+    "distance_from_spine_km": 18,
+    "description": "Půlměsícová zátoka vedle Salt Creek je výrazně příjemnější ke vstupu do vody než skalnatý Tongue Point. Za klidného počasí nabízí krátký, skutečně studený mořský swim s lesnatými výběžky po stranách.",
+    "why_bob": "Pro jeho toleranci k desetistupňové vodě je to jeden z nejlepších straitových dipů celé severní strany Olympijského poloostrova.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.7,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "slaný Strait of Juan de Fuca",
+      "temp_c_sept_oct": "10–13",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "bez plavčíka; swell může proniknout i do zátoky, hlídej vítr, příliv a studený šok"
+    },
+    "road_access": "paved",
+    "best_time": "bezvětří až slabý vítr, ráno",
+    "season_note_2026": "přístup přes Salt Creek Recreation Area je otevřen; po podzimních bouřích vyhodnoť podmínky na místě a nevstupuj do rozbitého příboje",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1627,-123.711",
+      "official": "https://www.clallamcountywa.gov/588/Salt-Creek-Recreation-Area",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["cold_swim", "cove", "strait", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r1-017",
+    "region": "R1",
+    "name": "Strait of Juan de Fuca Highway — SR 112",
+    "category": "scenic_drive",
+    "subcategory": "coastal_road",
+    "lat": 48.104,
+    "lng": -123.5744,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 0,
+    "description": "Začni na odbočení z US-101 západně od Port Angeles a drž SR 112 přes Joyce, Pysht a Clallam Bay směrem na Neah Bay. Silnice střídá les, osamělé domy, ústí řek a krátké záblesky studeného průlivu; není grandiózní každou minutu, ale má výborný road-movie rytmus.",
+    "why_bob": "Je to syrovější a méně uhlazená alternativa k hlavní US-101 — mokrý asfalt, dřevařská historie, moře a malé komunity bez turistické scénografie.",
+    "time_needed": "3–5 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 125,
+      "elevation_m": 900,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "zvěř, déšť a mokré zatáčky; za tmy počítej s velmi slabým osvětlením"
+    },
+    "road_access": "paved",
+    "best_time": "celý den v proměnlivém počasí",
+    "season_note_2026": "celoroční státní silnice; před jízdou zkontroluj aktuální WSDOT alerts kvůli lokálním pracím nebo sesuvům",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.104,-123.5744",
+      "official": "https://wsdot.wa.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Washington_State_Route_112"
+    },
+    "photo": null,
+    "tags": ["road_movie", "strait", "logging_country", "rain"],
+    "rank": 1
+  },
+  {
+    "id": "r1-018",
+    "region": "R1",
+    "name": "Cape Flattery",
+    "category": "coast",
+    "subcategory": "cliff_viewpoint_trail",
+    "lat": 48.3846,
+    "lng": -124.7155,
+    "nearest_town": "Neah Bay, WA",
+    "distance_from_spine_km": 83,
+    "description": "Krátká lesní stezka vede na několik plošin nad strmými pobřežními útesy, jeskyněmi a mořskými stacky na nejseverozápadnějším cípu kontinentálních USA. V dobrém větru tu Pacifik nevypadá jako pláž, ale jako obrovská fyzikální síla.",
+    "why_bob": "Tady dostane přesně to, co hledá na pobřeží: hranu kontinentu, černé skály, studený vítr a lidské měřítko rozpuštěné v oceánu.",
+    "time_needed": "1.5–2.5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.4,
+      "elevation_m": 120,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "10–13",
+      "legal": "prohibited",
+      "solitude": "medium",
+      "safety": "strmé útesy a extrémně nebezpečný oceán; žádné koupání ani slézání k vodě"
+    },
+    "road_access": "paved",
+    "best_time": "podvečer, vítr, proměnlivá oblačnost",
+    "season_note_2026": "Makah Tribe uvádí Cape Flattery Trail otevřený celoročně od svítání do 30 minut po západu slunce; vyžaduje Makah Recreation Pass",
+    "fee": "20 $ Makah Recreation Pass za vozidlo, platný kalendářní rok",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.3846,-124.7155",
+      "official": "https://makah.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Flattery_(Washington)"
+    },
+    "photo": null,
+    "tags": ["cliffs", "edge_of_continent", "pacific", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r1-019",
+    "region": "R1",
+    "name": "Shi Shi Beach — Point of Arches day hike",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 48.2945,
+    "lng": -124.6659,
+    "nearest_town": "Neah Bay, WA",
+    "distance_from_spine_km": 74,
+    "description": "Stezka z makahské rezervace sestoupí na dlouhou divokou pláž; pokud máš čas a nohy, pokračuj po písku k Point of Arches s věžemi, průchody a tidepools. První část trailu bývá výrazně bahnitá a celý výlet k obloukům už je poctivý půlden.",
+    "why_bob": "Point of Arches je jedna z nejčistších destilací jeho pobřežního vkusu — skály, prázdný Pacifik, vítr a dost vzdálenosti, aby turistický svět zmizel.",
+    "time_needed": "4–6 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 13,
+      "elevation_m": 250,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "sneaker waves, rip currents, klády v příboji a rychle rostoucí příliv; oceánské koupání zde nedoporučuju"
+    },
+    "road_access": "paved",
+    "best_time": "odliv kolem prostřední části návštěvy",
+    "season_note_2026": "přístup otevřen; trail je podle NPS v roce 2026 po první míli často velmi bahnitý. Pro denní výlet není potřeba wilderness permit, ale Makah Recreation Pass ano; kontroluj tide table",
+    "fee": "20 $ Makah Recreation Pass; soukromé parkoviště u trailheadu může mít další poplatek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.2945,-124.6659",
+      "official": "https://makah.com/attractions/beaches/",
+      "wiki": "https://en.wikipedia.org/wiki/Shi_Shi_Beach"
+    },
+    "photo": null,
+    "tags": ["sea_stacks", "arches", "solitude", "tide_dependent"],
+    "rank": 1
+  },
+  {
+    "id": "r1-020",
+    "region": "R1",
+    "name": "Makah Cultural & Research Center",
+    "category": "culture",
+    "subcategory": "exceptional_museum",
+    "lat": 48.3651,
+    "lng": -124.6236,
+    "nearest_town": "Neah Bay, WA",
+    "distance_from_spine_km": 76,
+    "description": "Malé, ale mimořádné muzeum postavené kolem archeologického nálezu z vesnice Ozette, kterou před staletími zakryl sesuv. Originální předměty ukazují technologii, lov, lodě, dřevo i každodenní život Makah bez disneyfikace kultury.",
+    "why_bob": "Je to hluboký čas, archeologie a skutečná lidská adaptace na drsnou krajinu — muzeum, které má obsah, ne vitrínovou turistiku.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "déšť nebo mezi Cape Flattery a Shi Shi",
+    "season_note_2026": "otevřeno denně 10:00–17:00; běžně zavírá jen na New Year, Thanksgiving a Christmas, takže celé období cesty je v sezóně",
+    "fee": "10 $ dospělý",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.3651,-124.6236",
+      "official": "https://makahmuseum.com/visiting/hours-admission/",
+      "wiki": "https://en.wikipedia.org/wiki/Makah_Museum"
+    },
+    "photo": null,
+    "tags": ["archaeology", "deep_time", "makah", "authentic"],
+    "rank": 1
+  },
+  {
+    "id": "r1-021",
+    "region": "R1",
+    "name": "Ozette Triangle — Cape Alava & Sand Point",
+    "category": "coast",
+    "subcategory": "coastal_loop_trail",
+    "lat": 48.1534,
+    "lng": -124.6675,
+    "nearest_town": "Ozette, WA",
+    "distance_from_spine_km": 45,
+    "description": "Devítimílový okruh vede z Lake Ozette po dlouhých dřevěných boardwalcích k nejzápadnějšímu pobřeží, několik kilometrů po pláži a zpět lesem. Je to celý malý model Olympijského poloostrova: mokrý prales, bahno, oceán, sea stacks a téměř absurdně dlouhé rovné chodníky.",
+    "why_bob": "Má hypnotickou rytmiku cesty krajinou, která se pomalu mění z temného lesa v prázdný oceán — skoro filmová montáž bez jediného města.",
+    "time_needed": "5–7 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 14.5,
+      "elevation_m": 180,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "boardwalk extrémně klouže za mokra; pobřežní část vyžaduje práci s přílivem, vysoký surf může průchod znemožnit"
+    },
+    "road_access": "paved",
+    "best_time": "start ráno; pobřežní úsek načasuj na nízký až střední příliv",
+    "season_note_2026": "otevřeno; NPS hlásí v roce 2026 většinou dobrý stav, ale některá prkna boardwalku jsou slabá nebo uvolněná a headland severně od Sand Point je za vysokého přílivu strmý a nebezpečný",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.1534,-124.6675",
+      "official": "https://www.nps.gov/olym/planyourvisit/lake-ozette.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Ozette_Loop"
+    },
+    "photo": null,
+    "tags": ["boardwalk", "wild_coast", "rainforest", "tide_dependent"],
+    "rank": 1
+  },
+  {
+    "id": "r1-022",
+    "region": "R1",
+    "name": "Lake Ozette — ranger station shore",
+    "category": "lake_river",
+    "subcategory": "cold_lake_swim",
+    "lat": 48.154,
+    "lng": -124.67,
+    "nearest_town": "Ozette, WA",
+    "distance_from_spine_km": 45,
+    "description": "Velké tmavé jezero sevřené nízkým deštným lesem působí pod zataženou oblohou skoro seversky. U ranger station a boat launch se dá sejít přímo k vodě a za bezvětří udělat krátké studené ponoření.",
+    "why_bob": "Jeho melancholická, téměř sibeliovská atmosféra a velká tmavá vodní plocha jsou přesný opak slunečného rekreačního jezera.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.3,
+      "elevation_m": 5,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladká voda — Lake Ozette",
+      "temp_c_sept_oct": "10–16",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "NPS výslovně varuje před studenou vodou, silným větrem a vlnami 30–60 cm; neplav daleko od břehu a při větru nevstupuj"
+    },
+    "road_access": "paved",
+    "best_time": "časné ráno a bezvětří",
+    "season_note_2026": "Hoko-Ozette Road je otevřená; jezero je přístupné, ale podzimní vítr může během minut vytvořit nepříjemné vlny",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.154,-124.67",
+      "official": "https://www.nps.gov/olym/planyourvisit/lake-ozette.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Lake_Ozette"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "dark_water", "wind", "melancholy"],
+    "rank": 2
+  },
+  {
+    "id": "r1-023",
+    "region": "R1",
+    "name": "Hurricane Ridge",
+    "category": "mountain",
+    "subcategory": "panoramic_viewpoint",
+    "lat": 47.969,
+    "lng": -123.4984,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 29,
+    "description": "Silnice z Port Angeles během půl hodiny vystoupá z mořské hladiny na vysoký hřeben s téměř absurdně širokým pohledem do nitra Olympic Mountains. Za jasna jsou před tebou vrstvy ostrých vrcholů; v mraku je to naopak syrové, větrné a abstraktní.",
+    "why_bob": "Je to nejrychlejší způsob, jak z města vstoupit do velkého horského prostoru, kde obzor najednou přestane mít lidské měřítko.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 100,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "rychlé změny počasí, silný vítr a chlad i při slunci"
+    },
+    "road_access": "paved",
+    "best_time": "brzké ráno nebo 2 h před západem",
+    "season_note_2026": "Hurricane Ridge Road je otevřená, ale NPS ji může kdykoli dočasně zavřít kvůli počasí; před odjezdem volej/checkni road status",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.969,-123.4984",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-hurricane-ridge.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Hurricane_Ridge"
+    },
+    "photo": null,
+    "tags": ["panorama", "big_sky", "mountains", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r1-024",
+    "region": "R1",
+    "name": "Hurricane Hill",
+    "category": "mountain",
+    "subcategory": "ridge_trail",
+    "lat": 47.988,
+    "lng": -123.5312,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 31,
+    "description": "Krátká, dobře upravená cesta vystoupá nad Hurricane Ridge na holý vrchol s výhledem přes Olympic Mountains, Strait of Juan de Fuca a za dobré viditelnosti až na Vancouver Island. Poslední část už člověk opravdu cítí v nohách, ale není technická.",
+    "why_bob": "Za necelé dvě hodiny dostane vítr do obličeje, dlouhý horizont a pocit stát sám nad systémem hor a moře.",
+    "time_needed": "1.5–2.5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5.3,
+      "elevation_m": 250,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "expozice větru, rychlé ochlazení a možné první podzimní sněžení"
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdní odpoledne",
+    "season_note_2026": "Hurricane Hill Road je otevřená od 3. 7. 2026; přístup je vysokohorský a může skončit s prvním výrazným sněhem, takže v říjnu ověř stav v den návštěvy",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.988,-123.5312",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-hurricane-ridge.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Hurricane_Ridge"
+    },
+    "photo": null,
+    "tags": ["ridge", "wind", "strait_view", "short_hike"],
+    "rank": 1
+  },
+  {
+    "id": "r1-025",
+    "region": "R1",
+    "name": "Obstruction Point Road",
+    "category": "scenic_drive",
+    "subcategory": "high_mountain_road",
+    "lat": 47.969,
+    "lng": -123.4984,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 31,
+    "description": "Z Hurricane Ridge pokračuje 12,5 km úzká štěrková silnice po vysokém horském úbočí k Obstruction Point. Je pomalá, bez svodidel a místy exponovaná, ale normální sedan ji za sucha zvládne opatrnou jízdou.",
+    "why_bob": "Je to jedna z mála legálně sedanových silnic, která ho dostane do téměř vysokohorské pustiny bez dlouhého výstupu.",
+    "time_needed": "2–3 h tam i zpět se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 25,
+      "elevation_m": 450,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "úzká štěrková cesta, slepé zatáčky, srázy a minimum prostoru k vyhýbání"
+    },
+    "road_access": "rough_caution",
+    "best_time": "suchý den s dobrou viditelností",
+    "season_note_2026": "otevřeno od 17. 6. 2026; NPS uvádí cestu jako úzkou, štěrkovou, klikatou a místy strmou. V září–říjnu může přijít náhlá sezonní uzávěra kvůli sněhu",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.969,-123.4984",
+      "official": "https://www.nps.gov/olym/planyourvisit/current-road-conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["mountain_road", "exposed", "big_sky", "sedan_caution"],
+    "rank": 1
+  },
+  {
+    "id": "r1-026",
+    "region": "R1",
+    "name": "Lake Crescent — Bovee's Meadow",
+    "category": "lake_river",
+    "subcategory": "cold_lake_swim",
+    "lat": 48.0569,
+    "lng": -123.7985,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 1,
+    "description": "Ledovcové Lake Crescent je mimořádně průhledné, hluboké a sevřené strmými zalesněnými horami. U Bovee's Meadow je snadný vstup do vody a po hlavní letní sezóně bývá mnohem klidnější než v červenci.",
+    "why_bob": "Tohle je jeho základní olympijský swim: průzračná studená voda, hory přímo ze břehu a nulová potřeba organizačního výkonu.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 5,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladká voda — Lake Crescent",
+      "temp_c_sept_oct": "12–18",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "velmi rychle se prohlubuje, bez plavčíka; po větru mohou přijít vlny a voda v říjnu rychle chladne"
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo podvečer bez větru",
+    "season_note_2026": "Lake Crescent je otevřené a NPS počítá s vodní rekreací v létě i na podzim; zkontroluj počasí a případná lokální upozornění",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.0569,-123.7985",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Lake_Crescent"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "clear_water", "glacial_lake", "mountains"],
+    "rank": 1
+  },
+  {
+    "id": "r1-027",
+    "region": "R1",
+    "name": "Devil's Punchbowl — Spruce Railroad Trail",
+    "category": "lake_river",
+    "subcategory": "swimming_cove",
+    "lat": 48.0943,
+    "lng": -123.7998,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 9,
+    "description": "Po převážně zpevněném Spruce Railroad Trail dojdeš k malé tyrkysové zátoce pod starým železničním mostem. Voda je hluboká a absurdně čistá; místo je známé koupáním, ale mimo víkend a hlavní léto se atmosféra výrazně uklidní.",
+    "why_bob": "Je to studenovodní plavání v průzračné horské vodě spojené s krátkou cestou po opuštěné železniční trase — velmi přesný zásah.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladká voda — Lake Crescent",
+      "temp_c_sept_oct": "12–18",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "hluboká studená voda bez plavčíka; neskákej z mostu ani skal naslepo, pod hladinou jsou skály"
+    },
+    "road_access": "paved",
+    "best_time": "všední den ráno",
+    "season_note_2026": "Spruce Railroad Trail je podle NPS v roce 2026 průchozí a převážně zpevněný; žádná hlášená sezonní uzávěra pro dobu cesty",
+    "fee": "zdarma / Olympic NP pass podle přístupu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.0943,-123.7998",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["cold_swim", "clear_water", "rail_trail", "deep_water"],
+    "rank": 1
+  },
+  {
+    "id": "r1-028",
+    "region": "R1",
+    "name": "Marymere Falls",
+    "category": "waterfall",
+    "subcategory": "short_trail",
+    "lat": 48.0583,
+    "lng": -123.7897,
+    "nearest_town": "Port Angeles, WA",
+    "distance_from_spine_km": 1,
+    "description": "Krátká cesta od Lake Crescent vede starým lesem k úzkému vodopádu padajícímu z čedičové stěny do kapradin. Samotný vodopád není důvod jet přes stát, ale je mimořádně efektivní jako hodinová změna světa mezi jízdou a koupáním.",
+    "why_bob": "Je to koncentrovaná washingtonská vlhkost — staré kmeny, mech, tma a voda — doslova pár minut od jeho pobřežní trasy.",
+    "time_needed": "1–1.5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.8,
+      "elevation_m": 100,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Barnes Creek",
+      "temp_c_sept_oct": null,
+      "legal": "unknown",
+      "solitude": "low",
+      "safety": "kluzké kořeny a schody; nekoupat se pod vodopádem"
+    },
+    "road_access": "paved",
+    "best_time": "po dešti, časné ráno",
+    "season_note_2026": "otevřeno; přístup přes Lake Crescent je bez hlášené uzávěry",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.0583,-123.7897",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Marymere_Falls"
+    },
+    "photo": null,
+    "tags": ["waterfall", "old_growth", "moss", "short_walk"],
+    "rank": 2
+  },
+  {
+    "id": "r1-029",
+    "region": "R1",
+    "name": "Sol Duc Falls",
+    "category": "waterfall",
+    "subcategory": "forest_trail",
+    "lat": 47.9554,
+    "lng": -123.835,
+    "nearest_town": "Forks, WA",
+    "distance_from_spine_km": 23,
+    "description": "Sol Duc se před mostem rozpadá do několika mohutných ramen a mizí do hlubokého mechového kaňonu. Cesta vede necelé dva kilometry starým lesem a funguje dobře i v dešti, kdy celé údolí dostane skoro černozelenou barvu.",
+    "why_bob": "Není to dekorativní vodopád, ale temná masa vody zaříznutá do pralesa — mnohem víc Wagner než pohlednice.",
+    "time_needed": "1.5–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.6,
+      "elevation_m": 70,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Sol Duc River",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": "medium",
+      "safety": "extrémně nebezpečný kaňon, silný proud a hydraulika; nevstupovat do vody"
+    },
+    "road_access": "paved",
+    "best_time": "déšť, ráno nebo po 16:00",
+    "season_note_2026": "Sol Duc Road je otevřená od 24. 3. 2026; stezka je v sezónním provozu a NPS nehlásí uzávěru",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.9554,-123.835",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-the-sol-duc-valley.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Sol_Duc_River"
+    },
+    "photo": null,
+    "tags": ["waterfall", "rainforest", "dark", "moss"],
+    "rank": 1
+  },
+  {
+    "id": "r1-030",
+    "region": "R1",
+    "name": "Ancient Groves Nature Trail",
+    "category": "forest",
+    "subcategory": "old_growth_loop",
+    "lat": 48.0047,
+    "lng": -123.9123,
+    "nearest_town": "Forks, WA",
+    "distance_from_spine_km": 15,
+    "description": "Nenápadná 0,9km smyčka mezi obrovskými douglaskami, cedry, kapradinami a hlubokým říčním lesem. Většina lidí ji přejede cestou k Sol Duc Falls, takže má často mnohem lepší poměr starého lesa k počtu lidí.",
+    "why_bob": "Je to místo na pomalé tiché chození mezi stromy místo splnění dalšího bodu itineráře — přesně jeho tempo.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.9,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "kořeny a dřevěné úseky mohou být po dešti kluzké"
+    },
+    "road_access": "paved",
+    "best_time": "déšť nebo zataženo",
+    "season_note_2026": "Sol Duc Road otevřená; NPS stezku uvádí mezi běžnými denními trasami, bez hlášené uzávěry pro podzim 2026",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.0047,-123.9123",
+      "official": "https://www.nps.gov/olym/planyourvisit/sol-duc-area-brochure.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["old_growth", "quiet", "cedar", "rain"],
+    "rank": 2
+  },
+  {
+    "id": "r1-031",
+    "region": "R1",
+    "name": "Sol Duc Hot Springs",
+    "category": "hot_spring",
+    "subcategory": "developed_hot_springs",
+    "lat": 47.9691,
+    "lng": -123.8632,
+    "nearest_town": "Forks, WA",
+    "distance_from_spine_km": 22,
+    "description": "Historické minerální prameny jsou dnes rozumně jednoduchý resortový bazénový provoz, ne divoké prameny v lese. Po chladném koupání, dešti nebo túře může devadesát minut v horké minerální vodě fungovat jako fyzický reset.",
+    "why_bob": "Je to méně jeho estetika než divoká voda, ale kontrast studeného Lake Crescent a horkých pramenů po dni v dešti může být tělesně perfektní.",
+    "time_needed": "1.5–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "minerální termální bazény",
+      "temp_c_sept_oct": "37–40",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "hlídej délku pobytu v horké vodě a hydrataci; vyžadují běžné plavky"
+    },
+    "road_access": "paved",
+    "best_time": "poslední nebo první denní session",
+    "season_note_2026": "otevřeno po celé cestě; podzimní režim 10. 9.–31. 10. 2026 nabízí denně 90minutové bloky od 8:00 do 19:30, resortová sezóna trvá do začátku listopadu",
+    "fee": "placený 90min vstup; aktuální cenu ověř u resortu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.9691,-123.8632",
+      "official": "https://www.olympicnationalparks.com/sol-duc-hot-springs-resort/sol-duc-hot-springs-resort-things-to-do/mineral-hot-springs-pool",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["hot_spring", "rainy_day", "thermal", "recovery"],
+    "rank": 2
+  },
+  {
+    "id": "r1-032",
+    "region": "R1",
+    "name": "Salmon Cascades",
+    "category": "waterfall",
+    "subcategory": "salmon_viewpoint",
+    "lat": 48.0333,
+    "lng": -123.9398,
+    "nearest_town": "Forks, WA",
+    "distance_from_spine_km": 9,
+    "description": "Krátký sestup ze Sol Duc Road vede nad skalní kaskády, které na podzim překonávají migrující coho salmon. Není tu potřeba hike; můžeš sedět u vody a čekat, až se z temné řeky na sekundu vymrští ryba.",
+    "why_bob": "V jeho konkrétním termínu se krajina mění v živou evoluční scénu — fyzika vody, instinkt a vyčerpávající návrat lososů v jednom obrazu.",
+    "time_needed": "30–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.2,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Sol Duc River",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": "medium",
+      "safety": "prudké kaskády; žádné koupání a nevstupovat na mokré skály"
+    },
+    "road_access": "paved",
+    "best_time": "konec září až říjen; trpělivě 30–60 min",
+    "season_note_2026": "Sol Duc Road otevřená; právě září a říjen jsou klíčové období pro coho salmon, takže termín cesty je mimořádně dobrý",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.0333,-123.9398",
+      "official": "https://www.nps.gov/olym/planyourvisit/sol-duc-area-brochure.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["salmon", "autumn", "river", "wildlife"],
+    "rank": 1
+  },
+  {
+    "id": "r1-033",
+    "region": "R1",
+    "name": "Deer Lake via Sol Duc",
+    "category": "lake_river",
+    "subcategory": "mountain_lake_hike_swim",
+    "lat": 47.9554,
+    "lng": -123.835,
+    "nearest_town": "Forks, WA",
+    "distance_from_spine_km": 23,
+    "description": "Od Sol Duc Falls trail stoupá dlouze pralesem k tichému Deer Lake ve vyšší horské kotlině. Je to poctivější výlet než většina zdejších krátkých trailů, ale odměnou je skutečné horské jezero a výrazně menší počet návštěvníků.",
+    "why_bob": "Dává mu kombinaci fyzické práce, samoty, lesní tmy a ledově studeného jezera, do kterého se může na konci cesty ponořit.",
+    "time_needed": "4–6 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 12.2,
+      "elevation_m": 520,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladká voda — horské Deer Lake",
+      "temp_c_sept_oct": "7–13",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "velmi studená voda, žádný plavčík, vzdálenost od auta; krátký dip a okamžitě suché teplé vrstvy"
+    },
+    "road_access": "paved",
+    "best_time": "start dopoledne; stabilní počasí",
+    "season_note_2026": "NPS hlásí trail k Deer Lake v roce 2026 průchozí a vyčištěný; s říjnovým chladem počítej s možností prvního sněhu ve vyšší poloze",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.9554,-123.835",
+      "official": "https://www.nps.gov/olym/planyourvisit/sol-duc-area-brochure.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["mountain_lake", "cold_swim", "solitude", "harder_hike"],
+    "rank": 2
+  },
+  {
+    "id": "r1-034",
+    "region": "R1",
+    "name": "Second Beach",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 47.903,
+    "lng": -124.6207,
+    "nearest_town": "La Push, WA",
+    "distance_from_spine_km": 23,
+    "description": "Krátký průchod pobřežním lesem končí náhlým otevřením Pacifiku, sea stacky, naplavenými kmeny a širokým pískem. Po pláži můžeš pokračovat tak daleko, jak dovolí příliv a nálada.",
+    "why_bob": "Přechod z temného lesa rovnou do obrovského studeného oceánského prostoru je přesně typ krajinného střihu, který ho emocionálně trefuje.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4,
+      "elevation_m": 90,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "sneaker waves, rip currents, klády v příboji a rychlý příliv; koupání nedoporučeno"
+    },
+    "road_access": "paved",
+    "best_time": "odliv až střední příliv, podvečer",
+    "season_note_2026": "trail otevřen a v červnu bez hlášených problémů. Pozor: Rialto Beach je kvůli uzávěře Mora Road do 15. 10. nedostupná, ale Second Beach tato uzávěra neblokuje",
+    "fee": "zdarma pro denní návštěvu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.903,-124.6207",
+      "official": "https://www.nps.gov/olym/planyourvisit/mora-area-brochure.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Second_Beach_(Washington)"
+    },
+    "photo": null,
+    "tags": ["sea_stacks", "wild_beach", "sunset", "tide_dependent"],
+    "rank": 1
+  },
+  {
+    "id": "r1-035",
+    "region": "R1",
+    "name": "Third Beach",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 47.8901,
+    "lng": -124.5999,
+    "nearest_town": "La Push, WA",
+    "distance_from_spine_km": 21,
+    "description": "O něco delší sestup než na Second Beach končí na široké pláži sevřené zalesněnými mysy a sea stacky. Když se jen posadíš na kus driftwoodu a nepokračuješ přes problematické headlands, je to velmi jednoduchá půldenní dávka Pacifiku.",
+    "why_bob": "Je o kousek méně instantně ikonická než Second Beach, ale často působí opuštěněji a melancholičtěji — tedy pro něj možná ještě líp.",
+    "time_needed": "2.5–4 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 5,
+      "elevation_m": 120,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "sneaker waves, rip currents a drift logs; nepokračuj přes headlands bez práce s tide chart"
+    },
+    "road_access": "paved",
+    "best_time": "nízký až střední příliv",
+    "season_note_2026": "NPS hlásí trail k pláži v dobrém stavu; neplatí pro něj uzávěra Mora Road. Pobřežní pokračování dál na jih má v roce 2026 náročné washouty a steep overlands, proto doporučen návrat stejnou cestou",
+    "fee": "zdarma pro denní návštěvu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.8901,-124.5999",
+      "official": "https://www.nps.gov/olym/planyourvisit/third-beach-trail.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Third_Beach"
+    },
+    "photo": null,
+    "tags": ["wild_beach", "driftwood", "solitude", "pacific"],
+    "rank": 1
+  },
+  {
+    "id": "r1-036",
+    "region": "R1",
+    "name": "First Beach — La Push",
+    "category": "coast",
+    "subcategory": "roadside_wild_beach",
+    "lat": 47.908,
+    "lng": -124.6357,
+    "nearest_town": "La Push, WA",
+    "distance_from_spine_km": 25,
+    "description": "Silnice končí prakticky u Pacifiku v malé komunitě Quileute Nation; přes vodu stojí velké sea stacks a ostrovy. Je méně divoká než Second Beach, ale za bouřlivého soumraku má výbornou road-end atmosféru.",
+    "why_bob": "Konec silnice v domorodé pobřežní komunitě, šedý Pacifik a velké skalní ostrovy mají přesně tu melancholii místa, kde už dál nejde jet.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "silný příboj, rip currents a drift logs; nevhodné ke koupání"
+    },
+    "road_access": "paved",
+    "best_time": "soumrak, déšť nebo bouřlivé počasí z bezpečí horní pláže",
+    "season_note_2026": "La Push a First Beach jsou přístupné; respektuj pravidla a majetek Quileute Nation. Uzávěra Mora Road blokuje Rialto, nikoli First Beach",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.908,-124.6357",
+      "official": "https://quileutenation.org/",
+      "wiki": "https://en.wikipedia.org/wiki/La_Push,_Washington"
+    },
+    "photo": null,
+    "tags": ["road_end", "sea_stacks", "quileute", "storm"],
+    "rank": 2
+  },
+  {
+    "id": "r1-037",
+    "region": "R1",
+    "name": "Hoh Rain Forest — Hall of Mosses + Spruce Trail",
+    "category": "forest",
+    "subcategory": "rainforest_loops",
+    "lat": 47.86087,
+    "lng": -123.9348,
+    "nearest_town": "Forks, WA",
+    "distance_from_spine_km": 29,
+    "description": "Spoj krátký Hall of Mosses s delším Spruce Nature Trail a dostaneš dvě odlišné tváře jednoho pralesa: absurdně obrostlé javory a tišší část mezi obřími smrky a řekou. Po dešti je barva lesa téměř nereálná.",
+    "why_bob": "Jestli existuje washingtonská krajina, kterou by Lynch nechal jen stát před kamerou bez dialogu, je to právě Hoh za deště.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3.3,
+      "elevation_m": 60,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Hoh River",
+      "temp_c_sept_oct": null,
+      "legal": "unknown",
+      "solitude": "medium",
+      "safety": "řeka je chladná, proměnlivá a rychlá; není doporučený swim spot"
+    },
+    "road_access": "paved",
+    "best_time": "déšť, hned ráno nebo pozdní odpoledne",
+    "season_note_2026": "Upper Hoh Road otevřená. Hoh leží severně od Hoh River Bridge; při pokračování na Kalaloch počítej s úplnou uzávěrou US-101 24. 9. 05:00–29. 9. 17:00, 1. 10. 05:00–6. 10. 12:00 a 8. 10. 05:00–13. 10. 12:00",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.86087,-123.9348",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-the-hoh.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Hoh_Rainforest"
+    },
+    "photo": null,
+    "tags": ["rainforest", "moss", "old_growth", "rain"],
+    "rank": 1
+  },
+  {
+    "id": "r1-038",
+    "region": "R1",
+    "name": "Upper Hoh Road",
+    "category": "scenic_drive",
+    "subcategory": "rainforest_river_road",
+    "lat": 47.8069,
+    "lng": -124.2505,
+    "nearest_town": "Forks, WA",
+    "distance_from_spine_km": 0,
+    "description": "Od US-101 se silnice na zhruba 29 km odpojí od pobřežního provozu a sleduje Hoh River stále hlouběji do pralesa. Pastviny postupně zmizí, stromy se zvětší a krajina začne působit jako návrat o několik geologických epoch.",
+    "why_bob": "Je to pomalý filmový nájezd do deštného lesa — přesně ten typ silnice, kde cesta samotná není logistika, ale hlavní zážitek.",
+    "time_needed": "1.5–2.5 h tam i zpět bez trailu",
+    "effort": {
+      "type": "drive",
+      "distance_km": 58,
+      "elevation_m": 250,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "elk a další zvěř na silnici, déšť a lokální zaplavení po bouřích"
+    },
+    "road_access": "paved",
+    "best_time": "déšť nebo mlha",
+    "season_note_2026": "Upper Hoh Road otevřená od 5. 5. 2026. Hoh River Bridge na US-101 má během cesty vícedenní úplné uzávěry; plánuj Hoh společně s Forks/La Push na severní straně mostu",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP při vstupu do Hoh",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.8069,-124.2505",
+      "official": "https://www.nps.gov/olym/planyourvisit/current-road-conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["rainforest_drive", "river", "road_movie", "rain"],
+    "rank": 1
+  },
+  {
+    "id": "r1-039",
+    "region": "R1",
+    "name": "Ruby Beach",
+    "category": "coast",
+    "subcategory": "sea_stack_beach",
+    "lat": 47.7094,
+    "lng": -124.4156,
+    "nearest_town": "Kalaloch, WA",
+    "distance_from_spine_km": 1,
+    "description": "Krátký sestup vede na širokou kamenitou pláž s velkými sea stacky, černými skalami, driftwoodem a otevřeným západním horizontem. Za zataženého podvečera je její síla mnohem větší než za modré oblohy.",
+    "why_bob": "Je to téměř archetyp jeho Pacifiku — velké skály, mlha, vítr, studený horizont a spousta prostoru jen sedět.",
+    "time_needed": "1.5–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 50,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "sneaker waves, rip currents, drift logs a příliv odřezávající skály; koupání nedoporučeno"
+    },
+    "road_access": "paved",
+    "best_time": "podvečer, nízký až střední příliv",
+    "season_note_2026": "otevřeno celoročně. Leží jižně od Hoh River Bridge; během úplných uzávěr US-101 24.–29. 9., 1.–6. 10. a od 8. 10. ji plánuj z Kalaloch/Quinault/Aberdeen strany",
+    "fee": "zdarma / Olympic NP pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.7094,-124.4156",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-kalaloch-and-ruby-beach.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Ruby_Beach"
+    },
+    "photo": null,
+    "tags": ["sea_stacks", "fog", "driftwood", "pacific"],
+    "rank": 1
+  },
+  {
+    "id": "r1-040",
+    "region": "R1",
+    "name": "Beach 4 — tidepools",
+    "category": "coast",
+    "subcategory": "tidepool_beach",
+    "lat": 47.6378,
+    "lng": -124.3926,
+    "nearest_town": "Kalaloch, WA",
+    "distance_from_spine_km": 1,
+    "description": "Méně slavný kalalochský přístup sestoupí na skalnaté pobřeží s jedněmi z nejlepších tidepools v této části parku. Za odlivu se mezi skálami objeví sasanky, hvězdice a malé uzavřené světy přímo pod příbojem.",
+    "why_bob": "Je tu oceán jako fyzika i biologie zároveň — může dvě hodiny koukat do mikrokosmu a přitom poslouchat celý Pacifik za zády.",
+    "time_needed": "1.5–2.5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 60,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "kluzké skály, příliv a sneaker waves; zůstaň vysoko, když swell roste"
+    },
+    "road_access": "paved",
+    "best_time": "co nejnižší odliv za denního světla",
+    "season_note_2026": "otevřeno; NPS v únoru 2026 výslovně uvádí Beach 4 jako výborné místo pro tidepooling. Leží jižně od Hoh River Bridge a podléhá stejné logistice jeho uzávěr",
+    "fee": "zdarma / Olympic NP pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.6378,-124.3926",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-kalaloch-and-ruby-beach.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["tidepools", "marine_life", "rocks", "low_tide"],
+    "rank": 1
+  },
+  {
+    "id": "r1-041",
+    "region": "R1",
+    "name": "Kalaloch Tree of Life",
+    "category": "oddity",
+    "subcategory": "eroded_tree",
+    "lat": 47.6104,
+    "lng": -124.376,
+    "nearest_town": "Kalaloch, WA",
+    "distance_from_spine_km": 1,
+    "description": "Sitka spruce visí mezi dvěma erodujícími stěnami nad malým potokem s většinou kořenů odkrytých do vzduchu. Po bouřích se jeho situace mění a strom už nese známky ústupu, takže na něj nekoukej jako na stabilní monument.",
+    "why_bob": "Není zajímavý jako instagramová kuriozita, ale jako dočasný obraz eroze, gravitace a organismu, který ještě chvíli drží nad prázdnem.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Pacific Ocean",
+      "temp_c_sept_oct": "11–14",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "nestůj pod podemletými břehy ani kořeny; příboj má stejné sneaker-wave riziko jako zbytek Kalaloch"
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo večer bez lidí",
+    "season_note_2026": "strom podle aktuálního zdroje z roku 2026 stále stojí, ale eroze pokračuje a stav se může po každé velké bouři změnit; přístup z Kalaloch Campground day-use",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.6104,-124.376",
+      "official": "https://www.thekalalochlodge.com/explore/olympic-national-park/tree-of-life/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["erosion", "impermanence", "sitka_spruce", "oddity"],
+    "rank": 2
+  },
+  {
+    "id": "r1-042",
+    "region": "R1",
+    "name": "Lake Quinault — Willaby lake access",
+    "category": "lake_river",
+    "subcategory": "cold_lake_swim",
+    "lat": 47.4642,
+    "lng": -123.8534,
+    "nearest_town": "Amanda Park, WA",
+    "distance_from_spine_km": 5,
+    "description": "Lake Quinault je široké ledovcové jezero pod deštným lesem, klidnější a tmavší než Lake Crescent. Veřejný přístup na jižním břehu umožní krátký swim a pak jen sedět u vody pod obřími stromy.",
+    "why_bob": "Po dnech divokého oceánu nabízí úplně jiný typ studené vody — tichou, tmavou a obklopenou pralesem.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladká voda — Lake Quinault",
+      "temp_c_sept_oct": "11–17",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "bez plavčíka, studená hluboká voda a vítr; po silném dešti počítej s horší viditelností a naplaveným dřevem"
+    },
+    "road_access": "paved",
+    "best_time": "ráno, bezvětří nebo mlha",
+    "season_note_2026": "jižní část Lake Quinault je přístupná z US-101; South Shore Road má asi 13 km od US-101 washout, ale oblast u jezera a Willaby je před uzávěrou. Při cestě z Forks hlídej Hoh River Bridge closure",
+    "fee": "USFS day-use podle konkrétního parkoviště; federální pas uznáván",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.4642,-123.8534",
+      "official": "https://www.fs.usda.gov/r06/olympic",
+      "wiki": "https://en.wikipedia.org/wiki/Lake_Quinault"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "rainforest_lake", "quiet", "fog"],
+    "rank": 1
+  },
+  {
+    "id": "r1-043",
+    "region": "R1",
+    "name": "Quinault National Recreation Trail System",
+    "category": "forest",
+    "subcategory": "rainforest_trail",
+    "lat": 47.4586,
+    "lng": -123.8483,
+    "nearest_town": "Amanda Park, WA",
+    "distance_from_spine_km": 6,
+    "description": "Síť lehkých stezek na jižním břehu Lake Quinault vede mezi obřími Sitka spruce, douglaskami, western red cedar a hustými kapradinami. Můžeš z ní udělat dvoukilometrové courání i zhruba šestikilometrový okruh bez závazku k celodennímu hike.",
+    "why_bob": "Je to tišší alternativa Hoh — méně ikonického provozu a víc možnosti prostě zmizet pod korunou starého lesa.",
+    "time_needed": "1.5–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 6,
+      "elevation_m": 120,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "mokré kořeny a dřevěné úseky jsou kluzké"
+    },
+    "road_access": "paved",
+    "best_time": "déšť nebo ranní mlha",
+    "season_note_2026": "USFS jej uvádí jako celoroční trail system; aktuální srpnové materiály 2026 potvrzují běžný návštěvnický provoz. South Shore washout je dál po silnici a neblokuje hlavní trailhead",
+    "fee": "Northwest Forest Pass podle parkoviště",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.4586,-123.8483",
+      "official": "https://www.fs.usda.gov/r06/olympic/recreation/trails/quinault-national-recreation-trail-system",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["rainforest", "old_growth", "quiet", "ferns"],
+    "rank": 1
+  },
+  {
+    "id": "r1-044",
+    "region": "R1",
+    "name": "Pony Bridge — East Fork Quinault",
+    "category": "forest",
+    "subcategory": "river_gorge_hike",
+    "lat": 47.5717,
+    "lng": -123.5783,
+    "nearest_town": "Amanda Park, WA",
+    "distance_from_spine_km": 35,
+    "description": "Z Graves Creek trailheadu jdeš asi čtyři kilometry starým deštným lesem k mostu zavěšenému nad hlubokou tyrkysovou soutěskou East Fork Quinault River. Dál nemusíš — samotný Pony Bridge je ideální obrat pro půldenní výlet.",
+    "why_bob": "Řeka sevřená v temném skalním hrdle a cesta přes obrovský deštný les mají trochu McCarthyho fyzické hmotnosti a žádnou atrakční lehkost.",
+    "time_needed": "3–4.5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 8,
+      "elevation_m": 300,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "East Fork Quinault River",
+      "temp_c_sept_oct": null,
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "soutěska má prudký proud, kluzké skály a není bezpečným místem ke koupání"
+    },
+    "road_access": "rough_caution",
+    "best_time": "ráno, suché nebo lehce deštivé počasí",
+    "season_note_2026": "Graves Creek Road je otevřená od 28. 5. 2026, ale pouze přes North Shore Road; je štěrková, úzká a klikatá. Trail je vyčištěný minimálně po O'Neil Creek, takže úsek k Pony Bridge je průchozí",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.5717,-123.5783",
+      "official": "https://www.nps.gov/olym/planyourvisit/east-fork-quinault-river-trail.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["river_gorge", "rainforest", "solitude", "bridge"],
+    "rank": 1
+  },
+  {
+    "id": "r1-045",
+    "region": "R1",
+    "name": "World's Largest Sitka Spruce — Lake Quinault",
+    "category": "oddity",
+    "subcategory": "giant_tree",
+    "lat": 47.4661,
+    "lng": -123.853,
+    "nearest_town": "Amanda Park, WA",
+    "distance_from_spine_km": 5,
+    "description": "Krátká stezka vede k mimořádně mohutnému starému smrku sitka; marketingové superlativy kolem rekordů ber s rezervou, samotný živý organismus ale nepotřebuje reklamu. Stát několik minut přímo u kmene dává lepší představu o měřítku olympijského lesa než čísla na ceduli.",
+    "why_bob": "Má rád deep time — a několik století pomalého biologického růstu zhmotněných v jednom živém těle je dostatečně zvláštní důvod zastavit.",
+    "time_needed": "20–40 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.6,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "po větru pozor na padající větve ve starém lese"
+    },
+    "road_access": "paved",
+    "best_time": "déšť nebo zataženo",
+    "season_note_2026": "přístup u Lake Quinault je otevřen; South Shore washout leží dál a krátký přístup k obřímu smrku neblokuje",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.4661,-123.853",
+      "official": "https://www.fs.usda.gov/r06/olympic",
+      "wiki": "https://en.wikipedia.org/wiki/Lake_Quinault"
+    },
+    "photo": null,
+    "tags": ["giant_tree", "deep_time", "sitka_spruce", "old_growth"],
+    "rank": 2
+  },
+  {
+    "id": "r1-046",
+    "region": "R1",
+    "name": "North Shore Quinault Road → Graves Creek",
+    "category": "scenic_drive",
+    "subcategory": "rainforest_backroad",
+    "lat": 47.4718,
+    "lng": -123.848,
+    "nearest_town": "Amanda Park, WA",
+    "distance_from_spine_km": 6,
+    "description": "Místo dřívějšího kompletního Lake Quinault loopu je v roce 2026 zajímavější jet severním břehem co nejdál k Graves Creek a pak se stejnou cestou vrátit. Asfalt se střídá se štěrkem, jezero postupně mizí a silnice se uzavírá do hlubokého deštného lesa.",
+    "why_bob": "Je to neplánovaná vedlejší silnice přes skutečný prales, kde závěr trasy působí spíš jako expedice než jako scenic byway.",
+    "time_needed": "2–3 h bez hike",
+    "effort": {
+      "type": "drive",
+      "distance_km": 65,
+      "elevation_m": 350,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "potholes, štěrk, úzké úseky, elk a padající větve po větru"
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "denní světlo, ideálně po lehkém dešti",
+    "season_note_2026": "North Shore Road a Graves Creek Road jsou otevřené; South Shore Road má dlouhodobý washout asi 8 mil od US-101, takže kompletní okruh kolem jezera nedělej",
+    "fee": "zdarma / Olympic NP pass podle cíle",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.4718,-123.848",
+      "official": "https://www.nps.gov/olym/planyourvisit/current-road-conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["rainforest_drive", "gravel", "solitude", "road_movie"],
+    "rank": 1
+  },
+  {
+    "id": "r1-047",
+    "region": "R1",
+    "name": "Staircase Rapids Loop",
+    "category": "forest",
+    "subcategory": "river_forest_loop",
+    "lat": 47.5155,
+    "lng": -123.3297,
+    "nearest_town": "Hoodsport, WA",
+    "distance_from_spine_km": 26,
+    "description": "Krátký loop sleduje North Fork Skokomish přes starý les a peřeje v nejjihovýchodnějším koutě Olympic NP. Po Bear Gulch Fire z roku 2025 je právě tento trail zajímavý i jako pohled na krajinu v přechodu mezi starým lesem a čerstvou disturbancí.",
+    "why_bob": "Je tu hluboký les, hlučná řeka a navíc viditelný proces obnovy po požáru — krajina jako dynamický systém, ne kulisa.",
+    "time_needed": "1.5–2.5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3.4,
+      "elevation_m": 90,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "North Fork Skokomish River",
+      "temp_c_sept_oct": null,
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "peřeje a proud; nepoužívat jako swimming hole"
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "ráno nebo zataženo",
+    "season_note_2026": "Staircase developed area a Staircase Rapids Loop znovu otevřely 8. 7. 2026. Všechny ostatní hlavní wilderness trails ze Staircase zůstávají kvůli Bear Gulch Fire uzavřené — neodbočuj na ně",
+    "fee": "30 $/vozidlo / 7 dní Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.5155,-123.3297",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-staircase.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["river", "old_growth", "fire_recovery", "short_loop"],
+    "rank": 1
+  },
+  {
+    "id": "r1-048",
+    "region": "R1",
+    "name": "Lake Cushman — Skokomish Park swim",
+    "category": "lake_river",
+    "subcategory": "mountain_lake_swim",
+    "lat": 47.4296,
+    "lng": -123.217,
+    "nearest_town": "Hoodsport, WA",
+    "distance_from_spine_km": 12,
+    "description": "Velká modrozelená nádrž pod prudkými svahy Olympics nabízí jednoduchý veřejný vstup do vody ze Skokomish Park. Mimo letní víkendy je po Labor Day výrazně tišší a voda pořád obvykle snesitelná pro dlouhodobého zimního plavce.",
+    "why_bob": "Je to snadno dostupná horská voda cestou ke Staircase, takže může spontánně zastavit, zaplavat deset minut a zase pokračovat.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladká voda — Lake Cushman",
+      "temp_c_sept_oct": "12–19",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "hluboká nádrž bez plavčíka; lodní provoz, rychlý pokles dna a studenější vrstvy mimo mělčinu"
+    },
+    "road_access": "paved",
+    "best_time": "všední den ráno nebo večer",
+    "season_note_2026": "Skokomish Park je pro sezonu 2026 otevřený od 27. 3. do 1. 11., takže celé období cesty spadá dovnitř sezóny",
+    "fee": "20 $/vozidlo ve všední den, 25 $ o víkendu/svátku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.4296,-123.217",
+      "official": "https://www.skokomishtourism.com/skokomish-park",
+      "wiki": "https://en.wikipedia.org/wiki/Lake_Cushman"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "mountain_lake", "easy_access", "olympics"],
+    "rank": 1
+  },
+  {
+    "id": "r1-049",
+    "region": "R1",
+    "name": "Lena Lake",
+    "category": "lake_river",
+    "subcategory": "forest_lake_hike_swim",
+    "lat": 47.5959,
+    "lng": -123.1513,
+    "nearest_town": "Hoodsport, WA",
+    "distance_from_spine_km": 18,
+    "description": "Dobře vedená stezka stoupá dlouhými switchbacky starým a druhotným lesem asi 5,8 km k velkému Lena Lake pod horskými svahy. Není to alpské modré oko, spíš hluboké, zalesněné a velmi severozápadní jezero.",
+    "why_bob": "Je to přesně jeho délka výletu: pár hodin práce, minimum techniky a na konci možnost vlézt do studené horské vody.",
+    "time_needed": "4–6 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 11.6,
+      "elevation_m": 400,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladká voda — Lena Lake",
+      "temp_c_sept_oct": "8–14",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "studená voda, kluzké břehy a několik hodin od auta; krátký swim, teplé suché vrstvy s sebou"
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "ráno ve všední den",
+    "season_note_2026": "Lena Lake Trail je provozovaný a trailhead přijímá digitální day-use poplatky; campgroundy v údolí v týdnu od 14. 9. zavírají, ale samotný day-hike trail tím není automaticky uzavřen",
+    "fee": "5 $ day-use nebo Northwest Forest/Interagency Pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.5959,-123.1513",
+      "official": "https://www.fs.usda.gov/r06/olympic/recreation/trails/lena-lake-trail-810",
+      "wiki": "https://en.wikipedia.org/wiki/Lena_Lake"
+    },
+    "photo": null,
+    "tags": ["forest_lake", "cold_swim", "moderate_hike", "quiet"],
+    "rank": 1
+  },
+  {
+    "id": "r1-050",
+    "region": "R1",
+    "name": "Mount Walker — north & south viewpoints",
+    "category": "mountain",
+    "subcategory": "steep_viewpoint_hike",
+    "lat": 47.7746,
+    "lng": -122.9297,
+    "nearest_town": "Quilcene, WA",
+    "distance_from_spine_km": 2,
+    "description": "Strmá lesní stezka stoupá z US-101 na dva summitové viewpoints: jeden míří do Olympic Mountains, druhý přes Hood Canal k Puget Sound a za čista až k Mount Rainier. Je to krátké, ale fyzicky poctivé stoupání.",
+    "why_bob": "Za dvě hodiny si odpracuje panoramatický přechod od fjordovitého Hood Canal k zasněženým horám bez turistické ceremonie.",
+    "time_needed": "3–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 7.2,
+      "elevation_m": 610,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "trvale strmé stoupání; za mokra kluzké jehličí a kořeny"
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "jasné ráno nebo inverze nad Hood Canal",
+    "season_note_2026": "trail je přístupný celoročně; summit road má sezonní uzávěru, takže tato položka je záměrně postavená na pěším výstupu a není závislá na otevření silnice na vrchol",
+    "fee": "Northwest Forest Pass podle parkovacího režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.7746,-122.9297",
+      "official": "https://www.fs.usda.gov/r06/olympic/recreation/trails/mt-walker-trail-894",
+      "wiki": "https://en.wikipedia.org/wiki/Mount_Walker_(Washington)"
+    },
+    "photo": null,
+    "tags": ["hood_canal", "panorama", "steep_hike", "rainier_view"],
+    "rank": 2
+  },
+  {
+    "id": "r1-051",
+    "region": "R1",
+    "name": "Paradise — Nisqually Vista",
+    "category": "mountain",
+    "subcategory": "glacier_view_walk",
+    "lat": 46.7863,
+    "lng": -121.7351,
+    "nearest_town": "Ashford, WA",
+    "distance_from_spine_km": 150,
+    "description": "Paradise je nejefektivnější přístup k masivu Mount Rainier, ledovcům a subalpínské krajině bez nutnosti dlouhého horského dne. Krátký Nisqually Vista loop dává přímý pohled na Nisqually Glacier a obrovskou vulkanickou stěnu nad tebou.",
+    "why_bob": "Je to geologie, led, měřítko a aktivní stratovulkán v jednom obrazu — přesně ten typ místa, kde lidská psychika na chvíli ztratí svou obvyklou důležitost.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 120,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "rychlé počasí, chlad a možnost prvního sněhu"
+    },
+    "road_access": "paved",
+    "best_time": "před 7:00 nebo po 16:00",
+    "season_note_2026": "Paradise je otevřené a Mount Rainier NP v roce 2026 nevyžaduje timed-entry reservation. Sunrise Road je naopak kvůli Grand Park 2 Fire uzavřená pro vozidla, proto jej do výběru nezařazuju",
+    "fee": "30 $/vozidlo / 7 dní Mount Rainier NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.7863,-121.7351",
+      "official": "https://www.nps.gov/mora/planyourvisit/hours.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Paradise,_Washington"
+    },
+    "photo": null,
+    "tags": ["volcano", "glacier", "big_scale", "geology"],
+    "rank": 1
+  },
+  {
+    "id": "r1-052",
+    "region": "R1",
+    "name": "Skyline Trail — Panorama Point",
+    "category": "mountain",
+    "subcategory": "volcano_hike",
+    "lat": 46.7863,
+    "lng": -121.7351,
+    "nearest_town": "Ashford, WA",
+    "distance_from_spine_km": 150,
+    "description": "Z Paradise stoupá trail do otevřené subalpínské krajiny přímo pod ledovce Rainieru; Panorama Point už dává rozhled na Mount Adams, St. Helens a za čistého vzduchu dál přes Cascades. Celý loop je poctivý, ale stále jednodenní a bez technického lezení.",
+    "why_bob": "Tady je hora opravdu planetární objekt — ledovce, láva, eroze a atmosféra se dají číst přímo ve vertikálním řezu krajiny.",
+    "time_needed": "4–6 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 8.8,
+      "elevation_m": 520,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "výška, prudká změna počasí, první sníh nebo led; neodcházej z trailu na ledovec"
+    },
+    "road_access": "paved",
+    "best_time": "start před 8:00; jen při rozumné předpovědi",
+    "season_note_2026": "Paradise přístupné bez timed-entry reservation; na konci září a začátku října mohou sníh a led změnit trail z běžného hike na zimní podmínky, proto ověř NPS conditions ráno",
+    "fee": "30 $/vozidlo / 7 dní Mount Rainier NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.7863,-121.7351",
+      "official": "https://www.nps.gov/mora/planyourvisit/day-hiking-at-mount-rainier.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Skyline_Trail_(Mount_Rainier)"
+    },
+    "photo": null,
+    "tags": ["volcano", "glacier", "panorama", "harder_hike"],
+    "rank": 1
+  },
+  {
+    "id": "r1-053",
+    "region": "R1",
+    "name": "Reflection Lakes",
+    "category": "lake_river",
+    "subcategory": "volcano_viewpoint",
+    "lat": 46.7697,
+    "lng": -121.7298,
+    "nearest_town": "Ashford, WA",
+    "distance_from_spine_km": 148,
+    "description": "Malá horská jezírka pod Mount Rainier fungují hlavně jako klidný foreground pro obrovský stratovulkán. Nemusíš tu nic absolvovat — zastavit, obejít kus břehu a půl hodiny sedět je dost.",
+    "why_bob": "Je to téměř dokonale komponovaný filmový frame: tmavá voda, les a masiv sopky, který zabírá půl oblohy.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "subalpínská jezera",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": "medium",
+      "safety": "citlivé mokřadní prostředí; zůstaň na povolených plochách a nevstupuj do vody"
+    },
+    "road_access": "paved",
+    "best_time": "bezvětří krátce po východu slunce",
+    "season_note_2026": "oblast Paradise/Stevens Canyon je aktuálně přístupná; v říjnu může sezonní počasí přinést dočasné uzávěry, ověř road status",
+    "fee": "30 $/vozidlo / 7 dní Mount Rainier NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.7697,-121.7298",
+      "official": "https://www.nps.gov/mora/",
+      "wiki": "https://en.wikipedia.org/wiki/Reflection_Lakes"
+    },
+    "photo": null,
+    "tags": ["volcano_reflection", "still_water", "photographic", "quiet"],
+    "rank": 2
+  },
+  {
+    "id": "r1-054",
+    "region": "R1",
+    "name": "Narada Falls",
+    "category": "waterfall",
+    "subcategory": "roadside_waterfall",
+    "lat": 46.7794,
+    "lng": -121.7462,
+    "nearest_town": "Ashford, WA",
+    "distance_from_spine_km": 148,
+    "description": "Silný Paradise River padá přes širokou čedičovou stěnu těsně pod silnicí; spodní vyhlídka vyžaduje jen krátký sestup. V dešti a při vysokém průtoku je vodopád hlučný, mokrý a mnohem působivější než z parkoviště.",
+    "why_bob": "Je to rychlá připomínka, že Rainier není jen hora, ale obří vodní stroj napájený sněhem a ledovci.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 70,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Paradise River",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": "low",
+      "safety": "prudký proud, mokré schody a kluzké skály; žádné koupání"
+    },
+    "road_access": "paved",
+    "best_time": "po dešti nebo při cestě z Paradise",
+    "season_note_2026": "přístupné v otevřené Paradise části parku; v říjnu ověř stav silnic po sněžení",
+    "fee": "30 $/vozidlo / 7 dní Mount Rainier NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.7794,-121.7462",
+      "official": "https://www.nps.gov/mora/",
+      "wiki": "https://en.wikipedia.org/wiki/Narada_Falls"
+    },
+    "photo": null,
+    "tags": ["waterfall", "volcano_hydrology", "roadside", "mist"],
+    "rank": 2
+  },
+  {
+    "id": "r1-055",
+    "region": "R1",
+    "name": "Windy Ridge — Mount St. Helens",
+    "category": "geology",
+    "subcategory": "volcanic_viewpoint",
+    "lat": 46.249721,
+    "lng": -122.135636,
+    "nearest_town": "Randle, WA",
+    "distance_from_spine_km": 220,
+    "description": "Z východní strany Mount St. Helens dojedeš jen asi osm kilometrů od kráteru a díváš se přes Spirit Lake s plovoucím kobercem kmenů do stále čitelné blast zone z roku 1980. Nad parkingem vede 368 schodů na ještě širší pohled přes popelové pláně, erozní rýhy a regenerující les.",
+    "why_bob": "Tohle je deep time zrychlený na lidskou délku života — geologická katastrofa, biologická sukcese a obrovská otevřená vulkanická krajina přímo před očima.",
+    "time_needed": "3–5 h na místě plus dlouhý příjezd",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 120,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Spirit Lake",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": "medium",
+      "safety": "vysoká expozice větru, bez pitné vody; drž se povolených cest v restricted area"
+    },
+    "road_access": "rough_caution",
+    "best_time": "jasný den; vyraz brzy kvůli délce detouru",
+    "season_note_2026": "Windy Ridge je otevřená; FS 99 je otevřená pro sezonu, ale úzká a místy hrubá. Johnston Ridge Observatory na západní straně zůstává nedostupná — oprava SR 504 má být dokončena až na jaře 2027",
+    "fee": "5 $/vozidlo nebo platný recreation/interagency pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.249721,-122.135636",
+      "official": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/interpretive-site-windy-ridge",
+      "wiki": "https://en.wikipedia.org/wiki/Windy_Ridge"
+    },
+    "photo": null,
+    "tags": ["volcano", "blast_zone", "deep_time", "spirit_lake"],
+    "rank": 1
+  },
+  {
+    "id": "r1-056",
+    "region": "R1",
+    "name": "Ape Cave",
+    "category": "geology",
+    "subcategory": "lava_tube",
+    "lat": 46.1083,
+    "lng": -122.2117,
+    "nearest_town": "Cougar, WA",
+    "distance_from_spine_km": 205,
+    "description": "Více než tři kilometry dlouhý lávový tunel pod lesem na jižním svahu Mount St. Helens je doslova možnost chodit uvnitř ztuhlé vulkanické řeky. Pro jednoduchou návštěvu zvol Lower Cave; Upper Cave už zahrnuje náročnější lezení přes lávové bloky.",
+    "why_bob": "Je to fyzický vstup do geologie sopky — chlad, absolutní tma a textura ztuhlé lávy působí spíš jako podzemní planeta než atrakce.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2.5,
+      "elevation_m": 80,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "absolutní tma, stálý chlad kolem 5 °C, ostrá láva; dvě nezávislá světla, pevné boty a teplá vrstva"
+    },
+    "road_access": "paved",
+    "best_time": "první ranní slot",
+    "season_note_2026": "otevřeno pro sezonu 2026; od 18. 5. do 31. 10. je vstup povolen pouze s timed ticket reservation. Nejde o rezervaci měsíce dopředu nutnou z principu, ale slot si zajisti před detourem",
+    "fee": "timed ticket přes Recreation.gov + 5 $ day-use, pokud jej nekryje platný pass",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1083,-122.2117",
+      "official": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/ape-cave-interpretive-site",
+      "wiki": "https://en.wikipedia.org/wiki/Ape_Cave"
+    },
+    "photo": null,
+    "tags": ["lava_tube", "volcano", "darkness", "geology"],
+    "rank": 1
+  },
+  {
+    "id": "r1-057",
+    "region": "R1",
+    "name": "Diablo Lake Overlook",
+    "category": "mountain",
+    "subcategory": "glacial_lake_viewpoint",
+    "lat": 48.7131,
+    "lng": -121.1289,
+    "nearest_town": "Newhalem, WA",
+    "distance_from_spine_km": 165,
+    "description": "SR 20 se nad Diablo Lake otevře do pohledu na nápadně tyrkysovou ledovcovou vodu sevřenou hlubokými severokaskádskými stěnami. Barvu vytváří jemná glacial flour ve vodě, takže místo funguje vizuálně i jako malá lekce geologie.",
+    "why_bob": "Je to přesně jeho kombinace hor, fyziky světla, ledovcové vody a lidské bezvýznamnosti — dost silná, aby ospravedlnila velký severní detour.",
+    "time_needed": "30–60 min plus dlouhý přejezd",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "Diablo Lake",
+      "temp_c_sept_oct": "8–13",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "overlook není koupací přístup; voda je velmi studená a v nádrži jsou větrné podmínky"
+    },
+    "road_access": "paved",
+    "best_time": "jasné dopoledne nebo dramatická proměnlivá oblačnost",
+    "season_note_2026": "North Cascades Highway byla po opravách plně znovu otevřena 14. 6. 2026. NPS má v září aktivní fire closures v jiných částech parku; před dlouhým detourem zkontroluj aktuální požáry, kouř a WSDOT SR 20",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.7131,-121.1289",
+      "official": "https://www.nps.gov/noca/planyourvisit/road-conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Diablo_Lake"
+    },
+    "photo": null,
+    "tags": ["glacial_lake", "turquoise", "north_cascades", "geology"],
+    "rank": 1
+  },
+  {
+    "id": "r1-058",
+    "region": "R1",
+    "name": "North Cascades Highway — Diablo Lake to Washington Pass",
+    "category": "scenic_drive",
+    "subcategory": "alpine_highway",
+    "lat": 48.7131,
+    "lng": -121.1289,
+    "nearest_town": "Newhalem, WA",
+    "distance_from_spine_km": 165,
+    "description": "Pokračuj z Diablo Lake po SR 20 přes Ross Lake corridor až k Washington Pass Overlook a vrať se stejnou cestou nebo udělej velký okruh přes Winthrop. Silnice přechází z vlhkých západních Cascades do suššího vnitrozemského horského světa plného žulových věží, ostrých sedel a velkého nebe.",
+    "why_bob": "Je to výjimečný detour právě proto, že během několika hodin projede ekologickou i estetickou změnou od temného severozápadního lesa téměř k suchému horskému Západu.",
+    "time_needed": "5–8 h podle otočky",
+    "effort": {
+      "type": "drive",
+      "distance_km": 150,
+      "elevation_m": 1700,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "dlouhé horské úseky, zvěř, první sníh a omezený signál; v říjnu sleduj předpověď průsmyku"
+    },
+    "road_access": "paved",
+    "best_time": "celý jasný den, ideálně v září",
+    "season_note_2026": "SR 20 byla plně otevřena 14. 6. 2026; vysokohorský průsmyk zůstává na podzim otevřen do první významné zimní uzávěry. Aktuální požáry a čerstvý sníh mohou situaci změnit, proto ověř WSDOT ráno před odjezdem",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=48.7131,-121.1289",
+      "official": "https://wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates",
+      "wiki": "https://en.wikipedia.org/wiki/North_Cascades_Highway"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "granite", "big_sky", "alpine_pass"],
+    "rank": 1
+  }
+]

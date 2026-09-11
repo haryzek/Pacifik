@@ -1,0 +1,633 @@
+{
+  "_comment": "Ruční opravy raw dat (Karolínka se v R6–R8 rozpadla). Klíč = id, hodnoty se mergnou přes raw záznam. Aplikuje scripts/merge.js.",
+  "_merge_pairs": [
+    [
+      "r1-005",
+      "gem-001"
+    ],
+    [
+      "r3-070",
+      "r4-027"
+    ],
+    [
+      "r8a-016",
+      "r8-005"
+    ],
+    [
+      "r9-016",
+      "r8-031"
+    ]
+  ],
+  "r6-003": {
+    "best_time": "kdykoli, i v mlze",
+    "why_bob": "Pět teras, každá o 100 000 let starší než ta pod ní — geologický čas vidět na jednom kilometru, a nahoře trpasličí les."
+  },
+  "r6-004": {
+    "fee": "8 $ day use (state park)",
+    "season_note_2026": "otevřeno; state park, ne NP",
+    "description": "Zřícená mořská jeskyně 30 m od silnice: kruhová díra v louce, do které zespodu bije Pacifik. Ve vnitrozemí parku vede stezka kaňonem k 11m vodopádu (cca 5 km tam a zpět, lesem).",
+    "why_bob": "Díra v zemi, ve které dýchá oceán — Bob si sedne na okraj a bude poslouchat."
+  },
+  "r6-007": {
+    "description": "Malé nezávislé knihkupectví na Main Street v Mendocinu, dobrý regál literatury, přírodovědy a lokální historie. Pár kroků od útesů.",
+    "why_bob": "Kniha koupená tady a přečtená hned vedle na útesu nad Pacifikem."
+  },
+  "r6-008": {
+    "why_bob": "Staleté stromy vysoké jako Bob — půda tak kyselá a chudá, že čas tu skoro stojí; divné a tiché."
+  },
+  "r6-012": {
+    "best_time": "odpoledne, slunce skrz okna",
+    "description": "Drobná nekonfesní kaple (1985) tvaru mořské mušle nebo houby, s vitrážemi, kovaným kováním a interiérem z dřeva a kamene. Stojí u silnice v Sea Ranch — komunitě moderní dřevěné architektury z 60. let, sama o sobě stojí za pomalý projezd.",
+    "why_bob": "Deset minut ticha v organické architektuře, kterou nikdo nečekal u dálnice; a Sea Ranch kolem je studie, jak stavět do krajiny."
+  },
+  "r6-013": {
+    "description": "Pobřežní park u ústí řeky Gualala: louky nad útesy, cypřiše ohnuté větrem, dole pláž s naplaveným dřevem. Krátká stezka podél útesů do městečka.",
+    "why_bob": "Ústí řeky, kde se sladká voda potká se slanou; borovice, vítr, prázdno."
+  },
+  "r6-014": {
+    "description": "Pískovcové skály nad mořem prožrané do plástve — tafoni, vzory jako z jiné planety, vzniklé solí a větrem. Krátká procházka od parkoviště Gerstle Cove, dál louky a vzácný pygmy forest.",
+    "why_bob": "Geologie jako sochařství: kámen, který sůl a čas přepsaly do vzoru, jaký si Bob bude prohlížet z pěti centimetrů."
+  },
+  "r6-015": {
+    "why_bob": "Ruská pevnost z roku 1812 na kalifornském útesu — historická anomálie v mlze, prázdná a tichá jako McCarthyho scéna."
+  },
+  "r6-017": {
+    "best_time": "podvečer, západ slunce",
+    "description": "Dlouhá pláž s obřím skaliskem Goat Rock na jižním konci a ústím Russian River na severním, kde na písku leží kolonie tuleňů. Silný příboj, sneaker waves — na koupání ne, na dívání ano.",
+    "why_bob": "Tuleni na písečné kose, řeka mizící v oceánu, skála jako pomník — a nikdo tu nic nedělá, jen se dívá.",
+    "swim": {
+      "possible": false,
+      "water": "ocean",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": null,
+      "safety": "smrtelně nebezpečný příboj, sneaker waves, zákaz koupání"
+    }
+  },
+  "r6-018": {
+    "best_time": "odliv, klidně i v mlze",
+    "description": "Malá skalnatá pláž pod útesy na Sonoma Coast, přístup po schodech z parkoviště u Highway 1. Při odlivu tůňky s hvězdicemi a sasankami, jinak jen skály, mlha a příboj.",
+    "why_bob": "Deset aut na parkovišti a přesto sám: schody dolů, tidepooly, mlha — a zpátky nahoru s hlavou pročištěnou."
+  },
+  "r6-019": {
+    "best_time": "ráno bez větru, klidně i za mlhy",
+    "description": "Klidná pláž na vnitřní straně Tomales Bay, chráněná před příbojem — nejlepší koupání na téhle části pobřeží. Voda 14–17 °C, pozvolný vstup, borovice a piknikové stoly. Pozor na klíšťata v trávě.",
+    "why_bob": "Jediné místo na sto kilometrů, kde se dá plavat, a ne jen namočit — zátoka na zlomu San Andreas, borovice, ticho."
+  },
+  "r6-020": {
+    "fee": "zdarma (Point Reyes nemá vstupné)",
+    "season_note_2026": "otevřeno čt–po; schody k majáku (313) mohou být za silného větru zavřené; zdarma",
+    "description": "Maják z roku 1870 na největrnějším a nejmlhavějším místě západního pobřeží, 313 schodů dolů po útesu. Panorama bílého příboje, občas velryby, skoro vždy vítr a mlha.",
+    "why_bob": "Nejmlhavější místo severoamerického pobřeží — jít dolů 313 schodů proti větru a nahoře zjistit, že to bylo o tom větru."
+  },
+  "r6-021": {
+    "fee": "zdarma",
+    "season_note_2026": "otevřeno, zdarma; v pozdním podzimu sloní tuleni v zátoce pod útesem",
+    "best_time": "odpoledne; v mlze jinak, ale taky dobře",
+    "description": "Krátká stezka (3 km tam a zpět) po hřbetu úzkého mysu na konci Point Reyes, s útesy na obě strany a výhledem na Drakes Bay i otevřený Pacifik. Ze zátoky pod útesem bývá slyšet sloní tuleně.",
+    "why_bob": "Chůze po hřebenu mezi dvěma oceány s větrem, který nedá vydechnout — Point Reyes destilované do jedné hodiny."
+  },
+  "r6-022": {
+    "fee": "zdarma",
+    "season_note_2026": "otevřeno, zdarma; sloní tuleni na pláži hlavně prosinec–březen, v září jen občas",
+    "best_time": "kdykoli; bílé útesy nejlíp v odpoledním světle",
+    "description": "Široká pláž pod bílými pískovcovými útesy, chráněná v zátoce Drakes Bay — mírnější příboj než na vnější straně poloostrova. Kavárna a návštěvnické centrum u parkoviště.",
+    "why_bob": "Bílé útesy jako v Doveru, jen pod nimi Pacifik a prázdno; na koupání mírnější než zbytek Point Reyes.",
+    "swim": {
+      "possible": true,
+      "water": "ocean",
+      "temp_c_sept_oct": "12–14",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "mírnější příboj než jinde na Point Reyes, přesto proudy; jen krátce a u břehu"
+    }
+  },
+  "r6-023": {
+    "fee": "zdarma",
+    "season_note_2026": "otevřeno, zdarma; září–říjen je říje tule elků — samci troubí",
+    "best_time": "podvečer, za říje slyšet troubení",
+    "description": "Stezka po hřbetu poloostrova k jeho severnímu cípu, 15 km tam a zpět po louce mezi dvěma vodami — Tomales Bay a Pacifik. Stádo tule elků, v září říje. Můžeš jít jen kus, výhledy jsou od začátku.",
+    "why_bob": "Stádo elků na louce mezi dvěma oceány a v září jejich troubení — jít, kam to nohy dají, a otočit se, kdykoli to stačí."
+  },
+  "r6-024": {
+    "description": "Alej monterejských cypřišů vysazená ve 30. letech k bývalé radiostanici RCA, koruny srostlé v tunel nad silnicí. Zastávka na deset minut u cesty k majáku.",
+    "why_bob": "Tunel ze stromů k opuštěné radiostanici — kompozice, kterou by Lynch nechal minutu bez střihu."
+  },
+  "r6-025": {
+    "fee": "8 $ parkování",
+    "season_note_2026": "otevřeno; parkování 8 $",
+    "description": "Vrchol Mt. Tam (784 m) nad Marin County, krátká stezka od parkoviště na vyhlídkovou věž. Za jasného dne celý záliv, SF, Farallony; za mlhy stojíš nad bílým mořem, ze kterého trčí jen vrcholy.",
+    "why_bob": "Když je dole mlha, tady stojíš nad ní — moře mraků s vyčnívajícími kopci, hodinu od SF."
+  },
+  "r6-026": {
+    "best_time": "všední den ráno; o víkendu davy z SF",
+    "description": "Pět kilometrů písku pod Mt. Tam, nejbližší opravdová pláž pro San Francisco. Silný příboj, studená voda, o víkendu plno; ve všední den v září klidno. Vedle laguna Bolinas s ptáky.",
+    "why_bob": "Studený Pacifik, dlouhý písek a za zády hora — na koupání jen pro otužilce, což Bob je.",
+    "swim": {
+      "possible": true,
+      "water": "ocean",
+      "temp_c_sept_oct": "13–15",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "rip currents, plavčíci jen v sezóně; žraloci (bílí) v zátoce — reálné riziko, drž se u břehu"
+    }
+  },
+  "r6-027": {
+    "season_note_2026": "otevřeno; místní pravidelně kradou směrovky, aby nikdo nepřijel — jeď podle mapy",
+    "description": "Vesnice na konci laguny, která desítky let odstraňovala silniční značky, aby ji nikdo nenašel. Jedna hospoda (Smiley's, 1851), obchod, surfaři, stárnoucí hippies, pláž s ústím laguny. Nic k dělání, a o to jde.",
+    "why_bob": "Město, které nechce být nalezeno — hospoda ze zlaté horečky, mlha, a Bob s knihou u okna jako místní."
+  },
+  "r6-028": {
+    "fee": "15 $ vstup + 9,50 $ rezervace parkování",
+    "season_note_2026": "otevřeno; rezervace parkování POVINNÁ předem online (gomuirwoods.com), jinak tě nepustí",
+    "best_time": "první hodina po otevření nebo poslední před zavřením",
+    "description": "Nejbližší pobřežní sekvoje k San Franciscu, staré až 800 let, v úzkém údolí potoka. Krásné a přeplněné; hlavní okruh je prkenný chodník, ticho najdeš až na bočních stezkách (Ben Johnson, Hillside).",
+    "why_bob": "Když už, tak brzo ráno a hned odbočit z chodníku nahoru — nebo to nechat a jít do Armstrongu, kde bude sám."
+  },
+  "r6-029": {
+    "category": "coast",
+    "best_time": "podvečer; za mlhy tu most mizí a zas se vynořuje",
+    "description": "Vyhlídka nad Golden Gate v Marin Headlands, z bunkrů bývalé baterie. Nejslavnější pohled na most — a v září i sezónní tah dravců (Golden Gate Raptor Observatory tu počítá tisíce jestřábů).",
+    "why_bob": "Most v mlze z bunkru a nad hlavou stovky dravců na tahu — SF z odstupu, který mu sedí víc než z ulic."
+  },
+  "r6-030": {
+    "season_note_2026": "otevřeno jen ne–po 12:30–15:30 (ověř na nps.gov/goga); mimo to jen zvenku",
+    "description": "Maják z roku 1855 na skalním výběžku u vjezdu do zálivu, přístupný ručně kopaným tunelem a visutým mostem. Otevřeno jen pár hodin o víkendu, ale i stezka k tunelu stojí za to.",
+    "why_bob": "Tunel ve skále a lávka nad příbojem k majáku, který vidí do zálivu i na otevřený oceán — a pod ním lodě mizí v mlze."
+  },
+  "r6-031": {
+    "description": "Pláž z tmavých oblázků mezi útesy v Marin Headlands, obklopená opuštěnými vojenskými bateriemi. Silný příboj, surfaři, laguna za pláží; stezky nahoru na útesy k bunkrům.",
+    "why_bob": "Tmavý štěrk, rezavé bunkry a příboj — militární melancholie u oceánu, půl hodiny od centra SF."
+  },
+  "r6-032": {
+    "category": "coast",
+    "best_time": "západ slunce, nebo noc kvůli světlům mostu",
+    "description": "Betonová dělostřelecká baterie z roku 1897 na útesu přímo nad severní věží Golden Gate. Nejbližší a nejvyšší pohled na most, po setmění celé SF osvětlené. Parkoviště malé, dojdi z Conzelman Rd.",
+    "why_bob": "Most z výšky oka orla, po setmění zlatá světla města a za nimi tma oceánu — obraz, u kterého se sedí dlouho."
+  },
+  "r6-033": {
+    "best_time": "ráno nebo za mlhy, kdy je les prázdný",
+    "description": "Háj pobřežních sekvojí u Guerneville v údolí Russian River — stromy přes 300 let a 90 m, ploché stezky, minimum lidí ve srovnání s Muir Woods. Ticho, kapradí, světlo skrz koruny.",
+    "why_bob": "Muir Woods bez lidí: stejné stromy, stejný ticho, a Bob v něm sám s knihou na lavičce."
+  },
+  "r7-011": {
+    "category": "mountain"
+  },
+  "r7-013": {
+    "category": "coast"
+  },
+  "r7-017": {
+    "category": "coast",
+    "best_time": "v září–říjnu bez rezervace, samci teprve připlouvají; klidné procházky po dunách",
+    "season_note_2026": "v září–říjnu je přístup na mys volný bez průvodce (sezóna s průvodci až od prosince); sloní tuleni jen ojediněle, hlavně mladí samci",
+    "why_bob": "Duny, vítr, prázdný mys a pár tuleních samců na pláži — v září sem skoro nikdo nejezdí, což je přesně ten důvod."
+  },
+  "r7-019": {
+    "category": "lake_river"
+  },
+  "r7-021": {
+    "why_bob": "Pobřežní promenáda nad surfaři, majákem a vlnami — Santa Cruz z té strany, která není zábavní park."
+  },
+  "r7-023": {
+    "description": "Bývalý mléčný ranč nad pobřežím u Santa Cruz: 3–4 km smyčka Old Cove Landing Trail po útesech nad zátokami s tuleni a přístupem na skryté pláže. Farma a historické budovy u parkoviště.",
+    "why_bob": "Útesy, zátoky, tuleni a krávy — zlatá kalifornská louka končící kolmo v oceánu, hodina samoty deset minut od města."
+  },
+  "r7-026": {
+    "fee": "12 $ za auto",
+    "why_bob": "Lone Cypress, pokroucené borovice a příboj na žule — placená silnice, ale mimo sezónu a v mlze je to Hopper, ne golf."
+  },
+  "r7-027": {
+    "fee": "10 $ za auto (často plno, parkuj na Hwy 1 a jdi pěšky zdarma)",
+    "why_bob": "Nejkrásnější kus kalifornského pobřeží na jednom místě — cypřiše, tyrkysové zátoky, vydry; Jeffers tu psal a Bob tu bude celý den."
+  },
+  "r7-028": {
+    "fee": "zdarma",
+    "season_note_2026": "otevřeno, zdarma; parkuje se u silnice (turnout 13, 18, 19)",
+    "description": "Neoznačený úsek pobřeží na začátku Big Suru: stezky po útesech k Soberanes Point, dole skryté pláže s příbojem, nahoře kaňon s kapradím a sekvojemi (Soberanes Canyon Trail). Žádné návštěvnické centrum, jen turnout u silnice.",
+    "why_bob": "Big Sur bez vstupného a bez lidí — sednout na útes nad příbojem a nechat si vítr dát facku."
+  },
+  "r7-029": {
+    "category": "coast",
+    "why_bob": "Betonový oblouk z roku 1932 nad propastí do moře — ikona, ale v ranní mlze zase jen tvar a ticho."
+  },
+  "r7-030": {
+    "category": "coast",
+    "description": "Nejvyšší bod Highway 1 v severním Big Suru (cca 170 m nad mořem), turnout s výhledem zpátky na Bixby Bridge a dopředu na pobřeží až k Point Sur. Vítr tu je pořád.",
+    "why_bob": "Pojmenované po větru a oprávněně — stojíš nad celým Big Surem a pod tebou to hučí."
+  },
+  "r7-037": {
+    "why_bob": "Vodopád, který padá rovnou na pláž, kam nikdo nesmí — dokonalý obraz nedosažitelnosti, dvě minuty od parkoviště."
+  },
+  "r7-041": {
+    "best_time": "slunečné odpoledne, voda je nejteplejší",
+    "why_bob": "Studená řeka mezi žulovými balvany pod sekvojemi, tůně na plavání — jeho Vltava v Big Suru.",
+    "swim": {
+      "possible": true,
+      "water": "river",
+      "temp_c_sept_oct": "14–17",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "kluzké balvany, nízký stav vody na podzim — neskákat naslepo"
+    }
+  },
+  "r7-043": {
+    "category": "coast",
+    "best_time": "kdykoli; v září línající samice a mladí, klid",
+    "why_bob": "Tuny tuleňů chrápajících na pláži u silnice, zdarma a bez plotu — absurdní a monumentální zároveň."
+  },
+  "r7-047": {
+    "why_bob": "Zlaté louky končící kolmo v oceánu, prázdné zátoky a kopce na výstup — Bluff Trail je dvě hodiny, na které nezapomene."
+  },
+  "r7-048": {
+    "description": "Pobřežní zakrslý dubový les u Los Osos — duby staré stovky let, ale vysoké jen 3–6 metrů, pokroucené větrem a rostoucí na dunách. Prkenný okruh 1,5 km s výhledem na Morro Bay.",
+    "why_bob": "Duby jako bonsaje ohnuté oceánským větrem, lišejník, ticho a Morro Rock v pozadí — Salinas savana v miniatuře."
+  },
+  "r7-049": {
+    "fee": "30 $ za auto (America the Beautiful pass platí)",
+    "season_note_2026": "otevřeno; z Highway 1 cca 1,5 h, jen východní vstup (z Hollisteru) má přístup k jeskyním; jeskyně Bear Gulch bývají část roku zavřené kvůli netopýrům — ověř na nps.gov/pinn",
+    "best_time": "ráno, v září je uvnitř horko (30+ °C); kondoři nejčastěji kolem poledne na termice",
+    "description": "Zbytky sopky, které zlom San Andreas odvezl 300 km na sever od původního místa: skalní věže, balvanové jeskyně s čelovkou a nad tím kroužící kondoři kalifornští. High Peaks loop cca 9 km, náročnější, ale jeskyně Bear Gulch jsou i na hodinu.",
+    "why_bob": "Půlka sopky, kterou tektonika odnesla 300 km — deep time doslova, a nad hlavou největší pták Severní Ameriky."
+  },
+  "r7-050": {
+    "season_note_2026": "otevřeno; Soda Lake Road je zpevněná jen zčásti, sedan ok za sucha; žádná pumpa ani voda, tankuj v Taft nebo Santa Margarita",
+    "best_time": "podvečer a noc — jedna z nejtemnějších obloh v Kalifornii",
+    "description": "Plochá travnatá pánev mezi dvěma pohořími, uprostřed bílé solné jezero Soda Lake a po celé délce jizva zlomu San Andreas (nejlíp vidět na Wallace Creek). V září žlutá a vyprahlá, bez lidí, bez signálu, s temnou oblohou.",
+    "why_bob": "Nejprázdnější místo v Kalifornii: sůl, tráva, zlom San Andreas pod nohama a v noci Mléčná dráha — Bobova poušť dvě hodiny od Big Suru."
+  },
+  "r8-001": {
+    "why_bob": "Zlaté louky končící kolmo v oceánu, prázdné zátoky a kopce na výstup — Bluff Trail je dvě hodiny, na které nezapomene."
+  },
+  "r8-002": {
+    "why_bob": "Tuny tuleňů chrápajících na pláži u silnice, zdarma a bez plotu — absurdní a monumentální zároveň."
+  },
+  "r8-004": {
+    "season_note_2026": "otevřeno; prameny jsou vlažné (cca 35 °C), malé a kalné, spíš zajímavost než koupel; stezka 1,5 km",
+    "why_bob": "Teplá sirná tůňka pod duby, deset minut od pláže — malé, kalné, a přesto: horký pramen na pobřeží."
+  },
+  "r8-008": {
+    "name": "Meditation Mount (Ojai)",
+    "best_time": "západ slunce (\"Pink Moment\" — hory Topatopa zrůžoví)",
+    "description": "Zahrady a vyhlídka meditačního centra na východním konci údolí Ojai, otevřené veřejnosti. Při západu slunce se stěna hor Topatopa naproti zbarví do růžova — místní tomu říkají Pink Moment. Ticho, lavičky, nikdo nemluví.",
+    "why_bob": "Deset minut růžového světla na skalní stěně a údolí, které mlčí s tebou — Ojai je nejklidnější městečko jižní Kalifornie.",
+    "season_note_2026": "otevřeno obvykle st–ne, dobrovolný příspěvek; ověř hodiny (meditationmount.org)"
+  },
+  "r8-013": {
+    "why_bob": "Mys nad Pacifikem s výhledem na Malibu i Catalinu, dole prázdná pláž a šance na velryby — ticho na kraji Los Angeles."
+  },
+  "r8-019": {
+    "why_bob": "Meierova bílá architektura na kopci nad LA, van Gogh a Cézanne uvnitř, zahrady a smog jako zlatá mlha dole — muzeum, které je hlavně o prostoru a světle."
+  },
+  "r8-021": {
+    "description": "Knihkupectví v bývalé bance v centru LA: labyrint regálů, tunel z knih, oddělení sci-fi v trezoru, nahoře umělecké instalace. Dá se tu strávit odpoledne.",
+    "why_bob": "Knihy v trezoru banky a tunel z knih — jediný důvod jít do downtownu LA, a stačí."
+  },
+  "r8-025": {
+    "why_bob": "Světlík, litinová schodiště a stíny z Blade Runnera — pět minut v pasáži, které vydrží dlouho."
+  },
+  "r8-026": {
+    "why_bob": "Katedrála art deco a mission stylu, poslední velké nádraží Ameriky — sednout do kožené lavice v hale a dívat se na světlo."
+  },
+  "r8-028": {
+    "why_bob": "Třicet let jeden italský zedník po nocích stavěl věže z drátu, střepů a lastur, pak odešel a nikdy se nevrátil — outsider art v měřítku katedrály."
+  },
+  "r8-029": {
+    "why_bob": "Lotosy, palmy a panorama downtownu za jezerem — nejklidnější lavička v LA, ideální na knihu po dni v provozu."
+  },
+  "r8-033": {
+    "best_time": "podvečer",
+    "season_note_2026": "otevřeno; parkování v centru placené a těžké, o víkendu davy",
+    "description": "Umělecká kolonie z počátku 20. století, dnes drahé městečko mezi kopci a mořem. Skalnaté zátoky (Thousand Steps Beach, Crescent Bay), galerie, kavárny. Pro Boba spíš průjezd s jednou zastávkou na útesu než cíl.",
+    "why_bob": "Heisler Park nad zátokami při západu slunce — pak dál, Laguna je hezká, ale ne jeho."
+  },
+  "r8-034": {
+    "best_time": "podvečer, západ slunce z útesu",
+    "season_note_2026": "otevřeno; kemp na útesu, day use parkování 15 $",
+    "fee": "15 $ parkování",
+    "description": "Pláž pod vysokými útesy na jižním konci Orange County, přístup stezkou z kempu nahoře. Surfaři, vlaky Amtraku po pobřeží těsně nad pláží, klid mimo víkendy. Poslední zastávka před San Diego County.",
+    "why_bob": "Vlak jedoucí po pláži pod útesem při západu slunce — americká pohlednice, kterou si Bob nechá projet kolem."
+  },
+  "r8b-001": {
+    "season_note_2026": "otevřeno; parkování na pláži 10–25 $ podle dne, nebo zdarma u silnice N Torrey Pines Rd a pěšky nahoru",
+    "why_bob": "Nejvzácnější borovice Severní Ameriky na pískovcových útesech nad Pacifikem — hodinová stezka a dole pláž na koupání."
+  },
+  "r8b-002": {
+    "why_bob": "Plavání v mořské rezervaci s lachtany a garibaldi rybami ve vodě 18–20 °C — nejlepší mořská koupel celé cesty, a to na jejím konci."
+  },
+  "r8b-003": {
+    "why_bob": "Surfařská chatka z palmových listů na skále (1946), příboj a západ slunce — místo, kde vznikl kalifornský surf a dodnes to tak vypadá."
+  },
+  "r8b-004": {
+    "why_bob": "Nudistická pláž pod 100m útesy, přístup strmou pěšinou od gliderportu — nejosamělejší koupání v San Diegu, nahý a sám, jak to má rád."
+  },
+  "r8b-006": {
+    "fee": "20 $ za auto (America the Beautiful pass platí)",
+    "why_bob": "Konec Point Lomy, kde se otevře celý záliv, město i oceán najednou; dole při odlivu tidepooly — nejlepší místo, kde pochopit, kde vlastně skončil."
+  },
+  "r8b-007": {
+    "why_bob": "Kopec nad La Jollou s 360° výhledem — město, moře, hory až k Mexiku; pomník ať nechá být, výhled ne."
+  },
+  "r8b-008": {
+    "season_note_2026": "otevřeno; příjezdová cesta bývá za vysoké vody zavřená (pak 2,5 km pěšky od parkoviště); Friendship Park u zdi omezeně přístupný — stačí dojít na pláž",
+    "description": "Nejjihozápadnější bod kontinentálních USA: slané mokřady ústí řeky Tijuana, prázdná pláž a hraniční zeď, která vbíhá do oceánu. Na druhé straně plotu býčí aréna a Tijuana. Ptáci, ticho, pohraniční hlídka.",
+    "why_bob": "Konec cesty doslova — plot, který vbíhá do Pacifiku, prázdná pláž a na druhé straně Mexiko; místo na dlouhé mlčení."
+  },
+  "r8b-009": {
+    "fee": "15 $ parkování",
+    "season_note_2026": "otevřeno; Trestles pláž jen pěšky (1,5 km) z parkoviště u Cristianitos Rd; jaderná elektrárna je odstavená, kopule stojí",
+    "description": "Pět kilometrů útesů a pláží mezi San Clemente a Camp Pendleton, na severu surfařská mekka Trestles (pěšky pod dálnicí a tratí), na jihu pláže pod útesy a odstavená jaderná elektrárna s dvěma kopulemi. Kemp na útesu.",
+    "why_bob": "Surfaři pod dálničním mostem, prázdné útesy a dvě kopule mrtvé jaderné elektrárny na pláži — Kalifornie bez filtru."
+  },
+  "r8b-010": {
+    "description": "Nejdelší dřevěné molo na západním pobřeží (nová část dokončená 2025 po požáru 2024), 600 m do oceánu, rybáři, surfaři pod ním, diner na konci. Oceanside je vojenské město (Camp Pendleton) — méně nablýskané než sousedi, a o to lepší.",
+    "why_bob": "Diner na konci mola, rybáři, vojenské město za zády — Hopper by si tu sedl s kávou, Bob taky.",
+    "season_note_2026": "otevřeno; konec mola po požáru 2024 znovu otevřen 2025 — ověř, jestli je restaurace v provozu"
+  },
+  "r8b-011": {
+    "description": "Betonové molo z roku 1966, nejdelší na západním pobřeží po Oceanside, s výhledem na Sunset Cliffs a surfaře pod sebou. Ocean Beach je poslední hippie čtvrť San Diega: antikvariáty, tetovací salony, psí pláž, středeční farmářský trh, žádné řetězce.",
+    "why_bob": "Jeho hotel je tady — večer na konci mola, ráno na psí pláži, mezi tím kavárna na Newport Ave; OB je čtvrť, kde by mohl žít.",
+    "season_note_2026": "molo bylo 2023–2025 po bouřích částečně zavřené kvůli statice — ověř, zda je konec otevřený; i tak stojí za to"
+  },
+  "r8b-012": {
+    "description": "Burgerový bar v Ocean Beach od roku 1969, špinavý, hlučný, s poznávacími značkami na zdech a frontou na chodníku. Burger velikosti hlavy, tučné hranolky, pivo. Přesně to, co po dni na útesech potřebuješ.",
+    "why_bob": "Bar bez ambicí, který tu je půl století a nezměnil se — jeden burger na konci cesty, a pak už jen molo a západ slunce."
+  },
+  "r8b-013": {
+    "why_bob": "Antikvariát v North Parku s regály až ke stropu, kočkou a personálem, co čte — hodinu se ztratit a odejít s knihou na letadlo."
+  },
+  "r8b-014": {
+    "name": "The Book Catapult (South Park)",
+    "nearest_town": "San Diego (South Park), CA",
+    "description": "Malé nezávislé knihkupectví ve čtvrti South Park (ne Ocean Beach), pečlivě vybrané tituly, beletrie i esejistika, autorská čtení. Sousedství klidných uliček s kavárnami a starými domy.",
+    "why_bob": "Knihkupectví, kde má každá kniha důvod být na regálu — a South Park kolem je tichá čtvrť, ve které se chodí pomalu."
+  },
+  "r8b-015": {
+    "why_bob": "Sci-fi a fantastika na regálech od podlahy ke stropu — pokud potřebuje na zpáteční let Ishigura nebo něco o vědomí, tady to bude."
+  },
+  "r8b-016": {
+    "description": "Obchod s vinyly v North Parku, založený 1967 (Lou Curtiss), dnes stovky beden soulu, funku, blues, psychedelie a jazzu, hodně originálních lisů. Neuspořádané, prašné, poctivé.",
+    "why_bob": "Bedny soulu a psychedelie z 60.–70. let, které nikdo neuklízí do kategorií — hodina hrabání a vinyl na cestu domů."
+  },
+  "r8b-017": {
+    "fee": "cca 25 $ (bez kina)",
+    "why_bob": "Planetárium v Balboa Parku — pokud bude pršet nebo bude potřeba hodina kosmu na závěr cesty; jinak spíš Palomar."
+  },
+  "r8b-018": {
+    "fee": "cca 20 $",
+    "description": "Antropologické muzeum v Balboa Parku v kalifornské barokní budově z výstavy 1915 (věž s prohlídkou). Expozice o rase, lidské evoluci, kanibalismu, pivu a smrti — zaměřené na otázky, ne na artefakty. Věž má samostatnou prohlídku s výhledem na park.",
+    "why_bob": "Muzeum, které se ptá, co je člověk, a nebojí se témat — a věž nad Balboa Parkem jako bonus."
+  },
+  "r8b-019": {
+    "description": "Jediná mořská jeskyně v Kalifornii přístupná po souši: 145 schodů tunelem vykopaným v roce 1902 z obchodu Cave Store dolů k otvoru tvaru profilu obličeje (Sunny Jim). Dole vlny a světlo zvenku. Pašeráci ji za prohibice skutečně používali.",
+    "why_bob": "Tunel ve skále z roku 1902 dolů do jeskyně, kde příboj dýchá metr od tebe — deset dolarů za pět minut jiného světa."
+  },
+  "r8b-020": {
+    "why_bob": "Zlatokopecké městečko v horách s dubovou savanou kolem — jablečný koláč, chladnější vzduch a Steinbeckova Kalifornie hodinu od pláže."
+  },
+  "r8b-021": {
+    "description": "Sunrise Highway (S1) vede hřbetem Laguna Mountains ve výšce 1 800 m: borovice, louky, a najednou vyhlídky, kde země padá 1 500 m dolů do pouště Anza-Borrego. Desert View a Kwaaymii Point jsou nejlepší. Temná obloha, v noci Mléčná dráha.",
+    "why_bob": "Stojíš v borovém lese a pod tebou začíná poušť — hrana mezi dvěma světy, a v noci nad ní hvězdy jako v Hoggaru."
+  },
+  "r8b-022": {
+    "fee": "zdarma (návštěvnická galerie); prohlídky s průvodcem 15 $ o sobotách (rezervace)",
+    "season_note_2026": "návštěvnická galerie otevřena denně 9–15 zdarma, vidíš Haleův teleskop skrz sklo; prohlídky s průvodcem so (rezervace astro.caltech.edu/palomar); v noci se nepozoruje — tma je kolem, ne uvnitř",
+    "description": "Observatoř Caltechu na Palomar Mountain (1 700 m) s Haleovým 5m dalekohledem — od roku 1948 přes 45 let největší na světě, v art deco kopuli. Návštěvnická galerie zdarma, výhled na dalekohled. Cesta nahoru serpentinami přes duby a borovice.",
+    "why_bob": "Dalekohled, kterým se měřila expanze vesmíru a objevily kvasary, v art deco kopuli na hoře — Bobova katedrála, hodinu a půl od San Diega."
+  },
+  "r8b-023": {
+    "fee": "10 $ parkování (Paso Picacho)",
+    "season_note_2026": "otevřeno; cca 6,5 km tam a zpět, 300 m převýšení, nahoře schody se zábradlím ve skále",
+    "description": "Výstup na žulový vrchol Stonewall Peak (1 733 m) v Cuyamaca Rancho State Park, stezka serpentinami dubovým lesem (po požáru 2003 dorůstá), nahoře schody vytesané do skály. Výhled na jezero Cuyamaca, hory a na východě poušť.",
+    "why_bob": "Dvě hodiny na žulový vrchol, dole jezero, na východě poušť, na západě moře — celý jih Kalifornie v jednom pohledu."
+  },
+  "r8b-024": {
+    "why_bob": "Laguna mezi dálnicí a mořem, kde se najednou ozvou jen ptáci — hodina ticha na pobřeží, které jinak nikdy nemlčí."
+  },
+  "r8b-025": {
+    "description": "Kaňon s potokem a dubovým lesem uprostřed předměstí San Diega, 11 km širokých stezek, uprostřed malý vodopád v sopečné skále. Ráno chladno, ptáci; poledne v září horko.",
+    "why_bob": "Duby, potok a kaňon uprostřed města — ranní hodina v zeleni před dnem na pláži."
+  },
+  "r8b-026": {
+    "why_bob": "Nejmírnější vstup do Pacifiku v celém San Diegu, voda 18–20 °C — ranní plavání bez adrenalinu, a pak káva na promenádě."
+  },
+  "r8b-027": {
+    "fee": "zdarma",
+    "why_bob": "Zahrady na útesu nad surfaři ze Swami's, kde se nesmí mluvit — půl hodiny ticha nad oceánem, ať si o józe myslí, co chce."
+  },
+  "r8a-001": {
+    "road_access": "gravel_ok_sedan",
+    "description": "Nejodlehlejší pláž Central Coast: Point Sal Road je desítky let zavřená, takže se jde pěšky z brány u Brown Road — cca 13 km tam a zpět po hřebeni s výhledy na oceán, dolů na prázdnou pláž pod útesy. Vandenberg za zády, nikde nikdo.",
+    "why_bob": "Pláž, kam se musí jít tři hodiny pěšky, a proto na ní nikdo není — vítr, příboj, tuleni a Bob.",
+    "effort": {
+      "type": "hike",
+      "distance_km": 13,
+      "elevation_m": 400,
+      "difficulty": "moderate"
+    }
+  },
+  "r8a-002": {
+    "description": "Nejvyšší pobřežní duny západního pobřeží (až 150 m), 30 km písku od Pismo po Point Sal. Tady se v roce 1923 natáčelo DeMillovo Desatero a kulisy Egypta jsou dodnes pohřbené v písku. Z parkoviště na konci Main St pěšky k ústí řeky Santa Maria.",
+    "why_bob": "Sahara u Pacifiku s pohřbeným faraonským městem z roku 1923 pod nohama — duny, vítr, mlha, a nic jiného.",
+    "season_note_2026": "otevřeno denně; část dun uzavřená 1. 3.–1. 10. kvůli hnízdění kulíků (ne plameňáků) — v říjnu už volno"
+  },
+  "r8a-006": {
+    "why_bob": "Hodinová věž zdarma nad městem, které vypadá jako Andalusie — pět minut výhledu, pak dolů do Funk Zone na pivo."
+  },
+  "r8a-007": {
+    "why_bob": "Louka na útesu nad oceánem, psi bez vodítka, lavička a Channel Islands na obzoru — Santa Barbara, jak ji místní mají pro sebe."
+  },
+  "r8a-009": {
+    "why_bob": "Křižovatka s vlajkovým stožárem uprostřed, saloon a kolem dubová savana Santa Ynez — výchozí bod na Figueroa Mountain, ne cíl."
+  },
+  "r8a-010": {
+    "description": "Malá jeskyně u úzké silnice Painted Cave Road nad Santa Barbarou s chumašskými malbami — červené, černé a bílé kruhy, kříže a bytosti, snad 400 let staré, snad víc. Za mříží, ale vidět dobře. Cesta dál nahoru na Camino Cielo je sama o sobě výhledová.",
+    "why_bob": "Znaky na stropě jeskyně, kterým nikdo nerozumí, deset metrů od silnice — a pak nahoru na hřeben, kde se to všechno otevře."
+  },
+  "r8a-011": {
+    "description": "Ruiny kamenného sídla z roku 1916 na hřebeni East Camino Cielo, vyhořelé 1940 — zůstaly oblouky, komíny a schody, pod nimi celé údolí Santa Ynez a jezero Cachuma. Od silnice 1,5 km po zpevněné cestě; soukromý pozemek, přístup tolerovaný.",
+    "why_bob": "Oblouky vyhořelého sídla nad údolím, kde si sedne na zeď se západem slunce v zádech — ruina jako z Tarkovského, hodina od pláže."
+  },
+  "r8a-012": {
+    "swim": {
+      "possible": false,
+      "water": "lake",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": null,
+      "safety": "vodárenská nádrž, koupání zakázáno"
+    },
+    "why_bob": "Nádrž mezi kopci, koupat se nesmí — spíš průjezd po Highway 154 s výhledem než zastávka."
+  },
+  "r8a-013": {
+    "description": "Dostavníková stanice z roku 1865 v kaňonu pod průsmykem San Marcos, dnes hospoda s krbem, tri-tip sendviči a o víkendu živým blues a country venku u potoka mezi harleyi. Dřevo, petrolejky, žádný signál.",
+    "why_bob": "Hospoda ze zlaté horečky v kaňonu, kde v neděli odpoledne hraje blues pro motorkáře a Bob má tri-tip a pivo — nejvíc americká hodina cesty.",
+    "season_note_2026": "otevřeno denně, kuchyň cca 11–20 h; živá hudba pá–ne odpoledne; ověř na coldspringtavern.com"
+  },
+  "r8a-014": {
+    "why_bob": "Útesy nad tuleňskou kolonií (v zimě plná, v říjnu pár), Channel Islands na obzoru a vlak Amtraku pod nohama — půl hodiny, které stojí za odbočku."
+  },
+  "r8a-015": {
+    "why_bob": "Malý mechový vodopád v dubovém kaňonu — v říjnu spíš vlhká stěna než voda, ale duby s lišejníkem kolem jsou důvod.",
+    "season_note_2026": "v říjnu vodopád skoro suchý; park zdarma (county park), 15 min od parkoviště"
+  },
+  "r8a-017": {
+    "why_bob": "Travnatý pás nad útesem s výhledem na ostrovy a lavičkami — Bob s knihou a větrem, deset minut od centra."
+  },
+  "r8a-018": {
+    "why_bob": "Nejstarší divadlo Kalifornie (1873), 600 míst a akustika, za kterou sem jezdí jazz a folk — koukni na program, kdo hraje ten večer."
+  },
+  "r9-002": {
+    "why_bob": "Celé Coachella Valley pod nohama, Salton Sea v oparu a přes údolí jizva zlomu San Andreas — poušť v měřítku, které Bob hledá."
+  },
+  "r9-003": {
+    "why_bob": "Tisíce kaktusů cholla, které v nízkém slunci svítí jako lampy — pět minut po chodníku a nesahat, ty ostny jdou skrz botu."
+  },
+  "r9-004": {
+    "description": "Žulový oblouk 9 m široký u kempu White Tank, krátký okruh (1,5 km) mezi balvany. Vedle Heart Rock. Nejlepší ráno nebo se soumrakem.",
+    "why_bob": "Oblouk z granitu, který erodoval 100 milionů let — deset minut, a je na cestě k Cholla Garden."
+  },
+  "r9-005": {
+    "why_bob": "Kulisy westernu z roku 1946, kde bydleli Gene Autry a Roy Rogers, dnes prázdná ulice v poušti — a na konci Pappy's s pivem."
+  },
+  "r9-006": {
+    "why_bob": "Honky-tonk v kulisách westernu, kde hráli Paul McCartney i Robert Plant nečekaně na malém pódiu — jestli něco hraje, sem, a spát v Pioneertown Motel vedle.",
+    "season_note_2026": "obvykle zavřeno út–st, program na pappyandharriets.com; na jídlo rezervace, na bar ne; ověř"
+  },
+  "r9-007": {
+    "why_bob": "Deset akrů soch z odpadu, které Purifoy stavěl v poušti do svých 87 let — outsider art bez plotu, bez vstupného, s větrem."
+  },
+  "r9-008": {
+    "description": "Kopec z hlíny, slámy a půl milionu litrů barvy s nápisem GOD IS LOVE, který Leonard Knight — bývalý mechanik, ne kněz — stavěl 30 let sám u Slab City. Dnes ho udržují dobrovolníci, barva se loupe, poušť si to bere zpátky.",
+    "why_bob": "Jeden chlap, třicet let a půl milionu litrů barvy uprostřed ničeho — víra jako land art, absurdní a dojemné zároveň."
+  },
+  "r9-009": {
+    "why_bob": "Poslední svobodné místo v Americe, jak si říkají: squatteři na betonových deskách, bez vody, bez zákona, s East Jesus vzadu — projet pomalu, nechat okno dole."
+  },
+  "r9-010": {
+    "description": "Bývalé letovisko na břehu Salton Sea, dnes napůl vylidněné: rezavé karavany, solí ožrané domy, pláž z rybích kostí a umělecké instalace (Bombay Beach Biennale) — televize v písku, drive-in s vraky aut. Zápach záleží na větru.",
+    "why_bob": "Konec světa jako umělecká kolonie — Ballard by tu bydlel; Bob tu stráví hodinu a bude na to myslet dlouho."
+  },
+  "r9-011": {
+    "road_access": "rough_caution",
+    "season_note_2026": "6 km písčitým washem Font's Wash — sedany to jezdí, ale zahrabání je reálné; jeď rychle a nezastavuj v měkkém písku, nebo dojdi pěšky (1 h). Vstup zdarma.",
+    "why_bob": "Nejlepší badlands na západě: z ostrohu sto metrů nad rozeklanou hlínou, při západu slunce oranžová jako Mars — pokud si na ten wash troufne."
+  },
+  "r9-012": {
+    "why_bob": "Sto třicet kovových zvířat — mamuti, šavlozubí tygři, 100 m dlouhý had přes silnici — rozeseté v poušti kolem Borrego Springs; hledat je autem je půlka zábavy."
+  },
+  "r9-013": {
+    "why_bob": "Pět kilometrů suchým kaňonem a najednou háj tisíců palem s vodou — oáza doslova, nejlepší ráno v Anza-Borrego."
+  },
+  "r9-014": {
+    "fee": "zdarma (Mojave National Preserve nemá vstupné)",
+    "season_note_2026": "otevřeno, zdarma; 5 km štěrkové cesty od Kelbaker Rd, sedan ok; žádná voda, žádná pumpa — tankuj v Baker nebo Amboy",
+    "why_bob": "Duny 200 m vysoké, které při sesuvu písku hučí jako varhany — vylézt nahoru trvá hodinu a nahoře není nic než ten zvuk."
+  },
+  "r9-015": {
+    "fee": "30 $ za auto (Death Valley NP, 7 dní)",
+    "season_note_2026": "otevřeno; z LA 4–5 h, spíš jako noc v Death Valley (Stovepipe Wells / Furnace Creek) než výlet; v říjnu 30–35 °C ve dne, nádherně v noci; tankuj v Baker/Beatty",
+    "why_bob": "Zlaté badlands v prvním světle, kde Antonioni točil Zabriskie Point — pokud do Death Valley pojede, tohle je svítání, kvůli kterému vstane."
+  },
+  "r9-016": {
+    "why_bob": "Skalní vrstvy vztyčené zlomem do 45°, Star Trek a stovka westernů — dvacet minut od LA a už to vypadá jako Mars."
+  },
+  "r9-017": {
+    "fee": "cca 35 $ zpáteční",
+    "why_bob": "Deset minut lanovkou z pouště do jedlového lesa o 15 °C chladnějšího — a nahoře ticho a stezky, když se odejde od stanice."
+  },
+  "r9-019": {
+    "why_bob": "Černý kužel v lávovém poli u Route 66, hodina nahoru po sypké strusce — a z kráteru dokola nic, jen ticho a Mojave."
+  },
+  "r9-020": {
+    "why_bob": "Neon ROY'S z roku 1959 nad prázdnou pumpou v Amboy, které má čtyři obyvatele — nejčistší Hopper celé cesty, zvlášť za soumraku.",
+    "season_note_2026": "obchod otevřen denně cca 8–19, benzín drahý, motel stále zavřený; neon svítí po setmění"
+  },
+  "r9-021": {
+    "why_bob": "Pět set tufových věží z dna zaniklého jezera, kde se točil Planet opic i Star Trek — a v noci hvězdy, protože tady na sto kilometrů nikdo nesvítí.",
+    "season_note_2026": "8 km štěrkové cesty z CA-178, sedan ok za sucha; BLM, zdarma, spát se tu smí (žádné zázemí)"
+  },
+  "r9-022": {
+    "description": "Přehradní jezero (1884/1912) ve 2 000 m v San Bernardino Mountains, kolem borovice, na severním břehu klidné zátoky s přístupem do vody. V říjnu voda 14–17 °C, lidí málo. Rim of the World Highway (CA-18) nahoru je sama o sobě výhledová.",
+    "why_bob": "Studené horské jezero mezi borovicemi po dnech v poušti — plavání na severním břehu, kde nejsou motorové čluny.",
+    "swim": {
+      "possible": true,
+      "water": "lake",
+      "temp_c_sept_oct": "14–17",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "motorové čluny na jihu; drž se u břehu, nadmořská výška 2 000 m"
+    }
+  },
+  "r9b-001": {
+    "why_bob": "Přehrada z roku 1900 mezi balvany, v říjnu často jen bahno — ale petroglyfy na skále a okruh mezi joshua stromy stojí za hodinu."
+  },
+  "r9b-002": {
+    "why_bob": "Balvan s vydutými očními důlky u silnice — dvě minuty, ale ranní světlo na žule kolem je důvod jít dál po okruhu."
+  },
+  "r9b-003": {
+    "why_bob": "Nejvyšší bod, kam se v parku dojde po stezce: 320 m výstupu a celá poušť dokola, San Jacinto na západě — nejlepší hodina v Joshua Tree."
+  },
+  "r9b-004": {
+    "why_bob": "Palmy u pramene na jihu parku, kde skoro nikdo nejezdí — zbytky dolu, ticho a přechod z Mojave do Colorado Desert."
+  },
+  "r9b-005": {
+    "road_access": "rough_caution",
+    "season_note_2026": "prvních 8 km (po zastávku 9) sedan ok za sucha, dál jen 4x4 — otoč se u Squaw Tank; NP vstup 30 $",
+    "why_bob": "Štěrková cesta do vnitřku parku, kam asfalt nevede — Bob může jet prvních 8 km a vidět, jak vypadá poušť bez lidí."
+  },
+  "r9b-006": {
+    "name": "Twentynine Palms — murály, 29 Palms Inn, Harmony Motel",
+    "description": "Vojenské město u severního vstupu do parku: přes 20 murálů na fasádách (Oasis of Murals), 29 Palms Inn — adobe chatky z 20. let u oázy Mara s restaurací a hospodou, a Harmony Motel, kde bydleli U2 při focení obalu The Joshua Tree. Neon, prach, mariňáci.",
+    "why_bob": "Motel, kde U2 spali kvůli Joshua Tree, a adobe chatky u oázy — Hopper v poušti, a Pappy's je 40 minut.",
+    "season_note_2026": "29 Palms Inn cca 130–200 $/noc, Harmony Motel cca 100–130 $; ověř"
+  },
+  "r9b-007": {
+    "why_bob": "Kupole postavená pro omlazení a antigravitaci podle instrukcí od Venušanů, dnes zvukové koupele s křišťálovými mísami — hodinu ležet v dokonalé akustice, ať si o tom myslí cokoli.",
+    "season_note_2026": "sound bath jen na rezervaci (integratron.com), cca 50 $, obvykle st–ne; zvenku vidět vždy"
+  },
+  "r9b-008": {
+    "why_bob": "Sedmipatrový balvan, u kterého se v 50. letech scházely UFO konvence, dnes posprejovaný a prasklý — Americana v ryzí, prašné podobě, 3 km písčité cesty."
+  },
+  "r9b-009": {
+    "season_note_2026": "budova byla 2021–2024 zavřená na renovaci, znovuotevření se hlásilo — OVĚŘ na nps.gov/moja; zvenku a palmy stojí za zastávku vždy",
+    "why_bob": "Nádraží ve stylu španělské mise uprostřed Mojave, kde vlaky nestaví — palmy, ticho a koleje do nekonečna."
+  },
+  "r9b-010": {
+    "name": "Hole-in-the-Wall — Rings Trail (Mojave)",
+    "fee": "zdarma",
+    "season_note_2026": "otevřeno, zdarma; posledních 15 km Black Canyon Rd štěrk, sedan ok; návštěvnické centrum jen o víkendu",
+    "why_bob": "Slézt kaňonem po železných kruzích zapuštěných do sopečného tufu, který vypadá jako ementál — krátké, fyzické, divné, jeho."
+  },
+  "r9b-011": {
+    "why_bob": "Kavárna z filmu Bagdad Café (1987) na Route 66, dnes ošuntělá a poloprázdná — zastávka na kafe pro ty, co ten film znají, a Bob ho zná."
+  },
+  "r9b-012": {
+    "why_bob": "Zaniklá kavárna, zavřená pumpa a pár domů na Route 66 — pět minut, ve kterých pochopíš, co se stalo s celou tou silnicí."
+  },
+  "r9b-013": {
+    "why_bob": "Škola z roku 1914 uprostřed ničeho, kde dobrovolníci sbírají historii pouště — otevřeno jen někdy, ale i zvenku je to nejopuštěnější místo dne.",
+    "season_note_2026": "otevřeno obvykle pá–ne 9–16 (Mojave Desert Heritage & Cultural Association); ověř"
+  },
+  "r9b-014": {
+    "road_access": "rough_caution",
+    "fee": "zdarma",
+    "season_note_2026": "8 km písčitým washem Vallecito Creek + Arroyo Tapiado — sedan JEN za sucha a s rozmyslem, zahrabání reálné; jeskyně bez čelovky ne, po dešti vůbec; vstup zdarma",
+    "why_bob": "Jeskyně vymleté v bahně badlands, do kterých se leze s čelovkou — pokud si troufne na ten wash, nejdivnější hodina v Anza-Borrego."
+  },
+  "r9b-015": {
+    "fee": "lanovka cca 35 $; nahoře permit zdarma na ranger station",
+    "season_note_2026": "z horní stanice lanovky 17 km tam a zpět, 700 m převýšení, 5–7 h — celý den; permit zdarma v Long Valley; v říjnu může být nahoře pod nulou",
+    "why_bob": "3 300 m, druhý nejvyšší vrchol jižní Kalifornie, s výhledem na Salton Sea i Pacifik — Muir o něm řekl, že nejvznešenější výhled na Zemi; pokud má den a nohy."
+  },
+  "r9b-016": {
+    "fee": "zdarma",
+    "season_note_2026": "otevřeno, zdarma; 2 km štěrkové cesty z CA-78, sedan ok za sucha; kaňon 1,5 km, místy na šířku ramen",
+    "why_bob": "Kaňon úzký na šířku ramen, stěny z hlíny a slunce jen v poledne — deset minut jiného světa, a nikdo tam není."
+  },
+  "r9b-017": {
+    "why_bob": "První Dark Sky Community v Kalifornii — sednout na kapotu kdekoli za městem a Mléčná dráha přes celé nebe, bez dalekohledu."
+  },
+  "r9b-018": {
+    "why_bob": "Serpentiny z hor do pouště, kde se za jednou zatáčkou otevře celé Borrego Valley — jet pomalu a zastavit na vyhlídce."
+  }
+}

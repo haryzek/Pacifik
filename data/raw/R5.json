@@ -1,0 +1,2482 @@
+[
+  {
+    "id": "r5-001",
+    "region": "R5",
+    "name": "Battery Point Lighthouse",
+    "category": "coast",
+    "subcategory": "lighthouse",
+    "lat": 41.7441,
+    "lng": -124.2031,
+    "nearest_town": "Crescent City, CA",
+    "distance_from_spine_km": 2,
+    "description": "Malý maják z roku 1856 stojí na skalnatém ostrůvku, který je přístupný pěšky jen při dostatečně nízkém přílivu. Nejlepší je přijít bez ambice na prohlídku, projít mokrou šíji a chvíli jen koukat na Pacifik, skály a vítr.",
+    "why_bob": "Maják na ostrově dostupném podle rytmu přílivu je přesně ten melancholický severopacifický obraz, který by mohl viset mezi Hopperem a Twin Peaks.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "neplavat u skal a šíje; rychle nastupující příliv, příboj a studený Pacifik"
+    },
+    "road_access": "paved",
+    "best_time": "nízký příliv, podvečer nebo zataženo",
+    "season_note_2026": "Maják a ostrov jsou v září 2026 přístupné podle přílivu; muzeum mívá v září denní a v říjnu omezenější víkendový provoz. Před vstupem zkontrolovat tide table, protože cesta zpět může být zaplavena.",
+    "fee": "pobřeží zdarma; případná prohlídka muzea za drobný poplatek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7441,-124.2031",
+      "official": "https://www.delnortehistory.org/lighthouse/",
+      "wiki": "https://en.wikipedia.org/wiki/Battery_Point_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "tide_dependent", "wind", "Hopper", "melancholy"],
+    "rank": 1
+  },
+  {
+    "id": "r5-002",
+    "region": "R5",
+    "name": "Point St. George Heritage Area",
+    "category": "coast",
+    "subcategory": "headland_viewpoint",
+    "lat": 41.78,
+    "lng": -124.248,
+    "nearest_town": "Crescent City, CA",
+    "distance_from_spine_km": 8,
+    "description": "Široký, větrný mys severně od Crescent City s nízkými útesy, otevřeným oceánem a výhledem k offshore St. George Reef Lighthouse. Není tu skoro žádná atrakce v klasickém smyslu — jen pobřežní terasa, tráva, skály, vítr a obrovský horizont.",
+    "why_bob": "Má to vzácnou kvalitu prázdného konce země, kde se dá sedět s knihou a poslouchat vítr místo lidí.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 25,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "exponované pobřeží, silný příboj a nebezpečné proudy"
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne, mlha nebo větrný den",
+    "season_note_2026": "Veřejná pobřežní oblast; k 8. 9. 2026 nebyla dohledána dlouhodobá sezónní uzávěra. Po velké bouři ověřit lokální přístup.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.78,-124.248",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/Point_St._George"
+    },
+    "photo": null,
+    "tags": ["headland", "big_sky", "wind", "solitude", "offshore_lighthouse"],
+    "rank": 2
+  },
+  {
+    "id": "r5-003",
+    "region": "R5",
+    "name": "Curly Redwood Lodge",
+    "category": "motel_gem",
+    "subcategory": "midcentury_motor_lodge",
+    "lat": 41.7465,
+    "lng": -124.1832,
+    "nearest_town": "Crescent City, CA",
+    "distance_from_spine_km": 0,
+    "description": "Nízký starosvětský motor lodge z poloviny 20. století postavený s výrazným použitím redwoodového dřeva stojí přímo u staré silniční krajiny Crescent City. Nejde o designový retro hotel, ale o stále fungující kus skutečné roadside Ameriky.",
+    "why_bob": "Tohle je Hopperův motel bez kurátora — nízké pokoje, auto před dveřmi, neonová mentalita staré Highway 101 a žádný luxusní cosplay.",
+    "time_needed": "nocleh nebo 10 min zastávka",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "soumrak a noc",
+    "season_note_2026": "K 8. 9. 2026 je lodge vedený jako aktivní ubytování. Vlastní aktuální oficiální web se nepodařilo spolehlivě ověřit, takže dostupnost pokoje zkontrolovat v den příjezdu.",
+    "fee": "placené ubytování",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7465,-124.1832",
+      "official": null,
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "Hopper", "roadside_americana", "mid_century"],
+    "rank": 1
+  },
+  {
+    "id": "r5-004",
+    "region": "R5",
+    "name": "Jedediah Smith Redwoods — Day Use Smith River Beach",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 41.7953,
+    "lng": -124.0858,
+    "nearest_town": "Hiouchi, CA",
+    "distance_from_spine_km": 10,
+    "description": "Široká smaragdová Smith River teče pod obrovskými sekvojemi a u day-use části jsou oblázkové břehy s několika přirozenými vstupy do vody. Za nízkého pozdně letního průtoku je to jeden z nejkrásnějších a logisticky nejsnazších river-swim bodů celé trasy.",
+    "why_bob": "Ledová průzračná řeka pod redwoody spojuje dvě tvoje nejsilnější věci — plavání ve studené vodě a pocit malosti mezi gigantickými stromy.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "řeka",
+      "temp_c_sept_oct": "12–17 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "proud může být i při klidné hladině překvapivě silný; držet se u břehu, neplavat nad peřejemi a po dešti vstup vynechat"
+    },
+    "road_access": "paved",
+    "best_time": "pozdní dopoledne až odpoledne, za nízkého průtoku",
+    "season_note_2026": "Jedediah Smith Redwoods je k 8. 9. 2026 otevřený a State Parks uvádí swimming mezi aktivitami. Sezónní lávka mezi Stout Grove a campgroundem už je na podzim odstraněna, day-use přístup z US 199 ale funguje.",
+    "fee": "cca 8 $ day-use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7953,-124.0858",
+      "official": "https://www.parks.ca.gov/?page_id=413",
+      "wiki": "https://en.wikipedia.org/wiki/Jedediah_Smith_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["swim", "Smith_River", "redwoods", "cold_water", "clear_water"],
+    "rank": 1
+  },
+  {
+    "id": "r5-005",
+    "region": "R5",
+    "name": "Stout Memorial Grove",
+    "category": "forest",
+    "subcategory": "old_growth_loop",
+    "lat": 41.789697,
+    "lng": -124.0847,
+    "nearest_town": "Hiouchi, CA",
+    "distance_from_spine_km": 13,
+    "description": "Krátký půlkilometrový okruh vede jedním z nejčistších a nejmonumentálnějších porostů old-growth coast redwoods bez hustého podrostu. Na okraji grove se dá sejít k oblázkové Smith River a spojit lesní procházku s koupáním.",
+    "why_bob": "Kdybys měl v severní Kalifornii vidět jen jeden snadno dostupný redwood grove, tenhle má největší šanci vyvolat skutečné ticho místo turistického checklistu.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "Smith River",
+      "temp_c_sept_oct": "12–17 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "vstupovat jen z klidného štěrkového břehu; po dešti silnější proud a chlad"
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "brzy ráno nebo poslední dvě hodiny světla",
+    "season_note_2026": "K 8. 9. 2026 je Stout Grove přístupný. Sezónní lávka od campgroundu je odstraněná, takže přijet po Howland Hill Road přímo k parkovišti.",
+    "fee": "zdarma při přístupu z Howland Hill Road",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.789697,-124.0847",
+      "official": "https://www.nps.gov/places/stout-grove.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Jedediah_Smith_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["old_growth", "redwoods", "Smith_River", "swim", "silence"],
+    "rank": 1
+  },
+  {
+    "id": "r5-006",
+    "region": "R5",
+    "name": "Howland Hill Road",
+    "category": "scenic_drive",
+    "subcategory": "redwood_road",
+    "lat": 41.758,
+    "lng": -124.1608,
+    "nearest_town": "Crescent City, CA",
+    "distance_from_spine_km": 3,
+    "description": "Úzká stará silnice se bez středové čáry zanoří přímo mezi mamutí redwoody Jedediah Smith a místy má skoro tunelový charakter. Povrch je převážně nezpevněný, ale za normálních podmínek je určený i pro běžná osobní auta.",
+    "why_bob": "Místo abys redwoody navštívil, tady jimi několik kilometrů pomalu projíždíš — automobilová verze Stalkera, jen v živém lese.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "drive",
+      "distance_km": 16,
+      "elevation_m": 0,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "ráno, mlha nebo zataženo",
+    "season_note_2026": "K 8. 9. 2026 je Howland Hill Road otevřená. NPS ji považuje za sjízdnou běžnými auty a dodávkami, ale po silném dešti ověřit RNSP conditions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.758,-124.1608",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "redwoods", "narrow_road", "fog", "Twin_Peaks"],
+    "rank": 1
+  },
+  {
+    "id": "r5-007",
+    "region": "R5",
+    "name": "Boy Scout Tree Trail",
+    "category": "forest",
+    "subcategory": "trail",
+    "lat": 41.7593,
+    "lng": -124.105,
+    "nearest_town": "Crescent City, CA",
+    "distance_from_spine_km": 14,
+    "description": "Jeden z nejatmosféričtějších delších jednodenních trailů Jedediah Smith vede hlubokým old-growth lesem daleko od silnice a normálně pokračuje k obřímu Boy Scout Tree a Fern Falls. V roce 2026 je ale část trasy komplikovaná velkým padlým stromem.",
+    "why_bob": "Je to redwoodový les v kontemplativní délce — ne desetiminutová atrakce, ale několik hodin temného zeleného prostoru a ticha.",
+    "time_needed": "2–4 h podle průchodnosti",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 170,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "ráno",
+    "season_note_2026": "Od 4. 8. 2026 je trail pouze částečně otevřený: asi 2,8 km od trailheadu leží přes trasu velký strom a jeho překonání NPS označuje za náročné. Ber to jako out-and-back podle aktuální situace, ne jako garantovaný průchod k Fern Falls.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7593,-124.105",
+      "official": "https://www.nps.gov/places/boyscouttreetrailhead.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["redwoods", "old_growth", "solitude", "trail", "partial_closure"],
+    "rank": 2
+  },
+  {
+    "id": "r5-008",
+    "region": "R5",
+    "name": "Grove of Titans — Mill Creek Trail",
+    "category": "forest",
+    "subcategory": "giant_redwoods",
+    "lat": 41.7818,
+    "lng": -124.0992,
+    "nearest_town": "Hiouchi, CA",
+    "distance_from_spine_km": 14,
+    "description": "Novější legální trail a elevated walkway zpřístupňují okolí Grove of Titans, kde stojí mimořádně mohutné coast redwoods. Dnes už není potřeba ani žádoucí hledat staré neoficiální vyšlapané cesty přímo ke kořenům gigantů.",
+    "why_bob": "Tady je měřítko lesa skoro kosmologické — objekty starší než lidské životy, před kterými člověk fyzicky ztratí vlastní proporce.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 4,
+      "elevation_m": 130,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "brzy ráno",
+    "season_note_2026": "Oblast je k 8. 9. 2026 přístupná; respektovat boardwalk a ochranné zóny kolem kořenů. Parkovat jen na legálních pulloutech u Mill Creek Trail.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7818,-124.0992",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Grove_of_Titans"
+    },
+    "photo": null,
+    "tags": ["giant_redwoods", "deep_time", "old_growth", "boardwalk"],
+    "rank": 1
+  },
+  {
+    "id": "r5-009",
+    "region": "R5",
+    "name": "Forks River Access and Boat Ramp",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 41.79725,
+    "lng": -124.0551,
+    "nearest_town": "Hiouchi, CA",
+    "distance_from_spine_km": 16,
+    "description": "Veřejný přístup Six Rivers National Forest leží u soutoku větví Smith River, s parkováním a snadným sestupem k vodě. Za nízkého zářijového průtoku jsou tu průzračné zelenomodré tůně a oblázkové pláže.",
+    "why_bob": "Je to velmi použitelná spontánní studená koupel v krajině, která vypadá mnohem divočeji, než naznačuje snadný přístup autem.",
+    "time_needed": "45–120 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "Smith River",
+      "temp_c_sept_oct": "12–17 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "neplavat do hlavního proudu ani blízko peřejí; po dešti může řeka rychle zesílit"
+    },
+    "road_access": "paved",
+    "best_time": "teplé odpoledne za nízkého průtoku",
+    "season_note_2026": "Oficiální USFS river-access lokalita; před příjezdem po větším dešti zkontrolovat Six Rivers alerts a průtok řeky.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.79725,-124.0551",
+      "official": "https://www.fs.usda.gov/r06/sixrivers",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["swim", "Smith_River", "clear_water", "river_access"],
+    "rank": 1
+  },
+  {
+    "id": "r5-010",
+    "region": "R5",
+    "name": "Sand Camp — South Fork Smith River",
+    "category": "lake_river",
+    "subcategory": "swimming_hole",
+    "lat": 41.741672,
+    "lng": -123.980779,
+    "nearest_town": "Gasquet, CA",
+    "distance_from_spine_km": 25,
+    "description": "Sand Camp je jednoduchý forest-service přístup na South Fork Smith River s písčitými a oblázkovými břehy a velkou přírodní swimming hole. Voda je mimořádně čistá a okolní les a říční skály působí mnohem odlehleji než populárnější koupání u Jed Smith campgroundu.",
+    "why_bob": "Tohle je skoro ideální Bobův swim stop: studená průzračná řeka, les, minimum infrastruktury a slušná šance mít kus břehu sám.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "South Fork Smith River",
+      "temp_c_sept_oct": "13–18 °C",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "hloubka a proud se mění; po deštích nevstupovat a před skokem nikdy nepředpokládat hloubku"
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "pozdní dopoledne až odpoledne",
+    "season_note_2026": "USFS Sand Camp je vedený jako river-access a swimming lokalita. Před odbočením na South Fork Road ověřit Six Rivers alerts a stav cesty po dešti.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.741672,-123.980779",
+      "official": "https://www.fs.usda.gov/r06/sixrivers",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["swim", "South_Fork_Smith", "solitude", "cold_water", "forest"],
+    "rank": 1
+  },
+  {
+    "id": "r5-011",
+    "region": "R5",
+    "name": "Margie's River Access — Middle Fork Smith River",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 41.8468,
+    "lng": -123.9695,
+    "nearest_town": "Gasquet, CA",
+    "distance_from_spine_km": 29,
+    "description": "Menší veřejný river-access bod na Middle Fork Smith River nabízí vstup k průzračné vodě mimo hlavní redwoodové davy. Je to spíš místo, které otevřeš v appce v horkém odpoledni a zjistíš, jestli je voda a štěrkový břeh zrovna ideální.",
+    "why_bob": "Má vysoký poměr samoty k dostupnosti — nenápadné místo, kam by turistický seznam skoro nikdy neposlal.",
+    "time_needed": "45–120 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "Middle Fork Smith River",
+      "temp_c_sept_oct": "12–17 °C",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "vyhodnotit proud přímo na místě; žádné plavání po velkých deštích nebo nad peřejemi"
+    },
+    "road_access": "paved",
+    "best_time": "odpoledne",
+    "season_note_2026": "Veřejné river-access zařízení; lokální stav vody a případné forest alerts ověřit v den návštěvy.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.8468,-123.9695",
+      "official": "https://dbw.parks.ca.gov/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["swim", "Middle_Fork_Smith", "solitude", "river"],
+    "rank": 2
+  },
+  {
+    "id": "r5-012",
+    "region": "R5",
+    "name": "Smith River Scenic Byway — US 199",
+    "category": "scenic_drive",
+    "subcategory": "river_canyon_drive",
+    "lat": 41.79725,
+    "lng": -124.0551,
+    "nearest_town": "Hiouchi, CA",
+    "distance_from_spine_km": 16,
+    "description": "US 199 od Hiouchi směrem přes Gasquet sleduje divokou Smith River mezi vysokými zalesněnými svahy a skalnatými úseky Klamath Mountains. Nejlepší forma návštěvy je pomalá jízda s improvizovanými zastávkami u river-access míst.",
+    "why_bob": "Je to silnice, kde podcast občas vypneš sám, protože smaragdová řeka a sevřený horský prostor převezmou pozornost.",
+    "time_needed": "2–4 h tam a zpět se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 70,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "koupat se jen na zvlášť uvedených river-access místech, ne náhodně u peřejí"
+    },
+    "road_access": "paved",
+    "best_time": "celý den, ideálně kombinovat se Sand Camp nebo Forks",
+    "season_note_2026": "US 199 je hlavní průjezdná komunikace; před delším inland výjezdem zkontrolovat Caltrans QuickMap a Six Rivers fire alerts.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.79725,-124.0551",
+      "official": "https://quickmap.dot.ca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/U.S._Route_199"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "Smith_River", "Klamath_Mountains", "canyon"],
+    "rank": 1
+  },
+  {
+    "id": "r5-013",
+    "region": "R5",
+    "name": "Crescent Beach Overlook — Enderts Beach",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 41.7055,
+    "lng": -124.1412,
+    "nearest_town": "Crescent City, CA",
+    "distance_from_spine_km": 5,
+    "description": "Enderts Beach Road končí nad dlouhou divokou pláží, na kterou se dá sestoupit krátkým trailem mezi pobřežním lesem a útesy. Je to dobré místo na mokrý, větrný podvečer, kdy se Pacifik ztrácí v mlze.",
+    "why_bob": "Místo má přesně ten severokalifornský tón prázdné pláže, studeného větru a nejasného horizontu, který funguje líp bez slunce.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 3,
+      "elevation_m": 100,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "sneaker waves, driftwood a rip currents; ke koupání nedoporučuju"
+    },
+    "road_access": "paved",
+    "best_time": "podvečer, mlha, odliv",
+    "season_note_2026": "Enderts Beach přístup je k 8. 9. 2026 použitelný. Damnation Creek Trailhead, který by jinak patřil mezi hlavní R5 traily, je od 1. 6. 2026 do odvolání uzavřen kvůli pracím Caltrans, proto není zařazen jako samostatný cíl.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7055,-124.1412",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["wild_beach", "fog", "wind", "coastal_forest"],
+    "rank": 1
+  },
+  {
+    "id": "r5-014",
+    "region": "R5",
+    "name": "Klamath River Overlook",
+    "category": "coast",
+    "subcategory": "river_mouth_viewpoint",
+    "lat": 41.5593,
+    "lng": -124.087,
+    "nearest_town": "Klamath, CA",
+    "distance_from_spine_km": 7,
+    "description": "Vysoký pobřežní útes dává široký pohled na místo, kde Klamath River vytéká do Pacifiku, a na několik vrstev mlhavého pobřeží. Za dobrých podmínek jsou odtud vidět velryby, ale hodnota místa je hlavně v geometrii řeky, oceánu a obrovského nebe.",
+    "why_bob": "Soutok dvou obrovských vodních systémů pod tebou má tu správnou kombinaci fyzického měřítka, větru a existenciální prázdnoty.",
+    "time_needed": "30–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 40,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "útesy a exponovaný oceán; nechodit za hrany"
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne, mlha nebo po přechodu fronty",
+    "season_note_2026": "Vyhlídka je k 8. 9. 2026 otevřená; při požárech nebo velké pobřežní bouři ověřit RNSP conditions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.5593,-124.087",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Klamath_River"
+    },
+    "photo": null,
+    "tags": ["river_mouth", "ocean", "big_sky", "whales", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r5-015",
+    "region": "R5",
+    "name": "Trees of Mystery — Paul Bunyan & roadside redwoods",
+    "category": "oddity",
+    "subcategory": "roadside_americana",
+    "lat": 41.584472,
+    "lng": -124.085786,
+    "nearest_town": "Klamath, CA",
+    "distance_from_spine_km": 0,
+    "description": "Rodinná roadside atrakce fungující od roku 1946 kombinuje obřího Paula Bunyana, staré reklamní sochy, redwoody a placenou lesní část. Je to turistický kýč, ale autentický poválečný Highway 101 kýč, nikoli nově vyrobený instagramový produkt.",
+    "why_bob": "Za dvacet minut zdarma u Paula Bunyana dostaneš čistou dávku staré americké silniční bizarnosti, která jako kontrapunkt k posvátným redwoodům dává smysl.",
+    "time_needed": "15–30 min zvenku; 1,5–2 h s placenou částí",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 50,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "kdykoliv po cestě",
+    "season_note_2026": "Atrakce je v roce 2026 v provozu. Pro Bobův filtr bych primárně doporučila bezplatnou roadside část; placenou jen podle momentální chuti na bizarní Ameriku.",
+    "fee": "roadside část zdarma; lesní atrakce placená",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.584472,-124.085786",
+      "official": "https://treesofmystery.net/",
+      "wiki": "https://en.wikipedia.org/wiki/Trees_of_Mystery"
+    },
+    "photo": null,
+    "tags": ["roadside_americana", "Paul_Bunyan", "kitsch", "historic_roadside"],
+    "rank": 3
+  },
+  {
+    "id": "r5-016",
+    "region": "R5",
+    "name": "Newton B. Drury Scenic Parkway",
+    "category": "scenic_drive",
+    "subcategory": "redwood_road",
+    "lat": 41.4551,
+    "lng": -124.0097,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 0,
+    "description": "Starý úsek US 101 se na několik desítek kilometrů oddělí od moderní dálnice a vine se téměř nepřetržitě mezi obřími redwoody Prairie Creek. Pullouty umožňují kdykoli zastavit a během několika kroků zmizet z auta do lesa.",
+    "why_bob": "Tohle je jeden z těch úseků, kde samotné řízení není přesun, ale hlavní událost dne.",
+    "time_needed": "45–90 min se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 16,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "brzy ráno nebo v mlze",
+    "season_note_2026": "K 8. 9. 2026 je Newton B. Drury Scenic Parkway otevřená.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.4551,-124.0097",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Prairie_Creek_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "redwoods", "old_highway", "fog"],
+    "rank": 1
+  },
+  {
+    "id": "r5-017",
+    "region": "R5",
+    "name": "Big Tree & Cathedral Trees Trail",
+    "category": "forest",
+    "subcategory": "old_growth_trail",
+    "lat": 41.3647,
+    "lng": -124.0162,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 3,
+    "description": "Big Tree je extrémně mohutný coast redwood pár minut od Newton B. Drury Parkway, ale smysl dává pokračovat po Cathedral Trees Trail do hlubšího lesa. Jakmile opustíš samotný strom, návštěvnost rychle klesne a starý porost začne fungovat jako prostor místo atrakce.",
+    "why_bob": "Přesně tady bych obešla selfie zastávku u Big Tree a šla dál do zeleného ticha, kde začne být les skutečně fyzický.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 3,
+      "elevation_m": 90,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo zataženo",
+    "season_note_2026": "Prairie Creek Redwoods a přístup z Newton B. Drury jsou k 8. 9. 2026 otevřené.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.3647,-124.0162",
+      "official": "https://www.parks.ca.gov/?page_id=415",
+      "wiki": "https://en.wikipedia.org/wiki/Prairie_Creek_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["old_growth", "giant_tree", "redwoods", "quiet_trail"],
+    "rank": 1
+  },
+  {
+    "id": "r5-018",
+    "region": "R5",
+    "name": "Elk Prairie",
+    "category": "forest",
+    "subcategory": "prairie_wildlife",
+    "lat": 41.3637,
+    "lng": -124.0225,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 3,
+    "description": "Otevřená louka obklopená temnou stěnou redwoodů je pravidelným místem výskytu Roosevelt elk. Kontrast zlaté trávy, mlhy, vysokých stromů a velkých zvířat je silnější než samotná představa wildlife stopu.",
+    "why_bob": "Je to skoro filmová změna prostoru: po hodinách v úzkém lese najednou otevřená louka, jelení stádo a mlžná prázdnota.",
+    "time_needed": "20–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 5,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "elk jsou divoká a velká zvířata; držet velký odstup, zvlášť v podzimní říji"
+    },
+    "road_access": "paved",
+    "best_time": "časné ráno nebo poslední hodina světla",
+    "season_note_2026": "Prairie Creek Redwoods je k 8. 9. 2026 otevřený. V září probíhá elk rut, takže nechodit ke zvířatům kvůli fotografii.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.3637,-124.0225",
+      "official": "https://www.parks.ca.gov/?page_id=415",
+      "wiki": "https://en.wikipedia.org/wiki/Prairie_Creek_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["elk", "prairie", "fog", "redwoods"],
+    "rank": 2
+  },
+  {
+    "id": "r5-019",
+    "region": "R5",
+    "name": "Fern Canyon",
+    "category": "geology",
+    "subcategory": "canyon_walk",
+    "lat": 41.4006,
+    "lng": -124.0665,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 15,
+    "description": "Úzký kaňon má téměř svislé stěny potažené několika druhy kapradin a trail vede přímo korytem Home Creek. Je to krátké, mokré a vizuálně podivné místo, kde světlo a zelené stěny na chvíli zruší normální orientaci v krajině.",
+    "why_bob": "Ze všech známých redwoodových míst je to nejvíc Tarkovskij: voda pod nohama, stěny živé zeleně a úzký svět bez horizontu.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2,
+      "elevation_m": 30,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "kluzké kameny; po silném dešti může být creek výrazně vyšší"
+    },
+    "road_access": "ford",
+    "best_time": "brzy ráno",
+    "season_note_2026": "Fern Canyon je k 8. 9. 2026 otevřen. Vehicle reservation platí jen 15. 5.–15. 9., takže od 16. 9. 2026 ji Bob nepotřebuje; Davison Road má dva stream crossings, po dešti mohou být problematické a NPS doporučuje vyšší clearance. Sezónní footbridges jsou na podzim odstraněné, počítat s chůzí vodou po kotníky až kolena.",
+    "fee": "Gold Bluffs day-use poplatek, aktuální sazbu ověřit na místě",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.4006,-124.0665",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Fern_Canyon"
+    },
+    "photo": null,
+    "tags": ["fern_canyon", "water", "geology", "wet_trail", "film_atmosphere"],
+    "rank": 1
+  },
+  {
+    "id": "r5-020",
+    "region": "R5",
+    "name": "Gold Bluffs Beach",
+    "category": "coast",
+    "subcategory": "wild_beach",
+    "lat": 41.3864,
+    "lng": -124.0687,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 15,
+    "description": "Dlouhá a široká oceánská pláž leží pod zalesněnými útesy Prairie Creek a mimo hlavní silnici má překvapivě odlehlý charakter. Nejlepší je projít pár kilometrů podél vody a nechat Fern Canyon na jiný čas, aby pláž nebyla jen parkovištěm mezi atrakcemi.",
+    "why_bob": "Je tu vzácná kombinace prázdného Pacifiku, redwoodového lesa za zády a silnice, po které sem člověk musí opravdu chtít zajet.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "silný shorebreak, rip currents, sneaker waves a driftwood; na plavání nedoporučuju"
+    },
+    "road_access": "ford",
+    "best_time": "pozdní odpoledne nebo mlha",
+    "season_note_2026": "Gold Bluffs Beach je k 8. 9. 2026 otevřená. Od 16. 9. už není potřeba sezónní Fern Canyon vehicle permit, ale Davison Road má dva brody a po dešti může být pro sedan nevhodná.",
+    "fee": "day-use poplatek, aktuální 2026 sazbu ověřit",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.3864,-124.0687",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Prairie_Creek_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["wild_beach", "redwoods", "fog", "solitude", "sneaker_waves"],
+    "rank": 1
+  },
+  {
+    "id": "r5-021",
+    "region": "R5",
+    "name": "Trillium Falls Trail",
+    "category": "waterfall",
+    "subcategory": "forest_trail",
+    "lat": 41.3685,
+    "lng": -124.0297,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 3,
+    "description": "Přibližně čtyřkilometrový loop vede old-growth redwoody, kapradinami a kolem malého Trillium Falls. Samotný vodopád není důvod k cestě; důvodem je jeden z nejpříjemnějších krátkých okruhů, který umožní opustit frekventovanější grove.",
+    "why_bob": "Je to trail na přemýšlení, ne na sbírání highlightů — dvě hodiny zeleného prostoru s malým vodopádem jako interpunkcí.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 4,
+      "elevation_m": 140,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo po lehkém dešti",
+    "season_note_2026": "Trail je v aktuálních podmínkách RNSP k 8. 9. 2026 bez oznámené uzávěry.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.3685,-124.0297",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["redwoods", "waterfall", "trail", "ferns"],
+    "rank": 2
+  },
+  {
+    "id": "r5-022",
+    "region": "R5",
+    "name": "Lady Bird Johnson Grove",
+    "category": "forest",
+    "subcategory": "ridge_redwood_loop",
+    "lat": 41.3004,
+    "lng": -124.0181,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 6,
+    "description": "Krátký loop leží nezvykle vysoko na hřebeni, takže coast redwoods často stojí přímo v mlžné vrstvě a les má světlejší, otevřenější charakter než níže položené groves. Je to velmi snadná zastávka na Bald Hills Road, ale atmosféra je za správného počasí mimořádná.",
+    "why_bob": "Za mlhy je to spíš sen o lese než les — tlumené světlo, kmeny mizící vzhůru a minimum horizontu.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.5,
+      "elevation_m": 60,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "mlhavé ráno",
+    "season_note_2026": "Grove i parkoviště jsou k 8. 9. 2026 přístupné. Na Bald Hills Road probíhají 2026 silniční práce mezi grove a Redwood Creek Overlook s možným zpožděním 20–30 minut v každém směru; parkování u grove podle NPS zůstává dostupné.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.3004,-124.0181",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Lady_Bird_Johnson_Grove"
+    },
+    "photo": null,
+    "tags": ["redwoods", "fog", "ridge", "short_walk"],
+    "rank": 1
+  },
+  {
+    "id": "r5-023",
+    "region": "R5",
+    "name": "Redwood Creek Overlook",
+    "category": "mountain",
+    "subcategory": "fog_viewpoint",
+    "lat": 41.2992,
+    "lng": -124.0103,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 8,
+    "description": "Vyhlídka vysoko nad Redwood Creek basin často kouká přes moře nízké pobřežní mlhy, ze kterého vystupují jen hřebeny a vrcholky lesa. Při jasnu se otevře obrovská lesnatá pánev směrem k oceánu.",
+    "why_bob": "Je to jeden z mála bodů, kde redwoodový svět uvidíš v planetárním měřítku místo zespodu mezi kmeny.",
+    "time_needed": "20–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "východ nebo pozdní odpoledne s nízkou mlhou",
+    "season_note_2026": "Přístup je k 8. 9. 2026 otevřen, ale na Bald Hills Road probíhá paving s možným 20–30minutovým zdržením v každém směru během aktivních prací.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.2992,-124.0103",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["fog", "panorama", "big_scale", "redwood_basin"],
+    "rank": 1
+  },
+  {
+    "id": "r5-024",
+    "region": "R5",
+    "name": "Bald Hills Road — Orick to the Prairies",
+    "category": "scenic_drive",
+    "subcategory": "prairie_ridge_drive",
+    "lat": 41.298,
+    "lng": -124.024,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 2,
+    "description": "Bald Hills Road vystoupá z vlhkého redwoodového lesa do suchých otevřených prérií, dubů a širokých hřebenů, takže během několika kilometrů úplně změníš klimatický i vizuální svět. Dál od pobřeží přechází do užšího a místy nezpevněného horského charakteru.",
+    "why_bob": "Je to přesně tvoje změna z temného lesa do suchého velkého prostoru — skoro kalifornská verze přepnutí z Debussyho do Morriconeho.",
+    "time_needed": "2–4 h out-and-back",
+    "effort": {
+      "type": "drive",
+      "distance_km": 55,
+      "elevation_m": 0,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "Bald Hills Road je k 8. 9. 2026 otevřená. Mezi Lady Bird Johnson Grove a Redwood Creek Overlook probíhá paving s 20–30minutovými pracovními zdrženími; po dešti a při požárech ověřit conditions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.298,-124.024",
+      "official": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "prairie", "big_sky", "dry_landscape", "oak"],
+    "rank": 1
+  },
+  {
+    "id": "r5-025",
+    "region": "R5",
+    "name": "'O Rew Redwoods Gateway",
+    "category": "forest",
+    "subcategory": "tribal_redwood_gateway",
+    "lat": 41.298,
+    "lng": -124.029,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 2,
+    "description": "Nový veřejný vstup do redwoodové krajiny u Oricku vznikl v rámci návratu půdy Yurok Tribe a byl otevřen veřejnosti 1. srpna 2026. Je zajímavý nejen lesem, ale i tím, že jde o právě probíhající změnu správy krajiny zpět směrem k původním obyvatelům.",
+    "why_bob": "Místo má kromě stromů i časovou hloubku a současný příběh — krajina se tu doslova mění z objektu ochrany zpět na živé kulturní území.",
+    "time_needed": "45–120 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo při cestě na Bald Hills Road",
+    "season_note_2026": "Yurok Tribe oznámil převod území a otevření rekreačního veřejného přístupu od 1. 8. 2026. Jde o nové místo, takže aktuální trailové detaily a případná dočasná omezení ověřit těsně před návštěvou.",
+    "fee": "aktuální režim ověřit",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.298,-124.029",
+      "official": "https://www.yuroktribe.org/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["Yurok", "redwoods", "new_2026", "land_return", "deep_time"],
+    "rank": 1
+  },
+  {
+    "id": "r5-026",
+    "region": "R5",
+    "name": "Sue-meg State Park — Wedding Rock & Rim Trail",
+    "category": "coast",
+    "subcategory": "headland_trail",
+    "lat": 41.1374,
+    "lng": -124.1583,
+    "nearest_town": "Trinidad, CA",
+    "distance_from_spine_km": 4,
+    "description": "Krátké stezky propojují skalní mys Wedding Rock, Sitka spruce forest, mořské komíny a několik pohledů z útesů na velmi členité pobřeží. Pobřeží je tu kompaktní, ale vizuálně mnohem dramatičtější než většina snadno dostupných state parks.",
+    "why_bob": "Sea stacks, vítr, tmavý les a ostré pobřežní hrany v jednom krátkém okruhu — vysoká koncentrace přesně tvých obrazů.",
+    "time_needed": "1,5–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 150,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "útesy, kluzké kořeny a exponovaný oceán"
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne, vítr a proměnlivé světlo",
+    "season_note_2026": "Sue-meg State Park je k 8. 9. 2026 otevřen celoročně od východu do západu slunce. Aktuálně je uzavřen pouze konec trailu u Palmer's Point; Wedding Rock a hlavní Rim Trail zůstávají přístupné.",
+    "fee": "cca 8 $ day-use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.1374,-124.1583",
+      "official": "https://www.parks.ca.gov/?page_id=417",
+      "wiki": "https://en.wikipedia.org/wiki/Sue-meg_State_Park"
+    },
+    "photo": null,
+    "tags": ["sea_stacks", "headland", "wind", "coastal_forest", "cliffs"],
+    "rank": 1
+  },
+  {
+    "id": "r5-027",
+    "region": "R5",
+    "name": "Sue-meg State Park — Agate Beach",
+    "category": "coast",
+    "subcategory": "wild_beach",
+    "lat": 41.1332,
+    "lng": -124.1626,
+    "nearest_town": "Trinidad, CA",
+    "distance_from_spine_km": 5,
+    "description": "Strmější trail sestoupí z pobřežní terasy na dlouhou oblázkovou a písčitou pláž pod Sue-meg. Největší cenu má při nízkém přílivu, špatném počasí a ve chvíli, kdy chceš od lidí nahoře zmizet dolů k oceánu.",
+    "why_bob": "Je to pobřežní únik bez programu — pár kilometrů větru, oblázků a studeného oceánu pod tmavým lesem.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 4,
+      "elevation_m": 120,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "sneaker waves, silný příboj, driftwood; na plavání nevhodné"
+    },
+    "road_access": "paved",
+    "best_time": "odliv a podvečer",
+    "season_note_2026": "Park je k 8. 9. 2026 otevřen; aktuální Palmer's Point closure se tohoto přístupu netýká.",
+    "fee": "cca 8 $ day-use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.1332,-124.1626",
+      "official": "https://www.parks.ca.gov/?page_id=417",
+      "wiki": "https://en.wikipedia.org/wiki/Sue-meg_State_Park"
+    },
+    "photo": null,
+    "tags": ["wild_beach", "tide", "solitude", "wind"],
+    "rank": 2
+  },
+  {
+    "id": "r5-028",
+    "region": "R5",
+    "name": "Trinidad Head Loop",
+    "category": "coast",
+    "subcategory": "headland_trail",
+    "lat": 41.054308,
+    "lng": -124.150914,
+    "nearest_town": "Trinidad, CA",
+    "distance_from_spine_km": 3,
+    "description": "Krátký strmý loop obchází zalesněný Trinidad Head s výhledy na přístav, offshore skály a otevřený Pacifik. Výrazně mění charakter podle počasí — od brilantního oceánského panoramatu po uzavřenou mlžnou komoru.",
+    "why_bob": "Je to ideální ranní rozchození: borovice, moře, přístav pod tebou a právě dost kopce, aby ses probudil.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2.5,
+      "elevation_m": 120,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "držet se trailu nad útesy"
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo hodinu před západem",
+    "season_note_2026": "Veřejný trail na Trinidad Head; před návštěvou při bouři ověřit lokální coastal conditions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.054308,-124.150914",
+      "official": "https://www.trinidad.ca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Trinidad_Head"
+    },
+    "photo": null,
+    "tags": ["headland", "harbor", "ocean", "fog", "short_hike"],
+    "rank": 1
+  },
+  {
+    "id": "r5-029",
+    "region": "R5",
+    "name": "College Cove",
+    "category": "coast",
+    "subcategory": "ocean_cove_swim",
+    "lat": 41.0704,
+    "lng": -124.1501,
+    "nearest_town": "Trinidad, CA",
+    "distance_from_spine_km": 4,
+    "description": "Malá cove severně od Trinidadu je chráněnější než dlouhé otevřené pláže a obklopují ji skály a pobřežní les. Za opravdu klidného oceánu je jedním z mála míst v regionu, kde zkušený cold-water swimmer může uvažovat o krátkém pobřežním ponoření.",
+    "why_bob": "Studený Pacifik v malé skalnaté zátoce pod lesem je tvoje koupání esteticky dokonale — ale jen ve dnech, kdy oceán výjimečně spolupracuje.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2,
+      "elevation_m": 80,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": true,
+      "water": "Pacifik",
+      "temp_c_sept_oct": "11–14 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "jen při malém swell a bez výrazného shorebreaku; rip currents, studený šok, skály a sneaker waves; zůstat těsně u břehu a při pochybnosti nevstupovat"
+    },
+    "road_access": "paved",
+    "best_time": "klidné ráno a nižší swell",
+    "season_note_2026": "Veřejný pobřežní přístup je v sezóně použitelný. Nejde o hlídanou pláž; podmínky NOAA/NWS a swell zkontrolovat před koupáním.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.0704,-124.1501",
+      "official": "https://www.parks.ca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Trinidad_State_Beach"
+    },
+    "photo": null,
+    "tags": ["swim", "cold_ocean", "cove", "conditional_swim", "cliffs"],
+    "rank": 2
+  },
+  {
+    "id": "r5-030",
+    "region": "R5",
+    "name": "Big Lagoon",
+    "category": "lake_river",
+    "subcategory": "lagoon_swim",
+    "lat": 41.1616,
+    "lng": -124.1226,
+    "nearest_town": "Trinidad, CA",
+    "distance_from_spine_km": 5,
+    "description": "Velká pobřežní laguna je od Pacifiku oddělena úzkým písečným pruhem a nabízí mnohem klidnější vodu než oceán za dunou. Nejhezčí je dát krátké koupání na straně laguny a potom přejít pár desítek metrů k hlučnému příboji.",
+    "why_bob": "Dvě úplně jiné vody vedle sebe — tichá studená laguna a divoký Pacifik — dělají z jednoduchého swim stopu malou lekci geografie.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "pobřežní laguna",
+      "temp_c_sept_oct": "14–18 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "držet se dál od případného otevřeného outletu do oceánu; vítr a teplota vody se rychle mění"
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo klidné odpoledne",
+    "season_note_2026": "Humboldt Lagoons State Park je standardně celoročně přístupný; případné dočasné water-quality nebo wildlife notices ověřit na State Parks.",
+    "fee": "podle použitého day-use přístupu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.1616,-124.1226",
+      "official": "https://www.parks.ca.gov/?page_id=416",
+      "wiki": "https://en.wikipedia.org/wiki/Humboldt_Lagoons_State_Park"
+    },
+    "photo": null,
+    "tags": ["swim", "lagoon", "cold_water", "ocean_barrier", "quiet_water"],
+    "rank": 2
+  },
+  {
+    "id": "r5-031",
+    "region": "R5",
+    "name": "Stone Lagoon",
+    "category": "lake_river",
+    "subcategory": "lagoon_swim",
+    "lat": 41.2324,
+    "lng": -124.1017,
+    "nearest_town": "Orick, CA",
+    "distance_from_spine_km": 2,
+    "description": "Stone Lagoon leží přímo pod US 101, ale po pár minutách podél břehu se silnice opticky ztrácí a zůstane široká studená voda pod zalesněnými kopci. Je vhodnější na klidné koupání než exponované oceánské pláže regionu.",
+    "why_bob": "Je to přesně spontánní zastávka, kterou by appka měla ukázat: skoro žádná odbočka a přesto možnost být během pěti minut ve studené vodě pod horami.",
+    "time_needed": "45–120 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 5,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "pobřežní laguna",
+      "temp_c_sept_oct": "14–18 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "vyhnout se případnému outletu a větrným dnům; sledovat water-quality notices"
+    },
+    "road_access": "paved",
+    "best_time": "bezvětří, ráno",
+    "season_note_2026": "Humboldt Lagoons State Park je celoroční. Před vstupem do vody zkontrolovat případná aktuální upozornění na kvalitu vody nebo algal bloom.",
+    "fee": "podle konkrétního day-use přístupu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.2324,-124.1017",
+      "official": "https://www.parks.ca.gov/?page_id=416",
+      "wiki": "https://en.wikipedia.org/wiki/Humboldt_Lagoons_State_Park"
+    },
+    "photo": null,
+    "tags": ["swim", "lagoon", "easy_access", "cold_water", "forest"],
+    "rank": 2
+  },
+  {
+    "id": "r5-032",
+    "region": "R5",
+    "name": "Arcata Community Forest",
+    "category": "forest",
+    "subcategory": "urban_redwood_trail",
+    "lat": 40.8664,
+    "lng": -124.069,
+    "nearest_town": "Arcata, CA",
+    "distance_from_spine_km": 4,
+    "description": "Městský les leží pár minut od centra Arcata, ale trailová síť rychle mizí do redwoodů a strmých kapradinových roklí. Hodí se jako dvouhodinový mentální reset mezi pobřežní jízdou a večerem ve městě.",
+    "why_bob": "Je to krásná ukázka, že tady nemusíš volit mezi městem a samotou — z kavárny můžeš být za deset minut hluboko v lese.",
+    "time_needed": "1–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 180,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdní odpoledne",
+    "season_note_2026": "Veřejný městský forest systém; před návštěvou ověřit případné krátkodobé trail closures města Arcata.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.8664,-124.069",
+      "official": "https://www.cityofarcata.org/190/Community-Forest",
+      "wiki": "https://en.wikipedia.org/wiki/Arcata_Community_Forest"
+    },
+    "photo": null,
+    "tags": ["urban_forest", "redwoods", "trail", "Arcata"],
+    "rank": 2
+  },
+  {
+    "id": "r5-033",
+    "region": "R5",
+    "name": "Arcata Plaza & Minor Theatre",
+    "category": "culture",
+    "subcategory": "college_town_atmosphere",
+    "lat": 40.8694,
+    "lng": -124.0864,
+    "nearest_town": "Arcata, CA",
+    "distance_from_spine_km": 2,
+    "description": "Arcata má trochu ošuntělou kombinaci univerzitního města, hippie historie, kaváren, starých storefrontů a lidí, kteří sem evidentně nepřijeli kvůli kariérnímu networkingu. Historic Minor Theatre z roku 1914 dává večeru mnohem lepší kulturní kotvu než generické multiplexy.",
+    "why_bob": "Na hodinu až večer dostaneš analogový college-town chaos, staré kino a prostředí, kde se dá sedět nad knihou bez pocitu, že jsi v turistické kulise.",
+    "time_needed": "1–4 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne a večer",
+    "season_note_2026": "Downtown a Minor Theatre jsou vhodné jako průběžně ověřitelný city stop. Northtown Books, který by sem esteticky perfektně patřil, byl zničen při požáru 2. 1. 2026 a proto ho nezařazuji.",
+    "fee": "centrum zdarma; kino podle programu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.8694,-124.0864",
+      "official": "https://www.minortheatre.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Arcata,_California"
+    },
+    "photo": null,
+    "tags": ["college_town", "cinema", "coffee", "counterculture", "evening"],
+    "rank": 2
+  },
+  {
+    "id": "r5-034",
+    "region": "R5",
+    "name": "Eureka Old Town & Carson Mansion",
+    "category": "town",
+    "subcategory": "historic_waterfront",
+    "lat": 40.80562,
+    "lng": -124.15848,
+    "nearest_town": "Eureka, CA",
+    "distance_from_spine_km": 1,
+    "description": "Eureka kombinuje viktoriánské bloky, přístav, staré obchodní domy, mlhu a trochu drsnou pracovní periferii, takže nepůsobí jako naleštěné heritage town. Carson Mansion je absurdně komplikovaný viktoriánský objekt, který stačí sledovat zvenku; soukromý klub uvnitř není cílem.",
+    "why_bob": "Eureka je zajímavá právě tím, že je krásná i lehce rozbitá — Hopperovská noc, rybářský přístav a americká periferie v jednom.",
+    "time_needed": "1,5–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne až večer",
+    "season_note_2026": "Veřejné ulice Old Town jsou celoročně přístupné; Carson Mansion pozorovat zvenku, protože jde o soukromý Ingomar Club.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.80562,-124.15848",
+      "official": "https://www.eurekaca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Carson_Mansion"
+    },
+    "photo": null,
+    "tags": ["Victorian", "working_port", "Hopper", "fog", "old_town"],
+    "rank": 2
+  },
+  {
+    "id": "r5-035",
+    "region": "R5",
+    "name": "Lost Coast Brewery & Cafe",
+    "category": "food_gem",
+    "subcategory": "brewpub",
+    "lat": 40.8031,
+    "lng": -124.1684,
+    "nearest_town": "Eureka, CA",
+    "distance_from_spine_km": 1,
+    "description": "Dlouholetý lokální pivovar vznikl v Eurece na konci osmdesátých let a patří k městu podstatně přirozeněji než nová craft-beer kulisa. Funguje jako rozumný konec dne po redwoodech: jednoduché jídlo, místní pivo a žádný luxus.",
+    "why_bob": "Je to přesně typ místa, kam si dát jedno pivo až po zaparkování — lokální, neokázalé a pevně spojené s drsnější Eurekou.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "večer po ukončení řízení",
+    "season_note_2026": "Lost Coast Brewery je v roce 2026 aktivní podnik; před konkrétní návštěvou ověřit aktuální provoz downtown lokace a hodiny na oficiálním webu.",
+    "fee": "podle útraty",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.8031,-124.1684",
+      "official": "https://lostcoast.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Lost_Coast_Brewery"
+    },
+    "photo": null,
+    "tags": ["beer", "local", "Eureka", "evening"],
+    "rank": 2
+  },
+  {
+    "id": "r5-036",
+    "region": "R5",
+    "name": "Samoa Dunes Recreation Area & North Jetty",
+    "category": "coast",
+    "subcategory": "dunes_industrial_coast",
+    "lat": 40.7645,
+    "lng": -124.2303,
+    "nearest_town": "Eureka, CA",
+    "distance_from_spine_km": 13,
+    "description": "Poloostrov Samoa je zvláštní směs písečných dun, větrného oceánu, jetty, zbytků průmyslové krajiny a výhledů přes Humboldt Bay na Eureku. Je to spíš syrová periferie města než hezká pláž, což je přesně jeho hodnota.",
+    "why_bob": "Průmyslové pobřeží, duny, mlha a konec silnice mají mnohem víc Lynchovského náboje než většina upravených vyhlídek.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 30,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "u jetty extrémně nebezpečný příboj, sneaker waves a proudy; neplavat a nevstupovat na mokré kameny"
+    },
+    "road_access": "paved",
+    "best_time": "mlha, vítr nebo podvečer",
+    "season_note_2026": "BLM recreation area je veřejně přístupná; při velkém swell držet odstup od North Jetty. Historický Samoa Cookhouse jsem nezařadila jako samostatný food stop, protože jeho dlouhodobá rekonstrukce nedává k 8. 9. 2026 dostatečně spolehlivou jistotu provozu pro tuto databázi.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.7645,-124.2303",
+      "official": "https://www.blm.gov/visit/samoa-dunes-recreation-area",
+      "wiki": "https://en.wikipedia.org/wiki/Samoa,_California"
+    },
+    "photo": null,
+    "tags": ["dunes", "industrial", "fog", "odd_atmosphere", "jetty"],
+    "rank": 2
+  },
+  {
+    "id": "r5-037",
+    "region": "R5",
+    "name": "Ferndale Main Street",
+    "category": "town",
+    "subcategory": "victorian_small_town",
+    "lat": 40.5767,
+    "lng": -124.2633,
+    "nearest_town": "Ferndale, CA",
+    "distance_from_spine_km": 8,
+    "description": "Malé město pod zelenými kopci Eel River Valley má mimořádně zachovanou viktoriánskou Main Street, staré obchody a překvapivě nedotčenou americkou small-town geometrii. Turistické prvky existují, ale stačí projít vedlejší ulice a hřbitov a kulisa se rychle promění ve skutečné město.",
+    "why_bob": "Ferndale je nejlepší brána na Lost Coast: trochu Wes Anderson, trochu Hopper a za posledním domem okamžitě mokré pastviny a obrovská prázdná krajina.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 50,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno před Lost Coast loopem nebo podvečer",
+    "season_note_2026": "Veřejné centrum města je celoročně přístupné. Stav Mattole Road před pokračováním na Lost Coast zkontrolovat na Humboldt County Road Conditions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.5767,-124.2633",
+      "official": "https://ci.ferndale.ca.us/",
+      "wiki": "https://en.wikipedia.org/wiki/Ferndale,_California"
+    },
+    "photo": null,
+    "tags": ["Victorian", "small_town", "Hopper", "Lost_Coast_gateway"],
+    "rank": 1
+  },
+  {
+    "id": "r5-038",
+    "region": "R5",
+    "name": "Mattole Road / Lost Coast Loop — Ferndale to Honeydew",
+    "category": "scenic_drive",
+    "subcategory": "remote_coastal_loop",
+    "lat": 40.5767,
+    "lng": -124.2633,
+    "nearest_town": "Ferndale, CA",
+    "distance_from_spine_km": 8,
+    "description": "Mattole Road překonává osamělé pastviny, strmé pobřežní hřebeny a několik kilometrů jede prakticky po okraji oceánu kolem Cape Mendocino, než se stočí přes Petrolia a Honeydew do vnitrozemí. Asfalt bývá hrbolatý, úzký a pomalý, ale normální sedan ho za sucha zvládá.",
+    "why_bob": "Tohle je jeden z nejbobovštějších celodenních detourů celé cesty — prázdná silnice, vítr, farmy, oceán, žádný signál a krajina bez ochranných zábran mezi tebou a Pacifikem.",
+    "time_needed": "5–8 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 160,
+      "elevation_m": 0,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "minimum služeb a místy žádný mobilní signál; tankovat předem"
+    },
+    "road_access": "rough_caution",
+    "best_time": "celý suchý den, odjezd ráno",
+    "season_note_2026": "K 8. 9. 2026 není na Humboldt County road-closure přehledu uvedena úplná uzávěra tohoto loopu. Mattole Road je ale náchylná k sesuvům a výtlukům, takže stav bezpodmínečně znovu ověřit v den odjezdu; nejezdit ji zbytečně po velké bouři.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.5767,-124.2633",
+      "official": "https://humboldtgov.org/1422/Road-Conditions",
+      "wiki": "https://en.wikipedia.org/wiki/Lost_Coast"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "Lost_Coast", "remote", "ocean", "rough_pavement"],
+    "rank": 1
+  },
+  {
+    "id": "r5-039",
+    "region": "R5",
+    "name": "Cape Mendocino",
+    "category": "coast",
+    "subcategory": "remote_headland",
+    "lat": 40.4401,
+    "lng": -124.4095,
+    "nearest_town": "Petrolia, CA",
+    "distance_from_spine_km": 42,
+    "description": "Nejzápadnější bod Kalifornie leží na osamělé části Mattole Road pod travnatými svahy, kde se silnice na chvíli ocitá přímo proti Pacifiku. Není tu klasická infrastruktura ani hlavní viewpoint — právě cesta, vítr a holý mys jsou celé místo.",
+    "why_bob": "Krajina tu má McCarthyovskou prostotu: tráva, šedý oceán, pár kusů dobytka, cesta a pocit, že Amerika na západě prostě končí.",
+    "time_needed": "30–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "velmi exponovaný oceán, sneaker waves a minimální pomoc v dosahu"
+    },
+    "road_access": "rough_caution",
+    "best_time": "větrné odpoledne nebo dramatické počasí bez bouře",
+    "season_note_2026": "Přístup závisí na stavu Mattole Road; těsně před jízdou zkontrolovat Humboldt County Road Conditions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.4401,-124.4095",
+      "official": "https://humboldtgov.org/1422/Road-Conditions",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Mendocino"
+    },
+    "photo": null,
+    "tags": ["remote", "headland", "wind", "McCarthy", "big_sky"],
+    "rank": 1
+  },
+  {
+    "id": "r5-040",
+    "region": "R5",
+    "name": "Mattole Beach",
+    "category": "coast",
+    "subcategory": "wild_beach",
+    "lat": 40.28902,
+    "lng": -124.35604,
+    "nearest_town": "Petrolia, CA",
+    "distance_from_spine_km": 60,
+    "description": "Silnice prakticky skončí u obrovské temné pláže na severním konci King Range, odkud začíná pěší Lost Coast. I bez backpackingu stačí odejít kilometr od trailheadu a dostaneš pocit mnohem větší divočiny, než odpovídá vzdálenosti od auta.",
+    "why_bob": "Je to jeden z nejsilnějších bodů pro prosté sedění na kameni s knihou — oceán, šedé nebe, černé oblázky a téměř žádná civilizace.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "NEPLAVAT; silný příboj, sneaker waves, rip currents, driftwood a velmi odlehlá pomoc"
+    },
+    "road_access": "rough_caution",
+    "best_time": "podvečer, ale s rezervou na návrat po Mattole Road",
+    "season_note_2026": "Day-use nevyžaduje King Range wilderness permit; permit je potřeba pro overnight backpacking. Před cestou ověřit Mattole Road a aktuální BLM alerts.",
+    "fee": "day-use zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.28902,-124.35604",
+      "official": "https://www.blm.gov/programs/national-conservation-lands/california/king-range-national-conservation-area",
+      "wiki": "https://en.wikipedia.org/wiki/Lost_Coast"
+    },
+    "photo": null,
+    "tags": ["Lost_Coast", "wild_beach", "solitude", "wind", "no_swim"],
+    "rank": 1
+  },
+  {
+    "id": "r5-041",
+    "region": "R5",
+    "name": "Punta Gorda Lighthouse — day hike from Mattole Beach",
+    "category": "coast",
+    "subcategory": "lighthouse_beach_hike",
+    "lat": 40.28902,
+    "lng": -124.35604,
+    "nearest_town": "Petrolia, CA",
+    "distance_from_spine_km": 60,
+    "description": "Out-and-back po Lost Coast Trail vede několik kilometrů po písku a oblázcích k opuštěnému betonovému Punta Gorda Lighthouse pod strmými King Range. Trasa je jednoduchá navigačně, ale pomalejší fyzicky a některé pobřežní pasáže jsou závislé na přílivu.",
+    "why_bob": "Opuštěný maják na kraji kontinentu, několik hodin chůze pod divokými horami a žádný suvenýrový obchod — skoro učebnicový Bob.",
+    "time_needed": "4–6 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 10.5,
+      "elevation_m": 120,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "NEPLAVAT; sneaker waves a silný příboj. U elephant seals držet minimálně cca 50 m odstup"
+    },
+    "road_access": "rough_caution",
+    "best_time": "začít ráno a naplánovat podle tide table",
+    "season_note_2026": "Pro jednodenní day hike není vyžadován wilderness overnight permit. BLM výslovně upozorňuje, že některé Lost Coast úseky jsou za vysokého přílivu neprůchodné; stáhnout tide table offline a nevstupovat do vody nad kolena při creek crossings.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.28902,-124.35604",
+      "official": "https://www.blm.gov/programs/national-conservation-lands/california/king-range-national-conservation-area",
+      "wiki": "https://en.wikipedia.org/wiki/Punta_Gorda_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "Lost_Coast", "tide_dependent", "remote_hike", "elephant_seals"],
+    "rank": 1
+  },
+  {
+    "id": "r5-042",
+    "region": "R5",
+    "name": "Petrolia",
+    "category": "town",
+    "subcategory": "remote_valley_town",
+    "lat": 40.3254,
+    "lng": -124.2854,
+    "nearest_town": "Petrolia, CA",
+    "distance_from_spine_km": 53,
+    "description": "Petrolia je nepatrná osada v širokém Mattole Valley, bez klasického turistického centra a s krajinou, která má větší význam než samotné budovy. Dává smysl jako pomalá zastávka na kávu, zásoby nebo jen chvíli u řeky během Lost Coast loopu.",
+    "why_bob": "Je zajímavá právě tím, že se nesnaží být zajímavá — pár domů, údolí, stará auta a silnice pokračující do prázdna.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "náhodné vstupy do Mattole River nedoporučuju bez místního posouzení průtoku a kvality vody"
+    },
+    "road_access": "rough_caution",
+    "best_time": "během Lost Coast loopu",
+    "season_note_2026": "Veřejné silnice a osada jsou přístupné podle stavu Mattole Road; služby jsou omezené, nespoléhat na pozdní otevírací dobu.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.3254,-124.2854",
+      "official": "https://humboldtgov.org/1422/Road-Conditions",
+      "wiki": "https://en.wikipedia.org/wiki/Petrolia,_California"
+    },
+    "photo": null,
+    "tags": ["remote_town", "Lost_Coast", "roadside", "Mattole_Valley"],
+    "rank": 3
+  },
+  {
+    "id": "r5-043",
+    "region": "R5",
+    "name": "Honeydew Bridge & Mattole Valley",
+    "category": "town",
+    "subcategory": "rural_valley_stop",
+    "lat": 40.2459,
+    "lng": -124.1221,
+    "nearest_town": "Honeydew, CA",
+    "distance_from_spine_km": 45,
+    "description": "Honeydew je jen shluk staveb a most přes Mattole River uprostřed izolovaného údolí, ale po dramatickém pobřežním úseku funguje jako krásná změna rytmu. Silnice se tu vrací mezi les, malé farmy a říční nivu.",
+    "why_bob": "Je to mezivěta Lost Coast road movie — nic ikonického, jen dřevěný venkov, řeka a pocit, že město je velmi daleko.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "nezařazuju jako ověřený swim access; soukromé pozemky a proměnlivý průtok"
+    },
+    "road_access": "rough_caution",
+    "best_time": "během Lost Coast loopu",
+    "season_note_2026": "Průjezd závisí na aktuálním stavu Mattole/Honeydew roads; ověřit Humboldt County Road Conditions.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.2459,-124.1221",
+      "official": "https://humboldtgov.org/1422/Road-Conditions",
+      "wiki": "https://en.wikipedia.org/wiki/Honeydew,_California"
+    },
+    "photo": null,
+    "tags": ["rural", "Mattole_Valley", "remote", "road_trip"],
+    "rank": 3
+  },
+  {
+    "id": "r5-044",
+    "region": "R5",
+    "name": "Black Sands Beach",
+    "category": "coast",
+    "subcategory": "black_sand_beach",
+    "lat": 40.045676,
+    "lng": -124.078044,
+    "nearest_town": "Shelter Cove, CA",
+    "distance_from_spine_km": 38,
+    "description": "Několik kilometrů tmavého písku a oblázků leží pod strmými King Range a vytváří jeden z nejtemnějších, nejprázdnějších obrazů kalifornského pobřeží. Z parkoviště můžeš jít libovolně dlouhý out-and-back bez potřeby pouštět se do vícedenního Lost Coast Trail.",
+    "why_bob": "Černá pláž pod téměř neobydlenými horami vypadá jako místo, které by McCarthy nechal přežít i po konci civilizace.",
+    "time_needed": "1,5–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 5,
+      "elevation_m": 30,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "NEPLAVAT; strmý drop-off, silný plunging shorebreak, rip currents a historie utonutí"
+    },
+    "road_access": "paved",
+    "best_time": "podvečer, zataženo nebo mlha",
+    "season_note_2026": "Veřejný day-use přístup v King Range; nepotřebuje overnight wilderness permit. Při velkém swell se držet výrazně nad wet-sand line.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.045676,-124.078044",
+      "official": "https://www.blm.gov/programs/national-conservation-lands/california/king-range-national-conservation-area",
+      "wiki": "https://en.wikipedia.org/wiki/Shelter_Cove,_California"
+    },
+    "photo": null,
+    "tags": ["black_sand", "Lost_Coast", "McCarthy", "wild_beach", "no_swim"],
+    "rank": 1
+  },
+  {
+    "id": "r5-045",
+    "region": "R5",
+    "name": "Mal Coombs Park & Cape Mendocino Lighthouse",
+    "category": "coast",
+    "subcategory": "lighthouse_viewpoint",
+    "lat": 40.0229,
+    "lng": -124.0574,
+    "nearest_town": "Shelter Cove, CA",
+    "distance_from_spine_km": 38,
+    "description": "Malý park na okraji Shelter Cove stojí nad skalami a obsahuje přesunutou historickou lucernovou věž z Cape Mendocino Lighthouse. Kromě majáku tu člověk dostane široký výhled na členité pobřeží a dobrý bod pro západ slunce.",
+    "why_bob": "Je to hezká historická ozvěna Cape Mendocino po dni na Lost Coast — stará majáková struktura, skály a vítr bez potřeby dalšího velkého treku.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "skalnatý exponovaný oceán"
+    },
+    "road_access": "paved",
+    "best_time": "západ slunce",
+    "season_note_2026": "Veřejný pobřežní park v Shelter Cove; při pobřežní bouři ověřit lokální podmínky.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.0229,-124.0574",
+      "official": "https://www.blm.gov/programs/national-conservation-lands/california/king-range-national-conservation-area",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Mendocino_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "Shelter_Cove", "sunset", "Lost_Coast"],
+    "rank": 2
+  },
+  {
+    "id": "r5-046",
+    "region": "R5",
+    "name": "Avenue of the Giants",
+    "category": "scenic_drive",
+    "subcategory": "redwood_road",
+    "lat": 40.4649,
+    "lng": -123.9998,
+    "nearest_town": "Scotia, CA",
+    "distance_from_spine_km": 0,
+    "description": "Starý úsek US 101 se na zhruba 50 kilometrů zanoří do Humboldt Redwoods State Park a vede přímo mezi některými z nejvyšších a nejmohutnějších stromů na planetě. Hodnota není v jednotlivých označených stromech, ale v pomalé souvislé jízdě, kdy se měřítko lesa stane normou.",
+    "why_bob": "Je to jedna z nejsilnějších road-movie silnic Ameriky a zároveň ideální protiváha Highway 1 — místo horizontu vertikální nekonečno.",
+    "time_needed": "2–4 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 50,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdní odpoledne",
+    "season_note_2026": "Avenue of the Giants a Humboldt Redwoods jsou k 8. 9. 2026 otevřené. CA Federation of Women's Clubs Grove Road je aktuálně uzavřená do odvolání, proto ji tato kurace nepoužívá.",
+    "fee": "průjezd zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.4649,-123.9998",
+      "official": "https://www.parks.ca.gov/?page_id=425",
+      "wiki": "https://en.wikipedia.org/wiki/Avenue_of_the_Giants"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "redwoods", "old_highway", "road_movie"],
+    "rank": 1
+  },
+  {
+    "id": "r5-047",
+    "region": "R5",
+    "name": "Founders Grove",
+    "category": "forest",
+    "subcategory": "old_growth_loop",
+    "lat": 40.3536,
+    "lng": -123.9237,
+    "nearest_town": "Weott, CA",
+    "distance_from_spine_km": 2,
+    "description": "Krátký plochý loop vede mimořádně vysokým a světlým redwoodovým porostem v nivě South Fork Eel River. Padlý Dyerville Giant umožňuje najednou pochopit rozměr stromu v horizontální rovině, což je skoro působivější než pohled vzhůru.",
+    "why_bob": "Je to fyzická lekce měřítka a času — strom ležící na zemi vypadá víc jako infrastruktura než organismus.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo po dešti",
+    "season_note_2026": "Humboldt Redwoods State Park je k 8. 9. 2026 otevřený a Founders Grove není v aktuálních closures uveden.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.3536,-123.9237",
+      "official": "https://www.parks.ca.gov/?page_id=425",
+      "wiki": "https://en.wikipedia.org/wiki/Humboldt_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["old_growth", "redwoods", "Dyerville_Giant", "deep_time"],
+    "rank": 1
+  },
+  {
+    "id": "r5-048",
+    "region": "R5",
+    "name": "Rockefeller Forest — Giant Tree",
+    "category": "forest",
+    "subcategory": "old_growth_walk",
+    "lat": 40.3507,
+    "lng": -123.9268,
+    "nearest_town": "Weott, CA",
+    "distance_from_spine_km": 3,
+    "description": "Rockefeller Forest tvoří jeden z největších souvislých chráněných old-growth redwood porostů a krátké přístupy od Avenue of the Giants rychle opouštějí silnici. Giant Tree je dobrá kotva, ale skutečný smysl má bezcílně projít několik kilometrů mezi South Fork Eel River a obřími kmeny.",
+    "why_bob": "Tady bych si nechala nejvíc času na nic — žádný konkrétní highlight nepřebije pocit, že několik kilometrů chodíš uvnitř starého živého systému.",
+    "time_needed": "1,5–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 50,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "brzy ráno",
+    "season_note_2026": "Humboldt Redwoods je k 8. 9. 2026 otevřený a hlavní Rockefeller Forest přístupy nejsou mezi aktuálními closures.",
+    "fee": "podle konkrétního day-use parkoviště; část přístupů zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.3507,-123.9268",
+      "official": "https://www.parks.ca.gov/?page_id=425",
+      "wiki": "https://en.wikipedia.org/wiki/Humboldt_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["old_growth", "redwoods", "quiet", "deep_time"],
+    "rank": 1
+  },
+  {
+    "id": "r5-049",
+    "region": "R5",
+    "name": "Shrine Drive-Thru Tree",
+    "category": "oddity",
+    "subcategory": "drive_thru_tree",
+    "lat": 40.2669,
+    "lng": -123.8761,
+    "nearest_town": "Myers Flat, CA",
+    "distance_from_spine_km": 1,
+    "description": "Soukromá stará roadside atrakce umožňuje projet autem otvorem v živém redwoodu a je jedním z reliktů éry, kdy se sekvoje prodávaly turistům i takto bizarním způsobem. Dnes je hodnotnější jako kulturní artefakt historie automobilismu než jako přírodní zážitek.",
+    "why_bob": "Je to lehce absurdní analogová Amerika — dost stará na to, aby nebyla ironická, a dost divná na desetiminutovou odbočku.",
+    "time_needed": "15–30 min",
+    "effort": {
+      "type": "drive",
+      "distance_km": 1,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "kdykoliv během Avenue of the Giants",
+    "season_note_2026": "Soukromý provoz nemá stejně spolehlivý veřejný status jako state park; konkrétní denní hodiny ověřit před odbočením. Pokud je zavřeno, nic zásadního neztrácíš — Chandelier Tree níže má vyšší prioritu.",
+    "fee": "malý soukromý vstupní poplatek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.2669,-123.8761",
+      "official": null,
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["roadside_americana", "drive_thru_tree", "oddity", "historic_tourism"],
+    "rank": 3
+  },
+  {
+    "id": "r5-050",
+    "region": "R5",
+    "name": "Grizzly Creek Redwoods — Cheatham Grove",
+    "category": "forest",
+    "subcategory": "film_location",
+    "lat": 40.48528,
+    "lng": -123.90611,
+    "nearest_town": "Carlotta, CA",
+    "distance_from_spine_km": 28,
+    "description": "Malý old-growth grove na Van Duzen River je méně monumentální než Humboldt Redwoods, ale často podstatně klidnější a má krásný kapradinový podrost. Část Cheatham Grove posloužila jako lokace Endoru ve filmu Return of the Jedi.",
+    "why_bob": "Film-location bonus je tu vedlejší; hlavní výhra je komorní redwoodový les bez davu, který působí spíš jako nalezená scéna než atrakce.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo zataženo",
+    "season_note_2026": "Grizzly Creek Redwoods State Park je k 8. 9. 2026 otevřen; day-use je přibližně 8:00 až západ slunce.",
+    "fee": "cca 8 $ day-use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.48528,-123.90611",
+      "official": "https://www.parks.ca.gov/?page_id=421",
+      "wiki": "https://en.wikipedia.org/wiki/Grizzly_Creek_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["redwoods", "film_location", "Star_Wars", "quiet_grove"],
+    "rank": 2
+  },
+  {
+    "id": "r5-051",
+    "region": "R5",
+    "name": "Grizzly Creek — Van Duzen River Beach",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 40.4853,
+    "lng": -123.9061,
+    "nearest_town": "Carlotta, CA",
+    "distance_from_spine_km": 28,
+    "description": "State park má přímo u redwoodového lesa snadno dostupný štěrkový břeh Van Duzen River a swimming je mezi oficiálně uváděnými aktivitami. V pozdním létě bývá řeka pomalejší a teplejší než Smith River, ale kvalita vody se může měnit.",
+    "why_bob": "Po hodině pod sekvojemi můžeš bez další logistiky sejít do chladné řeky — velmi čistý přechod z vizuálního do tělesného zážitku.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "Van Duzen River",
+      "temp_c_sept_oct": "15–20 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "proměnlivá hloubka a proud; v pozdním létě před vstupem vždy zkontrolovat aktuální harmful-algal-bloom upozornění"
+    },
+    "road_access": "paved",
+    "best_time": "odpoledne",
+    "season_note_2026": "Park je k 8. 9. 2026 otevřen a State Parks swimming výslovně uvádí. V den koupání ověřit Humboldt County/State water-quality a HAB notices.",
+    "fee": "cca 8 $ day-use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.4853,-123.9061",
+      "official": "https://www.parks.ca.gov/?page_id=421",
+      "wiki": "https://en.wikipedia.org/wiki/Grizzly_Creek_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["swim", "Van_Duzen", "redwoods", "HAB_check"],
+    "rank": 2
+  },
+  {
+    "id": "r5-052",
+    "region": "R5",
+    "name": "Humboldt Redwoods — Eel River gravel bars",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 40.3119,
+    "lng": -123.9717,
+    "nearest_town": "Weott, CA",
+    "distance_from_spine_km": 3,
+    "description": "South Fork Eel River protíná Humboldt Redwoods a na několika legálních day-use přístupech vznikají za nízkého průtoku široké štěrkové bary a klidnější bazény. State Parks uvádí swimming jako standardní aktivitu, ale konkrétní nejlepší místo se s průtokem každoročně mění.",
+    "why_bob": "Tahle řeka umožní spontánní plavání přímo u Avenue of the Giants bez toho, aby ses musel honit za jednou instagramovou swimming hole.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "South Fork Eel River",
+      "temp_c_sept_oct": "16–21 °C v září, v říjnu obvykle chladnější",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "vybírat jen klidný legální day-use access; pozdní léto má riziko harmful algal blooms, takže před vstupem zkontrolovat aktuální mapu"
+    },
+    "road_access": "paved",
+    "best_time": "teplé odpoledne",
+    "season_note_2026": "Humboldt Redwoods je k 8. 9. 2026 otevřen a swimming je oficiálně uváděná aktivita. Konkrétní gravel bar vybrat podle aktuálního průtoku a HAB advisories, ne podle staré fotografie.",
+    "fee": "podle day-use accessu, typicky kolem 8 $ nebo zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.3119,-123.9717",
+      "official": "https://www.parks.ca.gov/?page_id=425",
+      "wiki": "https://en.wikipedia.org/wiki/Humboldt_Redwoods_State_Park"
+    },
+    "photo": null,
+    "tags": ["swim", "Eel_River", "redwoods", "gravel_bar", "HAB_check"],
+    "rank": 2
+  },
+  {
+    "id": "r5-053",
+    "region": "R5",
+    "name": "Richardson Grove — Grandfather & Nature Trail",
+    "category": "forest",
+    "subcategory": "old_growth_loop",
+    "lat": 40.017,
+    "lng": -123.8,
+    "nearest_town": "Garberville, CA",
+    "distance_from_spine_km": 0,
+    "description": "Richardson Grove je poslední velká redwoodová katedrála na jižním konci R5 a jeho krátké traily vedou mezi old-growth stromy přímo u South Fork Eel River. Je méně divoký než Prairie Creek, ale jako závěrečná zastávka redwoodového pásu funguje výborně.",
+    "why_bob": "Je to dobré rozloučení s vertikálním severem před tím, než se krajina dál na jih začne otevírat a vysychat.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 30,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdní odpoledne",
+    "season_note_2026": "Richardson Grove je podle State Parks k 8. 9. 2026 otevřen celoročně od svítání do soumraku.",
+    "fee": "cca 8 $ day-use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.017,-123.8",
+      "official": "https://www.parks.ca.gov/?page_id=422",
+      "wiki": "https://en.wikipedia.org/wiki/Richardson_Grove_State_Park"
+    },
+    "photo": null,
+    "tags": ["redwoods", "old_growth", "short_walk", "south_end"],
+    "rank": 2
+  },
+  {
+    "id": "r5-054",
+    "region": "R5",
+    "name": "Richardson Grove — South Fork Eel River Beach",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 40.019,
+    "lng": -123.801,
+    "nearest_town": "Garberville, CA",
+    "distance_from_spine_km": 1,
+    "description": "Pod redwoody Richardson Grove je snadný přístup k South Fork Eel River a State Parks swimming výslovně uvádí mezi aktivitami. V září může být voda na Bobovy poměry skoro teplá, ale koupání mezi kameny a vysokými stromy je krásné.",
+    "why_bob": "Poslední redwoodový swim stop před Leggettem je perfektní způsob, jak tuhle část severní Kalifornie uzavřít tělem místo fotografií.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "South Fork Eel River",
+      "temp_c_sept_oct": "16–21 °C v září, chladnější v říjnu",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "vstupovat z klidného břehu; před koupáním v pozdním létě ověřit harmful-algal-bloom advisories"
+    },
+    "road_access": "paved",
+    "best_time": "odpoledne",
+    "season_note_2026": "Park je k 8. 9. 2026 otevřen a swimming je oficiální aktivita. V den koupání ověřit water-quality/HAB informace.",
+    "fee": "cca 8 $ day-use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.019,-123.801",
+      "official": "https://www.parks.ca.gov/?page_id=422",
+      "wiki": "https://en.wikipedia.org/wiki/Richardson_Grove_State_Park"
+    },
+    "photo": null,
+    "tags": ["swim", "Eel_River", "redwoods", "HAB_check"],
+    "rank": 2
+  },
+  {
+    "id": "r5-055",
+    "region": "R5",
+    "name": "Garberville Main Street",
+    "category": "town",
+    "subcategory": "rough_road_town",
+    "lat": 40.1001,
+    "lng": -123.7959,
+    "nearest_town": "Garberville, CA",
+    "distance_from_spine_km": 0,
+    "description": "Garberville je praktické, trochu drsné centrum jižního Humboldt County a bývalého Emerald Triangle, s motely, starými storefronty a směsí dlouholetých místních, cestovatelů a lidí z cannabis economy. Není krásné v klasickém smyslu, ale po uhlazených parkových návštěvnických centrech působí jako návrat do živé roadside Ameriky.",
+    "why_bob": "Může tě bavit právě jeho lehká rozbitost — místo na starý motel, večerní diner a pozorování skutečné periferie bez estetického filtru.",
+    "time_needed": "30–90 min nebo nocleh",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "podvečer a noc",
+    "season_note_2026": "Město a US 101 jsou standardně průjezdné; jednotlivé malé podniky mají proměnlivý provoz, proto app nemá fixovat konkrétní restauraci bez denního ověření.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.1001,-123.7959",
+      "official": "https://www.garberville.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Garberville,_California"
+    },
+    "photo": null,
+    "tags": ["roadside_town", "Hopper", "Emerald_Triangle", "motel_country"],
+    "rank": 3
+  },
+  {
+    "id": "r5-056",
+    "region": "R5",
+    "name": "Chandelier Drive-Thru Tree",
+    "category": "oddity",
+    "subcategory": "drive_thru_tree",
+    "lat": 39.858398,
+    "lng": -123.719235,
+    "nearest_town": "Leggett, CA",
+    "distance_from_spine_km": 2,
+    "description": "Obrovský coast redwood s historicky vyříznutým automobile-sized tunelem je klasický relikt kalifornské roadside kultury a funguje od třicátých let. Ekologicky je ten koncept absurdní, kulturně je to ale přesně zachovaný artefakt doby, kdy samotná jízda autem byla turistickým spektáklem.",
+    "why_bob": "Tady bych ten turistický kýč odpustila: má skutečné stáří, auto je součástí díla a po 101 je to dokonale analogová tečka za redwoodovým severem.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "drive",
+      "distance_km": 1,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "mimo hlavní denní špičku",
+    "season_note_2026": "Chandelier Tree je v roce 2026 provozovaná soukromá atrakce; denní hodiny ověřit před příjezdem.",
+    "fee": "soukromý vstupní poplatek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=39.858398,-123.719235",
+      "official": "http://www.drivethrutree.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Chandelier_Tree"
+    },
+    "photo": null,
+    "tags": ["roadside_americana", "drive_thru_tree", "historic", "oddity"],
+    "rank": 2
+  },
+  {
+    "id": "r5-057",
+    "region": "R5",
+    "name": "Confusion Hill",
+    "category": "oddity",
+    "subcategory": "gravity_hill_roadside",
+    "lat": 39.931,
+    "lng": -123.759,
+    "nearest_town": "Piercy, CA",
+    "distance_from_spine_km": 0,
+    "description": "Starosvětská roadside attraction na US 101 kombinuje gravity-house optické iluze, redwoodový les, cedule a lehce vyšinutou poválečnou turistickou estetiku. Není to věda a není to ani příroda — je to dochovaný kus amerického bizáru.",
+    "why_bob": "Když budeš mít po pěti hodinách posvátných sekvojí chuť na dvacet minut idiotské analogové Ameriky, tohle je legitimní antidotum.",
+    "time_needed": "20–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 30,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "jen když jedeš kolem a máš náladu na bizár",
+    "season_note_2026": "Dlouhodobě provozovaná soukromá atrakce; konkrétní hodiny v den návštěvy ověřit na oficiálním webu.",
+    "fee": "placená atrakce",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=39.931,-123.759",
+      "official": "https://confusionhill.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Confusion_Hill"
+    },
+    "photo": null,
+    "tags": ["roadside_americana", "optical_illusion", "oddity", "old_US101"],
+    "rank": 3
+  },
+  {
+    "id": "r5-058",
+    "region": "R5",
+    "name": "Willow Creek — Bigfoot country",
+    "category": "oddity",
+    "subcategory": "cryptid_roadside_town",
+    "lat": 40.9396,
+    "lng": -123.6314,
+    "nearest_town": "Willow Creek, CA",
+    "distance_from_spine_km": 65,
+    "description": "Willow Creek je horské městečko na Trinity River, které se stalo jedním z kulturních center americké Bigfoot mytologie a má malý China Flat/Bigfoot museum kontext. Zajímavější než samotné exponáty je střet skutečné divoké horské krajiny, staré roadside ikonografie a lokálního folklóru.",
+    "why_bob": "Je to pěkná psycho-kulturní anomálie na cestě: místo, kde si racionalista může užít kolektivní americký mýtus bez nutnosti mu věřit.",
+    "time_needed": "30–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Trinity River zde nedoporučuju jako spontánní swim: v červenci 2026 došlo během jediného týdne ke třem utonutím a sheriff upozorňoval na studenou vodu a klamně silné proudy"
+    },
+    "road_access": "paved",
+    "best_time": "při inland detouru po CA-299",
+    "season_note_2026": "Město je průjezdné; sezónní hodiny malého muzea se mohou měnit, takže muzeum samotné brát jen jako bonus po ověření v den návštěvy. Trinity River nezařazuju zde jako swim stop kvůli sérii smrtelných nehod v létě 2026.",
+    "fee": "město zdarma; muzeum podle aktuálního provozu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.9396,-123.6314",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/Willow_Creek,_California"
+    },
+    "photo": null,
+    "tags": ["Bigfoot", "roadside_folklore", "cryptid", "Trinity_River", "no_swim"],
+    "rank": 3
+  },
+  {
+    "id": "r5-059",
+    "region": "R5",
+    "name": "Weaverville Historic Main Street",
+    "category": "town",
+    "subcategory": "gold_rush_town",
+    "lat": 40.73667,
+    "lng": -122.93611,
+    "nearest_town": "Weaverville, CA",
+    "distance_from_spine_km": 165,
+    "description": "Weaverville je překvapivě zachované horské Gold Rush town s cihlovými a dřevěnými fasádami, starými hotely a čínskou historií, obklopené suchými zalesněnými horami. Je dost daleko od pobřeží, aby už klimaticky působilo skoro jako jiná Kalifornie.",
+    "why_bob": "Tenhle detour dává smysl kvůli kontrastu: z vlhké šedé pobřežní mlhy během pár hodin do suchého zlatého vnitrozemí a města, které stále vypadá trochu jako western bez filmového setu.",
+    "time_needed": "1–2 h plus přejezd",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 50,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "Weaverville je celoročně přístupné po CA-299. Před tak dlouhým inland detourem ověřit Caltrans QuickMap a aktuální fire/smoke situaci v Trinity County.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.73667,-122.93611",
+      "official": "https://visittrinity.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Weaverville,_California"
+    },
+    "photo": null,
+    "tags": ["Gold_Rush", "historic_town", "dry_inland", "western", "detour"],
+    "rank": 2
+  },
+  {
+    "id": "r5-060",
+    "region": "R5",
+    "name": "Weaverville Joss House State Historic Park",
+    "category": "culture",
+    "subcategory": "chinese_history",
+    "lat": 40.7311,
+    "lng": -122.9408,
+    "nearest_town": "Weaverville, CA",
+    "distance_from_spine_km": 165,
+    "description": "Malý taoistický chrám z 19. století připomíná velkou čínskou komunitu kalifornské Gold Rush éry a stojí přímo v historickém Weaverville. Je to komorní kulturní místo, které ukazuje jinou vrstvu amerického Západu než kovbojský mýtus.",
+    "why_bob": "Na tak malém místě se potkává migrace, víra, násilná historie Gold Rush a kulturní kontinuita — víc materiálu k přemýšlení než v deseti westernových muzeích.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 5,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": ""
+    },
+    "road_access": "paved",
+    "best_time": "spojit s Main Street",
+    "season_note_2026": "Historický park existuje a je spravovaný California State Parks, ale vnitřní návštěvní hodiny mohou být omezené. Před 165km detourem ověřit konkrétní 2026 otevírací hodiny; exteriér a historické město zůstávají důvodem návštěvy i mimo ně.",
+    "fee": "podle aktuálního provozu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.7311,-122.9408",
+      "official": "https://www.parks.ca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Weaverville_Joss_House_State_Historic_Park"
+    },
+    "photo": null,
+    "tags": ["Chinese_American", "Gold_Rush", "history", "temple"],
+    "rank": 2
+  },
+  {
+    "id": "r5-061",
+    "region": "R5",
+    "name": "CA-299 — Trinity River Scenic Drive",
+    "category": "scenic_drive",
+    "subcategory": "mountain_river_drive",
+    "lat": 40.9396,
+    "lng": -123.6314,
+    "nearest_town": "Willow Creek, CA",
+    "distance_from_spine_km": 65,
+    "description": "CA-299 od Arcata přes Willow Creek směrem na Weaverville se z pobřežního redwoodového klimatu prořízne do hlubokého kaňonu Trinity River a postupně do stále suššího horského vnitrozemí. Je to výrazná klimatická proměna na jediné silnici a jeden z nejlepších full-day inland detourů R5.",
+    "why_bob": "Za pár hodin tu projedeš z mlžného Pacifiku do rozpálených borovic a skalnatého říčního kaňonu — přesně ten druh dlouhé změny krajiny, kvůli které tě baví řídit.",
+    "time_needed": "4–8 h podle otočky",
+    "effort": {
+      "type": "drive",
+      "distance_km": 270,
+      "elevation_m": 0,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Trinity River zde záměrně nedoporučuju jako swim: po třech utonutích během jediného týdne v červenci 2026 sheriff upozorňoval na studenou vodu a silné, klamně vypadající proudy"
+    },
+    "road_access": "paved",
+    "best_time": "celodenní výlet za sucha a dobré visibility",
+    "season_note_2026": "CA-299 je hlavní průjezdná trasa; před odjezdem kontrolovat Caltrans QuickMap a fire/smoke alerts. Kvůli tragické sérii utonutí v létě 2026 je Trinity River v této databázi scénický drive/view, nikoli doporučené koupání.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.9396,-123.6314",
+      "official": "https://quickmap.dot.ca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/California_State_Route_299"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "Trinity_River", "canyon", "dry_inland", "no_swim"],
+    "rank": 1
+  },
+  {
+    "id": "r5-062",
+    "region": "R5",
+    "name": "CA-96 — Klamath River Canyon",
+    "category": "scenic_drive",
+    "subcategory": "remote_river_canyon_drive",
+    "lat": 41.1879,
+    "lng": -123.7101,
+    "nearest_town": "Hoopa, CA",
+    "distance_from_spine_km": 105,
+    "description": "CA-96 sleduje Klamath River hlubokým, suchým a řídce osídleným kaňonem přes severní Klamath Mountains, daleko od pobřežního turistického koridoru. Teplo, borovice, skály, říční terasy a dlouhé úseky skoro bez služeb vytvářejí úplně jiný svět než Redwood Coast.",
+    "why_bob": "Ze všech inland silnic R5 je tahle nejvíc McCarthy road: obrovský říční kaňon, suché světlo, malé osady a dlouhé kilometry, kde není důvod zastavovat kromě samotného prostoru.",
+    "time_needed": "5–8 h jako velký detour",
+    "effort": {
+      "type": "drive",
+      "distance_km": 250,
+      "elevation_m": 0,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Klamath je velká řeka s proudy a proměnlivými hydrologickými podmínkami; tato kurace ji nedoporučuje ke spontánnímu koupání"
+    },
+    "road_access": "paved",
+    "best_time": "celý suchý den; krásné nízké odpolední světlo",
+    "season_note_2026": "Route 96 byla po MP 18 Fire plně znovu otevřena 23. 8. 2026. Před odjezdem přesto zkontrolovat Caltrans QuickMap a aktuální fire/smoke conditions, protože situace v Klamath Mountains se může rychle změnit.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.1879,-123.7101",
+      "official": "https://quickmap.dot.ca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/California_State_Route_96"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "Klamath_River", "canyon", "dry_landscape", "solitude"],
+    "rank": 1
+  }
+]

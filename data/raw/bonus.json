@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "r1-001",
+    "region": "R1",
+    "name": "Twede's Cafe",
+    "category": "food_gem",
+    "subcategory": "diner_film_location",
+    "lat": 47.4959,
+    "lng": -121.7862,
+    "nearest_town": "North Bend, WA",
+    "distance_from_spine_km": 45,
+    "description": "Starý americký diner v centru North Bend, který v Twin Peaks hrál Double R Diner. Interiér pořád drží správnou kombinaci obyčejnosti, chromu, kávy, koláče a lehkého lynchovského posunu reality; není to rekonstruovaný tematický park, ale fungující podnik.",
+    "why_bob": "Twin Peaks pouť, která zároveň funguje jako skutečný Hopperův diner — kafe, cherry pie a pocit, že za rohem může začít jiná realita.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "denně 9:00–19:00; ideálně ráno nebo později odpoledne mimo hlavní nával",
+    "season_note_2026": "K 7. 9. 2026 otevřeno a oficiální web uvádí provoz denně 9:00–19:00. Je to vědomá výjimka z 30km koridoru, protože Twin Peaks je v zadání explicitní priorita.",
+    "fee": "$; káva, snídaně a diner jídlo",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.4959,-121.7862",
+      "official": "https://www.twedescafe.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["Twin Peaks", "diner", "Hopper", "Lynch", "roadside"],
+    "rank": 1
+  },
+  {
+    "id": "r1-002",
+    "region": "R1",
+    "name": "Elliott Bay Book Company",
+    "category": "culture",
+    "subcategory": "bookstore",
+    "lat": 47.614679,
+    "lng": -122.319631,
+    "nearest_town": "Seattle, WA",
+    "distance_from_spine_km": 3,
+    "description": "Velké nezávislé knihkupectví na Capitol Hill, fungující od roku 1973, s hlubokým katalogem beletrie, esejistiky a humanitních oborů. Není to rychlá turistická zastávka; je to přesně ten typ místa, kde se dá hodinu dvě zmizet mezi regály a pak pokračovat s knihou do kavárny.",
+    "why_bob": "Knihkupectví pro člověka, který může přijít pro McCarthyho a odejít s filosofií mysli, americkým esejem a úplně neplánovaným románem.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "typicky denně kolem 10:00–22:00; nejlepší podvečer, případně při autorském čtení",
+    "season_note_2026": "K 7. 9. 2026 aktivní a otevřené; před příjezdem zkontroluj denní program a případné drobné změny hodin.",
+    "fee": "zdarma vstup; knihy $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.614679,-122.319631",
+      "official": "https://www.elliottbaybook.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Elliott_Bay_Book_Company"
+    },
+    "photo": null,
+    "tags": ["knihy", "nezávislé", "čtení", "Seattle", "samota_v_davu"],
+    "rank": 1
+  },
+  {
+    "id": "r1-003",
+    "region": "R1",
+    "name": "Easy Street Records & Cafe",
+    "category": "culture",
+    "subcategory": "record_store_cafe",
+    "lat": 47.561255,
+    "lng": -122.38702,
+    "nearest_town": "Seattle, WA",
+    "distance_from_spine_km": 7,
+    "description": "West Seattle instituce kombinující nezávislý obchod s deskami a nenucenou kavárnu. Vinyl, použité desky, rocková historie na stěnách a občasné živé in-store koncerty vytvářejí místo, které pořád působí jako hudební obchod, ne lifestyle butik.",
+    "why_bob": "Analogové hrabání v deskách, kafe a šance na malý koncert — mnohem blíž jeho hudebnímu metabolismu než jakékoli muzeum rocku.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "obchod přibližně po–so 10:00–21:00, ne 11:00–19:00; při in-store koncertu přijít dřív",
+    "season_note_2026": "K 7. 9. 2026 funguje jako aktivní record store a venue; před návštěvou zkontroluj kalendář in-store akcí.",
+    "fee": "zdarma vstup; desky a jídlo $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.561255,-122.38702",
+      "official": "https://easystreetonline.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["vinyl", "rock", "kavárna", "živá_hudba", "Seattle"],
+    "rank": 1
+  },
+  {
+    "id": "r1-004",
+    "region": "R1",
+    "name": "KEXP Gathering Space",
+    "category": "culture",
+    "subcategory": "radio_music_space",
+    "lat": 47.6233,
+    "lng": -122.3553,
+    "nearest_town": "Seattle, WA",
+    "distance_from_spine_km": 2,
+    "description": "Veřejný prostor uvnitř sídla KEXP s Caffe Vita, posezením, rádiovým provozem a příležitostnými bezplatnými koncerty. Dá se sem prostě přijít s knihou nebo notebookem, poslouchat hudbu a chvíli existovat uprostřed jednoho z nejlepších nezávislých hudebních rádií v USA.",
+    "why_bob": "Je to hudební obývák pro introverta: může dvě hodiny mlčet, číst, pít kafe a přitom být uvnitř živé hudební kultury.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "po–pá 7:00–18:00, so–ne 8:00–18:00; 19. 9. 2026 je plánovaný Audioasis Live zhruba 17:00–21:00",
+    "season_note_2026": "Oficiální KEXP stránky k 7. 9. 2026 potvrzují uvedené hodiny a aktivní program Gathering Space.",
+    "fee": "zdarma; káva $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.6233,-122.3553",
+      "official": "https://www.kexp.org/visit/gathering-space/",
+      "wiki": "https://en.wikipedia.org/wiki/KEXP-FM"
+    },
+    "photo": null,
+    "tags": ["hudba", "rádio", "kafe", "živá_hudba", "čtení"],
+    "rank": 1
+  },
+  {
+    "id": "r1-005",
+    "region": "R1",
+    "name": "Atomic Motel",
+    "category": "motel_gem",
+    "subcategory": "retro_motor_lodge",
+    "lat": 46.1908,
+    "lng": -123.8433,
+    "nearest_town": "Astoria, OR",
+    "distance_from_spine_km": 0,
+    "description": "Nenáročný retro motel u Astoria–Megler Bridge s padesátkovým nábytkem a záměrně zachovanou atom-age estetikou. Není luxusní ani sterilně designový; pořád v něm zůstává dost obyčejného amerického motelu, aby fungoval i bez nostalgické stylizace.",
+    "why_bob": "Levný pokoj pod velkým mostem, staré tvary, silnice a mokrý severozápad — skoro hotový Hopperův rám.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "check-in přibližně 16:00–21:00; nejlepší příjezd za soumraku",
+    "season_note_2026": "K 7. 9. 2026 normálně přijímá rezervace; pro začátek října se objevovaly sazby okolo 87 $ před daněmi / zhruba 100 $ celkem.",
+    "fee": "$; často přibližně 90–120 $ za noc podle data",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1908,-123.8433",
+      "official": "https://atomicmotel.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "retro", "padesátá_léta", "Hopper", "roadside"],
+    "rank": 1
+  },
+  {
+    "id": "r1-006",
+    "region": "R1",
+    "name": "Godfather's Books & Espresso",
+    "category": "culture",
+    "subcategory": "bookstore_cafe",
+    "lat": 46.18917,
+    "lng": -123.83156,
+    "nearest_town": "Astoria, OR",
+    "distance_from_spine_km": 1,
+    "description": "Eklektické knihkupectví s novými i použitými knihami a malým espresso barem v centru Astorie. Majitel Charlie Holboke prodává knihy od sedmdesátých let a podnik má příjemně neuspořádaný, osobní charakter starého lokálního bookshopu.",
+    "why_bob": "Ideální deštivá Astoria: kafe, použité knihy a prostor, kde se člověk může ztratit bez potřeby s někým konverzovat.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "denně 9:00–18:00",
+    "season_note_2026": "Astoria-Warrenton Chamber i aktuální profil podniku k 7. 9. 2026 uvádějí otevřeno sedm dní v týdnu.",
+    "fee": "zdarma vstup; káva a knihy $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.18917,-123.83156",
+      "official": "https://booksgodfathers.wixsite.com/godfathers-books",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["knihy", "kafe", "Astoria", "nezávislé", "déšť"],
+    "rank": 2
+  },
+  {
+    "id": "r1-007",
+    "region": "R1",
+    "name": "Itty Bitty Inn",
+    "category": "motel_gem",
+    "subcategory": "tiny_roadside_motel",
+    "lat": 43.413077,
+    "lng": -124.224152,
+    "nearest_town": "North Bend, OR",
+    "distance_from_spine_km": 0,
+    "description": "Pět pokojů v drobném motelu přímo na US-101, jehož historie sahá do roku 1950. Má lehce excentrické tematické pokoje, osobní provoz a přesně opačný charakter než anonymní hotelový řetězec.",
+    "why_bob": "Je to skutečný malý motel na 101, trochu divný, trochu osobní a dostatečně obyčejný, aby v něm pořád byla poezie americké silnice.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "příjezd odpoledne; čas check-inu domluvit přímo s provozovatelem",
+    "season_note_2026": "K 7. 9. 2026 aktivní a rezervovatelný. Základní pokoje se historicky objevují kolem 99 $, některé speciální tematické pokoje ale stojí výrazně víc.",
+    "fee": "$–$$; přibližně od 100 $, tematické pokoje mohou být přes 200 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=43.413077,-124.224152",
+      "official": "https://ittybittyinn.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "US101", "retro", "malé", "roadside"],
+    "rank": 2
+  },
+  {
+    "id": "r1-008",
+    "region": "R1",
+    "name": "Gold Beach Books",
+    "category": "culture",
+    "subcategory": "bookstore_cafe",
+    "lat": 42.4078,
+    "lng": -124.4216,
+    "nearest_town": "Gold Beach, OR",
+    "distance_from_spine_km": 0,
+    "description": "Velký nezávislý obchod s novými i použitými knihami a vlastní coffeehouse přímo na pobřežní trase. Je dost velký na dlouhé hrabání v regálech, ale pořád působí jako lokální útočiště v malém větrném městě.",
+    "why_bob": "Přesně správná pauza mezi oceánem a dalšími dvěma sty kilometry: kafe, kniha a žádný program.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "knihkupectví denně 9:00–17:00; coffeehouse přibližně 7:30–16:30",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 uvádí pravidelný denní provoz knihkupectví i kavárny.",
+    "fee": "zdarma vstup; knihy a káva $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.4078,-124.4216",
+      "official": "https://goldbeachbooks.com/gold-beach-books/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["knihy", "kafe", "pobřeží", "čtení", "Oregon"],
+    "rank": 2
+  },
+  {
+    "id": "r1-009",
+    "region": "R1",
+    "name": "Curly Redwood Lodge",
+    "category": "motel_gem",
+    "subcategory": "historic_roadside_motel",
+    "lat": 41.7416,
+    "lng": -124.183,
+    "nearest_town": "Crescent City, CA",
+    "distance_from_spine_km": 0,
+    "description": "Klasický nízký motor lodge na US-101, postavený v padesátých letech z dřeva jediného obrovského curly redwoodu. Stále funguje jako obyčejný motel, nikoli jako drahý retro-resort; pokoje byly průběžně obnovené, ale exteriér a proporce zůstaly starosvětské.",
+    "why_bob": "Jeden z nejčistších zásahů do jeho motelové estetiky na celé cestě — redwoody, neonově-roadside atmosféra a pokoj pár metrů od 101.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "check-in odpoledne; přijet za šera, kdy motel vypadá nejlíp",
+    "season_note_2026": "K 7. 9. 2026 otevřeno a rezervovatelné; čerstvé recenze z května 2026 potvrzují normální provoz po renovacích.",
+    "fee": "$–$$; často zhruba 85–125 $, podle termínu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.7416,-124.183",
+      "official": "https://www.curlyredwoodlodge.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "redwood", "padesátá_léta", "US101", "Hopper"],
+    "rank": 1
+  },
+  {
+    "id": "r1-010",
+    "region": "R1",
+    "name": "The Peg House",
+    "category": "food_gem",
+    "subcategory": "roadside_grill",
+    "lat": 39.8756,
+    "lng": -123.7248,
+    "nearest_town": "Leggett, CA",
+    "distance_from_spine_km": 0,
+    "description": "Starý roadside komplex na US-101: general store, grill, terasa, pivo a venkovní pódium mezi redwoody. Jídlo je jednoduché a místo pořád slouží řidičům, místním a lidem mířícím do lesa, místo aby předstíralo kurátorskou 'Americana'.",
+    "why_bob": "Tohle je autentická silniční pauza: burger pod sekvojemi, místní pivo až po dojetí a nápis 'Never Don't Stop'.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "grill zhruba 11:00 do soumraku; obchod přibližně po–so 7:30–19:00, ne do 18:30",
+    "season_note_2026": "K 7. 9. 2026 oficiální web aktivní a podnik funguje; živá hudba je nepravidelná, kontroluj kalendář.",
+    "fee": "$–$$; jednoduché grilované jídlo",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=39.8756,-123.7248",
+      "official": "https://thepeghouse.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["roadside", "redwoody", "burger", "živá_hudba", "Americana"],
+    "rank": 1
+  },
+  {
+    "id": "r1-011",
+    "region": "R1",
+    "name": "Gallery Bookshop",
+    "category": "culture",
+    "subcategory": "bookstore",
+    "lat": 39.3065,
+    "lng": -123.7993,
+    "nearest_town": "Mendocino, CA",
+    "distance_from_spine_km": 0,
+    "description": "Nezávislé knihkupectví v historickém Mendocinu s dlouhým výhledem na oceánskou atmosféru města a pravidelnými autorskými večery. Sortiment je seriózní a obchod není jen suvenýrová zastávka pro víkendové návštěvníky.",
+    "why_bob": "Mlha, dřevěné Mendocino, oceán a hodina mezi knihami — melancholická severokalifornská kombinace přesně na jeho frekvenci.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "denně 10:00–18:00; 27. 9. 2026 je na programu autorský rozhovor od 18:00",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 potvrzuje denní provoz a zveřejňuje konkrétní zářijové akce.",
+    "fee": "zdarma vstup; knihy $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=39.3065,-123.7993",
+      "official": "https://gallerybookshop.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["knihy", "Mendocino", "oceán", "melancholie", "čtení"],
+    "rank": 1
+  },
+  {
+    "id": "r1-012",
+    "region": "R1",
+    "name": "Potter Schoolhouse & St. Teresa of Avila Church — The Birds",
+    "category": "culture",
+    "subcategory": "film_location",
+    "lat": 38.345953,
+    "lng": -122.971942,
+    "nearest_town": "Bodega, CA",
+    "distance_from_spine_km": 8,
+    "description": "Dvě klíčová exteriérová místa z Hitchcockových The Birds stojí pár kroků od sebe v ospalé Bodega. Potter Schoolhouse je dnes soukromý dům a smí se pouze pozorovat z veřejné silnice; St. Teresa of Avila dál funguje jako kostel.",
+    "why_bob": "Malá filmová pouť bez atrakce a bez kulis — jen známý Hitchcockův obraz zasazený do tichého, větrného skutečného města.",
+    "time_needed": "20–40 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "denní světlo; nejlíp zataženo nebo pozdní odpoledne, Potter Schoolhouse pouze z veřejného prostoru",
+    "season_note_2026": "Lokality existují a jsou přístupné z veřejných komunikací; školní budova je soukromý majetek — nevstupovat na pozemek.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=38.345953,-122.971942",
+      "official": "https://www.sonomacounty.com/arts-culture/alfred-hitchcocks-the-birds-filming-locations/",
+      "wiki": "https://en.wikipedia.org/wiki/The_Birds_(film)"
+    },
+    "photo": null,
+    "tags": ["Hitchcock", "film", "Bodega", "samota", "atmosféra"],
+    "rank": 1
+  },
+  {
+    "id": "r1-013",
+    "region": "R1",
+    "name": "Sweetwater Music Hall",
+    "category": "culture",
+    "subcategory": "live_music_venue",
+    "lat": 37.9062,
+    "lng": -122.545,
+    "nearest_town": "Mill Valley, CA",
+    "distance_from_spine_km": 6,
+    "description": "Intimní hudební klub v Mill Valley navazující na dlouhou marinovskou tradici roots, rocku, folku a jam scény. Program v září 2026 zahrnuje malé koncerty a sessiony, nikoli arénová jména; venue dává smysl hlavně tehdy, když tě večerní line-up trefí.",
+    "why_bob": "Malý klub v oblasti s hlubokou vazbou na západopobřežní rock a folk je mnohem víc jeho místo než velká koncertní hala.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "jen podle koncertu; často dveře kolem 19:00 a show kolem 20:00, 27. 9. 2026 je od poledne bezplatná bluegrassová session",
+    "season_note_2026": "K 7. 9. 2026 má zveřejněný aktivní zářijový program včetně akcí během cesty.",
+    "fee": "$–$$; podle koncertu, některé session zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.9062,-122.545",
+      "official": "https://sweetwatermusichall.org/events/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["živá_hudba", "rock", "folk", "roots", "Marin"],
+    "rank": 1
+  },
+  {
+    "id": "r1-014",
+    "region": "R1",
+    "name": "Beck's Motor Lodge",
+    "category": "motel_gem",
+    "subcategory": "mid_century_motor_lodge",
+    "lat": 37.7657,
+    "lng": -122.4317,
+    "nearest_town": "San Francisco, CA",
+    "distance_from_spine_km": 2,
+    "description": "Rodinný motor lodge na Market Street fungující od roku 1958, s typologií parkování před pokojem a neobvykle zachovanou motorizovanou městskou estetikou. Ceny už nejsou klasicky motelové, ale samotná stavba je jeden z nejlepších dochovaných kusů mid-century roadside San Francisca.",
+    "why_bob": "Je to skoro absurdní přeživší kus padesátkového motor-lodge světa uprostřed dnešního San Francisca.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "check-in odpoledne; největší vizuální efekt po setmění",
+    "season_note_2026": "K 7. 9. 2026 otevřeno. Oficiální sazby začínají kolem 129 $, ale zářijové reálné ceny mohou být přes 200 $, takže rezervovat jen při dobrém tarifu.",
+    "fee": "$$–$$$; od přibližně 129 $, často výrazně výš",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.7657,-122.4317",
+      "official": "https://www.becksmotorlodge.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "mid_century", "San_Francisco", "Hopper", "1958"],
+    "rank": 2
+  },
+  {
+    "id": "r1-015",
+    "region": "R1",
+    "name": "City Lights Booksellers & Publishers",
+    "category": "culture",
+    "subcategory": "bookstore_literary_site",
+    "lat": 37.7976,
+    "lng": -122.4066,
+    "nearest_town": "San Francisco, CA",
+    "distance_from_spine_km": 2,
+    "description": "Legendární nezávislé knihkupectví a nakladatelství spojené s Ferlinghettim a Beat Generation. Přes svou slávu zůstává především opravdovým knihkupectvím s literaturou, poezií, politikou a esejistikou, nikoli muzeem sebe sama.",
+    "why_bob": "Jedno z mála světově slavných literárních míst, které pořád stojí za návštěvu i tehdy, když člověk nesnáší turistické poutě.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "denně 10:00–22:00; ideálně pozdní večer",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 uvádí otevřeno denně 10:00–22:00.",
+    "fee": "zdarma vstup; knihy $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.7976,-122.4066",
+      "official": "https://citylights.com/",
+      "wiki": "https://en.wikipedia.org/wiki/City_Lights_Bookstore"
+    },
+    "photo": null,
+    "tags": ["Beat_Generation", "knihy", "Ferlinghetti", "literatura", "San_Francisco"],
+    "rank": 1
+  },
+  {
+    "id": "r1-016",
+    "region": "R1",
+    "name": "Amoeba Music — San Francisco",
+    "category": "culture",
+    "subcategory": "record_store",
+    "lat": 37.7697,
+    "lng": -122.4527,
+    "nearest_town": "San Francisco, CA",
+    "distance_from_spine_km": 3,
+    "description": "Obrovský nezávislý record store v bývalé bowlingové hale na Haight Street. Nové i použité LP, raritní sekce, jazz, soul, psychedelie, metal i elektronika; velikost je na hraně zahlcení, ale pro člověka, který se rád hrabe v hudební historii, je to účelný druh chaosu.",
+    "why_bob": "Může tu fyzicky prohrabat půl století psychedelie, soulu, proto-metalu a podivné elektroniky místo algoritmického doporučování.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "denně 11:00–19:00; pracovní den odpoledne bývá klidnější",
+    "season_note_2026": "K 7. 9. 2026 otevřeno s aktivním kalendářem in-store akcí.",
+    "fee": "zdarma vstup; vinyl $–$$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.7697,-122.4527",
+      "official": "https://www.amoeba.com/our-stores/",
+      "wiki": "https://en.wikipedia.org/wiki/Amoeba_Music"
+    },
+    "photo": null,
+    "tags": ["vinyl", "psychedelie", "soul", "Haight", "hudební_historie"],
+    "rank": 1
+  },
+  {
+    "id": "r1-017",
+    "region": "R1",
+    "name": "The Saloon",
+    "category": "food_gem",
+    "subcategory": "blues_bar",
+    "lat": 37.7985,
+    "lng": -122.4074,
+    "nearest_town": "San Francisco, CA",
+    "distance_from_spine_km": 2,
+    "description": "Starý, malý a neuhlazený bar v North Beach s živým blues prakticky každý den. Hraje se od odpoledne do hluboké noci a prostor pořád připomíná bar, kde hudba vzniká pár metrů před tebou, ne ticketovaný kulturní produkt.",
+    "why_bob": "Jestli má během celé cesty vejít do jednoho špinavějšího malého blues baru bez pózy, tak sem.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "denně zhruba 12:00–2:00; živá hudba obvykle 16:00–20:00 a 21:30–1:30",
+    "season_note_2026": "K 7. 9. 2026 aktivní; zářijový 2026 hudební kalendář je zveřejněný.",
+    "fee": "$–$$; drinky, hudba často bez vysokého coveru",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.7985,-122.4074",
+      "official": "https://thesaloonsf.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["blues", "bar", "živá_hudba", "North_Beach", "noc"],
+    "rank": 1
+  },
+  {
+    "id": "r1-018",
+    "region": "R1",
+    "name": "Vesuvio Cafe",
+    "category": "food_gem",
+    "subcategory": "historic_bar_literary_site",
+    "lat": 37.7975,
+    "lng": -122.4064,
+    "nearest_town": "San Francisco, CA",
+    "distance_from_spine_km": 2,
+    "description": "Bar z roku 1948 naproti City Lights, úzce spojený s Kerouacem, Ginsbergem, Cassadym a beatnickým North Beach. Barevný dvoupatrový interiér je vizuálně hustý, ale ne sterilně historizující; pořád se sem jde primárně na drink.",
+    "why_bob": "City Lights plus jeden drink ve Vesuvio je malá beatnická pouť, která se dá absolvovat bez jediného průvodce a bez sentimentality.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "ne–čt přibližně 11:00–1:00, pá–so 11:00–2:00; nejlepší pozdě večer",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 potvrzuje normální každodenní provoz.",
+    "fee": "$$; koktejly zhruba střední sanfranciská cenová hladina",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.7975,-122.4064",
+      "official": "https://vesuvio.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Vesuvio_Cafe"
+    },
+    "photo": null,
+    "tags": ["Beat_Generation", "Kerouac", "bar", "North_Beach", "noc"],
+    "rank": 1
+  },
+  {
+    "id": "r1-019",
+    "region": "R1",
+    "name": "Bookshop Santa Cruz",
+    "category": "culture",
+    "subcategory": "bookstore",
+    "lat": 36.9742,
+    "lng": -122.0297,
+    "nearest_town": "Santa Cruz, CA",
+    "distance_from_spine_km": 1,
+    "description": "Velké nezávislé knihkupectví fungující od roku 1966, s velmi širokým výběrem beletrie, esejistiky a společenských věd. Santa Cruz může být turistické, ale tenhle obchod je pořád normální lokální instituce a hostí seriózní autorské programy.",
+    "why_bob": "Silný literární pit-stop ve městě, kde se dá hodinu odpojit od boardwalkového šumu a vrátit se k textu.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "ne–čt 9:00–21:00, pá–so 9:00–22:00",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 potvrzuje uvedené hodiny a aktivní zářijový program.",
+    "fee": "zdarma vstup; knihy $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.9742,-122.0297",
+      "official": "https://bookshopsantacruz.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["knihy", "Santa_Cruz", "nezávislé", "čtení", "literatura"],
+    "rank": 2
+  },
+  {
+    "id": "r1-020",
+    "region": "R1",
+    "name": "National Steinbeck Center",
+    "category": "culture",
+    "subcategory": "literary_museum",
+    "lat": 36.6779,
+    "lng": -121.6557,
+    "nearest_town": "Salinas, CA",
+    "distance_from_spine_km": 1,
+    "description": "Malé až střední muzeum věnované Steinbeckovi přímo v jeho rodném Salinas. Dává smysl hlavně jako vstupní bod do skutečného Salinas Valley — zemědělské krajiny, pracovní historie a míst, která se v jeho próze stávají psychologickým prostorem.",
+    "why_bob": "Steinbeck pro něj není literární celebrita, ale způsob vidění krajiny a lidí — a tady se ten text připojí přímo k Salinas Valley za dveřmi.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "st–ne 10:00–17:00; počítej s uzavřením v pondělí a úterý",
+    "season_note_2026": "K 7. 9. 2026 aktuální místní zdroje uvádějí provoz st–ne 10:00–17:00; před návštěvou ověř konkrétní den.",
+    "fee": "$$; placené muzeum, aktuální vstupné zkontrolovat před návštěvou",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.6779,-121.6557",
+      "official": "https://steinbeck.org/",
+      "wiki": "https://en.wikipedia.org/wiki/National_Steinbeck_Center"
+    },
+    "photo": null,
+    "tags": ["Steinbeck", "literatura", "Salinas", "Kalifornie", "krajina"],
+    "rank": 1
+  },
+  {
+    "id": "r1-021",
+    "region": "R1",
+    "name": "Henry Miller Memorial Library",
+    "category": "culture",
+    "subcategory": "literary_music_site",
+    "lat": 36.223,
+    "lng": -121.763,
+    "nearest_town": "Big Sur, CA",
+    "distance_from_spine_km": 0,
+    "description": "Malý neziskový literární a umělecký prostor schovaný mezi redwoody u Highway 1, věnovaný Henrymu Millerovi, ale širší než běžné památníkové muzeum. Knihy, zahrada, hudební akce, piano a staré kytary z něj dělají spíš živou kulturní skrýš Big Sur než instituci.",
+    "why_bob": "Big Sur, literatura, hudba a místo, jehož ideální aktivitou je vlastně nic nedělat — skoro laboratorně přesný Bobův bod.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "aktuálně 11:00–17:00; před příjezdem zkontrolovat konkrétní den a stav Highway 1",
+    "season_note_2026": "K 7. 9. 2026 je po srpnových požárních omezeních znovu otevřeno. Přístup ze severu po Highway 1 funguje, ale stav silnice jižně od Big Sur se v roce 2026 mění kvůli požárům a uzávěrám — kontrola v den jízdy je nutná.",
+    "fee": "zdarma běžná návštěva; koncerty podle akce",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.223,-121.763",
+      "official": "https://www.henrymiller.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Henry_Miller_Memorial_Library"
+    },
+    "photo": null,
+    "tags": ["Henry_Miller", "Big_Sur", "knihy", "hudba", "redwoody"],
+    "rank": 1
+  },
+  {
+    "id": "r1-022",
+    "region": "R1",
+    "name": "Melody Ranch Motel",
+    "category": "motel_gem",
+    "subcategory": "historic_motor_motel",
+    "lat": 35.6269,
+    "lng": -120.6909,
+    "nearest_town": "Paso Robles, CA",
+    "distance_from_spine_km": 1,
+    "description": "Devatenáctipokojový motel na Spring Street, provozovaný stejnou rodinou od roku 1960. Nízká stavba, venkovní chodby, bazén a obyčejná motor-lodge typologie přežily v centru města, které jinak zdražilo a uhladilo se vinařským turismem.",
+    "why_bob": "Autentický levný-ish motor lodge uprostřed krajiny zlatých kopců a dubů, kterou si z Paso Robles zamiloval už v roce 2017.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "recepce denně přibližně 7:30–21:00; při příjezdu po 18:00 kontaktovat motel předem",
+    "season_note_2026": "K 7. 9. 2026 otevřeno a rezervovatelné; aktuální agregované sazby se objevují zhruba od 85–100 $, podle dne mohou výrazně růst.",
+    "fee": "$–$$; přibližně 85–130 $ při dobrém termínu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.6269,-120.6909",
+      "official": "https://www.travelpaso.com/listing/melody-ranch-motel/117/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "1960", "Paso_Robles", "motor_lodge", "Hopper"],
+    "rank": 1
+  },
+  {
+    "id": "r1-023",
+    "region": "R1",
+    "name": "Boo Boo Records",
+    "category": "culture",
+    "subcategory": "record_store",
+    "lat": 35.2818,
+    "lng": -120.6597,
+    "nearest_town": "San Luis Obispo, CA",
+    "distance_from_spine_km": 1,
+    "description": "Nezávislý obchod s deskami fungující od roku 1974, s novým i použitým vinylem, CD, filmy, knihami a hudebním harampádím v tom nejlepším smyslu. Je to stará regionální instituce, ne designová prodejna vinylu.",
+    "why_bob": "Padesát let hudební kontinuity a regály, kde se dá hledat psychedelie, soul i proto-metal bez algoritmu a bez kurátorské pózy.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "po–st 10:00–20:00, čt–so 10:00–21:00, ne 11:00–18:00",
+    "season_note_2026": "K 7. 9. 2026 oficiální web aktivní; aktuální místní navigační data uvádějí pravidelný sedmidenní provoz.",
+    "fee": "zdarma vstup; vinyl $–$$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.2818,-120.6597",
+      "official": "https://booboorecords.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["vinyl", "1974", "rock", "nezávislé", "San_Luis_Obispo"],
+    "rank": 1
+  },
+  {
+    "id": "r1-024",
+    "region": "R1",
+    "name": "Guadalupe-Nipomo Dunes Center — Lost City of DeMille",
+    "category": "culture",
+    "subcategory": "film_archaeology",
+    "lat": 34.972,
+    "lng": -120.5714,
+    "nearest_town": "Guadalupe, CA",
+    "distance_from_spine_km": 8,
+    "description": "Nenápadné malé muzeum v Guadalupe uchovává artefakty z obrovské egyptské filmové scény Cecila B. DeMilla pro The Ten Commandments z roku 1923. Kulisy byly po natáčení rozebrány a pohřbeny v dunách; archeologické fragmenty z nich působí jako podivná vykopávka z falešné civilizace.",
+    "why_bob": "Film, poušť, archeologie a pozůstatky umělé reality pohřbené v písku — přesně ten typ divnosti, kvůli kterému má cenu sjet z hlavní trasy.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "út–so 10:00–15:00",
+    "season_note_2026": "Oficiální stránky k 7. 9. 2026 uvádějí otevřeno út–so 10:00–15:00.",
+    "fee": "$; dospělý přibližně 7 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.972,-120.5714",
+      "official": "https://dunescenter.org/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["film", "duny", "archeologie", "DeMille", "podivnost"],
+    "rank": 1
+  },
+  {
+    "id": "r1-025",
+    "region": "R1",
+    "name": "Cold Spring Tavern",
+    "category": "food_gem",
+    "subcategory": "historic_tavern_live_music",
+    "lat": 34.505,
+    "lng": -119.7898,
+    "nearest_town": "Santa Barbara, CA",
+    "distance_from_spine_km": 22,
+    "description": "Bývalá dostavníková zastávka z 19. století v kaňonu nad Santa Barbarou, pořád fungující jako tmavá rustikální hospoda a víkendové místo pro roots, blues a rock. O víkendu se venku griluje slavný tri-tip a hudba se hraje mezi stromy bez arénové produkce.",
+    "why_bob": "Staré dřevo, kaňon, blues a jednoduché maso po dlouhém řízení — autentická Kalifornie mimo pobřežní lesk.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "drive",
+      "distance_km": 44,
+      "elevation_m": 500,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "so–ne zhruba 11:00–17:00 pro venkovní BBQ a živou hudbu; program se mění každý víkend",
+    "season_note_2026": "K 7. 9. 2026 aktivní a má zveřejněný zářijový hudební program; během druhé poloviny září jsou plánované rockové, roots a bluesové víkendy.",
+    "fee": "$$; tri-tip sandwich přibližně 15 $, nápoje navíc",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.505,-119.7898",
+      "official": "https://coldspringtavern.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Cold_Spring_Tavern"
+    },
+    "photo": null,
+    "tags": ["blues", "roadside", "historie", "kaňon", "Americana"],
+    "rank": 1
+  },
+  {
+    "id": "r1-026",
+    "region": "R1",
+    "name": "Rae's Restaurant",
+    "category": "food_gem",
+    "subcategory": "mid_century_diner",
+    "lat": 34.0214,
+    "lng": -118.4558,
+    "nearest_town": "Santa Monica, CA",
+    "distance_from_spine_km": 3,
+    "description": "Nízký tyrkysový diner otevřený od roku 1958, který vypadá jako materiál pro film nebo Hopperův pozdní kalifornský obraz. Je levný, staromódní, bez kulinářských ambicí a právě tím je silný; pořád slouží jako skutečná snídaňová jídelna.",
+    "why_bob": "Jeden z nejlepších reálných Hopper-diner momentů v Los Angeles — ranní světlo, vinylové boxy a obyčejná káva bez retro marketingu.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "zhruba 6:30–14:00; nejlíp brzy ráno ve všední den",
+    "season_note_2026": "K 7. 9. 2026 otevřeno; aktuální 2026 zdroje nadále popisují podnik jako fungující mid-century diner na Pico Boulevard.",
+    "fee": "$; levná snídaně a diner klasika",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.0214,-118.4558",
+      "official": "https://www.raesdinersm.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["Hopper", "diner", "1958", "mid_century", "Los_Angeles"],
+    "rank": 1
+  },
+  {
+    "id": "r1-027",
+    "region": "R1",
+    "name": "Marouch",
+    "category": "food_gem",
+    "subcategory": "lebanese_armenian",
+    "lat": 34.0903,
+    "lng": -118.2956,
+    "nearest_town": "Los Angeles, CA",
+    "distance_from_spine_km": 7,
+    "description": "Dlouholetý libanonsko-arménský podnik na Santa Monica Boulevard, fungující od roku 1982. Hummus, moutabal, kibbeh, kebaby a domácí levantinské chutě jsou důležitější než interiér; atmosféra je spíš stará lokální restaurace než módní Middle Eastern concept.",
+    "why_bob": "Jedna z nejpřesnějších jídelních tref v LA pro jeho posedlost libanonskou a arabskou kuchyní — seriózní jídlo bez pozlátka.",
+    "time_needed": "1–1.5 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "po zavřeno; út–čt 11:00–21:00, pá–so 11:00–22:00, ne 11:00–21:00",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 uvádí normální provoz a uvedené hodiny.",
+    "fee": "$$; plnohodnotné jídlo zhruba střední cenová hladina",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.0903,-118.2956",
+      "official": "https://hollywoodmarouch.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["libanonské", "arménské", "hummus", "Los_Angeles", "bez_pózy"],
+    "rank": 1
+  },
+  {
+    "id": "r1-028",
+    "region": "R1",
+    "name": "Jitlada",
+    "category": "food_gem",
+    "subcategory": "southern_thai",
+    "lat": 34.0981,
+    "lng": -118.3046,
+    "nearest_town": "Los Angeles, CA",
+    "distance_from_spine_km": 8,
+    "description": "Rodinná restaurace specializovaná na jižní Thajsko, známá hlubokým a často brutálně pálivým menu. Není potřeba rezervace ani rituál kolem fine diningu — jen přijít, objednat několik věcí, které jinde skoro nejsou, a nechat se trochu zničit chilli.",
+    "why_bob": "Silná, neuhlazená asijská kuchyně se skutečnou regionální identitou — přesný opak sterilního fusion bistra.",
+    "time_needed": "1–1.5 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "po zavřeno; út–ne 11:00–15:00 a 16:30–22:00; bez rezervací",
+    "season_note_2026": "Oficiální stránky k 7. 9. 2026 potvrzují uvedené hodiny a walk-in-only provoz.",
+    "fee": "$$; podle počtu sdílených jídel",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.0981,-118.3046",
+      "official": "https://jitladala.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["thajské", "pálivé", "asijské", "Los_Angeles", "autentické"],
+    "rank": 1
+  },
+  {
+    "id": "r1-029",
+    "region": "R1",
+    "name": "Amoeba Music — Hollywood",
+    "category": "culture",
+    "subcategory": "record_store",
+    "lat": 34.1019,
+    "lng": -118.3268,
+    "nearest_town": "Los Angeles, CA",
+    "distance_from_spine_km": 5,
+    "description": "Hollywoodská pobočka obrovského nezávislého hudebního obchodu s masivním výběrem vinylu, CD a použité hudby. Je novější než původní Sunset lokalita, ale pořád funguje jako skutečný record store a pořádá živé akce a poslechové večery.",
+    "why_bob": "LA hudební chaos v jedné budově — ideální dvě hodiny na fyzické hledání psychedelie, soulu, folku a temnější elektroniky.",
+    "time_needed": "1–3 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "po–čt 11:00–20:00, pá–ne 11:00–21:00; 18. 9. 2026 je plánovaná speciální Beck poslechová akce",
+    "season_note_2026": "K 7. 9. 2026 otevřeno a má aktivní zářijový 2026 event kalendář.",
+    "fee": "zdarma vstup; desky $–$$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.1019,-118.3268",
+      "official": "https://www.amoeba.com/our-stores/",
+      "wiki": "https://en.wikipedia.org/wiki/Amoeba_Music"
+    },
+    "photo": null,
+    "tags": ["vinyl", "Hollywood", "rock", "soul", "hudební_historie"],
+    "rank": 1
+  },
+  {
+    "id": "r1-030",
+    "region": "R1",
+    "name": "Troubadour",
+    "category": "culture",
+    "subcategory": "historic_live_music_venue",
+    "lat": 34.0816,
+    "lng": -118.3892,
+    "nearest_town": "West Hollywood, CA",
+    "distance_from_spine_km": 6,
+    "description": "Malý klub otevřený v roce 1957, zásadní pro folk-rockovou a singer-songwriter scénu Los Angeles šedesátých a sedmdesátých let. Elton John, James Taylor, Carole King, Neil Diamond, Randy Newman a další jsou součástí jeho historie, ale prostor dál funguje jako běžný koncertní klub.",
+    "why_bob": "Jedno z mála hudebních poutních míst v LA, kde historie pořád není vitrína — stojíš v malém sále a kapela je pár metrů před tebou.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "jen při koncertu; dveře často 19:00–20:00. Kalendář pro září 2026 je aktivní, konkrétní show vybírat podle data průjezdu LA",
+    "season_note_2026": "Oficiální kalendář k 7. 9. 2026 potvrzuje provoz a konkrétní zářijové koncerty.",
+    "fee": "$$–$$$; podle koncertu, často přibližně 20–60 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.0816,-118.3892",
+      "official": "https://troubadour.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Troubadour_(West_Hollywood,_California)"
+    },
+    "photo": null,
+    "tags": ["folk_rock", "sedmdesátá_léta", "živá_hudba", "Laurel_Canyon", "historie"],
+    "rank": 1
+  },
+  {
+    "id": "r1-031",
+    "region": "R1",
+    "name": "Canyon Country Store",
+    "category": "culture",
+    "subcategory": "music_pilgrimage",
+    "lat": 34.1091,
+    "lng": -118.3655,
+    "nearest_town": "Los Angeles, CA",
+    "distance_from_spine_km": 8,
+    "description": "Malý obchod uprostřed Laurel Canyon, který v šedesátých letech fungoval jako sousedský uzel hudebníků a kontrakultury. Jim Morrison ho zvěčnil v Love Street a kolem se pohybovali členové The Mamas & the Papas, Joni Mitchell, Crosby a další; pořád je to především normální neighborhood store.",
+    "why_bob": "Laurel Canyon bez muzea a bez cedulí — stačí zastavit, koupit si něco k pití a chvíli si představit dobu, kdy se tady hudební dějiny odehrávaly jako sousedský život.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "přes den; konkrétní denní hodiny ověř těsně před návštěvou",
+    "season_note_2026": "K 7. 9. 2026 obchod funguje. V roce 2026 probíhaly změny kolem vlastnictví/prodeje nemovitosti, takže před cestou ověř aktuální provoz; Los Angeles Conservancy jej v dubnu 2026 stále dokumentovala jako fungující místo.",
+    "fee": "$; běžný nákup v obchodě",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.1091,-118.3655",
+      "official": "https://laurelcanyoncountrystore.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["Laurel_Canyon", "Doors", "psychedelie", "hudební_historie", "šedesátá_léta"],
+    "rank": 1
+  },
+  {
+    "id": "r1-032",
+    "region": "R1",
+    "name": "Dunes Inn Sunset",
+    "category": "motel_gem",
+    "subcategory": "retro_city_motel",
+    "lat": 34.0984,
+    "lng": -118.3135,
+    "nearest_town": "Los Angeles, CA",
+    "distance_from_spine_km": 6,
+    "description": "Nízký starosvětský motel přímo na Sunset Boulevard, s otevřenými chodbami a klasickou městskou motor-lodge logikou. Není tak historicky silný jako Curly Redwood nebo Beck's, ale jako základna pro noc v Hollywoodu má pořád víc silničního charakteru než generický hotel.",
+    "why_bob": "Spát pár metrů od Sunset Boulevard v obyčejném motelu je pro jeho LA mnohem správnější než butikový hotel s retro tapetou.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "recepce 24 h; check-in přibližně od 14:00, nejlepší příjezd po setmění",
+    "season_note_2026": "K 7. 9. 2026 otevřeno. Nejnižší online sazby se objevují kolem 100 $, ale běžné zářijové ceny mohou být přibližně 170–190 $, takže kontrolovat konkrétní noc.",
+    "fee": "$$; přibližně 100–190 $ podle data",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.0984,-118.3135",
+      "official": "https://www.dunesinnsunset.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "Sunset_Boulevard", "Hollywood", "roadside", "Hopper"],
+    "rank": 2
+  },
+  {
+    "id": "r1-033",
+    "region": "R1",
+    "name": "Open Sesame — Belmont Shore",
+    "category": "food_gem",
+    "subcategory": "lebanese",
+    "lat": 33.7574,
+    "lng": -118.1318,
+    "nearest_town": "Long Beach, CA",
+    "distance_from_spine_km": 2,
+    "description": "Libanonská restaurace v Belmont Shore, fungující od roku 1999, s hummusem, baba ghanouj, falafelem, tawookem, shawarmou, jehněčím a další levantinskou klasikou. Je o něco uhlazenější než Marouch, ale pořád stojí hlavně na jídle a výrazných kořeněných chutích.",
+    "why_bob": "Druhá velmi bezpečná libanonská trefa na trase — ideální večer v Long Beach, když nechce burger ani kalifornský brunch.",
+    "time_needed": "1–1.5 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "ne–čt 11:30–21:30, pá–so 11:30–22:30; na pozdní večeři může být rušnější",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 potvrzuje uvedené hodiny a normální provoz.",
+    "fee": "$$–$$$; střední až vyšší střední cenová hladina",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.7574,-118.1318",
+      "official": "https://www.opensesamegrill.com/location/long-beach/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["libanonské", "shawarma", "hummus", "Long_Beach", "levantské"],
+    "rank": 2
+  },
+  {
+    "id": "r1-034",
+    "region": "R1",
+    "name": "Harbor House Cafe",
+    "category": "food_gem",
+    "subcategory": "twenty_four_hour_diner",
+    "lat": 33.7209,
+    "lng": -118.0738,
+    "nearest_town": "Sunset Beach, CA",
+    "distance_from_spine_km": 0,
+    "description": "Starosvětský diner přímo na Pacific Coast Highway, dlouhodobě otevřený 24 hodin denně pro surfaře, rybáře, motorkáře a noční řidiče. Obrovské menu není gastronomický důvod k objížďce; důvod je sedět ve dvě ráno v boxu u PCH s kávou a pozorovat, kdo přichází.",
+    "why_bob": "Čistý Hopper: noční silnice, fluorescenční světlo, prázdnější box, kafe a Pacifik pár bloků vedle.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "24 hodin denně; esteticky nejlepší pozdě večer nebo velmi brzy ráno",
+    "season_note_2026": "K 7. 9. 2026 aktuální místní a mapové zdroje potvrzují 24/7 provoz.",
+    "fee": "$–$$; diner jídlo",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.7209,-118.0738",
+      "official": "https://www.surfcityusa.com/listing/harbor-house-cafe/217/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["Hopper", "diner", "PCH", "noc", "roadside"],
+    "rank": 1
+  },
+  {
+    "id": "r1-035",
+    "region": "R1",
+    "name": "Kings Inn San Diego",
+    "category": "motel_gem",
+    "subcategory": "mid_century_motor_hotel",
+    "lat": 32.7586,
+    "lng": -117.1772,
+    "nearest_town": "San Diego, CA",
+    "distance_from_spine_km": 6,
+    "description": "Rodinný hotel v Hotel Circle s výraznou mid-century architekturou, nízkými křídly kolem bazénu a retro signage. Je větší než klasický roadside motel, ale stále čitelně patří do automobilové Kalifornie šedesátých let a cenově může spadnout kolem Bobova limitu.",
+    "why_bob": "Na poslední noci v San Diegu je to příjemně analogový kompromis: skutečný motor-hotel místo generického letištního řetězce.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "recepce 24 h; check-in přibližně od 16:00",
+    "season_note_2026": "K 7. 9. 2026 otevřeno; pro zářijové termíny se objevovaly sazby kolem 122 $ včetně daní. Plánované uzavření bazénu začíná až 12. 12. 2026, tedy mimo cestu.",
+    "fee": "$–$$; kolem 120–150 $ podle dne, parkování přibližně 15 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7586,-117.1772",
+      "official": "https://kingsinnsandiego.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["motel", "mid_century", "San_Diego", "motor_hotel", "retro"],
+    "rank": 1
+  },
+  {
+    "id": "r1-036",
+    "region": "R1",
+    "name": "Verbatim Books",
+    "category": "culture",
+    "subcategory": "used_bookstore",
+    "lat": 32.7475,
+    "lng": -117.1302,
+    "nearest_town": "San Diego, CA",
+    "distance_from_spine_km": 8,
+    "description": "Velké nezávislé secondhand knihkupectví v North Park s více než padesáti tisíci použitými a antikvárními knihami. Výběr je kurátorovaný, ale prostor pořád působí jako klasický obchod pro dlouhé hledání, včetně beletrie, poezie, SF, horroru a lokálních zinů.",
+    "why_bob": "Místo na poslední neplánovanou knižní odbočku cesty — hodina mezi použitými knihami místo dalšího san-diegského 'must see'.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "ne, po, st, čt 10:00–18:00; út 12:00–18:00; pá–so 10:00–19:00",
+    "season_note_2026": "Oficiální web k 7. 9. 2026 potvrzuje sedmidenní provoz a uvedené hodiny.",
+    "fee": "zdarma vstup; použité knihy $–$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7475,-117.1302",
+      "official": "https://verbatimbooks.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["knihy", "antikvariát", "North_Park", "San_Diego", "čtení"],
+    "rank": 1
+  },
+  {
+    "id": "r1-037",
+    "region": "R1",
+    "name": "M-Theory Music",
+    "category": "culture",
+    "subcategory": "record_store",
+    "lat": 32.7503,
+    "lng": -117.1706,
+    "nearest_town": "San Diego, CA",
+    "distance_from_spine_km": 5,
+    "description": "Rodinný nezávislý record store v Hillcrest zaměřený na nový i použitý vinyl a pravidelné malé in-store akce. Nabídka není velikostí Amoeba, ale právě proto se tu dá hrabat v deskách bez supermarketového pocitu.",
+    "why_bob": "Dobré místo na poslední fyzický hudební lov před koncem roadtripu — komornější a lokálnější než Amoeba.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "po–so 11:00–19:00, ne 12:00–17:00",
+    "season_note_2026": "Oficiální web je k 7. 9. 2026 aktivní; červencové 2026 lokální zdroje potvrzují uvedený běžný provoz.",
+    "fee": "zdarma vstup; vinyl $–$$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7503,-117.1706",
+      "official": "https://mtheorymusic.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["vinyl", "San_Diego", "nezávislé", "rock", "hudba"],
+    "rank": 2
+  },
+  {
+    "id": "r1-038",
+    "region": "R1",
+    "name": "Casbah",
+    "category": "culture",
+    "subcategory": "live_music_venue",
+    "lat": 32.7317,
+    "lng": -117.1707,
+    "nearest_town": "San Diego, CA",
+    "distance_from_spine_km": 2,
+    "description": "Malý san-diegský klub pro rock, indie, punk, metal a experimentálnější hudbu, otevřený jen při akcích. Má nízký strop, malou kapacitu a správný klubový pocit; během Bobovy cesty je kalendář mimořádně hustý.",
+    "why_bob": "Na rozdíl od velkých koncertních hal je Casbah místo, kde může kapela pořád znít fyzicky, špinavě a příliš nahlas — což je často přesně správně.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "pouze večer při koncertu; dveře často 19:00–20:00. Během 16. 9.–9. 10. 2026 hrají mimo jiné Temples 20. 9., J Roddy Walston 23. 9., Melt-Banana 25. 9., Brian Fallon 3. 10. a L7 6.–7. 10.",
+    "season_note_2026": "Oficiální kalendář k 7. 9. 2026 potvrzuje intenzivní provoz po celé období cesty; většina akcí je 21+.",
+    "fee": "$–$$$; typicky 18–50 $, některé speciální koncerty víc",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7317,-117.1707",
+      "official": "https://www.casbahmusic.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["živá_hudba", "rock", "punk", "San_Diego", "malý_klub"],
+    "rank": 1
+  },
+  {
+    "id": "r1-039",
+    "region": "R1",
+    "name": "Pioneertown — Mane Street & Pappy & Harriet's",
+    "category": "culture",
+    "subcategory": "film_music_pilgrimage",
+    "lat": 34.1561,
+    "lng": -116.4957,
+    "nearest_town": "Pioneertown, CA",
+    "distance_from_spine_km": 180,
+    "description": "Pioneertown vznikl v roce 1946 jako funkční westernové filmové městečko a Mane Street zůstává veřejnou prašnou ulicí mezi starými dřevěnými fasádami. Vedle stojí Pappy & Harriet's, pouštní hudební venue s rockem, psychedelií, country a podivnějšími bookingy; celé místo dává největší smysl spojené s Joshua Tree a jízdou do high desert.",
+    "why_bob": "Tohle je velká výjimka z pobřežního koridoru, ale McCarthyho prach, filmové kulisy, high-desert prázdno a večerní rock z Pappy's jsou téměř směšně přesná kombinace pro něj.",
+    "time_needed": "4–8 h včetně odbočky; ideálně půlden až večer",
+    "effort": {
+      "type": "drive",
+      "distance_km": 360,
+      "elevation_m": 1200,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "Mane Street je veřejně přístupná 24/7; nejlepší pozdní odpoledne plus večerní koncert v Pappy & Harriet's podle kalendáře",
+    "season_note_2026": "Výslovná geografická výjimka, protože Pioneertown je přímo uvedený v zadání. K 7. 9. 2026 je Mane Street otevřená 365 dní v roce a Pappy & Harriet's má hustý zářijový program, například Temples 18. 9., Men I Trust 25. 9. a DeVotchKa 29. 9.",
+    "fee": "Mane Street zdarma; koncerty v Pappy & Harriet's $–$$$",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.1561,-116.4957",
+      "official": "https://visitpioneertown.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Pioneertown,_California"
+    },
+    "photo": null,
+    "tags": ["poušť", "film", "western", "živá_hudba", "Pioneertown"],
+    "rank": 1
+  },
+  {
+    "id": "r1-040",
+    "region": "R1",
+    "name": "Pappy & Harriet's Pioneertown Palace",
+    "category": "food_gem",
+    "subcategory": "desert_bar_live_music",
+    "lat": 34.1564,
+    "lng": -116.4938,
+    "nearest_town": "Pioneertown, CA",
+    "distance_from_spine_km": 180,
+    "description": "Pouštní bar, gril a hudební klub na hraně Mojave, který kombinuje obyčejné jídlo s mimořádně silným koncertním bookingem. V nejlepší večery stojíš venku pod suchým pouštním nebem a posloucháš rock nebo psychedelii v místě, které pořád působí jako konec silnice.",
+    "why_bob": "Kdyby měl udělat jedinou dlouhou hudebně-pouštní odbočku od Pacifiku, Pappy's je přesně ten důvod: prach, tma, kytary a velké nebe.",
+    "time_needed": "2–5 h bez dojezdu",
+    "effort": {
+      "type": "drive",
+      "distance_km": 360,
+      "elevation_m": 1200,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "podle koncertu; dveře obvykle 17:30–21:00 podle akce, show večer. Kalendář 16.–29. 9. 2026 je velmi nabitý",
+    "season_note_2026": "K 7. 9. 2026 oficiální kalendář potvrzuje normální provoz a řadu koncertů přesně v termínu cesty. Je to vědomá výjimka z 30km pobřežního koridoru kvůli explicitnímu uvedení Pioneertown v zadání.",
+    "fee": "$$ za jídlo; koncerty přibližně $$–$$$ podle interpreta",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.1564,-116.4938",
+      "official": "https://pappyandharriets.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["poušť", "rock", "psychedelie", "bar", "živá_hudba"],
+    "rank": 1
+  }
+]

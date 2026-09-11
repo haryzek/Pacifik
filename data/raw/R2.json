@@ -1,0 +1,2322 @@
+[
+  {
+    "id": "r2-001",
+    "region": "R2",
+    "name": "Cape Disappointment Lighthouse",
+    "category": "coast",
+    "subcategory": "lighthouse",
+    "lat": 46.276,
+    "lng": -124.052,
+    "nearest_town": "Ilwaco, WA",
+    "distance_from_spine_km": 7,
+    "description": "Nejstarší fungující maják na pacifickém severozápadě stojí nad místem, kde se Columbia pere s otevřeným Pacifikem. Krátká, ale místy prudká cesta vede lesem a kolem starých fortifikací k větrnému ostrohu s výhledem na jeden z nejzrádnějších říčních barů Ameriky.",
+    "why_bob": "Je to čistá směs mlhy, větru, námořní katastrofičnosti a osamělého technického objektu — Hopperův maják na konci kontinentu.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 3,
+      "elevation_m": 130,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Neplavat u mysu ani u Columbia Bar: extrémní proudy, velké vlny a náhlé změny podmínek."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne nebo mlhavé ráno",
+    "season_note_2026": "Otevřeno celoročně; park má v roce 2026 provoz přibližně od 6:30 do soumraku. Případné krátkodobé uzávěry trailu po bouřích ověř na Washington State Parks.",
+    "fee": "10 $ Discover Pass na den",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.276,-124.052",
+      "official": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Disappointment_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "fog", "wind", "columbia_bar", "military_history"],
+    "rank": 1
+  },
+  {
+    "id": "r2-002",
+    "region": "R2",
+    "name": "North Head Lighthouse",
+    "category": "coast",
+    "subcategory": "lighthouse",
+    "lat": 46.2989,
+    "lng": -124.078,
+    "nearest_town": "Ilwaco, WA",
+    "distance_from_spine_km": 8,
+    "description": "Bílý maják z roku 1898 stojí na vysokém čedičovém ostrohu přímo proti Pacifiku a je přístupný krátkou pěšinou z parkoviště. Okolí je otevřené větru, mlze a dlouhému horizontu; samotná věž stále slouží navigaci.",
+    "why_bob": "Pro Boba je to silnější než většina vyhlídek: aktivní maják, syrový oceán, staré domky strážců a počasí jako hlavní scénografie.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.2,
+      "elevation_m": 35,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Útesy bez zábradlí na některých místech; za bouře držet odstup od hran."
+    },
+    "road_access": "paved",
+    "best_time": "podvečer, vítr a nízká oblačnost jsou plus",
+    "season_note_2026": "Otevřeno; areál je součástí Cape Disappointment State Park. Interiér věže má sezónní prohlídky a nemusí být po 30. 9. v provozu, ale venkovní areál je přístupný.",
+    "fee": "10 $ Discover Pass na den",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.2989,-124.078",
+      "official": "https://parks.wa.gov/about/news-center/field-guide-blog/north-head-lighthouse-cape-disappointment",
+      "wiki": "https://en.wikipedia.org/wiki/North_Head_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "wind", "fog", "ocean_cliff"],
+    "rank": 1
+  },
+  {
+    "id": "r2-003",
+    "region": "R2",
+    "name": "Waikiki Beach — Cape Disappointment",
+    "category": "coast",
+    "subcategory": "cove",
+    "lat": 46.2838,
+    "lng": -124.0607,
+    "nearest_town": "Ilwaco, WA",
+    "distance_from_spine_km": 6,
+    "description": "Malá oblázkovo-písčitá zátoka sevřená skalami pod Lewis and Clark Interpretive Center, s přímým pohledem na Cape Disappointment Lighthouse. Je mnohem intimnější než nekonečné pláže Long Beach a za špatného počasí působí skoro seversky.",
+    "why_bob": "Bob tu dostane vítr, naplavené dřevo, maják ve vrstvené mlze a místo, kde je zajímavější sedět než něco dělat.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Navzdory chráněnému vzhledu sem přicházejí silné vlny a proudy z ústí Columbie; koupání nedoporučuju."
+    },
+    "road_access": "paved",
+    "best_time": "odliv až střední příliv, podvečer",
+    "season_note_2026": "Otevřeno v rámci Cape Disappointment State Park; po bouřích se může výrazně měnit množství naplavených klád.",
+    "fee": "10 $ Discover Pass na den",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.2838,-124.0607",
+      "official": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["cove", "lighthouse_view", "driftwood", "melancholy"],
+    "rank": 2
+  },
+  {
+    "id": "r2-004",
+    "region": "R2",
+    "name": "Beard's Hollow — Discovery Trail",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 46.3044,
+    "lng": -124.0636,
+    "nearest_town": "Ilwaco, WA",
+    "distance_from_spine_km": 5,
+    "description": "Krátký trail sestoupí z pobřežního lesa do širokého Beard's Hollow a na Discovery Trail pod North Head. Mokřiny, tmavý smrk, trávy, čedičové stěny a oceán se tu střídají během pár kilometrů.",
+    "why_bob": "Je to lynchovštější verze pobřežní procházky: vlhký les, prázdná cesta a skalní stěny místo promenády.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 5,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Na otevřeném pobřeží sneaker waves a klády; nevstupovat na mokré skály za příboje."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdě odpoledne",
+    "season_note_2026": "Otevřeno; součást Cape Disappointment State Park a Discovery Trail. Po silných bouřích mohou být lokální nánosy nebo krátké uzávěry.",
+    "fee": "10 $ Discover Pass na den",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.3044,-124.0636",
+      "official": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["coastal_forest", "wetlands", "fog", "quiet_walk"],
+    "rank": 2
+  },
+  {
+    "id": "r2-005",
+    "region": "R2",
+    "name": "Leadbetter Point State Park",
+    "category": "coast",
+    "subcategory": "dune_forest_loop",
+    "lat": 46.5863,
+    "lng": -124.0448,
+    "nearest_town": "Oysterville, WA",
+    "distance_from_spine_km": 26,
+    "description": "Na severním konci Long Beach Peninsula se silnice vytratí do dun, mokřadů, lesa a pobřežní rezervace mezi Pacifikem a Willapa Bay. Několik plochých trailů lze spojit do tichého 6–9km okruhu bez velkého převýšení.",
+    "why_bob": "Je to přesně ten typ konce silnice, kde se civilizace rozpustí do větru, písku a oblohy a člověk může několik hodin skoro nikoho nepotkat.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 8,
+      "elevation_m": 35,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Na oceánské straně sneaker waves; v mokřadech komáři. Respektovat případné ochranné uzávěry hnízdišť."
+    },
+    "road_access": "paved",
+    "best_time": "ráno, mlha nebo zataženo",
+    "season_note_2026": "Park je otevřen. Sezónní omezení kvůli western snowy plover obvykle končí 15. 9.; Bob přijíždí 16. 9., ale platí aktuálně vyznačené ochranné zóny.",
+    "fee": "10 $ Discover Pass na den",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.5863,-124.0448",
+      "official": "https://parks.wa.gov/find-parks/state-parks/leadbetter-point-state-park",
+      "wiki": "https://en.wikipedia.org/wiki/Leadbetter_Point_State_Park"
+    },
+    "photo": null,
+    "tags": ["dunes", "wetlands", "solitude", "end_of_road", "big_sky"],
+    "rank": 2
+  },
+  {
+    "id": "r2-006",
+    "region": "R2",
+    "name": "Oysterville Historic District",
+    "category": "town",
+    "subcategory": "historic_walk",
+    "lat": 46.5485,
+    "lng": -124.0302,
+    "nearest_town": "Oysterville, WA",
+    "distance_from_spine_km": 22,
+    "description": "Mikroskopická bývalá ústřicová obec na Willapa Bay má kostel z 19. století, staré dřevěné domy, školu, hřbitov a jen hrstku stálých obyvatel. Není to skanzen; většina domů je soukromá a kouzlo spočívá právě v tichu a důstojné obyčejnosti.",
+    "why_bob": "Bobovi sedne jako živý Hopper bez atrakce: pár domů, záliv, tráva, staré dřevo a pocit, že čas přestal spěchat.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Soukromé pozemky a domy respektovat; k vodě nevstupovat přes soukromé parcely."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "Historická čtvrť je veřejně průchozí po silnicích; kostel a jednotlivé objekty mohou mít omezené hodiny.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.5485,-124.0302",
+      "official": "https://oysterville.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Oysterville,_Washington"
+    },
+    "photo": null,
+    "tags": ["roadside_americana", "historic", "quiet_town", "willapa_bay"],
+    "rank": 2
+  },
+  {
+    "id": "r2-007",
+    "region": "R2",
+    "name": "Astoria Column",
+    "category": "culture",
+    "subcategory": "panorama",
+    "lat": 46.1819,
+    "lng": -123.8174,
+    "nearest_town": "Astoria, OR",
+    "distance_from_spine_km": 3,
+    "description": "125 stop vysoká věž na Coxcomb Hill má 164 schodů a kruhový výhled přes Astorii, Columbia River, most, pobřežní hřebeny a ústí řeky. Samotná spirálová malba je trochu monumentální, ale výhled vysvětluje geografii celého regionu v jedné minutě.",
+    "why_bob": "Pro Boba je to měřítko a prostor: vidí zároveň město, řeku, oceán a trasu, po které právě jede.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 45,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Schodiště je úzké a při silném větru může být vyhlídka dočasně uzavřena."
+    },
+    "road_access": "paved",
+    "best_time": "poslední hodina před západem",
+    "season_note_2026": "Otevřeno v roce 2026; při větru nebo údržbě může být horní plošina krátkodobě zavřená.",
+    "fee": "parkovací poplatek dle aktuálního ceníku Astoria Column",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1819,-123.8174",
+      "official": "https://astoriacolumn.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Astoria_Column"
+    },
+    "photo": null,
+    "tags": ["panorama", "columbia_river", "city_view", "road_context"],
+    "rank": 1
+  },
+  {
+    "id": "r2-008",
+    "region": "R2",
+    "name": "Astoria Riverwalk — East Mooring Basin Sea Lions",
+    "category": "town",
+    "subcategory": "waterfront_walk",
+    "lat": 46.191,
+    "lng": -123.8125,
+    "nearest_town": "Astoria, OR",
+    "distance_from_spine_km": 1,
+    "description": "Průmyslovější východní část Astoria Riverwalk vede kolem kolejí, pilířů, rybářských lodí a doků, na kterých se pravidelně válí a řvou kalifornští lachtani. Je to spíš pach ryb, rez a pracovní přístav než uhlazené nábřeží.",
+    "why_bob": "Má tu přesně ten kontrast, který má rád: živé zvíře, špinavý přístav, mlha a americké město bez naleštěného filtru.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nevstupovat na uzavřené doky a držet odstup od lachtanů; mokré dřevo klouže."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo soumrak",
+    "season_note_2026": "Riverwalk je otevřen; výskyt lachtanů je přirozeně proměnlivý. Filmové domy z The Goonies a Kindergarten Cop ber jen jako rychlou poznámku po cestě, ne jako důvod k zajížďce.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.191,-123.8125",
+      "official": "https://www.travelastoria.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["working_waterfront", "sea_lions", "fog", "industrial", "film_footnote"],
+    "rank": 2
+  },
+  {
+    "id": "r2-009",
+    "region": "R2",
+    "name": "Fort George Brewery + Public House",
+    "category": "food_gem",
+    "subcategory": "brewpub",
+    "lat": 46.1883,
+    "lng": -123.8317,
+    "nearest_town": "Astoria, OR",
+    "distance_from_spine_km": 0,
+    "description": "Astorijský pivovar v historickém městském bloku má vlastní piva, solidní jídlo a místo, kde se večer přirozeně míchají místní s cestovateli. Není to sterilní taproom v obchodním centru; budova i okolní kopcovité ulice mají vlastní charakter.",
+    "why_bob": "Po dni ve větru je to Bobův typ jednoho pořádného jídla a piva — stará budova, dobrý stout nebo IPA a dost života na pozorování lidí.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Pivo až po zaparkování na noc; v pátek a sobotu může být hlučno."
+    },
+    "road_access": "paved",
+    "best_time": "večer po řízení",
+    "season_note_2026": "Provoz v Astorii pokračuje v roce 2026; aktuální kuchyňské a taproom hodiny ověř v den návštěvy.",
+    "fee": "vstup zdarma, platí se konzumace",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1883,-123.8317",
+      "official": "https://fortgeorgebrewery.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Fort_George_Brewery"
+    },
+    "photo": null,
+    "tags": ["craft_beer", "historic_building", "local_scene", "evening"],
+    "rank": 2
+  },
+  {
+    "id": "r2-010",
+    "region": "R2",
+    "name": "Buoy Beer Company — Astoria Taproom",
+    "category": "food_gem",
+    "subcategory": "brewpub",
+    "lat": 46.1889,
+    "lng": -123.837,
+    "nearest_town": "Astoria, OR",
+    "distance_from_spine_km": 0,
+    "description": "Buoy Beer je astorijská značka spojená s pracovním nábřežím a řekou; po kolapsu části původní waterfront budovy v roce 2022 funguje v přesunutém provozu. Smyslem zastávky je dát si jedno místní pivo a koukat na námořnickou Astorii, ne dělat pivní turistiku.",
+    "why_bob": "Je tu syrovější přístavní DNA než v generickém brewpubu a příběh budovy doslova sežrané řekou má pro Boba správnou míru americké pomíjivosti.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Pivo až po řízení; poloha provozu se po havárii původní budovy měnila."
+    },
+    "road_access": "paved",
+    "best_time": "večer",
+    "season_note_2026": "Buoy Beer v roce 2026 pokračuje jako astorijský podnik, ale po přesunech provozu ověř v den návštěvy na oficiálním webu aktuální adresu a hodiny; tato položka je z celého datasetu nejcitlivější na změnu provozovny.",
+    "fee": "vstup zdarma, platí se konzumace",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1889,-123.837",
+      "official": "https://www.buoybeer.com/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["working_waterfront", "craft_beer", "astoria", "roadside_story"],
+    "rank": 2
+  },
+  {
+    "id": "r2-011",
+    "region": "R2",
+    "name": "Peter Iredale Shipwreck",
+    "category": "oddity",
+    "subcategory": "shipwreck",
+    "lat": 46.178,
+    "lng": -123.9806,
+    "nearest_town": "Hammond, OR",
+    "distance_from_spine_km": 10,
+    "description": "Zbytky čtyřstěžňové ocelové barky Peter Iredale, která najela na Clatsop Spit v roce 1906, stále trčí z písku několik desítek metrů od parkoviště. Za odlivu působí rezavé žebro lodi skoro abstraktně; za mlhy a soumraku mnohem líp než za poledního slunce.",
+    "why_bob": "Rezavá kostra lodi na prázdné pláži je skoro laboratorně čistý průnik McCarthyho, Hoppera a jeho lásky k mořské melancholii.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Sneaker waves, pohybující se klády a ostrý rezavý kov; na vrak nelézt a k vodě se nestavět zády."
+    },
+    "road_access": "paved",
+    "best_time": "odliv a podvečer",
+    "season_note_2026": "Otevřeno; sezónní plover omezení Fort Stevens končí 15. 9., tedy těsně před Bobovým příjezdem. Od roku 2025 je ve Fort Stevens vyžadován day-use parking permit.",
+    "fee": "12 $ pro návštěvníka mimo Oregon",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.178,-123.9806",
+      "official": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=129",
+      "wiki": "https://en.wikipedia.org/wiki/Peter_Iredale"
+    },
+    "photo": null,
+    "tags": ["shipwreck", "rust", "fog", "empty_beach", "roadside_americana"],
+    "rank": 1
+  },
+  {
+    "id": "r2-012",
+    "region": "R2",
+    "name": "Battery Russell — Fort Stevens",
+    "category": "oddity",
+    "subcategory": "military_ruins",
+    "lat": 46.1852,
+    "lng": -123.9718,
+    "nearest_town": "Hammond, OR",
+    "distance_from_spine_km": 9,
+    "description": "Masivní betonová baterie z počátku 20. století sedí v mokrém pobřežním lese a dunách, zbraně jsou pryč a zůstaly chodby, plošiny a rezavé detaily. V roce 1942 dopadaly poblíž granáty z japonské ponorky I-25.",
+    "why_bob": "Je to skutečná, ne naaranžovaná postapokalyptická architektura v lese — trochu Stalker, trochu opuštěná obrana konce světa.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.5,
+      "elevation_m": 35,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Beton je mokrý a kluzký, některé hrany nemají zábradlí; nevstupovat do uzavřených prostor."
+    },
+    "road_access": "paved",
+    "best_time": "zataženo, mlha, podvečer",
+    "season_note_2026": "Otevřeno jako součást Fort Stevens State Park; případné uzavření jednotlivých podzemních prostor nebrání venkovní návštěvě.",
+    "fee": "12 $ day-use pro návštěvníka mimo Oregon",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1852,-123.9718",
+      "official": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=129",
+      "wiki": "https://en.wikipedia.org/wiki/Fort_Stevens_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["military_ruins", "concrete", "forest", "wwii", "stalker_vibe"],
+    "rank": 1
+  },
+  {
+    "id": "r2-013",
+    "region": "R2",
+    "name": "Fort Stevens South Jetty Observation Area",
+    "category": "coast",
+    "subcategory": "jetty_viewpoint",
+    "lat": 46.2109,
+    "lng": -124.0082,
+    "nearest_town": "Hammond, OR",
+    "distance_from_spine_km": 13,
+    "description": "Na severozápadním konci Fort Stevens se duny otevřou k jižnímu molu Columbia River a k obrovskému prostoru ústí. Je to dobré místo sledovat lodě, příboj a počasí bez potřeby dlouhé túry.",
+    "why_bob": "Columbia Bar tady vypadá jako fyzika v přímém přenosu — vítr, proud, oceán a lidská snaha udržet v tom splavnou čáru.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Na kamenné molo nevstupovat za vysokých vln; proudy a breaking waves jsou smrtelně nebezpečné."
+    },
+    "road_access": "paved",
+    "best_time": "bouřlivější počasí z bezpečného odstupu, západ",
+    "season_note_2026": "Otevřeno; po extrémních bouřích může být nejzazší část přístupu uzavřena. Day-use parking permit platí.",
+    "fee": "12 $ day-use pro návštěvníka mimo Oregon",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.2109,-124.0082",
+      "official": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=129",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["columbia_bar", "big_sky", "ships", "wind", "jetty"],
+    "rank": 2
+  },
+  {
+    "id": "r2-014",
+    "region": "R2",
+    "name": "Coffenbury Lake",
+    "category": "lake_river",
+    "subcategory": "lake_swim",
+    "lat": 46.1815,
+    "lng": -123.9636,
+    "nearest_town": "Hammond, OR",
+    "distance_from_spine_km": 8,
+    "description": "Sladkovodní jezero schované za dunami Fort Stevens má oficiální koupací přístup a nenáročný okruh kolem vody. V září už bývá výrazně klidnější než v létě a les chrání před větrem z oceánu.",
+    "why_bob": "Po několika hodinách u ledového Pacifiku je to Bobův použitelný cold-swim reset: tmavá sladká voda, smrk a možnost hned potom obejít jezero.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3.2,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladkovodní jezero",
+      "temp_c_sept_oct": "13–19 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Bez plavčíka; kontrolovat případné zdravotní upozornění na sinice, nevstupovat při viditelném květu a nepřeceňovat vzdálenost od břehu."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdní odpoledne",
+    "season_note_2026": "Otevřeno; Oregon State Parks výslovně uvádí swimming. Před vstupem v teplém září zkontroluj aktuální OHA cyanobacteria advisories.",
+    "fee": "12 $ day-use pro návštěvníka mimo Oregon",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1815,-123.9636",
+      "official": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=129",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["cold_swim", "freshwater", "forest", "lake_loop"],
+    "rank": 2
+  },
+  {
+    "id": "r2-015",
+    "region": "R2",
+    "name": "Cullaby Lake County Park",
+    "category": "lake_river",
+    "subcategory": "lake_swim",
+    "lat": 46.1042,
+    "lng": -123.9187,
+    "nearest_town": "Warrenton, OR",
+    "distance_from_spine_km": 6,
+    "description": "Menší sladkovodní jezero v pobřežní nížině má veřejnou pláž, molo a lesnaté okolí. Není tak dramatické jako oceán, ale je praktické pro bezpečnější studený ponor bez příboje.",
+    "why_bob": "Je to nenápadný lokální plavecký spot, který dává smysl přesně ve chvíli, kdy Bob chce vodu a ne další atrakci.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladkovodní jezero",
+      "temp_c_sept_oct": "14–20 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Bez plavčíka; v teplých obdobích se mohou objevit cyanobakterie, takže kontrolovat místní a OHA advisories."
+    },
+    "road_access": "paved",
+    "best_time": "ráno ve všední den",
+    "season_note_2026": "Otevřeno jako Clatsop County park; před koupáním ověř aktuální kvalitu vody, protože u jezera se historicky vyskytly sezónní algální bloom alerts.",
+    "fee": "parkovací poplatek dle Clatsop County, pokud je vybírán",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.1042,-123.9187",
+      "official": "https://www.clatsopcounty.gov/parks/page/cullaby-lake-county-park",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["cold_swim", "freshwater", "local", "low_key"],
+    "rank": 3
+  },
+  {
+    "id": "r2-016",
+    "region": "R2",
+    "name": "Saddle Mountain Trail",
+    "category": "mountain",
+    "subcategory": "summit_trail",
+    "lat": 45.9688,
+    "lng": -123.6855,
+    "nearest_town": "Seaside, OR",
+    "distance_from_spine_km": 32,
+    "description": "Krátký, ale poctivý výstup přes pobřežní les a otevřené skalnaté svahy končí na 1 001 m vysokém vrcholu Coast Range. Za čistého dne je vidět Pacifik, ústí Columbie i řada kaskádových sopek.",
+    "why_bob": "Bob tu dostane přesně svoje měřítko člověka proti krajině — oceán na jedné straně, vulkanické kužely na druhé a mezi tím stovky kilometrů prostoru.",
+    "time_needed": "3–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 8,
+      "elevation_m": 500,
+      "difficulty": "hard"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Kořeny, bláto, prudké úseky a exponované finále; za mokra výrazně kluzké, v mlze se výhled může úplně zavřít."
+    },
+    "road_access": "paved",
+    "best_time": "časné ráno při čisté předpovědi",
+    "season_note_2026": "Trail je v sezóně přístupný; campground se zavírá až 31. 10., což neomezuje denní túru. Po větrných bouřích ověř případné padlé stromy.",
+    "fee": "day-use dle aktuálního OPRD ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.9688,-123.6855",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Saddle_Mountain_State_Natural_Area"
+    },
+    "photo": null,
+    "tags": ["summit", "coast_range", "volcano_views", "big_sky", "hard_hike"],
+    "rank": 1
+  },
+  {
+    "id": "r2-017",
+    "region": "R2",
+    "name": "Ecola Point",
+    "category": "coast",
+    "subcategory": "viewpoint",
+    "lat": 45.9192,
+    "lng": -123.9749,
+    "nearest_town": "Cannon Beach, OR",
+    "distance_from_spine_km": 4,
+    "description": "Vyhlídková louka na okraji pralesa se dívá přes několik skalních mysů k Haystack Rock a daleko na jih. Pobřeží tu není jedna pláž, ale opakující se rytmus černých ostrohů, pěny a smrků.",
+    "why_bob": "Je to jedna z nejfilmovějších kompozic severního Oregonu — vertikály stromů, mlha a horizont, kde prostor nese emoci sám.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 40,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Hrany útesů jsou nebezpečné a půda po dešti měkne; držet se značených cest."
+    },
+    "road_access": "paved",
+    "best_time": "ráno před davy nebo poslední dvě hodiny světla",
+    "season_note_2026": "Park je otevřen; jediná příjezdová silnice do Ecola Point je náchylná k sesuvům a po silných bouřích může mít krátké uzávěry, proto ověř Special Notices.",
+    "fee": "day-use permit dle OPRD",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.9192,-123.9749",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Ecola_State_Park"
+    },
+    "photo": null,
+    "tags": ["ocean_cliffs", "sea_stacks", "film_landscape", "fog", "spruce"],
+    "rank": 1
+  },
+  {
+    "id": "r2-018",
+    "region": "R2",
+    "name": "Indian Beach — Ecola State Park",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 45.931,
+    "lng": -123.9774,
+    "nearest_town": "Cannon Beach, OR",
+    "distance_from_spine_km": 6,
+    "description": "Malá pláž sevřená lesnatými útesy má černé skály, naplavené dřevo a přímý kontakt s divokým příbojem. Filmově posloužila Point Break, Twilight i dalším produkcím, ale mimo špičku funguje hlavně jako syrová zátoka.",
+    "why_bob": "Je tu mnohem víc Lynch/Villeneuve atmosféry než filmové turistiky: tmavý les končí rovnou v pěně a skále.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Silné rip currents, sneaker waves a klády v příboji; na koupání ji nedoporučuju ani zkušenému zimnímu plavci."
+    },
+    "road_access": "paved",
+    "best_time": "brzy ráno nebo zatažený podvečer",
+    "season_note_2026": "Otevřeno v rámci Ecola State Park; po bouřích ověř stav přístupové silnice a pobřežních trailů.",
+    "fee": "day-use permit dle OPRD",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.931,-123.9774",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["cove", "film_location", "driftwood", "surfer_vibe", "fog"],
+    "rank": 2
+  },
+  {
+    "id": "r2-019",
+    "region": "R2",
+    "name": "Haystack Rock — Cannon Beach",
+    "category": "coast",
+    "subcategory": "sea_stack_tidepools",
+    "lat": 45.8847,
+    "lng": -123.965,
+    "nearest_town": "Cannon Beach, OR",
+    "distance_from_spine_km": 0,
+    "description": "Sedmdesátimetrový čedičový monolit stojí těsně u široké pláže a při odlivu se pod ním otevřou tide pools s hvězdicemi, sasankami a dalšími organismy. Místo je slavné, ale mimo víkend a mimo polední špičku má pořád obrovskou prostorovou sílu.",
+    "why_bob": "Není to pro něj Instagram rock, ale kus miocenního vulkanismu stojící v mlze jako absurdně velká socha uprostřed prázdného horizontu.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Silný příboj, rip currents a sneaker waves; tide pools navštěvovat jen za bezpečného odlivu a nešlapat na živé organismy."
+    },
+    "road_access": "paved",
+    "best_time": "nízký odliv, ideálně ráno nebo před západem",
+    "season_note_2026": "Veřejná pláž je přístupná; Haystack Rock je chráněné Marine Garden a National Wildlife Refuge. Respektovat HRAP pravidla a uzávěry kolem hnízdících ptáků.",
+    "fee": "zdarma; městské parkování dle místa",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.8847,-123.965",
+      "official": "https://www.ci.cannon-beach.or.us/HRAP",
+      "wiki": "https://en.wikipedia.org/wiki/Haystack_Rock"
+    },
+    "photo": null,
+    "tags": ["sea_stack", "tidepools", "geology", "low_tide", "fog"],
+    "rank": 1
+  },
+  {
+    "id": "r2-020",
+    "region": "R2",
+    "name": "Hug Point State Recreation Site",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 45.8284,
+    "lng": -123.9611,
+    "nearest_town": "Cannon Beach, OR",
+    "distance_from_spine_km": 1,
+    "description": "Za odlivu lze po pláži projít pod pískovcovými stěnami k malému vodopádu padajícímu přímo na písek a k historickému zářezu staré pobřežní vozové cesty. Úzké pobřeží působí překvapivě divoce, přestože je přímo u US-101.",
+    "why_bob": "Bob tu má geologii, mořskou erozní chodbu, drobnou silniční archeologii a vodopád bez jediné turistické kulisy navíc.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Příliv může odříznout cestu kolem výběžků; sneaker waves a padající kameny pod útesy."
+    },
+    "road_access": "paved",
+    "best_time": "1–2 h kolem nízkého odlivu",
+    "season_note_2026": "Otevřeno jako Oregon State Parks day-use site; přístup k nejzajímavějším částem je závislý na přílivu.",
+    "fee": "dle aktuálního OPRD day-use ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.8284,-123.9611",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Hug_Point_State_Recreation_Site"
+    },
+    "photo": null,
+    "tags": ["waterfall", "sea_cave", "old_road", "tide_dependent", "geology"],
+    "rank": 2
+  },
+  {
+    "id": "r2-021",
+    "region": "R2",
+    "name": "Short Sand Beach",
+    "category": "coast",
+    "subcategory": "forest_cove",
+    "lat": 45.7491,
+    "lng": -123.9587,
+    "nearest_town": "Arch Cape, OR",
+    "distance_from_spine_km": 10,
+    "description": "Pěšina z US-101 sestoupí starým pobřežním lesem pod obrovskými smrky do půlkruhové zátoky sevřené Cape Falcon a Neahkahnie Mountain. Je tu surf, oblázky, naplavené dřevo a pocit hluboké lesní kapsy otevřené jen k oceánu.",
+    "why_bob": "Tahle kombinace pralesa, studeného moře a tmavé zátoky je skoro modelová krajina pro jeho melancholickou pobřežní estetiku.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Populární surf spot, ale pro samotné plavání jsou problém rip currents, příboj a studená voda; nedoporučeno."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo zatažený všední den",
+    "season_note_2026": "Oswald West State Park je otevřen pro day-use; historický campground je trvale uzavřen, což nemá vliv na přístup k pláži.",
+    "fee": "dle aktuálního OPRD ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.7491,-123.9587",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Oswald_West_State_Park"
+    },
+    "photo": null,
+    "tags": ["old_growth", "cove", "surf", "fog", "driftwood"],
+    "rank": 1
+  },
+  {
+    "id": "r2-022",
+    "region": "R2",
+    "name": "Cape Falcon Trail",
+    "category": "coast",
+    "subcategory": "cliff_trail",
+    "lat": 45.7491,
+    "lng": -123.9587,
+    "nearest_town": "Arch Cape, OR",
+    "distance_from_spine_km": 10,
+    "description": "Trail od Short Sand Beach pokračuje hustým pobřežním lesem na mys Cape Falcon, odkud se otevírá vysoký pohled přes záliv a členité pobřeží. Kořeny, bláto a mokré smrky jsou součást zážitku, nikoli chyba.",
+    "why_bob": "Tady se dá fyzicky projít z temného lesa až na větrnou hranu kontinentu — velmi sibeliovská změna prostoru během pár kilometrů.",
+    "time_needed": "2,5–3,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 7.5,
+      "elevation_m": 260,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Trail bývá bahnitý a kořenitý; u vyhlídek vysoké nezajištěné srázy."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo při dramatické oblačnosti bez silné bouře",
+    "season_note_2026": "Otevřeno v rámci Oswald West State Park; po větrných bouřích ověř stav trailu kvůli padlým stromům.",
+    "fee": "dle aktuálního OPRD ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.7491,-123.9587",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Falcon"
+    },
+    "photo": null,
+    "tags": ["ocean_cliff", "old_growth", "wind", "fog", "coast_trail"],
+    "rank": 1
+  },
+  {
+    "id": "r2-023",
+    "region": "R2",
+    "name": "Neahkahnie Mountain — South Trail",
+    "category": "mountain",
+    "subcategory": "summit_trail",
+    "lat": 45.7306,
+    "lng": -123.9392,
+    "nearest_town": "Manzanita, OR",
+    "distance_from_spine_km": 7,
+    "description": "Jižní výstup na Neahkahnie Mountain jde přes les a strmější závěr na skalnatý vrchol vysoko nad Manzanitou. Odměnou je obrovský diagonální pohled na dlouhou pobřežní pláž, Nehalem Bay a Pacific Ocean.",
+    "why_bob": "Je to jedna z mála místních túr, kde oceán získá skoro pouštní měřítko — obrovská prázdná plocha pod nohama a horizont bez konce.",
+    "time_needed": "2,5–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 300,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Závěrečné skály mohou být za deště velmi kluzké; vítr na vrcholu bývá výrazný."
+    },
+    "road_access": "paved",
+    "best_time": "čisté ráno nebo pozdní světlo",
+    "season_note_2026": "Trail je přístupný v rámci Oswald West State Park; před cestou po bouřích zkontrolovat případné trail alerts.",
+    "fee": "dle aktuálního OPRD ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.7306,-123.9392",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Neahkahnie_Mountain"
+    },
+    "photo": null,
+    "tags": ["summit", "ocean_panorama", "big_sky", "coast_range"],
+    "rank": 1
+  },
+  {
+    "id": "r2-024",
+    "region": "R2",
+    "name": "Neahkahnie Mountain Viewpoint — US-101",
+    "category": "coast",
+    "subcategory": "roadside_viewpoint",
+    "lat": 45.7411,
+    "lng": -123.9617,
+    "nearest_town": "Manzanita, OR",
+    "distance_from_spine_km": 0,
+    "description": "Malý pullout přímo na US-101 nabízí téměř okamžitý pohled stovky metrů dolů na Manzanita Beach, Nehalem Bay a dlouhou křivku pobřeží. Je to jeden z těch vzácných bodů, kde stačí vystoupit z auta a krajina se najednou rozbalí v obrovském měřítku.",
+    "why_bob": "Perfektní Bobova road-trip zastávka: nulová logistika, silný vítr a výhled, u kterého může půl hodiny jen stát a nic neřešit.",
+    "time_needed": "15–40 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Malé parkoviště těsně u frekventované US-101; při vjíždění a vyjíždění pozor na provoz."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne, po dešti při protrhávání mraků",
+    "season_note_2026": "Silniční viewpoint je normálně přístupný; aktuální stav US-101 po bouřích ověř přes ODOT TripCheck.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.7411,-123.9617",
+      "official": "https://www.oregon.gov/odot/regions/pages/region-2.aspx",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["roadside_view", "ocean_panorama", "wind", "big_sky"],
+    "rank": 1
+  },
+  {
+    "id": "r2-025",
+    "region": "R2",
+    "name": "Cape Meares Lighthouse",
+    "category": "coast",
+    "subcategory": "lighthouse",
+    "lat": 45.4864,
+    "lng": -123.9743,
+    "nearest_town": "Oceanside, OR",
+    "distance_from_spine_km": 11,
+    "description": "Nízký historický maják stojí na hraně strmého mysu nad Three Arch Rocks a otevřeným Pacifikem. Z krátkých stezek kolem parkoviště jsou dramatické pohledy na oceán, pobřežní skály a starý les.",
+    "why_bob": "Komorní maják na konci zalesněného mysu je přesně jeho měřítko: technická historie, vítr, mlha, ptáci a oceán bez potřeby velké atrakce.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 90,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Strmé útesy a mokré stezky; neopouštět vyznačené vyhlídky."
+    },
+    "road_access": "paved",
+    "best_time": "podvečer nebo mlhavé ráno",
+    "season_note_2026": "Cape Meares State Scenic Viewpoint je otevřen; v roce 2026 se na mnoha zpoplatněných Oregon State Parks day-use místech uplatňuje sazba 10 $ pro obyvatele Oregonu a 12 $ pro ostatní.",
+    "fee": "až 12 $ day-use pro návštěvníka mimo Oregon",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.4864,-123.9743",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Meares_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "ocean_cliff", "sea_stacks", "fog", "old_forest"],
+    "rank": 1
+  },
+  {
+    "id": "r2-026",
+    "region": "R2",
+    "name": "Octopus Tree — Cape Meares",
+    "category": "forest",
+    "subcategory": "old_tree",
+    "lat": 45.4888,
+    "lng": -123.9722,
+    "nearest_town": "Oceanside, OR",
+    "distance_from_spine_km": 11,
+    "description": "Obrovský sitka spruce se místo jednoho kmene rozbíhá do několika mohutných ramen, která vytvářejí bizarní živou architekturu. Leží jen pár minut pěšky od Cape Meares Lighthouse, takže nejde o samostatnou turistickou misi.",
+    "why_bob": "Je to organická anomálie, která vypadá víc jako objekt z Tarkovského lesa než jako botanická pamětihodnost.",
+    "time_needed": "20–40 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 25,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Zůstat na trailu, nešplhat po stromu a chránit kořenový systém."
+    },
+    "road_access": "paved",
+    "best_time": "zataženo nebo mlha",
+    "season_note_2026": "Přístupný jako součást Cape Meares State Scenic Viewpoint.",
+    "fee": "stejný day-use permit jako Cape Meares",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.4888,-123.9722",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Octopus_Tree_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["old_growth", "strange_tree", "forest", "organic_form"],
+    "rank": 2
+  },
+  {
+    "id": "r2-027",
+    "region": "R2",
+    "name": "Oceanside Beach — Tunnel Beach",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 45.4601,
+    "lng": -123.9685,
+    "nearest_town": "Oceanside, OR",
+    "distance_from_spine_km": 8,
+    "description": "Pod malou pobřežní vesnicí leží široká pláž proti Three Arch Rocks a ručně ražený tunel skrz Maxwell Point vede za vhodného přílivu na odlehlejší Tunnel Beach. Skály, šedé moře a starý betonový průchod tomu dávají nečekaně syrovou atmosféru.",
+    "why_bob": "Bobovi bude sedět hlavně přechod temným tunelem na druhou, méně viditelnou pláž — malý Stalker moment přímo na pacifickém pobřeží.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 25,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Sneaker waves, rip currents, padající kamení a příliv mohou komplikovat přístup. Koupání navíc nedoporučeno kvůli aktuálnímu zdravotnímu upozornění na oceánskou vodu."
+    },
+    "road_access": "paved",
+    "best_time": "nízký odliv a podvečer",
+    "season_note_2026": "Oregon Health Authority vydala 2. 9. 2026 pro Oceanside Beach upozornění na zvýšené fekální bakterie. Procházka je možná, ale koupání zařaď až po oficiálním zrušení advisory; stav zkontroluj těsně před návštěvou.",
+    "fee": "dle místního parkování",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.4601,-123.9685",
+      "official": "https://www.oregon.gov/oha/ph/healthyenvironments/recreation/beachwaterquality/pages/index.aspx",
+      "wiki": "https://en.wikipedia.org/wiki/Oceanside,_Oregon"
+    },
+    "photo": null,
+    "tags": ["sea_tunnel", "three_arch_rocks", "tide_dependent", "health_advisory"],
+    "rank": 2
+  },
+  {
+    "id": "r2-028",
+    "region": "R2",
+    "name": "Kilchis River County Campground — River Access",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 45.5393,
+    "lng": -123.6543,
+    "nearest_town": "Tillamook, OR",
+    "distance_from_spine_km": 25,
+    "description": "Kilchis River přitéká z Coast Range čistou, studenou vodou přes oblázkové lavice a hlubší tůně v hustém lese. Veřejný county campground poskytuje legální, jednoduchý přístup k řece bez potřeby 4x4 nebo dlouhého pochodu.",
+    "why_bob": "Tohle je přesně jeho voda: horská řeka, chlad, les, minimum ceremonie a při dobrém načasování šance být v tůni skoro sám.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "studená horská řeka",
+      "temp_c_sept_oct": "10–15 °C",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "Vstupovat jen za nízkého a klidného průtoku; po dešti může řeka rychle zesílit. Pozor na ponořené klády, kluzké kameny a hluboké proudnice."
+    },
+    "road_access": "paved",
+    "best_time": "slunečné odpoledne po několika suchých dnech",
+    "season_note_2026": "Tillamook County campground a říční přístup jsou provozovány veřejně; po silných podzimních deštích koupání vynechat bez ohledu na teplotu.",
+    "fee": "day-use dle aktuálního ceníku Tillamook County Parks",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5393,-123.6543",
+      "official": "https://www.tillamookcounty.gov/parks/page/kilchis-river-county-campground",
+      "wiki": "https://en.wikipedia.org/wiki/Kilchis_River"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "river", "forest", "solitude", "clear_water"],
+    "rank": 1
+  },
+  {
+    "id": "r2-029",
+    "region": "R2",
+    "name": "Cape Lookout Trail — Upper Trailhead",
+    "category": "coast",
+    "subcategory": "headland_trail",
+    "lat": 45.3454,
+    "lng": -123.973,
+    "nearest_town": "Tillamook, OR",
+    "distance_from_spine_km": 12,
+    "description": "Úzký zalesněný mys vybíhá několik kilometrů do Pacifiku a trail vede starým pobřežním lesem až k vyhlídkám na oceán z vysokých svahů. V roce 2026 je nutné nastoupit z horního trailheadu, protože spodní campground/day-use areál je kvůli rekonstrukci zavřený.",
+    "why_bob": "Je to několik kilometrů chůze po zelené ose vysunuté přímo do oceánu — les, vítr a konec země bez potřeby extrémní túry.",
+    "time_needed": "3–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 7.8,
+      "elevation_m": 280,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Bláto, kořeny a vysoké nezajištěné srázy; nevstupovat do uzavřeného spodního stavebního areálu."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo po přechodu fronty",
+    "season_note_2026": "Důležité: campground, lower day-use area a spodní trailhead jsou od 3. 8. 2026 kvůli GO Bond construction uzavřeny. Cape Lookout Trail a South Trail zůstávají podle aktuálního stavu přístupné z upper trailheadu.",
+    "fee": "dle parkování u horního trailheadu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.3454,-123.973",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Lookout_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["headland", "old_growth", "ocean_cliff", "construction_2026", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r2-030",
+    "region": "R2",
+    "name": "Three Capes Scenic Route",
+    "category": "scenic_drive",
+    "subcategory": "coastal_drive",
+    "lat": 45.456,
+    "lng": -123.8441,
+    "nearest_town": "Tillamook, OR",
+    "distance_from_spine_km": 0,
+    "description": "Pobřežní smyčka z Tillamooku vede přes Oceanside, Cape Meares, Netarts, Cape Lookout a dál k Pacific City, střídá louky, zálivy, pobřežní les a vysoké mysy. Není to cesta pro rychlý přesun, ale jeden z nejlepších úseků na pomalé zastavování podle světla a počasí.",
+    "why_bob": "Je to jeho ideální způsob cestování převedený do jedné silnice — pořád se měnící krajina, malé odbočky, zálivy a místa, kde prostě zastaví a vystoupí.",
+    "time_needed": "3–6 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 65,
+      "elevation_m": 650,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Úzké a klikaté úseky, mokré listí a občasné sesuvy; po silném dešti zkontrolovat aktuální stav silnic."
+    },
+    "road_access": "paved",
+    "best_time": "celý den s podvečerem u Pacific City",
+    "season_note_2026": "Trasa je průjezdná po veřejných silnicích, ale spodní areál Cape Lookout State Park je v této sezoně uzavřen; horní trailhead zůstává přístupný. Po bouřích ověř county a ODOT road alerts.",
+    "fee": "silnice zdarma; jednotlivé parky mohou být zpoplatněné",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.456,-123.8441",
+      "official": "https://www.tillamookcoast.com/three-capes-scenic-route/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "headlands", "bays", "forest", "road_trip"],
+    "rank": 1
+  },
+  {
+    "id": "r2-031",
+    "region": "R2",
+    "name": "Cape Kiwanda — Great Dune",
+    "category": "coast",
+    "subcategory": "dune_hike",
+    "lat": 45.2157,
+    "lng": -123.97,
+    "nearest_town": "Pacific City, OR",
+    "distance_from_spine_km": 1,
+    "description": "Masivní písečná duna stoupá přímo nad pískovcovým mysem a Pacifikem; výstup je krátký, ale v sypkém písku poctivý. Nahoře jsou vrstvené útesy, mořské komíny, Nestucca Bay a obrovský otevřený horizont.",
+    "why_bob": "Je to nejbližší pobřežní analogie k pouštní duně v celé této oblasti — písek, vítr, otevřený prostor a geologie pod nohama.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 3.5,
+      "elevation_m": 180,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nechodit za bezpečnostní ploty na křehkých pískovcových útesech; oceán má silné rip currents a opakovaně zde zasahují záchranáři."
+    },
+    "road_access": "paved",
+    "best_time": "poslední dvě hodiny před západem",
+    "season_note_2026": "Cape Kiwanda je otevřen. Respektovat ochranné ploty a značky na mysu; eroze může měnit přístup k jednotlivým hranám.",
+    "fee": "day-use parkování dle aktuálního OPRD ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.2157,-123.97",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Kiwanda"
+    },
+    "photo": null,
+    "tags": ["great_dune", "sandstone", "wind", "big_sky", "ocean_cliff"],
+    "rank": 1
+  },
+  {
+    "id": "r2-032",
+    "region": "R2",
+    "name": "Neskowin Ghost Forest",
+    "category": "geology",
+    "subcategory": "ghost_forest",
+    "lat": 45.1043,
+    "lng": -123.9848,
+    "nearest_town": "Neskowin, OR",
+    "distance_from_spine_km": 0,
+    "description": "Při odlivu se z mokrého písku vynořují stovky starých pařezů sitka spruce, pozůstatky lesa pohřbeného po náhlém poklesu pobřeží v subdukční zóně Cascadia. Vedle nich stojí Proposal Rock a celý obraz vypadá jako krajina po katastrofě, která se stala před staletími.",
+    "why_bob": "Tady je deep time přímo vidět: mrtvý les, zemětřesení, subdukční zóna a oceán — McCarthyho obraz propojený s geofyzikou.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Sneaker waves a rostoucí příliv; kořeny a pařezy jsou za mokra kluzké."
+    },
+    "road_access": "paved",
+    "best_time": "co nejnižší odliv, zataženo nebo podvečer",
+    "season_note_2026": "Veřejný pobřežní přístup je otevřen; viditelnost ghost forest závisí na výšce přílivu a množství písku.",
+    "fee": "dle místního parkování",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.1043,-123.9848",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Neskowin_Ghost_Forest"
+    },
+    "photo": null,
+    "tags": ["deep_time", "cascadia", "earthquake", "ghost_forest", "low_tide"],
+    "rank": 1
+  },
+  {
+    "id": "r2-033",
+    "region": "R2",
+    "name": "Cascade Head — Lower Trail",
+    "category": "coast",
+    "subcategory": "headland_hike",
+    "lat": 45.0579,
+    "lng": -123.9865,
+    "nearest_town": "Lincoln City, OR",
+    "distance_from_spine_km": 8,
+    "description": "Trail stoupá z pobřežního lesa na otevřené travnaté svahy vysoko nad Salmon River estuary a Pacifikem. Z vrchních luk se pobřeží mění v abstraktní mapu řeky, písečných kos, kopců a oceánu.",
+    "why_bob": "Je to jeden z nejsilnějších kontrastů v regionu: temný les se roztrhne do větrné travnaté pláně s měřítkem skoro jako nad pouští.",
+    "time_needed": "3–4 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 8,
+      "elevation_m": 400,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Strmé travnaté svahy, kluzké bláto a vítr; neopouštět trail kvůli citlivému habitat."
+    },
+    "road_access": "paved",
+    "best_time": "čisté odpoledne nebo po přechodu fronty",
+    "season_note_2026": "Cascade Head Preserve je přístupný podle pravidel The Nature Conservancy; před návštěvou ověř případná krátkodobá ekologická nebo trailová omezení.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.0579,-123.9865",
+      "official": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/cascade-head/",
+      "wiki": "https://en.wikipedia.org/wiki/Cascade_Head"
+    },
+    "photo": null,
+    "tags": ["headland", "grassland", "estuary", "big_sky", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r2-034",
+    "region": "R2",
+    "name": "Devils Lake — Regatta Park Swim Area",
+    "category": "lake_river",
+    "subcategory": "lake_swim",
+    "lat": 44.9672,
+    "lng": -123.9984,
+    "nearest_town": "Lincoln City, OR",
+    "distance_from_spine_km": 1,
+    "description": "Velké sladkovodní jezero leží jen pár bloků od oceánu a Regatta Park nabízí veřejný přístup přímo k vodě. Je to snadná možnost studeného plavání v den, kdy je Pacifik příliš rozbitý na bezpečný vstup.",
+    "why_bob": "Praktický městský cold-swim spot bez bazénové sterility — jezero, mlha nad Coast Range a možnost skočit do vody mezi dvěma dlouhými úseky řízení.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "sladkovodní jezero",
+      "temp_c_sept_oct": "14–19 °C",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "Bez plavčíka; pozor na lodě a před vstupem kontrolovat případná upozornění na cyanobakterie."
+    },
+    "road_access": "paved",
+    "best_time": "brzké ráno",
+    "season_note_2026": "Devils Lake State Recreation Area je otevřen celoročně a místní turistický zdroj uvádí chráněné plavecké možnosti; před koupáním ověř OHA advisories.",
+    "fee": "zdarma nebo dle místního parkování",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.9672,-123.9984",
+      "official": "https://www.explorelincolncity.com/things-to-do/outdoors/devils-lake/",
+      "wiki": "https://en.wikipedia.org/wiki/Devil%27s_Lake_State_Recreation_Area"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "freshwater", "easy_access", "lake"],
+    "rank": 2
+  },
+  {
+    "id": "r2-035",
+    "region": "R2",
+    "name": "Drift Creek Falls Trail",
+    "category": "waterfall",
+    "subcategory": "suspension_bridge_trail",
+    "lat": 44.9368,
+    "lng": -123.8586,
+    "nearest_town": "Lincoln City, OR",
+    "distance_from_spine_km": 22,
+    "description": "Lesní trail sestupuje k přibližně 23m vodopádu a překračuje hlubokou rokli po 240stopém visutém mostě vysoko nad Drift Creek. Cesta vede typickým vlhkým Coast Range lesem a je dost krátká na půldenní odbočku.",
+    "why_bob": "Most zavěšený v mokrém lese nad vodopádem má přesně správnou směs technické konstrukce, vertikálního prostoru a temné zeleně.",
+    "time_needed": "2–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 4.5,
+      "elevation_m": 160,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nekoupat se pod vodopádem při vyšším průtoku; trail může být mokrý a kluzký."
+    },
+    "road_access": "rough_caution",
+    "best_time": "ráno nebo po lehkém dešti",
+    "season_note_2026": "USFS trail je veden jako rekreační lokalita; příjezdová silnice je úzká a klikatá, ale standardní sedan ji za normálních podmínek zvládne. Po bouřích ověř USFS road status.",
+    "fee": "Northwest Forest Pass nebo aktuální trailhead fee, pokud je vyžadován",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.9368,-123.8586",
+      "official": "https://www.fs.usda.gov/r06/siuslaw/recreation/drift-creek-falls-trail-1378",
+      "wiki": "https://en.wikipedia.org/wiki/Drift_Creek_Falls"
+    },
+    "photo": null,
+    "tags": ["waterfall", "suspension_bridge", "forest", "coast_range"],
+    "rank": 1
+  },
+  {
+    "id": "r2-036",
+    "region": "R2",
+    "name": "Rocky Creek State Scenic Viewpoint",
+    "category": "coast",
+    "subcategory": "cliff_viewpoint",
+    "lat": 44.7642,
+    "lng": -124.0713,
+    "nearest_town": "Depoe Bay, OR",
+    "distance_from_spine_km": 1,
+    "description": "Malý pobřežní park na čedičovém ostrohu otevírá široký pohled na dramatické útesy a Pacifik bez dlouhého pochodu. Vlny tu při větším swellu explodují o skály hluboko pod vyhlídkou.",
+    "why_bob": "Je to ideální dvacetiminutová zastávka, když chce jen vítr do obličeje, skálu a oceán bez města kolem.",
+    "time_needed": "20–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.8,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Vysoké útesy a extrémně nebezpečný příboj pod nimi; zůstat za hranou a na cestách."
+    },
+    "road_access": "paved",
+    "best_time": "podvečer nebo při větším swellu z bezpečné vyhlídky",
+    "season_note_2026": "Day-use viewpoint je přístupný; za extrémního počasí mohou být lokální omezení.",
+    "fee": "dle aktuálního OPRD ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.7642,-124.0713",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Rocky_Creek_State_Scenic_Viewpoint"
+    },
+    "photo": null,
+    "tags": ["ocean_cliff", "waves", "roadside_view", "wind"],
+    "rank": 2
+  },
+  {
+    "id": "r2-037",
+    "region": "R2",
+    "name": "Devils Punch Bowl State Natural Area",
+    "category": "geology",
+    "subcategory": "marine_erosion",
+    "lat": 44.7467,
+    "lng": -124.0637,
+    "nearest_town": "Otter Rock, OR",
+    "distance_from_spine_km": 1,
+    "description": "Velká propadlá mořská jeskyně vytváří kruhovou skalní mísu, do které při přílivu naráží Pacifik. Z horního viewpointu je dobře čitelná pobřežní eroze a při odlivu lze z bezpečného pobřeží pozorovat okolní skalní struktury.",
+    "why_bob": "Je to geologie jako proces, ne exponát — oceán přímo před očima rozebírá pobřeží kus po kusu.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 50,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Do Punch Bowl nevstupovat při rostoucím přílivu nebo swellu; nebezpečné vlny mohou prostor rychle zaplnit."
+    },
+    "road_access": "paved",
+    "best_time": "vyšší příliv pro dramatické vlny z horní vyhlídky; nízký odliv pro pobřežní geologii",
+    "season_note_2026": "Otevřeno jako Oregon State Natural Area; v roce 2026 může být účtován nový day-use parking fee.",
+    "fee": "až 12 $ pro návštěvníka mimo Oregon podle aktuálního ceníku",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.7467,-124.0637",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Devils_Punch_Bowl_State_Natural_Area"
+    },
+    "photo": null,
+    "tags": ["geology", "sea_cave", "erosion", "waves", "tide_dependent"],
+    "rank": 2
+  },
+  {
+    "id": "r2-038",
+    "region": "R2",
+    "name": "Cape Foulweather — Otter Crest Viewpoint",
+    "category": "coast",
+    "subcategory": "historic_viewpoint",
+    "lat": 44.7588,
+    "lng": -124.071,
+    "nearest_town": "Depoe Bay, OR",
+    "distance_from_spine_km": 2,
+    "description": "Historický viewpoint na vysokém čedičovém mysu sedí přímo proti severopacifickému počasí a za jasna nabízí desítky kilometrů pobřeží. Jméno není reklamní nadsázka: vítr, mlha a rychlé fronty jsou součást charakteru místa.",
+    "why_bob": "Místo se skoro jmenuje podle toho, co na pobřeží hledá — mizerné počasí, velký prostor, silný vítr a pocit hranice kontinentu.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 25,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Vysoké útesy a silný vítr; nevylézat mimo bezpečné plochy."
+    },
+    "road_access": "paved",
+    "best_time": "po přechodu fronty nebo při dramatickém počasí",
+    "season_note_2026": "Vyhlídka je přístupná; při extrémním větru mohou být venkovní části omezené.",
+    "fee": "dle aktuálního parkovacího režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.7588,-124.071",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Cape_Foulweather"
+    },
+    "photo": null,
+    "tags": ["historic_highway", "wind", "ocean_panorama", "storm_watch"],
+    "rank": 1
+  },
+  {
+    "id": "r2-039",
+    "region": "R2",
+    "name": "Yaquina Head Lighthouse",
+    "category": "coast",
+    "subcategory": "lighthouse",
+    "lat": 44.6765,
+    "lng": -124.0787,
+    "nearest_town": "Newport, OR",
+    "distance_from_spine_km": 5,
+    "description": "Nejvyšší maják Oregonu stojí na tmavém čedičovém mysu vysunutém do Pacifiku a obklopeném mořskými útesy, ptáky a příbojem. Celý Yaquina Head Outstanding Natural Area funguje jako kompaktní geologická a oceánská laboratoř.",
+    "why_bob": "Aktivní maják, černý čedič, vítr a evoluce pobřeží v jednom místě — přesně jeho kombinace techniky, deep time a melancholického prostoru.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 100,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Silný vítr, mokré schody a příboj; koupání na Cobble Beach není vhodné."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo poslední dvě hodiny světla",
+    "season_note_2026": "Yaquina Head je otevřen. Dočasná uzávěra Salal Hill Trail z 17.–29. 8. 2026 končí před Bobovou cestou; BLM má na 26. 9. 2026 v lokalitě National Public Lands Day event, takže ten den čekej víc lidí.",
+    "fee": "vstup dle aktuálního BLM fee režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.6765,-124.0787",
+      "official": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/yaquina-head-ona",
+      "wiki": "https://en.wikipedia.org/wiki/Yaquina_Head_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "basalt", "ocean_cliff", "deep_time", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r2-040",
+    "region": "R2",
+    "name": "Cobble Beach Tide Pools — Yaquina Head",
+    "category": "coast",
+    "subcategory": "tidepools",
+    "lat": 44.6756,
+    "lng": -124.0787,
+    "nearest_town": "Newport, OR",
+    "distance_from_spine_km": 5,
+    "description": "Černá pláž z dokonale obroušených čedičových valounů leží pod Yaquina Head Lighthouse a při odlivu odhaluje bohaté tide pools. Valouny při pohybu příboje vydávají zvláštní hluboký šustivý zvuk, takže místo funguje i čistě smyslově.",
+    "why_bob": "Je to mikrokosmos pod majákem — čedič, fyzika příboje, drobný život a jeden z nejlepších přírodních soundtracků na pobřeží.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 60,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Sneaker waves, velmi nestabilní mokré valouny a rychle rostoucí příliv; není to plavecká pláž."
+    },
+    "road_access": "paved",
+    "best_time": "nízký odliv, ideálně ráno",
+    "season_note_2026": "Otevřeno v rámci Yaquina Head Outstanding Natural Area; tide pools jsou citlivý habitat, takže neodnášet organismy ani kameny.",
+    "fee": "stejný vstup jako Yaquina Head",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.6756,-124.0787",
+      "official": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/yaquina-head-ona",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["tidepools", "basalt", "soundscape", "low_tide", "marine_life"],
+    "rank": 1
+  },
+  {
+    "id": "r2-041",
+    "region": "R2",
+    "name": "Newport Historic Bayfront — Sea Lion Docks",
+    "category": "town",
+    "subcategory": "working_waterfront",
+    "lat": 44.6269,
+    "lng": -124.0541,
+    "nearest_town": "Newport, OR",
+    "distance_from_spine_km": 0,
+    "description": "Staré nábřeží Yaquina Bay kombinuje komerční rybářské lodě, sklady, rybí pach, přístavní ruch a platformy, kde se často shromažďují kalifornští lachtani. Turistické obchody lze ignorovat a držet se doků a pracovního přístavu.",
+    "why_bob": "Je to nejlepší způsob, jak v Newportu hledat skutečný přístav místo pobřežního resortu — rez, křik lachtanů, lodě a industriální detaily.",
+    "time_needed": "1–1,5 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.5,
+      "elevation_m": 15,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nevstupovat na pracovní doky, držet odstup od lachtanů a pozor na mokré povrchy."
+    },
+    "road_access": "paved",
+    "best_time": "brzké ráno nebo soumrak",
+    "season_note_2026": "Veřejné nábřeží je přístupné; počet lachtanů se přirozeně mění podle sezony.",
+    "fee": "zdarma; parkování dle zóny",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.6269,-124.0541",
+      "official": "https://discovernewport.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Newport,_Oregon"
+    },
+    "photo": null,
+    "tags": ["working_waterfront", "sea_lions", "fishing_port", "industrial"],
+    "rank": 2
+  },
+  {
+    "id": "r2-042",
+    "region": "R2",
+    "name": "Yaquina Bay Lighthouse",
+    "category": "coast",
+    "subcategory": "historic_lighthouse",
+    "lat": 44.6226,
+    "lng": -124.062,
+    "nearest_town": "Newport, OR",
+    "distance_from_spine_km": 1,
+    "description": "Menší dřevěný maják z 19. století stojí nad vjezdem do Yaquina Bay a vypadá spíš jako osamělý viktoriánský dům s lucernou než klasická pobřežní věž. Okolí nabízí výhled na most, jetty a pracovní záliv.",
+    "why_bob": "Jeho hopperovská kvalita je silnější než monumentálnost — starý dům na trávě, šedé světlo a přístav za ním.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.2,
+      "elevation_m": 35,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Nevstupovat do vody u jetties; silné proudy v ústí zálivu."
+    },
+    "road_access": "paved",
+    "best_time": "zatažené ráno nebo pozdní odpoledne",
+    "season_note_2026": "Areál Yaquina Bay State Recreation Site je běžně přístupný; interiér majáku může mít omezené návštěvní hodiny.",
+    "fee": "dle aktuálního parkovacího režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.6226,-124.062",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Yaquina_Bay_Light"
+    },
+    "photo": null,
+    "tags": ["lighthouse", "victorian", "harbor", "hopper_vibe"],
+    "rank": 2
+  },
+  {
+    "id": "r2-043",
+    "region": "R2",
+    "name": "Powell's City of Books",
+    "category": "culture",
+    "subcategory": "bookstore",
+    "lat": 45.5231,
+    "lng": -122.6814,
+    "nearest_town": "Portland, OR",
+    "distance_from_spine_km": 120,
+    "description": "Obrovský nezávislý knihkupecký labyrint v centru Portlandu míchá nové a použité knihy v jednom systému a dovoluje několik hodin bezcílně bloudit mezi filozofií, psychologií, literaturou, vědou a hudbou. Tohle je jedna z mála portlandských institucí, kvůli kterým dává smysl opustit pobřežní osu.",
+    "why_bob": "Pro člověka, který si bere knihu jako důvod několik hodin někde být, je Powell's spíš intelektuální krajina než obchod.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Běžná městská opatrnost; věci nenechávat viditelně v zaparkovaném autě."
+    },
+    "road_access": "paved",
+    "best_time": "všední dopoledne nebo deštivé odpoledne",
+    "season_note_2026": "Flagship na W Burnside je v provozu v roce 2026; konkrétní otevírací hodiny ověř v den návštěvy.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5231,-122.6814",
+      "official": "https://www.powells.com/locations/powells-city-of-books",
+      "wiki": "https://en.wikipedia.org/wiki/Powell%27s_Books"
+    },
+    "photo": null,
+    "tags": ["bookstore", "literature", "psychology", "science", "rainy_day"],
+    "rank": 1
+  },
+  {
+    "id": "r2-044",
+    "region": "R2",
+    "name": "Hollywood Theatre",
+    "category": "culture",
+    "subcategory": "historic_cinema",
+    "lat": 45.5352,
+    "lng": -122.6208,
+    "nearest_town": "Portland, OR",
+    "distance_from_spine_km": 120,
+    "description": "Neziskové kino z roku 1926 je jedním z mála míst v regionu, které stále promítá 35mm a 70mm film a programově pracuje s klasikou, kultem i současnou kinematografií. V roce 1968 tu 2001: A Space Odyssey běžela déle než deset měsíců a kino dnes vlastní vlastní 70mm kopii filmu.",
+    "why_bob": "Kubrick v analogovém 70mm obraze ve starém kině je kulturní odbočka, která má pro Boba větší váhu než celý seznam standardních portlandských památek.",
+    "time_needed": "2–4 h podle projekce",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Běžná městská opatrnost."
+    },
+    "road_access": "paved",
+    "best_time": "večer, pokud program trefí 35mm/70mm nebo Kubricka",
+    "season_note_2026": "Kino je aktivní v roce 2026; program na konkrétní termín 16. 9.–9. 10. se průběžně mění, takže rozhoduj podle aktuálního kalendáře.",
+    "fee": "dle konkrétní projekce",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5352,-122.6208",
+      "official": "https://hollywoodtheatre.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Hollywood_Theatre_(Portland,_Oregon)"
+    },
+    "photo": null,
+    "tags": ["kubrick", "70mm", "analog_film", "historic_cinema"],
+    "rank": 1
+  },
+  {
+    "id": "r2-045",
+    "region": "R2",
+    "name": "Mississippi Studios",
+    "category": "culture",
+    "subcategory": "live_music_venue",
+    "lat": 45.5513,
+    "lng": -122.6757,
+    "nearest_town": "Portland, OR",
+    "distance_from_spine_km": 121,
+    "description": "Malý hudební klub v bývalém baptistickém kostele patří k nejcharakternějším portlandským místům pro indie, folk, rock, soul a příbuznou živou hudbu. Velikost sálu drží koncert blízko a bez arénové sterility.",
+    "why_bob": "Jeho hudební vkus tu má reálnou šanci potkat živou kapelu s hlasem a analogovým teplem, ne korporátní koncertní produkci.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Po koncertu neřídit po alkoholu; parkování v okolních ulicích."
+    },
+    "road_access": "paved",
+    "best_time": "večer podle programu",
+    "season_note_2026": "Venue je aktivní; konkrétní koncerty během Bobova termínu zkontrolovat v aktuálním kalendáři, protože kvalita odbočky stojí na konkrétním interpretovi.",
+    "fee": "dle koncertu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5513,-122.6757",
+      "official": "https://mississippistudios.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Mississippi_Studios"
+    },
+    "photo": null,
+    "tags": ["live_music", "rock", "folk", "soul", "small_venue"],
+    "rank": 2
+  },
+  {
+    "id": "r2-046",
+    "region": "R2",
+    "name": "Collins Beach — Sauvie Island",
+    "category": "lake_river",
+    "subcategory": "clothing_optional_river_swim",
+    "lat": 45.8008,
+    "lng": -122.7819,
+    "nearest_town": "Portland, OR",
+    "distance_from_spine_km": 105,
+    "description": "Dlouhá písečná pláž na východní straně Sauvie Island leží na Columbia River mezi lesem a širokou vodní plochou. Vyhrazená část je oficiálně clothing-optional, takže nahé koupání tu není potřeba řešit jako tajnou improvizaci.",
+    "why_bob": "Pro Boba je to skoro podezřele přesný spot: studená velká řeka, kus volnosti, dlouhý horizont a možnost plavat nahý zcela legálně.",
+    "time_needed": "1,5–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "velká řeka",
+      "temp_c_sept_oct": "13–20 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Columbia má skutečný proud a lodní provoz; držet se blízko břehu, plavat spíš rovnoběžně s ním a nevstupovat za vysokého průtoku nebo silného větru."
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "všední ráno nebo pozdní odpoledne",
+    "season_note_2026": "Oficiální clothing-optional část Collins Beach je veřejně přístupná. Pro parkování je vyžadován Sauvie Island Wildlife Area parking permit. Sezónní zákaz alkoholu na pláži platí do 30. 9.",
+    "fee": "Sauvie Island Wildlife Area parking permit",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.8008,-122.7819",
+      "official": "https://myodfw.com/sauvie-island-wildlife-area-visitors-guide",
+      "wiki": "https://en.wikipedia.org/wiki/Collins_Beach_(Sauvie_Island)"
+    },
+    "photo": null,
+    "tags": ["nude_swim", "cold_swim", "columbia_river", "big_water", "freedom"],
+    "rank": 1
+  },
+  {
+    "id": "r2-047",
+    "region": "R2",
+    "name": "Oxbow Regional Park — Sandy River",
+    "category": "lake_river",
+    "subcategory": "river_swim",
+    "lat": 45.4879,
+    "lng": -122.2975,
+    "nearest_town": "Gresham, OR",
+    "distance_from_spine_km": 145,
+    "description": "Sandy River se tu vine hlubokým lesnatým údolím na úpatí Cascades a Metro park poskytuje veřejné pláže, trail podél řeky a oficiálně uváděné koupání. V září je řeka studená, průzračná a po odjezdu letních davů často klidnější.",
+    "why_bob": "Je to kvalitní říční ponor na cestě ke Gorge — studená voda, starý les a mnohem menší městský pocit, než vzdálenost od Portlandu naznačuje.",
+    "time_needed": "1,5–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "řeka",
+      "temp_c_sept_oct": "10–15 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Bez plavčíka; Sandy River má proud, ponořené klády a po dešti rychle roste. Vybrat klidnou pobřežní tůň a neplavat do hlavní proudnice."
+    },
+    "road_access": "paved",
+    "best_time": "všední odpoledne po suchém počasí",
+    "season_note_2026": "Oxbow Regional Park je otevřen a Metro uvádí swimming jako rekreační aktivitu; ověř případná krátkodobá fire nebo water-quality upozornění.",
+    "fee": "day-use fee dle Metro",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.4879,-122.2975",
+      "official": "https://www.oregonmetro.gov/parks/oxbow-regional-park",
+      "wiki": "https://en.wikipedia.org/wiki/Oxbow_Regional_Park"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "sandy_river", "forest", "river_beach"],
+    "rank": 2
+  },
+  {
+    "id": "r2-048",
+    "region": "R2",
+    "name": "Historic Columbia River Highway — Waterfall Corridor",
+    "category": "scenic_drive",
+    "subcategory": "historic_road",
+    "lat": 45.5396,
+    "lng": -122.3879,
+    "nearest_town": "Troutdale, OR",
+    "distance_from_spine_km": 125,
+    "description": "Historická silnice z Troutdale přes Crown Point a Waterfall Corridor kopíruje čedičové stěny Columbia River Gorge a spojuje sérii vodopádů, lesních roklí a starých kamenných vyhlídek. Samotná silnice je součást zážitku: úzká, zakroucená, projektovaná tak, aby krajinu ukazovala místo aby ji jen překonala.",
+    "why_bob": "Je to jedna z mála inland odboček, kterou bych mu doporučila bez váhání — monumentální geologie, stará silnice a vodopády v rytmu road movie.",
+    "time_needed": "4–8 h se zastávkami",
+    "effort": {
+      "type": "drive",
+      "distance_km": 45,
+      "elevation_m": 700,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Úzká vozovka, cyklisté, chodci a padající kamení; po požárech nebo bouřích se mohou objevit krátkodobé uzávěry."
+    },
+    "road_access": "paved",
+    "best_time": "časné ráno ve všední den",
+    "season_note_2026": "Historic Columbia River Highway je otevřen podle aktuálního ODOT stavu. Podzimní bouře nebo incidenty mohou způsobit krátkodobé lokální uzávěry; před odbočkou zkontroluj TripCheck.",
+    "fee": "silnice zdarma; některé trailheady nebo parky mohou mít poplatek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5396,-122.3879",
+      "official": "https://www.oregon.gov/odot/regions/pages/historic-columbia-river-highway.aspx",
+      "wiki": "https://en.wikipedia.org/wiki/Historic_Columbia_River_Highway"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "historic_road", "basalt", "waterfalls", "columbia_gorge"],
+    "rank": 1
+  },
+  {
+    "id": "r2-049",
+    "region": "R2",
+    "name": "Vista House at Crown Point",
+    "category": "geology",
+    "subcategory": "panoramic_viewpoint",
+    "lat": 45.5395,
+    "lng": -122.2444,
+    "nearest_town": "Corbett, OR",
+    "distance_from_spine_km": 145,
+    "description": "Kamenná rotunda z roku 1918 stojí na vrcholu čedičového Crown Point vysoko nad Columbia River a funguje jako architektonický rám celé soutěsky. Z terasy je vidět hluboko po proudu i proti proudu mezi strmými stěnami Gorge.",
+    "why_bob": "Je to skoro kosmologická vyhlídka v malém: člověk na hraně obrovské geologické struktury a stará observatoř bez dalekohledu.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Silný vítr může být extrémní; držet se vyhlídkových ploch."
+    },
+    "road_access": "paved",
+    "best_time": "brzy ráno nebo před západem",
+    "season_note_2026": "Parkovací areál je přístupný celoročně přibližně 6:00–21:00. Budova bývá otevřena pátek–pondělí 9:00–17:00 podle počasí a zavírá při velmi silném větru kolem 50 mph; letní heat closures končí před Bobovým termínem.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5395,-122.2444",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Vista_House"
+    },
+    "photo": null,
+    "tags": ["panorama", "historic_architecture", "basalt", "columbia_gorge", "wind"],
+    "rank": 1
+  },
+  {
+    "id": "r2-050",
+    "region": "R2",
+    "name": "Latourell Falls Loop",
+    "category": "waterfall",
+    "subcategory": "waterfall_trail",
+    "lat": 45.5381,
+    "lng": -122.217,
+    "nearest_town": "Corbett, OR",
+    "distance_from_spine_km": 148,
+    "description": "Vysoký, téměř volně padající Latourell Falls stéká po čedičové stěně porostlé výrazným žlutozeleným lišejníkem. Krátký okruh pokračuje lesem k Upper Latourell Falls a vrací se jinou cestou.",
+    "why_bob": "Čedič, podivně barevný lišejník a vertikální voda jsou vizuálně mnohem osobitější než generická hezká vodopádová zastávka.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 3.4,
+      "elevation_m": 200,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Mokré kameny a bláto; nevstupovat přímo pod padající vodu nebo na kluzké čedičové hrany."
+    },
+    "road_access": "paved",
+    "best_time": "brzy ráno",
+    "season_note_2026": "Trail a viewpoint jsou přístupné v rámci Guy W. Talbot State Park; po bouřích ověř případné trail closures.",
+    "fee": "dle aktuálního OPRD day-use režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5381,-122.217",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Latourell_Falls"
+    },
+    "photo": null,
+    "tags": ["waterfall", "basalt", "lichen", "forest", "short_hike"],
+    "rank": 1
+  },
+  {
+    "id": "r2-051",
+    "region": "R2",
+    "name": "Bridal Veil Falls",
+    "category": "waterfall",
+    "subcategory": "short_trail",
+    "lat": 45.5562,
+    "lng": -122.1808,
+    "nearest_town": "Bridal Veil, OR",
+    "distance_from_spine_km": 151,
+    "description": "Krátký lesní trail sestupuje k dvoustupňovému Bridal Veil Falls pod Historic Columbia River Highway. Je to menší a intimnější vodopád v zelené rokli, vhodný jako půlhodinový kontrapunkt mezi monumentálnějšími zastávkami Gorge.",
+    "why_bob": "Má správný poměr krásy k logistice — starý les, voda a kamenná silniční historie bez potřeby půldenní akce.",
+    "time_needed": "45–75 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1.5,
+      "elevation_m": 80,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Kluzké kameny a mokré schody; nevstupovat do proudu pod vodopádem."
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo pozdě odpoledne",
+    "season_note_2026": "Park je otevřen; od roku 2026 patří mezi místa, kde se může uplatňovat nový OPRD day-use parking fee.",
+    "fee": "až 12 $ pro návštěvníka mimo Oregon podle aktuálního režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5562,-122.1808",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Bridal_Veil_Falls_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["waterfall", "forest", "short_walk", "historic_highway"],
+    "rank": 2
+  },
+  {
+    "id": "r2-052",
+    "region": "R2",
+    "name": "Multnomah Falls",
+    "category": "waterfall",
+    "subcategory": "waterfall_viewpoint",
+    "lat": 45.5762,
+    "lng": -122.1158,
+    "nearest_town": "Bridal Veil, OR",
+    "distance_from_spine_km": 160,
+    "description": "Dvoustupňový 189m vodopád padá v úzké čedičové rokli za historickou Benson Bridge a svou vertikálností je skutečně výjimečný i přes velkou návštěvnost. Bobovi dává větší smysl přijet velmi brzy a pak pokračovat k méně frekventovaným místům Gorge.",
+    "why_bob": "Je slavný oprávněně: obrovská vertikála vody proti černému čediči má mahlerovské měřítko, které přežije i status turistické ikony.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 100,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Mokré povrchy, padající kamení a davy na úzkých cestách; nekoupat se pod vodopádem."
+    },
+    "road_access": "paved",
+    "best_time": "co nejdřív ráno, ideálně všední den",
+    "season_note_2026": "Timed-use permit pro Multnomah Falls/I-84 corridor v roce 2026 platil 22. 5.–7. 9. mezi 9:00–18:00; Bobův termín začíná až 16. 9., takže jej nepotřebuje. Toalety v lodge jsou do listopadu 2026 v rekonstrukci a nahrazují je přenosné toalety.",
+    "fee": "parkování dle zvoleného přístupu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5762,-122.1158",
+      "official": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/multnomah-falls",
+      "wiki": "https://en.wikipedia.org/wiki/Multnomah_Falls"
+    },
+    "photo": null,
+    "tags": ["waterfall", "basalt", "benson_bridge", "vertical_scale", "early_morning"],
+    "rank": 1
+  },
+  {
+    "id": "r2-053",
+    "region": "R2",
+    "name": "Horsetail Falls — Ponytail Falls Loop",
+    "category": "waterfall",
+    "subcategory": "waterfall_trail",
+    "lat": 45.5903,
+    "lng": -122.0685,
+    "nearest_town": "Cascade Locks, OR",
+    "distance_from_spine_km": 166,
+    "description": "Horsetail Falls padá přímo vedle historické silnice, ale krátký trail vystoupá k Ponytail Falls, kde cesta prochází za závěsem vody v erozním výklenku. Pokračování lesem poskytuje mnohem intimnější Gorge zkušenost než samotný roadside viewpoint.",
+    "why_bob": "Možnost projít fyzicky za vodopádem mění krásnou kulisu v prostorový zážitek — přesně typ drobného geologického překvapení, které mu stojí za zastavení.",
+    "time_needed": "1,5–2,5 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 4,
+      "elevation_m": 220,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Trail za vodopádem je mokrý; kluzké kameny a strmé svahy. Do tůní pod hlavním pádem nevstupovat."
+    },
+    "road_access": "paved",
+    "best_time": "ráno",
+    "season_note_2026": "Přístup v Columbia River Gorge je aktuálně veden jako otevřený; po požárech, sesuvech nebo podzimních bouřích ověř USFS alerts.",
+    "fee": "dle aktuálního trailhead režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.5903,-122.0685",
+      "official": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation",
+      "wiki": "https://en.wikipedia.org/wiki/Horsetail_Falls_(Oregon)"
+    },
+    "photo": null,
+    "tags": ["waterfall", "behind_waterfall", "basalt", "forest", "short_hike"],
+    "rank": 1
+  },
+  {
+    "id": "r2-054",
+    "region": "R2",
+    "name": "Rowena Crest — Tom McCall Preserve",
+    "category": "geology",
+    "subcategory": "plateau_trail",
+    "lat": 45.6822,
+    "lng": -121.3015,
+    "nearest_town": "Mosier, OR",
+    "distance_from_spine_km": 215,
+    "description": "Východní část Columbia Gorge se tady náhle vysušuje: čedičové plošiny, zlaté trávy, zakrslé duby a široká řeka nahrazují zelený deštný les západní soutěsky. Trail přes Tom McCall Preserve otevírá téměř stepní krajinu a výhledy daleko po Gorge.",
+    "why_bob": "Tohle je inland odbočka šitá na něj: suchá tráva, duby, čedič a obrovské nebe — nejbližší přechod od pacifického lesa k jeho milované polopouštní estetice.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 250,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Otevřený terén bez stínu, silný vítr, klíšťata a jedovatý dub; zůstat na trailu kvůli citlivému habitat."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne, zvlášť v suchém počasí",
+    "season_note_2026": "Tom McCall Preserve je spravován The Nature Conservancy; podzim je běžně přístupný, ale respektovat případné dočasné habitat closures a zákaz psů.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.6822,-121.3015",
+      "official": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/tom-mccall-preserve-at-rowena/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": ["dry_landscape", "oak_savanna", "basalt", "big_sky", "semi_desert"],
+    "rank": 1
+  },
+  {
+    "id": "r2-055",
+    "region": "R2",
+    "name": "Rowena Loops — Historic Columbia River Highway",
+    "category": "scenic_drive",
+    "subcategory": "hairpin_road",
+    "lat": 45.6822,
+    "lng": -121.3015,
+    "nearest_town": "Mosier, OR",
+    "distance_from_spine_km": 215,
+    "description": "Historická silnice mezi Rowena Crest a řekou se skládá do elegantních širokých serpentin přes suchou čedičovou krajinu. Ze shora působí silnice jako geometrická kresba vložená do zlatých svahů a dubové savany.",
+    "why_bob": "Silnice sama se tu stává krajinářskou kompozicí — americký road design, suché kopce a pocit, že Oregon začíná připomínat vnitrozemský Západ.",
+    "time_needed": "45–90 min",
+    "effort": {
+      "type": "drive",
+      "distance_km": 18,
+      "elevation_m": 250,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Cyklisté, pomalé zatáčky a wildlife; nebrzdit náhle kvůli fotografii, používat oficiální pullouty."
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "Historická silnice je veřejná; aktuální omezení po požárech, sesuvech nebo pracích ověř přes ODOT.",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.6822,-121.3015",
+      "official": "https://www.oregon.gov/odot/regions/pages/historic-columbia-river-highway.aspx",
+      "wiki": "https://en.wikipedia.org/wiki/Historic_Columbia_River_Highway"
+    },
+    "photo": null,
+    "tags": ["scenic_drive", "hairpins", "dry_landscape", "oak_savanna", "road_design"],
+    "rank": 1
+  },
+  {
+    "id": "r2-056",
+    "region": "R2",
+    "name": "Trillium Lake",
+    "category": "lake_river",
+    "subcategory": "mountain_lake_swim",
+    "lat": 45.2711,
+    "lng": -121.7391,
+    "nearest_town": "Government Camp, OR",
+    "distance_from_spine_km": 190,
+    "description": "Mělké horské jezero pod Mount Hood nabízí za klidného počasí téměř absurdně čistý pohled na ledovcovou sopku přes vodní hladinu. Krátký okruh vede lesem a mokřady a z veřejného přístupu lze legálně vstoupit do jezera.",
+    "why_bob": "Cold swim s obrovskou zasněženou sopkou přímo v ose pohledu je přesně ten typ tělesně-kosmického momentu, kvůli kterému stojí za 190 km inland detour.",
+    "time_needed": "2–4 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3.2,
+      "elevation_m": 25,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "horské jezero",
+      "temp_c_sept_oct": "8–14 °C",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "Bez plavčíka; skutečné riziko cold shock, rychlé změny počasí a bouřky. Držet se blízko břehu a neplavat při větru nebo blescích."
+    },
+    "road_access": "paved",
+    "best_time": "časné bezvětrné ráno",
+    "season_note_2026": "USFS lokalita je v září a začátkem října standardně přístupná; první časné sněžení je možné, takže před horskou odbočkou ověř road a weather conditions.",
+    "fee": "Northwest Forest Pass nebo aktuální day-use fee",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.2711,-121.7391",
+      "official": "https://www.fs.usda.gov/r06/mthood/recreation/trillium-lake",
+      "wiki": "https://en.wikipedia.org/wiki/Trillium_Lake"
+    },
+    "photo": null,
+    "tags": ["cold_swim", "mount_hood", "volcano", "mountain_lake", "reflection"],
+    "rank": 1
+  },
+  {
+    "id": "r2-057",
+    "region": "R2",
+    "name": "Bald Peak State Scenic Viewpoint",
+    "category": "scenic_drive",
+    "subcategory": "willamette_valley_view",
+    "lat": 45.3671,
+    "lng": -123.0567,
+    "nearest_town": "Newberg, OR",
+    "distance_from_spine_km": 90,
+    "description": "Nejvyšší bod Chehalem Mountains nad Willamette Valley dává široký výhled přes zemědělskou krajinu, kopce, pásy dubů a za jasna ke kaskádovým sopkám. Nejzajímavější není samotný park, ale příjezd přes vedlejší silnice mezi suchými poli a dubovými svahy.",
+    "why_bob": "Je to jediná Willamette Valley odbočka, kterou bych mu nechala hlavně kvůli krajině — zlaté svahy a duby mají vzdálenou příbuznost s tím, co ho tak dostalo u Paso Robles.",
+    "time_needed": "1,5–3 h včetně jízdy krajinou",
+    "effort": {
+      "type": "drive",
+      "distance_km": 35,
+      "elevation_m": 500,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Úzké venkovské silnice, zemědělská technika a zvěř za soumraku."
+    },
+    "road_access": "paved",
+    "best_time": "zlatá hodina za čistého podzimního dne",
+    "season_note_2026": "State Scenic Viewpoint je běžně přístupný; nejde o vinařskou zastávku a okolní vinařství není nutné navštěvovat.",
+    "fee": "dle aktuálního OPRD režimu",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.3671,-123.0567",
+      "official": "https://stateparks.oregon.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Bald_Peak_State_Scenic_Viewpoint"
+    },
+    "photo": null,
+    "tags": ["oak_savanna", "golden_hills", "willamette_valley", "scenic_drive"],
+    "rank": 2
+  },
+  {
+    "id": "r2-058",
+    "region": "R2",
+    "name": "Marys Peak",
+    "category": "mountain",
+    "subcategory": "summit_viewpoint",
+    "lat": 44.504,
+    "lng": -123.5514,
+    "nearest_town": "Corvallis, OR",
+    "distance_from_spine_km": 75,
+    "description": "Nejvyšší vrchol Oregon Coast Range je dosažitelný sedanem po silnici téměř k vrcholu a krátkou pěší cestou přes horskou louku. Za čistého dne lze současně vidět Pacifik, Willamette Valley a dlouhou řadu kaskádových sopek od Mount Rainier směrem na jih.",
+    "why_bob": "Je to mimořádně efektivní dávka kosmického měřítka: z jednoho bodu lze číst celý řez západním Oregonem od oceánu přes údolí až po vulkanický oblouk.",
+    "time_needed": "2–3 h včetně příjezdu na vrchol",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2.5,
+      "elevation_m": 120,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": "Vrchol je exponovaný větru, mlze a rychlým změnám počasí; viditelnost se může během minut ztratit."
+    },
+    "road_access": "paved",
+    "best_time": "čisté pozdní odpoledne nebo bezvětrné ráno",
+    "season_note_2026": "USFS Marys Peak je v září a začátkem října běžně dostupný autem; při prvním sněhu, bouři nebo požárním omezení ověř stav Marys Peak Road před odbočkou.",
+    "fee": "Northwest Forest Pass nebo aktuální summit day-use fee",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.504,-123.5514",
+      "official": "https://www.fs.usda.gov/r06/siuslaw/recreation/marys-peak",
+      "wiki": "https://en.wikipedia.org/wiki/Marys_Peak"
+    },
+    "photo": null,
+    "tags": ["coast_range", "cascade_views", "big_sky", "deep_scale"],
+    "rank": 1
+  }
+]

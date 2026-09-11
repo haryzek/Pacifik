@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "x-001",
+    "region": "R8b",
+    "name": "Crystal Pier Hotel & Cottages (Pacific Beach)",
+    "category": "motel_gem",
+    "subcategory": "motel",
+    "lat": 32.7976,
+    "lng": -117.2568,
+    "nearest_town": "San Diego (Pacific Beach), CA",
+    "distance_from_spine_km": 0,
+    "description": "Bílomodré chatky z roku 1930 postavené přímo NA molu — spíš nad vlnami než u nich. Jediné místo v Kalifornii, kde spíš na molu; v noci pod podlahou hučí příboj. Přes den je molo otevřené veřejnosti (rybáři, surfaři pod ním).",
+    "why_bob": "Hopperův motel dotažený do absurdna: postel nad Pacifikem, neon na bráně, ráno surfaři pod oknem — pokud je volno, tohle je noc na konci cesty.",
+    "time_needed": "noc / 20 min procházka po molu",
+    "effort": {
+      "type": "none",
+      "distance_km": 0.3,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "ocean",
+      "temp_c_sept_oct": "18–20",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "plavčíci, rip currents u mola"
+    },
+    "road_access": "paved",
+    "best_time": "večer (neon), ráno (surfaři)",
+    "season_note_2026": "chatky se vyprodávají měsíce dopředu, ~250–400 $/noc — zkus zavolat na zrušené rezervace; molo zdarma 8–20 h; NEOVĚŘENO online, ověř",
+    "fee": "molo zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7976,-117.2568",
+      "official": "https://www.crystalpier.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Crystal_Pier_(San_Diego)"
+    },
+    "photo": null,
+    "tags": [
+      "neon",
+      "hopper",
+      "pier",
+      "motel",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-002",
+    "region": "R8b",
+    "name": "The Casbah",
+    "category": "culture",
+    "subcategory": "live_music",
+    "lat": 32.7284,
+    "lng": -117.1731,
+    "nearest_town": "San Diego (Little Italy), CA",
+    "distance_from_spine_km": 0,
+    "description": "Malý klub (200 lidí) pod letovou dráhou letiště, od roku 1989 hlavní scéna sandiegského indie, punku a psychedelie — Nirvana, Pixies, Arctic Monkeys tu hráli před slávou. Tmavo, hlučno, bar, patio. Koncerty skoro každý večer.",
+    "why_bob": "Nejlepší malý klub jižní Kalifornie — kouknout na program na jeho tři noci v San Diegu, něco tam bude.",
+    "time_needed": "večer",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "večer (koncerty od 20–21 h)",
+    "season_note_2026": "program na casbahmusic.com; vstupenky 15–35 $; 21+; NEOVĚŘENO, ověř",
+    "fee": "vstupenka",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7284,-117.1731",
+      "official": "https://casbahmusic.com/",
+      "wiki": "https://en.wikipedia.org/wiki/The_Casbah_(San_Diego)"
+    },
+    "photo": null,
+    "tags": [
+      "live_music",
+      "rock",
+      "indie",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-003",
+    "region": "R8b",
+    "name": "Belly Up Tavern (Solana Beach)",
+    "category": "culture",
+    "subcategory": "live_music",
+    "lat": 32.991,
+    "lng": -117.2712,
+    "nearest_town": "Solana Beach, CA",
+    "distance_from_spine_km": 1,
+    "description": "Klub v bývalém skladu s obloukovou střechou (Quonset hut) od roku 1974, 600 lidí, blues, soul, roots rock, reggae, občas legendy na malém pódiu. Dřevěný interiér, dobrý zvuk, bar, pizza vedle.",
+    "why_bob": "Blues a soul v plechovém skladu u pláže, kde hrál Ry Cooder i Etta James — pokud hraje někdo z jeho let, jet.",
+    "time_needed": "večer",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "večer",
+    "season_note_2026": "program na bellyup.com; vstupenky 20–60 $; NEOVĚŘENO, ověř",
+    "fee": "vstupenka",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.9910,-117.2712",
+      "official": "https://bellyup.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Belly_Up_Tavern"
+    },
+    "photo": null,
+    "tags": [
+      "live_music",
+      "blues",
+      "soul",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-004",
+    "region": "R8b",
+    "name": "Swami's Beach (Encinitas)",
+    "category": "coast",
+    "subcategory": "surf_beach",
+    "lat": 33.0345,
+    "lng": -117.2938,
+    "nearest_town": "Encinitas, CA",
+    "distance_from_spine_km": 0,
+    "description": "Surfařská pláž pod zlatými kopulemi jógového ašrámu, přístup po dlouhých schodech z parkoviště na útesu. Point break, který zpívali Beach Boys v Surfin' USA; nahoře park s lavičkami nad oceánem, kde místní sledují vlny jako televizi.",
+    "why_bob": "Lavička na útesu nad surfaři, kopule ašrámu za zády a západ slunce — Encinitas je nejpřirozenější surf town na jihu, bez pózy.",
+    "time_needed": "1 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 30,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "ocean",
+      "temp_c_sept_oct": "18–20",
+      "legal": "allowed",
+      "solitude": "low",
+      "safety": "útesové dno a surfaři — plavat stranou od line-upu, spíš u Moonlight Beach o kus severněji"
+    },
+    "road_access": "paved",
+    "best_time": "podvečer",
+    "season_note_2026": "otevřeno, parkoviště na útesu zdarma (malé); NEOVĚŘENO, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.0345,-117.2938",
+      "official": "https://www.encinitasca.gov/",
+      "wiki": "https://en.wikipedia.org/wiki/Swami%27s"
+    },
+    "photo": null,
+    "tags": [
+      "surf",
+      "sunset",
+      "bench",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-005",
+    "region": "R8b",
+    "name": "Salk Institute (La Jolla)",
+    "category": "culture",
+    "subcategory": "architecture",
+    "lat": 32.8871,
+    "lng": -117.246,
+    "nearest_town": "La Jolla, CA",
+    "distance_from_spine_km": 1,
+    "description": "Výzkumný ústav Jonase Salka od Louise Kahna (1965): dva betonové bloky laboratoří a mezi nimi prázdné travertinové nádvoří s kanálkem vody, který míří přímo do Pacifiku. Považováno za jednu z nejlepších staveb 20. století. Nádvoří přístupné veřejnosti ve všední dny.",
+    "why_bob": "Prázdné nádvoří, jediná linka vody a za ní oceán — architektura jako meditace, a uvnitř se dělá věda o mozku a vědomí.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0.3,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne — slunce zapadá přesně v ose kanálku (o rovnodennosti, tj. kolem 22. 9.!)",
+    "season_note_2026": "nádvoří obvykle po–pá 9–16 zdarma (ohlásit se na recepci), prohlídky s průvodcem 25 $ (rezervace salk.edu); o víkendu zavřeno; NEOVĚŘENO, ověř",
+    "fee": "zdarma (nádvoří)",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.8871,-117.2460",
+      "official": "https://www.salk.edu/about/visiting-salk/",
+      "wiki": "https://en.wikipedia.org/wiki/Salk_Institute_for_Biological_Studies"
+    },
+    "photo": null,
+    "tags": [
+      "architecture",
+      "kahn",
+      "science",
+      "silence",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-006",
+    "region": "R8b",
+    "name": "Hotel del Coronado & Coronado Beach",
+    "category": "culture",
+    "subcategory": "landmark",
+    "lat": 32.681,
+    "lng": -117.1785,
+    "nearest_town": "Coronado, CA",
+    "distance_from_spine_km": 2,
+    "description": "Dřevěný viktoriánský hotel z roku 1888 s červenými věžemi, kde se točilo Někdo to rád horké (Wilder, 1959). Před ním široká pláž se stříbřitým pískem (slída), po které se dá jít kilometry na jih. Do hotelu se dá vejít, bar na terase s výhledem na moře.",
+    "why_bob": "Marilyn na pláži před tímhle hotelem, a dneska prázdný stříbrný písek a věže v mlze — starý Hollywood jako kulisa na procházku.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "ocean",
+      "temp_c_sept_oct": "18–20",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "mírný příboj, plavčíci v sezóně; jižněji na Silver Strand sám"
+    },
+    "road_access": "paved",
+    "best_time": "podvečer",
+    "season_note_2026": "hotel po rekonstrukci otevřený; parkování v Coronadu na ulici zdarma, ale těžké; most Coronado Bridge zdarma; NEOVĚŘENO, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.6810,-117.1785",
+      "official": "https://hoteldel.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Hotel_del_Coronado"
+    },
+    "photo": null,
+    "tags": [
+      "film_location",
+      "beach",
+      "victorian",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-007",
+    "region": "R8b",
+    "name": "Silver Strand State Beach",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 32.631,
+    "lng": -117.142,
+    "nearest_town": "Coronado, CA",
+    "distance_from_spine_km": 3,
+    "description": "Úzká písečná šíje mezi San Diego Bay a Pacifikem, 10 km dlouhá, pláž na obou stranách (oceán vpředu, klidná zátoka vzadu tunelem pod silnicí). Na jihu vojenská základna SEALs, na severu Coronado. Prázdná, plochá, větrná.",
+    "why_bob": "Deset kilometrů písku mezi dvěma vodami, po kterém nikdo nechodí — na oceánské straně vlny, na zátokové straně klidná voda na plavání.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "ocean / zátoka",
+      "temp_c_sept_oct": "18–21",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "oceánská strana rip currents; zátoková strana klidná, mělká, teplejší"
+    },
+    "road_access": "paved",
+    "best_time": "ráno",
+    "season_note_2026": "otevřeno, parkování 10–15 $; NEOVĚŘENO, ověř",
+    "fee": "10–15 $ parkování",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.6310,-117.1420",
+      "official": "https://www.parks.ca.gov/?page_id=654",
+      "wiki": "https://en.wikipedia.org/wiki/Silver_Strand_State_Beach"
+    },
+    "photo": null,
+    "tags": [
+      "empty",
+      "swim",
+      "wind",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-008",
+    "region": "R8b",
+    "name": "Chicano Park (murály pod mostem)",
+    "category": "culture",
+    "subcategory": "murals",
+    "lat": 32.701,
+    "lng": -117.1435,
+    "nearest_town": "San Diego (Barrio Logan), CA",
+    "distance_from_spine_km": 0,
+    "description": "Park pod pilíři mostu na Coronado, který si čtvrť Barrio Logan v roce 1970 vybojovala okupací staveniště. Přes 80 murálů na betonových pilířích — největší sbírka chicano nástěnných maleb v USA, Národní kulturní památka. Kolem čtvrť s tacos, galeriemi a hlukem dálnice nad hlavou.",
+    "why_bob": "Katedrála z dálničních pilířů pomalovaná dějinami vzdoru, nad hlavou hučí most — politické umění, které je tu proto, že lidi seděli před buldozery.",
+    "time_needed": "45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "dopoledne, boční světlo",
+    "season_note_2026": "veřejný park, zdarma; muzeum Chicano Park Museum vedle (čt–ne); NEOVĚŘENO, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7010,-117.1435",
+      "official": "https://www.chicano-park.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Chicano_Park"
+    },
+    "photo": null,
+    "tags": [
+      "murals",
+      "street_art",
+      "history",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-009",
+    "region": "R8b",
+    "name": "Spreckels Organ Pavilion (Balboa Park)",
+    "category": "culture",
+    "subcategory": "music",
+    "lat": 32.7297,
+    "lng": -117.1501,
+    "nearest_town": "San Diego (Balboa Park), CA",
+    "distance_from_spine_km": 0,
+    "description": "Největší venkovní píšťalové varhany na světě (1915, přes 5 000 píšťal) v otevřeném pavilonu Balboa Parku. Každou neděli ve 14 h hodinový koncert zdarma, civilní varhaník hraje od Bacha po filmovou hudbu; sedíš na lavičce pod palmami. Kolem El Prado — španělské koloniální budovy z výstavy 1915, botanická budova, muzea.",
+    "why_bob": "Varhany pod širým nebem v neděli ve dvě — Bob tam bude v neděli 4. 10. nebo ne, ale pokud ano, sednout a nechat to hrát.",
+    "time_needed": "1–2 h (s procházkou po El Prado)",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "neděle 14:00 (koncert); jinak podvečer na El Prado",
+    "season_note_2026": "koncerty ne 14–15 h celoročně zdarma; parkování v parku zdarma; NEOVĚŘENO, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.7297,-117.1501",
+      "official": "https://spreckelsorgan.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Spreckels_Organ_Pavilion"
+    },
+    "photo": null,
+    "tags": [
+      "music",
+      "organ",
+      "free_concert",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-010",
+    "region": "R8b",
+    "name": "El Cajon — Little Baghdad (chaldejská a irácká kuchyně)",
+    "category": "food_gem",
+    "subcategory": "middle_eastern",
+    "lat": 32.7948,
+    "lng": -116.9625,
+    "nearest_town": "El Cajon, CA",
+    "distance_from_spine_km": 25,
+    "description": "El Cajon má po Detroitu největší chaldejskou (iráckou křesťanskou) komunitu v USA — na Main Street a Magnolia Ave řada iráckých, libanonských a syrských restaurací, pekáren a trhů. Kebab, quzi, masgouf (grilovaná ryba), čerstvý chléb z tandooru. Autentické, levné, bez turistů.",
+    "why_bob": "Irácké jídlo v předměstí San Diega, kam turista nezabloudí — jeho libanonsko-arabská potřeba na konci cesty, půl hodiny od moře.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "večeře",
+    "season_note_2026": "konkrétní podnik vyber na místě podle plných stolů (např. Ali Baba na E Main St je stálice) — NEOVĚŘENO, ověř",
+    "fee": "15–25 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/iraqi+restaurant/@32.7948,-116.9625,15z",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/El_Cajon,_California"
+    },
+    "photo": null,
+    "tags": [
+      "food",
+      "arab",
+      "iraqi",
+      "authentic",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-011",
+    "region": "R8b",
+    "name": "Convoy Street (asijská čtvrť)",
+    "category": "food_gem",
+    "subcategory": "asian",
+    "lat": 32.8305,
+    "lng": -117.1555,
+    "nearest_town": "San Diego (Kearny Mesa), CA",
+    "distance_from_spine_km": 8,
+    "description": "Kilometr a půl strip mallů s nejlepším asijským jídlem v San Diegu: korejské BBQ, vietnamské pho, sečuánské, japonské ramen a izakaye, tchajwanské, čajovny. Neonové cedule, plná parkoviště, nula estetiky, sto procent chuti.",
+    "why_bob": "Když bude chtít po dnech dinerů a burgerů pořádné asijské jídlo — tady, a bez zbytečného hledání.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "večeře (ramen a izakaye pozdě večer)",
+    "season_note_2026": "otevřeno; vyber na místě — NEOVĚŘENO",
+    "fee": "15–30 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/restaurants/@32.8305,-117.1555,16z",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/Convoy_District"
+    },
+    "photo": null,
+    "tags": [
+      "food",
+      "asian",
+      "neon",
+      "added_by_claude"
+    ],
+    "rank": 3
+  },
+  {
+    "id": "x-012",
+    "region": "R8a",
+    "name": "Figueroa Mountain Road — dubová savana",
+    "category": "scenic_drive",
+    "subcategory": "oak_savanna",
+    "lat": 34.7414,
+    "lng": -119.9858,
+    "nearest_town": "Los Olivos, CA",
+    "distance_from_spine_km": 35,
+    "description": "Silnice z Los Olivos serpentinami na Figueroa Mountain (1 380 m) přes zlaté louky s rozestavěnými duby obrostlými šedým lišejníkem — přesně ta krajina, která Boba dostala v Paso Robles v 2017. Nahoře borovice, výhled na Santa Ynez Valley a Channel Islands; dolů se dá pokračovat po Happy Canyon Road zpátky (okruh 60 km, dvě hodiny s zastávkami). Po fire 2022 místy spálené, ale duby stojí.",
+    "why_bob": "Zlatá tráva, duby a lišejník jako krajka, žádné auto za tebou — TA krajina; zastavit kdekoli, sednout pod dub a nedělat nic.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne, boční světlo na trávě",
+    "season_note_2026": "otevřeno; horní úsek úzký, sedan ok; NEOVĚŘENO online, ověř",
+    "fee": "zdarma (Adventure Pass 5 $ jen pro parkování v USFS kempech)",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.7414,-119.9858",
+      "official": "https://www.fs.usda.gov/recarea/lpnf/recarea/?recid=22201",
+      "wiki": "https://en.wikipedia.org/wiki/Figueroa_Mountain"
+    },
+    "photo": null,
+    "tags": [
+      "oak_savanna",
+      "lichen",
+      "empty_road",
+      "golden_hills",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-013",
+    "region": "R8a",
+    "name": "Red Rock — Santa Ynez River (koupání)",
+    "category": "lake_river",
+    "subcategory": "swimming_hole",
+    "lat": 34.5406,
+    "lng": -119.7859,
+    "nearest_town": "Santa Barbara, CA",
+    "distance_from_spine_km": 25,
+    "description": "Konec Paradise Road za Santa Barbarou: tůně řeky Santa Ynez mezi červenými pískovcovými balvany, klasické místní koupání. V říjnu málo vody — tůně zůstávají, ale mělčí a teplejší; po suchém létě může být řeka i suchá. Od parkoviště 1,5 km po staré cestě.",
+    "why_bob": "Když bude voda, tůň mezi červenými skalami v dubovém kaňonu — jeho druh koupání, hodinu od pláže.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 50,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "river",
+      "temp_c_sept_oct": "18–22",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": "v říjnu nízký stav, neskákat; po dešti brody na Paradise Rd neprůjezdné"
+    },
+    "road_access": "paved",
+    "best_time": "odpoledne",
+    "season_note_2026": "Paradise Road má brody přes řeku — v říjnu suché, sedan ok; stav vody OVĚŘ (může být suchá); NEOVĚŘENO online, ověř",
+    "fee": "5 $ Adventure Pass (koupit na pumpě / REI)",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.5406,-119.7859",
+      "official": "https://www.fs.usda.gov/recarea/lpnf/recarea/?recid=22162",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": [
+      "swim",
+      "river",
+      "sandstone",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-014",
+    "region": "R8a",
+    "name": "Stearns Wharf & Funk Zone (Santa Barbara)",
+    "category": "town",
+    "subcategory": "pier",
+    "lat": 34.4098,
+    "lng": -119.6857,
+    "nearest_town": "Santa Barbara, CA",
+    "distance_from_spine_km": 0,
+    "description": "Dřevěné molo z roku 1872 s výhledem na město pod horami Santa Ynez a na Channel Islands; za ním Funk Zone — bývalé sklady s pivovary, vinnými bary a tacos. Santa Barbara je hezká a drahá; molo a Funk Zone jsou ta část, která se dá vzít za hodinu.",
+    "why_bob": "Molo při západu slunce s horami za městem a pak pivo ve Funk Zone — Santa Barbara za hodinu, víc není potřeba.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "podvečer",
+    "season_note_2026": "NEOVĚŘENO online, ověř",
+    "fee": "zdarma (parkování na molu prvních 90 min zdarma)",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.4098,-119.6857",
+      "official": "https://stearnswharf.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Stearns_Wharf"
+    },
+    "photo": null,
+    "tags": [
+      "pier",
+      "beer",
+      "sunset",
+      "added_by_claude"
+    ],
+    "rank": 3
+  },
+  {
+    "id": "x-015",
+    "region": "R9b",
+    "name": "Mojave Lava Tube (Aiken Mine Road)",
+    "category": "geology",
+    "subcategory": "lava_tube",
+    "lat": 35.2155,
+    "lng": -115.7515,
+    "nearest_town": "Baker, CA",
+    "distance_from_spine_km": 250,
+    "description": "Krátký lávový tunel v poli černých kuželů Cima Volcanic Field. Od parkoviště 400 m po štěrku, dolů po žebříku, pak 100 m tmy — a v poledne otvorem ve stropě padá do prachu sloup světla jako reflektor. Aiken Mine Road je 8 km štěrku s pračkou, sedan ok pomalu.",
+    "why_bob": "Sloup slunce ve tmě lávové trubky — deset minut, kvůli kterým se jede přes půl Mojave; nejlíp mezi 11 a 14 h.",
+    "time_needed": "1 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 1,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "11–14 h (světlo dopadá kolmo)",
+    "season_note_2026": "Mojave NP zdarma; čelovka s sebou; žádná voda, tankuj v Baker; NEOVĚŘENO online, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.2155,-115.7515",
+      "official": "https://www.nps.gov/moja/planyourvisit/lava-tube.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": [
+      "lava",
+      "light",
+      "cave",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-016",
+    "region": "R9b",
+    "name": "Cima Dome — Teutonia Peak Trail (les joshua stromů)",
+    "category": "desert",
+    "subcategory": "trail",
+    "lat": 35.2891,
+    "lng": -115.5486,
+    "nearest_town": "Cima, CA",
+    "distance_from_spine_km": 260,
+    "description": "Nejhustší les joshua stromů na světě na mírné žulové kupoli Cima Dome. Požár Dome Fire 2020 spálil přes milion stromů — dnes stojí les černých siluet a mezi nimi mladé výhonky; stezka na Teutonia Peak (6 km tam a zpět) vede právě tudy. Zvláštní, tiché, elegické.",
+    "why_bob": "Milion spálených joshua stromů jako les soch a mezi nimi zelené výhonky — deep time a smrt a obnova na jednom kilometru; McCarthy by tu psal.",
+    "time_needed": "2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 6,
+      "elevation_m": 200,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "ráno nebo podvečer",
+    "season_note_2026": "otevřeno; Cima Road asfalt; bez stínu; NEOVĚŘENO online, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.2891,-115.5486",
+      "official": "https://www.nps.gov/moja/planyourvisit/teutonia-peak-trail.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": [
+      "joshua_trees",
+      "fire",
+      "silence",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-017",
+    "region": "R9b",
+    "name": "Badwater Basin (Death Valley)",
+    "category": "geology",
+    "subcategory": "salt_flat",
+    "lat": 36.2297,
+    "lng": -116.7674,
+    "nearest_town": "Furnace Creek, CA",
+    "distance_from_spine_km": 400,
+    "description": "Nejnižší bod Severní Ameriky, 86 m pod hladinou moře: bílá solná pláň do nekonečna, na skále nad parkovištěm cedule SEA LEVEL vysoko nad hlavou. Vyjít 1–2 km po soli ven, kde nikdo není, a otočit se — hory Panamint s Telescope Peak (3 368 m) přímo naproti.",
+    "why_bob": "Stát 86 m pod mořem na soli a dívat se 3 500 m nahoru na Telescope Peak — největší vertikální měřítko v USA v jednom pohledu; v noci pod hvězdami ještě víc.",
+    "time_needed": "1 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 3,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "svítání, západ slunce nebo noc (Mléčná dráha)",
+    "season_note_2026": "v říjnu ve dne 30–38 °C, voda s sebou; z LA 4,5 h — spát ve Stovepipe Wells / Furnace Creek (drahé) nebo Beatty NV (levné motely); NEOVĚŘENO online, ověř",
+    "fee": "30 $ Death Valley NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.2297,-116.7674",
+      "official": "https://www.nps.gov/deva/planyourvisit/badwater-basin.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Badwater_Basin"
+    },
+    "photo": null,
+    "tags": [
+      "salt",
+      "lowest_point",
+      "dark_sky",
+      "scale",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-018",
+    "region": "R9b",
+    "name": "Dante's View (Death Valley)",
+    "category": "mountain",
+    "subcategory": "viewpoint",
+    "lat": 36.2205,
+    "lng": -116.7264,
+    "nearest_town": "Furnace Creek, CA",
+    "distance_from_spine_km": 400,
+    "description": "Vyhlídka 1 669 m přímo nad Badwater — celé Death Valley pod nohama jako mapa, bílá sůl, hnědé aluviální vějíře a naproti Panamint. O 15 °C chladněji než dole. Asfalt až nahoru, 40 minut z Furnace Creek.",
+    "why_bob": "Kubrickův záběr: údolí smrti shora, v tichu a chladu, a když se počká do tmy, hvězdy až k horizontu.",
+    "time_needed": "1 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "svítání (světlo přes údolí) nebo noc",
+    "season_note_2026": "otevřeno; posledních 400 m strmé, karavany ne, sedan ok; NEOVĚŘENO online, ověř",
+    "fee": "30 $ Death Valley NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.2205,-116.7264",
+      "official": "https://www.nps.gov/deva/planyourvisit/dantes-view.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": [
+      "viewpoint",
+      "dark_sky",
+      "scale",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-019",
+    "region": "R9b",
+    "name": "Mesquite Flat Sand Dunes (Death Valley)",
+    "category": "desert",
+    "subcategory": "dunes",
+    "lat": 36.6136,
+    "lng": -117.116,
+    "nearest_town": "Stovepipe Wells, CA",
+    "distance_from_spine_km": 400,
+    "description": "Duny u Stovepipe Wells, nejpřístupnější v parku — od silnice 2 km na nejvyšší hřeben (30 m). Ráno vlnky ve písku nedotčené, stopy ještěrek; ve dne peklo. Tady se točil Tatooine.",
+    "why_bob": "Za svítání bosky po hřebeni dun, kde ještě nikdo nešel, a Tatooine kolem — a v osm ráno už zpátky v autě s klimatizací.",
+    "time_needed": "1–2 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 4,
+      "elevation_m": 50,
+      "difficulty": "moderate"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "svítání",
+    "season_note_2026": "otevřeno; v říjnu jen brzo ráno nebo za soumraku; NEOVĚŘENO online, ověř",
+    "fee": "30 $ Death Valley NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.6136,-117.116",
+      "official": "https://www.nps.gov/deva/planyourvisit/sand-dunes.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": [
+      "dunes",
+      "sunrise",
+      "film_location",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-020",
+    "region": "R9b",
+    "name": "Artist's Drive & Artist's Palette (Death Valley)",
+    "category": "scenic_drive",
+    "subcategory": "one_way_road",
+    "lat": 36.3492,
+    "lng": -116.8128,
+    "nearest_town": "Furnace Creek, CA",
+    "distance_from_spine_km": 400,
+    "description": "Jednosměrná 15km asfaltka horskou dračí zádí mezi Badwater a Furnace Creek, úzká, s propady jako horská dráha; uprostřed Artist's Palette — svahy zbarvené oxidy do růžové, zelené a fialové. Půl hodiny, nejlíp v pozdním odpoledni.",
+    "why_bob": "Silnice jako horská dráha přes svahy v barvách, které do kamene nepatří — Bob za volantem s oknem dole, hudba nahlas.",
+    "time_needed": "30–45 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "pozdní odpoledne",
+    "season_note_2026": "otevřeno, jednosměrka z jihu na sever; karavany ne; NEOVĚŘENO online, ověř",
+    "fee": "30 $ Death Valley NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.3492,-116.8128",
+      "official": "https://www.nps.gov/deva/planyourvisit/artists-drive.htm",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": [
+      "drive",
+      "color",
+      "geology",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-021",
+    "region": "R9b",
+    "name": "Rhyolite Ghost Town & Goldwell Open Air Museum (NV)",
+    "category": "oddity",
+    "subcategory": "ghost_town",
+    "lat": 36.9033,
+    "lng": -116.8281,
+    "nearest_town": "Beatty, NV",
+    "distance_from_spine_km": 430,
+    "description": "Zlatokopecké město z roku 1905, které mělo 5 000 lidí a za deset let bylo prázdné — zůstala banka o třech patrech, dům z lahví, nádraží. Vedle Goldwell Open Air Museum: sádrové postavy Poslední večeře v pouštním prachu (Albert Szukalski, 1984). Beatty za rohem má levné motely — ideální noc pro Death Valley.",
+    "why_bob": "Poslední večeře ze sádrových duchů u ruiny banky v poušti — sochy, které nikdo nehlídá, a město, které za deset let zmizelo.",
+    "time_needed": "1 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "podvečer",
+    "season_note_2026": "otevřeno, BLM; Beatty motely 80–120 $ — nejlevnější nocleh pro Death Valley; NEOVĚŘENO online, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.9033,-116.8281",
+      "official": "https://goldwellmuseum.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Rhyolite,_Nevada"
+    },
+    "photo": null,
+    "tags": [
+      "ghost_town",
+      "outsider_art",
+      "motel_base",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-022",
+    "region": "R9b",
+    "name": "Red Rock Canyon State Park (CA-14)",
+    "category": "geology",
+    "subcategory": "badlands",
+    "lat": 35.3733,
+    "lng": -117.9917,
+    "nearest_town": "Cantil, CA",
+    "distance_from_spine_km": 220,
+    "description": "Růžové a bílé útesy z vrstveného tufu a pískovce přímo u CA-14 na cestě do Death Valley — Hagen Canyon (okruh 2 km) a Red Cliffs. Jurský park a stovky westernů. Kemp Ricardo pod útesy, v noci tma.",
+    "why_bob": "Sloupy z růžového tufu u silnice, kde stačí odbočit na deset minut — nebo tu spát v kempu pod útesem a mít hvězdy zdarma.",
+    "time_needed": "1 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 2,
+      "elevation_m": 30,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "podvečer (útesy zrůžoví)",
+    "season_note_2026": "otevřeno; kemp 25 $ bez rezervace; NEOVĚŘENO online, ověř",
+    "fee": "6 $ day use",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.3733,-117.9917",
+      "official": "https://www.parks.ca.gov/?page_id=631",
+      "wiki": "https://en.wikipedia.org/wiki/Red_Rock_Canyon_State_Park_(California)"
+    },
+    "photo": null,
+    "tags": [
+      "badlands",
+      "film_location",
+      "camp",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-023",
+    "region": "R9b",
+    "name": "Randsburg — živé ghost town",
+    "category": "town",
+    "subcategory": "ghost_town",
+    "lat": 35.3697,
+    "lng": -117.6553,
+    "nearest_town": "Randsburg, CA",
+    "distance_from_spine_km": 230,
+    "description": "Zlatokopecké město z roku 1895 s 60 obyvateli, které nikdy úplně nezaniklo: hlavní ulice s dřevěnými fasádami, General Store s originálním sodovkovým pultem z roku 1904 (zmrzlina, sendviče), saloon, o víkendu čtyřkolky. Na cestě mezi Red Rock Canyon a Tronou.",
+    "why_bob": "Sodovka u pultu z roku 1904 v městě, kde je víc čtyřkolek než lidí — zastávka na půl hodiny na cestě k Trona Pinnacles.",
+    "time_needed": "30–60 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "víkend (otevřeno víc), poledne",
+    "season_note_2026": "General Store obvykle pá–ne; ve všední den může být všechno zavřené; NEOVĚŘENO online, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.3697,-117.6553",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/Randsburg,_California"
+    },
+    "photo": null,
+    "tags": [
+      "ghost_town",
+      "americana",
+      "soda_fountain",
+      "added_by_claude"
+    ],
+    "rank": 3
+  },
+  {
+    "id": "x-024",
+    "region": "R9b",
+    "name": "Indian Canyons — Palm Canyon (Palm Springs)",
+    "category": "desert",
+    "subcategory": "oasis",
+    "lat": 33.744,
+    "lng": -116.538,
+    "nearest_town": "Palm Springs, CA",
+    "distance_from_spine_km": 180,
+    "description": "Rezervace kmene Agua Caliente jižně od Palm Springs: Palm Canyon je 24 km dlouhý kaňon s tisíci palem Washingtonia u potoka — největší přirozený palmový háj Severní Ameriky. Od Trading Post dolů do stínu palem a po dnu kaňonu, jak daleko chceš. Andreas Canyon vedle je kratší a klidnější.",
+    "why_bob": "Palmový háj u potoka pod skalami, jako z Hoggaru — jít kaňonem hodinu a být sám, dvacet minut od Palm Springs.",
+    "time_needed": "2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 100,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "ráno",
+    "season_note_2026": "otevřeno denně 8–17 (v létě jen pá–ne, od října denně); NEOVĚŘENO online, ověř",
+    "fee": "cca 12 $ / osoba",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.744,-116.538",
+      "official": "https://www.indian-canyons.com/",
+      "wiki": "https://en.wikipedia.org/wiki/Indian_Canyons"
+    },
+    "photo": null,
+    "tags": [
+      "palms",
+      "oasis",
+      "canyon",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-025",
+    "region": "R9b",
+    "name": "Idyllwild & Pines to Palms Highway (CA-74)",
+    "category": "mountain",
+    "subcategory": "mountain_town",
+    "lat": 33.7401,
+    "lng": -116.7189,
+    "nearest_town": "Idyllwild, CA",
+    "distance_from_spine_km": 170,
+    "description": "Horská vesnice v 1 650 m pod žulovými stěnami Tahquitz a Suicide Rock, borovice, kavárny, jeden hlavní plácek, žádné semafory. Sem vede CA-74 z Palm Desert — Pines to Palms Highway: z pouště do lesa za 40 minut, s vyhlídkou na Coachella Valley u Vista Point. Ernie Maxwell Scenic Trail (8 km) pod skalami.",
+    "why_bob": "Z pouště do borovic za čtyřicet minut po silnici, která stoupá 1 500 m — a nahoře vesnice, kde se dá sedět s kávou a dívat se na žulu.",
+    "time_needed": "půl dne",
+    "effort": {
+      "type": "hike",
+      "distance_km": 8,
+      "elevation_m": 200,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "kdykoli; v říjnu chladno večer",
+    "season_note_2026": "otevřeno; motely 100–150 $; NEOVĚŘENO online, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.7401,-116.7189",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/Idyllwild,_California"
+    },
+    "photo": null,
+    "tags": [
+      "mountain_town",
+      "pines",
+      "scenic_road",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-026",
+    "region": "R9",
+    "name": "East Jesus (Slab City)",
+    "category": "oddity",
+    "subcategory": "art_garden",
+    "lat": 33.2681,
+    "lng": -115.4551,
+    "nearest_town": "Niland, CA",
+    "distance_from_spine_km": 250,
+    "description": "Umělecká kolonie na okraji Slab City: zahrada instalací z odpadu — zeď z televizí s nápisy, mamut z pneumatik, auta zarostlá sochami. Obyvatelé provádějí, dobrovolný příspěvek. Vedle Salvation Mountain a Slab City je to ta nejsoustředěnější dávka pouštního post-apo.",
+    "why_bob": "Zeď z televizních obrazovek, na kterých je napsáno, co bys jinak koukal — pouštní anarchie jako galerie, a někdo tě tím provede.",
+    "time_needed": "1 h",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "ráno (v poledne vedro, i v říjnu 30+ °C)",
+    "season_note_2026": "otevřeno denně, ohlásit se u vchodu; zdarma / donace; NEOVĚŘENO online, ověř",
+    "fee": "dobrovolný příspěvek",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.2681,-115.4551",
+      "official": "https://eastjesus.org/",
+      "wiki": null
+    },
+    "photo": null,
+    "tags": [
+      "outsider_art",
+      "post_apo",
+      "slab_city",
+      "added_by_claude"
+    ],
+    "rank": 2
+  },
+  {
+    "id": "x-027",
+    "region": "R9",
+    "name": "Davis-Schrimpf Mud Pots (Salton Sea)",
+    "category": "geology",
+    "subcategory": "geothermal",
+    "lat": 33.2003,
+    "lng": -115.5787,
+    "nearest_town": "Niland, CA",
+    "distance_from_spine_km": 250,
+    "description": "Pole bublajících bahenních sopek na kraji pole u Salton Sea — kužely po pás, ze kterých plive šedé bahno a CO2. Geotermální zóna zlomu San Andreas, doslova. U silnice, zdarma, bez plotu, bez lidí. Zápach sirovodíku.",
+    "why_bob": "Bahno bublající na konci zlomu San Andreas mezi poli s vojtěškou — geologie, která se hýbe před očima, a nikdo o tom neví.",
+    "time_needed": "20 min",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "kdykoli",
+    "season_note_2026": "přístup po polní cestě Davis Rd × Schrimpf Rd; po dešti bahno; nestoupat na kužely; NEOVĚŘENO online, ověř",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.2003,-115.5787",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/Salton_Buttes"
+    },
+    "photo": null,
+    "tags": [
+      "geothermal",
+      "san_andreas",
+      "weird",
+      "added_by_claude"
+    ],
+    "rank": 3
+  }
+]

@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1419">
+<title>Pacifik</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+:root{
+  --bg:#0f1419; --card:#171d24; --card2:#1e252e; --line:#262e38;
+  --text:#e8e2d6; --muted:#9a948a; --dim:#6b665e;
+  --accent:#D9A441; --water:#4fc3c9; --warn:#e0654a; --ok:#7bb661;
+  --serif:Georgia,"Times New Roman",serif; --ui:system-ui,-apple-system,"Segoe UI",sans-serif; --mono:ui-monospace,Menlo,Consolas,monospace;
+  --sat:env(safe-area-inset-top,0px); --sab:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 var(--ui);overscroll-behavior-y:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:var(--accent)}
+#app{display:flex;flex-direction:column;min-height:100dvh}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(15,20,25,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:calc(var(--sat) + 8px) 12px 8px}
+.hrow{display:flex;align-items:center;gap:8px}
+.brand{font-family:var(--serif);font-size:19px;color:var(--accent);letter-spacing:.02em}
+.brand small{font:11px var(--mono);color:var(--dim);margin-left:6px}
+.spacer{flex:1}
+.gps{font:11px var(--mono);color:var(--muted);display:flex;align-items:center;gap:5px}
+.gps b{width:8px;height:8px;border-radius:50%;background:var(--dim);display:inline-block}
+.gps.on b{background:var(--ok);box-shadow:0 0 6px var(--ok)}
+.gps.sim b{background:var(--accent)}
+.count{font:11px var(--mono);color:var(--muted)}
+
+/* chips */
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:13px;color:var(--muted);transition:background .15s,color .15s}
+.chip.on{background:var(--accent);color:#1a1408;border-color:var(--accent);font-weight:600}
+.chip.water.on{background:var(--water);border-color:var(--water)}
+.chip.range{font-family:var(--mono);font-size:12px}
+
+/* quick actions */
+.quick{display:flex;gap:6px;padding:8px 12px 0}
+.quick a{flex:1;text-align:center;padding:7px 2px;border-radius:8px;background:var(--card);border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:12px;white-space:nowrap}
+
+/* list */
+main{flex:1;padding:8px 12px calc(var(--sab) + 72px)}
+.item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.item:active{background:var(--card)}
+.thumb{flex:none;width:96px;height:72px;border-radius:8px;overflow:hidden;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:28px;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .badge{position:absolute;left:0;bottom:0;padding:1px 5px;font:10px var(--mono);background:rgba(0,0,0,.55);color:#fff;border-top-right-radius:6px}
+.body{flex:1;min-width:0}
+.t{display:flex;align-items:baseline;gap:6px}
+.name{font-family:var(--serif);font-size:16px;line-height:1.2;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.star{color:var(--accent);font-size:12px;flex:none}
+.meta{font:11px var(--mono);color:var(--muted);margin-top:2px;display:flex;gap:8px;flex-wrap:wrap}
+.meta .dist{color:var(--text)}
+.meta .arrow{display:inline-block;transition:transform .2s}
+.why{font-family:var(--serif);font-style:italic;color:#c9c2b4;font-size:13px;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.icons{font-size:12px;margin-top:2px;color:var(--muted)}
+.icons .w{color:var(--water)} .icons .f{color:var(--warn)}
+.empty{padding:40px 16px;text-align:center;color:var(--muted);font-family:var(--serif)}
+.more{display:block;width:100%;padding:12px;text-align:center;color:var(--accent);font-family:var(--mono);font-size:13px}
+
+/* placeholder gradients by category */
+.c-coast{background:linear-gradient(135deg,#1c3a4a,#2c5e6e)} .c-forest{background:linear-gradient(135deg,#1c3a2a,#2f5a3a)}
+.c-desert{background:linear-gradient(135deg,#5a3a1c,#8a5a2a)} .c-mountain{background:linear-gradient(135deg,#2a2f3a,#4a5060)}
+.c-lake_river{background:linear-gradient(135deg,#1a3a4a,#2a6a7a)} .c-waterfall{background:linear-gradient(135deg,#1e3a4e,#3a7a8a)}
+.c-geology{background:linear-gradient(135deg,#4a2a2a,#7a4a3a)} .c-scenic_drive{background:linear-gradient(135deg,#2a2a3a,#5a4a3a)}
+.c-town{background:linear-gradient(135deg,#3a2a1a,#6a4a2a)} .c-motel_gem{background:linear-gradient(135deg,#4a1a3a,#8a2a4a)}
+.c-food_gem{background:linear-gradient(135deg,#4a2a1a,#9a4a1a)} .c-culture{background:linear-gradient(135deg,#3a1a4a,#5a2a7a)}
+.c-oddity{background:linear-gradient(135deg,#2a4a1a,#6a7a1a)} .c-dark_sky{background:linear-gradient(135deg,#0a0f2a,#1a2a5a)}
+.c-hot_spring{background:linear-gradient(135deg,#4a1a1a,#9a3a2a)}
+
+/* bottom nav */
+nav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:rgba(15,20,25,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding-bottom:var(--sab)}
+nav button{flex:1;padding:8px 0 6px;font-size:11px;color:var(--dim);display:flex;flex-direction:column;align-items:center;gap:2px}
+nav button span{font-size:20px;line-height:1}
+nav button.on{color:var(--accent)}
+
+/* sheet */
+.sheet{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.55);display:none;align-items:flex-end}
+.sheet.open{display:flex}
+.panel{width:100%;max-height:92dvh;background:var(--card);border-radius:16px 16px 0 0;overflow-y:auto;padding-bottom:calc(var(--sab) + 16px);animation:up .22s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.hero{height:200px;background:var(--card2);position:relative;display:flex;align-items:center;justify-content:center;font-size:56px}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .close{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;font-size:18px}
+.hero .credit{position:absolute;left:0;right:0;bottom:0;padding:2px 8px;font:10px var(--mono);color:#ccc;background:rgba(0,0,0,.5)}
+.pad{padding:12px 16px}
+h2{font-family:var(--serif);font-weight:normal;font-size:22px;line-height:1.2;margin:0 0 4px}
+.sub{font:12px var(--mono);color:var(--muted)}
+.whybig{font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.4;color:var(--accent);margin:12px 0}
+.desc{font-family:var(--serif);font-size:15px;line-height:1.5}
+.rows{margin:12px 0;border-top:1px solid var(--line)}
+.row{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+.row .k{flex:none;width:92px;color:var(--muted);font:12px var(--mono);padding-top:1px}
+.row.warn .v{color:var(--warn)}
+.box{border-radius:8px;padding:10px 12px;font-size:13px;margin:10px 0}
+.box.yellow{background:rgba(217,164,65,.12);border:1px solid rgba(217,164,65,.35)}
+.box.water{background:rgba(79,195,201,.1);border:1px solid rgba(79,195,201,.35)}
+.box.red{background:rgba(224,101,74,.12);border:1px solid rgba(224,101,74,.4)}
+.box h4{margin:0 0 6px;font:600 12px var(--mono);letter-spacing:.05em;text-transform:uppercase}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.btn{padding:10px 14px;border-radius:10px;background:var(--card2);border:1px solid var(--line);font-size:14px;text-decoration:none;color:var(--text)}
+.btn.primary{background:var(--accent);color:#1a1408;border-color:var(--accent);font-weight:600}
+.btn.on{border-color:var(--ok);color:var(--ok)}
+.btn[disabled]{opacity:.4}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.tag{font:11px var(--mono);padding:2px 7px;border-radius:999px;background:var(--card2);color:var(--muted)}
+textarea{width:100%;min-height:70px;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px;font:14px var(--serif)}
+
+/* settings / sim */
+.settings{padding:12px 16px}
+select,input[type=text]{width:100%;padding:10px;border-radius:8px;background:var(--bg);color:var(--text);border:1px solid var(--line);font:14px var(--ui)}
+label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px}
+
+/* toast */
+#toast{position:fixed;left:50%;bottom:calc(var(--sab) + 80px);transform:translateX(-50%) translateY(20px);opacity:0;background:var(--card2);border:1px solid var(--line);padding:10px 16px;border-radius:12px;z-index:40;transition:transform .2s,opacity .2s;font-size:14px;pointer-events:none;max-width:90vw}
+#toast.show{transform:translateX(-50%);opacity:1}
+#pina{position:fixed;inset:0;display:none;align-items:center;justify-content:center;font-size:96px;z-index:50;pointer-events:none;animation:pina 1.5s ease-out forwards}
+@keyframes pina{0%{opacity:0;transform:scale(.5)}20%{opacity:1;transform:scale(1.1)}70%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.3) translateY(-40px)}}
+.soon{padding:60px 20px;text-align:center;color:var(--muted);font-family:var(--serif)}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="hrow">
+      <div class="brand">Pacifik<small id="countdown"></small></div>
+      <div class="spacer"></div>
+      <div class="count" id="count"></div>
+      <button class="gps" id="gpsBtn" title="Poloha"><b></b><span id="gpsTxt">GPS</span></button>
+    </div>
+    <div id="toolbar"></div>
+  </header>
+  <main id="main"></main>
+  <nav id="nav"></nav>
+</div>
+<div class="sheet" id="sheet"><div class="panel" id="panel"></div></div>
+<div class="sheet" id="posSheet"><div class="panel settings" id="posPanel"></div></div>
+<div id="toast"></div>
+<div id="pina">🍹</div>
+
+<script>
+'use strict';
+// ====================== KONSTANTY ======================
+const TRIP = { start: new Date('2026-09-16T00:00:00'), end: new Date('2026-10-10T23:59:59'), days: 24 };
+const RANGES = [30, 100, 300, 500];
+const CATS = { coast:'🌊', forest:'🌲', desert:'🏜', geology:'🏜', mountain:'🏔', lake_river:'💧', waterfall:'💧', hot_spring:'♨️', scenic_drive:'🛣', town:'🏘', motel_gem:'🛏', food_gem:'🍽', culture:'🎸', oddity:'👁', dark_sky:'🌌' };
+const FILTERS = [
+  { id:'coast', l:'🌊 Pobřeží', cats:['coast'] },
+  { id:'forest', l:'🌲 Les', cats:['forest'] },
+  { id:'desert', l:'🏜 Poušť/skály', cats:['desert','geology'] },
+  { id:'mountain', l:'🏔 Hory', cats:['mountain'] },
+  { id:'swim', l:'💧 Koupání', cats:['lake_river','waterfall','hot_spring'], swim:true, cls:'water' },
+  { id:'drive', l:'🛣 Silnice', cats:['scenic_drive'] },
+  { id:'town', l:'🏘 Města', cats:['town'] },
+  { id:'motel', l:'🛏 Motel', cats:['motel_gem'] },
+  { id:'food', l:'🍽 Žrádlo', cats:['food_gem'] },
+  { id:'culture', l:'🎸 Kultura', cats:['culture'] },
+  { id:'oddity', l:'👁 Oddity', cats:['oddity'] },
+  { id:'night', l:'🌌 Noc', cats:['dark_sky'] },
+];
+const SIM = [
+  ['Seattle', 47.6062, -122.3321], ['North Bend (Twin Peaks)', 47.4957, -121.7868], ['Port Angeles', 48.1181, -123.4307], ['Forks', 47.9503, -124.3854],
+  ['Astoria', 46.1879, -123.8313], ['Cannon Beach', 45.8918, -123.9615], ['Newport OR', 44.6368, -124.0535], ['Florence', 43.9826, -124.0998], ['Bandon', 43.1190, -124.4084],
+  ['Crater Lake', 42.9446, -122.1090], ['Brookings', 42.0526, -124.2840], ['Crescent City', 41.7558, -124.2026], ['Eureka', 40.8021, -124.1637], ['Fort Bragg', 39.4457, -123.8053],
+  ['Point Reyes', 38.0690, -122.8069], ['San Francisco', 37.7749, -122.4194], ['Santa Cruz', 36.9741, -122.0308], ['Monterey', 36.6002, -121.8947], ['Big Sur', 36.2704, -121.8081],
+  ['San Luis Obispo', 35.2828, -120.6596], ['Santa Barbara', 34.4208, -119.6982], ['Los Angeles', 34.0522, -118.2437], ['Joshua Tree', 34.1347, -116.3131], ['Palm Springs', 33.8303, -116.5453],
+  ['San Diego (OB)', 32.7480, -117.2500],
+];
+const LS_KEY = 'pacifik.v1';
+
+// ====================== STAV ======================
+const S = {
+  places: [], loops: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100,
+  pos: null, posMode: 'none', // 'gps' | 'sim' | 'last'
+  store: loadStore(),
+};
+function loadStore(){ try { return Object.assign({ plan:[], visited:{}, notes:{}, lastPos:null, sim:null, range:100 }, JSON.parse(localStorage.getItem(LS_KEY)||'{}')); } catch(e){ return { plan:[], visited:{}, notes:{}, lastPos:null, sim:null, range:100 }; } }
+function save(){ try { localStorage.setItem(LS_KEY, JSON.stringify(S.store)); } catch(e){ toast('localStorage plný nebo blokovaný'); } }
+
+// ====================== UTIL ======================
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const R = 6371;
+function hav(a, b){ const dLat=(b.lat-a.lat)*Math.PI/180, dLng=(b.lng-a.lng)*Math.PI/180; const x=Math.sin(dLat/2)**2+Math.cos(a.lat*Math.PI/180)*Math.cos(b.lat*Math.PI/180)*Math.sin(dLng/2)**2; return 2*R*Math.asin(Math.sqrt(x)); }
+function bearing(a, b){ const φ1=a.lat*Math.PI/180, φ2=b.lat*Math.PI/180, Δλ=(b.lng-a.lng)*Math.PI/180; const y=Math.sin(Δλ)*Math.cos(φ2), x=Math.cos(φ1)*Math.sin(φ2)-Math.sin(φ1)*Math.cos(φ2)*Math.cos(Δλ); return (Math.atan2(y,x)*180/Math.PI+360)%360; }
+const DIRS = ['S','SV','V','JV','J','JZ','Z','SZ'];
+const dirName = (b) => DIRS[Math.round(b/45)%8];
+function driveMin(km, road){ const v = (road==='paved') ? 70 : 70/1.6; return Math.round(km/v*60); }
+function fmtMin(m){ return m<60 ? `${m} min` : `${Math.floor(m/60)} h ${String(m%60).padStart(2,'0')}`; }
+function fmtKm(km){ return km<10 ? km.toFixed(1)+' km' : Math.round(km)+' km'; }
+function swimOK(p){ return p.swim && p.swim.possible && ['allowed','tolerated'].includes(p.swim.legal); }
+let toastT; function toast(msg, ms=2200){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'), ms); }
+function pina(){ const p=$('#pina'); p.style.display='flex'; p.style.animation='none'; void p.offsetWidth; p.style.animation=''; setTimeout(()=>p.style.display='none',1500); }
+
+// ====================== ODPOČET ======================
+function countdown(){
+  const now = new Date(); const d = (a,b)=>Math.ceil((a-b)/864e5);
+  let t;
+  if (now < TRIP.start) t = `za ${d(TRIP.start, now)} d`;
+  else if (now <= TRIP.end) t = `den ${d(now, TRIP.start)+1}/${TRIP.days}`;
+  else t = 'doma';
+  $('#countdown').textContent = t;
+}
+
+// ====================== POLOHA ======================
+let watchId = null;
+function setPos(lat, lng, mode){
+  S.pos = { lat, lng }; S.posMode = mode;
+  if (mode === 'gps') { S.store.lastPos = { lat, lng, t: Date.now() }; save(); }
+  const g = $('#gpsBtn'); g.className = 'gps ' + (mode==='gps' ? 'on' : mode==='sim' ? 'sim' : '');
+  $('#gpsTxt').textContent = mode==='gps' ? 'GPS' : mode==='sim' ? 'SIM' : mode==='last' ? 'POSL.' : '—';
+  render();
+}
+function startGPS(){
+  if (S.store.sim) { const s = S.store.sim; setPos(s.lat, s.lng, 'sim'); return; }
+  if (!navigator.geolocation) { fallbackPos('GPS není k dispozici'); return; }
+  if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+  watchId = navigator.geolocation.watchPosition(
+    (p) => setPos(p.coords.latitude, p.coords.longitude, 'gps'),
+    (e) => fallbackPos(e.code===1 ? 'GPS odmítnuto' : 'GPS nedostupné'),
+    { enableHighAccuracy: true, maximumAge: 15000, timeout: 20000 }
+  );
+}
+function fallbackPos(why){
+  if (S.pos && S.posMode==='gps') return; // už máme, jen výpadek
+  const l = S.store.lastPos;
+  if (l) { setPos(l.lat, l.lng, 'last'); toast(`${why} — poslední známá poloha`); }
+  else { setPos(SIM[0][1], SIM[0][2], 'sim'); toast(`${why} — nastav polohu ručně (tap na GPS)`); }
+}
+function openPosSheet(){
+  const cur = S.store.sim ? SIM.findIndex(s=>s[1]===S.store.sim.lat && s[2]===S.store.sim.lng) : -1;
+  $('#posPanel').innerHTML = `
+    <h2>Kde jsem</h2>
+    <div class="sub">${S.pos ? `${S.pos.lat.toFixed(4)}, ${S.pos.lng.toFixed(4)} · ${S.posMode}` : 'poloha neznámá'}</div>
+    <div class="btns"><button class="btn primary" id="useGps">📡 Použít GPS</button></div>
+    <label class="l">Simulovaná poloha (test z Podolí / bez signálu)</label>
+    <select id="simSel"><option value="">— vypnuto —</option>${SIM.map((s,i)=>`<option value="${i}" ${i===cur?'selected':''}>${esc(s[0])}</option>`).join('')}</select>
+    <label class="l">nebo souřadnice „lat, lng"</label>
+    <input type="text" id="simTxt" placeholder="36.27, -121.81">
+    <div class="btns"><button class="btn" id="simOk">Nastavit</button><button class="btn" id="posClose">Zavřít</button></div>`;
+  $('#posSheet').classList.add('open');
+  $('#useGps').onclick = () => { S.store.sim = null; save(); $('#posSheet').classList.remove('open'); startGPS(); };
+  $('#posClose').onclick = () => $('#posSheet').classList.remove('open');
+  $('#simOk').onclick = () => {
+    const txt = $('#simTxt').value.trim(); const i = $('#simSel').value;
+    let lat, lng;
+    if (txt) { const m = txt.match(/(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)/); if (!m) return toast('formát: lat, lng'); lat=+m[1]; lng=+m[2]; }
+    else if (i !== '') { lat = SIM[i][1]; lng = SIM[i][2]; }
+    else { S.store.sim = null; save(); $('#posSheet').classList.remove('open'); startGPS(); return; }
+    S.store.sim = { lat, lng }; save(); if (watchId!==null) { navigator.geolocation.clearWatch(watchId); watchId=null; }
+    setPos(lat, lng, 'sim'); $('#posSheet').classList.remove('open');
+  };
+}
+
+// ====================== VÝPOČET SEZNAMU ======================
+function computed(){
+  if (!S.pos) return [];
+  const out = [];
+  for (const p of S.places) {
+    const km = hav(S.pos, p);
+    if (km > S.range) continue;
+    if (S.south && p.lat > S.pos.lat + 0.05) continue;
+    if (S.rank1 && p.rank !== 1) continue;
+    if (S.filters.size) {
+      let ok = false;
+      for (const f of FILTERS) if (S.filters.has(f.id) && (f.cats.includes(p.category) || (f.swim && swimOK(p)))) { ok = true; break; }
+      if (!ok) continue;
+    }
+    out.push({ p, km, b: bearing(S.pos, p) });
+  }
+  out.sort((a, b) => a.km - b.km);
+  return out;
+}
+
+// ====================== RENDER ======================
+function render(){
+  renderNav();
+  $('#toolbar').innerHTML = S.tab==='near' ? toolbarNear() : '';
+  const m = $('#main');
+  if (S.tab === 'near') renderNear(m);
+  else m.innerHTML = `<div class="soon">${{loops:'Odbočky',map:'Mapa',plan:'Plán & deník',docs:'Papíry'}[S.tab]} — brzy. 🥥</div>`;
+}
+function renderNav(){
+  const tabs = [['near','📍','Kolem mě'],['loops','🔁','Odbočky'],['map','🗺','Mapa'],['plan','📝','Plán'],['docs','📄','Papíry']];
+  $('#nav').innerHTML = tabs.map(t=>`<button data-tab="${t[0]}" class="${S.tab===t[0]?'on':''}"><span>${t[1]}</span>${t[2]}</button>`).join('');
+}
+function toolbarNear(){
+  return `<div class="chips">
+    ${RANGES.map(r=>`<button class="chip range ${S.range===r?'on':''}" data-range="${r}">${r} km</button>`).join('')}
+    <button class="chip ${S.south?'on':''}" data-toggle="south">⬇ jen dál po trase</button>
+    <button class="chip ${S.rank1?'on':''}" data-toggle="rank1">⭐ jen top</button>
+  </div>
+  <div class="chips">${FILTERS.map(f=>`<button class="chip ${f.cls||''} ${S.filters.has(f.id)?'on':''}" data-filter="${f.id}">${f.l}</button>`).join('')}</div>`;
+}
+function quickHtml(){
+  if (!S.pos) return '';
+  const q = (what) => `https://www.google.com/maps/search/${what}/@${S.pos.lat.toFixed(5)},${S.pos.lng.toFixed(5)},13z`;
+  return `<div class="quick"><a href="${q('gas+station')}" target="_blank" rel="noopener">⛽ Pumpa</a><a href="${q('motel')}" target="_blank" rel="noopener">🛏 Motel</a><a href="${q('restaurant')}" target="_blank" rel="noopener">🍽 Jídlo</a><a href="${q('grocery+store')}" target="_blank" rel="noopener">🏪 Obchod</a></div>`;
+}
+function renderNear(m){
+  const list = computed();
+  $('#count').textContent = S.pos ? `${list.length}/${S.places.length}` : '';
+  let html = quickHtml();
+  if (!S.pos) html += `<div class="empty">Čekám na polohu…<br><small>nebo tapni na GPS vpravo nahoře a nastav ji ručně</small></div>`;
+  else if (!list.length) {
+    const next = RANGES.find(r => r > S.range);
+    html += `<div class="empty">V dosahu ${S.range} km nic.<br>${next ? `<button class="btn" data-range="${next}" style="margin-top:12px">Rozšířit na ${next} km</button>` : 'Zkus vypnout filtry.'}</div>`;
+  } else {
+    html += list.slice(0, S.shown).map(itemHtml).join('');
+    if (list.length > S.shown) html += `<button class="more" id="more">zobrazit další (${list.length - S.shown})</button>`;
+  }
+  m.innerHTML = html;
+}
+function itemHtml({ p, km, b }){
+  const visited = S.store.visited[p.id];
+  const icons = [];
+  if (swimOK(p)) icons.push('<span class="w">💧</span>');
+  if (p.road_access === 'gravel_ok_sedan') icons.push('🚗 štěrk');
+  if (p.road_access === 'rough_caution') icons.push('<span class="f">⚠ špatná cesta</span>');
+  if (p.road_access === 'ford') icons.push('<span class="f">⚠ brod</span>');
+  if (p.fee && !/zdarma|^0|none|null/i.test(p.fee)) icons.push('$');
+  if (S.store.plan.includes(p.id)) icons.push('➕ v plánu');
+  if (visited) icons.push('✓');
+  return `<div class="item" data-id="${p.id}">
+    <div class="thumb c-${p.category}">${p.photo_local ? `<img src="photos/${p.id}.jpg" loading="lazy" alt="">` : (CATS[p.category]||'📍')}${p.region ? `<span class="badge">${esc(p.region)}</span>` : ''}</div>
+    <div class="body">
+      <div class="t"><div class="name">${esc(p.name)}</div><div class="star">${'★'.repeat(4 - p.rank)}</div></div>
+      <div class="meta"><span class="dist">${fmtKm(km)} <span class="arrow" style="transform:rotate(${Math.round(b)}deg)">↑</span> ${dirName(b)}</span><span>~${fmtMin(driveMin(km, p.road_access))}</span><span>${CATS[p.category]||''} ${esc(p.subcategory||p.category)}</span></div>
+      <div class="why">${esc(p.why_bob)}</div>
+      ${icons.length ? `<div class="icons">${icons.join(' · ')}</div>` : ''}
+    </div></div>`;
+}
+
+// ====================== DETAIL ======================
+function openDetail(id){
+  const p = S.places.find(x => x.id === id); if (!p) return;
+  const km = S.pos ? hav(S.pos, p) : null, b = S.pos ? bearing(S.pos, p) : null;
+  const online = navigator.onLine;
+  const rows = [];
+  if (p.time_needed) rows.push(['čas', p.time_needed]);
+  if (p.effort && p.effort.type && p.effort.type !== 'none') rows.push(['námaha', `${{walk:'procházka',hike:'túra',drive:'jízda'}[p.effort.type]||p.effort.type} · ${p.effort.distance_km ?? '?'} km · ↑${p.effort.elevation_m ?? '?'} m · ${{easy:'lehké',moderate:'střední',hard:'těžké'}[p.effort.difficulty]||p.effort.difficulty||''}`]);
+  const roadTxt = { paved:'asfalt', gravel_ok_sedan:'štěrk, sedan ok', rough_caution:'⚠ špatná cesta — pomalu, zvaž', ford:'⚠ brod — koncem září mělké; rozhodni očima, jinak pěšky' }[p.road_access] || p.road_access;
+  rows.push(['cesta', roadTxt, /⚠/.test(roadTxt)]);
+  if (p.fee) rows.push(['vstup', p.fee]);
+  if (p.best_time) rows.push(['kdy', p.best_time]);
+  if (p.nearest_town) rows.push(['město', p.nearest_town]);
+  const sw = p.swim || {};
+  const swimHtml = sw.possible ? `<div class="box ${sw.legal==='prohibited'?'red':'water'}"><h4>💧 Koupání${sw.legal==='prohibited'?' — ZAKÁZÁNO':''}</h4>
+    ${sw.water ? `voda: ${esc(sw.water)} · ` : ''}${sw.temp_c_sept_oct ? `${esc(sw.temp_c_sept_oct)} °C · ` : ''}${sw.legal ? `${{allowed:'povoleno',tolerated:'tolerováno',prohibited:'zakázáno',unknown:'neznámo'}[sw.legal]||sw.legal} · ` : ''}${sw.solitude ? `samota: ${{high:'vysoká',medium:'střední',low:'nízká'}[sw.solitude]||sw.solitude}` : ''}
+    ${sw.safety ? `<div style="color:var(--warn);margin-top:4px">⚠ ${esc(sw.safety)}</div>` : ''}</div>` : (sw.safety ? `<div class="box red">⚠ ${esc(sw.safety)}</div>` : '');
+  const visited = S.store.visited[p.id]; const inPlan = S.store.plan.includes(p.id);
+  const geo = `geo:${p.lat},${p.lng}?q=${p.lat},${p.lng}(${encodeURIComponent(p.name)})`;
+  $('#panel').innerHTML = `
+    <div class="hero c-${p.category}">${p.photo_local ? `<img src="photos/${p.id}.jpg" alt="">` : (CATS[p.category]||'📍')}<button class="close" id="close">✕</button>${p.photo_local && p.photo ? `<div class="credit">${esc(p.photo.credit||'')} ${esc(p.photo.license||'')}</div>` : ''}</div>
+    <div class="pad">
+      <h2>${esc(p.name)}</h2>
+      <div class="sub">${esc(p.nearest_town||'')} · ${esc(p.region)} · ${'★'.repeat(4-p.rank)}${km!=null ? ` · ${fmtKm(km)} ${dirName(b)} · ~${fmtMin(driveMin(km, p.road_access))}` : ''}</div>
+      <div class="whybig">${esc(p.why_bob)}</div>
+      <div class="desc">${esc(p.description)}</div>
+      ${p.season_note_2026 ? `<div class="box yellow"><h4>2026</h4>${esc(p.season_note_2026)}</div>` : ''}
+      ${swimHtml}
+      <div class="rows">${rows.map(r=>`<div class="row ${r[2]?'warn':''}"><div class="k">${r[0]}</div><div class="v">${esc(r[1])}</div></div>`).join('')}</div>
+      <div class="btns">
+        <a class="btn primary" href="${online ? esc(p.links.maps) : '#'}" ${online ? 'target="_blank" rel="noopener"' : 'id="offlineNav"'}>🧭 Naviguj${online ? '' : ' (offline)'}</a>
+        <a class="btn" href="${geo}">📱 Mapy app</a>
+        ${p.links.official ? `<a class="btn" href="${esc(p.links.official)}" target="_blank" rel="noopener">🌐 Web</a>` : ''}
+        ${p.links.wiki ? `<a class="btn" href="${esc(p.links.wiki)}" target="_blank" rel="noopener">📖 Wiki</a>` : ''}
+      </div>
+      <div class="btns">
+        <button class="btn ${inPlan?'on':''}" id="planBtn">${inPlan ? '✓ V plánu' : '➕ Do plánu'}</button>
+        <button class="btn ${visited?'on':''}" id="visitBtn">${visited ? `✓ Byl jsem ${visited}` : '✓ Byl jsem tu'}</button>
+        <button class="btn" id="copyBtn">📋 ${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}</button>
+      </div>
+      <label class="l">📝 Poznámka</label>
+      <textarea id="note" placeholder="…">${esc(S.store.notes[p.id]||'')}</textarea>
+      <div class="tags">${(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
+      <div class="sub" style="margin-top:10px">${p.id}${p.aliases ? ' · ' + p.aliases.join(', ') : ''}</div>
+    </div>`;
+  $('#sheet').classList.add('open');
+  $('#close').onclick = closeDetail;
+  const on = $('#offlineNav'); if (on) on.onclick = (e) => { e.preventDefault(); copy(`${p.lat},${p.lng}`); toast('Offline — souřadnice zkopírovány'); };
+  $('#copyBtn').onclick = () => { copy(`${p.lat},${p.lng}`); toast('Souřadnice zkopírovány'); };
+  $('#planBtn').onclick = () => { const i = S.store.plan.indexOf(p.id); i<0 ? S.store.plan.push(p.id) : S.store.plan.splice(i,1); save(); openDetail(id); render(); };
+  $('#visitBtn').onclick = () => {
+    if (S.store.visited[p.id]) { delete S.store.visited[p.id]; }
+    else { S.store.visited[p.id] = new Date().toISOString().slice(0,10); if (p.rank === 1) pina(); }
+    save(); openDetail(id); render();
+  };
+  $('#note').oninput = (e) => { const v = e.target.value; if (v) S.store.notes[p.id] = v; else delete S.store.notes[p.id]; save(); };
+}
+function closeDetail(){ $('#sheet').classList.remove('open'); }
+function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Zkopíruj:', t); } }
+
+// ====================== EVENTY ======================
+document.addEventListener('click', (e) => {
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],#more');
+  if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
+  if (t.dataset.tab) { S.tab = t.dataset.tab; S.shown = 100; render(); window.scrollTo(0,0); }
+  else if (t.dataset.range) { S.range = +t.dataset.range; S.store.range = S.range; save(); S.shown = 100; render(); }
+  else if (t.dataset.toggle) { S[t.dataset.toggle] = !S[t.dataset.toggle]; S.shown = 100; render(); }
+  else if (t.dataset.filter) { const f = t.dataset.filter; S.filters.has(f) ? S.filters.delete(f) : S.filters.add(f); S.shown = 100; render(); }
+  else if (t.dataset.id) openDetail(t.dataset.id);
+  else if (t.id === 'more') { S.shown += 100; render(); }
+});
+$('#gpsBtn').onclick = openPosSheet;
+window.addEventListener('online', () => toast('Online'));
+window.addEventListener('offline', () => toast('Offline — Naviguj ukáže souřadnice'));
+
+// ====================== START ======================
+async function init(){
+  countdown(); setInterval(countdown, 60000);
+  S.range = S.store.range || 100;
+  render();
+  try {
+    const [pl, lo] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json())]);
+    S.places = pl; S.loops = lo;
+  } catch(e) { $('#main').innerHTML = `<div class="empty">Nepodařilo se načíst data.<br><small>${esc(e.message)}</small></div>`; return; }
+  startGPS();
+  render();
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+}
+init();
+</script>
+</body>
+</html>
