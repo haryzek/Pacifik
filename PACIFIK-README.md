@@ -67,5 +67,14 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 ## Lokální běh
 `npx serve -l 8765 .` (nebo `.claude/launch.json` → preview „pacifik").
 
-## Instalace na mobil (až bude sw.js)
-Chrome → otevřít URL → menu → Přidat na plochu → otevřít z plochy ONLINE → počkat na „Offline připraveno ✓".
+## Pro Boba — instalace a provoz
+1. Chrome na mobilu → https://haryzek.github.io/Pacifik/ → **⬇ Instalovat appku** (nebo menu ⋮ → Přidat na plochu / Instalovat).
+2. Otevři z plochy **online** a počkej na toast **„Offline připraveno ✓"** (stahuje ~18 MB fotek, 1–3 min na wifi).
+3. Test: letadlový režim → Kolem mě, detail s fotkou, Odbočky, Papíry musí jet. Mapa offline = jen tečky + kusy podkladu z paměti.
+4. Nová verze: appka ji zkontroluje při každém otevření → toast „Nová verze — tapni". Ručně: GPS/FIX vpravo nahoře → 🔄. Když se to zasekne, otevři adresu v normálním Chromu a obnov (sdílí cache).
+5. **Každý večer Plán → 💾 Záloha → Export JSON** a pošli si ho mailem. Chrome „Vymazat data" smaže plán, deník i útratu.
+6. Špatná fotka → v detailu 🚫 → seznam id v Záloze → pošli Kokosákovi.
+7. Chybí místo / je zavřené / cokoli → napiš, doplním z motelu; po pushi ti stačí obnovit.
+8. Poloha: GPS je default. 📌 Jsem tu (detail) nebo 📌 na mapě = FIX. Zpět na GPS: GPS/FIX → 📡 Použít GPS.
+
+Doplnit před odletem: ČSOB asistenční linka (Papíry → poznámky).
