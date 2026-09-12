@@ -1,0 +1,209 @@
+[
+  {
+    "name": "Strawberry Hill Wayside",
+    "lat": 44.2540,
+    "lng": -124.1118,
+    "category": "coast",
+    "why": "Malý nenápadný sjezd z 101 vede na skalnaté pobřeží s výbornými tidepooly, tuleni a dramatickým příbojem, ideální při odlivu.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Bob Creek Wayside",
+    "lat": 44.2443,
+    "lng": -124.1121,
+    "category": "geology",
+    "why": "Krátký stop u potoka ústícího mezi skalami nabízí při odlivu acháty, zkameněliny, tidepooly a podstatně méně lidí než známější místa kolem Yachats.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Stonefield Beach State Recreation Site",
+    "lat": 44.2250,
+    "lng": -124.1106,
+    "category": "coast",
+    "why": "Dlouhá téměř prázdná pláž rozdělená ústím Tenmile Creek je dobrý antidot k vyhlídkám plným aut a působí syrově hlavně v mlze a větru.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Sweet Creek Falls Trailhead",
+    "lat": 43.9514,
+    "lng": -123.9014,
+    "category": "waterfall",
+    "why": "Zhruba půlhodinová odbočka do Coast Range vede stezkou kolem série jedenácti kaskád a 70stopého Sweet Creek Falls v hustém vlhkém lese.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Taylor Dunes Trailhead",
+    "lat": 43.8610,
+    "lng": -124.1413,
+    "category": "geology",
+    "why": "Méně navštěvovaný vstup do Oregon Dunes vede pěšky přes les až do otevřeného písku bez hlavního provozu dunových bugin.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/r06/siuslaw/recreation/taylor-dunes-trailhead"
+  },
+  {
+    "name": "Books by the Bay",
+    "lat": 43.4083,
+    "lng": -124.2237,
+    "category": "culture",
+    "why": "Velké nezávislé knihkupectví s novými i použitými knihami a lokální atmosférou je jeden z mála kulturních stopů na tomto úseku, kvůli kterému má smysl zastavit v North Bend.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Egyptian Theatre",
+    "lat": 43.3668,
+    "lng": -124.2135,
+    "category": "culture",
+    "why": "Dochované egyptské kino z roku 1925 s původním interiérem dává centru Coos Bay přesně ten lehce bizarní starý americký filmový vibe, který na 101 skoro zmizel.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Egyptian_Theatre_(Coos_Bay,_Oregon)"
+  },
+  {
+    "name": "7 Devils Brewing Co. Public House",
+    "lat": 43.3666,
+    "lng": -124.2150,
+    "category": "culture",
+    "why": "Lokální pub pravidelně hostí živé místní i touring kapely, takže je to rozumný večerní check na rock, blues nebo songwritery místo sterilního turistického baru.",
+    "swim": "no",
+    "url": "https://7devilsbrewery.com/brewery-and-tap-room/"
+  },
+  {
+    "name": "Golden and Silver Falls State Natural Area",
+    "lat": 43.4820,
+    "lng": -123.9333,
+    "category": "waterfall",
+    "why": "Čtyřicet minut do vnitrozemí končí dvojicí vysokých vodopádů v odlehlém starém lese, což je jeden z mála zdejších inland detourů opravdu hodných opuštění 101.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Whiskey Run Beach",
+    "lat": 43.2108,
+    "lng": -124.3939,
+    "category": "coast",
+    "why": "Dlouhá divoká pláž dostupná po Seven Devils Road bývá skoro prázdná a umožňuje jít několik kilometrů pod útesy směrem k Fivemile Point.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Fivemile Point",
+    "lat": 43.2202,
+    "lng": -124.3978,
+    "category": "geology",
+    "why": "Nízký ostroh z nakloněných vrstev horniny, skalních jehel a reefů je z Whiskey Run dosažitelný pěšky po pláži a obejít ho lze bezpečně jen kolem odlivu.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Langlois Market & Deli",
+    "lat": 42.9277,
+    "lng": -124.4502,
+    "category": "food_gem",
+    "why": "Starý venkovský market fungující od roku 1949 se svým známým hot dogem působí spíš jako živá roadside Amerika než jako atrakce vytvořená pro turisty.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Floras Lake — Boice Cope Park",
+    "lat": 42.9030,
+    "lng": -124.5020,
+    "category": "lake_river",
+    "why": "Mělké sladkovodní jezero pár set metrů od Pacifiku má snadný veřejný přístup a je jedno z nejlepších míst regionu na skutečné koupání bez oceánského příboje.",
+    "swim": "lake",
+    "url": "https://en.wikipedia.org/wiki/Floras_Lake"
+  },
+  {
+    "name": "Blacklock Point",
+    "lat": 42.9030,
+    "lng": -124.5020,
+    "category": "coast",
+    "why": "Z Boice Cope vede několikakilometrová pěší cesta k izolovanému útesu s Tower Rock, mořskými komíny a dlouhou linií pustých pobřežních stěn.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Edson Creek Campground — Sixes River",
+    "lat": 42.8152,
+    "lng": -124.4109,
+    "category": "lake_river",
+    "why": "Pouhé čtyři míle od 101 je veřejný přístup k Sixes River, kde BLM výslovně uvádí swimming, takže je to praktická sladkovodní zastávka bez velkého detouru.",
+    "swim": "river",
+    "url": "https://www.blm.gov/visit/edson-creek-campground"
+  },
+  {
+    "name": "Sisters Rock State Park",
+    "lat": 42.5929,
+    "lng": -124.3998,
+    "category": "geology",
+    "why": "Neudržovaný a snadno přehlédnutelný kus pobřeží má obrovské skalní bloky, zbytky starých důlních cest a mnohem opuštěnější charakter než známé Boardmanovy zastávky.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Arizona Beach State Recreation Site",
+    "lat": 42.6194,
+    "lng": -124.3999,
+    "category": "coast",
+    "why": "Krátká písečná pláž sevřená dvěma skalnatými ostrohy je chráněná před větrem a bývá překvapivě klidná vzhledem k tomu, že leží přímo u 101.",
+    "swim": "ocean",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=188"
+  },
+  {
+    "name": "Ophir Beach",
+    "lat": 42.5499,
+    "lng": -124.3958,
+    "category": "coast",
+    "why": "Široká neurbanizovaná pláž severně od Gold Beach je hlavně prostor, vítr a horizont, tedy přesně typ místa, kde má smysl ignorovat slavnější viewpointy a jen jít.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Lobster Creek Campground — Rogue River",
+    "lat": 42.5015,
+    "lng": -124.2960,
+    "category": "lake_river",
+    "why": "Deset mil proti proudu od Gold Beach vede silnice k velké štěrkové lavici přímo na Rogue River, kde je oficiálně možné plavat a často je tu výrazně tepleji než u oceánu.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Quosatana Campground — Rogue River",
+    "lat": 42.4977,
+    "lng": -124.2321,
+    "category": "lake_river",
+    "why": "O něco dál v kaňonu Rogue je rozlehlý říční bar s veřejným day-use přístupem a koupáním, vhodný když chce od pobřeží zmizet na pár hodin do lesa a sladké vody.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "China Beach — North Island Viewpoint Trailhead",
+    "lat": 42.1700,
+    "lng": -124.3598,
+    "category": "coast",
+    "why": "Nenápadný pullout nad Thomas Creek Bridge dává přístup na jednu z nejopuštěnějších pláží Boardman Corridoru, sevřenou strmými svahy a plnou mořských komínů.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Chetco Point Park",
+    "lat": 42.0458,
+    "lng": -124.2897,
+    "category": "coast",
+    "why": "Krátká pěší cesta z Brookings vede přes dřevěný most na téměř ostrovní skalní výběžek s 360° pobřežními výhledy, tidepooly a pohledem ke St. George Reef Lighthouse.",
+    "swim": "ocean",
+    "url": "https://www.brookings.or.us/facilities/Facility/Details/6"
+  },
+  {
+    "name": "McVay Rock State Recreation Site",
+    "lat": 42.0199,
+    "lng": -124.2359,
+    "category": "coast",
+    "why": "Jižně od Brookings vede krátká cesta z nenápadného parkoviště na téměř prázdnou tmavou pláž s balvany a výhledem k hranici Kalifornie.",
+    "swim": "ocean",
+    "url": null
+  }
+]

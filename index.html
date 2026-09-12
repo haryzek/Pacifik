@@ -363,7 +363,7 @@ function openDetail(id){
       <h2>${esc(p.name)}</h2>
       <div class="sub">${esc(p.nearest_town||'')} · ${esc(p.region)} · ${'★'.repeat(4-p.rank)}${km!=null ? ` · ${fmtKm(km)} ${dirName(b)} · ~${fmtMin(driveMin(km, p.road_access))}` : ''}</div>
       <div class="whybig">${esc(p.why_bob)}</div>
-      <div class="desc">${esc(p.description)}</div>
+      ${p.description ? `<div class="desc">${esc(p.description)}</div>` : ''}
       ${p.season_note_2026 ? `<div class="box yellow"><h4>2026</h4>${esc(p.season_note_2026)}</div>` : ''}
       ${swimHtml}
       <div class="rows">${rows.map(r=>`<div class="row ${r[2]?'warn':''}"><div class="k">${r[0]}</div><div class="v">${esc(r[1])}</div></div>`).join('')}</div>
@@ -424,7 +424,34 @@ async function init(){
   } catch(e) { $('#main').innerHTML = `<div class="empty">Nepodařilo se načíst data.<br><small>${esc(e.message)}</small></div>`; return; }
   startGPS();
   render();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+  initSW();
+}
+
+// ====================== PWA / OFFLINE ======================
+let installPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installPrompt = e; showInstall(); });
+function showInstall(){
+  if (!installPrompt || document.getElementById('installBtn')) return;
+  const b = document.createElement('button'); b.id = 'installBtn'; b.className = 'chip on'; b.textContent = '⬇ Instalovat appku';
+  b.style.cssText = 'position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--sab) + 70px);z-index:25;box-shadow:0 4px 16px rgba(0,0,0,.5)';
+  b.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; b.remove(); };
+  document.body.appendChild(b);
+}
+function initSW(){
+  if (!('serviceWorker' in navigator)) return;
+  navigator.serviceWorker.addEventListener('message', (e) => {
+    const m = e.data || {};
+    if (m.type === 'progress') $('#gpsTxt').title = `offline ${m.done}/${m.total}`;
+    if (m.type === 'ready') { S.store.offlineReady = m.version; save(); toast('Offline připraveno ✓', 3000); }
+    if (m.type === 'activated' && S.store.offlineReady && S.store.offlineReady !== m.version) { S.store.offlineReady = m.version; save(); toast('Nová verze — obnov stránku', 5000); }
+  });
+  navigator.serviceWorker.register('sw.js').then((reg) => {
+    reg.addEventListener('updatefound', () => {
+      const w = reg.installing; if (!w) return;
+      w.addEventListener('statechange', () => { if (w.state === 'installed' && navigator.serviceWorker.controller) toast('Nová verze stažena — obnov stránku', 5000); });
+    });
+  }).catch(() => {});
+  if (navigator.serviceWorker.controller && S.store.offlineReady) $('#gpsTxt').title = 'offline ✓';
 }
 init();
 </script>

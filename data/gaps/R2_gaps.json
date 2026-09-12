@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Rooster Rock State Park — Clothing-Optional Beach",
+    "lat": 45.5446,
+    "lng": -122.236,
+    "category": "lake_river",
+    "why": "Na východním konci parku je oficiální clothing-optional pláž na Columbii, takže je to jeden z mála míst v regionu, kde můžeš legitimně spojit říční koupání a nahotu.",
+    "swim": "river",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=126"
+  },
+  {
+    "name": "Lewis and Clark State Recreation Site — Sandy River Swim Hole",
+    "lat": 45.541,
+    "lng": -122.377,
+    "category": "lake_river",
+    "why": "U ústí Sandy River je veřejně přístupná oblíbená koupací tůň s kamenitým břehem, která dává smysl jako rychlá studená koupel před vjezdem do Gorge.",
+    "swim": "river",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=116"
+  },
+  {
+    "name": "Trask River County Campground — River Access",
+    "lat": 45.4411,
+    "lng": -123.6113,
+    "category": "lake_river",
+    "why": "Dvanáct mil ve vnitrozemí od Tillamooku dostaneš přímý přístup k čisté lesní řece, kde se běžně koupe, a atmosféru výrazně divočejší než u pobřežních parkovišť.",
+    "swim": "river",
+    "url": "https://www.tillamookcounty.gov/parks/page/trask-river-county-campground"
+  },
+  {
+    "name": "Mayer State Park — West Mayer Cove",
+    "lat": 45.6749,
+    "lng": -121.274,
+    "category": "lake_river",
+    "why": "Na suchém východním konci Gorge je chráněná zátoka Columbie přímo určená ke koupání, pod ponderosami a skalnatými svahy Roweny.",
+    "swim": "river",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=117"
+  },
+  {
+    "name": "Lost Lake",
+    "lat": 45.48984,
+    "lng": -121.822578,
+    "category": "lake_river",
+    "why": "Studené horské jezero pod Mount Hoodem s povoleným koupáním a klasickým výhledem na sopku stojí za větší odbočku, pokud budeš chtít jeden pořádný lake swim.",
+    "swim": "lake",
+    "url": "https://www.recreation.gov/camping/campgrounds/251434"
+  },
+  {
+    "name": "Happy Camp Beach Access",
+    "lat": 45.440206,
+    "lng": -123.954535,
+    "category": "coast",
+    "why": "Plochý přístup na písek přesně v místě, kde se Netarts Bay otevírá do Pacifiku, nabízí komornější pobřežní vodu než otevřené surfové pláže, ale pořád je nutné respektovat přílivové proudy.",
+    "swim": "ocean",
+    "url": "https://www.tillamookcounty.gov/parks"
+  },
+  {
+    "name": "Bayocean Peninsula Park",
+    "lat": 45.51958,
+    "lng": -123.94758,
+    "category": "oddity",
+    "why": "Dlouhý skoro prázdný písečný spit vede přes místo zaniklého letoviska Bayocean, které postupně sežral oceán, takže tu máš ghost town bez kýče, duny, les a divokou pláž.",
+    "swim": "ocean",
+    "url": "https://www.tillamookcounty.gov/parks"
+  },
+  {
+    "name": "Bayocean Townsite",
+    "lat": 45.52701,
+    "lng": -123.95176,
+    "category": "oddity",
+    "why": "Pár nenápadných stop v křoví označuje centrum dávno zmizelého města Bayocean, což je mnohem víc McCarthy než klasická turistická historická atrakce.",
+    "swim": "no",
+    "url": "https://www.oregonhikers.org/field_guide/Bayocean_Townsite"
+  },
+  {
+    "name": "Barview Jetty County Campground — North Jetty Access",
+    "lat": 45.569297,
+    "lng": -123.944862,
+    "category": "coast",
+    "why": "Pěšky se odsud dostaneš k masivnímu severnímu jetty Tillamook Bay, dunám a syrovému pobřeží s nákladními loděmi, větrem a industriálně-oceánskou atmosférou.",
+    "swim": "no",
+    "url": "https://www.tillamookcounty.gov/parks"
+  },
+  {
+    "name": "Bob Straub State Park",
+    "lat": 45.1791,
+    "lng": -123.96411,
+    "category": "coast",
+    "why": "Za Pacific City pokračuje silnice do slepé ulice a dál už je jen dlouhý Nestucca Spit, oceán a estuár, takže je to dobrý únik od lidí kolem Cape Kiwanda.",
+    "swim": "ocean",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=77"
+  },
+  {
+    "name": "Fogarty Creek State Recreation Area",
+    "lat": 44.8426,
+    "lng": -124.0481,
+    "category": "coast",
+    "why": "Malý potok tu protéká lesem do úzké pláže sevřené skalami, takže dostaneš intimní cove, balvany a tidepools místo další nekonečné písečné pláže.",
+    "swim": "ocean",
+    "url": "https://stateparks.oregon.gov/"
+  },
+  {
+    "name": "Roads End State Recreation Site",
+    "lat": 45.008486,
+    "lng": -124.008028,
+    "category": "coast",
+    "why": "Na úplném severním konci Lincoln City silnice skutečně končí a pláž pokračuje pod útesy dál, což z místa dělá příjemný přechod z města do prázdnějšího pobřeží.",
+    "swim": "ocean",
+    "url": "https://stateparks.oregon.gov/"
+  },
+  {
+    "name": "Boiler Bay State Scenic Viewpoint",
+    "lat": 44.82789,
+    "lng": -124.06456,
+    "category": "geology",
+    "why": "Černé vulkanické útesy a rozbitá zátoka nad místem vraku parníku J. Marhoffer dávají rychlou dávku drsné pobřežní geologie těsně před Depoe Bay.",
+    "swim": "no",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=153"
+  },
+  {
+    "name": "Munson Creek Falls",
+    "lat": 45.36222,
+    "lng": -123.76889,
+    "category": "waterfall",
+    "why": "Krátká odbočka z 101 vede do temného Coast Range lesa k zhruba stometrovému vícepatrovému vodopádu, který je výrazně monumentálnější než jeho nenápadná poloha naznačuje.",
+    "swim": "no",
+    "url": "https://stateparks.oregon.gov/"
+  },
+  {
+    "name": "Timberline Lodge",
+    "lat": 45.33112,
+    "lng": -121.711128,
+    "category": "culture",
+    "why": "Skutečný exteriér Overlook Hotelu z Kubrickova The Shining sedí ve výšce 1800 metrů přímo na svahu Mount Hoodu a kvůli filmu i samotné stavbě je to jasná odbočka.",
+    "swim": "no",
+    "url": "https://www.timberlinelodge.com/"
+  },
+  {
+    "name": "Sherrard Point — Larch Mountain",
+    "lat": 45.53271,
+    "lng": -122.0878,
+    "category": "mountain",
+    "why": "Silnice vystoupá na vyhaslou sopku Boring Lava Field a posledních pár set metrů pěšky vede na skalní bod, odkud za čistého počasí uvidíš pět velkých kaskádových vulkánů.",
+    "swim": "no",
+    "url": "https://www.oregonhikers.org/field_guide/Larch_Mountain_(Oregon)"
+  },
+  {
+    "name": "Mosier Twin Tunnels — Mark O. Hatfield West Trailhead",
+    "lat": 45.7034,
+    "lng": -121.4873,
+    "category": "scenic_drive",
+    "why": "Ze starého highway trailheadu dojdeš po opuštěné původní Columbia Highway k dvojici tunelů vysekaných ve skále, se starou silniční architekturou a výhledy na suchou část Gorge.",
+    "swim": "no",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=113"
+  },
+  {
+    "name": "Mitchell Point Tunnel",
+    "lat": 45.704096,
+    "lng": -121.616839,
+    "category": "scenic_drive",
+    "why": "Nově obnovený pěší tunel nahrazuje legendární část původní Columbia Highway a jeho pět skalních oken nad řekou je přesně ten druh staré silniční infrastruktury, kvůli které stojí za to zastavit.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Mitchell_Point_Tunnel"
+  },
+  {
+    "name": "The Palms Motel",
+    "lat": 45.5497,
+    "lng": -122.6812,
+    "category": "motel_gem",
+    "why": "Fungující levný roadside motel na staré US-99W si pořád drží obří neonovou palmu s opicí, takže za soumraku dostaneš jeden z nejlepších Hopper-meets-Googie obrazů v Portlandu.",
+    "swim": "no",
+    "url": "https://www.palmsmotel.com/"
+  },
+  {
+    "name": "Whistling Winds Motel",
+    "lat": 44.9958,
+    "lng": -124.0086,
+    "category": "motel_gem",
+    "why": "Nenápadný šestnáctipokojový motor court z 30. let schovaný v obytné části Lincoln City má skutečně staré cottages a vintage studios místo současného pseudo-retro designu.",
+    "swim": "no",
+    "url": "https://www.whistlingwindsmotel.com/"
+  },
+  {
+    "name": "Mississippi Records",
+    "lat": 45.560558,
+    "lng": -122.674919,
+    "category": "culture",
+    "why": "Malý kultovní obchod a label má mimořádně silný výběr blues, soulu, psychedelie, folku a obskurních nahrávek, takže pro tvoje hudební chutě je zajímavější než běžný velký record store.",
+    "swim": "no",
+    "url": "https://mississippirecords.net/"
+  },
+  {
+    "name": "Music Millennium",
+    "lat": 45.522603,
+    "lng": -122.631997,
+    "category": "culture",
+    "why": "Portlandský nezávislý record store funguje od roku 1969 a má hluboký katalog rocku, psychedelie, soulu i blues, takže tady nejde jen o další obchod s novými vinyly.",
+    "swim": "no",
+    "url": "https://musicmillennium.com/"
+  },
+  {
+    "name": "Laurelthirst Public House",
+    "lat": 45.526291,
+    "lng": -122.63475,
+    "category": "culture",
+    "why": "Malý sousedský pub s živou hudbou prakticky každý den dlouhodobě sází na roots, blues, country, folk a jammy rock a pořád působí spíš jako lokální obývák než koncertní podnik.",
+    "swim": "no",
+    "url": "https://laurelthirst.com/"
+  },
+  {
+    "name": "Mother Foucault's Bookshop",
+    "lat": 45.517338,
+    "lng": -122.660172,
+    "category": "culture",
+    "why": "Chaotický nezávislý antikvariát zaměřený na filozofii, literaturu, poezii, umění a cizojazyčné knihy má mnohem víc intelektuálního bordelu a osobnosti než uhlazený bookstore.",
+    "swim": "no",
+    "url": "https://www.motherfoucaultsbookshop.com/"
+  },
+  {
+    "name": "Movie Madness Video",
+    "lat": 45.516389,
+    "lng": -122.617222,
+    "category": "culture",
+    "why": "Obří nezávislá videotéka zároveň funguje jako malé muzeum filmových artefaktů a má desítky tisíc titulů, takže pro člověka posedlého filmem je to podstatně zajímavější zastávka než klasické kino.",
+    "swim": "no",
+    "url": "https://moviemadness.org/"
+  },
+  {
+    "name": "Cathedral Park — St. Johns Bridge",
+    "lat": 45.5883,
+    "lng": -122.75799,
+    "category": "culture",
+    "why": "Pod obrovskými gotickými oblouky St. Johns Bridge vzniká skoro filmová industriální katedrála u Willamette, zvlášť silná v mlze nebo za šera.",
+    "swim": "no",
+    "url": "https://www.portland.gov/parks/cathedral-park"
+  },
+  {
+    "name": "The Alibi Tiki Lounge",
+    "lat": 45.5525,
+    "lng": -122.6813,
+    "category": "food_gem",
+    "why": "Tiki bar fungující od roku 1947 je autentický pozůstatek americké poválečné roadside exotiky, s neony, tmou a kýčem, který už působí spíš archeologicky než módně.",
+    "swim": "no",
+    "url": "https://alibiportland.com/"
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "name": "Madison Falls & Elwha River access",
+    "lat": 48.04103,
+    "lng": -123.59006,
+    "category": "waterfall",
+    "why": "Krátká zastávka u 18metrového vodopádu a zároveň nejjednodušší dnešní silniční přístup k divokému údolí Elwha po odstranění přehrad.",
+    "swim": "river",
+    "url": "https://www.nps.gov/places/000/madison-falls-trailhead.htm"
+  },
+  {
+    "name": "Fairholme — Lake Crescent west shore",
+    "lat": 48.0701,
+    "lng": -123.9181,
+    "category": "lake_river",
+    "why": "Západní konec Lake Crescent má přímý přístup z auta k hluboké ledovcové vodě a je lepší na spontánní studené plavání než většina vyhlídkových zastávek u jezera.",
+    "swim": "lake",
+    "url": "https://www.recreation.gov/camping/campgrounds/259084"
+  },
+  {
+    "name": "Dosewallips State Park — river access",
+    "lat": 47.696365,
+    "lng": -122.919457,
+    "category": "lake_river",
+    "why": "Přímo z US-101 se dá sejít k ledové horské řece Dosewallips, kde stát výslovně připouští koupání, i když proud může být silný.",
+    "swim": "river",
+    "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park"
+  },
+  {
+    "name": "Rocky Brook Falls",
+    "lat": 47.7189,
+    "lng": -122.9435,
+    "category": "waterfall",
+    "why": "Jen pár minut od auta vede lesem cesta k přibližně padesátimetrovému vodopádu padajícímu do skalnatého amfiteátru, takže poměr zajížďka–efekt je výbornej.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Hobuck Beach",
+    "lat": 48.33812,
+    "lng": -124.66468,
+    "category": "coast",
+    "why": "Dlouhá otevřená pláž na území Makah západně od Neah Bay nabízí vítr, mlhu, oceán a výrazně víc prázdna než nejznámější pláže Olympicu; pro vstup může být potřeba tribal recreation permit.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Fort Ebey State Park",
+    "lat": 48.2228,
+    "lng": -122.7615,
+    "category": "coast",
+    "why": "Bývalá pobřežní baterie na vysokém útesu kombinuje betonové tunely, driftwoodovou pláž, otevřený Strait of Juan de Fuca a možnost studeného koupání.",
+    "swim": "ocean",
+    "url": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
+  },
+  {
+    "name": "Ebey's Landing",
+    "lat": 48.19176,
+    "lng": -122.70795,
+    "category": "coast",
+    "why": "Holý travnatý bluff nad průlivem přechází do dlouhé oblázkové pláže a krajina tu má nezvykle otevřený, větrný a skoro stepní charakter.",
+    "swim": "ocean",
+    "url": "https://en.wikipedia.org/wiki/Ebey%27s_Landing_National_Historical_Reserve"
+  },
+  {
+    "name": "Joseph Whidbey State Park",
+    "lat": 48.30845,
+    "lng": -122.71308,
+    "category": "coast",
+    "why": "Nenápadná západní pláž Whidbey má přímý pohled přes Juan de Fuca k Olympic Mountains a stát ji uvádí i jako místo ke koupání.",
+    "swim": "ocean",
+    "url": "https://parks.wa.gov/find-parks/state-parks/joseph-whidbey-state-park"
+  },
+  {
+    "name": "Bowman Bay",
+    "lat": 48.416573,
+    "lng": -122.651435,
+    "category": "coast",
+    "why": "Klidnější zátoka v Deception Pass má snadný přístup k vodě a krátké pobřežní stezky k skalnatým výběžkům, takže funguje i jako rychlá studená koupel mimo hlavní most.",
+    "swim": "ocean",
+    "url": "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park"
+  },
+  {
+    "name": "Cama Beach Historical State Park",
+    "lat": 48.145454,
+    "lng": -122.506058,
+    "category": "coast",
+    "why": "Dochovaný pás jednoduchých rekreačních kabin z třicátých let stojí přímo u Puget Sound a má atmosféru staré americké dovolené bez resortového pozlátka.",
+    "swim": "ocean",
+    "url": "https://parks.wa.gov/find-parks/state-parks/cama-beach-historical-state-park"
+  },
+  {
+    "name": "Point No Point Lighthouse",
+    "lat": 47.91219,
+    "lng": -122.52675,
+    "category": "coast",
+    "why": "Nejstarší maják na Puget Sound stojí na nízkém písečném výběžku s otevřenou pláží a proudy Admiralty Inlet, což je velmi dobrá krátká zastávka cestou přes Kitsap.",
+    "swim": "ocean",
+    "url": "https://en.wikipedia.org/wiki/Point_No_Point_Light_(Washington)"
+  },
+  {
+    "name": "North Head Lighthouse",
+    "lat": 46.299046,
+    "lng": -124.077583,
+    "category": "coast",
+    "why": "Maják stojí přímo nad jedním z nejdrsnějších míst ústí Columbie a z útesu je oceán, vítr a obrovský prostor výrazně působivější než z hlavních parkovišť.",
+    "swim": "no",
+    "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park/north-head-lighthouse-cape-disappointment"
+  },
+  {
+    "name": "Waikiki Beach — Cape Disappointment",
+    "lat": 46.28093,
+    "lng": -124.05905,
+    "category": "coast",
+    "why": "Malá pláž sevřená čedičovými hlavami leží přímo pod útesy Cape Disappointment a za bouřlivého počasí je to koncentrovaná dávka pacifického dramatu.",
+    "swim": "ocean",
+    "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park"
+  },
+  {
+    "name": "Leadbetter Point State Park",
+    "lat": 46.597946,
+    "lng": -124.047317,
+    "category": "coast",
+    "why": "Úplný sever Long Beach Peninsula tvoří široký prázdný přechod mezi oceánem, dunami, lesem a Willapa Bay, kam se většina návštěvníků poloostrova vůbec nevydá.",
+    "swim": "ocean",
+    "url": "https://parks.wa.gov/find-parks/state-parks/leadbetter-point-state-park"
+  },
+  {
+    "name": "Blue Moon Tavern",
+    "lat": 47.66149,
+    "lng": -122.32003,
+    "category": "culture",
+    "why": "Bar fungující od roku 1934 je kus syrové seattleské hudební historie bez uhlazeného clubového feelingu a sedí mnohem víc k beatnikům, blues a rocku než turistickému downtownu.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Blue_Moon_Tavern"
+  },
+  {
+    "name": "Sonic Boom Records",
+    "lat": 47.66852,
+    "lng": -122.3851,
+    "category": "culture",
+    "why": "Velkej nezávislej vinylovej obchod v Ballardu má dost hlubokej katalog rocku, soulu a psychedelie, aby dával smysl i člověku, kterej nehledá suvenýry.",
+    "swim": "no",
+    "url": "https://www.sonicboomrecords.com/"
+  },
+  {
+    "name": "Scarecrow Video",
+    "lat": 47.66592,
+    "lng": -122.31707,
+    "category": "culture",
+    "why": "Neziskový filmový archiv s přibližně 130 000 tituly je pro filmového magora skoro archeologická lokalita fyzických médií, včetně obskurních a těžko dostupných filmů.",
+    "swim": "no",
+    "url": "https://scarecrowvideo.org/"
+  },
+  {
+    "name": "Mecca Cafe & Bar",
+    "lat": 47.6241,
+    "lng": -122.35659,
+    "category": "food_gem",
+    "why": "Starý queen-anneovský bar a diner má tmavý interiér, boxy a noční americkej feeling, který je mnohem blíž Hopperovi než moderní seattleské brunch scéně.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Jules Maes Saloon",
+    "lat": 47.54961,
+    "lng": -122.31755,
+    "category": "culture",
+    "why": "Historický saloon v průmyslovém Georgetownu funguje v jedné podobě od 19. století a spojuje starou dělnickou Seattle, bar a živou hudbu.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Jules_Maes_Saloon"
+  },
+  {
+    "name": "Slim's Last Chance",
+    "lat": 47.55249,
+    "lng": -122.3339,
+    "category": "culture",
+    "why": "Nízký roadside bar u průmyslového jihu Seattlu s bluesem, rockem a chilli má přesně ten lehce ošuntělý americký charakter, kvůli kterému stojí za večerní odbočku.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "North Bend Theatre",
+    "lat": 47.49605,
+    "lng": -121.7868,
+    "category": "culture",
+    "why": "Malé nezávislé kino z roku 1941 s klasickou marquee přidává k Twin Peaks zastávkám skutečný kus starého maloměstského Washingtonu místo dalšího seriálového suvenýru.",
+    "swim": "no",
+    "url": "https://www.northbendtheatre.com/"
+  },
+  {
+    "name": "Laura Palmer's House",
+    "lat": 47.973783,
+    "lng": -122.220708,
+    "category": "culture",
+    "why": "Skutečný dům použitý jako Palmer residence v Twin Peaks a hlavně v závěru The Return stojí za krátkou filmovou pouť, ale pouze pohledem z veřejné ulice bez vstupu na soukromý pozemek.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Kiana Lodge",
+    "lat": 47.69936,
+    "lng": -122.58308,
+    "category": "culture",
+    "why": "Lynch tu natáčel interiéry Great Northern a Blue Pine Lodge i místo nálezu Lauřina těla; areál je soukromý a návštěvu filmových míst je nutné předem domluvit.",
+    "swim": "no",
+    "url": "https://www.kianalodge.com/twin-peaks/"
+  },
+  {
+    "name": "Gorge Creek Falls",
+    "lat": 48.70311,
+    "lng": -121.21073,
+    "category": "waterfall",
+    "why": "Přímo u Highway 20 se dá během pár minut podívat do hluboké skalní soutěsky s přibližně 74metrovým vodopádem, což je jedna z nejefektivnějších krátkých zastávek North Cascades.",
+    "swim": "no",
+    "url": "https://www.nps.gov/noca/planyourvisit/north-cascades-highway.htm"
+  },
+  {
+    "name": "Colonial Creek — Diablo Lake shore",
+    "lat": 48.69846,
+    "lng": -121.09429,
+    "category": "lake_river",
+    "why": "Tady se z Highway 20 dostane přímo na břeh tyrkysového Diablo Lake, takže místo pouhého focení shora může vlézt do ledovcové vody.",
+    "swim": "lake",
+    "url": "https://www.nps.gov/noca/planyourvisit/camping.htm"
+  },
+  {
+    "name": "Blue Lake Trail",
+    "lat": 48.5191,
+    "lng": -120.6742,
+    "category": "lake_river",
+    "why": "Krátká odbočka od Highway 20 vede mezi žulovými věžemi k čistému alpinskému jezeru pod Liberty Bell, tedy mnohem intimnější North Cascades než vyhlídky z auta.",
+    "swim": "lake",
+    "url": null
+  },
+  {
+    "name": "Rainy Lake",
+    "lat": 48.51958,
+    "lng": -120.73399,
+    "category": "lake_river",
+    "why": "Od Rainy Pass vede krátká a nenáročná cesta k tmavému horskému jezeru sevřenému strmými stěnami, vhodnému i pro rychlou opravdu studenou koupel.",
+    "swim": "lake",
+    "url": null
+  },
+  {
+    "name": "Artist Point — Mount Baker",
+    "lat": 48.845482,
+    "lng": -121.690529,
+    "category": "mountain",
+    "why": "Jestli obětuje větší severní odbočku, silnice ho vyveze téměř bez chození do otevřené vysokohorské krajiny mezi Mount Shuksan a Mount Baker, která je vizuálně úplně jiná než Highway 20.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Nooksack Falls",
+    "lat": 48.90531,
+    "lng": -121.8089,
+    "category": "waterfall",
+    "why": "Na případné odbočce k Mount Baker je to krátký přístup k mohutnému vodopádu padajícímu do úzkého lávového kaňonu; držet se vyhlídky, protože sestup k řece je nebezpečný.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Nooksack_Falls"
+  }
+]

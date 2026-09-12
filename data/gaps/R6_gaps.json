@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Hendy Woods State Park – Big Hendy Grove",
+    "lat": 39.06999,
+    "lng": -123.47188,
+    "category": "forest",
+    "why": "Staré sekvoje přímo u Navarro River a výrazně klidnější alternativa k nejslavnějším redwood parkům, kvůli které má smysl odbočit do Anderson Valley.",
+    "swim": "river",
+    "url": "https://www.parks.ca.gov/?page_id=438"
+  },
+  {
+    "name": "Navarro River Redwoods State Park",
+    "lat": 39.1749,
+    "lng": -123.67751,
+    "category": "forest",
+    "why": "Úzký koridor Hwy 128 vede kilometry pod sekvojemi podél Navarro River a park oficiálně uvádí i koupání a kajakování.",
+    "swim": "river",
+    "url": "https://parks.ca.gov/?page_id=435"
+  },
+  {
+    "name": "Navarro-by-the-Sea & Captain Fletcher's Inn",
+    "lat": 39.193864,
+    "lng": -123.757221,
+    "category": "oddity",
+    "why": "Téměř zaniklá osada u ústí Navarro River s opuštěně působícím historickým hostincem je přesně ten kus pobřežní Californie, který působí spíš jako nalezený filmový set.",
+    "swim": "river",
+    "url": "https://en.wikipedia.org/wiki/Navarro,_California"
+  },
+  {
+    "name": "Big River Beach",
+    "lat": 39.30308,
+    "lng": -123.79413,
+    "category": "coast",
+    "why": "Široké písečné ústí Big River pod Mendocinem kombinuje oceán, estuár, mlhu a dlouhý prázdný horizont bez nutnosti velké túry.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=442"
+  },
+  {
+    "name": "Greenwood State Beach",
+    "lat": 39.127403,
+    "lng": -123.717794,
+    "category": "coast",
+    "why": "Pod ospalým Elkem leží výrazně méně navštěvovaná pláž se skalními komíny a výhledy, které připomínají drsnější Oregon.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=447"
+  },
+  {
+    "name": "Bowling Ball Beach",
+    "lat": 38.870743,
+    "lng": -123.658349,
+    "category": "geology",
+    "why": "Při nízkém přílivu se odkryjí téměř dokonale kulaté konkrece v pravidelných řadách, jedna z nejpodivnějších geologických scén na celé trase.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Bowling_Ball_Beach"
+  },
+  {
+    "name": "Manchester State Park",
+    "lat": 38.963,
+    "lng": -123.711,
+    "category": "coast",
+    "why": "Několik kilometrů téměř nepřerušované divoké pláže a dun nabízí přesně ten typ větrného prázdna, kde může člověk zmizet z civilizace.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=437"
+  },
+  {
+    "name": "Arena Theater",
+    "lat": 38.909273,
+    "lng": -123.692763,
+    "category": "culture",
+    "why": "Malé historické art-deco kino z roku 1930 v Point Areně pořád funguje jako komunitní kino a koncertní sál, takže stojí za kontrolu programu.",
+    "swim": "no",
+    "url": "https://www.arenatheater.org/"
+  },
+  {
+    "name": "The Record – Point Arena",
+    "lat": 38.9097,
+    "lng": -123.6923,
+    "category": "culture",
+    "why": "Malý bar v historickém Point Areně má pravidelnou živou hudbu a mnohem víc lokální charakter než naleštěné podniky vinařské Kalifornie.",
+    "swim": "no",
+    "url": "https://www.therecordpointarena.com/"
+  },
+  {
+    "name": "Black Point Beach",
+    "lat": 38.683232,
+    "lng": -123.431518,
+    "category": "coast",
+    "why": "Dlouhé schody z útesu vedou na izolovanou pláž pod Sea Ranch, kde je často víc větru, příboje a ptáků než lidí.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Fisk Mill Cove",
+    "lat": 38.593905,
+    "lng": -123.344573,
+    "category": "coast",
+    "why": "Krátká odbočka z Hwy 1 končí u masivních skalních věží, malých zátok a pobřežních útesů, které jsou výrazně dramatičtější než běžná vyhlídka.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=453"
+  },
+  {
+    "name": "Gerstle Cove",
+    "lat": 38.563802,
+    "lng": -123.327231,
+    "category": "coast",
+    "why": "Malá skalnatá zátoka v Salt Pointu má chráněnější vodu, tidepooly a podvodní skalní svět, takže funguje jako zajímavější zastávka než pouhý roadside overlook.",
+    "swim": "ocean",
+    "url": "https://wildlife.ca.gov/Conservation/Marine/MPAs/Salt-Point-Gerstle-Cove"
+  },
+  {
+    "name": "Stillwater Cove Regional Park",
+    "lat": 38.547969,
+    "lng": -123.295286,
+    "category": "coast",
+    "why": "Malá chráněná zátoka se skalami a pobřežním lesem nabízí jednu z mála relativně klidných vodních hran na jinak brutálním Sonoma Coast.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Johnson's Beach – Guerneville",
+    "lat": 38.500006,
+    "lng": -122.997779,
+    "category": "lake_river",
+    "why": "Klasická starosvětská pláž na Russian River přímo v Guerneville je jednoduché místo na skutečné říční plavání bez túry nebo složitého přístupu.",
+    "swim": "river",
+    "url": "https://www.johnsonsbeach.com/"
+  },
+  {
+    "name": "Monte Rio Community Beach",
+    "lat": 38.46659,
+    "lng": -123.00976,
+    "category": "lake_river",
+    "why": "Široký pomalý úsek Russian River pod starým mostem má retro letoviskový feeling a pohodlný vstup do vody přímo z Monte Ria.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Steelhead Beach Regional Park",
+    "lat": 38.49945,
+    "lng": -122.90264,
+    "category": "lake_river",
+    "why": "Velká říční pláž s hlubšími klidnými úseky je jeden z nejpraktičtějších bodů na delší plavání v Russian River.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Sunset Beach River Park",
+    "lat": 38.50366,
+    "lng": -122.93063,
+    "category": "lake_river",
+    "why": "Nenápadný přístup na Russian River u Forestville má méně resortní atmosféru než Guerneville a hodí se na spontánní koupání během přejezdu.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Bodega Head",
+    "lat": 38.31103,
+    "lng": -123.06611,
+    "category": "coast",
+    "why": "Nízký skalnatý mys vybíhající daleko do Pacifiku dává vítr, mlhu, velké moře a výhled zpět na pobřeží v jednom z nejsyrovějších míst kolem Bodega Bay.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Bodega_Head"
+  },
+  {
+    "name": "Doran Regional Park",
+    "lat": 38.31408,
+    "lng": -123.04278,
+    "category": "coast",
+    "why": "Dlouhá písečná kosa mezi oceánem a Bodega Harbor je vhodná na pozdní večerní procházku, mlhu a otevřený horizont bez horské túry.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Chicken Ranch Beach",
+    "lat": 38.1094,
+    "lng": -122.8654,
+    "category": "lake_river",
+    "why": "Malá nenápadná pláž na chráněné straně Tomales Bay má klidnou vodu a NPS ji výslovně uvádí jako místo vhodné ke koupání.",
+    "swim": "ocean",
+    "url": "https://www.nps.gov/thingstodo/swimming-at-point-reyes.htm"
+  },
+  {
+    "name": "Shell Beach – Tomales Bay",
+    "lat": 38.1173,
+    "lng": -122.8746,
+    "category": "lake_river",
+    "why": "Krátká pěší cesta vede ke dvěma malým plážím na chráněné Tomales Bay, kde je koupání výrazně bezpečnější a klidnější než na oceánské straně Point Reyes.",
+    "swim": "ocean",
+    "url": "https://www.nps.gov/thingstodo/swimming-at-point-reyes.htm"
+  },
+  {
+    "name": "Alan Sieroty Beach at Millerton Point",
+    "lat": 38.1069,
+    "lng": -122.8483,
+    "category": "lake_river",
+    "why": "Nenápadná východní strana Tomales Bay nabízí klidnou vodu, otevřený pohled na Inverness Ridge a snadný přístup přímo z Hwy 1.",
+    "swim": "ocean",
+    "url": "https://www.nps.gov/thingstodo/swimming-at-point-reyes.htm"
+  },
+  {
+    "name": "Limantour Beach",
+    "lat": 38.0288,
+    "lng": -122.8822,
+    "category": "coast",
+    "why": "Čtyři míle pláže uvnitř Drakes Bay mají menší vlny než západní Point Reyes a NPS ji řadí mezi zdejší relativně bezpečná místa ke koupání.",
+    "swim": "ocean",
+    "url": "https://www.nps.gov/places/point-reyes-limantour-beach.htm"
+  },
+  {
+    "name": "Kehoe Beach",
+    "lat": 38.1528,
+    "lng": -122.9392,
+    "category": "geology",
+    "why": "Krátká cesta přes mokřad a duny končí u pusté pláže, kde je přímo ve stěně vidět ostrý kontakt pískovce a žuly podél geologického zlomu.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/point-reyes-kehoe-beach.htm"
+  },
+  {
+    "name": "McClures Beach",
+    "lat": 38.1885,
+    "lng": -122.9581,
+    "category": "coast",
+    "why": "Pouhých 600 metrů od parkoviště leží izolovaná zátoka sevřená skalami s brutálním příbojem a téměř koncovou atmosférou Point Reyes.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/point-reyes-mcclures-beach.htm"
+  },
+  {
+    "name": "Abbotts Lagoon",
+    "lat": 38.1235,
+    "lng": -122.9355,
+    "category": "coast",
+    "why": "Snadná cesta mezi dvěma lagunami vede až k obrovské prázdné oceánské pláži a funguje skvěle jako několikahodinový únik do větru a otevřeného prostoru.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/point-reyes-abbotts-lagoon-trailhead.htm"
+  },
+  {
+    "name": "Agate Beach & Duxbury Reef",
+    "lat": 37.897,
+    "lng": -122.7088,
+    "category": "geology",
+    "why": "Největší intertidální skalní útes v Kalifornii se při výrazném odlivu promění v obrovskou plochu tidepoolů a vrstevnatých skal.",
+    "swim": "no",
+    "url": "https://wildlife.ca.gov/Conservation/Marine/MPAs/Duxbury-Reef"
+  },
+  {
+    "name": "Mount Vision Overlook",
+    "lat": 38.0958,
+    "lng": -122.8874,
+    "category": "scenic_drive",
+    "why": "Úzká klikatá Mount Vision Road vyjede autem téměř na hřeben a z malého parkoviště se otevře většina Point Reyes, Drakes Estero i dlouhá Great Beach.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/point-reyes-mount-vision-overlook.htm"
+  },
+  {
+    "name": "Pierce Point Ranch",
+    "lat": 38.1897,
+    "lng": -122.9549,
+    "category": "culture",
+    "why": "Osamělý komplex bílých budov bývalého mléčného ranče mezi větrem, cypřiši a zlatou trávou má silný melancholický západoamerický obraz mimo samotný Tomales Point Trail.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/point-reyes-pierce-ranch.htm"
+  },
+  {
+    "name": "Muir Beach Overlook",
+    "lat": 37.86281,
+    "lng": -122.58572,
+    "category": "coast",
+    "why": "Krátké schodiště z Hwy 1 vede na úzký větrný hřeben vysoko nad černými útesy a Pacifikem, ideální poslední syrová pobřežní zastávka před Golden Gate.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/000/muir-beach-overlook.htm"
+  }
+]

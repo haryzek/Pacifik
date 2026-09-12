@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Fort Point National Historic Site",
+    "lat": 37.808374,
+    "lng": -122.473747,
+    "category": "culture",
+    "why": "Civil-War pevnost nacpaná přímo pod Golden Gate je zároveň zásadní lokace z Vertiga a za mlhy má mnohem temnější atmosféru než běžné vyhlídky na most.",
+    "swim": "no",
+    "url": "https://www.nps.gov/fopo/index.htm"
+  },
+  {
+    "name": "The Fillmore",
+    "lat": 37.784098,
+    "lng": -122.433132,
+    "category": "culture",
+    "why": "Historický sál spojený s Hendrixem, Jefferson Airplane, Grateful Dead a sanfranciskou psychedelickou scénou 60. let stojí za kontrolu programu i za samotnou návštěvu.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/The_Fillmore"
+  },
+  {
+    "name": "Ocean Park Motel",
+    "lat": 37.73641,
+    "lng": -122.50396,
+    "category": "motel_gem",
+    "why": "První sanfranciský motel z roku 1937 je zachovaný Streamline Moderne kus staré silniční Ameriky s původním neonovým duchem pár bloků od Pacifiku.",
+    "swim": "no",
+    "url": "https://www.oceanparkmotel.com/"
+  },
+  {
+    "name": "Rooky Ricardo's Records",
+    "lat": 37.7720965,
+    "lng": -122.4293277,
+    "category": "culture",
+    "why": "Malý obchod posedlý singly, soulem, girl-groups a rockem 50.–70. let je pro jeho hudební vkus přesnější zásah než další velký univerzální record store.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Mori Point",
+    "lat": 37.62001,
+    "lng": -122.49853,
+    "category": "coast",
+    "why": "Krátký výstup z Pacifiky vede na holý pobřežní ostroh nad černými útesy a příbojem, kde mlha a vítr snadno vymažou město za zády.",
+    "swim": "no",
+    "url": "https://www.nps.gov/goga/planyourvisit/mori-point.htm"
+  },
+  {
+    "name": "Pomponio State Beach",
+    "lat": 37.293,
+    "lng": -122.40747,
+    "category": "coast",
+    "why": "Dlouhá pláž pod vysokými pískovcovými útesy bývá proti známějším zastávkám Highway 1 poloprázdná a funguje hlavně jako místo na vítr, oceán a samotu.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=521"
+  },
+  {
+    "name": "Bean Hollow State Beach",
+    "lat": 37.2258,
+    "lng": -122.40886,
+    "category": "geology",
+    "why": "Nízké pobřežní skály jsou rozleptané tafoni strukturami, tidepooly a bizarními erozními tvary; voda má silné proudy, takže je to spíš geologická než plavecká zastávka.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=527"
+  },
+  {
+    "name": "Pigeon Point Light Station",
+    "lat": 37.181762,
+    "lng": -122.393988,
+    "category": "coast",
+    "why": "Osamělý 35metrový maják na otevřeném útesu je přesně kombinace větru, mlhy a starého pobřežního stavitelství, kvůli které má cenu na Highway 1 zastavit.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=533"
+  },
+  {
+    "name": "Greyhound Rock County Park",
+    "lat": 37.08275,
+    "lng": -122.26742,
+    "category": "coast",
+    "why": "Velký skalní monolit, široká málo zastavěná pláž a strmý sestup z útesu dávají jednomu z nejméně turistických úseků severně od Santa Cruz skutečný pocit prázdna.",
+    "swim": "ocean",
+    "url": "https://wildlife.ca.gov/Conservation/Marine/MPAs/Ano-Nuevo-Greyhound-Rock"
+  },
+  {
+    "name": "Bonny Doon Beach",
+    "lat": 36.9996723,
+    "lng": -122.1816353,
+    "category": "coast",
+    "why": "Skrytější pláž pod útesy má tradiční clothing-optional část a mimo víkend může nabídnout přesně ten typ osamělého studeného koupání, který hledá, byť Pacifik tu umí být drsný.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Panther Beach / Hole in the Wall",
+    "lat": 36.99301,
+    "lng": -122.17052,
+    "category": "geology",
+    "why": "Strmý sestup vede k pískovcovým stěnám a mořskému oblouku, kterým se při správném přílivu dá projít na ještě skrytější pláž; při vysoké vodě je přístup nebezpečný.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Shark Fin Cove",
+    "lat": 37.005861,
+    "lng": -122.185596,
+    "category": "geology",
+    "why": "Krátký sestup z nenápadného parkoviště vede do sevřené zátoky s obrovským skalním „žraločím“ zubem, mořskou jeskyní a erodovanými útesy.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Garden of Eden Swimming Hole",
+    "lat": 37.0235,
+    "lng": -122.058,
+    "category": "lake_river",
+    "why": "San Lorenzo River tu mezi redwoody vytváří skutečný přírodní swimming hole asi 1,2 km pěšky od Highway 9 a mimo špičku má místo i tradici diskrétního skinny-dippingu.",
+    "swim": "river",
+    "url": "https://en.wikipedia.org/wiki/Henry_Cowell_Redwoods_State_Park"
+  },
+  {
+    "name": "Streetlight Records",
+    "lat": 36.9708833,
+    "lng": -122.0254667,
+    "category": "culture",
+    "why": "Velký nezávislý obchod fungující v Santa Cruz od 90. let má hluboký mix vinylů, CD i starých filmových nosičů a stojí za rychlý lov mimo turistický Boardwalk.",
+    "swim": "no",
+    "url": "https://streetlightrecords.com/"
+  },
+  {
+    "name": "Moe's Alley",
+    "lat": 36.987761,
+    "lng": -121.982889,
+    "category": "culture",
+    "why": "Nenablýskaný roadhouse klub bookuje blues, soul, funk, psychedelii, garage a roots hudbu a je nejspíš nejlepší místo v Santa Cruz zkontrolovat večerní koncert bez velkého sálu.",
+    "swim": "no",
+    "url": "https://moesalley.com/"
+  },
+  {
+    "name": "Point Pinos Lighthouse",
+    "lat": 36.63339,
+    "lng": -121.93374,
+    "category": "coast",
+    "why": "Nejstarší nepřetržitě fungující maják na západním pobřeží stojí mezi cypřiši a skalnatými tidepooly na mnohem tišším konci Pacific Grove.",
+    "swim": "no",
+    "url": "https://pointpinoslighthouse.org/"
+  },
+  {
+    "name": "Asilomar State Beach",
+    "lat": 36.61867,
+    "lng": -121.94082,
+    "category": "coast",
+    "why": "Nízké žulové pobřeží, tidepooly, pokroucené cypřiše a otevřený Pacifik dávají severnímu okraji Monterey Peninsula syrovější atmosféru než upravené části Carmel.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=566"
+  },
+  {
+    "name": "Pacific Biological Laboratories — Ed Ricketts' Lab",
+    "lat": 36.617212,
+    "lng": -121.901112,
+    "category": "culture",
+    "why": "Skutečná laboratoř Eda Rickettse je fyzické jádro Steinbeckova Cannery Row a pro něj dává literárně mnohem větší smysl než samotná turistická ulice.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Pacific_Biological_Laboratories"
+  },
+  {
+    "name": "Tor House and Hawk Tower",
+    "lat": 36.542069,
+    "lng": -121.932308,
+    "category": "culture",
+    "why": "Robinson Jeffers si kamenný dům a věž stavěl vlastníma rukama na okraji oceánu a místo propojuje poezii, kámen, vítr a drsnou kalifornskou krajinu téměř dokonale.",
+    "swim": "no",
+    "url": "https://www.torhouse.org/"
+  },
+  {
+    "name": "Carmel River State Beach",
+    "lat": 36.5321836,
+    "lng": -121.926899,
+    "category": "coast",
+    "why": "Ústí Carmel River vytváří lagunu vedle širokého oceánu a poskytuje klidnější, méně městský pobřežní kontrast k Carmel Beach; oceánské proudy jsou ale příliš zrádné na doporučené koupání.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=567"
+  },
+  {
+    "name": "Point Sur Lightstation",
+    "lat": 36.3063524,
+    "lng": -121.9016233,
+    "category": "coast",
+    "why": "Sopečně působící skalní monolit s majákem vyrůstá přímo z pobřežní roviny a stojí za zastavení i bez prohlídky, protože z Highway 1 vypadá jako osamělá pevnost nad oceánem.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=565"
+  },
+  {
+    "name": "Jade Cove",
+    "lat": 35.90357,
+    "lng": -121.46382,
+    "category": "geology",
+    "why": "Krátký, místy strmý sestup vede k divokému skalnatému pobřeží známému jadeitem a serpentinitem, kde je víc geologie a příboje než turistické infrastruktury.",
+    "swim": "no",
+    "url": "https://www.visitcalifornia.com/experience/jade-cove/"
+  },
+  {
+    "name": "Salmon Creek Falls",
+    "lat": 35.81573,
+    "lng": -121.35879,
+    "category": "waterfall",
+    "why": "Od silnice je to jen pár set metrů k přibližně 35metrovému vodopádu padajícímu mezi balvany a lesem, takže poměr zážitek versus čas je na jižním Big Sur mimořádně dobrý.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Salmon_Creek_Falls"
+  },
+  {
+    "name": "Fiscalini Ranch Preserve — Bluff Trail",
+    "lat": 35.5479,
+    "lng": -121.09731,
+    "category": "coast",
+    "why": "Nezastavěná pobřežní terasa přímo u Cambrie nabízí útesy, oceán, louky a minimum infrastruktury, takže je dobrým protipólem Moonstone Beach.",
+    "swim": "no",
+    "url": "https://www.fiscaliniranchpreserve.org/"
+  },
+  {
+    "name": "Harmony Headlands State Park",
+    "lat": 35.47758,
+    "lng": -120.9924,
+    "category": "coast",
+    "why": "Nenápadné parkoviště na Highway 1 otevírá pěší cestu přes prázdnou pobřežní pastvinu k útesům bez zástavby a bez typického kalifornského beach provozu.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=25735"
+  },
+  {
+    "name": "Estero Bluffs State Park",
+    "lat": 35.45386,
+    "lng": -120.95157,
+    "category": "coast",
+    "why": "Nízké útesy, sea stacks, travnatá terasa a několik téměř skrytých sestupů k pobřeží tvoří dlouhý úsek, kde se dá prostě jít podél Pacifiku bez atrakce na konci.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=22263"
+  },
+  {
+    "name": "Madonna Inn",
+    "lat": 35.267506,
+    "lng": -120.674175,
+    "category": "oddity",
+    "why": "Roadside fantazie z roku 1958 s růžovým barem, kamennými jeskynními interiéry a absurdními tematickými pokoji je čistá americká outsider architektura, i kdyby tam vůbec nespal.",
+    "swim": "no",
+    "url": "https://www.madonnainn.com/"
+  },
+  {
+    "name": "Parkfield — Earthquake Capital of the World",
+    "lat": 35.89969,
+    "lng": -120.43265,
+    "category": "oddity",
+    "why": "Osada asi osmnácti lidí přímo na San Andreas Fault má most rozdělený mezi dvě tektonické desky, seismologické přístroje a bizarní pocit vědeckého ghost townu.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Parkfield,_California"
+  }
+]

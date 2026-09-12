@@ -629,5 +629,10 @@
   },
   "r9b-018": {
     "why_bob": "Serpentiny z hor do pouště, kde se za jednou zatáčkou otevře celé Borrego Valley — jet pomalu a zastavit na vyhlídce."
+  },
+  "r7-002": {
+    "lat": 37.7827,
+    "lng": -122.4638,
+    "season_note_2026": "otevřeno denně; raw data měla souřadnice Fillmoru, opraveno na 506 Clement St"
   }
 }

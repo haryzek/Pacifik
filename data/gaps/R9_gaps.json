@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Hall of Horrors",
+    "lat": 34.012493,
+    "lng": -116.168061,
+    "category": "geology",
+    "why": "Nenápadný labyrint žulových bloků a úzkých štěrbin, kde se dá bez dlouhého pochodu zalézt mezi skály a na chvíli zmizet z hlavního proudu Joshua Tree.",
+    "swim": "no",
+    "url": "https://www.nps.gov/jotr/index.htm"
+  },
+  {
+    "name": "Fortynine Palms Oasis",
+    "lat": 34.11929,
+    "lng": -116.11211,
+    "category": "desert",
+    "why": "Krátký, ale fyzický sestup do skutečné palmové oázy sevřené pustými skalnatými kopci je jeden z nejlepších kontrastů vody a vyprahlé krajiny v Joshua Tree.",
+    "swim": "no",
+    "url": "https://www.nps.gov/jotr/planyourvisit/hiking.htm"
+  },
+  {
+    "name": "Lost Palms Oasis Trail",
+    "lat": 33.736858,
+    "lng": -115.810596,
+    "category": "desert",
+    "why": "Delší a podstatně osamělejší cesta přes otevřenou poušť k hluboké palmové oáze má přesně ten pocit výpravy do prázdna, kvůli kterému stojí za to zajet na jižní okraj parku.",
+    "swim": "no",
+    "url": "https://www.nps.gov/jotr/planyourvisit/hiking.htm"
+  },
+  {
+    "name": "Split Rock Loop",
+    "lat": 34.00942,
+    "lng": -116.05593,
+    "category": "geology",
+    "why": "Kompaktní okruh mezi obřími rozštípnutými monzogranitovými bloky je výrazně klidnější než hlavní zastávky parku a nabízí hodně skály za málo chůze.",
+    "swim": "no",
+    "url": "https://www.nps.gov/jotr/index.htm"
+  },
+  {
+    "name": "Desert Christ Park",
+    "lat": 34.12862,
+    "lng": -116.43974,
+    "category": "oddity",
+    "why": "Osamělý soubor bílých betonových biblických figur nad Yucca Valley působí spíš jako podivná poválečná americká vize než turistická atrakce.",
+    "swim": "no",
+    "url": "https://desertchristpark.org/"
+  },
+  {
+    "name": "Zzyzx & Lake Tuendae",
+    "lat": 35.1432,
+    "lng": -116.104,
+    "category": "oddity",
+    "why": "Bývalé pouštní lázně s absurdním jménem, opuštěnou resortní historií a malým jezerem uprostřed solné pustiny mají silnou postapokalyptickou roadside atmosféru.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Zzyzx,_California"
+  },
+  {
+    "name": "Mitchell Caverns & Providence Mountains",
+    "lat": 34.94341,
+    "lng": -115.51171,
+    "category": "geology",
+    "why": "Vysoká vápencová poušť Providence Mountains se skutečnými jeskyněmi a dramatickými skalními stěnami je úplně jiný Mojave než duny a joshua trees.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=615"
+  },
+  {
+    "name": "Elmer's Bottle Tree Ranch",
+    "lat": 34.690355,
+    "lng": -117.339585,
+    "category": "oddity",
+    "why": "Les kovových stromů ověšených lahvemi a nalezenými předměty je autentický kus Route 66 outsider artu, nikoli uhlazená retro kulisa.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Elmer%27s_Bottle_Tree_Ranch"
+  },
+  {
+    "name": "Ubehebe Crater",
+    "lat": 37.0108,
+    "lng": -117.4549,
+    "category": "geology",
+    "why": "Obrovský černý maar po hydrovolkanickém výbuchu nabízí syrovou vulkanickou krajinu a výhled přímo z parkoviště bez potřeby čtyřkolky.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/ubehebe-crater.htm"
+  },
+  {
+    "name": "Mosaic Canyon",
+    "lat": 36.57193,
+    "lng": -117.14434,
+    "category": "geology",
+    "why": "Úzký kaňon se stěnami vyhlazeného mramoru a brekcie je geologicky mnohem hmatatelnější než běžný viewpoint a začíná jen pár kilometrů od silnice.",
+    "swim": "no",
+    "url": "https://www.nps.gov/deva/planyourvisit/mosaic-canyon.htm"
+  },
+  {
+    "name": "Natural Bridge Canyon",
+    "lat": 36.2813,
+    "lng": -116.76964,
+    "category": "geology",
+    "why": "Krátká cesta do suchého kaňonu pod mohutný přírodní skalní most dává rychlou dávku deathvalleyské geologie bez dlouhé túry.",
+    "swim": "no",
+    "url": "https://www.nps.gov/deva/planyourvisit/natural-bridge.htm"
+  },
+  {
+    "name": "Twenty Mule Team Canyon",
+    "lat": 36.40953,
+    "lng": -116.7947,
+    "category": "scenic_drive",
+    "why": "Krátká jednosměrná šotolinová cesta se vine přímo mezi žlutými a béžovými badlands a nabízí téměř filmovou jízdu krajinou bez nutnosti 4x4.",
+    "swim": "no",
+    "url": "https://www.nps.gov/deva/index.htm"
+  },
+  {
+    "name": "Harmony Borax Works",
+    "lat": 36.48003,
+    "lng": -116.87335,
+    "category": "culture",
+    "why": "Rezavé vozy, ruiny boraxového provozu a holá pánev Death Valley vytvářejí silnější industriální westernovou atmosféru než běžná historická expozice.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/harmony-borax-works.htm"
+  },
+  {
+    "name": "Wildrose Charcoal Kilns",
+    "lat": 36.24673,
+    "lng": -117.07551,
+    "category": "oddity",
+    "why": "Deset dokonale zachovaných kamenných milířů stojí vysoko v chladnější pinyon-juniper krajině a poslední štěrkový úsek bývá sjízdný běžným sedanem.",
+    "swim": "no",
+    "url": "https://www.nps.gov/deva/learn/historyculture/charcoal-kilns.htm"
+  },
+  {
+    "name": "North Shore Beach & Yacht Club",
+    "lat": 33.51944,
+    "lng": -115.93722,
+    "category": "culture",
+    "why": "Albert Freyho futuristický yacht club z roku 1962 u ustupujícího Salton Sea je čistá směs mid-century optimismu, ekologického rozkladu a Lynchovy Ameriky.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/North_Shore_Beach_and_Yacht_Club"
+  },
+  {
+    "name": "Ghost Mountain — Yaquitepec",
+    "lat": 33.003382,
+    "lng": -116.389789,
+    "category": "oddity",
+    "why": "Krátký výstup k ruinám pouštního domova Marshala Southa, který zde ve 30. a 40. letech zkoušel primitivní život mimo civilizaci, má silný McCarthyovský nádech.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=638"
+  },
+  {
+    "name": "Agua Caliente County Park Hot Springs",
+    "lat": 32.9496705,
+    "lng": -116.3020527,
+    "category": "hot_spring",
+    "why": "Snadno dostupné geotermální minerální bazény uprostřed pusté jižní části Anza-Borrego jsou jedna z mála reálných možností, kde se na tomhle pouštním loopu opravdu smočit.",
+    "swim": "hot_spring",
+    "url": "https://www.sdparks.org/content/sdparks/en/park-pages/AguaCaliente.html"
+  },
+  {
+    "name": "Deep Creek Hot Springs",
+    "lat": 34.3423652,
+    "lng": -117.1962852,
+    "category": "hot_spring",
+    "why": "Divoké clothing-optional termální tůně přímo vedle studeného Deep Creeku dávají unikátní kombinaci nahého soakování a cold plunge, ale vyžadují několikakilometrový sestup a výstup.",
+    "swim": "hot_spring",
+    "url": "https://www.fs.usda.gov/recarea/sbnf/recarea/?recid=34152"
+  },
+  {
+    "name": "Mission Creek Preserve",
+    "lat": 34.01667,
+    "lng": -116.62806,
+    "category": "desert",
+    "why": "Přechod mezi Mohavskou a Sonorskou pouští s tekoucím creekem, cottonwoody a San Andreas Faultem nabízí vzácnou zelenou trhlinu mezi vyprahlými horami.",
+    "swim": "no",
+    "url": "https://wildlandsconservancy.org/preserves/missioncreek"
+  },
+  {
+    "name": "Thousand Palms Oasis Preserve",
+    "lat": 33.831205,
+    "lng": -116.309518,
+    "category": "desert",
+    "why": "Dlouhá linie divokých vějířových palem vyrůstá přímo na zlomu San Andreas, takže je tu krásně vidět, jak geologie vytáhne vodu doprostřed extrémně suché krajiny.",
+    "swim": "no",
+    "url": "https://www.cnlm.org/portfolio_page/thousand-palms-oasis-preserve-coachella-valley-preserve/"
+  },
+  {
+    "name": "Moorten Botanical Garden and Cactarium",
+    "lat": 33.8003,
+    "lng": -116.546,
+    "category": "culture",
+    "why": "Malá rodinná sbírka kaktusů z roku 1938 se starým Cactus Castle působí mnohem osobněji a podivněji než uhlazené resortní Palm Springs.",
+    "swim": "no",
+    "url": "https://moortenbotanicalgarden.com/"
+  },
+  {
+    "name": "Pushawalla Canyon & Palms",
+    "lat": 33.8238331,
+    "lng": -116.2818127,
+    "category": "geology",
+    "why": "Hřeben nad aktivní větví San Andreas Faultu vede k izolované palmové oáze a dává skvělý pohled na zlomovou geometrii celé Coachella Valley.",
+    "swim": "no",
+    "url": "https://www.blm.gov/visit/coachella-valley-preserve"
+  }
+]

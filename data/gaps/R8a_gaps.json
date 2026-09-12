@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Jalama Beach County Park",
+    "lat": 34.5068,
+    "lng": -120.4999,
+    "category": "coast",
+    "why": "Odlehlá větrná pláž na konci dlouhé slepé silnice, s kilometry pobřeží, minimem zástavby a atmosférou skutečného konce světa.",
+    "swim": "ocean",
+    "url": "https://www.countyofsb.org/340/Jalama-Beach"
+  },
+  {
+    "name": "Ocean Beach County Park",
+    "lat": 34.6907,
+    "lng": -120.6004,
+    "category": "coast",
+    "why": "Ústí Santa Ynez River u Vandenbergu spojuje duny, lagunu a prázdné pobřeží; přístup k oceánu může být sezónně omezen kvůli ochraně ptáků.",
+    "swim": "no",
+    "url": "https://www.countyofsb.org/339/Ocean-Beach"
+  },
+  {
+    "name": "Gaviota State Park Beach",
+    "lat": 34.4706,
+    "lng": -120.2285,
+    "category": "coast",
+    "why": "Malá pláž sevřená pobřežními horami s železniční estakádou, skalami a výrazně syrovější atmosférou než městské pláže Santa Barbary.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=606"
+  },
+  {
+    "name": "Gaviota Wind Caves",
+    "lat": 34.483,
+    "lng": -120.2386,
+    "category": "geology",
+    "why": "Krátký výstup vede k pískovcovým dutinám a bizarně erodovaným skalám nad Gaviota Pass, tedy hodně geologie za malou časovou investici.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=606"
+  },
+  {
+    "name": "Gaviota Hot Springs",
+    "lat": 34.5024,
+    "lng": -120.2187,
+    "category": "hot_spring",
+    "why": "Přírodní sirné tůňky schované v kopcích nad Gaviotou jsou krátkou pěší odbočkou a jedním z mála skutečně divokých termálních míst v trase.",
+    "swim": "hot_spring",
+    "url": "https://www.parks.ca.gov/?page_id=606"
+  },
+  {
+    "name": "Arroyo Hondo Preserve",
+    "lat": 34.482,
+    "lng": -120.14,
+    "category": "forest",
+    "why": "Úzký pobřežní kaňon se starými duby, sykomorami a potokem působí jako skrytý kus původní Kalifornie, ale veřejný vstup je omezený a je nutné respektovat rezervační režim.",
+    "swim": "no",
+    "url": "https://www.sblandtrust.org/arroyo-hondo-preserve/"
+  },
+  {
+    "name": "El Capitán State Beach",
+    "lat": 34.4603,
+    "lng": -120.0236,
+    "category": "coast",
+    "why": "Dlouhá pláž pod vysokým útesem s tidepools a dubovo-sykomorovým kaňonem nabízí dobré koupání bez nutnosti zajíždět do Santa Barbary.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=601"
+  },
+  {
+    "name": "Sands Beach",
+    "lat": 34.409,
+    "lng": -119.8805,
+    "category": "coast",
+    "why": "Divoký západní konec Goletského pobřeží u Coal Oil Point má duny, široký horizont a výrazně méně městský pocit než pláže v Santa Barbaře.",
+    "swim": "ocean",
+    "url": "https://copr.nrs.ucsb.edu/"
+  },
+  {
+    "name": "More Mesa Beach",
+    "lat": 34.4164,
+    "lng": -119.8085,
+    "category": "coast",
+    "why": "Skrytá pláž pod dlouhými útesy je přístupná pěšky přes otevřenou mesa a nabízí jeden z nejopuštěnějších kusů pobřeží přímo u Santa Barbary.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Lizard's Mouth",
+    "lat": 34.5031,
+    "lng": -119.8657,
+    "category": "geology",
+    "why": "Obří pískovcové bloky a dutiny na hřebeni Santa Ynez Mountains dávají během pár minut chůze výhled přes hory až k oceánu.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/r05/lospadres"
+  },
+  {
+    "name": "First Crossing Day Use Area",
+    "lat": 34.5458,
+    "lng": -119.7781,
+    "category": "lake_river",
+    "why": "Snadno dostupný vstup k Santa Ynez River přímo z Paradise Road je vhodný k hledání tůní na koupání, ale na konci suchého léta může být vody málo nebo vůbec.",
+    "swim": "river",
+    "url": "https://www.fs.usda.gov/r05/lospadres"
+  },
+  {
+    "name": "Paradise Campground and Santa Ynez River Access",
+    "lat": 34.5422,
+    "lng": -119.8128,
+    "category": "lake_river",
+    "why": "Dubový campground nad Santa Ynez River poskytuje další praktický přístup k řece a tůním, přičemž použitelnost na koupání závisí na aktuálním průtoku.",
+    "swim": "river",
+    "url": "https://www.fs.usda.gov/r05/lospadres"
+  },
+  {
+    "name": "Wheeler Gorge",
+    "lat": 34.5119,
+    "lng": -119.2736,
+    "category": "geology",
+    "why": "Highway 33 se tu zařezává do úzké skalnaté soutěsky s potokem a malými tůněmi, takže je to dobrý cíl při horské odbočce nad Ojai.",
+    "swim": "river",
+    "url": "https://www.fs.usda.gov/r05/lospadres"
+  },
+  {
+    "name": "Rose Valley Falls Trailhead",
+    "lat": 34.5317,
+    "lng": -119.1829,
+    "category": "waterfall",
+    "why": "Krátká cesta z horské silnice vede k vysokému dvoustupňovému vodopádu ve skalním amfiteátru, takže stojí za odbočku hlavně pokud po suchém létě ještě teče.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/r05/lospadres"
+  },
+  {
+    "name": "Rincon Point",
+    "lat": 34.3735,
+    "lng": -119.4767,
+    "category": "coast",
+    "why": "Legendární dlouhá pravá vlna, oblázkové pobřeží a výhled podél pobřeží dělají z Rinconu krátkou, ale autentickou zastávku na hranici Santa Barbara a Ventura County.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Bart's Books",
+    "lat": 34.4486,
+    "lng": -119.2499,
+    "category": "culture",
+    "why": "Obrovské venkovní antikvariátní knihkupectví funguje v Ojai od roku 1964 a jeho chaotické police pod stromy jsou přesně ten typ nezávislého místa, kvůli kterému má smysl zastavit.",
+    "swim": "no",
+    "url": "https://bartsbooksojai.com/"
+  },
+  {
+    "name": "Busy Bee Café",
+    "lat": 34.2807,
+    "lng": -119.2935,
+    "category": "food_gem",
+    "why": "Venturský diner s červenými boxy, malými jukeboxy u stolů a klasickými shakey působí jako živá americká padesátková kulisa, ne jako designová imitace.",
+    "swim": "no",
+    "url": "https://www.busybee.cafe/"
+  },
+  {
+    "name": "Salzer's Records",
+    "lat": 34.252,
+    "lng": -119.2119,
+    "category": "culture",
+    "why": "Velký nezávislý record store fungující ve Ventuře desítky let má hluboké zásoby vinylu, CD a hudebních bizarností a není uhlazeným lifestyle obchodem.",
+    "swim": "no",
+    "url": "https://salzers.com/"
+  },
+  {
+    "name": "Joe's Cafe",
+    "lat": 34.4177,
+    "lng": -119.6967,
+    "category": "food_gem",
+    "why": "Bar a restaurace fungující od roku 1928 má starou americkou atmosféru, tvrdé drinky a dost patiny na to, aby stálo za to sem zapadnout místo některého z naleštěných podniků na State Street.",
+    "swim": "no",
+    "url": "https://joescafesb.com/"
+  },
+  {
+    "name": "The Majestic Ventura Theater",
+    "lat": 34.2803,
+    "lng": -119.2913,
+    "category": "culture",
+    "why": "Historický koncertní sál z roku 1928 stále hostí rockové a alternativní kapely a je mnohem zajímavější večerní zastávkou než generický klub.",
+    "swim": "no",
+    "url": "https://www.venturatheater.net/"
+  },
+  {
+    "name": "Scorpion Anchorage — Santa Cruz Island",
+    "lat": 34.0481,
+    "lng": -119.5529,
+    "category": "coast",
+    "why": "Pokud obětuje půlden až den lodi, dostane místo silnice sopečné útesy, mořské jeskyně, téměř bezautový ostrov a možnost skočit do Pacifiku přímo u Santa Cruz Island.",
+    "swim": "ocean",
+    "url": "https://www.nps.gov/chis/planyourvisit/santa-cruz-island.htm"
+  },
+  {
+    "name": "Prisoners Harbor — Santa Cruz Island",
+    "lat": 34.0214,
+    "lng": -119.6849,
+    "category": "coast",
+    "why": "Klidnější přistání na Santa Cruz Island než Scorpion nabízí štěrkovou zátoku, divoké severní pobřeží a podstatně větší pocit izolace, ale vyžaduje lodní spojení.",
+    "swim": "ocean",
+    "url": "https://www.nps.gov/chis/planyourvisit/santa-cruz-island.htm"
+  }
+]

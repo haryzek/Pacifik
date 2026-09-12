@@ -52,8 +52,7 @@ const bonus = loadArray(path.join(RAW, "bonus.json"));
 bonus.forEach((p, i) => { p.id = `gem-${String(i + 1).padStart(3, "0")}`; p._bonus = true; });
 places.push(...bonus);
 
-const extraFile = path.join(OUT, "extra.json");
-if (fs.existsSync(extraFile)) places.push(...JSON.parse(fs.readFileSync(extraFile, "utf8")));
+for (const f of ["extra.json", "gaps-import.json"]) { const fp = path.join(OUT, f); if (fs.existsSync(fp)) places.push(...JSON.parse(fs.readFileSync(fp, "utf8"))); }
 
 const fixesFile = path.join(OUT, "fixes.json");
 const fixes = fs.existsSync(fixesFile) ? JSON.parse(fs.readFileSync(fixesFile, "utf8")) : {};
@@ -82,7 +81,7 @@ for (const p of places) {
 for (const id of Object.keys(fixes)) if (!fixedIds.has(id)) W(`fixes.json: id ${id} nenalezeno`);
 
 // ---------- 4. Validace ----------
-const REQUIRED = ["id", "region", "name", "category", "lat", "lng", "description", "why_bob"];
+const REQUIRED = ["id", "region", "name", "category", "lat", "lng", "why_bob"];
 places = places.filter((p) => {
   const missing = REQUIRED.filter((k) => p[k] === undefined || p[k] === null || p[k] === "");
   if (missing.length) { W(`${p.id || "?"} ${p.name || ""}: chybí ${missing.join(",")} -> VYŘAZEN`); return false; }

@@ -1,0 +1,281 @@
+[
+  {
+    "name": "La Jolla Indian Campground – San Luis Rey River",
+    "lat": 33.273659,
+    "lng": -116.852176,
+    "category": "lake_river",
+    "why": "Jedno z mála opravdu použitelných sladkovodních koupání v kraji: přístup k San Luis Rey River je přes campground/day pass a průtok je v říjnu proměnlivý, takže před zajížďkou zkontrolovat aktuální stav řeky.",
+    "swim": "river",
+    "url": "https://lajollaindianadventurepark.com/tubing-river-info-2026/"
+  },
+  {
+    "name": "Agua Caliente County Park",
+    "lat": 32.951717,
+    "lng": -116.305847,
+    "category": "hot_spring",
+    "why": "Pouštní oáza s geotermální vodou a spring-fed bazény na trase S2; kvůli koupání v teplé minerální vodě je to smysluplná odbočka i bez dlouhé túry.",
+    "swim": "hot_spring",
+    "url": "https://www.sdparks.org/content/sdparks/en/park-pages/AguaCaliente.html"
+  },
+  {
+    "name": "Cedar Creek Falls Trailhead",
+    "lat": 32.99521,
+    "lng": -116.75627,
+    "category": "waterfall",
+    "why": "Hluboký skalnatý kaňon s výrazným vodopádem v jinak suchém vnitrozemí; stojí za odbočku hlavně po období s vodou, ale přístup je pěšky a bývá regulovaný permittem.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/recarea/cleveland/recarea/?recid=47404"
+  },
+  {
+    "name": "Three Sisters Falls Trailhead",
+    "lat": 32.98454,
+    "lng": -116.67786,
+    "category": "waterfall",
+    "why": "Trojice kaskád sevřená v žulových svazích je jeden z nejdramatičtějších vodních cílů inland San Diega, ale v časném podzimu může téct slabě nebo vůbec.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/recarea/cleveland/recarea/?recid=82325"
+  },
+  {
+    "name": "Green Valley Falls",
+    "lat": 32.900049,
+    "lng": -116.583352,
+    "category": "waterfall",
+    "why": "Žulové tůně a kaskády mezi borovicemi v Cuyamace dávají úplně jinou krajinu než pobřeží a poušť; množství vody je ale na konci léta silně sezónní.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=667"
+  },
+  {
+    "name": "Doane Pond",
+    "lat": 33.3401,
+    "lng": -116.90135,
+    "category": "lake_river",
+    "why": "Malý horský rybník obklopený jehličnany na Palomaru je příjemný kontrast k vyprahlému San Diegu a dobrý krátký stop při cestě k observatoři, ale není určený ke koupání.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=637"
+  },
+  {
+    "name": "Eagle Rock Trailhead",
+    "lat": 33.273333,
+    "lng": -116.645028,
+    "category": "geology",
+    "why": "Pacific Crest Trail vede přes otevřenou chaparralovou krajinu k bizarnímu žulovému útvaru připomínajícímu orla; je to přesně ten druh geologické podivnosti, kvůli níž stojí za to vystoupit z auta.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/cleveland"
+  },
+  {
+    "name": "Stonewall Mine",
+    "lat": 32.983067,
+    "lng": -116.570249,
+    "category": "oddity",
+    "why": "Pozůstatky někdejšího zlatého dolu a zaniklé hornické osady v lesích Cuyamacy mají víc ducha než běžná turistická atrakce a jsou dostupné krátkou pěší cestou.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=667"
+  },
+  {
+    "name": "Ghost Mountain – Yaquitepec",
+    "lat": 33.00381,
+    "lng": -116.37943,
+    "category": "oddity",
+    "why": "Opuštěná pouštní homestead rodiny Marshalových na osamělém hřebeni nad Blair Valley působí skoro mccarthyovsky; k místu vede krátký výšlap z oblasti dostupné za dobrých podmínek i sedanem.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=638"
+  },
+  {
+    "name": "Vallecito Stage Station",
+    "lat": 32.97616,
+    "lng": -116.354458,
+    "category": "oddity",
+    "why": "Osamělá Butterfieldova dostavníková stanice u staré emigrantské trasy je kus opravdové pouštní Ameriky bez naleštěného westernového Disneylandu.",
+    "swim": "no",
+    "url": "https://www.sdparks.org/content/sdparks/en/park-pages/Vallecito.html"
+  },
+  {
+    "name": "Carrizo Badlands Overlook",
+    "lat": 32.82695,
+    "lng": -116.16434,
+    "category": "desert",
+    "why": "Přímo z asfaltové S2 se otevírá obrovský pohled přes rozřezané Carrizo Badlands, takže dostaneš téměř anza-borregovskou apokalypsu bez potřeby čtyřkolky.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=638"
+  },
+  {
+    "name": "The Slot Trailhead",
+    "lat": 33.18213,
+    "lng": -116.21417,
+    "category": "geology",
+    "why": "Úzký siltstone slot canyon je jeden z nejlepších geologických zážitků Anza-Borrega; poslední úsek příjezdu je nezpevněný a před vjezdem sedanem je rozumné zkontrolovat aktuální stav.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=638"
+  },
+  {
+    "name": "Calcite Mine Trailhead",
+    "lat": 33.281,
+    "lng": -116.095667,
+    "category": "geology",
+    "why": "Stezka padá do bizarně erodovaných kaňonů k opuštěnému válečnému kalcitovému dolu a výhledům přes poušť k Salton Sea; auto může zůstat u S22.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=638"
+  },
+  {
+    "name": "Galleta Meadows Sculptures",
+    "lat": 33.30504,
+    "lng": -116.40529,
+    "category": "oddity",
+    "why": "Obří kovoví draci, pravěká zvířata a další sochy rozeseté volně po poušti jsou skutečný roadside surrealismus a nejlíp fungují při nízkém večerním světle.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Galleta_Meadows_Estate"
+  },
+  {
+    "name": "Montezuma Valley Road Lookout",
+    "lat": 33.213074,
+    "lng": -116.423601,
+    "category": "scenic_drive",
+    "why": "S22 tady padá serpentinami z hor do Borrego Valley a z vyhlídky je vidět obrovský prázdný desert basin, místy až k Salton Sea.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=638"
+  },
+  {
+    "name": "Scissors Crossing – County Route S2",
+    "lat": 33.0966,
+    "lng": -116.4749,
+    "category": "scenic_drive",
+    "why": "Výchozí bod pro dlouhou starou stage-route S2 přes téměř prázdnou krajinu Anza-Borrega; samotná jízda odsud na jih je jeden z nejlepších road-trip úseků regionu.",
+    "swim": "no",
+    "url": "https://www.sandiego.org/things-to-do/article/historic-county-route-s2"
+  },
+  {
+    "name": "Old Highway 80 – Jacumba Segment",
+    "lat": 32.704163,
+    "lng": -116.360121,
+    "category": "scenic_drive",
+    "why": "Zbytky původní US 80 kolem Jacumby mají starý beton, opuštěné úseky, pustou hraniční krajinu a přesně ten předinterstateový roadside-Americana pocit.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/U.S._Route_80_in_California"
+  },
+  {
+    "name": "Campo Stone Store",
+    "lat": 32.609108,
+    "lng": -116.47445,
+    "category": "oddity",
+    "why": "Kamenný obchod a bývalá stage station z 19. století připomínají, jak drsná bývala tahle pohraniční část Kalifornie ještě před dálnicemi a předměstími.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Gaskill_Brothers%27_Stone_Store"
+  },
+  {
+    "name": "Kwaaymii Point",
+    "lat": 32.934674,
+    "lng": -116.482676,
+    "category": "mountain",
+    "why": "Nenápadná odbočka ze Sunrise Highway končí na hraně hor s obrovským výhledem přes poušť hluboko pod tebou a výrazně menším provozem než hlavní vyhlídky.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/cleveland"
+  },
+  {
+    "name": "Torrey Pines Gliderport",
+    "lat": 32.890694,
+    "lng": -117.251559,
+    "category": "coast",
+    "why": "Útesová plošina nad Pacifikem a Black's Beach kombinuje brutální vertikální pobřeží, vítr a paraglidery; i bez letu je výhled výrazně jiný než z pláže dole.",
+    "swim": "no",
+    "url": "https://www.flytorrey.com/"
+  },
+  {
+    "name": "San Elijo Lagoon Ecological Reserve",
+    "lat": 33.009722,
+    "lng": -117.262222,
+    "category": "coast",
+    "why": "Rozsáhlý pobřežní mokřad přímo mezi Encinitas a Solana Beach dává krátkou dávku ticha, vody a ptáků místo další zastavěné pláže.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/San_Elijo_Lagoon"
+  },
+  {
+    "name": "D.G. Wills Books",
+    "lat": 32.84011,
+    "lng": -117.272059,
+    "category": "culture",
+    "why": "Starosvětské intelektuální knihkupectví se silnou historií autorských večerů od Ferlinghettiho a Ginsberga po Dysona a Hitchense je pro tebe mnohem relevantnější než běžný bookstore.",
+    "swim": "no",
+    "url": "https://dgwillsbooks.com/"
+  },
+  {
+    "name": "Lou's Records",
+    "lat": 33.057325,
+    "lng": -117.298733,
+    "category": "culture",
+    "why": "Velký nezávislý record store na Coast Highway s dlouhou vazbou na místní surfovou a alternativní scénu a historií in-store koncertů včetně Mazzy Star a Rocket From The Crypt.",
+    "swim": "no",
+    "url": "https://lousrecords.com/"
+  },
+  {
+    "name": "Vinyl Junkies Record Shack",
+    "lat": 32.729302,
+    "lng": -117.129411,
+    "category": "culture",
+    "why": "Malý South Park obchod napojený na scénu kolem Casbahu má mnohem víc klubový a sběratelský charakter než sterilní vinylové butiky.",
+    "swim": "no",
+    "url": "https://vinyljunkies.net/"
+  },
+  {
+    "name": "The Tower Bar",
+    "lat": 32.749543,
+    "lng": -117.092225,
+    "category": "culture",
+    "why": "Art-deco dive bar z roku 1932 s živou punkovou, garage a rockovou scénou je přesně ten špinavější noční San Diego, který má charakter a historii.",
+    "swim": "no",
+    "url": "https://www.thetowerbar.com/"
+  },
+  {
+    "name": "Whistle Stop Bar",
+    "lat": 32.729367,
+    "lng": -117.12975,
+    "category": "culture",
+    "why": "Nenablýskaný South Park bar s DJs, kapelami a lokálním publikem je dobrý večerní kontrapunkt k turistickému Gaslampu.",
+    "swim": "no",
+    "url": "https://whistlestopbar.com/"
+  },
+  {
+    "name": "Rudford's Restaurant",
+    "lat": 32.755602,
+    "lng": -117.131203,
+    "category": "food_gem",
+    "why": "Klasický americký diner fungující od roku 1949 má neonově-roadsideovou atmosféru El Cajon Boulevardu a je mnohem víc Hopper než moderní brunchové podniky.",
+    "swim": "no",
+    "url": "https://rudfords.com/"
+  },
+  {
+    "name": "San Diego Chicken Pie Shop",
+    "lat": 32.75498,
+    "lng": -117.135407,
+    "category": "food_gem",
+    "why": "Staromódní levný podnik na El Cajon Boulevardu servíruje jednoduché chicken pot pies v interiéru, který působí spíš jako přeživší kus poválečné Ameriky než retro stylizace.",
+    "swim": "no",
+    "url": "https://chickenpieshops.com/"
+  },
+  {
+    "name": "Harper's Topiary Garden",
+    "lat": 32.741166,
+    "lng": -117.176105,
+    "category": "oddity",
+    "why": "Soukromá předzahrádka přetvořená ručně do desítek bizarních rostlinných zvířat a figur je krátký, autentický outsider-art stop bez vstupného a bez atrakčního cirkusu.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Harper%27s_Topiary_Garden"
+  },
+  {
+    "name": "Fallen Star",
+    "lat": 32.8814,
+    "lng": -117.2353,
+    "category": "oddity",
+    "why": "Modrý domek zavěšený šikmo přes hranu sedmipatrové budovy UC San Diego je absurdní veřejné umění, které vypadá jako znepokojivý záběr z filmu spíš než univerzitní instalace.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Fallen_Star_(art_installation)"
+  },
+  {
+    "name": "San Diego Automotive Museum",
+    "lat": 32.72749,
+    "lng": -117.15391,
+    "category": "culture",
+    "why": "Sbírka amerických aut a motorek dává smysl hlavně jako hodina věnovaná fyzické kultuře road tripu, hot rods a poválečné automobilové Americe, ne jako obecné technické muzeum.",
+    "swim": "no",
+    "url": "https://sdautomuseum.org/"
+  }
+]

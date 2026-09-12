@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Point Mugu Rock",
+    "lat": 34.08541,
+    "lng": -119.06053,
+    "category": "geology",
+    "why": "Monumentální skalní brána přímo u PCH, kde se suché hory Santa Monica Mountains lámou do oceánu a silnice má přesně ten syrový kalifornský road-movie charakter.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=630"
+  },
+  {
+    "name": "Sycamore Cove Beach",
+    "lat": 34.070792,
+    "lng": -119.014547,
+    "category": "coast",
+    "why": "Malá pláž sevřená suchými kopci Point Mugu State Park s jednoduchým přístupem z PCH a možností rychlého oceánského plavání mimo městské Malibu.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=630"
+  },
+  {
+    "name": "Zuma Beach",
+    "lat": 34.02273,
+    "lng": -118.83287,
+    "category": "coast",
+    "why": "Neobvykle široká a dlouhá otevřená pláž s chladnější vodou a tvrdším příbojem, takže dává větší pocit prostoru než většina pobřeží Los Angeles.",
+    "swim": "ocean",
+    "url": "https://beaches.lacounty.gov/zuma-beach/"
+  },
+  {
+    "name": "Nicholas Canyon Beach",
+    "lat": 34.04403,
+    "lng": -118.91985,
+    "category": "coast",
+    "why": "Menší malibská pláž pod útesy, kde je normální veřejný přístup a koupání a atmosféra je méně městská než na hlavních plážích.",
+    "swim": "ocean",
+    "url": "https://beaches.lacounty.gov/nicholas-canyon/"
+  },
+  {
+    "name": "Mulholland Scenic Overlook",
+    "lat": 34.13039,
+    "lng": -118.50251,
+    "category": "scenic_drive",
+    "why": "Krátká zastávka na Mulholland Drive s pohledem přes suché hřebeny a nekonečný urban sprawl, nejlépe fungující v pozdním světle nebo po setmění.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Angeles Crest Highway — Red Box",
+    "lat": 34.25839,
+    "lng": -118.10455,
+    "category": "scenic_drive",
+    "why": "Výborný nástup na Angeles Crest Highway, odkud může během pár minut zmizet z megaměsta do borovic, horských hřebenů a téměř prázdné silnice.",
+    "swim": "no",
+    "url": "https://www.recreation.gov/gateways/13562"
+  },
+  {
+    "name": "Mount Wilson Observatory",
+    "lat": 34.22503,
+    "lng": -118.05719,
+    "category": "dark_sky",
+    "why": "Historická observatoř s Hookerovým 100palcovým teleskopem, zásadním pro moderní kosmologii, navíc vysoko nad Los Angeles uprostřed horského lesa.",
+    "swim": "no",
+    "url": "https://www.mtwilson.edu/"
+  },
+  {
+    "name": "Devil's Punchbowl Natural Area",
+    "lat": 34.413525,
+    "lng": -117.858921,
+    "category": "geology",
+    "why": "Velký pás nakloněných pískovcových vrstev vytlačených podél zlomu San Andreas, tedy skutečná geologie a polopoušť místo další městské atrakce.",
+    "swim": "no",
+    "url": "https://parks.lacounty.gov/devils-punchbowl-natural-area-and-nature-center/"
+  },
+  {
+    "name": "2nd Street Tunnel",
+    "lat": 34.05488,
+    "lng": -118.25053,
+    "category": "culture",
+    "why": "Bíle kachlíkovaný tunel je jeden z nejčistších dochovaných kusů filmového Blade Runner Los Angeles a stojí za projetí spíš večer než za denního provozu.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/2nd_Street_Tunnel"
+  },
+  {
+    "name": "Ennis House",
+    "lat": 34.11625,
+    "lng": -118.29289,
+    "category": "culture",
+    "why": "Wrightův monumentální textilní dům sloužil jako Deckardův exteriér v Blade Runnerovi; interiér je soukromý, ale pohled z ulice stojí za krátkou filmovou odbočku.",
+    "swim": "no",
+    "url": "https://www.laconservancy.org/learn/historic-places/ennis-house/"
+  },
+  {
+    "name": "Greystone Mansion & Gardens",
+    "lat": 34.09208,
+    "lng": -118.40148,
+    "category": "culture",
+    "why": "Temné kamenné sídlo využívané desítkami filmařů má poněkud zlověstnou starohollywoodskou atmosféru a areál lze navštívit i bez prohlídky interiéru.",
+    "swim": "no",
+    "url": "https://www.beverlyhills.org/departments/communityservices/cityparks/greystonemansiongardens/"
+  },
+  {
+    "name": "Soap Plant / WACKO / La Luz de Jesus Gallery",
+    "lat": 34.10035,
+    "lng": -118.28996,
+    "category": "oddity",
+    "why": "Bizarní obchod a galerie lowbrow, pop-surrealismu a outsider art je mnohem blíž jeho estetice než standardní losangeleské muzeum.",
+    "swim": "no",
+    "url": "https://www.wackola.com/"
+  },
+  {
+    "name": "Philosophical Research Society",
+    "lat": 34.113612,
+    "lng": -118.277448,
+    "category": "culture",
+    "why": "Instituce z roku 1934 s desítkami tisíc svazků o filozofii, mysticismu, vědomí a náboženství je intelektuální podivnost přesně na pomezí seriózního bádání a kalifornského esoterična.",
+    "swim": "no",
+    "url": "https://www.prs.org/"
+  },
+  {
+    "name": "Permanent Records Roadhouse",
+    "lat": 34.100848,
+    "lng": -118.235075,
+    "category": "culture",
+    "why": "Malý vinylový obchod spojený s barem a pódiem pro lokální kapely nabízí místo jednoho sterilního record shopu současně desky, dive-bar atmosféru a živou hudbu.",
+    "swim": "no",
+    "url": "https://www.permanentrecordsla.com/"
+  },
+  {
+    "name": "Record Surplus",
+    "lat": 34.0386,
+    "lng": -118.46732,
+    "category": "culture",
+    "why": "Velký nezávislý obchod zaměřený hlavně na použité desky dává smysl jako druhý vinylový ponor po Amoebě, zvlášť pro starší rock, soul a blues.",
+    "swim": "no",
+    "url": "https://www.recordsurplusla.com/"
+  },
+  {
+    "name": "The Cinema Bar",
+    "lat": 34.009402,
+    "lng": -118.41469,
+    "category": "culture",
+    "why": "Maličký neokázalý dive bar s pravidelnou živou hudbou, starými štamgasty a bez naleštěného hollywoodského pozlátka je přesně typ večerní zastávky, který by mohl milovat.",
+    "swim": "no",
+    "url": "https://thecinemabar.com/"
+  },
+  {
+    "name": "Pann's Restaurant",
+    "lat": 33.978115,
+    "lng": -118.370566,
+    "category": "food_gem",
+    "why": "Dochovaný diner z roku 1958 s Googie architekturou, kamennými zdmi a původními neonově-mid-century detaily je silnější kus Hopperovské Ameriky než většina tematických retro podniků.",
+    "swim": "no",
+    "url": "https://panns.com/"
+  },
+  {
+    "name": "Canter's Deli",
+    "lat": 34.078821,
+    "lng": -118.361597,
+    "category": "food_gem",
+    "why": "Starý židovský deli na Fairfaxu je směs pozdně nočního Los Angeles, rockové historie a interiéru, který stále působí jako skutečná instituce místo retro dekorace.",
+    "swim": "no",
+    "url": "https://cantersdeli.com/"
+  },
+  {
+    "name": "Formosa Cafe",
+    "lat": 34.090455,
+    "lng": -118.346068,
+    "category": "food_gem",
+    "why": "Historický hollywoodský bar s červeným světlem, starým železničním vozem a stopami gangsterů i studiové éry má po setmění mnohem větší atmosféru než běžná celebrity atrakce.",
+    "swim": "no",
+    "url": "https://theformosacafe.com/"
+  },
+  {
+    "name": "White Point / Royal Palms Beach",
+    "lat": 33.71474,
+    "lng": -118.31424,
+    "category": "coast",
+    "why": "Skalnatý kus pobřeží pod San Pedrem s tide pools, ruinami starého resortu a stopami někdejších sirných pramenů působí podstatně syrověji než klasická pláž LA.",
+    "swim": "no",
+    "url": "https://beaches.lacounty.gov/download-category/white-point-royal-palms-beach/"
+  },
+  {
+    "name": "Portuguese Bend Reserve",
+    "lat": 33.7484,
+    "lng": -118.3607,
+    "category": "coast",
+    "why": "Sesuvné pobřežní svahy Palos Verdes nabízejí suchou krajinu, oceánské útesy a zvláštní pocit geologicky nestabilního okraje kontinentu jen pár kilometrů od města.",
+    "swim": "no",
+    "url": "https://pvplc.org/_lands/portuguese-bend-reserve/"
+  },
+  {
+    "name": "Shaw's Cove",
+    "lat": 33.54503,
+    "lng": -117.79867,
+    "category": "coast",
+    "why": "Malá skalnatá zátoka v Laguně má veřejné schody, čistou vodu, kelp a reef pod hladinou, takže dává smysl hlavně jako skutečné koupání nebo šnorchlovací zastávka.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=27901"
+  },
+  {
+    "name": "Thousand Steps Beach",
+    "lat": 33.498363,
+    "lng": -117.740385,
+    "category": "coast",
+    "why": "Dlouhé schodiště shodí návštěvníka pod vysoké pískovcové útesy na podstatně sevřenější a divočejší kus Laguny se skalami a mořskou jeskyní.",
+    "swim": "ocean",
+    "url": "https://californiacoastaltrail.org/info-point/thousand-steps-beach/"
+  },
+  {
+    "name": "Victoria Beach",
+    "lat": 33.516971,
+    "lng": -117.761166,
+    "category": "coast",
+    "why": "Menší lagunská pláž pod vysokými útesy má bizarní kamennou Pirate Tower přímo u vody a funguje dobře jako krátká geologicko-filmová odbočka s koupáním.",
+    "swim": "ocean",
+    "url": "https://en.wikipedia.org/wiki/Victoria_Beach_(Laguna_Beach)"
+  },
+  {
+    "name": "Dana Point Headlands Conservation Area",
+    "lat": 33.461454,
+    "lng": -117.711304,
+    "category": "coast",
+    "why": "Krátká síť stezek po otevřeném pobřežním útesu nabízí široký Pacifik, suchý coastal scrub a geologii headlandu bez nutnosti dlouhého výšlapu.",
+    "swim": "no",
+    "url": "https://www.danapoint.org/department/general-services/parks/natural-resources/dana-point-headlands-conservation-area"
+  },
+  {
+    "name": "Salt Creek Beach",
+    "lat": 33.47733,
+    "lng": -117.72281,
+    "category": "coast",
+    "why": "Pod útesy Dana Point je dlouhý otevřený úsek pobřeží s normálním veřejným vstupem, reefem a oficiálně povoleným plaváním, vhodný na rychlou koupel cestou na jih.",
+    "swim": "ocean",
+    "url": "https://parks.oc.gov/beaches/salt-creek-beach"
+  },
+  {
+    "name": "San Onofre State Beach",
+    "lat": 33.372808,
+    "lng": -117.565601,
+    "category": "coast",
+    "why": "Dlouhé relativně syrové pobřeží pod útesy, surfová historie a surrealistická přítomnost odstavené jaderné elektrárny z něj dělají mnohem zajímavější poslední zastávku před San Diegem než uhlazené resortové pláže.",
+    "swim": "ocean",
+    "url": "https://www.parks.ca.gov/?page_id=647"
+  }
+]

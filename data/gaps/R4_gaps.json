@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Steamboat Falls",
+    "lat": 43.37367,
+    "lng": -122.64074,
+    "category": "lake_river",
+    "why": "Nízký skalní práh na Steamboat Creek vytváří skutečný lesní swimming hole a na rozdíl od většiny vodopádů tady je koupání přímo součástí místa.",
+    "swim": "river",
+    "url": "https://www.recreation.gov/camping/campgrounds/10377584"
+  },
+  {
+    "name": "Six Mile Day Use Area — Illinois River",
+    "lat": 42.297,
+    "lng": -123.732,
+    "category": "lake_river",
+    "why": "Průzračná Illinois River tu teče mezi skalami do hlubších klidnějších tůní a z parkoviště je to jen pár kroků, takže jde o jeden z nejlepších snadno dostupných wild-swim spotů v jižním Oregonu.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "River Bench — Illinois River",
+    "lat": 42.2951,
+    "lng": -123.7401,
+    "category": "lake_river",
+    "why": "Krátký sestup z Illinois River Road vede na zalesněnou říční terasu s přístupem k čisté řece, která je podstatně syrovější a tišší než hlavní rekreační spoty.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "McKee Bridge Swimming Hole",
+    "lat": 42.1258,
+    "lng": -123.07268,
+    "category": "lake_river",
+    "why": "Pod stoletým krytým mostem přes Applegate River je oblíbená přírodní koupací tůň, takže se tu spojuje studená řeka s kusem autentické venkovské Ameriky.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "TouVelle State Recreation Site",
+    "lat": 42.44328,
+    "lng": -122.88607,
+    "category": "lake_river",
+    "why": "Snadný přístup přímo k Rogue River pod Table Rock nabízí legální koupání bez túry a funguje jako praktická spontánní zastávka mezi Medfordem a horním Rogue.",
+    "swim": "river",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=72"
+  },
+  {
+    "name": "Hyatt Lake Recreation Area",
+    "lat": 42.1669778,
+    "lng": -122.4641333,
+    "category": "lake_river",
+    "why": "Vysoko položené jezero mezi borovicemi má oficiální přístup ke koupání a proti údolí kolem Ashlandu působí výrazně odlehleji a chladněji.",
+    "swim": "lake",
+    "url": "https://www.blm.gov/visit/hyatt-lake-recreation-area"
+  },
+  {
+    "name": "Paulina Lake — Little Crater Day Use Site",
+    "lat": 43.71225,
+    "lng": -121.24339,
+    "category": "lake_river",
+    "why": "Tady můžeš vlézt přímo do studeného kráterového jezera Newberry Caldera a plavat s obsidiánovými lávami a stěnami kaldery kolem sebe.",
+    "swim": "lake",
+    "url": "https://www.recreation.gov/camping/poi/237093"
+  },
+  {
+    "name": "Paulina Lake Hot Springs",
+    "lat": 43.73209,
+    "lng": -121.25225,
+    "category": "hot_spring",
+    "why": "Na černém vulkanickém břehu Paulina Lake vyvěrá horká voda do ručně vyhloubených mělkých bazénků, takže můžeš střídat horký soak a ledové kráterové jezero.",
+    "swim": "hot_spring",
+    "url": null
+  },
+  {
+    "name": "The Pinnacles",
+    "lat": 42.84996,
+    "lng": -122.00719,
+    "category": "geology",
+    "why": "Erodované fumarolové věže vypadají jako miniaturní badlands a ukazují úplně jinou tvář Crater Lake než klasické modré panoráma z rim drive.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/pinnacles.htm"
+  },
+  {
+    "name": "Plaikni Falls Trail",
+    "lat": 42.9013,
+    "lng": -122.0575,
+    "category": "waterfall",
+    "why": "Krátká cesta z vulkanické pustiny končí u pramenného vodopádu padajícího přes tmavou lávu, což je překvapivě intimní kontrast k obřím měřítkům Crater Lake.",
+    "swim": "no",
+    "url": "https://www.nps.gov/crla/planyourvisit/hiking-trails.htm"
+  },
+  {
+    "name": "Fall Creek Falls — North Umpqua",
+    "lat": 43.3134,
+    "lng": -122.8356,
+    "category": "waterfall",
+    "why": "Krátká stezka od OR-138 vede starým mechem porostlým lesem k několika stupňům vodopádu sevřeným v úzké rokli, takže stojí za samostatnou odbočku i vedle Toketee a Watson.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Steamboat Creek Road",
+    "lat": 43.349,
+    "lng": -122.727,
+    "category": "scenic_drive",
+    "why": "Úzká lesní silnice sleduje divoký Steamboat Creek mezi hlubokými tůněmi, balvany a starým lesem a působí mnohem odlehleji než hlavní OR-138.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Warm Springs Falls",
+    "lat": 43.35773,
+    "lng": -122.24339,
+    "category": "waterfall",
+    "why": "Sedmdesát stop vody padá přes mohutný čedičový práh u Lemolo Lake a krátká přístupová stezka tě dostane do výrazně méně navštěvované části umpqských vodopádů.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Whitehorse Falls",
+    "lat": 43.24775,
+    "lng": -122.30492,
+    "category": "waterfall",
+    "why": "Clearwater River se tu vmáčkne do úzkého vulkanického žlabu a spadne do hlubokého punchbowlu prakticky přímo vedle silnice, takže má mimořádný poměr efekt versus čas.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Flatiron Rock — Oregon Badlands Wilderness",
+    "lat": 43.95771,
+    "lng": -121.05186,
+    "category": "desert",
+    "why": "Plochá high-desert krajina východně od Bendu vede mezi starými jalovci a lávovými výchozy k bizarnímu skalnímu moatu, kde už Oregon začíná působit skoro jako Great Basin.",
+    "swim": "no",
+    "url": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/oregon-badlands"
+  },
+  {
+    "name": "Crack-in-the-Ground",
+    "lat": 43.33281,
+    "lng": -120.676,
+    "category": "geology",
+    "why": "Dvoukilometrová vulkanicko-tektonická puklina, do které můžeš sestoupit a chodit desítky stop pod povrchem pouště, je přesně ten druh geologické divnosti, kvůli které má cenu sjet daleko z hlavní trasy.",
+    "swim": "no",
+    "url": "https://www.blm.gov/visit/crack-ground"
+  },
+  {
+    "name": "Hole-in-the-Ground",
+    "lat": 43.4111,
+    "lng": -121.1976,
+    "category": "geology",
+    "why": "Obrovský téměř kruhový maar vznikl explozí magmatu s podzemní vodou a jeho prázdná vyprahlá mísa má mnohem víc nevadské než typicky oregonské atmosféry.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Hole-in-the-Ground"
+  },
+  {
+    "name": "Fort Rock State Natural Area",
+    "lat": 43.3744,
+    "lng": -121.07,
+    "category": "geology",
+    "why": "Izolovaný tufový prsten vyrůstá z dokonale ploché bývalé jezerní pánve jako rozpadlá kamenná pevnost a okolní prázdno je skoro stejně důležité jako samotná skála.",
+    "swim": "no",
+    "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=170"
+  },
+  {
+    "name": "Lava Cast Forest",
+    "lat": 43.81679,
+    "lng": -121.28891,
+    "category": "geology",
+    "why": "Láva tu obtekla živé stromy a po jejich shoření zůstaly duté kamenné odlitky kmenů, což je nenápadná, ale dost mimozemská stopa Newberry Volcano.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/recarea/deschutes/recarea/?recid=38394"
+  },
+  {
+    "name": "Lava River Cave",
+    "lat": 43.8954,
+    "lng": -121.36892,
+    "category": "geology",
+    "why": "Téměř dvoukilometrový lávový tunel dovoluje projít skutečným podzemním kanálem, kterým po erupci Newberry tekla láva směrem k Deschutes River.",
+    "swim": "no",
+    "url": "https://www.fs.usda.gov/recarea/deschutes/recarea/?recid=38396"
+  },
+  {
+    "name": "Benham Falls",
+    "lat": 43.93823,
+    "lng": -121.41201,
+    "category": "lake_river",
+    "why": "Deschutes River se tady mění z klidné vody v dlouhý řetěz brutálních peřejí sevřených lávou, což je silnější geologická scéna než klasický samostatný vodopád.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Benham_Falls"
+  },
+  {
+    "name": "Dillon Falls",
+    "lat": 43.95817,
+    "lng": -121.41614,
+    "category": "lake_river",
+    "why": "Jen pár kilometrů od Bendu se Deschutes propadne do temné lávové soutěsky s násilnými peřejemi, ale místo zůstává podstatně syrovější než městské riverfront stezky.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Dillon_Falls"
+  },
+  {
+    "name": "Summer Lake Hot Springs",
+    "lat": 42.72481,
+    "lng": -120.64764,
+    "category": "hot_spring",
+    "why": "Starý geotermální resort uprostřed téměř prázdné Great Basin krajiny kombinuje horké minerální bazény, historický bathhouse a přesně tu zapadlou roadside atmosféru, kvůli níž má smysl dlouhý východní detour.",
+    "swim": "hot_spring",
+    "url": "https://www.summerlakehotsprings.com/"
+  },
+  {
+    "name": "Crystal Crane Hot Springs",
+    "lat": 43.44106,
+    "lng": -118.63944,
+    "category": "hot_spring",
+    "why": "Obrovský venkovní termální rybník leží osaměle v sagebrushové pustině východního Oregonu a je dost zvláštní na to, aby ospravedlnil extrémní odbočku, pokud se vydáš až k Burns.",
+    "swim": "hot_spring",
+    "url": "https://www.cranehotsprings.com/"
+  },
+  {
+    "name": "Big Painted Cave & Symbol Bridge Trail",
+    "lat": 41.72951,
+    "lng": -121.51212,
+    "category": "culture",
+    "why": "Krátká cesta přes lávovou pustinu vede k jeskyním s původními indiánskými piktogramy, takže tady geologie Lava Beds dostává lidskou vrstvu, která u běžných lava tubes chybí.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/big-painted-cave.htm"
+  },
+  {
+    "name": "Sentinel Cave",
+    "lat": 41.70852,
+    "lng": -121.51128,
+    "category": "geology",
+    "why": "Kilometr dlouhá lava tube má dva vchody, takže jí lze projít skrz místo návratu stejnou cestou a nabízí podstatně silnější pocit skutečného podzemního průzkumu než Mushpot.",
+    "swim": "no",
+    "url": "https://www.nps.gov/labe/planyourvisit/caving.htm"
+  },
+  {
+    "name": "Mammoth Crater",
+    "lat": 41.69266,
+    "lng": -121.54805,
+    "category": "geology",
+    "why": "Třísetstopá propadlina je hlavním zdrojem obrovských lávových proudů, které vytvořily většinu jeskyní Lava Beds, a její pustý okraj dává celému podzemnímu systému najednou smysl.",
+    "swim": "no",
+    "url": "https://www.nps.gov/labe/learn/nature/geology.htm"
+  },
+  {
+    "name": "Devil's Homestead Overlook",
+    "lat": 41.775,
+    "lng": -121.552,
+    "category": "geology",
+    "why": "Vyhlídka míří přes rozlehlý černý a'a lávový proud, kde nejsou skoro žádné stavby ani vegetace a Medicine Lake volcano konečně působí v měřítku celé krajiny.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/devil-s-homestead-overlook.htm"
+  }
+]

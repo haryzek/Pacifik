@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Grassy Flat — Middle Fork Smith River",
+    "lat": 41.8564,
+    "lng": -123.8889,
+    "category": "lake_river",
+    "why": "Krátká prudší stezka vede přímo z lesa k průzračnému tyrkysovému Smith River, kde je štěrková pláž a skutečný koupací pool.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Patrick Creek Campground — Smith River",
+    "lat": 41.8719,
+    "lng": -123.8467,
+    "category": "lake_river",
+    "why": "CCC kemp z 30. let leží přímo u Middle Fork Smith River a kombinuje starou americkou infrastrukturu s velmi dobrým přístupem na koupání.",
+    "swim": "river",
+    "url": "https://www.recreation.gov/camping/campgrounds/232316"
+  },
+  {
+    "name": "Patrick Creek Historic Lodge",
+    "lat": 41.8752,
+    "lng": -123.8446,
+    "category": "food_gem",
+    "why": "Starý lesní lodge na US-199 má přesně ten zapadlý horsko-roadside charakter, kvůli kterému stojí za to zastavit mezi redwoody a Oregonem.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Ruby Van Deventer County Park — Smith River",
+    "lat": 41.8543,
+    "lng": -124.1215,
+    "category": "lake_river",
+    "why": "Nenápadný county park pod redwoody dává snadný přístup k South Fork Smith River a je výrazně méně turistický než hlavní místa v Jedediah Smith.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Freshwater Lagoon",
+    "lat": 41.268,
+    "lng": -124.0928,
+    "category": "lake_river",
+    "why": "Přímo za dunou od Pacifiku je sladkovodní laguna s oficiálním swimming access, takže nabízí klidné koupání bez oceánského příboje.",
+    "swim": "lake",
+    "url": "https://www.parks.ca.gov/BoatingFacilities/f/36"
+  },
+  {
+    "name": "Luffenholtz Beach",
+    "lat": 41.0415,
+    "lng": -124.1192,
+    "category": "coast",
+    "why": "Malá skalnatá zátoka pod útesy má tidepools, sea stacks a dramatickou pobřežní scenérii, ale leží mimo nejběžnější zastávky kolem Trinidadu.",
+    "swim": "ocean",
+    "url": "https://www.visitredwoods.com/listing/luffenholtz-beach-park/506/"
+  },
+  {
+    "name": "Houda Point",
+    "lat": 41.0367,
+    "lng": -124.1175,
+    "category": "coast",
+    "why": "Krátký sestup z opuštěnější části Scenic Drive vede k mořské jeskyni, skále a divoké pláži, která funguje hlavně při vhodném odlivu.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Moonstone Beach & Little River",
+    "lat": 41.0303,
+    "lng": -124.1126,
+    "category": "coast",
+    "why": "Sea stacks a jeskyně se tu potkávají s ústím líného Little River, kde se dá na rozdíl od otevřeného Pacifiku příjemně smočit nebo zaplavat.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Mad River Beach County Park",
+    "lat": 40.9293,
+    "lng": -124.1323,
+    "category": "coast",
+    "why": "Široká prázdná pláž a dynamické ústí Mad River mají syrovější a méně pohlednicový charakter než pobřeží přímo u Trinidadu.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Centerville Beach",
+    "lat": 40.574,
+    "lng": -124.3494,
+    "category": "coast",
+    "why": "Z Ferndale vede krátká odbočka k dlouhé větrné pláži pod pobřežními svahy, která působí jako přirozený severní nástup do Lost Coast.",
+    "swim": "ocean",
+    "url": null
+  },
+  {
+    "name": "Scotia Lodge & Company Town",
+    "lat": 40.4831,
+    "lng": -124.1009,
+    "category": "motel_gem",
+    "why": "Historický hotel uprostřed někdejšího dřevařského company townu Scotia nabízí autentickou lumber-Americana bez turistické scénografie.",
+    "swim": "no",
+    "url": "https://scotialodge.com/"
+  },
+  {
+    "name": "Samoa Cookhouse",
+    "lat": 40.8197,
+    "lng": -124.1817,
+    "category": "food_gem",
+    "why": "Starý lumber-camp cookhouse u pilového městečka Samoa je přesně ten kus pracovnické severokalifornské historie, který má větší duši než běžný diner.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Northtown Books",
+    "lat": 40.8696,
+    "lng": -124.0869,
+    "category": "culture",
+    "why": "Malé nezávislé knihkupectví v Arcata má skutečně kurátorovaný výběr a dává smysl jako krátká kulturní zastávka místo turistických obchodů na Plaza.",
+    "swim": "no",
+    "url": "https://northtownbooks.com/"
+  },
+  {
+    "name": "People's Records",
+    "lat": 40.8681,
+    "lng": -124.0864,
+    "category": "culture",
+    "why": "Malý nezávislý obchod s vinylem v Arcata je dobrý loviště psychedelie, soulu a staršího rocku bez řetězcového feelu.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Booklegger",
+    "lat": 40.8041,
+    "lng": -124.1674,
+    "category": "culture",
+    "why": "Used-bookstore nacpaný knihami v Eureka Old Town je přesně ten typ zaprášeného nezávislého místa, kde se vyplatí na půl hodiny zmizet.",
+    "swim": "no",
+    "url": null
+  },
+  {
+    "name": "Benbow State Recreation Area — South Fork Eel River",
+    "lat": 40.0632,
+    "lng": -123.8035,
+    "category": "lake_river",
+    "why": "Po odstranění staré přehrady je tu zase South Fork Eel River s lehkým přístupem k vodě a klidnějším charakterem než známější gravel bars severněji.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Steiner Flat — Trinity River",
+    "lat": 40.6595,
+    "lng": -122.9663,
+    "category": "lake_river",
+    "why": "BLM cesta končí přímo u Trinity River s několika místy pro koupání a zlatokopeckým feelingem mimo provoz CA-299.",
+    "swim": "river",
+    "url": "https://www.blm.gov/visit/steiner-flat-primitive-campground"
+  },
+  {
+    "name": "Stoney Creek Swim Area — Trinity Lake",
+    "lat": 40.851,
+    "lng": -122.8514,
+    "category": "lake_river",
+    "why": "Oficiální swim area na Trinity Lake nabízí jednoduchý vstup do horské vody a dává smysl jako koupací odbočka při cestě přes Trinity Alps.",
+    "swim": "lake",
+    "url": null
+  },
+  {
+    "name": "Clark Springs Beach — Trinity Lake",
+    "lat": 40.858,
+    "lng": -122.8128,
+    "category": "lake_river",
+    "why": "Písečno-štěrková pláž na Stuart Fork arm Trinity Lake má pozvolný vstup a je praktičtější na skutečné plavání než většina náhodných roadside accessů.",
+    "swim": "lake",
+    "url": null
+  },
+  {
+    "name": "Hell Gate — South Fork Trinity River",
+    "lat": 40.3707,
+    "lng": -123.3136,
+    "category": "lake_river",
+    "why": "Odlehlý South Fork Trinity tu má skalnatou pláž a oficiálně uváděné koupání v krajině, kam už téměř nikdo z pobřežní US-101 nezajíždí.",
+    "swim": "river",
+    "url": "https://www.fs.usda.gov/r05/shasta-trinity/recreation/hell-gate-campground"
+  },
+  {
+    "name": "Castle Lake",
+    "lat": 41.2302,
+    "lng": -122.3814,
+    "category": "lake_river",
+    "why": "Silnice končí přímo u ledovcového jezera pod skalnatými svahy a západní veřejný břeh umožňuje jednoduchý vstup do studené horské vody.",
+    "swim": "lake",
+    "url": "https://en.wikipedia.org/wiki/Castle_Lake_(California)"
+  },
+  {
+    "name": "Lake Siskiyou Beach",
+    "lat": 41.2774,
+    "lng": -122.3411,
+    "category": "lake_river",
+    "why": "Jezero pod masivem Mount Shasta nabízí snadné koupání s monumentální sopkou v pozadí a je mnohem praktičtější než vysokohorská jezera bez silničního přístupu.",
+    "swim": "lake",
+    "url": null
+  },
+  {
+    "name": "Lower McCloud Falls",
+    "lat": 41.2411,
+    "lng": -122.0248,
+    "category": "waterfall",
+    "why": "Nízký široký vodopád má přímo pod sebou klasický McCloud River swimming hole a lze k němu dojet prakticky až k vodě.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Middle McCloud Falls",
+    "lat": 41.2435,
+    "lng": -122.0095,
+    "category": "waterfall",
+    "why": "Nejdramatičtější ze tří McCloud Falls padá do hlubokého čedičového poolu, kde se běžně plave v ledové vodě pod stěnou vodopádu.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Cattle Camp Swimming Hole — Upper McCloud River",
+    "lat": 41.259,
+    "lng": -121.94,
+    "category": "lake_river",
+    "why": "Mimo trojici známých vodopádů je tu klidnější oficiální swimming hole na Upper McCloud River, vhodný spíš na opravdové koupání než fotografickou zastávku.",
+    "swim": "river",
+    "url": null
+  },
+  {
+    "name": "Hedge Creek Falls",
+    "lat": 41.2374,
+    "lng": -122.2683,
+    "category": "waterfall",
+    "why": "Krátká stezka z Dunsmuiru vede za samotnou stěnu vodopádu a pak k výhledu do kaňonu Sacramento River, takže poměr zážitek versus čas je výborný.",
+    "swim": "no",
+    "url": "https://en.wikipedia.org/wiki/Hedge_Creek_Falls"
+  },
+  {
+    "name": "Castle Crags — Vista Point",
+    "lat": 41.1595,
+    "lng": -122.3058,
+    "category": "geology",
+    "why": "Krátký trail z konce horské silnice otevře pohled na bizarní žulové jehly Castle Crags proti Mount Shasta, což je jeden z geologicky nejsilnějších výhledů celé odbočky.",
+    "swim": "no",
+    "url": "https://www.parks.ca.gov/?page_id=454"
+  },
+  {
+    "name": "Sulphur Works — Lassen Volcanic National Park",
+    "lat": 40.4495,
+    "lng": -121.5341,
+    "category": "geology",
+    "why": "Přímo u silnice bublá bahno, uniká pára a zem je sírově zbarvená, takže dostane intenzivní vulkanickou scénu téměř bez pěšího závazku.",
+    "swim": "no",
+    "url": "https://www.nps.gov/places/sulphurworks.htm"
+  },
+  {
+    "name": "Bumpass Hell Trailhead",
+    "lat": 40.4661,
+    "lng": -121.514,
+    "category": "geology",
+    "why": "Několik kilometrů chůze vede do největší hydrotermální oblasti Lassenu s fumarolami, vařícími prameny a krajinou připomínající malý Yellowstone.",
+    "swim": "no",
+    "url": "https://www.nps.gov/lavo/planyourvisit/bumpass-hell.htm"
+  },
+  {
+    "name": "Manzanita Lake — Lassen",
+    "lat": 40.5336,
+    "lng": -121.5678,
+    "category": "lake_river",
+    "why": "Klidné horské jezero na severním okraji parku umožňuje koupání a při bezvětří zrcadlí Lassen Peak, takže dobře funguje jako studený swim stop po vulkanické krajině.",
+    "swim": "lake",
+    "url": "https://en.wikipedia.org/wiki/Manzanita_Lake"
+  },
+  {
+    "name": "Kings Creek Falls Trailhead",
+    "lat": 40.4605,
+    "lng": -121.4592,
+    "category": "waterfall",
+    "why": "Stezka sleduje horský potok přes louky k mohutnému kaskádovému vodopádu a přidává Lassenu vodní krajinu, ne jen fumaroly a lávu.",
+    "swim": "no",
+    "url": null
+  }
+]
