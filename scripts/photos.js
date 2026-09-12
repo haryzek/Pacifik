@@ -17,6 +17,7 @@ const OUTJ = path.join(ROOT, "data/photos.json");
 const CACHEJ = path.join(ROOT, "data/photo-cache.json");
 const meta = fs.existsSync(OUTJ) ? JSON.parse(fs.readFileSync(OUTJ, "utf8")) : {};
 const cache = fs.existsSync(CACHEJ) ? JSON.parse(fs.readFileSync(CACHEJ, "utf8")) : {};
+const REJECT = fs.existsSync(path.join(ROOT, "data/photo-reject.json")) ? JSON.parse(fs.readFileSync(path.join(ROOT, "data/photo-reject.json"), "utf8")) : {};
 const args = process.argv.slice(2);
 const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const FORCE = args.includes("--force"), LIMIT = +arg("--limit") || Infinity, ONLY = arg("--only")?.split(","), RANK1 = args.includes("--rank1");
@@ -26,7 +27,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const BAD_RE = /\b(map|maps|mapa|logo|seal|flag|diagram|plan|sign|signs|svg|icon|chart|banner|coat of arms|locator|karte|schild|plaque|marker|graph|table|route|topo|satellite|poster|brochure|screenshot|drawing|sketch|painting|portrait|selfie)\b/i;
 const BAD = { test: (s) => BAD_RE.test(String(s).replace(/[_\-.]/g, " ")) }; // podtržítka v názvech souborů
 const GOODCAT = /(lakes?|beaches|waterfalls?|mountains?|coasts?|cliffs?|landscapes?|views? (of|from)|panoram|rivers?|canyons?|deserts?|rock formations|dunes|lighthouses?|forests?|trees|nature|geology|volcan|hot springs|bays?|islands?|sunsets?|piers?|bridges?|buildings?|motels?|diners?|neon|theat|architecture|murals?)/i;
-const BADCAT = /\b(maps?|people|portraits?|signs?|men|women|persons?|groups? of|rangers?|staff|vehicles?|cars?|trucks?|buses|logos?|flags?|documents?|texts?|posters?|paintings?|drawings?|diagrams?|screenshots?|plaques?|licence plates|food|selfies?|interiors? of vehicles|taxidermy|employees|uniforms|hats|weddings?|events?|festivals?|crowds?)\b/i;
+const BADCAT = /\b(maps?|people|portraits?|signs?|men|women|persons?|groups? of|rangers?|staff|vehicles?|cars?|trucks?|buses|logos?|flags?|documents?|texts?|posters?|paintings?|drawings?|diagrams?|screenshots?|plaques?|licence plates|food|selfies?|interiors? of vehicles|taxidermy|employees|uniforms|hats|weddings?|events?|festivals?|crowds?|spiders?|insects?|arachnid|arthropod|crustacea|crabs?|beetles?|bugs?|moths?|butterflies|macro|satellite|from space|iss|aerial|earth observ|dredg|ships?|boats?|aquari|fish|interiors?)\b/i;
 
 async function api(url) {
   if (cache[url]) return cache[url];
@@ -66,15 +67,20 @@ async function fromWikiGeo(p) {
   return await commonsMetaFromUrl(best.x.original.source, "wiki-geo:" + best.x.title);
 }
 async function fromCommonsGeo(p) {
+  const shop = ["culture", "food_gem", "motel_gem", "town"].includes(p.category);
   const j = await api(`https://commons.wikimedia.org/w/api.php?action=query&list=geosearch&gscoord=${p.lat}|${p.lng}&gsradius=1500&gsnamespace=6&gslimit=40&format=json`);
   const list = (j.query?.geosearch || []).filter((x) => /\.(jpe?g|png)$/i.test(x.title) && !BAD.test(x.title));
   if (!list.length) return null;
   // preferuj shodu názvu, jinak nejbližší
   list.forEach((x) => { x.s = sim(x.title.replace(/^File:/, ""), p.name); });
   list.sort((a, b) => b.s - a.s || a.dist - b.dist);
+  if (shop && list[0].s < 0.34) return null; // obchod/bar: náhodná fotka ze sousedství není on
+  const rej = REJECT[p.id] || [];
   const scored = [];
   for (const x of list.slice(0, 8)) {
+    if (rej.includes(x.title)) continue;
     const r = await commonsInfo(x.title, "commons-geo"); if (!r) continue;
+    if (x.s < 0.34 && !GOODCAT.test(r.cats)) continue; // bez shody jména chceme pozitivní důkaz (krajina, pláž…)
     r.score = x.s * 2 + (GOODCAT.test(r.cats) ? 1 : 0) + (r.w >= 1600 ? 0.3 : 0) - x.dist / 3000;
     scored.push(r);
   }
@@ -86,7 +92,7 @@ async function fromCommonsSearch(p) {
   const j = await api(`https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=${q}&srnamespace=6&srlimit=15&format=json`);
   const list = (j.query?.search || []).filter((x) => /\.(jpe?g|png)$/i.test(x.title) && !BAD.test(x.title));
   const best = list.map((x) => ({ x, s: sim(x.title.replace(/^File:/, ""), p.name) })).sort((a, b) => b.s - a.s)[0];
-  if (!best || best.s < 0.5) return null;
+  if (!best || best.s < 0.67) return null;
   return await commonsInfo(best.x.title, "commons-search");
 }
 async function commonsInfo(title, source) {
@@ -99,7 +105,7 @@ async function commonsInfo(title, source) {
   if (/png/.test(ii.mime) && !/photograph/i.test(cats)) return null;
   if (ii.height > ii.width * 1.25) return null; // na výšku = často lidi/cedule
   const strip = (h) => String(h || "").replace(/<[^>]+>/g, "").trim().slice(0, 80);
-  return { url: ii.thumburl || ii.url, credit: strip(em.Artist?.value), license: strip(em.LicenseShortName?.value), source, page: ii.descriptionurl, cats, w: ii.width };
+  return { url: ii.thumburl || ii.url, credit: strip(em.Artist?.value), license: strip(em.LicenseShortName?.value), source, page: ii.descriptionurl, cats, w: ii.width, title };
 }
 async function commonsMetaFromUrl(src, source) {
   // z upload URL vytáhni File:name a dotáhni licenci; když se nepovede, použij URL bez creditu
@@ -124,7 +130,18 @@ async function saveJpg(buf, out) {
 
 // ---------- hlavní smyčka ----------
 (async () => {
-  let todo = places.filter((p) => !ONLY || ONLY.includes(p.id)).filter((p) => !RANK1 || p.rank === 1);
+  // reject list: zamítnuté fotky smazat, jejich Commons title zapamatovat, aby se nevybraly znovu
+  delete REJECT._comment;
+  for (const id of Object.keys(REJECT)) {
+    const f = path.join(PH, id + ".jpg");
+    if (REJECT[id] === "none") { if (fs.existsSync(f)) { fs.unlinkSync(f); delete meta[id]; } continue; }
+    if (fs.existsSync(f)) {
+      const t = meta[id] && meta[id].title; if (t && !REJECT[id].includes(t)) REJECT[id].push(t);
+      fs.unlinkSync(f); delete meta[id]; console.log("reject:", id, t || "");
+    }
+  }
+  fs.writeFileSync(path.join(ROOT, "data/photo-reject.json"), JSON.stringify(REJECT, null, 1));
+  let todo = places.filter((p) => REJECT[p.id] !== "none").filter((p) => !ONLY || ONLY.includes(p.id)).filter((p) => !RANK1 || p.rank === 1);
   let n = 0, ok = 0, fail = 0, skip = 0;
   const missing = [];
   const WORKERS = 2; let idx = 0;
@@ -140,7 +157,7 @@ async function saveJpg(buf, out) {
       if (!got) continue;
       try { await saveJpg(await download(got.url), out); break; } catch (e) { got = null; }
     }
-    if (got) { meta[p.id] = { credit: got.credit, license: got.license, source: got.source, page: got.page || null }; ok++; process.stdout.write(`✓ ${p.id} ${p.name.slice(0, 40)} [${got.source}]\n`); }
+    if (got) { meta[p.id] = { credit: got.credit, license: got.license, source: got.source, page: got.page || null, title: got.title || null }; ok++; process.stdout.write(`✓ ${p.id} ${p.name.slice(0, 40)} [${got.source}]\n`); }
     else { fail++; missing.push(`${p.id}\t${p.name}\t${p.lat},${p.lng}`); process.stdout.write(`✗ ${p.id} ${p.name.slice(0, 40)}\n`); }
     if (n % 20 === 0) { fs.writeFileSync(OUTJ, JSON.stringify(meta, null, 1)); fs.writeFileSync(CACHEJ, JSON.stringify(cache)); }
   }
