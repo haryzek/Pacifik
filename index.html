@@ -8,6 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <style>
 :root{
   --bg:#0f1419; --card:#171d24; --card2:#1e252e; --line:#262e38;
@@ -177,6 +178,7 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .leaflet-popup-content{margin:10px 12px}
 .leaflet-popup-content b{font-family:var(--serif);font-size:15px;display:block;margin-bottom:3px}
 .leaflet-container{font:12px var(--ui)}
+.mc{background:rgba(217,164,65,.25);border:2px solid var(--accent);border-radius:50%;color:var(--text);font:600 12px var(--mono);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(217,164,65,.12)}
 .leaflet-tile{filter:invert(1) hue-rotate(190deg) brightness(.82) contrast(.9) saturate(.6)}
 </style>
 </head>
@@ -673,9 +675,9 @@ function renderMap(m){
   if (!M.map) {
     M.map = L.map('map', { zoomControl: false, attributionControl: true }).setView(S.pos ? [S.pos.lat, S.pos.lng] : [40.5, -122.5], S.pos ? 9 : 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© OpenStreetMap' }).addTo(M.map);
-    M.layer = L.layerGroup().addTo(M.map);
+    M.layer = (L.markerClusterGroup ? L.markerClusterGroup({ disableClusteringAtZoom: 10, maxClusterRadius: 44, showCoverageOnHover: false, spiderfyOnMaxZoom: false, iconCreateFunction: (c) => L.divIcon({ html: c.getChildCount(), className: 'mc', iconSize: [34, 34] }) }) : L.layerGroup()).addTo(M.map);
     M.loops = L.layerGroup();
-    M.map.on('moveend', drawMarkers);
+    M.map.on(L.markerClusterGroup ? 'zoomend' : 'moveend', drawMarkers);
     $('#mapMe').onclick = () => { if (S.pos) M.map.setView([S.pos.lat, S.pos.lng], Math.max(M.map.getZoom(), 10)); else toast('Poloha neznámá'); };
     $('#mapLoops').onclick = () => { M.showLoops = !M.showLoops; $('#mapLoops').classList.toggle('on', M.showLoops); M.showLoops ? M.loops.addTo(M.map) : M.map.removeLayer(M.loops); if (M.showLoops && !M.loops.getLayers().length) drawLoops(); };
     $('#mapFix').onclick = () => { const c = M.map.getCenter(); fixPos(c.lat, c.lng, 'střed mapy'); };
@@ -693,17 +695,18 @@ function drawMarkers(){
   if (!M.map) return;
   const b = M.map.getBounds().pad(0.2), z = M.map.getZoom();
   M.layer.clearLayers();
-  const q = S.q.trim().toLowerCase();
+  const batch = [];
   for (const p of S.places) {
     if (M.top && p.rank !== 1) continue;
     if (z < 7 && p.rank === 3) continue;
-    if (!b.contains([p.lat, p.lng])) continue;
+    if (!M.layer.addLayers && !b.contains([p.lat, p.lng])) continue;
     if (S.filters.size) { let ok = false; for (const f of FILTERS) if (S.filters.has(f.id) && (f.cats.includes(p.category) || (f.swim && swimOK(p)))) { ok = true; break; } if (!ok) continue; }
     const r = p.rank === 1 ? 7 : p.rank === 2 ? 5 : 4;
     const mk = L.circleMarker([p.lat, p.lng], { radius: r, color: '#0f1419', weight: 1, fillColor: CAT_COLOR[p.category] || '#aaa', fillOpacity: .95 });
     mk.bindPopup(`<b>${esc(p.name)}</b>${CATS[p.category]||''} ${'★'.repeat(4-p.rank)}${S.pos ? ' · ' + fmtKm(hav(S.pos, p)) : ''}${swimOK(p) ? ' · 💧' : ''}<br><a href="#" data-id="${p.id}" style="color:var(--accent)">otevřít →</a> &nbsp; <a href="#" data-here="${p.id}" style="color:var(--muted)">📌 jsem tu</a>`);
-    M.layer.addLayer(mk);
+    batch.push(mk);
   }
+  M.layer.addLayers ? M.layer.addLayers(batch) : batch.forEach((mk) => M.layer.addLayer(mk));
 }
 function drawLoops(){
   for (const l of S.loops) {
@@ -817,7 +820,7 @@ async function init(){
   startGPS();
   render();
   initSW();
-  const ls = document.createElement('script'); ls.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'; ls.onload = () => { if (S.tab === 'map') render(); }; document.head.appendChild(ls);
+  const ls = document.createElement('script'); ls.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'; ls.onload = () => { const cs = document.createElement('script'); cs.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js'; cs.onload = cs.onerror = () => { if (S.tab === 'map') render(); }; document.head.appendChild(cs); }; document.head.appendChild(ls);
 }
 
 // ====================== PWA / OFFLINE ======================
