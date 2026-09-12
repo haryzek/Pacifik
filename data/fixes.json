@@ -740,7 +740,8 @@
     "season_note_2026": "otevřeno (bezdňrkní), památka vyliděna · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
   },
   "r7-033": {
-    "season_note_2026": "otevřeno (klidná pláž mimo ruch) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "Sycamore Canyon Rd — neoznačená odbočka z Hwy 1, úzká, 3 km; 15 $ hotově u brány; parkoviště malé, o víkendu plné do 11 h; Highway 1 průjezdná. [ověřeno 12. 9. 2026]",
+    "fee": "15 $ za auto, JEN HOTOVĚ"
   },
   "r7-042": {
     "season_note_2026": "tùrnusy faktury (kontrola nutná) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
@@ -890,7 +891,8 @@
       "maps": "https://www.google.com/maps/search/?api=1&query=41.789697,-124.0847",
       "official": "https://www.nps.gov/redw/planyourvisit/jedediah-smith-redwoods-state-park.htm",
       "wiki": "https://en.wikipedia.org/wiki/Jedediah_Smith_Redwoods_State_Park"
-    }
+    },
+    "season_note_2026": "Howland Hill Road otevřená (štěrk 10 km, úzké, sedan ok, 30–45 min); Stout Grove zdarma; Boy Scout Tree Trail zablokován padlým stromem 2,8 km od začátku. [ověřeno 12. 9. 2026]"
   },
   "r8-014": {
     "links": {
@@ -970,5 +972,35 @@
   },
   "r1-031": {
     "season_note_2026": "resort a bazény v provozu do 1. 11. 2026; bazény pro veřejnost (cca 20 $, časové sloty, koupit online nebo na místě); Sol Duc Road v NP — 30 $. [ověřeno 12. 9. 2026]"
+  },
+  "r5-006": {
+    "season_note_2026": "Howland Hill Road otevřená (štěrk 10 km, úzké, sedan ok, 30–45 min); Stout Grove zdarma; Boy Scout Tree Trail zablokován padlým stromem 2,8 km od začátku. [ověřeno 12. 9. 2026]"
+  },
+  "r5-016": {
+    "season_note_2026": "otevřeno, zdarma; Cal-Barrel Rd otevřená. [ověřeno 12. 9. 2026]"
+  },
+  "r1-057": {
+    "season_note_2026": "SR-20 otevřená celá (po povodních 12/2025 otevřeno až 14. 6. 2026 — nejpozději od 1974); v září ok, zavírá s prvním sněhem; NP zdarma. [ověřeno 12. 9. 2026]"
+  },
+  "r1-058": {
+    "season_note_2026": "SR-20 otevřená celá (po povodních 12/2025 otevřeno až 14. 6. 2026 — nejpozději od 1974); v září ok, zavírá s prvním sněhem; NP zdarma. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-021": {
+    "season_note_2026": "SR-20 otevřená celá (po povodních 12/2025 otevřeno až 14. 6. 2026 — nejpozději od 1974); v září ok, zavírá s prvním sněhem; NP zdarma. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-022": {
+    "season_note_2026": "SR-20 otevřená celá (po povodních 12/2025 otevřeno až 14. 6. 2026 — nejpozději od 1974); v září ok, zavírá s prvním sněhem; NP zdarma. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-023": {
+    "season_note_2026": "SR-20 otevřená celá (po povodních 12/2025 otevřeno až 14. 6. 2026 — nejpozději od 1974); v září ok, zavírá s prvním sněhem; NP zdarma. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-024": {
+    "season_note_2026": "SR-20 otevřená celá (po povodních 12/2025 otevřeno až 14. 6. 2026 — nejpozději od 1974); v září ok, zavírá s prvním sněhem; NP zdarma. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-026": {
+    "season_note_2026": "silnice na Artist Point otevřená od 10. 6. 2026, obvykle do října; NW Forest Pass 5 $. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-025": {
+    "season_note_2026": "silnice na Artist Point otevřená od 10. 6. 2026, obvykle do října; NW Forest Pass 5 $. [ověřeno 12. 9. 2026]"
   }
 }
