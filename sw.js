@@ -44,7 +44,11 @@ self.addEventListener('fetch', (e) => {
     // network-first (update z motelu dorazí), fallback cache
     e.respondWith((async () => {
       const c = await caches.open(CACHE_V);
-      try { const r = await fetch(req); if (r.ok) c.put(req, r.clone()); return r; }
+      try {
+        // slabý signál nesmí viset: 4 s a pak cache
+        const r = await Promise.race([fetch(req), new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 4000))]);
+        if (r.ok) c.put(req, r.clone()); return r;
+      }
       catch (_) { return (await c.match(req, { ignoreSearch: true })) || (await c.match('./index.html')) || new Response('[]', { headers: { 'Content-Type': 'application/json' } }); }
     })());
     return;
