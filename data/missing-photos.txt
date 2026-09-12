@@ -11,6 +11,8 @@ g-r2-027	2	The Alibi Tiki Lounge	45.5525,-122.6813
 r2-048	1	Historic Columbia River Highway — Waterfall Corridor	45.5396,-122.3879	https://en.wikipedia.org/wiki/Historic_Columbia_River_Highway
 r2-035	1	Drift Creek Falls Trail	44.9368,-123.8586	https://en.wikipedia.org/wiki/Drift_Creek_Falls
 r3-002	2	Seal Rock State Recreation Site	44.49986,-124.08465	https://en.wikipedia.org/wiki/Seal_Rock_State_Recreation_Site
+r3-010	2	Green Salmon Coffee Company	44.31237,-124.10426	
+r3-011	3	Bread & Roses Bakery	44.31282,-124.10473	
 r3-006	2	Spouting Horn — Cook's Chasm	44.27782,-124.11272	
 g-r3-002	2	Bob Creek Wayside	44.2443,-124.1121	
 g-r4-024	2	Crystal Crane Hot Springs	43.44106,-118.63944	
@@ -20,6 +22,8 @@ g-r3-008	2	7 Devils Brewing Co. Public House	43.3666,-124.215
 r4-008	2	Lemolo Falls — old trail	43.3212,-122.2865	https://en.wikipedia.org/wiki/Lemolo_Falls
 g-r4-011	3	Fall Creek Falls — North Umpqua	43.3134,-122.8356	
 r4-002	2	Susan Creek Falls	43.3018,-122.8359	
+g-r3-010	2	Whiskey Run Beach	43.2108,-124.3939	
+r4-023	1	Discovery Point Trail	42.9116,-122.1488	
 r4-033	2	Godfrey Glen Trail	42.8357,-122.2058	
 g-r3-015	2	Edson Creek Campground — Sixes River	42.8152,-124.4109	
 r3-045	2	Prehistoric Gardens	42.59643,-124.37291	https://en.wikipedia.org/wiki/Prehistoric_Gardens

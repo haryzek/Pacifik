@@ -1218,5 +1218,50 @@
       "added_by_claude"
     ],
     "rank": 3
+  },
+  {
+    "id": "x-028",
+    "region": "R1",
+    "name": "Rialto Beach — Hole-in-the-Wall",
+    "category": "coast",
+    "subcategory": "beach_walk",
+    "lat": 47.9203,
+    "lng": -124.6376,
+    "nearest_town": "La Push / Forks, WA",
+    "distance_from_spine_km": 22,
+    "description": "Pláž z tmavého oblázku a obřích naplavených klád, mořské skály (sea stacks) a po 2,5 km chůze na sever skalní brána Hole-in-the-Wall s tidepooly — nejikoničtější pobřeží Olympicu. Jde se jen při odlivu.",
+    "why_bob": "Klády jako kosti velryb, skály v mlze, brána ve skále — ale letos NE: Mora Road je zavřená do 15. 10. 2026.",
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 6,
+      "elevation_m": 10,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": "ocean",
+      "temp_c_sept_oct": null,
+      "legal": "prohibited",
+      "solitude": null,
+      "safety": "sneaker waves, klády v příboji"
+    },
+    "road_access": "paved",
+    "best_time": "odliv",
+    "season_note_2026": "NEDOSTUPNÉ do 15. 10. 2026 — Mora Road zavřená kvůli erozi řeky Quillayute (nps.gov/olym). Náhrada: Second Beach / Third Beach z La Push. [ověřeno 12. 9. 2026]",
+    "fee": "30 $ Olympic NP",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=47.9203,-124.6376",
+      "official": "https://www.nps.gov/olym/planyourvisit/visiting-rialto-beach.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Rialto_Beach"
+    },
+    "photo": null,
+    "tags": [
+      "sea_stacks",
+      "driftwood",
+      "closed_2026",
+      "added_by_claude"
+    ],
+    "rank": 3
   }
 ]

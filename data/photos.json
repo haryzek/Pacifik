@@ -4517,32 +4517,11 @@
   "source": "commons-geo",
   "page": "https://commons.wikimedia.org/wiki/File:Spotlight_-_panoramio.jpg"
  },
- "r3-010": {
-  "credit": "Joe Mabel",
-  "license": "CC BY 4.0",
-  "source": "commons-search",
-  "page": "https://commons.wikimedia.org/wiki/File:Yachats,_Oregon_-_Green_Salmon_Coffee_Co._01.jpg",
-  "title": "File:Yachats, Oregon - Green Salmon Coffee Co. 01.jpg"
- },
- "r3-011": {
-  "credit": "Joe Mabel",
-  "license": "CC BY-SA 4.0",
-  "source": "commons-search",
-  "page": "https://commons.wikimedia.org/wiki/File:Yachats,_OR_-_Bread_and_Roses_Bakery_01.jpg",
-  "title": "File:Yachats, OR - Bread and Roses Bakery 01.jpg"
- },
- "g-r3-010": {
-  "credit": "Gary Halvorson, Oregon State Archives",
-  "license": "CC BY 4.0",
-  "source": "commons-search",
-  "page": "https://commons.wikimedia.org/wiki/File:Whiskey_Run_Beach,_Bullards_-_DPLA_-_3a3152234f4e7bcd4d0e8ee2793a98e7.jpg",
-  "title": "File:Whiskey Run Beach, Bullards - DPLA - 3a3152234f4e7bcd4d0e8ee2793a98e7.jpg"
- },
- "r4-023": {
-  "credit": "Ken Lund from Reno, Nevada, USA",
-  "license": "CC BY-SA 2.0",
-  "source": "commons-search",
-  "page": "https://commons.wikimedia.org/wiki/File:Discovery_Point,_Crater_Lake_National_Park,_Oregon_(219305078).jpg",
-  "title": "File:Discovery Point, Crater Lake National Park, Oregon (219305078).jpg"
+ "x-028": {
+  "credit": "",
+  "license": "",
+  "source": "wiki",
+  "page": null,
+  "title": null
  }
 }
