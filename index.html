@@ -121,6 +121,7 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 
 /* toast */
 #toast{position:fixed;left:50%;bottom:calc(var(--sab) + 80px);transform:translateX(-50%) translateY(20px);opacity:0;background:var(--card2);border:1px solid var(--line);padding:10px 16px;border-radius:12px;z-index:40;transition:transform .2s,opacity .2s;font-size:14px;pointer-events:none;max-width:90vw}
+#toast.action{pointer-events:auto;border-color:var(--accent);color:var(--accent);cursor:pointer}
 #toast.show{transform:translateX(-50%);opacity:1}
 #pina{position:fixed;inset:0;display:none;align-items:center;justify-content:center;font-size:96px;z-index:50;pointer-events:none;animation:pina 1.5s ease-out forwards}
 @keyframes pina{0%{opacity:0;transform:scale(.5)}20%{opacity:1;transform:scale(1.1)}70%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.3) translateY(-40px)}}
@@ -246,7 +247,7 @@ function driveMin(km, road){ const v = (road==='paved') ? 70 : 70/1.6; return Ma
 function fmtMin(m){ return m<60 ? `${m} min` : `${Math.floor(m/60)} h ${String(m%60).padStart(2,'0')}`; }
 function fmtKm(km){ return km<10 ? km.toFixed(1)+' km' : Math.round(km)+' km'; }
 function swimOK(p){ return p.swim && p.swim.possible && ['allowed','tolerated'].includes(p.swim.legal); }
-let toastT; function toast(msg, ms=2200){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'), ms); }
+let toastT; function toast(msg, ms=2200, onClick=null){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); t.classList.toggle('action', !!onClick); t.onclick = onClick; clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'), ms); }
 function pina(){ const p=$('#pina'); p.style.display='flex'; p.style.animation='none'; void p.offsetWidth; p.style.animation=''; setTimeout(()=>p.style.display='none',1500); }
 
 // ====================== SLUNCE (NOAA zjednodušeně) ======================
@@ -319,10 +320,13 @@ function openPosSheet(){
     <select id="simSel"><option value="">— vypnuto —</option>${SIM.map((s,i)=>`<option value="${i}" ${i===cur?'selected':''}>${esc(s[0])}</option>`).join('')}</select>
     <label class="l">nebo souřadnice „lat, lng"</label>
     <input type="text" id="simTxt" placeholder="36.27, -121.81">
-    <div class="btns"><button class="btn" id="simOk">Nastavit</button><button class="btn" id="posClose">Zavřít</button></div>`;
+    <div class="btns"><button class="btn" id="simOk">Nastavit</button><button class="btn" id="posClose">Zavřít</button></div>
+    <div class="btns" style="margin-top:20px"><button class="btn" id="updBtn">🔄 Zkontrolovat novou verzi</button></div>
+    <div class="sub">verze ${esc(S.store.offlineReady || '—')} · ${S.places.length} míst · ${navigator.onLine ? 'online' : 'offline'}</div>`;
   $('#posSheet').classList.add('open');
   $('#useGps').onclick = () => { S.store.sim = null; save(); $('#posSheet').classList.remove('open'); startGPS(); };
   $('#posClose').onclick = () => $('#posSheet').classList.remove('open');
+  $('#updBtn').onclick = () => { toast('Kontroluji…', 1500); checkUpdate(false); };
   $('#simOk').onclick = () => {
     const txt = $('#simTxt').value.trim(); const i = $('#simSel').value;
     let lat, lng;
@@ -774,19 +778,27 @@ function showInstall(){
   b.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; b.remove(); };
   document.body.appendChild(b);
 }
+let swReg = null;
+function reloadApp(){ if (swReg && swReg.waiting) swReg.waiting.postMessage('skipWaiting'); setTimeout(() => location.reload(), 150); }
+function checkUpdate(silent){ if (!swReg) return; swReg.update().then(() => { if (!silent && !swReg.installing && !swReg.waiting) toast('Máš aktuální verzi ✓'); }).catch(() => { if (!silent) toast('Offline — nelze zkontrolovat'); }); }
 function initSW(){
   if (!('serviceWorker' in navigator)) return;
   navigator.serviceWorker.addEventListener('message', (e) => {
     const m = e.data || {};
     if (m.type === 'progress') $('#gpsTxt').title = `offline ${m.done}/${m.total}`;
     if (m.type === 'ready') { S.store.offlineReady = m.version; save(); toast('Offline připraveno ✓', 3000); }
-    if (m.type === 'activated' && S.store.offlineReady && S.store.offlineReady !== m.version) { S.store.offlineReady = m.version; save(); toast('Nová verze — obnov stránku', 5000); }
+    if (m.type === 'activated' && S.store.offlineReady && S.store.offlineReady !== m.version) { S.store.offlineReady = m.version; save(); toast('Nová verze — tapni pro obnovení', 8000, () => location.reload()); }
   });
   navigator.serviceWorker.register('sw.js').then((reg) => {
+    swReg = reg;
+    if (reg.waiting && navigator.serviceWorker.controller) toast('Nová verze — tapni pro obnovení', 8000, reloadApp);
     reg.addEventListener('updatefound', () => {
       const w = reg.installing; if (!w) return;
-      w.addEventListener('statechange', () => { if (w.state === 'installed' && navigator.serviceWorker.controller) toast('Nová verze stažena — obnov stránku', 5000); });
+      w.addEventListener('statechange', () => { if (w.state === 'installed' && navigator.serviceWorker.controller) toast('Nová verze stažena — tapni pro obnovení', 8000, reloadApp); });
     });
+    // kontrola při každém návratu do appky (PWA nemá pull-to-refresh)
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checkUpdate(true); });
+    setInterval(() => checkUpdate(true), 30 * 60 * 1000);
   }).catch(() => {});
   if (navigator.serviceWorker.controller && S.store.offlineReady) $('#gpsTxt').title = 'offline ✓';
 }
