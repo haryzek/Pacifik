@@ -168,6 +168,7 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .sp .amt{font:600 14px var(--mono);width:70px}.sp .cat{color:var(--muted);font:11px var(--mono);width:60px}.sp .note{flex:1}
 #map{position:fixed;left:0;right:0;top:0;bottom:0;z-index:5;background:#0b1015;display:none}
 #map.on{display:block}
+#map.on::after{content:'';position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border:1.5px solid rgba(217,164,65,.55);border-radius:50%;pointer-events:none;z-index:400;box-shadow:0 0 0 2px rgba(0,0,0,.25)}
 .mapctl{position:fixed;right:10px;z-index:15;display:flex;flex-direction:column;gap:6px}
 .mapctl button{width:40px;height:40px;border-radius:10px;background:var(--card);border:1px solid var(--line);font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
 .mapctl button.on{background:var(--accent);color:#1a1408}
@@ -196,6 +197,7 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
     <button id="mapMe" title="Kde jsem">📍</button>
     <button id="mapLoops" title="Odbočky">🔁</button>
     <button id="mapTop" title="Jen ⭐">⭐</button>
+    <button id="mapFix" title="Fixnout polohu na střed mapy">📌</button>
   </div>
   <nav id="nav"></nav>
 </div>
@@ -299,7 +301,7 @@ function setPos(lat, lng, mode){
   S.pos = { lat, lng }; S.posMode = mode;
   if (mode === 'gps') { S.store.lastPos = { lat, lng, t: Date.now() }; save(); }
   const g = $('#gpsBtn'); g.className = 'gps ' + (mode==='gps' ? 'on' : mode==='sim' ? 'sim' : '');
-  $('#gpsTxt').textContent = mode==='gps' ? 'GPS' : mode==='sim' ? 'SIM' : mode==='last' ? 'POSL.' : '—';
+  $('#gpsTxt').textContent = mode==='gps' ? 'GPS' : mode==='sim' ? 'FIX' : mode==='last' ? 'POSL.' : '—';
   countdown();
   if (S.tab === 'map' && M.map) { drawMe(); drawMarkers(); } else render();
 }
@@ -319,13 +321,24 @@ function fallbackPos(why){
   if (l) { setPos(l.lat, l.lng, 'last'); toast(`${why} — poslední známá poloha`); }
   else { setPos(SIM[0][1], SIM[0][2], 'sim'); toast(`${why} — nastav polohu ručně (tap na GPS)`); }
 }
+function fixPos(lat, lng, label){
+  S.store.sim = { lat, lng }; save();
+  if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; }
+  setPos(lat, lng, 'sim'); toast(`📌 Poloha: ${label || (lat.toFixed(3) + ', ' + lng.toFixed(3))}`);
+}
+function showOnMap(id){
+  const p = S.places.find(x => x.id === id); if (!p) return;
+  closeDetail(); S.tab = 'map'; render();
+  const go = () => { if (!M.map) return setTimeout(go, 200); M.map.setView([p.lat, p.lng], Math.max(M.map.getZoom(), 12)); setTimeout(() => { drawMarkers(); M.layer.getLayers().forEach(mk => { const ll = mk.getLatLng(); if (Math.abs(ll.lat - p.lat) < 1e-6 && Math.abs(ll.lng - p.lng) < 1e-6) mk.openPopup(); }); }, 300); };
+  setTimeout(go, 100);
+}
 function openPosSheet(){
   const cur = S.store.sim ? SIM.findIndex(s=>s[1]===S.store.sim.lat && s[2]===S.store.sim.lng) : -1;
   $('#posPanel').innerHTML = `
     <h2>Kde jsem</h2>
     <div class="sub">${S.pos ? `${S.pos.lat.toFixed(4)}, ${S.pos.lng.toFixed(4)} · ${S.posMode}` : 'poloha neznámá'}</div>
     <div class="btns"><button class="btn primary" id="useGps">📡 Použít GPS</button></div>
-    <label class="l">Simulovaná poloha (test z Podolí / bez signálu)</label>
+    <label class="l">Fixní poloha (bez signálu / plánování / test z Podolí)</label>
     <select id="simSel"><option value="">— vypnuto —</option>${SIM.map((s,i)=>`<option value="${i}" ${i===cur?'selected':''}>${esc(s[0])}</option>`).join('')}</select>
     <label class="l">nebo souřadnice „lat, lng"</label>
     <input type="text" id="simTxt" placeholder="36.27, -121.81">
@@ -650,6 +663,7 @@ function renderMap(m){
     M.map.on('moveend', drawMarkers);
     $('#mapMe').onclick = () => { if (S.pos) M.map.setView([S.pos.lat, S.pos.lng], Math.max(M.map.getZoom(), 10)); else toast('Poloha neznámá'); };
     $('#mapLoops').onclick = () => { M.showLoops = !M.showLoops; $('#mapLoops').classList.toggle('on', M.showLoops); M.showLoops ? M.loops.addTo(M.map) : M.map.removeLayer(M.loops); if (M.showLoops && !M.loops.getLayers().length) drawLoops(); };
+    $('#mapFix').onclick = () => { const c = M.map.getCenter(); fixPos(c.lat, c.lng, 'střed mapy'); };
     $('#mapTop').onclick = () => { M.top = !M.top; $('#mapTop').classList.toggle('on', M.top); drawMarkers(); };
     if (!navigator.onLine) toast('Offline: podkladová mapa jen z cache', 3000);
   }
@@ -672,7 +686,7 @@ function drawMarkers(){
     if (S.filters.size) { let ok = false; for (const f of FILTERS) if (S.filters.has(f.id) && (f.cats.includes(p.category) || (f.swim && swimOK(p)))) { ok = true; break; } if (!ok) continue; }
     const r = p.rank === 1 ? 7 : p.rank === 2 ? 5 : 4;
     const mk = L.circleMarker([p.lat, p.lng], { radius: r, color: '#0f1419', weight: 1, fillColor: CAT_COLOR[p.category] || '#aaa', fillOpacity: .95 });
-    mk.bindPopup(`<b>${esc(p.name)}</b>${CATS[p.category]||''} ${'★'.repeat(4-p.rank)}${S.pos ? ' · ' + fmtKm(hav(S.pos, p)) : ''}${swimOK(p) ? ' · 💧' : ''}<br><a href="#" data-id="${p.id}" style="color:var(--accent)">otevřít →</a>`);
+    mk.bindPopup(`<b>${esc(p.name)}</b>${CATS[p.category]||''} ${'★'.repeat(4-p.rank)}${S.pos ? ' · ' + fmtKm(hav(S.pos, p)) : ''}${swimOK(p) ? ' · 💧' : ''}<br><a href="#" data-id="${p.id}" style="color:var(--accent)">otevřít →</a> &nbsp; <a href="#" data-here="${p.id}" style="color:var(--muted)">📌 jsem tu</a>`);
     M.layer.addLayer(mk);
   }
 }
@@ -723,6 +737,8 @@ function openDetail(id){
       <div class="btns">
         <button class="btn ${inPlan?'on':''}" id="planBtn">${inPlan ? '✓ V plánu' : '➕ Do plánu'}</button>
         <button class="btn ${visited?'on':''}" id="visitBtn">${visited ? `✓ Byl jsem ${visited}` : '✓ Byl jsem tu'}</button>
+        <button class="btn" id="mapBtn">🗺 Na mapě</button>
+        <button class="btn ${S.posMode==='sim' && S.pos && Math.abs(S.pos.lat-p.lat)<1e-6 ? 'on' : ''}" id="hereBtn">📌 Jsem tu</button>
         <button class="btn" id="copyBtn">📋 ${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}</button>
         ${p.photo_local ? `<button class="btn" id="badPhoto">🚫 špatná fotka</button>` : ''}
       </div>
@@ -735,6 +751,8 @@ function openDetail(id){
   $('#close').onclick = closeDetail;
   const on = $('#offlineNav'); if (on) on.onclick = (e) => { e.preventDefault(); copy(`${p.lat},${p.lng}`); toast('Offline — souřadnice zkopírovány'); };
   $('#copyBtn').onclick = () => { copy(`${p.lat},${p.lng}`); toast('Souřadnice zkopírovány'); };
+  $('#mapBtn').onclick = () => showOnMap(p.id);
+  $('#hereBtn').onclick = () => { fixPos(p.lat, p.lng, p.name); closeDetail(); };
   const bp = $('#badPhoto'); if (bp) bp.onclick = () => { S.store.badPhotos = S.store.badPhotos || []; if (!S.store.badPhotos.includes(p.id)) S.store.badPhotos.push(p.id); save(); toast('Zapsáno do Záloha → špatné fotky'); };
   $('#planBtn').onclick = () => { const i = S.store.plan.indexOf(p.id); i<0 ? S.store.plan.push(p.id) : S.store.plan.splice(i,1); save(); openDetail(id); render(); };
   $('#visitBtn').onclick = () => {
@@ -749,7 +767,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],#qClear,#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],#qClear,#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -760,6 +778,7 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.sub) { S.sub = t.dataset.sub; renderPlan($('#main')); }
   else if (t.dataset.region) { S.region = S.region === t.dataset.region ? null : t.dataset.region; S.shown = 100; render(); window.scrollTo(0,0); }
   else if (t.id === 'qClear') { S.q = ''; render(); }
+  else if (t.dataset.here) { e.preventDefault(); const p = S.places.find(x => x.id === t.dataset.here); if (p) { fixPos(p.lat, p.lng, p.name); M.map && M.map.closePopup(); } }
   else if (t.dataset.surprise) { const l = computed().filter(x => !S.store.visited[x.p.id]); const top = l.filter(x => x.p.rank === 1); const pool = top.length ? top : l; if (!pool.length) return toast('Nic v dosahu — rozšiř'); openDetail(pool[Math.floor(Math.random()*pool.length)].p.id); }
   else if (t.id === 'more') { S.shown += 100; render(); }
 });
