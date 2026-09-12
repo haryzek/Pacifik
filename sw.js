@@ -1,6 +1,6 @@
 /* Pacifik service worker — offline-first.
    CACHE_V bumpni při každé změně dat/appky (scripts/sw-build.js to dělá automaticky). */
-const CACHE_V = 'pacifik-03561c33';
+const CACHE_V = 'pacifik-f78cd5b9';
 const STATIC = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png'];
 const DATA = ['./data/places.json', './data/loops.json'];
 const CDN = ['https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];

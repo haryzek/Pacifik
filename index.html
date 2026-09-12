@@ -41,6 +41,14 @@ header{position:sticky;top:0;z-index:20;background:rgba(15,20,25,.92);backdrop-f
 .chip.on{background:var(--accent);color:#1a1408;border-color:var(--accent);font-weight:600}
 .chip.water.on{background:var(--water);border-color:var(--water)}
 .chip.range{font-family:var(--mono);font-size:12px}
+.chip.region{font-size:12px;color:var(--text)}
+.chip.region.on{background:var(--card2);color:var(--accent);border-color:var(--accent);font-weight:500}
+.search{display:flex;align-items:center;gap:8px;margin:8px 0 2px;padding:0 10px;height:34px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
+.search span{color:var(--dim);font-size:14px}
+.search input{flex:1;background:none;border:0;color:var(--text);font:14px var(--ui);outline:none;min-width:0;-webkit-appearance:none;appearance:none}
+.search input::placeholder{color:var(--dim)}
+.search input::-webkit-search-cancel-button{-webkit-appearance:none}
+.search button{color:var(--dim);font-size:16px;padding:0 2px}
 
 /* quick actions */
 .quick{display:flex;gap:6px;padding:8px 12px 0}
@@ -216,6 +224,7 @@ const FILTERS = [
   { id:'oddity', l:'👁 Oddity', cats:['oddity'] },
   { id:'night', l:'🌌 Noc', cats:['dark_sky'] },
 ];
+const REGIONS = [['R1','Olympic · Seattle'],['R2','Columbia · N Oregon'],['R3','Oregon coast'],['R4','Crater Lake · Umpqua'],['R5','Redwoods · Lost Coast'],['R6','Mendocino · Point Reyes'],['R7','SF · Big Sur · SLO'],['R8a','Santa Barbara'],['R8','LA · Malibu'],['R8b','San Diego'],['R9','Pouště'],['R9b','Pouště II']];
 const SIM = [
   ['Seattle', 47.6062, -122.3321], ['North Bend (Twin Peaks)', 47.4957, -121.7868], ['Port Angeles', 48.1181, -123.4307], ['Forks', 47.9503, -124.3854],
   ['Astoria', 46.1879, -123.8313], ['Cannon Beach', 45.8918, -123.9615], ['Newport OR', 44.6368, -124.0535], ['Florence', 43.9826, -124.0998], ['Bandon', 43.1190, -124.4084],
@@ -228,7 +237,7 @@ const LS_KEY = 'pacifik.v1';
 
 // ====================== STAV ======================
 const S = {
-  places: [], loops: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100, q: '',
+  places: [], loops: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100, q: '', region: null,
   pos: null, posMode: 'none', // 'gps' | 'sim' | 'last'
   store: loadStore(),
 };
@@ -346,6 +355,7 @@ function computed(){
   const out = [];
   for (const p of S.places) {
     if (q && !(`${p.name} ${p.nearest_town||''} ${p.why_bob} ${p.region} ${(p.tags||[]).join(' ')}`.toLowerCase().includes(q))) continue;
+    if (all && S.region && p.region !== S.region && !(S.region === 'R9' && p.region === 'R9b') ) continue;
     const km = S.pos ? hav(S.pos, p) : null;
     if (!all && km > S.range) continue;
     if (S.south && S.pos && p.lat > S.pos.lat + 0.05) continue;
@@ -379,13 +389,16 @@ function renderNav(){
   $('#nav').innerHTML = tabs.map(t=>`<button data-tab="${t[0]}" class="${S.tab===t[0]?'on':''}"><span>${t[1]}</span>${t[2]}</button>`).join('');
 }
 function toolbarNear(){
-  return `<div class="chips">
-    ${RANGES.map(r=>`<button class="chip range ${S.range===r?'on':''}" data-range="${r}">${r===Infinity?'vše S→J':r+' km'}</button>`).join('')}
+  const all = S.range === Infinity;
+  return `<div class="search"><span>🔍</span><input type="search" id="q" placeholder="hledat místo, město, tag…" value="${esc(S.q)}" autocomplete="off">${S.q ? '<button id="qClear">✕</button>' : ''}</div>
+  <div class="chips">
+    <button class="chip range ${all?'on':''}" data-range="Infinity">☰ vše S→J</button>
+    ${RANGES.filter(r=>r!==Infinity).map(r=>`<button class="chip range ${S.range===r?'on':''}" data-range="${r}">${r} km</button>`).join('')}
     <button class="chip ${S.south?'on':''}" data-toggle="south">⬇ jen dál po trase</button>
     <button class="chip ${S.rank1?'on':''}" data-toggle="rank1">⭐ jen top</button>
     <button class="chip" data-surprise="1">🎲 překvap mě</button>
   </div>
-  <div style="padding:6px 0 2px"><input type="search" id="q" placeholder="🔍 hledat místo, město, tag…" value="${esc(S.q)}" style="padding:7px 10px;font-size:14px"></div>
+  ${all ? `<div class="chips">${REGIONS.map(([id,l])=>`<button class="chip region ${S.region===id?'on':''}" data-region="${id}">${l}</button>`).join('')}</div>` : ''}
   <div class="chips">${FILTERS.map(f=>`<button class="chip ${f.cls||''} ${S.filters.has(f.id)?'on':''}" data-filter="${f.id}">${f.l}</button>`).join('')}</div>`;
 }
 function quickHtml(){
@@ -395,7 +408,7 @@ function quickHtml(){
 }
 function renderNear(m){
   const list = computed();
-  $('#count').textContent = S.pos ? `${list.length}/${S.places.length}` : '';
+  $('#count').textContent = (S.pos || S.range === Infinity) ? `${list.length}/${S.places.length}` : '';
   let html = quickHtml();
   if (!S.pos && S.range !== Infinity) html += `<div class="empty">Čekám na polohu…<br><small>nebo tapni na GPS vpravo nahoře a nastav ji ručně</small></div>`;
   else if (!list.length) {
@@ -736,7 +749,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],#qClear,#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -745,11 +758,13 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.id) { e.preventDefault(); openDetail(t.dataset.id); }
   else if (t.dataset.loop) openLoop(t.dataset.loop);
   else if (t.dataset.sub) { S.sub = t.dataset.sub; renderPlan($('#main')); }
+  else if (t.dataset.region) { S.region = S.region === t.dataset.region ? null : t.dataset.region; S.shown = 100; render(); window.scrollTo(0,0); }
+  else if (t.id === 'qClear') { S.q = ''; render(); }
   else if (t.dataset.surprise) { const l = computed().filter(x => !S.store.visited[x.p.id]); const top = l.filter(x => x.p.rank === 1); const pool = top.length ? top : l; if (!pool.length) return toast('Nic v dosahu — rozšiř'); openDetail(pool[Math.floor(Math.random()*pool.length)].p.id); }
   else if (t.id === 'more') { S.shown += 100; render(); }
 });
 $('#gpsBtn').onclick = openPosSheet;
-document.addEventListener('input', (e) => { if (e.target.id === 'q') { S.q = e.target.value; S.shown = 100; renderNear($('#main')); } });
+document.addEventListener('input', (e) => { if (e.target.id === 'q') { S.q = e.target.value; S.shown = 100; renderNear($('#main')); const c = $('#qClear'); if (S.q && !c) e.target.insertAdjacentHTML('afterend', '<button id="qClear">✕</button>'); if (!S.q && c) c.remove(); } });
 window.addEventListener('online', () => toast('Online'));
 window.addEventListener('offline', () => toast('Offline — Naviguj ukáže souřadnice'));
 
