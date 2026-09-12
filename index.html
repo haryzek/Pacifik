@@ -623,6 +623,7 @@ function renderDocs(m){
   $('#count').textContent = '';
   m.innerHTML = `
     <div class="mantra">${cd}</div>
+    ${S.alerts ? `<div class="doc"><h3>🚧 Uzávěry a stav silnic · ${esc(S.alerts.updated)}</h3>${S.alerts.items.map(a => `<div class="row"><div class="k" style="width:14px;color:${a.sev==='red'?'var(--warn)':a.sev==='amber'?'var(--accent)':'var(--ok)'}">●</div><div class="v" style="font-family:var(--ui);font-size:13px"><b>${esc(a.area)}</b><br>${esc(a.text)}</div></div>`).join('')}</div>` : ''}
     <div class="doc"><h3>✈ Lety</h3>
       ${row('tam', 'Condor DE4410 / DE2032 · 16. 9. 11:40 → SEA 15:40 · PNR <b>XHHYY9</b>')}
       ${row('zpět', 'United UA8900 / UA9398 · LAX 9. 10. 18:40 → PRG 10. 10. 17:50 · PNR <b>N6J3J2</b>')}
@@ -821,8 +822,8 @@ async function init(){
   S.range = S.store.range === null ? Infinity : (S.store.range || 100);
   render();
   try {
-    const [pl, lo] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json())]);
-    S.places = pl; S.loops = lo;
+    const [pl, lo, al] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json()), fetch('data/alerts.json').then(r=>r.json()).catch(()=>null)]);
+    S.places = pl; S.loops = lo; S.alerts = al;
   } catch(e) { $('#main').innerHTML = `<div class="empty">Nepodařilo se načíst data.<br><small>${esc(e.message)}</small></div>`; return; }
   startGPS();
   render();

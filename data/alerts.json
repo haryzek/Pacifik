@@ -1,0 +1,23 @@
+{
+  "updated": "2026-09-12",
+  "items": [
+    { "sev": "red", "area": "WA · US-101 Hoh River Bridge (jižně od Forks)", "text": "ÚPLNÉ UZÁVĚRY mostu: 24.–29. 9. (čt 5:00 → út 17:00), 1.–6. 10., 8.–13. 10. Noční uzávěry 14.–22. 9. 22:30–5:30. Objížďka = Hood Canal, +4 h. → Přejeď Hoh most (Forks → Kalaloch) NEJPOZDĚJI ve středu 23. 9. přes den. Zdroj: wsdot.wa.gov" },
+    { "sev": "red", "area": "WA · Olympic — Mora Road / Rialto Beach", "text": "Mora Road zavřená 8. 7.–15. 10. 2026 (eroze řeky) — Rialto Beach a Hole-in-the-Wall NEDOSTUPNÉ. Náhrada: Second/Third Beach (La Push), Ruby Beach. Zdroj: nps.gov/olym" },
+    { "sev": "amber", "area": "WA · Olympic — Quinault South Shore Road", "text": "Zavřená u míle 8 (sesuv) — Graves Creek / Pony Bridge / Enchanted Valley trailhead nedostupné. North Shore Road jede." },
+    { "sev": "amber", "area": "WA · Olympic — Staircase", "text": "Otevřen jen areál a Staircase Rapids Loop; ostatní stezky zavřené (požár)." },
+    { "sev": "amber", "area": "WA · Olympic — Hurricane Ridge", "text": "Otevřeno, ale nahoře žádná pitná voda ani jídlo (stavba); lodge vyhořela 2023." },
+    { "sev": "amber", "area": "WA · Olympic — Elwha", "text": "Olympic Hot Springs Rd zavřená pro auta od parkoviště Madison Falls (vodopád dostupný, dál jen pěšky/kolo)." },
+    { "sev": "amber", "area": "WA · Mount Rainier", "text": "Sunrise Road zavřená pro auta (požáry Grand Park 2 / Wonderland). Paradise, Stevens Canyon, SR-123/410 otevřené. Carbon River / Mowich zavřeno." },
+    { "sev": "green", "area": "WA · SR-20 North Cascades, SR-542 Artist Point", "text": "Otevřené (SR-20 po povodních otevřena 14. 6.); požáry jen v zadní části parku (Hozomeen, Stehekin) — Diablo/Rainy Pass bez omezení." },
+    { "sev": "amber", "area": "OR · Crater Lake", "text": "East Rim Drive ZAVŘENÁ mezi Park HQ a Phantom Ship (stavba) — k Phantom Ship/Pinnacles jen od North Junction po East Rim. Cleetwood Cove (přístup k vodě) zavřen 2026–2028. Lodge a Rim Café jedou." },
+    { "sev": "amber", "area": "OR · OR-62 u Lost Creek Lake", "text": "Stavba mostu MP 35 (Lost Creek Lake) — zdržení, ne uzávěra." },
+    { "sev": "amber", "area": "CA · US-199 Smith River canyon (Gasquet)", "text": "Stavba 2026–2029: jednosměrný provoz nonstop, ÚPLNÉ UZÁVĚRY út–čt 10–14 h (4 h!) v úseku u Gasquet. Jeď 199 v pondělí/pátek/víkend, nebo ráno do 10 / po 14 h." },
+    { "sev": "amber", "area": "CA · Highway 1 Westport (Mendocino)", "text": "Jednosměrný provoz Westport–Wages Creek nonstop do 31. 12. 2026, zdržení do 10 min." },
+    { "sev": "amber", "area": "CA · US-101 Garberville / SR-254 Avenue of the Giants / SR-96", "text": "Jednosměrné úseky s flagmanem: 101 u hranice Mendocino/Humboldt (10 min), 254 sever od Weott (5 min), 96 u Red Cap (15 min)." },
+    { "sev": "green", "area": "CA · Highway 1 Big Sur", "text": "PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026). Občas krátké uzávěry na práce — Caltrans QuickMap." },
+    { "sev": "green", "area": "CA · Redwoods", "text": "Howland Hill, Davison (Fern Canyon, bez permitu po 15. 9.), Drury Parkway, Bald Hills (poškozená, pomalu) — otevřené. Damnation Creek trailhead zavřen." },
+    { "sev": "green", "area": "CA · Lassen, Point Reyes, Muir Woods", "text": "Lassen CA-89 celá otevřená. Point Reyes bez uzávěr silnic (North Beach dočasně po havárii lodi 21. 8.). Muir Woods jen s rezervací parkování." },
+    { "sev": "amber", "area": "CA · Death Valley", "text": "Scotty's Castle a Darwin Falls zavřené; Titus Canyon zavírá 1. 10. 2026; Wildrose Rd znovu otevřena (štěrk); jižní Badwater Rd volný štěrk. Ostatní hlavní silnice ok (stav 4. 9.)." },
+    { "sev": "green", "area": "CA · Mojave NP, Joshua Tree, Anza-Borrego", "text": "Bez hlášených uzávěr hlavních silnic (12. 9.). Po dešti washe (Font's Point, Arroyo Tapiado) nejezdit." }
+  ]
+}

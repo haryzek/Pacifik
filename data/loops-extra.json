@@ -1,191 +1,2116 @@
 [
-  {
-    "id": "loop-21", "name": "Whidbey Island — Deception Pass → trajekt do Port Townsend", "from_spine": "Seattle (I-5 / trajekt Mukilteo)", "rejoin_spine": "Port Townsend (trajekt Coupeville–Port Townsend, US-101)",
-    "total_km": 140, "driving_hours": 3, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Seattle","lat":47.6062,"lng":-122.3321},{"name":"Everett — Laura Palmer's House","lat":47.9738,"lng":-122.2207},{"name":"Mukilteo (trajekt)","lat":47.9490,"lng":-122.3040},{"name":"Clinton","lat":47.9750,"lng":-122.3520},{"name":"Coupeville","lat":48.2200,"lng":-122.6900},{"name":"Ebey's Landing","lat":48.1918,"lng":-122.7080},{"name":"Fort Ebey","lat":48.2228,"lng":-122.7615},{"name":"Joseph Whidbey SP","lat":48.3085,"lng":-122.7131},{"name":"Deception Pass — Bowman Bay","lat":48.4166,"lng":-122.6514},{"name":"Coupeville (trajekt Keystone)","lat":48.1590,"lng":-122.6740},{"name":"Port Townsend","lat":48.1170,"lng":-122.7600}],
-    "stops": ["Laura Palmer's House","Ebey's Landing","Fort Ebey State Park","Joseph Whidbey State Park","Bowman Bay","Point Wilson Lighthouse"],
-    "story": "Místo dálnice na Olympic vezmi ostrov: dva trajekty, mezi nimi Whidbey — holé bluffy nad průlivem, pobřežní baterie z betonu, driftwood a na severu Deception Pass, kde se moře cpe úžinou pod mostem. Trajekt z Coupeville tě vysadí rovnou v Port Townsend na US-101. Cestou z Everettu je dům Laury Palmerové — jen z ulice.",
-    "why_bob": "Prázdné větrné bluffy, staré pevnosti, dva trajekty a Twin Peaks na začátek — Olympic zezadu, bez I-5.",
-    "overnight": "Port Townsend (viktoriánské město, Fort Worden)", "season_note_2026": "trajekt Coupeville–Port Townsend rezervuj online (wsdot.com/ferries), jinak fronta; Mukilteo bez rezervace", "rank": 21
-  },
-  {
-    "id": "loop-22", "name": "North Cascades Highway — Diablo Lake, Washington Pass", "from_spine": "Seattle / Mount Vernon (I-5)", "rejoin_spine": "Seattle nebo Whidbey (zpět stejnou cestou)",
-    "total_km": 420, "driving_hours": 6.5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Seattle","lat":47.6062,"lng":-122.3321},{"name":"Mount Vernon","lat":48.4200,"lng":-122.3300},{"name":"Sedro-Woolley","lat":48.5040,"lng":-122.2360},{"name":"Concrete","lat":48.5380,"lng":-121.7490},{"name":"Newhalem","lat":48.6710,"lng":-121.2440},{"name":"Gorge Creek Falls","lat":48.7031,"lng":-121.2107},{"name":"Diablo Lake Overlook","lat":48.7131,"lng":-121.1289},{"name":"Colonial Creek","lat":48.6985,"lng":-121.0943},{"name":"Rainy Pass","lat":48.5196,"lng":-120.7340},{"name":"Washington Pass / Blue Lake","lat":48.5191,"lng":-120.6742}],
-    "stops": ["Diablo Lake Overlook","Colonial Creek — Diablo Lake shore","Gorge Creek Falls","Rainy Lake","Blue Lake Trail"],
-    "story": "Nejdramatičtější silnice ve Washingtonu: z deštného lesa u Newhalemu vystoupáš k tyrkysovému Diablo Lake (ledovcová mouka), pak dál na Rainy Pass a Washington Pass mezi žulovými věžemi. Zpátky stejnou cestou — jinak to nejde, na východ by ses nevrátil. Koupání v Diablo Lake z Colonial Creek je ledové a stojí za to.",
-    "why_bob": "Tyrkysová voda, žula, prázdná silnice a Blue Lake pod Liberty Bell — nejalpštější den celé cesty, jen 3 h od Seattlu.",
-    "overnight": "Marblemount / Concrete (motely), nebo zpět", "season_note_2026": "Highway 20 přes Washington Pass otevřená do prvního velkého sněhu (obvykle listopad); v září ok; ověř wsdot.com", "rank": 22
-  },
-  {
-    "id": "loop-23", "name": "Mount Baker Highway — Artist Point", "from_spine": "Bellingham (I-5)", "rejoin_spine": "Bellingham",
-    "total_km": 190, "driving_hours": 3.5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Bellingham","lat":48.7519,"lng":-122.4787},{"name":"Glacier","lat":48.8880,"lng":-121.9430},{"name":"Nooksack Falls","lat":48.9053,"lng":-121.8089},{"name":"Heather Meadows","lat":48.8570,"lng":-121.6800},{"name":"Artist Point","lat":48.8455,"lng":-121.6905}],
-    "stops": ["Nooksack Falls","Artist Point — Mount Baker"],
-    "story": "Slepá silnice, která končí ve 1 550 m mezi Mount Bakerem a Shuksanem — od parkoviště na Artist Point jsi během deseti minut chůze v krajině, kterou jinde musíš vyšlapat. Cestou Nooksack Falls v lávové soutěsce. Dá se spojit s North Cascades v jednom dlouhém dni, ale je to škoda.",
-    "why_bob": "Nejjednodušší velehory celé cesty: zaparkovat, ujít půl kilometru a sedět pod ledovcem.",
-    "overnight": "Glacier (chaty) nebo Bellingham", "season_note_2026": "posledních 4 km na Artist Point otevřené jen cca červenec–říjen; v září většinou ano — ověř Mt. Baker Ranger District", "rank": 23
-  },
-  {
-    "id": "loop-24", "name": "Mount Rainier — Paradise", "from_spine": "Olympia (I-5)", "rejoin_spine": "Aberdeen / Olympia (US-12, US-101)",
-    "total_km": 330, "driving_hours": 5.5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Olympia","lat":47.0379,"lng":-122.9007},{"name":"Eatonville","lat":46.8670,"lng":-122.2680},{"name":"Elbe","lat":46.7620,"lng":-122.1930},{"name":"Ashford","lat":46.7570,"lng":-122.0300},{"name":"Longmire","lat":46.7500,"lng":-121.8120},{"name":"Narada Falls","lat":46.7790,"lng":-121.7460},{"name":"Paradise","lat":46.7860,"lng":-121.7350},{"name":"Reflection Lakes","lat":46.7700,"lng":-121.7300},{"name":"Packwood (US-12)","lat":46.6130,"lng":-121.6720},{"name":"Chehalis (I-5)","lat":46.6620,"lng":-122.9640},{"name":"Aberdeen","lat":46.9754,"lng":-123.8157}],
-    "stops": ["Paradise — Nisqually Vista","Skyline Trail — Panorama Point","Narada Falls","Reflection Lakes"],
-    "story": "Rainier je sopka, která stojí sama nad celým Washingtonem, a Paradise je místo, odkud se na ni koukáš z louky ve 1 650 m. Skyline Trail k Panorama Point (8 km, 500 m převýšení) je nejlepší túra celého severu; kdo nechce, sedne na Nisqually Vista. Zpátky přes Stevens Canyon a Packwood na US-12 a k moři — okruh, ne návrat.",
-    "why_bob": "Sopka v měřítku, které nezvládne fotka — a v září louky bez davů léta, jen mlha a svišti.",
-    "overnight": "Ashford / Packwood (motely)", "season_note_2026": "NP 30 $ (America the Beautiful pass platí); od 2024 v létě rezervace vjezdu — v září po Labor Day většinou ne, ověř nps.gov/mora", "rank": 24
-  },
-  {
-    "id": "loop-25", "name": "Mount St. Helens jih — Ape Cave & Lava Canyon", "from_spine": "Woodland (I-5)", "rejoin_spine": "Woodland / Longview",
-    "total_km": 140, "driving_hours": 3, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Woodland","lat":45.9040,"lng":-122.7440},{"name":"Cougar","lat":46.0510,"lng":-122.2960},{"name":"Ape Cave","lat":46.1080,"lng":-122.2120},{"name":"Lava Canyon","lat":46.1650,"lng":-122.0900}],
-    "stops": ["Ape Cave"],
-    "story": "Jižní strana St. Helens je ta tišší: Ape Cave je 4 km lávový tunel, kterým se jde s čelovkou v naprosté tmě (dolní část 1,2 km je snadná, horní je lezení), Lava Canyon je soutěska vymletá po erupci 1980. Severní strana (Johnston Ridge) je v jiné odbočce.",
-    "why_bob": "Tma, chlad a ticho lávové trubky, kterou tekla sopka — deep time na vlastní kůži.",
-    "overnight": null, "season_note_2026": "Ape Cave: rezervace vstupu (recreation.gov, 2 $) + Northwest Forest Pass 5 $; čelovka nutná, půjčují jen v sezóně", "rank": 25
-  },
-  {
-    "id": "loop-26", "name": "Hood Canal — Point No Point, Mount Walker, Staircase, Lake Cushman", "from_spine": "Port Townsend (US-101 sever)", "rejoin_spine": "Olympia / Shelton (US-101)",
-    "total_km": 210, "driving_hours": 4.5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Kingston (trajekt z Edmonds)","lat":47.7980,"lng":-122.4970},{"name":"Point No Point","lat":47.9122,"lng":-122.5268},{"name":"Port Gamble","lat":47.8530,"lng":-122.5840},{"name":"Port Townsend","lat":48.1170,"lng":-122.7600},{"name":"Quilcene","lat":47.8250,"lng":-122.8770},{"name":"Mount Walker","lat":47.7750,"lng":-122.9300},{"name":"Brinnon / Dosewallips","lat":47.6964,"lng":-122.9195},{"name":"Rocky Brook Falls","lat":47.7189,"lng":-122.9435},{"name":"Hamma Hamma (Lena Lake)","lat":47.5960,"lng":-123.1510},{"name":"Hoodsport","lat":47.4060,"lng":-123.1420},{"name":"Lake Cushman","lat":47.4300,"lng":-123.2170},{"name":"Staircase","lat":47.5160,"lng":-123.3300},{"name":"Shelton","lat":47.2150,"lng":-123.1010},{"name":"Olympia","lat":47.0379,"lng":-122.9007}],
-    "stops": ["Point No Point Lighthouse","Mount Walker — north & south viewpoints","Rocky Brook Falls","Dosewallips State Park — river access","Lena Lake","Staircase Rapids Loop","Lake Cushman — Skokomish Park swim"],
-    "story": "Východní strana Olympicu podél fjordu Hood Canal — alternativa k tomu, jet na pobřeží rovnou. Mount Walker je jediný vrchol, na který vyjedeš autem (výhled na Rainier i Seattle), Rocky Brook Falls jsou pět minut od auta, Dosewallips ledová řeka na koupání, Staircase divoká soutěska Skokomish a Lake Cushman nejlepší jezerní koupání v okolí. Pomalá cesta, spousta zastávek.",
-    "why_bob": "Studené řeky a jezero pod horami, vyhlídka z auta a prázdná silnice podél fjordu — Olympic z té strany, kterou turisti přeskakují.",
-    "overnight": "Hoodsport / Union (motely u kanálu)", "season_note_2026": "Staircase: NP 30 $; Mount Walker Road štěrk, sedan ok, zavřená v zimě", "rank": 26
-  },
-  {
-    "id": "loop-27", "name": "Neah Bay — Cape Flattery, Hobuck, Ozette", "from_spine": "Port Angeles (US-101)", "rejoin_spine": "Forks (US-101)",
-    "total_km": 220, "driving_hours": 4.5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Port Angeles","lat":48.1181,"lng":-123.4307},{"name":"Joyce / Salt Creek","lat":48.1630,"lng":-123.7000},{"name":"Clallam Bay","lat":48.2540,"lng":-124.2620},{"name":"Neah Bay","lat":48.3680,"lng":-124.6240},{"name":"Cape Flattery","lat":48.3850,"lng":-124.7160},{"name":"Hobuck Beach","lat":48.3381,"lng":-124.6647},{"name":"Ozette","lat":48.1540,"lng":-124.6700},{"name":"Forks","lat":47.9503,"lng":-124.3854}],
-    "stops": ["Strait of Juan de Fuca Highway — SR 112","Salt Creek Recreation Area — Tongue Point","Cape Flattery","Makah Cultural & Research Center","Hobuck Beach","Shi Shi Beach — Point of Arches day hike","Ozette Triangle — Cape Alava & Sand Point"],
-    "story": "Nejsevernější a nejzápadnější cíp kontinentálních USA. SR-112 se kroutí po útesech nad průlivem, v Neah Bay (rezervace Makah) koupíš permit a dojdeš na Cape Flattery — dřevěné plošiny nad mořskými jeskyněmi, maják na ostrově, puffini. Hobuck je prázdná pláž s vlnami, Ozette Triangle (15 km) tě po prkenných chodnících dovede na nejdivočejší pobřeží celého Olympicu.",
-    "why_bob": "Konec kontinentu ve větru a mlze, indiánské muzeum, prázdné pláže — a večer Forks, kde nic není, což je přesně ono.",
-    "overnight": "Neah Bay (Hobuck Beach Resort chaty) nebo Forks", "season_note_2026": "Makah Recreation Pass 20 $ (Neah Bay, obchody) povinný pro Cape Flattery, Hobuck, Shi Shi; Ozette bez", "rank": 27
-  },
-  {
-    "id": "loop-28", "name": "Willamette back roads — Bald Peak, McMinnville → Lincoln City", "from_spine": "Portland", "rejoin_spine": "Lincoln City (US-101)",
-    "total_km": 150, "driving_hours": 3, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Portland","lat":45.5152,"lng":-122.6784},{"name":"Newberg","lat":45.3000,"lng":-122.9730},{"name":"Bald Peak","lat":45.3670,"lng":-123.0570},{"name":"McMinnville","lat":45.2100,"lng":-123.1970},{"name":"Grand Ronde","lat":45.0600,"lng":-123.6100},{"name":"Lincoln City","lat":44.9958,"lng":-124.0086}],
-    "stops": ["Bald Peak State Scenic Viewpoint"],
-    "story": "Z Portlandu k moři ne po US-26, ale zadem: kopce nad Willamette Valley, dubové sady, vyhlídka z Bald Peak na tři sopky najednou, McMinnville s letecko-kosmickým muzeem (Spruce Goose) a pak OR-18 přes Coast Range do Lincoln City.",
-    "why_bob": "Zlaté kopce a sopky na obzoru místo dálnice — hodina navíc, která stojí za to.",
-    "overnight": null, "season_note_2026": "otevřeno", "rank": 28
-  },
-  {
-    "id": "loop-29", "name": "Columbia Gorge východ — Rowena Crest, The Dalles, washingtonský břeh", "from_spine": "Portland (I-84)", "rejoin_spine": "Portland / Vancouver WA",
-    "total_km": 300, "driving_hours": 5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Portland","lat":45.5152,"lng":-122.6784},{"name":"Sauvie Island — Collins Beach","lat":45.8010,"lng":-122.7820},{"name":"Portland","lat":45.5300,"lng":-122.6600},{"name":"Cascade Locks","lat":45.6700,"lng":-121.8900},{"name":"Hood River","lat":45.7100,"lng":-121.5100},{"name":"Mosier — Twin Tunnels","lat":45.7034,"lng":-121.4873},{"name":"Rowena Crest","lat":45.6820,"lng":-121.3020},{"name":"Mayer State Park","lat":45.6750,"lng":-121.2740},{"name":"The Dalles","lat":45.6000,"lng":-121.1800},{"name":"Lyle (WA-14)","lat":45.6900,"lng":-121.2900},{"name":"Stevenson","lat":45.6950,"lng":-121.8800},{"name":"Vancouver WA","lat":45.6300,"lng":-122.6700}],
-    "stops": ["Collins Beach — Sauvie Island","Mosier Twin Tunnels — Mark O. Hatfield West Trailhead","Rowena Crest — Tom McCall Preserve","Rowena Loops — Historic Columbia River Highway","Mayer State Park — West Mayer Cove"],
-    "story": "Západní Gorge (vodopády) je v jiné odbočce; tohle je suchý východ, kde se les během 40 km změní v step. Rowena Crest — serpentiny staré Columbia Highway pod vyhlídkou, klidná zátoka Columbie na koupání u Mayer SP, tunely v Mosieru. Zpátky po washingtonské WA-14, která je tišší a má výhled přes řeku na oregonské útesy. Na začátku (nebo konci) Collins Beach na Sauvie — oficiální nudistická pláž na Columbii.",
-    "why_bob": "Přechod z deštného lesa do stepi za jednu hodinu jízdy, koupání v Columbii nahý, staré serpentiny — Gorge bez davů u Multnomah.",
-    "overnight": "Hood River / The Dalles", "season_note_2026": "Sauvie Island parking permit 10 $/den (obchod u mostu); Collins Beach clothing-optional od severního konce", "rank": 29
-  },
-  {
-    "id": "loop-30", "name": "VELKÝ OKRUH: Umpqua → Crater Lake → Rogue → Oregon Caves", "from_spine": "Reedsport (US-101 / OR-38)", "rejoin_spine": "Crescent City (US-199 → US-101)",
-    "total_km": 640, "driving_hours": 12, "days": 3, "road_quality": "paved",
-    "waypoints": [{"name":"Reedsport","lat":43.7020,"lng":-124.0970},{"name":"Elkton (OR-38)","lat":43.6360,"lng":-123.5680},{"name":"Roseburg","lat":43.2165,"lng":-123.3417},{"name":"Glide","lat":43.3000,"lng":-123.1000},{"name":"Cavitt Creek Falls","lat":43.2000,"lng":-123.0220},{"name":"Glide","lat":43.3000,"lng":-123.1000},{"name":"Susan Creek Falls","lat":43.3020,"lng":-122.8360},{"name":"Steamboat","lat":43.3490,"lng":-122.7270},{"name":"Steamboat Falls","lat":43.3737,"lng":-122.6407},{"name":"Steamboat","lat":43.3490,"lng":-122.7270},{"name":"Toketee Falls","lat":43.2630,"lng":-122.4270},{"name":"Umpqua Hot Springs","lat":43.2950,"lng":-122.3620},{"name":"Watson Falls","lat":43.2460,"lng":-122.3900},{"name":"Clearwater Falls","lat":43.2560,"lng":-122.3780},{"name":"Lemolo Lake","lat":43.3210,"lng":-122.2870},{"name":"Diamond Lake","lat":43.1290,"lng":-122.1320},{"name":"Pumice Desert","lat":43.0040,"lng":-122.1160},{"name":"Crater Lake — North Junction","lat":42.9700,"lng":-122.1200},{"name":"Watchman / West Rim","lat":42.9390,"lng":-122.1690},{"name":"Rim Village","lat":42.9114,"lng":-122.1483},{"name":"Cloudcap Overlook","lat":42.9260,"lng":-122.0300},{"name":"Mount Scott","lat":42.9230,"lng":-122.0160},{"name":"Phantom Ship Overlook","lat":42.8960,"lng":-122.0490},{"name":"The Pinnacles","lat":42.8500,"lng":-122.0070},{"name":"Phantom Ship Overlook","lat":42.8960,"lng":-122.0490},{"name":"Rim Village","lat":42.9114,"lng":-122.1483},{"name":"Annie Creek / Mazama","lat":42.8600,"lng":-122.1680},{"name":"Union Creek","lat":42.9140,"lng":-122.4470},{"name":"Natural Bridge","lat":42.8950,"lng":-122.4610},{"name":"Prospect — Mill Creek Falls","lat":42.7470,"lng":-122.4950},{"name":"Lost Creek Lake","lat":42.6850,"lng":-122.6240},{"name":"Shady Cove","lat":42.6100,"lng":-122.8100},{"name":"Upper Table Rock","lat":42.4680,"lng":-122.9070},{"name":"Medford","lat":42.3265,"lng":-122.8756},{"name":"Jacksonville","lat":42.3130,"lng":-122.9660},{"name":"Grants Pass","lat":42.4390,"lng":-123.3280},{"name":"Cave Junction","lat":42.1630,"lng":-123.6480},{"name":"Oregon Caves","lat":42.0987,"lng":-123.4088},{"name":"Cave Junction","lat":42.1630,"lng":-123.6480},{"name":"Crescent City","lat":41.7558,"lng":-124.2026}],
-    "stops": ["North Umpqua Highway — OR-138","Toketee Falls","Umpqua Hot Springs","Watson Falls","Diamond Lake — South Shore","Crater Lake — Rim Village & Sinnott Memorial Overlook","Watchman Peak Trail","Cloudcap Overlook","Phantom Ship Overlook","Rogue Gorge","Natural Bridge — Rogue River","Upper Table Rock","Jacksonville Historic District","Oregon Caves — Discovery Cave Tour"],
-    "story": "Tohle je ta odbočka. Den 1: OR-138 po North Umpqua — divoká řeka, jeden vodopád za druhým (Susan, Steamboat, Toketee, Watson, Clearwater), horký pramen na skále nad řekou, koupání v tůních. Spát u Diamond Lake. Den 2: Crater Lake — celá Rim Drive (53 km), Watchman na západ slunce, Cloudcap, Phantom Ship, Pinnacles; pokud dovolí počasí, Cleetwood Cove a skok do nejčistší vody Ameriky. Spát Prospect/Union Creek. Den 3: Rogue — Natural Bridge a Gorge (dívat se, NIKDY nekoupat), Prospect vodopády, Table Rock nad údolím, Jacksonville ze zlaté horečky, Oregon Caves mramorová jeskyně — a US-199 podél Smith River zpátky k moři.",
-    "why_bob": "Dětský sen (Crater Lake) obalený třemi dny řek, vodopádů, horkých pramenů a sopek — jestli má cesta jednu velkou odbočku, je to tahle.",
-    "overnight": "1: Diamond Lake Resort / Lemolo; 2: Prospect Hotel / Union Creek Resort; 3: Crescent City", "season_note_2026": "Crater Lake NP 30 $; Rim Drive celá otevřená do sněhu (obvykle konec října); Cleetwood Cove trail — 2026 REKONSTRUKCE, koupání v jezeře může být nepřístupné, ověř nps.gov/crla; Rogue Gorge / Natural Bridge = smrtelné, nekoupat", "rank": 30
-  },
-  {
-    "id": "loop-31", "name": "Oregon Outback — Fort Rock, Crack-in-the-Ground, Summer Lake Hot Springs", "from_spine": "Crater Lake / La Pine (US-97)", "rejoin_spine": "Ashland → Medford → Crescent City (nebo zpět na Crater Lake)",
-    "total_km": 520, "driving_hours": 8, "days": 2, "road_quality": "paved_gravel_ok",
-    "waypoints": [{"name":"Crater Lake — North Junction","lat":42.9700,"lng":-122.1200},{"name":"Chemult","lat":43.2200,"lng":-121.7800},{"name":"La Pine","lat":43.6700,"lng":-121.5000},{"name":"Hole-in-the-Ground","lat":43.4111,"lng":-121.1976},{"name":"Fort Rock","lat":43.3744,"lng":-121.0700},{"name":"Christmas Valley","lat":43.2400,"lng":-120.6600},{"name":"Crack-in-the-Ground","lat":43.3328,"lng":-120.6760},{"name":"Christmas Valley","lat":43.2400,"lng":-120.6600},{"name":"Summer Lake Hot Springs","lat":42.7248,"lng":-120.6476},{"name":"Paisley","lat":42.6930,"lng":-120.5430},{"name":"Lakeview","lat":42.1890,"lng":-120.3460},{"name":"Klamath Falls","lat":42.2249,"lng":-121.7817},{"name":"Hyatt Lake (OR-66)","lat":42.1669,"lng":-122.4641},{"name":"Ashland","lat":42.1946,"lng":-122.7095}],
-    "stops": ["Hole-in-the-Ground","Fort Rock State Natural Area","Crack-in-the-Ground","Summer Lake Hot Springs","Hyatt Lake Recreation Area","Ashland — Railroad District & Lithia Park"],
-    "story": "Za Cascades začíná Great Basin: plochá pánev bývalého jezera, ze které trčí tufový prsten Fort Rock, kráter Hole-in-the-Ground od exploze magmatu s vodou, dvoukilometrová puklina Crack-in-the-Ground, ve které je o 10 °C chladněji. Večer Summer Lake Hot Springs — starý bathhouse a venkovní bazény uprostřed ničeho, spát tam. Zpátky přes Lakeview a Klamath Falls, Green Springs Highway (OR-66) kolem Hyatt Lake do Ashlandu.",
-    "why_bob": "Nevada v Oregonu — prázdno, sopečné jizvy, horká voda pod hvězdami a žádní lidé; jeho poušť ještě před Kalifornií.",
-    "overnight": "Summer Lake Hot Springs (kabiny/kemp, rezervace summerlakehotsprings.com)", "season_note_2026": "Crack-in-the-Ground: 11 km štěrku, sedan ok; tankuj v La Pine/Christmas Valley/Lakeview — dál nic; Crystal Crane HS (Burns) je ještě 200 km východně — jen pokud fakt chce", "rank": 31
-  },
-  {
-    "id": "loop-32", "name": "Bend — Newberry Volcano, Lava River Cave, Smith Rock, Painted Hills", "from_spine": "Crater Lake / Reedsport (přes La Pine)", "rejoin_spine": "Newport (US-20 přes Corvallis, Marys Peak)",
-    "total_km": 650, "driving_hours": 11, "days": 3, "road_quality": "paved",
-    "waypoints": [{"name":"Crater Lake — North Junction","lat":42.9700,"lng":-122.1200},{"name":"Chemult","lat":43.2200,"lng":-121.7800},{"name":"La Pine","lat":43.6700,"lng":-121.5000},{"name":"Paulina Peak","lat":43.6890,"lng":-121.2550},{"name":"Big Obsidian Flow","lat":43.6980,"lng":-121.2520},{"name":"Paulina Lake — Little Crater","lat":43.7123,"lng":-121.2434},{"name":"East Lake","lat":43.7180,"lng":-121.2110},{"name":"Paulina Lake Hot Springs","lat":43.7321,"lng":-121.2523},{"name":"Lava Cast Forest","lat":43.8168,"lng":-121.2889},{"name":"Lava River Cave","lat":43.8954,"lng":-121.3689},{"name":"Benham Falls","lat":43.9382,"lng":-121.4120},{"name":"Dillon Falls","lat":43.9582,"lng":-121.4161},{"name":"Bend","lat":44.0582,"lng":-121.3153},{"name":"Flatiron Rock — Badlands","lat":43.9577,"lng":-121.0519},{"name":"Prineville","lat":44.3000,"lng":-120.8340},{"name":"Mitchell","lat":44.5680,"lng":-120.1520},{"name":"Painted Hills","lat":44.6530,"lng":-120.2650},{"name":"Mitchell","lat":44.5680,"lng":-120.1520},{"name":"Prineville","lat":44.3000,"lng":-120.8340},{"name":"Smith Rock","lat":44.3670,"lng":-121.1410},{"name":"Sisters","lat":44.2910,"lng":-121.5490},{"name":"Santiam Pass","lat":44.4200,"lng":-121.8500},{"name":"Sweet Home","lat":44.3980,"lng":-122.7360},{"name":"Corvallis","lat":44.5646,"lng":-123.2620},{"name":"Marys Peak","lat":44.5040,"lng":-123.5510},{"name":"Newport","lat":44.6368,"lng":-124.0535}],
-    "stops": ["Paulina Peak","Big Obsidian Flow","Paulina Lake — Little Crater Day Use Site","Paulina Lake Hot Springs","Lava River Cave","Benham Falls","Smith Rock — Misery Ridge Loop","Painted Hills — Overlook & Painted Cove","Marys Peak"],
-    "story": "Suchá strana Oregonu za Cascades. Den 1: Newberry — kaldera se dvěma jezery, obsidiánový proud jako rozbité sklo, koupání v Paulina Lake a horké prameny vyhrabané na břehu (ledová voda + 40 °C bazének), pak lávová trubka Lava River Cave (1,5 km tmy) a Deschutes v lávové soutěsce. Spát Bend (pivo, knihkupectví). Den 2: Badlands s jalovci, Painted Hills — pruhované kopce z popela (žlutá, červená, černá), ráno nebo podvečer. Spát Prineville/Mitchell. Den 3: Smith Rock — Misery Ridge nad řekou Crooked, pak přes Santiam Pass a Marys Peak (nejvyšší v Coast Range, 360°) do Newportu.",
-    "why_bob": "Sopečná kaldera na koupání, poušť s pruhovanými kopci a žulové věže — tři dny Oregonu, který vypadá jako Southwest, a návrat na moře přes hory.",
-    "overnight": "1: Bend; 2: Prineville / Mitchell (Painted Hills Vacation cottages)", "season_note_2026": "Newberry NVM: NW Forest Pass 5 $; Paulina Peak Road štěrk, sedan ok; Lava River Cave rezervace (recreation.gov), čelovka; Painted Hills zdarma; Santiam Pass ok v září; Marys Peak Road posledních 15 km úzké, asfalt", "rank": 32
-  },
-  {
-    "id": "loop-33", "name": "Applegate — Illinois River — Oregon Caves", "from_spine": "Medford / Grants Pass (I-5)", "rejoin_spine": "Crescent City (US-199)",
-    "total_km": 260, "driving_hours": 5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Medford","lat":42.3265,"lng":-122.8756},{"name":"TouVelle / Table Rock","lat":42.4433,"lng":-122.8861},{"name":"Jacksonville","lat":42.3130,"lng":-122.9660},{"name":"Ruch","lat":42.2380,"lng":-123.0400},{"name":"McKee Bridge","lat":42.1258,"lng":-123.0727},{"name":"Applegate Lake","lat":42.0520,"lng":-123.1190},{"name":"Ruch","lat":42.2380,"lng":-123.0400},{"name":"Grants Pass","lat":42.4390,"lng":-123.3280},{"name":"Selma","lat":42.2790,"lng":-123.6130},{"name":"Six Mile — Illinois River","lat":42.2970,"lng":-123.7320},{"name":"Cave Junction","lat":42.1630,"lng":-123.6480},{"name":"Oregon Caves","lat":42.0987,"lng":-123.4088},{"name":"Cave Junction","lat":42.1630,"lng":-123.6480},{"name":"Crescent City","lat":41.7558,"lng":-124.2026}],
-    "stops": ["TouVelle State Recreation Site","Jacksonville Historic District","McKee Bridge Swimming Hole","Applegate Lake — Hart-Tish Park","Six Mile Day Use Area — Illinois River","River Bench — Illinois River","Oregon Caves — Discovery Cave Tour","Oregon Caves — Big Tree Trail"],
-    "story": "Jednodenní řeková odbočka pro toho, kdo nejede celý velký okruh: Rogue u Table Rock, zlatokopecký Jacksonville, tůň pod krytým mostem na Applegate, jezero pod horami, pak Illinois River — nejčistší tyrkysová voda jižního Oregonu s tůněmi u Six Mile — a mramorová jeskyně Oregon Caves. Domů po US-199 kaňonem Smith River.",
-    "why_bob": "Čtyři různé vody na koupání za jeden den a mramorová jeskyně v horách — bez velkého detouru, na cestě k redwoodům.",
-    "overnight": null, "season_note_2026": "Oregon Caves prohlídky (nps.gov/orca, cca 10 $, 90 min, 7 °C uvnitř); Illinois River Rd asfalt po Six Mile", "rank": 33
-  },
-  {
-    "id": "loop-34", "name": "Lava Beds → Shasta → McCloud Falls → Castle Crags → Trinity", "from_spine": "Klamath Falls / Ashland (OR-66, OR-140)", "rejoin_spine": "Arcata (CA-299 přes Weaverville)",
-    "total_km": 620, "driving_hours": 11, "days": 3, "road_quality": "paved",
-    "waypoints": [{"name":"Klamath Falls","lat":42.2249,"lng":-121.7817},{"name":"Lower Klamath NWR","lat":41.9960,"lng":-121.6590},{"name":"Tule Lake — Segregation Center","lat":41.9550,"lng":-121.4760},{"name":"Petroglyph Point","lat":41.8790,"lng":-121.4990},{"name":"Lava Beds — Captain Jack's Stronghold","lat":41.8390,"lng":-121.5540},{"name":"Devil's Homestead","lat":41.7750,"lng":-121.5520},{"name":"Skull Cave","lat":41.7290,"lng":-121.5120},{"name":"Lava Beds — Indian Well / Mushpot","lat":41.7140,"lng":-121.5100},{"name":"Mammoth Crater","lat":41.6930,"lng":-121.5480},{"name":"Medicine Lake Rd → CA-89","lat":41.5000,"lng":-121.6500},{"name":"Bartle","lat":41.2900,"lng":-121.8600},{"name":"Cattle Camp","lat":41.2590,"lng":-121.9400},{"name":"Middle McCloud Falls","lat":41.2435,"lng":-122.0095},{"name":"Lower McCloud Falls","lat":41.2411,"lng":-122.0248},{"name":"McCloud","lat":41.2550,"lng":-122.1390},{"name":"Mount Shasta City","lat":41.3100,"lng":-122.3100},{"name":"Lake Siskiyou","lat":41.2774,"lng":-122.3411},{"name":"Castle Lake","lat":41.2302,"lng":-122.3814},{"name":"Dunsmuir — Hedge Creek Falls","lat":41.2374,"lng":-122.2683},{"name":"Castle Crags","lat":41.1595,"lng":-122.3058},{"name":"Redding","lat":40.5865,"lng":-122.3917},{"name":"Whiskeytown","lat":40.6300,"lng":-122.5700},{"name":"Weaverville","lat":40.7310,"lng":-122.9420},{"name":"Willow Creek","lat":40.9390,"lng":-123.6320},{"name":"Arcata","lat":40.8665,"lng":-124.0828}],
-    "stops": ["Lower Klamath National Wildlife Refuge — Auto Tour","Tule Lake National Monument — Segregation Center","Petroglyph Point","Captain Jack's Stronghold","Skull Cave","Mushpot Cave","Valentine Cave","Lava Beds — night sky at Indian Well Campground","Cattle Camp Swimming Hole — Upper McCloud River","Middle McCloud Falls","Lower McCloud Falls","Lake Siskiyou Beach","Castle Lake","Hedge Creek Falls","Castle Crags — Vista Point","Weaverville Historic Main Street"],
-    "story": "Den 1: z Klamath Falls dolů přes ptačí rezervace k Lava Beds — lávové tunely s čelovkou (Mushpot, Valentine, Skull s ledem), Captain Jack's Stronghold, kde 60 Modoků půl roku vzdorovalo armádě, petroglyfy, a v noci nejtemnější nebe Kalifornie z kempu Indian Well. Den 2: přes Medicine Lake k McCloud — tři vodopády za sebou, pod Middle Falls koupání v ledovém bazénu, Shasta nad vším. Spát Mount Shasta City / Dunsmuir. Den 3: Castle Lake ráno, Hedge Creek za vodopádem, Castle Crags žulové jehly proti Shastě, pak CA-299 podél Trinity River k moři.",
-    "why_bob": "Lávové tunely, sopka 4 300 m, koupání pod vodopádem a hvězdy v poušti Modoc — nejdivočejší tři dny severní Kalifornie, a vrací se to na pobřeží řekou.",
-    "overnight": "1: Lava Beds kemp (Indian Well, 10 $) nebo Tulelake motel; 2: Mount Shasta City / Dunsmuir (Railroad Park — spát ve vagónu!)", "season_note_2026": "Lava Beds NM 25 $; čelovku půjčí ve visitor center zdarma; Medicine Lake Road asfalt; McCloud Falls Road asfalt až k Lower; Castle Lake Road asfalt", "rank": 34
-  },
-  {
-    "id": "loop-35", "name": "Lassen Volcanic → CA-36 přes hory k moři", "from_spine": "Redding (z Shasta okruhu)", "rejoin_spine": "Fortuna (US-101)",
-    "total_km": 480, "driving_hours": 9, "days": 2, "road_quality": "paved_narrow",
-    "waypoints": [{"name":"Redding","lat":40.5865,"lng":-122.3917},{"name":"Shingletown (CA-44)","lat":40.4920,"lng":-121.8890},{"name":"Manzanita Lake","lat":40.5336,"lng":-121.5678},{"name":"Sulphur Works","lat":40.4495,"lng":-121.5341},{"name":"Bumpass Hell","lat":40.4661,"lng":-121.5140},{"name":"Kings Creek Falls","lat":40.4605,"lng":-121.4592},{"name":"Mineral (CA-36)","lat":40.3460,"lng":-121.5950},{"name":"Red Bluff","lat":40.1785,"lng":-122.2358},{"name":"Platina","lat":40.3600,"lng":-122.9000},{"name":"Forest Glen — Hell Gate","lat":40.3707,"lng":-123.3136},{"name":"Mad River","lat":40.4400,"lng":-123.5500},{"name":"Bridgeville","lat":40.4700,"lng":-123.8000},{"name":"Fortuna","lat":40.5982,"lng":-124.1573}],
-    "stops": ["Manzanita Lake — Lassen","Sulphur Works — Lassen Volcanic National Park","Bumpass Hell Trailhead","Kings Creek Falls Trailhead","Hell Gate — South Fork Trinity River"],
-    "story": "Lassen je malý Yellowstone bez lidí: bublající bahno u silnice (Sulphur Works), Bumpass Hell (5 km) — fumaroly, vařící jezírka, sirná pára, a Manzanita Lake, kde se sopka zrcadlí a smí se plavat. Zpátky k moři po CA-36 — 230 km horské silnice přes Coast Range, kterou skoro nikdo nejede, s koupáním v South Fork Trinity u Hell Gate. Pět hodin, nádherných.",
-    "why_bob": "Hydrotermální krajina, koupání pod sopkou a pak nejopuštěnější silnice v Kalifornii zpátky k Pacifiku.",
-    "overnight": "Mineral / Chester, nebo Red Bluff (motely)", "season_note_2026": "Lassen NP 30 $; hlavní silnice parkem otevřená do sněhu (říjen–listopad); CA-36 asfalt, úzké, tankuj v Red Bluff — 200 km bez pumpy", "rank": 35
-  },
-  {
-    "id": "loop-36", "name": "Parkfield — San Andreas, James Dean, Cholame", "from_spine": "Paso Robles (US-101)", "rejoin_spine": "Paso Robles",
-    "total_km": 150, "driving_hours": 2.5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Paso Robles","lat":35.6266,"lng":-120.6910},{"name":"Cholame (James Dean)","lat":35.7280,"lng":-120.2950},{"name":"Parkfield","lat":35.8997,"lng":-120.4327},{"name":"Vineyard Canyon Rd","lat":35.7700,"lng":-120.6000},{"name":"Paso Robles","lat":35.6266,"lng":-120.6910}],
-    "stops": ["Parkfield — Earthquake Capital of the World"],
-    "story": "Zlaté kopce s duby a lišejníkem (ta krajina z 2017) na východ od Paso, na křižovatce v Cholame pomník James Deana (zabil se 500 m odtud, 1955), a pak Parkfield — 18 lidí, most přes San Andreas s cedulí, že přejíždíš z Pacifické desky na Severoamerickou, seismografy USGS a kavárna s heslem „Be here when it happens“. Zpátky po Vineyard Canyon prázdnou savanou.",
-    "why_bob": "Stát rozkročený nad zlomem, který hýbe kontinentem, uprostřed dubové savany — geologie, samota a James Dean v jednom odpoledni.",
-    "overnight": null, "season_note_2026": "Parkfield Cafe otevřena denně (ověř); silnice asfalt", "rank": 36
-  },
-  {
-    "id": "loop-37", "name": "Angeles Crest — Mount Wilson, Devil's Punchbowl, Vasquez Rocks", "from_spine": "Pasadena / La Cañada (I-210)", "rejoin_spine": "LA (CA-14 / I-5)",
-    "total_km": 240, "driving_hours": 5, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"La Cañada Flintridge","lat":34.2000,"lng":-118.2000},{"name":"Red Box","lat":34.2584,"lng":-118.1046},{"name":"Mount Wilson Observatory","lat":34.2250,"lng":-118.0572},{"name":"Red Box","lat":34.2584,"lng":-118.1046},{"name":"Wrightwood","lat":34.3600,"lng":-117.6300},{"name":"Pearblossom","lat":34.5060,"lng":-117.9100},{"name":"Devil's Punchbowl","lat":34.4135,"lng":-117.8589},{"name":"Palmdale (CA-14)","lat":34.5790,"lng":-118.1160},{"name":"Vasquez Rocks","lat":34.4785,"lng":-118.4843},{"name":"Santa Clarita (I-5)","lat":34.3917,"lng":-118.5426}],
-    "stops": ["Angeles Crest Highway — Red Box","Mount Wilson Observatory","Devil's Punchbowl Natural Area","Vasquez Rocks Natural Area Park"],
-    "story": "Za půl hodiny z Pasadeny jsi v borovicích ve 1 700 m nad smogem. Mount Wilson — Hookerův 100palcový dalekohled, kterým Hubble v roce 1929 zjistil, že se vesmír rozpíná; kopule stojí, dá se obejít. Angeles Crest Highway dál na východ hřebenem San Gabriel, pak dolů do pouště k Devil's Punchbowl — pískovec postavený zlomem na výšku — a přes Palmdale k Vasquez Rocks. Domů po CA-14.",
-    "why_bob": "Dalekohled, kterým se objevil rozpínající se vesmír, hřebenová silnice nad LA a dvě geologie postavené zlomem na hranu — vesmír a deep time v jednom dni od Hollywoodu.",
-    "overnight": null, "season_note_2026": "Angeles Crest (CA-2) mezi Islip Saddle a Vincent Gap bývá po sesuvech zavřená — ověř Caltrans QuickMap; Mount Wilson: areál otevřen 10–17, dalekohled zvenku, prohlídky so/ne; Adventure Pass 5 $", "rank": 37
-  },
-  {
-    "id": "loop-38", "name": "Rim of the World — Deep Creek Hot Springs, Big Bear, Integratron, Pioneertown", "from_spine": "LA / Redlands (I-10)", "rejoin_spine": "Joshua Tree (CA-62)",
-    "total_km": 300, "driving_hours": 6.5, "days": 2, "road_quality": "paved_gravel_ok",
-    "waypoints": [{"name":"Redlands","lat":34.0556,"lng":-117.1825},{"name":"Crestline (CA-18)","lat":34.2420,"lng":-117.2860},{"name":"Lake Arrowhead","lat":34.2530,"lng":-117.1890},{"name":"Deep Creek Hot Springs","lat":34.3424,"lng":-117.1963},{"name":"Running Springs","lat":34.2080,"lng":-117.1090},{"name":"Big Bear Lake","lat":34.2439,"lng":-116.9114},{"name":"Lucerne Valley (CA-18)","lat":34.4440,"lng":-116.9670},{"name":"Landers — Giant Rock","lat":34.3328,"lng":-116.3887},{"name":"Integratron","lat":34.2944,"lng":-116.4036},{"name":"Pioneertown","lat":34.1720,"lng":-116.5470},{"name":"Yucca Valley","lat":34.1142,"lng":-116.4322},{"name":"Joshua Tree","lat":34.1347,"lng":-116.3131}],
-    "stops": ["Deep Creek Hot Springs","Big Bear Lake","Giant Rock","Integratron","Pioneertown (filmové městečko)","Pappy & Harriet's Pioneertown Palace"],
-    "story": "Rim of the World Highway vyleze z LA do 2 000 m — Deep Creek Hot Springs jsou divoké tůně 40 °C vedle studeného potoka, nahé, 4 km sestup z Bowen Ranch (a 4 km nahoru); Big Bear na koupání v jezeře. Pak dolů severní stranou do pouště: Giant Rock (UFO konvence 50. let), Integratron (zvuková koupel v kupoli od Venušanů), Pioneertown — western z roku 1946 a Pappy & Harriet's, kde hrál McCartney na baru. Spát v Pioneertown Motel, ráno Joshua Tree.",
-    "why_bob": "Horké prameny nahý u studeného potoka, pak UFO Americana a honky-tonk v kulisách westernu — den, který by si Lynch vymyslel.",
-    "overnight": "Pioneertown Motel / Rimrock Ranch (rezervace!), nebo Big Bear", "season_note_2026": "Deep Creek z Bowen Ranch: 6 km štěrku, sedan ok, parkovné 10 $ hotově, náročný výstup zpět v horku — ráno; Pappy's zavřeno út–st; Integratron sound bath rezervace", "rank": 38
-  },
-  {
-    "id": "loop-39", "name": "Route 66 — Elmer's, Bagdad Café, Ludlow, Amboy, Kelso", "from_spine": "Victorville (I-15) / Joshua Tree (přes Amboy Rd)", "rejoin_spine": "Joshua Tree / Twentynine Palms",
-    "total_km": 420, "driving_hours": 6, "days": 1, "road_quality": "paved",
-    "waypoints": [{"name":"Victorville","lat":34.5362,"lng":-117.2928},{"name":"Elmer's Bottle Tree Ranch","lat":34.6904,"lng":-117.3396},{"name":"Barstow","lat":34.8958,"lng":-117.0173},{"name":"Bagdad Cafe — Newberry Springs","lat":34.8197,"lng":-116.6434},{"name":"Ludlow","lat":34.7211,"lng":-116.1600},{"name":"Amboy — Roy's","lat":34.6307,"lng":-115.7432},{"name":"Amboy Crater","lat":34.6067,"lng":-115.7314},{"name":"Kelso Dunes","lat":34.8960,"lng":-115.7090},{"name":"Kelso Depot","lat":35.0122,"lng":-115.6525},{"name":"Amboy","lat":34.5580,"lng":-115.7440},{"name":"Twentynine Palms","lat":34.1356,"lng":-116.0542}],
-    "stops": ["Elmer's Bottle Tree Ranch","Bagdad Cafe (Newberry Springs)","Ludlow (Ghost Town)","Roy's Motel & Café","Amboy Crater (Mojave)","Kelso Dunes (Mojave NP)","Kelso Depot"],
-    "story": "Kus Route 66, který dálnice I-40 nechala umřít: les z lahví u Elmera, Bagdad Café z filmu (dnes poloprázdná), Ludlow s mrtvou kavárnou, a Amboy — čtyři obyvatelé, neon ROY'S z roku 1959 a černý kráter s lávovým polem. Odbočka na sever ke Kelso Dunes (zpívající písek) a nádraží Kelso uprostřed ničeho. Zpátky přes Amboy Road do Twentynine Palms — v Joshua Tree jsi večer.",
-    "why_bob": "Hopper by tu namaloval každé druhé místo — neon nad prázdnou pumpou, kavárna z filmu, duny, které hučí, a silnice, po které nikdo nejede.",
-    "overnight": "Twentynine Palms (29 Palms Inn / Harmony Motel)", "season_note_2026": "Amboy Road asfalt; benzín Barstow/Ludlow/Amboy (drahý)/29 Palms — nic mezi; Kelso Dunes 5 km štěrku, sedan ok; v říjnu ve dne 30+ °C", "rank": 39
-  },
-  {
-    "id": "loop-40", "name": "VELKÝ OKRUH: Mojave → Death Valley → Trona → Red Rock Canyon", "from_spine": "Joshua Tree / Twentynine Palms (nebo Barstow)", "rejoin_spine": "LA (CA-14 přes Mojave a Vasquez Rocks)",
-    "total_km": 1050, "driving_hours": 16, "days": 3, "road_quality": "paved_gravel_ok",
-    "waypoints": [{"name":"Twentynine Palms","lat":34.1356,"lng":-116.0542},{"name":"Amboy","lat":34.5580,"lng":-115.7440},{"name":"Kelso Depot","lat":35.0122,"lng":-115.6525},{"name":"Hole-in-the-Wall","lat":35.0440,"lng":-115.3980},{"name":"Mitchell Caverns","lat":34.9434,"lng":-115.5117},{"name":"Goffs","lat":34.9192,"lng":-115.0628},{"name":"Kelso Depot","lat":35.0122,"lng":-115.6525},{"name":"Cima Dome — Teutonia Peak","lat":35.2891,"lng":-115.5486},{"name":"Lava Tube","lat":35.2155,"lng":-115.7515},{"name":"Baker","lat":35.2650,"lng":-116.0740},{"name":"Zzyzx","lat":35.1432,"lng":-116.1040},{"name":"Baker","lat":35.2650,"lng":-116.0740},{"name":"Death Valley Junction","lat":36.3020,"lng":-116.4180},{"name":"Dante's View","lat":36.2205,"lng":-116.7264},{"name":"Twenty Mule Team Canyon","lat":36.4095,"lng":-116.7947},{"name":"Zabriskie Point","lat":36.4207,"lng":-116.8116},{"name":"Furnace Creek","lat":36.4600,"lng":-116.8700},{"name":"Harmony Borax Works","lat":36.4800,"lng":-116.8734},{"name":"Artist's Drive","lat":36.3492,"lng":-116.8128},{"name":"Natural Bridge","lat":36.2813,"lng":-116.7696},{"name":"Badwater","lat":36.2297,"lng":-116.7674},{"name":"Furnace Creek","lat":36.4600,"lng":-116.8700},{"name":"Beatty NV / Rhyolite","lat":36.9033,"lng":-116.8281},{"name":"Stovepipe Wells — Mesquite Dunes","lat":36.6136,"lng":-117.1160},{"name":"Mosaic Canyon","lat":36.5719,"lng":-117.1443},{"name":"Ubehebe Crater","lat":37.0108,"lng":-117.4549},{"name":"Stovepipe Wells","lat":36.6070,"lng":-117.1450},{"name":"Wildrose Charcoal Kilns","lat":36.2467,"lng":-117.0755},{"name":"Trona","lat":35.7620,"lng":-117.3730},{"name":"Trona Pinnacles","lat":35.7665,"lng":-117.4070},{"name":"Ridgecrest","lat":35.6225,"lng":-117.6709},{"name":"Randsburg","lat":35.3697,"lng":-117.6553},{"name":"Red Rock Canyon SP","lat":35.3733,"lng":-117.9917},{"name":"Mojave","lat":35.0525,"lng":-118.1739},{"name":"Vasquez Rocks","lat":34.4785,"lng":-118.4843},{"name":"Santa Clarita (I-5)","lat":34.3917,"lng":-118.5426}],
-    "stops": ["Kelso Depot","Hole-in-the-Wall — Rings Trail (Mojave)","Mitchell Caverns & Providence Mountains","Goffs (Schoolhouse Museum)","Cima Dome — Teutonia Peak Trail (les joshua stromů)","Mojave Lava Tube (Aiken Mine Road)","Zzyzx & Lake Tuendae","Dante's View (Death Valley)","Zabriskie Point (Death Valley NP)","Harmony Borax Works","Artist's Drive & Artist's Palette (Death Valley)","Badwater Basin (Death Valley)","Rhyolite Ghost Town & Goldwell Open Air Museum (NV)","Mesquite Flat Sand Dunes (Death Valley)","Mosaic Canyon","Ubehebe Crater","Wildrose Charcoal Kilns","Trona Pinnacles","Randsburg — živé ghost town","Red Rock Canyon State Park (CA-14)","Vasquez Rocks Natural Area Park"],
-    "story": "Tři dny pouště od východu na západ. Den 1: Mojave National Preserve — Hole-in-the-Wall po kruzích, Cima Dome (spálený les joshua stromů), lávová trubka se sloupem světla v poledne, Zzyzx, a večer Death Valley Junction (Amargosa Opera House!) nebo Beatty. Den 2: Death Valley — svítání na Dante's View nebo Zabriskie, Badwater 86 m pod mořem, Artist's Drive, odpoledne Rhyolite, večer duny u Stovepipe, noc pod hvězdami. Den 3: Ubehebe ráno (spur), Mosaic Canyon, přes Wildrose (milíře) a Panamint dolů do Trony — Pinnacles jako mimozemské město — Randsburg se sodovkou, Red Rock Canyon a domů kolem Vasquez Rocks. Říjen je první snesitelný měsíc: 30–35 °C ve dne, nádherně v noci.",
-    "why_bob": "Nejnižší bod Ameriky, nejtemnější nebe, ghost towny, lávová trubka a tufové věže — Bobova poušť v plné dávce, McCarthy a Kubrick zároveň; tři dny, na které bude myslet rok.",
-    "overnight": "1: Beatty NV (levné motely, Rhyolite za rohem) nebo Amargosa Hotel; 2: Stovepipe Wells / Panamint Springs (nebo kemp); 3: LA", "season_note_2026": "Death Valley NP 30 $/7 dní; Mojave Preserve zdarma; tankuj: 29 Palms, Baker, Furnace Creek (drahé), Beatty, Stovepipe, Trona, Ridgecrest — vždy plná; 4 l vody na den; Aiken Mine Rd + Wildrose posledních km štěrk, sedan pomalu ok; Titus Canyon a Racetrack NE (4x4)", "rank": 40
-  },
-  {
-    "id": "loop-41", "name": "Salton Sea → Anza-Borrego jih → Sunrise Highway → Campo", "from_spine": "Palm Springs / Indio (I-10)", "rejoin_spine": "San Diego (I-8)",
-    "total_km": 520, "driving_hours": 9, "days": 2, "road_quality": "paved_gravel_ok",
-    "waypoints": [{"name":"Palm Springs — Indian Canyons","lat":33.7440,"lng":-116.5380},{"name":"Thousand Palms Oasis","lat":33.8312,"lng":-116.3095},{"name":"Indio","lat":33.7206,"lng":-116.2156},{"name":"Cottonwood Spring (JT jih)","lat":33.7453,"lng":-115.8116},{"name":"Indio","lat":33.7206,"lng":-116.2156},{"name":"North Shore Yacht Club","lat":33.5194,"lng":-115.9372},{"name":"Bombay Beach","lat":33.3498,"lng":-115.7265},{"name":"Niland — Salvation Mountain","lat":33.2542,"lng":-115.4725},{"name":"Slab City / East Jesus","lat":33.2681,"lng":-115.4551},{"name":"Davis-Schrimpf mud pots","lat":33.2003,"lng":-115.5787},{"name":"Westmorland","lat":33.0370,"lng":-115.6210},{"name":"Ocotillo Wells","lat":33.1420,"lng":-116.1350},{"name":"Arroyo Tapiado","lat":32.9248,"lng":-116.1887},{"name":"Carrizo Badlands Overlook","lat":32.8270,"lng":-116.1643},{"name":"Agua Caliente","lat":32.9517,"lng":-116.3058},{"name":"Vallecito Stage Station","lat":32.9762,"lng":-116.3545},{"name":"Scissors Crossing","lat":33.0966,"lng":-116.4749},{"name":"Julian","lat":33.0787,"lng":-116.6020},{"name":"Cuyamaca — Green Valley Falls","lat":32.9000,"lng":-116.5834},{"name":"Kwaaymii Point","lat":32.9347,"lng":-116.4827},{"name":"Mount Laguna","lat":32.8670,"lng":-116.4630},{"name":"Pine Valley (I-8)","lat":32.8220,"lng":-116.5290},{"name":"Jacumba — Old Hwy 80","lat":32.7042,"lng":-116.3601},{"name":"Campo","lat":32.6091,"lng":-116.4745},{"name":"San Diego","lat":32.7157,"lng":-117.1611}],
-    "stops": ["Indian Canyons — Palm Canyon (Palm Springs)","Thousand Palms Oasis Preserve","Cottonwood Spring Oasis","Lost Palms Oasis Trail","North Shore Beach & Yacht Club","Bombay Beach","Salvation Mountain","Slab City","East Jesus (Slab City)","Davis-Schrimpf Mud Pots (Salton Sea)","Arroyo Tapiado (Mud Caves)","Carrizo Badlands Overlook","Agua Caliente County Park","Vallecito Stage Station","Julian","Green Valley Falls","Kwaaymii Point","Mount Laguna (Sunrise Highway Viewpoint)","Old Highway 80 – Jacumba Segment","Campo Stone Store"],
-    "story": "Den 1: palmové oázy na zlomu San Andreas, pak dolů k Salton Sea — mrtvé moře s yacht clubem od Alberta Freye, Bombay Beach jako umělecká kolonie konce světa, Salvation Mountain, Slab City a East Jesus, bublající bahno u Nilandu. Spát Borrego Springs (tma!) nebo Agua Caliente. Den 2: jižní Anza-Borrego po S2 — bahenní jeskyně (jen pokud si troufne na wash), Carrizo Badlands z asfaltu, horké prameny Agua Caliente, dostavníková stanice, nahoru k Julianu a po Sunrise Highway hřebenem Laguna Mountains s výhledem tisíc metrů dolů do pouště, kterou jsi ráno projel. Dolů přes starou US-80 a Campo do San Diega.",
-    "why_bob": "Post-apo Americana u mrtvého moře, badlands, horká voda, a pak z hřebene v borovicích vidět celou poušť pod sebou — nejlepší způsob, jak přijet do San Diega.",
-    "overnight": "Borrego Springs (Dark Sky, motely) nebo Agua Caliente (kemp/kabiny)", "season_note_2026": "Salton Sea — zápach podle větru, Bombay Beach bezpečné; S2 asfalt; Arroyo Tapiado 8 km písek — rough_caution; Agua Caliente County Park bazény otevřené od září; Sunrise Hwy asfalt", "rank": 41
-  }
+ {
+  "id": "loop-21",
+  "name": "Whidbey Island — Deception Pass → trajekt do Port Townsend",
+  "from_spine": "Seattle (I-5 / trajekt Mukilteo)",
+  "rejoin_spine": "Port Townsend (trajekt Coupeville–Port Townsend, US-101)",
+  "total_km": 140,
+  "driving_hours": 3,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Seattle",
+    "lat": 47.6062,
+    "lng": -122.3321
+   },
+   {
+    "name": "Everett — Laura Palmer's House",
+    "lat": 47.9738,
+    "lng": -122.2207
+   },
+   {
+    "name": "Mukilteo (trajekt)",
+    "lat": 47.949,
+    "lng": -122.304
+   },
+   {
+    "name": "Clinton",
+    "lat": 47.975,
+    "lng": -122.352
+   },
+   {
+    "name": "Coupeville",
+    "lat": 48.22,
+    "lng": -122.69
+   },
+   {
+    "name": "Ebey's Landing",
+    "lat": 48.1918,
+    "lng": -122.708
+   },
+   {
+    "name": "Fort Ebey",
+    "lat": 48.2228,
+    "lng": -122.7615
+   },
+   {
+    "name": "Joseph Whidbey SP",
+    "lat": 48.3085,
+    "lng": -122.7131
+   },
+   {
+    "name": "Deception Pass — Bowman Bay",
+    "lat": 48.4166,
+    "lng": -122.6514
+   },
+   {
+    "name": "Coupeville (trajekt Keystone)",
+    "lat": 48.159,
+    "lng": -122.674
+   },
+   {
+    "name": "Port Townsend",
+    "lat": 48.117,
+    "lng": -122.76
+   }
+  ],
+  "stops": [
+   "Laura Palmer's House",
+   "Ebey's Landing",
+   "Fort Ebey State Park",
+   "Joseph Whidbey State Park",
+   "Bowman Bay",
+   "Point Wilson Lighthouse"
+  ],
+  "story": "Místo dálnice na Olympic vezmi ostrov: dva trajekty, mezi nimi Whidbey — holé bluffy nad průlivem, pobřežní baterie z betonu, driftwood a na severu Deception Pass, kde se moře cpe úžinou pod mostem. Trajekt z Coupeville tě vysadí rovnou v Port Townsend na US-101. Cestou z Everettu je dům Laury Palmerové — jen z ulice.",
+  "why_bob": "Prázdné větrné bluffy, staré pevnosti, dva trajekty a Twin Peaks na začátek — Olympic zezadu, bez I-5.",
+  "overnight": "Port Townsend (viktoriánské město, Fort Worden)",
+  "season_note_2026": "trajekt Coupeville–Port Townsend rezervuj online (wsdot.com/ferries), jinak fronta; Mukilteo bez rezervace",
+  "rank": 21
+ },
+ {
+  "id": "loop-22",
+  "name": "North Cascades Highway — Diablo Lake, Washington Pass",
+  "from_spine": "Seattle / Mount Vernon (I-5)",
+  "rejoin_spine": "Seattle nebo Whidbey (zpět stejnou cestou)",
+  "total_km": 420,
+  "driving_hours": 6.5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Seattle",
+    "lat": 47.6062,
+    "lng": -122.3321
+   },
+   {
+    "name": "Mount Vernon",
+    "lat": 48.42,
+    "lng": -122.33
+   },
+   {
+    "name": "Sedro-Woolley",
+    "lat": 48.504,
+    "lng": -122.236
+   },
+   {
+    "name": "Concrete",
+    "lat": 48.538,
+    "lng": -121.749
+   },
+   {
+    "name": "Newhalem",
+    "lat": 48.671,
+    "lng": -121.244
+   },
+   {
+    "name": "Gorge Creek Falls",
+    "lat": 48.7031,
+    "lng": -121.2107
+   },
+   {
+    "name": "Diablo Lake Overlook",
+    "lat": 48.7131,
+    "lng": -121.1289
+   },
+   {
+    "name": "Colonial Creek",
+    "lat": 48.6985,
+    "lng": -121.0943
+   },
+   {
+    "name": "Rainy Pass",
+    "lat": 48.5196,
+    "lng": -120.734
+   },
+   {
+    "name": "Washington Pass / Blue Lake",
+    "lat": 48.5191,
+    "lng": -120.6742
+   }
+  ],
+  "stops": [
+   "Diablo Lake Overlook",
+   "Colonial Creek — Diablo Lake shore",
+   "Gorge Creek Falls",
+   "Rainy Lake",
+   "Blue Lake Trail"
+  ],
+  "story": "Nejdramatičtější silnice ve Washingtonu: z deštného lesa u Newhalemu vystoupáš k tyrkysovému Diablo Lake (ledovcová mouka), pak dál na Rainy Pass a Washington Pass mezi žulovými věžemi. Zpátky stejnou cestou — jinak to nejde, na východ by ses nevrátil. Koupání v Diablo Lake z Colonial Creek je ledové a stojí za to.",
+  "why_bob": "Tyrkysová voda, žula, prázdná silnice a Blue Lake pod Liberty Bell — nejalpštější den celé cesty, jen 3 h od Seattlu.",
+  "overnight": "Marblemount / Concrete (motely), nebo zpět",
+  "season_note_2026": "Highway 20 přes Washington Pass otevřená do prvního velkého sněhu (obvykle listopad); v září ok; ověř wsdot.com · SR-20 otevřená, požáry jen Hozomeen/Stehekin [ověřeno 12. 9. 2026]",
+  "rank": 22
+ },
+ {
+  "id": "loop-23",
+  "name": "Mount Baker Highway — Artist Point",
+  "from_spine": "Bellingham (I-5)",
+  "rejoin_spine": "Bellingham",
+  "total_km": 190,
+  "driving_hours": 3.5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Bellingham",
+    "lat": 48.7519,
+    "lng": -122.4787
+   },
+   {
+    "name": "Glacier",
+    "lat": 48.888,
+    "lng": -121.943
+   },
+   {
+    "name": "Nooksack Falls",
+    "lat": 48.9053,
+    "lng": -121.8089
+   },
+   {
+    "name": "Heather Meadows",
+    "lat": 48.857,
+    "lng": -121.68
+   },
+   {
+    "name": "Artist Point",
+    "lat": 48.8455,
+    "lng": -121.6905
+   }
+  ],
+  "stops": [
+   "Nooksack Falls",
+   "Artist Point — Mount Baker"
+  ],
+  "story": "Slepá silnice, která končí ve 1 550 m mezi Mount Bakerem a Shuksanem — od parkoviště na Artist Point jsi během deseti minut chůze v krajině, kterou jinde musíš vyšlapat. Cestou Nooksack Falls v lávové soutěsce. Dá se spojit s North Cascades v jednom dlouhém dni, ale je to škoda.",
+  "why_bob": "Nejjednodušší velehory celé cesty: zaparkovat, ujít půl kilometru a sedět pod ledovcem.",
+  "overnight": "Glacier (chaty) nebo Bellingham",
+  "season_note_2026": "posledních 4 km na Artist Point otevřené jen cca červenec–říjen; v září většinou ano — ověř Mt. Baker Ranger District",
+  "rank": 23
+ },
+ {
+  "id": "loop-24",
+  "name": "Mount Rainier — Paradise",
+  "from_spine": "Olympia (I-5)",
+  "rejoin_spine": "Aberdeen / Olympia (US-12, US-101)",
+  "total_km": 330,
+  "driving_hours": 5.5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Olympia",
+    "lat": 47.0379,
+    "lng": -122.9007
+   },
+   {
+    "name": "Eatonville",
+    "lat": 46.867,
+    "lng": -122.268
+   },
+   {
+    "name": "Elbe",
+    "lat": 46.762,
+    "lng": -122.193
+   },
+   {
+    "name": "Ashford",
+    "lat": 46.757,
+    "lng": -122.03
+   },
+   {
+    "name": "Longmire",
+    "lat": 46.75,
+    "lng": -121.812
+   },
+   {
+    "name": "Narada Falls",
+    "lat": 46.779,
+    "lng": -121.746
+   },
+   {
+    "name": "Paradise",
+    "lat": 46.786,
+    "lng": -121.735
+   },
+   {
+    "name": "Reflection Lakes",
+    "lat": 46.77,
+    "lng": -121.73
+   },
+   {
+    "name": "Packwood (US-12)",
+    "lat": 46.613,
+    "lng": -121.672
+   },
+   {
+    "name": "Chehalis (I-5)",
+    "lat": 46.662,
+    "lng": -122.964
+   },
+   {
+    "name": "Aberdeen",
+    "lat": 46.9754,
+    "lng": -123.8157
+   }
+  ],
+  "stops": [
+   "Paradise — Nisqually Vista",
+   "Skyline Trail — Panorama Point",
+   "Narada Falls",
+   "Reflection Lakes"
+  ],
+  "story": "Rainier je sopka, která stojí sama nad celým Washingtonem, a Paradise je místo, odkud se na ni koukáš z louky ve 1 650 m. Skyline Trail k Panorama Point (8 km, 500 m převýšení) je nejlepší túra celého severu; kdo nechce, sedne na Nisqually Vista. Zpátky přes Stevens Canyon a Packwood na US-12 a k moři — okruh, ne návrat.",
+  "why_bob": "Sopka v měřítku, které nezvládne fotka — a v září louky bez davů léta, jen mlha a svišti.",
+  "overnight": "Ashford / Packwood (motely)",
+  "season_note_2026": "NP 30 $ (America the Beautiful pass platí); od 2024 v létě rezervace vjezdu — v září po Labor Day většinou ne, ověř nps.gov/mora · Sunrise Road zavřená (požáry) — Paradise strana v pohodě [ověřeno 12. 9. 2026]",
+  "rank": 24
+ },
+ {
+  "id": "loop-25",
+  "name": "Mount St. Helens jih — Ape Cave & Lava Canyon",
+  "from_spine": "Woodland (I-5)",
+  "rejoin_spine": "Woodland / Longview",
+  "total_km": 140,
+  "driving_hours": 3,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Woodland",
+    "lat": 45.904,
+    "lng": -122.744
+   },
+   {
+    "name": "Cougar",
+    "lat": 46.051,
+    "lng": -122.296
+   },
+   {
+    "name": "Ape Cave",
+    "lat": 46.108,
+    "lng": -122.212
+   },
+   {
+    "name": "Lava Canyon",
+    "lat": 46.165,
+    "lng": -122.09
+   }
+  ],
+  "stops": [
+   "Ape Cave"
+  ],
+  "story": "Jižní strana St. Helens je ta tišší: Ape Cave je 4 km lávový tunel, kterým se jde s čelovkou v naprosté tmě (dolní část 1,2 km je snadná, horní je lezení), Lava Canyon je soutěska vymletá po erupci 1980. Severní strana (Johnston Ridge) je v jiné odbočce.",
+  "why_bob": "Tma, chlad a ticho lávové trubky, kterou tekla sopka — deep time na vlastní kůži.",
+  "overnight": null,
+  "season_note_2026": "Ape Cave: rezervace vstupu (recreation.gov, 2 $) + Northwest Forest Pass 5 $; čelovka nutná, půjčují jen v sezóně",
+  "rank": 25
+ },
+ {
+  "id": "loop-26",
+  "name": "Hood Canal — Point No Point, Mount Walker, Staircase, Lake Cushman",
+  "from_spine": "Port Townsend (US-101 sever)",
+  "rejoin_spine": "Olympia / Shelton (US-101)",
+  "total_km": 210,
+  "driving_hours": 4.5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Kingston (trajekt z Edmonds)",
+    "lat": 47.798,
+    "lng": -122.497
+   },
+   {
+    "name": "Point No Point",
+    "lat": 47.9122,
+    "lng": -122.5268
+   },
+   {
+    "name": "Port Gamble",
+    "lat": 47.853,
+    "lng": -122.584
+   },
+   {
+    "name": "Port Townsend",
+    "lat": 48.117,
+    "lng": -122.76
+   },
+   {
+    "name": "Quilcene",
+    "lat": 47.825,
+    "lng": -122.877
+   },
+   {
+    "name": "Mount Walker",
+    "lat": 47.775,
+    "lng": -122.93
+   },
+   {
+    "name": "Brinnon / Dosewallips",
+    "lat": 47.6964,
+    "lng": -122.9195
+   },
+   {
+    "name": "Rocky Brook Falls",
+    "lat": 47.7189,
+    "lng": -122.9435
+   },
+   {
+    "name": "Hamma Hamma (Lena Lake)",
+    "lat": 47.596,
+    "lng": -123.151
+   },
+   {
+    "name": "Hoodsport",
+    "lat": 47.406,
+    "lng": -123.142
+   },
+   {
+    "name": "Lake Cushman",
+    "lat": 47.43,
+    "lng": -123.217
+   },
+   {
+    "name": "Staircase",
+    "lat": 47.516,
+    "lng": -123.33
+   },
+   {
+    "name": "Shelton",
+    "lat": 47.215,
+    "lng": -123.101
+   },
+   {
+    "name": "Olympia",
+    "lat": 47.0379,
+    "lng": -122.9007
+   }
+  ],
+  "stops": [
+   "Point No Point Lighthouse",
+   "Mount Walker — north & south viewpoints",
+   "Rocky Brook Falls",
+   "Dosewallips State Park — river access",
+   "Lena Lake",
+   "Staircase Rapids Loop",
+   "Lake Cushman — Skokomish Park swim"
+  ],
+  "story": "Východní strana Olympicu podél fjordu Hood Canal — alternativa k tomu, jet na pobřeží rovnou. Mount Walker je jediný vrchol, na který vyjedeš autem (výhled na Rainier i Seattle), Rocky Brook Falls jsou pět minut od auta, Dosewallips ledová řeka na koupání, Staircase divoká soutěska Skokomish a Lake Cushman nejlepší jezerní koupání v okolí. Pomalá cesta, spousta zastávek.",
+  "why_bob": "Studené řeky a jezero pod horami, vyhlídka z auta a prázdná silnice podél fjordu — Olympic z té strany, kterou turisti přeskakují.",
+  "overnight": "Hoodsport / Union (motely u kanálu)",
+  "season_note_2026": "Staircase: NP 30 $; Mount Walker Road štěrk, sedan ok, zavřená v zimě · Staircase: jen Rapids Loop; Quinault South Shore Rd zavřená u míle 8 [ověřeno 12. 9. 2026]",
+  "rank": 26
+ },
+ {
+  "id": "loop-27",
+  "name": "Neah Bay — Cape Flattery, Hobuck, Ozette",
+  "from_spine": "Port Angeles (US-101)",
+  "rejoin_spine": "Forks (US-101)",
+  "total_km": 220,
+  "driving_hours": 4.5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Port Angeles",
+    "lat": 48.1181,
+    "lng": -123.4307
+   },
+   {
+    "name": "Joyce / Salt Creek",
+    "lat": 48.163,
+    "lng": -123.7
+   },
+   {
+    "name": "Clallam Bay",
+    "lat": 48.254,
+    "lng": -124.262
+   },
+   {
+    "name": "Neah Bay",
+    "lat": 48.368,
+    "lng": -124.624
+   },
+   {
+    "name": "Cape Flattery",
+    "lat": 48.385,
+    "lng": -124.716
+   },
+   {
+    "name": "Hobuck Beach",
+    "lat": 48.3381,
+    "lng": -124.6647
+   },
+   {
+    "name": "Ozette",
+    "lat": 48.154,
+    "lng": -124.67
+   },
+   {
+    "name": "Forks",
+    "lat": 47.9503,
+    "lng": -124.3854
+   }
+  ],
+  "stops": [
+   "Strait of Juan de Fuca Highway — SR 112",
+   "Salt Creek Recreation Area — Tongue Point",
+   "Cape Flattery",
+   "Makah Cultural & Research Center",
+   "Hobuck Beach",
+   "Shi Shi Beach — Point of Arches day hike",
+   "Ozette Triangle — Cape Alava & Sand Point"
+  ],
+  "story": "Nejsevernější a nejzápadnější cíp kontinentálních USA. SR-112 se kroutí po útesech nad průlivem, v Neah Bay (rezervace Makah) koupíš permit a dojdeš na Cape Flattery — dřevěné plošiny nad mořskými jeskyněmi, maják na ostrově, puffini. Hobuck je prázdná pláž s vlnami, Ozette Triangle (15 km) tě po prkenných chodnících dovede na nejdivočejší pobřeží celého Olympicu.",
+  "why_bob": "Konec kontinentu ve větru a mlze, indiánské muzeum, prázdné pláže — a večer Forks, kde nic není, což je přesně ono.",
+  "overnight": "Neah Bay (Hobuck Beach Resort chaty) nebo Forks",
+  "season_note_2026": "Makah Recreation Pass 20 $ (Neah Bay, obchody) povinný pro Cape Flattery, Hobuck, Shi Shi; Ozette bez · US-101 most Hoh River jižně od Forks: úplné uzávěry 24.–29. 9., 1.–6. 10., 8.–13. 10. (noční 14.–22. 9.) — z Forks na jih přejeď do 23. 9. [ověřeno 12. 9. 2026]",
+  "rank": 27
+ },
+ {
+  "id": "loop-28",
+  "name": "Willamette back roads — Bald Peak, McMinnville → Lincoln City",
+  "from_spine": "Portland",
+  "rejoin_spine": "Lincoln City (US-101)",
+  "total_km": 150,
+  "driving_hours": 3,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Portland",
+    "lat": 45.5152,
+    "lng": -122.6784
+   },
+   {
+    "name": "Newberg",
+    "lat": 45.3,
+    "lng": -122.973
+   },
+   {
+    "name": "Bald Peak",
+    "lat": 45.367,
+    "lng": -123.057
+   },
+   {
+    "name": "McMinnville",
+    "lat": 45.21,
+    "lng": -123.197
+   },
+   {
+    "name": "Grand Ronde",
+    "lat": 45.06,
+    "lng": -123.61
+   },
+   {
+    "name": "Lincoln City",
+    "lat": 44.9958,
+    "lng": -124.0086
+   }
+  ],
+  "stops": [
+   "Bald Peak State Scenic Viewpoint"
+  ],
+  "story": "Z Portlandu k moři ne po US-26, ale zadem: kopce nad Willamette Valley, dubové sady, vyhlídka z Bald Peak na tři sopky najednou, McMinnville s letecko-kosmickým muzeem (Spruce Goose) a pak OR-18 přes Coast Range do Lincoln City.",
+  "why_bob": "Zlaté kopce a sopky na obzoru místo dálnice — hodina navíc, která stojí za to.",
+  "overnight": null,
+  "season_note_2026": "otevřeno",
+  "rank": 28
+ },
+ {
+  "id": "loop-29",
+  "name": "Columbia Gorge východ — Rowena Crest, The Dalles, washingtonský břeh",
+  "from_spine": "Portland (I-84)",
+  "rejoin_spine": "Portland / Vancouver WA",
+  "total_km": 300,
+  "driving_hours": 5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Portland",
+    "lat": 45.5152,
+    "lng": -122.6784
+   },
+   {
+    "name": "Sauvie Island — Collins Beach",
+    "lat": 45.801,
+    "lng": -122.782
+   },
+   {
+    "name": "Portland",
+    "lat": 45.53,
+    "lng": -122.66
+   },
+   {
+    "name": "Cascade Locks",
+    "lat": 45.67,
+    "lng": -121.89
+   },
+   {
+    "name": "Hood River",
+    "lat": 45.71,
+    "lng": -121.51
+   },
+   {
+    "name": "Mosier — Twin Tunnels",
+    "lat": 45.7034,
+    "lng": -121.4873
+   },
+   {
+    "name": "Rowena Crest",
+    "lat": 45.682,
+    "lng": -121.302
+   },
+   {
+    "name": "Mayer State Park",
+    "lat": 45.675,
+    "lng": -121.274
+   },
+   {
+    "name": "The Dalles",
+    "lat": 45.6,
+    "lng": -121.18
+   },
+   {
+    "name": "Lyle (WA-14)",
+    "lat": 45.69,
+    "lng": -121.29
+   },
+   {
+    "name": "Stevenson",
+    "lat": 45.695,
+    "lng": -121.88
+   },
+   {
+    "name": "Vancouver WA",
+    "lat": 45.63,
+    "lng": -122.67
+   }
+  ],
+  "stops": [
+   "Collins Beach — Sauvie Island",
+   "Mosier Twin Tunnels — Mark O. Hatfield West Trailhead",
+   "Rowena Crest — Tom McCall Preserve",
+   "Rowena Loops — Historic Columbia River Highway",
+   "Mayer State Park — West Mayer Cove"
+  ],
+  "story": "Západní Gorge (vodopády) je v jiné odbočce; tohle je suchý východ, kde se les během 40 km změní v step. Rowena Crest — serpentiny staré Columbia Highway pod vyhlídkou, klidná zátoka Columbie na koupání u Mayer SP, tunely v Mosieru. Zpátky po washingtonské WA-14, která je tišší a má výhled přes řeku na oregonské útesy. Na začátku (nebo konci) Collins Beach na Sauvie — oficiální nudistická pláž na Columbii.",
+  "why_bob": "Přechod z deštného lesa do stepi za jednu hodinu jízdy, koupání v Columbii nahý, staré serpentiny — Gorge bez davů u Multnomah.",
+  "overnight": "Hood River / The Dalles",
+  "season_note_2026": "Sauvie Island parking permit 10 $/den (obchod u mostu); Collins Beach clothing-optional od severního konce",
+  "rank": 29
+ },
+ {
+  "id": "loop-30",
+  "name": "VELKÝ OKRUH: Umpqua → Crater Lake → Rogue → Oregon Caves",
+  "from_spine": "Reedsport (US-101 / OR-38)",
+  "rejoin_spine": "Crescent City (US-199 → US-101)",
+  "total_km": 640,
+  "driving_hours": 12,
+  "days": 3,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Reedsport",
+    "lat": 43.702,
+    "lng": -124.097
+   },
+   {
+    "name": "Elkton (OR-38)",
+    "lat": 43.636,
+    "lng": -123.568
+   },
+   {
+    "name": "Roseburg",
+    "lat": 43.2165,
+    "lng": -123.3417
+   },
+   {
+    "name": "Glide",
+    "lat": 43.3,
+    "lng": -123.1
+   },
+   {
+    "name": "Cavitt Creek Falls",
+    "lat": 43.2,
+    "lng": -123.022
+   },
+   {
+    "name": "Glide",
+    "lat": 43.3,
+    "lng": -123.1
+   },
+   {
+    "name": "Susan Creek Falls",
+    "lat": 43.302,
+    "lng": -122.836
+   },
+   {
+    "name": "Steamboat",
+    "lat": 43.349,
+    "lng": -122.727
+   },
+   {
+    "name": "Steamboat Falls",
+    "lat": 43.3737,
+    "lng": -122.6407
+   },
+   {
+    "name": "Steamboat",
+    "lat": 43.349,
+    "lng": -122.727
+   },
+   {
+    "name": "Toketee Falls",
+    "lat": 43.263,
+    "lng": -122.427
+   },
+   {
+    "name": "Umpqua Hot Springs",
+    "lat": 43.295,
+    "lng": -122.362
+   },
+   {
+    "name": "Watson Falls",
+    "lat": 43.246,
+    "lng": -122.39
+   },
+   {
+    "name": "Clearwater Falls",
+    "lat": 43.256,
+    "lng": -122.378
+   },
+   {
+    "name": "Lemolo Lake",
+    "lat": 43.321,
+    "lng": -122.287
+   },
+   {
+    "name": "Diamond Lake",
+    "lat": 43.129,
+    "lng": -122.132
+   },
+   {
+    "name": "Pumice Desert",
+    "lat": 43.004,
+    "lng": -122.116
+   },
+   {
+    "name": "Crater Lake — North Junction",
+    "lat": 42.97,
+    "lng": -122.12
+   },
+   {
+    "name": "Watchman / West Rim",
+    "lat": 42.939,
+    "lng": -122.169
+   },
+   {
+    "name": "Rim Village",
+    "lat": 42.9114,
+    "lng": -122.1483
+   },
+   {
+    "name": "Cloudcap Overlook",
+    "lat": 42.926,
+    "lng": -122.03
+   },
+   {
+    "name": "Mount Scott",
+    "lat": 42.923,
+    "lng": -122.016
+   },
+   {
+    "name": "Phantom Ship Overlook",
+    "lat": 42.896,
+    "lng": -122.049
+   },
+   {
+    "name": "The Pinnacles",
+    "lat": 42.85,
+    "lng": -122.007
+   },
+   {
+    "name": "Phantom Ship Overlook",
+    "lat": 42.896,
+    "lng": -122.049
+   },
+   {
+    "name": "Rim Village",
+    "lat": 42.9114,
+    "lng": -122.1483
+   },
+   {
+    "name": "Annie Creek / Mazama",
+    "lat": 42.86,
+    "lng": -122.168
+   },
+   {
+    "name": "Union Creek",
+    "lat": 42.914,
+    "lng": -122.447
+   },
+   {
+    "name": "Natural Bridge",
+    "lat": 42.895,
+    "lng": -122.461
+   },
+   {
+    "name": "Prospect — Mill Creek Falls",
+    "lat": 42.747,
+    "lng": -122.495
+   },
+   {
+    "name": "Lost Creek Lake",
+    "lat": 42.685,
+    "lng": -122.624
+   },
+   {
+    "name": "Shady Cove",
+    "lat": 42.61,
+    "lng": -122.81
+   },
+   {
+    "name": "Upper Table Rock",
+    "lat": 42.468,
+    "lng": -122.907
+   },
+   {
+    "name": "Medford",
+    "lat": 42.3265,
+    "lng": -122.8756
+   },
+   {
+    "name": "Jacksonville",
+    "lat": 42.313,
+    "lng": -122.966
+   },
+   {
+    "name": "Grants Pass",
+    "lat": 42.439,
+    "lng": -123.328
+   },
+   {
+    "name": "Cave Junction",
+    "lat": 42.163,
+    "lng": -123.648
+   },
+   {
+    "name": "Oregon Caves",
+    "lat": 42.0987,
+    "lng": -123.4088
+   },
+   {
+    "name": "Cave Junction",
+    "lat": 42.163,
+    "lng": -123.648
+   },
+   {
+    "name": "Crescent City",
+    "lat": 41.7558,
+    "lng": -124.2026
+   }
+  ],
+  "stops": [
+   "North Umpqua Highway — OR-138",
+   "Toketee Falls",
+   "Umpqua Hot Springs",
+   "Watson Falls",
+   "Diamond Lake — South Shore",
+   "Crater Lake — Rim Village & Sinnott Memorial Overlook",
+   "Watchman Peak Trail",
+   "Cloudcap Overlook",
+   "Phantom Ship Overlook",
+   "Rogue Gorge",
+   "Natural Bridge — Rogue River",
+   "Upper Table Rock",
+   "Jacksonville Historic District",
+   "Oregon Caves — Discovery Cave Tour"
+  ],
+  "story": "Tohle je ta odbočka. Den 1: OR-138 po North Umpqua — divoká řeka, jeden vodopád za druhým (Susan, Steamboat, Toketee, Watson, Clearwater), horký pramen na skále nad řekou, koupání v tůních. Spát u Diamond Lake. Den 2: Crater Lake — celá Rim Drive (53 km), Watchman na západ slunce, Cloudcap, Phantom Ship, Pinnacles; pokud dovolí počasí, Cleetwood Cove a skok do nejčistší vody Ameriky. Spát Prospect/Union Creek. Den 3: Rogue — Natural Bridge a Gorge (dívat se, NIKDY nekoupat), Prospect vodopády, Table Rock nad údolím, Jacksonville ze zlaté horečky, Oregon Caves mramorová jeskyně — a US-199 podél Smith River zpátky k moři.",
+  "why_bob": "Dětský sen (Crater Lake) obalený třemi dny řek, vodopádů, horkých pramenů a sopek — jestli má cesta jednu velkou odbočku, je to tahle.",
+  "overnight": "1: Diamond Lake Resort / Lemolo; 2: Prospect Hotel / Union Creek Resort; 3: Crescent City",
+  "season_note_2026": "Crater Lake NP 30 $; Rim Drive celá otevřená do sněhu (obvykle konec října); Cleetwood Cove trail — 2026 REKONSTRUKCE, koupání v jezeře může být nepřístupné, ověř nps.gov/crla; Rogue Gorge / Natural Bridge = smrtelné, nekoupat · Crater Lake: East Rim Drive zavřená HQ↔Phantom Ship — smyčka Rim Drive není celá, Phantom Ship/Pinnacles od North Junction; Cleetwood zavřen; US-199 uzávěry út–čt 10–14 u Gasquet [ověřeno 12. 9. 2026]",
+  "rank": 30
+ },
+ {
+  "id": "loop-31",
+  "name": "Oregon Outback — Fort Rock, Crack-in-the-Ground, Summer Lake Hot Springs",
+  "from_spine": "Crater Lake / La Pine (US-97)",
+  "rejoin_spine": "Ashland → Medford → Crescent City (nebo zpět na Crater Lake)",
+  "total_km": 520,
+  "driving_hours": 8,
+  "days": 2,
+  "road_quality": "paved_gravel_ok",
+  "waypoints": [
+   {
+    "name": "Crater Lake — North Junction",
+    "lat": 42.97,
+    "lng": -122.12
+   },
+   {
+    "name": "Chemult",
+    "lat": 43.22,
+    "lng": -121.78
+   },
+   {
+    "name": "La Pine",
+    "lat": 43.67,
+    "lng": -121.5
+   },
+   {
+    "name": "Hole-in-the-Ground",
+    "lat": 43.4111,
+    "lng": -121.1976
+   },
+   {
+    "name": "Fort Rock",
+    "lat": 43.3744,
+    "lng": -121.07
+   },
+   {
+    "name": "Christmas Valley",
+    "lat": 43.24,
+    "lng": -120.66
+   },
+   {
+    "name": "Crack-in-the-Ground",
+    "lat": 43.3328,
+    "lng": -120.676
+   },
+   {
+    "name": "Christmas Valley",
+    "lat": 43.24,
+    "lng": -120.66
+   },
+   {
+    "name": "Summer Lake Hot Springs",
+    "lat": 42.7248,
+    "lng": -120.6476
+   },
+   {
+    "name": "Paisley",
+    "lat": 42.693,
+    "lng": -120.543
+   },
+   {
+    "name": "Lakeview",
+    "lat": 42.189,
+    "lng": -120.346
+   },
+   {
+    "name": "Klamath Falls",
+    "lat": 42.2249,
+    "lng": -121.7817
+   },
+   {
+    "name": "Hyatt Lake (OR-66)",
+    "lat": 42.1669,
+    "lng": -122.4641
+   },
+   {
+    "name": "Ashland",
+    "lat": 42.1946,
+    "lng": -122.7095
+   }
+  ],
+  "stops": [
+   "Hole-in-the-Ground",
+   "Fort Rock State Natural Area",
+   "Crack-in-the-Ground",
+   "Summer Lake Hot Springs",
+   "Hyatt Lake Recreation Area",
+   "Ashland — Railroad District & Lithia Park"
+  ],
+  "story": "Za Cascades začíná Great Basin: plochá pánev bývalého jezera, ze které trčí tufový prsten Fort Rock, kráter Hole-in-the-Ground od exploze magmatu s vodou, dvoukilometrová puklina Crack-in-the-Ground, ve které je o 10 °C chladněji. Večer Summer Lake Hot Springs — starý bathhouse a venkovní bazény uprostřed ničeho, spát tam. Zpátky přes Lakeview a Klamath Falls, Green Springs Highway (OR-66) kolem Hyatt Lake do Ashlandu.",
+  "why_bob": "Nevada v Oregonu — prázdno, sopečné jizvy, horká voda pod hvězdami a žádní lidé; jeho poušť ještě před Kalifornií.",
+  "overnight": "Summer Lake Hot Springs (kabiny/kemp, rezervace summerlakehotsprings.com)",
+  "season_note_2026": "Crack-in-the-Ground: 11 km štěrku, sedan ok; tankuj v La Pine/Christmas Valley/Lakeview — dál nic; Crystal Crane HS (Burns) je ještě 200 km východně — jen pokud fakt chce",
+  "rank": 31
+ },
+ {
+  "id": "loop-32",
+  "name": "Bend — Newberry Volcano, Lava River Cave, Smith Rock, Painted Hills",
+  "from_spine": "Crater Lake / Reedsport (přes La Pine)",
+  "rejoin_spine": "Newport (US-20 přes Corvallis, Marys Peak)",
+  "total_km": 650,
+  "driving_hours": 11,
+  "days": 3,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Crater Lake — North Junction",
+    "lat": 42.97,
+    "lng": -122.12
+   },
+   {
+    "name": "Chemult",
+    "lat": 43.22,
+    "lng": -121.78
+   },
+   {
+    "name": "La Pine",
+    "lat": 43.67,
+    "lng": -121.5
+   },
+   {
+    "name": "Paulina Peak",
+    "lat": 43.689,
+    "lng": -121.255
+   },
+   {
+    "name": "Big Obsidian Flow",
+    "lat": 43.698,
+    "lng": -121.252
+   },
+   {
+    "name": "Paulina Lake — Little Crater",
+    "lat": 43.7123,
+    "lng": -121.2434
+   },
+   {
+    "name": "East Lake",
+    "lat": 43.718,
+    "lng": -121.211
+   },
+   {
+    "name": "Paulina Lake Hot Springs",
+    "lat": 43.7321,
+    "lng": -121.2523
+   },
+   {
+    "name": "Lava Cast Forest",
+    "lat": 43.8168,
+    "lng": -121.2889
+   },
+   {
+    "name": "Lava River Cave",
+    "lat": 43.8954,
+    "lng": -121.3689
+   },
+   {
+    "name": "Benham Falls",
+    "lat": 43.9382,
+    "lng": -121.412
+   },
+   {
+    "name": "Dillon Falls",
+    "lat": 43.9582,
+    "lng": -121.4161
+   },
+   {
+    "name": "Bend",
+    "lat": 44.0582,
+    "lng": -121.3153
+   },
+   {
+    "name": "Flatiron Rock — Badlands",
+    "lat": 43.9577,
+    "lng": -121.0519
+   },
+   {
+    "name": "Prineville",
+    "lat": 44.3,
+    "lng": -120.834
+   },
+   {
+    "name": "Mitchell",
+    "lat": 44.568,
+    "lng": -120.152
+   },
+   {
+    "name": "Painted Hills",
+    "lat": 44.653,
+    "lng": -120.265
+   },
+   {
+    "name": "Mitchell",
+    "lat": 44.568,
+    "lng": -120.152
+   },
+   {
+    "name": "Prineville",
+    "lat": 44.3,
+    "lng": -120.834
+   },
+   {
+    "name": "Smith Rock",
+    "lat": 44.367,
+    "lng": -121.141
+   },
+   {
+    "name": "Sisters",
+    "lat": 44.291,
+    "lng": -121.549
+   },
+   {
+    "name": "Santiam Pass",
+    "lat": 44.42,
+    "lng": -121.85
+   },
+   {
+    "name": "Sweet Home",
+    "lat": 44.398,
+    "lng": -122.736
+   },
+   {
+    "name": "Corvallis",
+    "lat": 44.5646,
+    "lng": -123.262
+   },
+   {
+    "name": "Marys Peak",
+    "lat": 44.504,
+    "lng": -123.551
+   },
+   {
+    "name": "Newport",
+    "lat": 44.6368,
+    "lng": -124.0535
+   }
+  ],
+  "stops": [
+   "Paulina Peak",
+   "Big Obsidian Flow",
+   "Paulina Lake — Little Crater Day Use Site",
+   "Paulina Lake Hot Springs",
+   "Lava River Cave",
+   "Benham Falls",
+   "Smith Rock — Misery Ridge Loop",
+   "Painted Hills — Overlook & Painted Cove",
+   "Marys Peak"
+  ],
+  "story": "Suchá strana Oregonu za Cascades. Den 1: Newberry — kaldera se dvěma jezery, obsidiánový proud jako rozbité sklo, koupání v Paulina Lake a horké prameny vyhrabané na břehu (ledová voda + 40 °C bazének), pak lávová trubka Lava River Cave (1,5 km tmy) a Deschutes v lávové soutěsce. Spát Bend (pivo, knihkupectví). Den 2: Badlands s jalovci, Painted Hills — pruhované kopce z popela (žlutá, červená, černá), ráno nebo podvečer. Spát Prineville/Mitchell. Den 3: Smith Rock — Misery Ridge nad řekou Crooked, pak přes Santiam Pass a Marys Peak (nejvyšší v Coast Range, 360°) do Newportu.",
+  "why_bob": "Sopečná kaldera na koupání, poušť s pruhovanými kopci a žulové věže — tři dny Oregonu, který vypadá jako Southwest, a návrat na moře přes hory.",
+  "overnight": "1: Bend; 2: Prineville / Mitchell (Painted Hills Vacation cottages)",
+  "season_note_2026": "Newberry NVM: NW Forest Pass 5 $; Paulina Peak Road štěrk, sedan ok; Lava River Cave rezervace (recreation.gov), čelovka; Painted Hills zdarma; Santiam Pass ok v září; Marys Peak Road posledních 15 km úzké, asfalt",
+  "rank": 32
+ },
+ {
+  "id": "loop-33",
+  "name": "Applegate — Illinois River — Oregon Caves",
+  "from_spine": "Medford / Grants Pass (I-5)",
+  "rejoin_spine": "Crescent City (US-199)",
+  "total_km": 260,
+  "driving_hours": 5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Medford",
+    "lat": 42.3265,
+    "lng": -122.8756
+   },
+   {
+    "name": "TouVelle / Table Rock",
+    "lat": 42.4433,
+    "lng": -122.8861
+   },
+   {
+    "name": "Jacksonville",
+    "lat": 42.313,
+    "lng": -122.966
+   },
+   {
+    "name": "Ruch",
+    "lat": 42.238,
+    "lng": -123.04
+   },
+   {
+    "name": "McKee Bridge",
+    "lat": 42.1258,
+    "lng": -123.0727
+   },
+   {
+    "name": "Applegate Lake",
+    "lat": 42.052,
+    "lng": -123.119
+   },
+   {
+    "name": "Ruch",
+    "lat": 42.238,
+    "lng": -123.04
+   },
+   {
+    "name": "Grants Pass",
+    "lat": 42.439,
+    "lng": -123.328
+   },
+   {
+    "name": "Selma",
+    "lat": 42.279,
+    "lng": -123.613
+   },
+   {
+    "name": "Six Mile — Illinois River",
+    "lat": 42.297,
+    "lng": -123.732
+   },
+   {
+    "name": "Cave Junction",
+    "lat": 42.163,
+    "lng": -123.648
+   },
+   {
+    "name": "Oregon Caves",
+    "lat": 42.0987,
+    "lng": -123.4088
+   },
+   {
+    "name": "Cave Junction",
+    "lat": 42.163,
+    "lng": -123.648
+   },
+   {
+    "name": "Crescent City",
+    "lat": 41.7558,
+    "lng": -124.2026
+   }
+  ],
+  "stops": [
+   "TouVelle State Recreation Site",
+   "Jacksonville Historic District",
+   "McKee Bridge Swimming Hole",
+   "Applegate Lake — Hart-Tish Park",
+   "Six Mile Day Use Area — Illinois River",
+   "River Bench — Illinois River",
+   "Oregon Caves — Discovery Cave Tour",
+   "Oregon Caves — Big Tree Trail"
+  ],
+  "story": "Jednodenní řeková odbočka pro toho, kdo nejede celý velký okruh: Rogue u Table Rock, zlatokopecký Jacksonville, tůň pod krytým mostem na Applegate, jezero pod horami, pak Illinois River — nejčistší tyrkysová voda jižního Oregonu s tůněmi u Six Mile — a mramorová jeskyně Oregon Caves. Domů po US-199 kaňonem Smith River.",
+  "why_bob": "Čtyři různé vody na koupání za jeden den a mramorová jeskyně v horách — bez velkého detouru, na cestě k redwoodům.",
+  "overnight": null,
+  "season_note_2026": "Oregon Caves prohlídky (nps.gov/orca, cca 10 $, 90 min, 7 °C uvnitř); Illinois River Rd asfalt po Six Mile · US-199 u Gasquet: úplné uzávěry út–čt 10–14 h [ověřeno 12. 9. 2026]",
+  "rank": 33
+ },
+ {
+  "id": "loop-34",
+  "name": "Lava Beds → Shasta → McCloud Falls → Castle Crags → Trinity",
+  "from_spine": "Klamath Falls / Ashland (OR-66, OR-140)",
+  "rejoin_spine": "Arcata (CA-299 přes Weaverville)",
+  "total_km": 620,
+  "driving_hours": 11,
+  "days": 3,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Klamath Falls",
+    "lat": 42.2249,
+    "lng": -121.7817
+   },
+   {
+    "name": "Lower Klamath NWR",
+    "lat": 41.996,
+    "lng": -121.659
+   },
+   {
+    "name": "Tule Lake — Segregation Center",
+    "lat": 41.955,
+    "lng": -121.476
+   },
+   {
+    "name": "Petroglyph Point",
+    "lat": 41.879,
+    "lng": -121.499
+   },
+   {
+    "name": "Lava Beds — Captain Jack's Stronghold",
+    "lat": 41.839,
+    "lng": -121.554
+   },
+   {
+    "name": "Devil's Homestead",
+    "lat": 41.775,
+    "lng": -121.552
+   },
+   {
+    "name": "Skull Cave",
+    "lat": 41.729,
+    "lng": -121.512
+   },
+   {
+    "name": "Lava Beds — Indian Well / Mushpot",
+    "lat": 41.714,
+    "lng": -121.51
+   },
+   {
+    "name": "Mammoth Crater",
+    "lat": 41.693,
+    "lng": -121.548
+   },
+   {
+    "name": "Medicine Lake Rd → CA-89",
+    "lat": 41.5,
+    "lng": -121.65
+   },
+   {
+    "name": "Bartle",
+    "lat": 41.29,
+    "lng": -121.86
+   },
+   {
+    "name": "Cattle Camp",
+    "lat": 41.259,
+    "lng": -121.94
+   },
+   {
+    "name": "Middle McCloud Falls",
+    "lat": 41.2435,
+    "lng": -122.0095
+   },
+   {
+    "name": "Lower McCloud Falls",
+    "lat": 41.2411,
+    "lng": -122.0248
+   },
+   {
+    "name": "McCloud",
+    "lat": 41.255,
+    "lng": -122.139
+   },
+   {
+    "name": "Mount Shasta City",
+    "lat": 41.31,
+    "lng": -122.31
+   },
+   {
+    "name": "Lake Siskiyou",
+    "lat": 41.2774,
+    "lng": -122.3411
+   },
+   {
+    "name": "Castle Lake",
+    "lat": 41.2302,
+    "lng": -122.3814
+   },
+   {
+    "name": "Dunsmuir — Hedge Creek Falls",
+    "lat": 41.2374,
+    "lng": -122.2683
+   },
+   {
+    "name": "Castle Crags",
+    "lat": 41.1595,
+    "lng": -122.3058
+   },
+   {
+    "name": "Redding",
+    "lat": 40.5865,
+    "lng": -122.3917
+   },
+   {
+    "name": "Whiskeytown",
+    "lat": 40.63,
+    "lng": -122.57
+   },
+   {
+    "name": "Weaverville",
+    "lat": 40.731,
+    "lng": -122.942
+   },
+   {
+    "name": "Willow Creek",
+    "lat": 40.939,
+    "lng": -123.632
+   },
+   {
+    "name": "Arcata",
+    "lat": 40.8665,
+    "lng": -124.0828
+   }
+  ],
+  "stops": [
+   "Lower Klamath National Wildlife Refuge — Auto Tour",
+   "Tule Lake National Monument — Segregation Center",
+   "Petroglyph Point",
+   "Captain Jack's Stronghold",
+   "Skull Cave",
+   "Mushpot Cave",
+   "Valentine Cave",
+   "Lava Beds — night sky at Indian Well Campground",
+   "Cattle Camp Swimming Hole — Upper McCloud River",
+   "Middle McCloud Falls",
+   "Lower McCloud Falls",
+   "Lake Siskiyou Beach",
+   "Castle Lake",
+   "Hedge Creek Falls",
+   "Castle Crags — Vista Point",
+   "Weaverville Historic Main Street"
+  ],
+  "story": "Den 1: z Klamath Falls dolů přes ptačí rezervace k Lava Beds — lávové tunely s čelovkou (Mushpot, Valentine, Skull s ledem), Captain Jack's Stronghold, kde 60 Modoků půl roku vzdorovalo armádě, petroglyfy, a v noci nejtemnější nebe Kalifornie z kempu Indian Well. Den 2: přes Medicine Lake k McCloud — tři vodopády za sebou, pod Middle Falls koupání v ledovém bazénu, Shasta nad vším. Spát Mount Shasta City / Dunsmuir. Den 3: Castle Lake ráno, Hedge Creek za vodopádem, Castle Crags žulové jehly proti Shastě, pak CA-299 podél Trinity River k moři.",
+  "why_bob": "Lávové tunely, sopka 4 300 m, koupání pod vodopádem a hvězdy v poušti Modoc — nejdivočejší tři dny severní Kalifornie, a vrací se to na pobřeží řekou.",
+  "overnight": "1: Lava Beds kemp (Indian Well, 10 $) nebo Tulelake motel; 2: Mount Shasta City / Dunsmuir (Railroad Park — spát ve vagónu!)",
+  "season_note_2026": "Lava Beds NM 25 $; čelovku půjčí ve visitor center zdarma; Medicine Lake Road asfalt; McCloud Falls Road asfalt až k Lower; Castle Lake Road asfalt",
+  "rank": 34
+ },
+ {
+  "id": "loop-35",
+  "name": "Lassen Volcanic → CA-36 přes hory k moři",
+  "from_spine": "Redding (z Shasta okruhu)",
+  "rejoin_spine": "Fortuna (US-101)",
+  "total_km": 480,
+  "driving_hours": 9,
+  "days": 2,
+  "road_quality": "paved_narrow",
+  "waypoints": [
+   {
+    "name": "Redding",
+    "lat": 40.5865,
+    "lng": -122.3917
+   },
+   {
+    "name": "Shingletown (CA-44)",
+    "lat": 40.492,
+    "lng": -121.889
+   },
+   {
+    "name": "Manzanita Lake",
+    "lat": 40.5336,
+    "lng": -121.5678
+   },
+   {
+    "name": "Sulphur Works",
+    "lat": 40.4495,
+    "lng": -121.5341
+   },
+   {
+    "name": "Bumpass Hell",
+    "lat": 40.4661,
+    "lng": -121.514
+   },
+   {
+    "name": "Kings Creek Falls",
+    "lat": 40.4605,
+    "lng": -121.4592
+   },
+   {
+    "name": "Mineral (CA-36)",
+    "lat": 40.346,
+    "lng": -121.595
+   },
+   {
+    "name": "Red Bluff",
+    "lat": 40.1785,
+    "lng": -122.2358
+   },
+   {
+    "name": "Platina",
+    "lat": 40.36,
+    "lng": -122.9
+   },
+   {
+    "name": "Forest Glen — Hell Gate",
+    "lat": 40.3707,
+    "lng": -123.3136
+   },
+   {
+    "name": "Mad River",
+    "lat": 40.44,
+    "lng": -123.55
+   },
+   {
+    "name": "Bridgeville",
+    "lat": 40.47,
+    "lng": -123.8
+   },
+   {
+    "name": "Fortuna",
+    "lat": 40.5982,
+    "lng": -124.1573
+   }
+  ],
+  "stops": [
+   "Manzanita Lake — Lassen",
+   "Sulphur Works — Lassen Volcanic National Park",
+   "Bumpass Hell Trailhead",
+   "Kings Creek Falls Trailhead",
+   "Hell Gate — South Fork Trinity River"
+  ],
+  "story": "Lassen je malý Yellowstone bez lidí: bublající bahno u silnice (Sulphur Works), Bumpass Hell (5 km) — fumaroly, vařící jezírka, sirná pára, a Manzanita Lake, kde se sopka zrcadlí a smí se plavat. Zpátky k moři po CA-36 — 230 km horské silnice přes Coast Range, kterou skoro nikdo nejede, s koupáním v South Fork Trinity u Hell Gate. Pět hodin, nádherných.",
+  "why_bob": "Hydrotermální krajina, koupání pod sopkou a pak nejopuštěnější silnice v Kalifornii zpátky k Pacifiku.",
+  "overnight": "Mineral / Chester, nebo Red Bluff (motely)",
+  "season_note_2026": "Lassen NP 30 $; hlavní silnice parkem otevřená do sněhu (říjen–listopad); CA-36 asfalt, úzké, tankuj v Red Bluff — 200 km bez pumpy",
+  "rank": 35
+ },
+ {
+  "id": "loop-36",
+  "name": "Parkfield — San Andreas, James Dean, Cholame",
+  "from_spine": "Paso Robles (US-101)",
+  "rejoin_spine": "Paso Robles",
+  "total_km": 150,
+  "driving_hours": 2.5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Paso Robles",
+    "lat": 35.6266,
+    "lng": -120.691
+   },
+   {
+    "name": "Cholame (James Dean)",
+    "lat": 35.728,
+    "lng": -120.295
+   },
+   {
+    "name": "Parkfield",
+    "lat": 35.8997,
+    "lng": -120.4327
+   },
+   {
+    "name": "Vineyard Canyon Rd",
+    "lat": 35.77,
+    "lng": -120.6
+   },
+   {
+    "name": "Paso Robles",
+    "lat": 35.6266,
+    "lng": -120.691
+   }
+  ],
+  "stops": [
+   "Parkfield — Earthquake Capital of the World"
+  ],
+  "story": "Zlaté kopce s duby a lišejníkem (ta krajina z 2017) na východ od Paso, na křižovatce v Cholame pomník James Deana (zabil se 500 m odtud, 1955), a pak Parkfield — 18 lidí, most přes San Andreas s cedulí, že přejíždíš z Pacifické desky na Severoamerickou, seismografy USGS a kavárna s heslem „Be here when it happens“. Zpátky po Vineyard Canyon prázdnou savanou.",
+  "why_bob": "Stát rozkročený nad zlomem, který hýbe kontinentem, uprostřed dubové savany — geologie, samota a James Dean v jednom odpoledni.",
+  "overnight": null,
+  "season_note_2026": "Parkfield Cafe otevřena denně (ověř); silnice asfalt",
+  "rank": 36
+ },
+ {
+  "id": "loop-37",
+  "name": "Angeles Crest — Mount Wilson, Devil's Punchbowl, Vasquez Rocks",
+  "from_spine": "Pasadena / La Cañada (I-210)",
+  "rejoin_spine": "LA (CA-14 / I-5)",
+  "total_km": 240,
+  "driving_hours": 5,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "La Cañada Flintridge",
+    "lat": 34.2,
+    "lng": -118.2
+   },
+   {
+    "name": "Red Box",
+    "lat": 34.2584,
+    "lng": -118.1046
+   },
+   {
+    "name": "Mount Wilson Observatory",
+    "lat": 34.225,
+    "lng": -118.0572
+   },
+   {
+    "name": "Red Box",
+    "lat": 34.2584,
+    "lng": -118.1046
+   },
+   {
+    "name": "Wrightwood",
+    "lat": 34.36,
+    "lng": -117.63
+   },
+   {
+    "name": "Pearblossom",
+    "lat": 34.506,
+    "lng": -117.91
+   },
+   {
+    "name": "Devil's Punchbowl",
+    "lat": 34.4135,
+    "lng": -117.8589
+   },
+   {
+    "name": "Palmdale (CA-14)",
+    "lat": 34.579,
+    "lng": -118.116
+   },
+   {
+    "name": "Vasquez Rocks",
+    "lat": 34.4785,
+    "lng": -118.4843
+   },
+   {
+    "name": "Santa Clarita (I-5)",
+    "lat": 34.3917,
+    "lng": -118.5426
+   }
+  ],
+  "stops": [
+   "Angeles Crest Highway — Red Box",
+   "Mount Wilson Observatory",
+   "Devil's Punchbowl Natural Area",
+   "Vasquez Rocks Natural Area Park"
+  ],
+  "story": "Za půl hodiny z Pasadeny jsi v borovicích ve 1 700 m nad smogem. Mount Wilson — Hookerův 100palcový dalekohled, kterým Hubble v roce 1929 zjistil, že se vesmír rozpíná; kopule stojí, dá se obejít. Angeles Crest Highway dál na východ hřebenem San Gabriel, pak dolů do pouště k Devil's Punchbowl — pískovec postavený zlomem na výšku — a přes Palmdale k Vasquez Rocks. Domů po CA-14.",
+  "why_bob": "Dalekohled, kterým se objevil rozpínající se vesmír, hřebenová silnice nad LA a dvě geologie postavené zlomem na hranu — vesmír a deep time v jednom dni od Hollywoodu.",
+  "overnight": null,
+  "season_note_2026": "Angeles Crest (CA-2) mezi Islip Saddle a Vincent Gap bývá po sesuvech zavřená — ověř Caltrans QuickMap; Mount Wilson: areál otevřen 10–17, dalekohled zvenku, prohlídky so/ne; Adventure Pass 5 $",
+  "rank": 37
+ },
+ {
+  "id": "loop-38",
+  "name": "Rim of the World — Deep Creek Hot Springs, Big Bear, Integratron, Pioneertown",
+  "from_spine": "LA / Redlands (I-10)",
+  "rejoin_spine": "Joshua Tree (CA-62)",
+  "total_km": 300,
+  "driving_hours": 6.5,
+  "days": 2,
+  "road_quality": "paved_gravel_ok",
+  "waypoints": [
+   {
+    "name": "Redlands",
+    "lat": 34.0556,
+    "lng": -117.1825
+   },
+   {
+    "name": "Crestline (CA-18)",
+    "lat": 34.242,
+    "lng": -117.286
+   },
+   {
+    "name": "Lake Arrowhead",
+    "lat": 34.253,
+    "lng": -117.189
+   },
+   {
+    "name": "Deep Creek Hot Springs",
+    "lat": 34.3424,
+    "lng": -117.1963
+   },
+   {
+    "name": "Running Springs",
+    "lat": 34.208,
+    "lng": -117.109
+   },
+   {
+    "name": "Big Bear Lake",
+    "lat": 34.2439,
+    "lng": -116.9114
+   },
+   {
+    "name": "Lucerne Valley (CA-18)",
+    "lat": 34.444,
+    "lng": -116.967
+   },
+   {
+    "name": "Landers — Giant Rock",
+    "lat": 34.3328,
+    "lng": -116.3887
+   },
+   {
+    "name": "Integratron",
+    "lat": 34.2944,
+    "lng": -116.4036
+   },
+   {
+    "name": "Pioneertown",
+    "lat": 34.172,
+    "lng": -116.547
+   },
+   {
+    "name": "Yucca Valley",
+    "lat": 34.1142,
+    "lng": -116.4322
+   },
+   {
+    "name": "Joshua Tree",
+    "lat": 34.1347,
+    "lng": -116.3131
+   }
+  ],
+  "stops": [
+   "Deep Creek Hot Springs",
+   "Big Bear Lake",
+   "Giant Rock",
+   "Integratron",
+   "Pioneertown (filmové městečko)",
+   "Pappy & Harriet's Pioneertown Palace"
+  ],
+  "story": "Rim of the World Highway vyleze z LA do 2 000 m — Deep Creek Hot Springs jsou divoké tůně 40 °C vedle studeného potoka, nahé, 4 km sestup z Bowen Ranch (a 4 km nahoru); Big Bear na koupání v jezeře. Pak dolů severní stranou do pouště: Giant Rock (UFO konvence 50. let), Integratron (zvuková koupel v kupoli od Venušanů), Pioneertown — western z roku 1946 a Pappy & Harriet's, kde hrál McCartney na baru. Spát v Pioneertown Motel, ráno Joshua Tree.",
+  "why_bob": "Horké prameny nahý u studeného potoka, pak UFO Americana a honky-tonk v kulisách westernu — den, který by si Lynch vymyslel.",
+  "overnight": "Pioneertown Motel / Rimrock Ranch (rezervace!), nebo Big Bear",
+  "season_note_2026": "Deep Creek z Bowen Ranch: 6 km štěrku, sedan ok, parkovné 10 $ hotově, náročný výstup zpět v horku — ráno; Pappy's zavřeno út–st; Integratron sound bath rezervace",
+  "rank": 38
+ },
+ {
+  "id": "loop-39",
+  "name": "Route 66 — Elmer's, Bagdad Café, Ludlow, Amboy, Kelso",
+  "from_spine": "Victorville (I-15) / Joshua Tree (přes Amboy Rd)",
+  "rejoin_spine": "Joshua Tree / Twentynine Palms",
+  "total_km": 420,
+  "driving_hours": 6,
+  "days": 1,
+  "road_quality": "paved",
+  "waypoints": [
+   {
+    "name": "Victorville",
+    "lat": 34.5362,
+    "lng": -117.2928
+   },
+   {
+    "name": "Elmer's Bottle Tree Ranch",
+    "lat": 34.6904,
+    "lng": -117.3396
+   },
+   {
+    "name": "Barstow",
+    "lat": 34.8958,
+    "lng": -117.0173
+   },
+   {
+    "name": "Bagdad Cafe — Newberry Springs",
+    "lat": 34.8197,
+    "lng": -116.6434
+   },
+   {
+    "name": "Ludlow",
+    "lat": 34.7211,
+    "lng": -116.16
+   },
+   {
+    "name": "Amboy — Roy's",
+    "lat": 34.6307,
+    "lng": -115.7432
+   },
+   {
+    "name": "Amboy Crater",
+    "lat": 34.6067,
+    "lng": -115.7314
+   },
+   {
+    "name": "Kelso Dunes",
+    "lat": 34.896,
+    "lng": -115.709
+   },
+   {
+    "name": "Kelso Depot",
+    "lat": 35.0122,
+    "lng": -115.6525
+   },
+   {
+    "name": "Amboy",
+    "lat": 34.558,
+    "lng": -115.744
+   },
+   {
+    "name": "Twentynine Palms",
+    "lat": 34.1356,
+    "lng": -116.0542
+   }
+  ],
+  "stops": [
+   "Elmer's Bottle Tree Ranch",
+   "Bagdad Cafe (Newberry Springs)",
+   "Ludlow (Ghost Town)",
+   "Roy's Motel & Café",
+   "Amboy Crater (Mojave)",
+   "Kelso Dunes (Mojave NP)",
+   "Kelso Depot"
+  ],
+  "story": "Kus Route 66, který dálnice I-40 nechala umřít: les z lahví u Elmera, Bagdad Café z filmu (dnes poloprázdná), Ludlow s mrtvou kavárnou, a Amboy — čtyři obyvatelé, neon ROY'S z roku 1959 a černý kráter s lávovým polem. Odbočka na sever ke Kelso Dunes (zpívající písek) a nádraží Kelso uprostřed ničeho. Zpátky přes Amboy Road do Twentynine Palms — v Joshua Tree jsi večer.",
+  "why_bob": "Hopper by tu namaloval každé druhé místo — neon nad prázdnou pumpou, kavárna z filmu, duny, které hučí, a silnice, po které nikdo nejede.",
+  "overnight": "Twentynine Palms (29 Palms Inn / Harmony Motel)",
+  "season_note_2026": "Amboy Road asfalt; benzín Barstow/Ludlow/Amboy (drahý)/29 Palms — nic mezi; Kelso Dunes 5 km štěrku, sedan ok; v říjnu ve dne 30+ °C",
+  "rank": 39
+ },
+ {
+  "id": "loop-40",
+  "name": "VELKÝ OKRUH: Mojave → Death Valley → Trona → Red Rock Canyon",
+  "from_spine": "Joshua Tree / Twentynine Palms (nebo Barstow)",
+  "rejoin_spine": "LA (CA-14 přes Mojave a Vasquez Rocks)",
+  "total_km": 1050,
+  "driving_hours": 16,
+  "days": 3,
+  "road_quality": "paved_gravel_ok",
+  "waypoints": [
+   {
+    "name": "Twentynine Palms",
+    "lat": 34.1356,
+    "lng": -116.0542
+   },
+   {
+    "name": "Amboy",
+    "lat": 34.558,
+    "lng": -115.744
+   },
+   {
+    "name": "Kelso Depot",
+    "lat": 35.0122,
+    "lng": -115.6525
+   },
+   {
+    "name": "Hole-in-the-Wall",
+    "lat": 35.044,
+    "lng": -115.398
+   },
+   {
+    "name": "Mitchell Caverns",
+    "lat": 34.9434,
+    "lng": -115.5117
+   },
+   {
+    "name": "Goffs",
+    "lat": 34.9192,
+    "lng": -115.0628
+   },
+   {
+    "name": "Kelso Depot",
+    "lat": 35.0122,
+    "lng": -115.6525
+   },
+   {
+    "name": "Cima Dome — Teutonia Peak",
+    "lat": 35.2891,
+    "lng": -115.5486
+   },
+   {
+    "name": "Lava Tube",
+    "lat": 35.2155,
+    "lng": -115.7515
+   },
+   {
+    "name": "Baker",
+    "lat": 35.265,
+    "lng": -116.074
+   },
+   {
+    "name": "Zzyzx",
+    "lat": 35.1432,
+    "lng": -116.104
+   },
+   {
+    "name": "Baker",
+    "lat": 35.265,
+    "lng": -116.074
+   },
+   {
+    "name": "Death Valley Junction",
+    "lat": 36.302,
+    "lng": -116.418
+   },
+   {
+    "name": "Dante's View",
+    "lat": 36.2205,
+    "lng": -116.7264
+   },
+   {
+    "name": "Twenty Mule Team Canyon",
+    "lat": 36.4095,
+    "lng": -116.7947
+   },
+   {
+    "name": "Zabriskie Point",
+    "lat": 36.4207,
+    "lng": -116.8116
+   },
+   {
+    "name": "Furnace Creek",
+    "lat": 36.46,
+    "lng": -116.87
+   },
+   {
+    "name": "Harmony Borax Works",
+    "lat": 36.48,
+    "lng": -116.8734
+   },
+   {
+    "name": "Artist's Drive",
+    "lat": 36.3492,
+    "lng": -116.8128
+   },
+   {
+    "name": "Natural Bridge",
+    "lat": 36.2813,
+    "lng": -116.7696
+   },
+   {
+    "name": "Badwater",
+    "lat": 36.2297,
+    "lng": -116.7674
+   },
+   {
+    "name": "Furnace Creek",
+    "lat": 36.46,
+    "lng": -116.87
+   },
+   {
+    "name": "Beatty NV / Rhyolite",
+    "lat": 36.9033,
+    "lng": -116.8281
+   },
+   {
+    "name": "Stovepipe Wells — Mesquite Dunes",
+    "lat": 36.6136,
+    "lng": -117.116
+   },
+   {
+    "name": "Mosaic Canyon",
+    "lat": 36.5719,
+    "lng": -117.1443
+   },
+   {
+    "name": "Ubehebe Crater",
+    "lat": 37.0108,
+    "lng": -117.4549
+   },
+   {
+    "name": "Stovepipe Wells",
+    "lat": 36.607,
+    "lng": -117.145
+   },
+   {
+    "name": "Wildrose Charcoal Kilns",
+    "lat": 36.2467,
+    "lng": -117.0755
+   },
+   {
+    "name": "Trona",
+    "lat": 35.762,
+    "lng": -117.373
+   },
+   {
+    "name": "Trona Pinnacles",
+    "lat": 35.7665,
+    "lng": -117.407
+   },
+   {
+    "name": "Ridgecrest",
+    "lat": 35.6225,
+    "lng": -117.6709
+   },
+   {
+    "name": "Randsburg",
+    "lat": 35.3697,
+    "lng": -117.6553
+   },
+   {
+    "name": "Red Rock Canyon SP",
+    "lat": 35.3733,
+    "lng": -117.9917
+   },
+   {
+    "name": "Mojave",
+    "lat": 35.0525,
+    "lng": -118.1739
+   },
+   {
+    "name": "Vasquez Rocks",
+    "lat": 34.4785,
+    "lng": -118.4843
+   },
+   {
+    "name": "Santa Clarita (I-5)",
+    "lat": 34.3917,
+    "lng": -118.5426
+   }
+  ],
+  "stops": [
+   "Kelso Depot",
+   "Hole-in-the-Wall — Rings Trail (Mojave)",
+   "Mitchell Caverns & Providence Mountains",
+   "Goffs (Schoolhouse Museum)",
+   "Cima Dome — Teutonia Peak Trail (les joshua stromů)",
+   "Mojave Lava Tube (Aiken Mine Road)",
+   "Zzyzx & Lake Tuendae",
+   "Dante's View (Death Valley)",
+   "Zabriskie Point (Death Valley NP)",
+   "Harmony Borax Works",
+   "Artist's Drive & Artist's Palette (Death Valley)",
+   "Badwater Basin (Death Valley)",
+   "Rhyolite Ghost Town & Goldwell Open Air Museum (NV)",
+   "Mesquite Flat Sand Dunes (Death Valley)",
+   "Mosaic Canyon",
+   "Ubehebe Crater",
+   "Wildrose Charcoal Kilns",
+   "Trona Pinnacles",
+   "Randsburg — živé ghost town",
+   "Red Rock Canyon State Park (CA-14)",
+   "Vasquez Rocks Natural Area Park"
+  ],
+  "story": "Tři dny pouště od východu na západ. Den 1: Mojave National Preserve — Hole-in-the-Wall po kruzích, Cima Dome (spálený les joshua stromů), lávová trubka se sloupem světla v poledne, Zzyzx, a večer Death Valley Junction (Amargosa Opera House!) nebo Beatty. Den 2: Death Valley — svítání na Dante's View nebo Zabriskie, Badwater 86 m pod mořem, Artist's Drive, odpoledne Rhyolite, večer duny u Stovepipe, noc pod hvězdami. Den 3: Ubehebe ráno (spur), Mosaic Canyon, přes Wildrose (milíře) a Panamint dolů do Trony — Pinnacles jako mimozemské město — Randsburg se sodovkou, Red Rock Canyon a domů kolem Vasquez Rocks. Říjen je první snesitelný měsíc: 30–35 °C ve dne, nádherně v noci.",
+  "why_bob": "Nejnižší bod Ameriky, nejtemnější nebe, ghost towny, lávová trubka a tufové věže — Bobova poušť v plné dávce, McCarthy a Kubrick zároveň; tři dny, na které bude myslet rok.",
+  "overnight": "1: Beatty NV (levné motely, Rhyolite za rohem) nebo Amargosa Hotel; 2: Stovepipe Wells / Panamint Springs (nebo kemp); 3: LA",
+  "season_note_2026": "Death Valley NP 30 $/7 dní; Mojave Preserve zdarma; tankuj: 29 Palms, Baker, Furnace Creek (drahé), Beatty, Stovepipe, Trona, Ridgecrest — vždy plná; 4 l vody na den; Aiken Mine Rd + Wildrose posledních km štěrk, sedan pomalu ok; Titus Canyon a Racetrack NE (4x4)",
+  "rank": 40
+ },
+ {
+  "id": "loop-41",
+  "name": "Salton Sea → Anza-Borrego jih → Sunrise Highway → Campo",
+  "from_spine": "Palm Springs / Indio (I-10)",
+  "rejoin_spine": "San Diego (I-8)",
+  "total_km": 520,
+  "driving_hours": 9,
+  "days": 2,
+  "road_quality": "paved_gravel_ok",
+  "waypoints": [
+   {
+    "name": "Palm Springs — Indian Canyons",
+    "lat": 33.744,
+    "lng": -116.538
+   },
+   {
+    "name": "Thousand Palms Oasis",
+    "lat": 33.8312,
+    "lng": -116.3095
+   },
+   {
+    "name": "Indio",
+    "lat": 33.7206,
+    "lng": -116.2156
+   },
+   {
+    "name": "Cottonwood Spring (JT jih)",
+    "lat": 33.7453,
+    "lng": -115.8116
+   },
+   {
+    "name": "Indio",
+    "lat": 33.7206,
+    "lng": -116.2156
+   },
+   {
+    "name": "North Shore Yacht Club",
+    "lat": 33.5194,
+    "lng": -115.9372
+   },
+   {
+    "name": "Bombay Beach",
+    "lat": 33.3498,
+    "lng": -115.7265
+   },
+   {
+    "name": "Niland — Salvation Mountain",
+    "lat": 33.2542,
+    "lng": -115.4725
+   },
+   {
+    "name": "Slab City / East Jesus",
+    "lat": 33.2681,
+    "lng": -115.4551
+   },
+   {
+    "name": "Davis-Schrimpf mud pots",
+    "lat": 33.2003,
+    "lng": -115.5787
+   },
+   {
+    "name": "Westmorland",
+    "lat": 33.037,
+    "lng": -115.621
+   },
+   {
+    "name": "Ocotillo Wells",
+    "lat": 33.142,
+    "lng": -116.135
+   },
+   {
+    "name": "Arroyo Tapiado",
+    "lat": 32.9248,
+    "lng": -116.1887
+   },
+   {
+    "name": "Carrizo Badlands Overlook",
+    "lat": 32.827,
+    "lng": -116.1643
+   },
+   {
+    "name": "Agua Caliente",
+    "lat": 32.9517,
+    "lng": -116.3058
+   },
+   {
+    "name": "Vallecito Stage Station",
+    "lat": 32.9762,
+    "lng": -116.3545
+   },
+   {
+    "name": "Scissors Crossing",
+    "lat": 33.0966,
+    "lng": -116.4749
+   },
+   {
+    "name": "Julian",
+    "lat": 33.0787,
+    "lng": -116.602
+   },
+   {
+    "name": "Cuyamaca — Green Valley Falls",
+    "lat": 32.9,
+    "lng": -116.5834
+   },
+   {
+    "name": "Kwaaymii Point",
+    "lat": 32.9347,
+    "lng": -116.4827
+   },
+   {
+    "name": "Mount Laguna",
+    "lat": 32.867,
+    "lng": -116.463
+   },
+   {
+    "name": "Pine Valley (I-8)",
+    "lat": 32.822,
+    "lng": -116.529
+   },
+   {
+    "name": "Jacumba — Old Hwy 80",
+    "lat": 32.7042,
+    "lng": -116.3601
+   },
+   {
+    "name": "Campo",
+    "lat": 32.6091,
+    "lng": -116.4745
+   },
+   {
+    "name": "San Diego",
+    "lat": 32.7157,
+    "lng": -117.1611
+   }
+  ],
+  "stops": [
+   "Indian Canyons — Palm Canyon (Palm Springs)",
+   "Thousand Palms Oasis Preserve",
+   "Cottonwood Spring Oasis",
+   "Lost Palms Oasis Trail",
+   "North Shore Beach & Yacht Club",
+   "Bombay Beach",
+   "Salvation Mountain",
+   "Slab City",
+   "East Jesus (Slab City)",
+   "Davis-Schrimpf Mud Pots (Salton Sea)",
+   "Arroyo Tapiado (Mud Caves)",
+   "Carrizo Badlands Overlook",
+   "Agua Caliente County Park",
+   "Vallecito Stage Station",
+   "Julian",
+   "Green Valley Falls",
+   "Kwaaymii Point",
+   "Mount Laguna (Sunrise Highway Viewpoint)",
+   "Old Highway 80 – Jacumba Segment",
+   "Campo Stone Store"
+  ],
+  "story": "Den 1: palmové oázy na zlomu San Andreas, pak dolů k Salton Sea — mrtvé moře s yacht clubem od Alberta Freye, Bombay Beach jako umělecká kolonie konce světa, Salvation Mountain, Slab City a East Jesus, bublající bahno u Nilandu. Spát Borrego Springs (tma!) nebo Agua Caliente. Den 2: jižní Anza-Borrego po S2 — bahenní jeskyně (jen pokud si troufne na wash), Carrizo Badlands z asfaltu, horké prameny Agua Caliente, dostavníková stanice, nahoru k Julianu a po Sunrise Highway hřebenem Laguna Mountains s výhledem tisíc metrů dolů do pouště, kterou jsi ráno projel. Dolů přes starou US-80 a Campo do San Diega.",
+  "why_bob": "Post-apo Americana u mrtvého moře, badlands, horká voda, a pak z hřebene v borovicích vidět celou poušť pod sebou — nejlepší způsob, jak přijet do San Diega.",
+  "overnight": "Borrego Springs (Dark Sky, motely) nebo Agua Caliente (kemp/kabiny)",
+  "season_note_2026": "Salton Sea — zápach podle větru, Bombay Beach bezpečné; S2 asfalt; Arroyo Tapiado 8 km písek — rough_caution; Agua Caliente County Park bazény otevřené od září; Sunrise Hwy asfalt",
+  "rank": 41
+ }
 ]

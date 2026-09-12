@@ -1,0 +1,45 @@
+g-r1-025	3	Artist Point — Mount Baker	48.845482,-121.690529	
+r1-019	1	Shi Shi Beach — Point of Arches day hike	48.2945,-124.6659	https://en.wikipedia.org/wiki/Shi_Shi_Beach
+r1-032	1	Salmon Cascades	48.0333,-123.9398	
+g-r1-019	1	Laura Palmer's House	47.973783,-122.220708	
+r1-050	2	Mount Walker — north & south viewpoints	47.7746,-122.9297	https://en.wikipedia.org/wiki/Mount_Walker_(Washington)
+r2-013	2	Fort Stevens South Jetty Observation Area	46.2109,-124.0082	
+r2-015	3	Cullaby Lake County Park	46.1042,-123.9187	
+g-r2-021	1	Mississippi Records	45.560558,-122.674919	
+g-r2-019	1	The Palms Motel	45.5497,-122.6812	
+g-r2-027	2	The Alibi Tiki Lounge	45.5525,-122.6813	
+r2-048	1	Historic Columbia River Highway — Waterfall Corridor	45.5396,-122.3879	https://en.wikipedia.org/wiki/Historic_Columbia_River_Highway
+r2-035	1	Drift Creek Falls Trail	44.9368,-123.8586	https://en.wikipedia.org/wiki/Drift_Creek_Falls
+r3-002	2	Seal Rock State Recreation Site	44.49986,-124.08465	https://en.wikipedia.org/wiki/Seal_Rock_State_Recreation_Site
+r3-006	2	Spouting Horn — Cook's Chasm	44.27782,-124.11272	
+g-r3-002	2	Bob Creek Wayside	44.2443,-124.1121	
+g-r4-024	2	Crystal Crane Hot Springs	43.44106,-118.63944	
+gem-007	2	Itty Bitty Inn	43.413077,-124.224152	
+g-r3-006	2	Books by the Bay	43.4083,-124.2237	
+g-r3-008	2	7 Devils Brewing Co. Public House	43.3666,-124.215	
+r4-008	2	Lemolo Falls — old trail	43.3212,-122.2865	https://en.wikipedia.org/wiki/Lemolo_Falls
+g-r4-011	3	Fall Creek Falls — North Umpqua	43.3134,-122.8356	
+r4-002	2	Susan Creek Falls	43.3018,-122.8359	
+r4-033	2	Godfrey Glen Trail	42.8357,-122.2058	
+g-r3-015	2	Edson Creek Campground — Sixes River	42.8152,-124.4109	
+r3-045	2	Prehistoric Gardens	42.59643,-124.37291	https://en.wikipedia.org/wiki/Prehistoric_Gardens
+g-r3-019	1	Lobster Creek Campground — Rogue River	42.5015,-124.296	
+g-r3-020	2	Quosatana Campground — Rogue River	42.4977,-124.2321	
+g-r4-002	1	Six Mile Day Use Area — Illinois River	42.297,-123.732	
+r3-060	1	Whaleshead Beach	42.1421,-124.3526	
+g-r5-002	2	Patrick Creek Campground — Smith River	41.8719,-123.8467	
+r5-009	1	Forks River Access and Boat Ramp	41.79725,-124.0551	
+r5-012	1	Smith River Scenic Byway — US 199	41.79725,-124.0551	https://en.wikipedia.org/wiki/U.S._Route_199
+r5-006	1	Howland Hill Road	41.758,-124.1608	
+r5-010	1	Sand Camp — South Fork Smith River	41.741672,-123.980779	
+g-r5-025	2	Cattle Camp Swimming Hole — Upper McCloud River	41.259,-121.94	
+g-r5-019	2	Clark Springs Beach — Trinity Lake	40.858,-122.8128	
+g-r5-018	2	Stoney Creek Swim Area — Trinity Lake	40.851,-122.8514	
+r5-046	1	Avenue of the Giants	40.4649,-123.9998	https://en.wikipedia.org/wiki/Avenue_of_the_Giants
+r7-041	2	Big Sur River Gorge (Pfeiffer SP)	36.2397,-121.747	
+r7-040	2	Ragged Point	36.1465,-121.3942	
+g-r8a-011	3	Rose Valley Falls Trailhead	34.5317,-119.1829	
+r8-008	2	Meditation Mount (Ojai)	34.440293,-119.009464	
+g-r8b-001	2	La Jolla Indian Campground – San Luis Rey River	33.273659,-116.852176	
+g-r8b-003	3	Cedar Creek Falls Trailhead	32.99521,-116.75627	
+g-r8b-004	3	Three Sisters Falls Trailhead	32.98454,-116.67786	

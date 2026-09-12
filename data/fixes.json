@@ -421,7 +421,9 @@
   },
   "r8b-021": {
     "description": "Sunrise Highway (S1) vede hřbetem Laguna Mountains ve výšce 1 800 m: borovice, louky, a najednou vyhlídky, kde země padá 1 500 m dolů do pouště Anza-Borrego. Desert View a Kwaaymii Point jsou nejlepší. Temná obloha, v noci Mléčná dráha.",
-    "why_bob": "Stojíš v borovém lese a pod tebou začíná poušť — hrana mezi dvěma světy, a v noci nad ní hvězdy jako v Hoggaru."
+    "why_bob": "Stojíš v borovém lese a pod tebou začíná poušť — hrana mezi dvěma světy, a v noci nad ní hvězdy jako v Hoggaru.",
+    "season_note_2026": "Sunrise Road zavřená pro auta (požáry 8/2026); Grove of the Patriarchs trvale zavřen (most). [ověřeno 12. 9. 2026]",
+    "rank": 3
   },
   "r8b-022": {
     "fee": "zdarma (návštěvnická galerie); prohlídky s průvodcem 15 $ o sobotách (rezervace)",
@@ -717,16 +719,16 @@
     "season_note_2026": "K 17. 8. 2026 NPS uvádí parkové trails otevřené s výjimkou výslovně uzavřených lokalit; Garfield Peak mezi nimi není. Po prvním sněhu se podmínky mohou změnit během hodin. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
   },
   "r4-028": {
-    "season_note_2026": "NPS k 17. 8. 2026 uvádí East Rim Drive sjízdný od North Junction až k Phantom Ship Overlook. Úsek dále směrem k Park Headquarters je kvůli stavbě uzavřen, takže se odsud musí stejnou cestou vrátit. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "East Rim Drive mezi Park HQ a Phantom Ship ZAVŘENÁ (stavba 2026) — sem jen oklikou od North Junction po East Rim (přes Cloudcap), ne od Rim Village; NP 30 $. [ověřeno 12. 9. 2026]"
   },
   "g-r4-010": {
-    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "East Rim Drive mezi Park HQ a Phantom Ship ZAVŘENÁ (stavba 2026) — sem jen oklikou od North Junction po East Rim (přes Cloudcap), ne od Rim Village; NP 30 $. [ověřeno 12. 9. 2026]"
   },
   "r4-032": {
     "season_note_2026": "Hwy 62 a Mazama area jsou podle NPS Current Conditions přístupné; Annie Creek Canyon Trail není mezi uzavřenými trasami. Na podzim ověřit případný sníh. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
   },
   "g-r4-009": {
-    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "East Rim Drive mezi Park HQ a Phantom Ship ZAVŘENÁ (stavba 2026) — sem jen oklikou od North Junction po East Rim (přes Cloudcap), ne od Rim Village; NP 30 $. [ověřeno 12. 9. 2026]"
   },
   "r4-033": {
     "season_note_2026": "Hwy 62 je podle NPS Current Conditions otevřená a Godfrey Glen Trail není na seznamu uzávěr. Stav po časném říjnovém sněhu ověřit před cestou. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
@@ -942,7 +944,8 @@
       "maps": "https://www.google.com/maps/search/?api=1&query=41.79725,-124.0551",
       "official": null,
       "wiki": "https://en.wikipedia.org/wiki/U.S._Route_199"
-    }
+    },
+    "season_note_2026": "US 199 je hlavní průjezdná komunikace; před delším inland výjezdem zkontrolovat Caltrans QuickMap a Six Rivers fire alerts. · US-199 u Gasquet: stavba, jednosměrka nonstop + ÚPLNÉ uzávěry út–čt 10–14 h — plánuj průjezd mimo. [ověřeno 12. 9. 2026]"
   },
   "r5-061": {
     "links": {
@@ -959,10 +962,10 @@
     }
   },
   "r1-037": {
-    "season_note_2026": "Upper Hoh Road opravena a otevřená (od 5/2025 po povodňovém sesuvu); NP 30 $; na parkovišti Hoh o víkendu fronta — ráno. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "Upper Hoh Road opravena a otevřená (od 5/2025 po povodňovém sesuvu); NP 30 $; na parkovišti Hoh o víkendu fronta — ráno. [ověřeno 12. 9. 2026] · POZOR US-101 most Hoh River (mezi Forks a Kalaloch): úplně zavřený 24.–29. 9., 1.–6. 10., 8.–13. 10.; noční uzávěry 14.–22. 9. 22:30–5:30 — přejeď nejpozději ST 23. 9. přes den, jinak objížďka Hood Canal +4 h. [ověřeno 12. 9. 2026]"
   },
   "r1-038": {
-    "season_note_2026": "Upper Hoh Road opravena a otevřená (od 5/2025 po povodňovém sesuvu); NP 30 $; na parkovišti Hoh o víkendu fronta — ráno. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "Upper Hoh Road opravena a otevřená (od 5/2025 po povodňovém sesuvu); NP 30 $; na parkovišti Hoh o víkendu fronta — ráno. [ověřeno 12. 9. 2026] · POZOR US-101 most Hoh River (mezi Forks a Kalaloch): úplně zavřený 24.–29. 9., 1.–6. 10., 8.–13. 10.; noční uzávěry 14.–22. 9. 22:30–5:30 — přejeď nejpozději ST 23. 9. přes den, jinak objížďka Hood Canal +4 h. [ověřeno 12. 9. 2026]"
   },
   "r2-052": {
     "season_note_2026": "timed permit (2 $, recreation.gov) jen 22. 5.–7. 9. 2026 — Bob přijede PO, permit NENÍ potřeba; parkoviště I-84 exit 31 volně, ráno prázdnější. [ověřeno 12. 9. 2026]"
@@ -1157,5 +1160,49 @@
   "r7-015": {
     "fee": "zdarma (parkoviště na východní straně Hwy 1, podchod)",
     "season_note_2026": "state beach, parkování zdarma; strmá cesta dolů; severní konec pláže tradičně nudistický. [ověřeno 12. 9. 2026]"
+  },
+  "r1-036": {
+    "season_note_2026": "La Push a First Beach jsou přístupné; respektuj pravidla a majetek Quileute Nation. Uzávěra Mora Road blokuje Rialto, nikoli First Beach · Rialto je do 15. 10. zavřená → tohle je náhrada; La Push road (SR-110) otevřená. [ověřeno 12. 9. 2026]"
+  },
+  "r1-034": {
+    "season_note_2026": "trail otevřen a v červnu bez hlášených problémů. Pozor: Rialto Beach je kvůli uzávěře Mora Road do 15. 10. nedostupná, ale Second Beach tato uzávěra neblokuje · Rialto je do 15. 10. zavřená → tohle je náhrada; La Push road (SR-110) otevřená. [ověřeno 12. 9. 2026]"
+  },
+  "r1-035": {
+    "season_note_2026": "NPS hlásí trail k pláži v dobrém stavu; neplatí pro něj uzávěra Mora Road. Pobřežní pokračování dál na jih má v roce 2026 náročné washouty a steep overlands, proto doporučen návrat stejnou cestou · Rialto je do 15. 10. zavřená → tohle je náhrada; La Push road (SR-110) otevřená. [ověřeno 12. 9. 2026]"
+  },
+  "r1-039": {
+    "season_note_2026": "otevřeno celoročně. Leží jižně od Hoh River Bridge; během úplných uzávěr US-101 24.–29. 9., 1.–6. 10. a od 8. 10. ji plánuj z Kalaloch/Quinault/Aberdeen strany · POZOR US-101 most Hoh River (mezi Forks a Kalaloch): úplně zavřený 24.–29. 9., 1.–6. 10., 8.–13. 10.; noční uzávěry 14.–22. 9. 22:30–5:30 — přejeď nejpozději ST 23. 9. přes den, jinak objížďka Hood Canal +4 h. [ověřeno 12. 9. 2026]"
+  },
+  "r1-040": {
+    "season_note_2026": "otevřeno; NPS v únoru 2026 výslovně uvádí Beach 4 jako výborné místo pro tidepooling. Leží jižně od Hoh River Bridge a podléhá stejné logistice jeho uzávěr · POZOR US-101 most Hoh River (mezi Forks a Kalaloch): úplně zavřený 24.–29. 9., 1.–6. 10., 8.–13. 10.; noční uzávěry 14.–22. 9. 22:30–5:30 — přejeď nejpozději ST 23. 9. přes den, jinak objížďka Hood Canal +4 h. [ověřeno 12. 9. 2026]"
+  },
+  "r1-041": {
+    "season_note_2026": "strom podle aktuálního zdroje z roku 2026 stále stojí, ale eroze pokračuje a stav se může po každé velké bouři změnit; přístup z Kalaloch Campground day-use · POZOR US-101 most Hoh River (mezi Forks a Kalaloch): úplně zavřený 24.–29. 9., 1.–6. 10., 8.–13. 10.; noční uzávěry 14.–22. 9. 22:30–5:30 — přejeď nejpozději ST 23. 9. přes den, jinak objížďka Hood Canal +4 h. [ověřeno 12. 9. 2026]"
+  },
+  "r1-044": {
+    "season_note_2026": "South Shore Road zavřená u míle 8 (sesuv) — Graves Creek / Pony Bridge / Enchanted Valley trailhead NEDOSTUPNÉ; North Shore Road k jezeru jede. [ověřeno 12. 9. 2026]",
+    "rank": 3
+  },
+  "r1-046": {
+    "season_note_2026": "South Shore Road zavřená u míle 8 (sesuv) — Graves Creek / Pony Bridge / Enchanted Valley trailhead NEDOSTUPNÉ; North Shore Road k jezeru jede. [ověřeno 12. 9. 2026]",
+    "rank": 3
+  },
+  "r1-047": {
+    "season_note_2026": "otevřeno (areál + Rapids Loop); ostatní stezky ze Staircase zavřené kvůli požáru; NP 30 $. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-001": {
+    "season_note_2026": "vodopád dostupný (parkoviště Madison Falls); Olympic Hot Springs Rd dál zavřená pro auta — pěšky/kolo. [ověřeno 12. 9. 2026]"
+  },
+  "g-r5-003": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · US-199 u Gasquet: stavba, jednosměrka nonstop + ÚPLNÉ uzávěry út–čt 10–14 h — plánuj průjezd mimo. [ověřeno 12. 9. 2026]"
+  },
+  "g-r5-002": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · US-199 u Gasquet: stavba, jednosměrka nonstop + ÚPLNÉ uzávěry út–čt 10–14 h — plánuj průjezd mimo. [ověřeno 12. 9. 2026]"
+  },
+  "g-r5-001": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · US-199 u Gasquet: stavba, jednosměrka nonstop + ÚPLNÉ uzávěry út–čt 10–14 h — plánuj průjezd mimo. [ověřeno 12. 9. 2026]"
+  },
+  "r6-001": {
+    "season_note_2026": "Hwy 1 Westport–Wages Creek jednosměrka nonstop do 12/2026, zdržení do 10 min. [ověřeno 12. 9. 2026]"
   }
 }
