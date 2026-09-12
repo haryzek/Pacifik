@@ -76,7 +76,7 @@
   },
   "r6-020": {
     "fee": "zdarma (Point Reyes nemá vstupné)",
-    "season_note_2026": "otevřeno čt–po; schody k majáku (313) mohou být za silného větru zavřené; zdarma",
+    "season_note_2026": "otevřeno čt–po 10–16 (út–st zavřeno), zdarma; schody (313) zavřené při větru nad 65 km/h — často; NP bez vstupného. [ověřeno 12. 9. 2026]",
     "description": "Maják z roku 1870 na největrnějším a nejmlhavějším místě západního pobřeží, 313 schodů dolů po útesu. Panorama bílého příboje, občas velryby, skoro vždy vítr a mlha.",
     "why_bob": "Nejmlhavější místo severoamerického pobřeží — jít dolů 313 schodů proti větru a nahoře zjistit, že to bylo o tom větru."
   },
@@ -85,7 +85,12 @@
     "season_note_2026": "otevřeno, zdarma; v pozdním podzimu sloní tuleni v zátoce pod útesem",
     "best_time": "odpoledne; v mlze jinak, ale taky dobře",
     "description": "Krátká stezka (3 km tam a zpět) po hřbetu úzkého mysu na konci Point Reyes, s útesy na obě strany a výhledem na Drakes Bay i otevřený Pacifik. Ze zátoky pod útesem bývá slyšet sloní tuleně.",
-    "why_bob": "Chůze po hřebenu mezi dvěma oceány s větrem, který nedá vydechnout — Point Reyes destilované do jedné hodiny."
+    "why_bob": "Chůze po hřebenu mezi dvěma oceány s větrem, který nedá vydechnout — Point Reyes destilované do jedné hodiny.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.9969,-122.9686",
+      "official": "https://www.nps.gov/pore/planyourvisit/hours.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Chimney_Rock_(Point_Reyes)"
+    }
   },
   "r6-022": {
     "fee": "zdarma",
@@ -107,7 +112,12 @@
     "season_note_2026": "otevřeno, zdarma; září–říjen je říje tule elků — samci troubí",
     "best_time": "podvečer, za říje slyšet troubení",
     "description": "Stezka po hřbetu poloostrova k jeho severnímu cípu, 15 km tam a zpět po louce mezi dvěma vodami — Tomales Bay a Pacifik. Stádo tule elků, v září říje. Můžeš jít jen kus, výhledy jsou od začátku.",
-    "why_bob": "Stádo elků na louce mezi dvěma oceány a v září jejich troubení — jít, kam to nohy dají, a otočit se, kdykoli to stačí."
+    "why_bob": "Stádo elků na louce mezi dvěma oceány a v září jejich troubení — jít, kam to nohy dají, a otočit se, kdykoli to stačí.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=38.18919,-122.95408",
+      "official": "https://www.nps.gov/pore/planyourvisit/hours.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Point_Reyes_National_Seashore"
+    }
   },
   "r6-024": {
     "description": "Alej monterejských cypřišů vysazená ve 30. letech k bývalé radiostanici RCA, koruny srostlé v tunel nad silnicí. Zastávka na deset minut u cesty k majáku.",
@@ -138,8 +148,8 @@
     "why_bob": "Město, které nechce být nalezeno — hospoda ze zlaté horečky, mlha, a Bob s knihou u okna jako místní."
   },
   "r6-028": {
-    "fee": "15 $ vstup + 9,50 $ rezervace parkování",
-    "season_note_2026": "otevřeno; rezervace parkování POVINNÁ předem online (gomuirwoods.com), jinak tě nepustí",
+    "fee": "15 $ vstup + 10 $ parkování (rezervace)",
+    "season_note_2026": "parkování POVINNĚ rezervovat předem na gomuirwoods.com (10 $), bez rezervace tě nepustí; vstup 15 $ (America the Beautiful pass platí). [ověřeno 12. 9. 2026]",
     "best_time": "první hodina po otevření nebo poslední před zavřením",
     "description": "Nejbližší pobřežní sekvoje k San Franciscu, staré až 800 let, v úzkém údolí potoka. Krásné a přeplněné; hlavní okruh je prkenný chodník, ticho najdeš až na bočních stezkách (Ben Johnson, Hillside).",
     "why_bob": "Když už, tak brzo ráno a hned odbočit z chodníku nahoru — nebo to nechat a jít do Armstrongu, kde bude sám."
@@ -163,7 +173,8 @@
     "category": "coast",
     "best_time": "západ slunce, nebo noc kvůli světlům mostu",
     "description": "Betonová dělostřelecká baterie z roku 1897 na útesu přímo nad severní věží Golden Gate. Nejbližší a nejvyšší pohled na most, po setmění celé SF osvětlené. Parkoviště malé, dojdi z Conzelman Rd.",
-    "why_bob": "Most z výšky oka orla, po setmění zlatá světla města a za nimi tma oceánu — obraz, u kterého se sedí dlouho."
+    "why_bob": "Most z výšky oka orla, po setmění zlatá světla města a za nimi tma oceánu — obraz, u kterého se sedí dlouho.",
+    "season_note_2026": "otevřeno, NPS vstup zdarma · Mýto Golden Gate 2026: 10,50 $ jen SMĚREM DO SF (na sever zdarma), bez hotovosti — zaplať do 48 h na bayareafastrak.org/paytoll (SPZ + datum), jinak Sixt účtuje +poplatek. [ověřeno 12. 9. 2026]"
   },
   "r6-033": {
     "best_time": "ráno nebo za mlhy, kdy je les prázdný",
@@ -174,7 +185,13 @@
     "category": "mountain"
   },
   "r7-013": {
-    "category": "coast"
+    "category": "coast",
+    "season_note_2026": "otevřeno (Hawk Hill přistupný) · Mýto Golden Gate 2026: 10,50 $ jen SMĚREM DO SF (na sever zdarma), bez hotovosti — zaplať do 48 h na bayareafastrak.org/paytoll (SPZ + datum), jinak Sixt účtuje +poplatek. [ověřeno 12. 9. 2026]",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=37.8290,-122.4964",
+      "official": "https://www.nps.gov/goga/planyourvisit/marin-headlands.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Marin_Headlands"
+    }
   },
   "r7-017": {
     "category": "coast",
@@ -208,15 +225,18 @@
   },
   "r7-029": {
     "category": "coast",
-    "why_bob": "Betonový oblouk z roku 1932 nad propastí do moře — ikona, ale v ranní mlze zase jen tvar a ticho."
+    "why_bob": "Betonový oblouk z roku 1932 nad propastí do moře — ikona, ale v ranní mlze zase jen tvar a ticho.",
+    "season_note_2026": "otevřeno (přelez na most povolen) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
   },
   "r7-030": {
     "category": "coast",
     "description": "Nejvyšší bod Highway 1 v severním Big Suru (cca 170 m nad mořem), turnout s výhledem zpátky na Bixby Bridge a dopředu na pobřeží až k Point Sur. Vítr tu je pořád.",
-    "why_bob": "Pojmenované po větru a oprávněně — stojíš nad celým Big Surem a pod tebou to hučí."
+    "why_bob": "Pojmenované po větru a oprávněně — stojíš nad celým Big Surem a pod tebou to hučí.",
+    "season_note_2026": "otevřeno (popně dráhu) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
   },
   "r7-037": {
-    "why_bob": "Vodopád, který padá rovnou na pláž, kam nikdo nesmí — dokonalý obraz nedosažitelnosti, dvě minuty od parkoviště."
+    "why_bob": "Vodopád, který padá rovnou na pláž, kam nikdo nesmí — dokonalý obraz nedosažitelnosti, dvě minuty od parkoviště.",
+    "season_note_2026": "otevřeno, pozor sezónální uzávěra místa · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
   },
   "r7-041": {
     "best_time": "slunečné odpoledne, voda je nejteplejší",
@@ -253,13 +273,23 @@
     "season_note_2026": "otevřeno; Soda Lake Road je zpevněná jen zčásti, sedan ok za sucha; žádná pumpa ani voda, tankuj v Taft nebo Santa Margarita",
     "best_time": "podvečer a noc — jedna z nejtemnějších obloh v Kalifornii",
     "description": "Plochá travnatá pánev mezi dvěma pohořími, uprostřed bílé solné jezero Soda Lake a po celé délce jizva zlomu San Andreas (nejlíp vidět na Wallace Creek). V září žlutá a vyprahlá, bez lidí, bez signálu, s temnou oblohou.",
-    "why_bob": "Nejprázdnější místo v Kalifornii: sůl, tráva, zlom San Andreas pod nohama a v noci Mléčná dráha — Bobova poušť dvě hodiny od Big Suru."
+    "why_bob": "Nejprázdnější místo v Kalifornii: sůl, tráva, zlom San Andreas pod nohama a v noci Mléčná dráha — Bobova poušť dvě hodiny od Big Suru.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.1366,-119.7900",
+      "official": "https://www.blm.gov/visit/carrizo-plain-national-monument",
+      "wiki": "https://en.wikipedia.org/wiki/Carrizo_Plain_National_Monument"
+    }
   },
   "r8-001": {
     "why_bob": "Zlaté louky končící kolmo v oceánu, prázdné zátoky a kopce na výstup — Bluff Trail je dvě hodiny, na které nezapomene."
   },
   "r8-002": {
-    "why_bob": "Tuny tuleňů chrápajících na pláži u silnice, zdarma a bez plotu — absurdní a monumentální zároveň."
+    "why_bob": "Tuny tuleňů chrápajících na pláži u silnice, zdarma a bez plotu — absurdní a monumentální zároveň.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=35.6511000,-121.2843500",
+      "official": "https://elephantseal.org/",
+      "wiki": "https://en.wikipedia.org/wiki/Piedras_Blancas_Light_Station"
+    }
   },
   "r8-004": {
     "season_note_2026": "otevřeno; prameny jsou vlažné (cca 35 °C), malé a kalné, spíš zajímavost než koupel; stezka 1,5 km",
@@ -318,7 +348,12 @@
     "why_bob": "Surfařská chatka z palmových listů na skále (1946), příboj a západ slunce — místo, kde vznikl kalifornský surf a dodnes to tak vypadá."
   },
   "r8b-004": {
-    "why_bob": "Nudistická pláž pod 100m útesy, přístup strmou pěšinou od gliderportu — nejosamělejší koupání v San Diegu, nahý a sám, jak to má rád."
+    "why_bob": "Nudistická pláž pod 100m útesy, přístup strmou pěšinou od gliderportu — nejosamělejší koupání v San Diegu, nahý a sám, jak to má rád.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.88916,-117.25316",
+      "official": "https://www.sandiego.gov/lifeguards/beaches/blacks",
+      "wiki": "https://en.wikipedia.org/wiki/Black%27s_Beach"
+    }
   },
   "r8b-006": {
     "fee": "20 $ za auto (America the Beautiful pass platí)",
@@ -525,7 +560,7 @@
   },
   "r9-015": {
     "fee": "30 $ za auto (Death Valley NP, 7 dní)",
-    "season_note_2026": "otevřeno; z LA 4–5 h, spíš jako noc v Death Valley (Stovepipe Wells / Furnace Creek) než výlet; v říjnu 30–35 °C ve dne, nádherně v noci; tankuj v Baker/Beatty",
+    "season_note_2026": "otevřeno; z LA 4–5 h, spíš jako noc v Death Valley (Stovepipe Wells / Furnace Creek) než výlet; v říjnu 30–35 °C ve dne, nádherně v noci; tankuj v Baker/Beatty · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]",
     "why_bob": "Zlaté badlands v prvním světle, kde Antonioni točil Zabriskie Point — pokud do Death Valley pojede, tohle je svítání, kvůli kterému vstane."
   },
   "r9-016": {
@@ -536,7 +571,12 @@
     "why_bob": "Deset minut lanovkou z pouště do jedlového lesa o 15 °C chladnějšího — a nahoře ticho a stezky, když se odejde od stanice."
   },
   "r9-019": {
-    "why_bob": "Černý kužel v lávovém poli u Route 66, hodina nahoru po sypké strusce — a z kráteru dokola nic, jen ticho a Mojave."
+    "why_bob": "Černý kužel v lávovém poli u Route 66, hodina nahoru po sypké strusce — a z kráteru dokola nic, jen ticho a Mojave.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.6067,-115.7314",
+      "official": "https://www.blm.gov/visit/amboy-crater",
+      "wiki": "https://en.wikipedia.org/wiki/Amboy_Crater"
+    }
   },
   "r9-020": {
     "why_bob": "Neon ROY'S z roku 1959 nad prázdnou pumpou v Amboy, které má čtyři obyvatele — nejčistší Hopper celé cesty, zvlášť za soumraku.",
@@ -559,13 +599,23 @@
     }
   },
   "r9b-001": {
-    "why_bob": "Přehrada z roku 1900 mezi balvany, v říjnu často jen bahno — ale petroglyfy na skále a okruh mezi joshua stromy stojí za hodinu."
+    "why_bob": "Přehrada z roku 1900 mezi balvany, v říjnu často jen bahno — ale petroglyfy na skále a okruh mezi joshua stromy stojí za hodinu.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.03083,-116.14611",
+      "official": "https://www.nps.gov/jotr/planyourvisit/hiking.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Barker_Dam"
+    }
   },
   "r9b-002": {
     "why_bob": "Balvan s vydutými očními důlky u silnice — dvě minuty, ale ranní světlo na žule kolem je důvod jít dál po okruhu."
   },
   "r9b-003": {
-    "why_bob": "Nejvyšší bod, kam se v parku dojde po stezce: 320 m výstupu a celá poušť dokola, San Jacinto na západě — nejlepší hodina v Joshua Tree."
+    "why_bob": "Nejvyšší bod, kam se v parku dojde po stezce: 320 m výstupu a celá poušť dokola, San Jacinto na západě — nejlepší hodina v Joshua Tree.",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.98611,-116.13472",
+      "official": "https://www.nps.gov/jotr/planyourvisit/hiking.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Ryan_Mountain"
+    }
   },
   "r9b-004": {
     "why_bob": "Palmy u pramene na jihu parku, kde skoro nikdo nejezdí — zbytky dolu, ticho a přechod z Mojave do Colorado Desert."
@@ -634,5 +684,291 @@
     "lat": 37.7827,
     "lng": -122.4638,
     "season_note_2026": "otevřeno denně; raw data měla souřadnice Fillmoru, opraveno na 506 Clement St"
+  },
+  "r4-031": {
+    "season_note_2026": "North Entrance Road je podle NPS k 17. 8. 2026 otevřená. Standardně se uzavírá se zimním počasím, často nejpozději kolem 1. 11., ale časný sníh je možný. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r3-068": {
+    "season_note_2026": "NPS k 17. 8. 2026 uvádí všechny ostatní parkové trails kromě specificky uzavřených přístupů jako otevřené; Watchman není mezi uzávěrami. Podzimní sníh může trail rychle změnit. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r3-069": {
+    "season_note_2026": "NPS Current Conditions k 17. 8. 2026 uvádějí Cloudcap Road jako otevřenou, ale East Rim Drive je jižně od Phantom Ship Overlook kvůli rekonstrukci přerušená. Přijet od North Junction a neplánovat celý okruh. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-029": {
+    "season_note_2026": "Cloudcap Road je podle NPS Current Conditions z 17. 8. 2026 otevřená. Na přelomu září a října může být mezi prvními úseky omezenými sněhem nebo ledem. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-026": {
+    "season_note_2026": "K 17. 8. 2026 je West Rim Drive otevřený a trail není mezi uzavřenými trasami. Před říjnovou túrou ověřit sníh a trail status. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-030": {
+    "season_note_2026": "K 17. 8. 2026 NPS uvádí relevantní část East Rim Drive od North Junction otevřenou a Mount Scott Trail není na seznamu uzávěr. Přístup může ukončit časný sníh ještě před koncem plánované cesty. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r3-067": {
+    "season_note_2026": "NPS Current Conditions aktualizované 17. 8. 2026 uvádějí přístup k Rim Village, Highway 62 a West Rim Drive jako otevřený. Cleetwood Cove Trail je celý rok 2026 zavřený, takže není veřejný přístup k hladině ani koupání; první sníh může změnit stav silnic kdykoli. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-027": {
+    "season_note_2026": "NPS Current Conditions aktualizované 17. 8. 2026 uvádějí West Rim Drive jako otevřený. Rim roads se standardně uzavírají nejpozději kolem 1. 11., ale první významný sníh může přijít dřív. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-023": {
+    "season_note_2026": "Podle NPS Current Conditions z 17. 8. 2026 je West Rim Drive otevřen a trail patří mezi přístupné parkové trasy. Časný říjnový sníh může situaci rychle změnit. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-025": {
+    "season_note_2026": "K 17. 8. 2026 NPS uvádí parkové trails otevřené s výjimkou výslovně uzavřených lokalit; Garfield Peak mezi nimi není. Po prvním sněhu se podmínky mohou změnit během hodin. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-028": {
+    "season_note_2026": "NPS k 17. 8. 2026 uvádí East Rim Drive sjízdný od North Junction až k Phantom Ship Overlook. Úsek dále směrem k Park Headquarters je kvůli stavbě uzavřen, takže se odsud musí stejnou cestou vrátit. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "g-r4-010": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-032": {
+    "season_note_2026": "Hwy 62 a Mazama area jsou podle NPS Current Conditions přístupné; Annie Creek Canyon Trail není mezi uzavřenými trasami. Na podzim ověřit případný sníh. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "g-r4-009": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r4-033": {
+    "season_note_2026": "Hwy 62 je podle NPS Current Conditions otevřená a Godfrey Glen Trail není na seznamu uzávěr. Stav po časném říjnovém sněhu ověřit před cestou. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
+  },
+  "r7-034": {
+    "season_note_2026": "otevřeno (síňa s vyhlídkou) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r7-035": {
+    "season_note_2026": "otevřeno (napiš malo), koncerty dle programu · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r7-036": {
+    "season_note_2026": "otevřeno (bezdňrkní), památka vyliděna · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r7-033": {
+    "season_note_2026": "otevřeno (klidná pláž mimo ruch) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r7-042": {
+    "season_note_2026": "tùrnusy faktury (kontrola nutná) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r7-039": {
+    "season_note_2026": "otevřeno · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "gem-021": {
+    "season_note_2026": "K 7. 9. 2026 je po srpnových požárních omezeních znovu otevřeno. Přístup ze severu po Highway 1 funguje, ale stav silnice jižně od Big Sur se v roce 2026 mění kvůli požárům a uzávěrám — kontrola v den jízdy je nutná. · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r7-040": {
+    "season_note_2026": "otevřeno · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r7-038": {
+    "season_note_2026": "otevřeno · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "g-r7-022": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "g-r7-023": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+  },
+  "r1-024": {
+    "season_note_2026": "otevřeno; lodge vyhořela 2023 — nahoře jen mobilní WC a informační buňka, ŽÁDNÁ pitná voda ani jídlo (stavba sítí do srpna 2026), vezmi vodu; NP 30 $. [ověřeno 12. 9. 2026]"
+  },
+  "r1-023": {
+    "season_note_2026": "otevřeno; lodge vyhořela 2023 — nahoře jen mobilní WC a informační buňka, ŽÁDNÁ pitná voda ani jídlo (stavba sítí do srpna 2026), vezmi vodu; NP 30 $. [ověřeno 12. 9. 2026]"
+  },
+  "r1-025": {
+    "season_note_2026": "otevřeno; lodge vyhořela 2023 — nahoře jen mobilní WC a informační buňka, ŽÁDNÁ pitná voda ani jídlo (stavba sítí do srpna 2026), vezmi vodu; NP 30 $. [ověřeno 12. 9. 2026]"
+  },
+  "r5-019": {
+    "season_note_2026": "permit na Davison Rd/Gold Bluffs jen 15. 5.–15. 9. — Bob přijede PO 15. 9., permit NENÍ potřeba; Davison Rd 10 km štěrku + 2 brody (v září mělké), sedan ok; day-use 12 $. [ověřeno 12. 9. 2026]"
+  },
+  "r5-020": {
+    "season_note_2026": "permit na Davison Rd/Gold Bluffs jen 15. 5.–15. 9. — Bob přijede PO 15. 9., permit NENÍ potřeba; Davison Rd 10 km štěrku + 2 brody (v září mělké), sedan ok; day-use 12 $. [ověřeno 12. 9. 2026]"
+  },
+  "r6-009": {
+    "season_note_2026": "permit na Davison Rd/Gold Bluffs jen 15. 5.–15. 9. — Bob přijede PO 15. 9., permit NENÍ potřeba; Davison Rd 10 km štěrku + 2 brody (v září mělké), sedan ok; day-use 12 $. [ověřeno 12. 9. 2026]"
+  },
+  "g-r9-014": {
+    "road_access": "gravel_ok_sedan",
+    "season_note_2026": "Lower Wildrose Road ZNOVU OTEVŘENA 2. 6. 2026 po 3 letech (štěrk, auta do 7,6 m); NP 30 $. [ověřeno 12. 9. 2026]",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.24673,-117.07551",
+      "official": "https://www.nps.gov/deva/planyourvisit/conditions.htm",
+      "wiki": null
+    }
+  },
+  "g-r9-009": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]"
+  },
+  "x-019": {
+    "season_note_2026": "otevřeno; v říjnu jen brzo ráno nebo za soumraku; · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]"
+  },
+  "g-r9-010": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]"
+  },
+  "g-r9-013": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]"
+  },
+  "g-r9-012": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]"
+  },
+  "x-020": {
+    "season_note_2026": "otevřeno, jednosměrka z jihu na sever; karavany ne; · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]"
+  },
+  "g-r9-011": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]"
+  },
+  "x-017": {
+    "season_note_2026": "v říjnu ve dne 30–38 °C, voda s sebou; z LA 4,5 h — spát ve Stovepipe Wells / Furnace Creek (drahé) nebo Beatty NV (levné motely); · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.2297,-116.7674",
+      "official": "https://www.nps.gov/deva/planyourvisit/conditions.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Badwater_Basin"
+    }
+  },
+  "x-018": {
+    "season_note_2026": "otevřeno; posledních 400 m strmé, karavany ne, sedan ok; · DV stav 4. 9. 2026: Scotty's Castle a Darwin Falls zavřeny, Titus Canyon zavírá 1. 10. 2026 (oprava), jižní Badwater Rd volný štěrk na krajnicích; ostatní hlavní silnice otevřené; NP 30 $/7 dní. [ověřeno 12. 9. 2026]",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=36.2205,-116.7264",
+      "official": "https://www.nps.gov/deva/planyourvisit/conditions.htm",
+      "wiki": null
+    }
+  },
+  "r4-020": {
+    "season_note_2026": "prohlídky jeskyně jedou (sezóna do začátku listopadu), rezervace recreation.gov nebo pár lístků na místě; Chateau (hotel) zavřen od 2018, neurčito. [ověřeno 12. 9. 2026]"
+  },
+  "r4-021": {
+    "season_note_2026": "prohlídky jeskyně jedou (sezóna do začátku listopadu), rezervace recreation.gov nebo pár lístků na místě; Chateau (hotel) zavřen od 2018, neurčito. [ověřeno 12. 9. 2026]"
+  },
+  "r4-005": {
+    "fee": "5 $ / NW Forest Pass (bez hotovosti)",
+    "season_note_2026": "otevřeno, jen den (východ–západ slunce); silnice 3401 k parkovišti otevřená (v zimě se zavírá, pak 4 km pěšky); 5 $ kartou/online — hotovost neberou; nahé koupání tolerované, ale davy o víkendu. [ověřeno 12. 9. 2026]"
+  },
+  "r4-004": {
+    "season_note_2026": "otevřeno, 1,3 km stezka, cca 200 schodů; vyhlídka opravena; NW Forest Pass 5 $. [ověřeno 12. 9. 2026]"
+  },
+  "g-r7-001": {
+    "season_note_2026": "rychlé mapování — hodiny, ceny a stav cesty neověřené · Mýto Golden Gate 2026: 10,50 $ jen SMĚREM DO SF (na sever zdarma), bez hotovosti — zaplať do 48 h na bayareafastrak.org/paytoll (SPZ + datum), jinak Sixt účtuje +poplatek. [ověřeno 12. 9. 2026]"
+  },
+  "r2-002": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=46.2989,-124.078",
+      "official": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+      "wiki": "https://en.wikipedia.org/wiki/North_Head_Light"
+    }
+  },
+  "r2-024": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.7411,-123.9617",
+      "official": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=142",
+      "wiki": null
+    }
+  },
+  "r2-035": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.9368,-123.8586",
+      "official": "https://www.fs.usda.gov/r06/siuslaw",
+      "wiki": "https://en.wikipedia.org/wiki/Drift_Creek_Falls"
+    }
+  },
+  "r2-056": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=45.2711,-121.7391",
+      "official": "https://www.fs.usda.gov/r06/mthood",
+      "wiki": "https://en.wikipedia.org/wiki/Trillium_Lake"
+    }
+  },
+  "r2-058": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=44.504,-123.5514",
+      "official": "https://www.fs.usda.gov/r06/siuslaw",
+      "wiki": "https://en.wikipedia.org/wiki/Marys_Peak"
+    }
+  },
+  "r4-017": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.4684,-122.9067",
+      "official": "https://www.blm.gov/visit/table-rocks-area-critical-environmental-concern",
+      "wiki": "https://en.wikipedia.org/wiki/Table_Rocks"
+    }
+  },
+  "r5-005": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.789697,-124.0847",
+      "official": "https://www.nps.gov/redw/planyourvisit/jedediah-smith-redwoods-state-park.htm",
+      "wiki": "https://en.wikipedia.org/wiki/Jedediah_Smith_Redwoods_State_Park"
+    }
+  },
+  "r8-014": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.004000,-118.849000",
+      "official": "https://www.parks.ca.gov/?page_id=633",
+      "wiki": "https://en.wikipedia.org/wiki/El_Matador_State_Beach"
+    }
+  },
+  "g-r5-029": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.4661,-121.514",
+      "official": "https://www.nps.gov/lavo/planyourvisit/conditions.htm",
+      "wiki": null
+    }
+  },
+  "g-r9-016": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=34.3423652,-117.1962852",
+      "official": "https://www.fs.usda.gov/r05/sanbernardino/recreation",
+      "wiki": null
+    }
+  },
+  "r5-009": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.79725,-124.0551",
+      "official": "https://www.fs.usda.gov/r05/sixrivers",
+      "wiki": null
+    }
+  },
+  "r5-010": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.741672,-123.980779",
+      "official": "https://www.fs.usda.gov/r05/sixrivers",
+      "wiki": null
+    }
+  },
+  "r3-066": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=42.1183,-124.1748",
+      "official": "https://www.fs.usda.gov/r06/rogue-siskiyou",
+      "wiki": null
+    }
+  },
+  "r5-012": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.79725,-124.0551",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/U.S._Route_199"
+    }
+  },
+  "r5-061": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=40.9396,-123.6314",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/California_State_Route_299"
+    }
+  },
+  "r5-062": {
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=41.1879,-123.7101",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/California_State_Route_96"
+    }
+  },
+  "r1-037": {
+    "season_note_2026": "Upper Hoh Road opravena a otevřená (od 5/2025 po povodňovém sesuvu); NP 30 $; na parkovišti Hoh o víkendu fronta — ráno. [ověřeno 12. 9. 2026]"
+  },
+  "r1-038": {
+    "season_note_2026": "Upper Hoh Road opravena a otevřená (od 5/2025 po povodňovém sesuvu); NP 30 $; na parkovišti Hoh o víkendu fronta — ráno. [ověřeno 12. 9. 2026]"
+  },
+  "r2-052": {
+    "season_note_2026": "timed permit (2 $, recreation.gov) jen 22. 5.–7. 9. 2026 — Bob přijede PO, permit NENÍ potřeba; parkoviště I-84 exit 31 volně, ráno prázdnější. [ověřeno 12. 9. 2026]"
+  },
+  "r1-056": {
+    "fee": "2 $ rezervace + 5 $ NW Forest Pass",
+    "season_note_2026": "otevřeno 22. 5.–31. 10., 9–17 h, POVINNÁ rezervace na recreation.gov (1 lístek/auto); čelovka + teplá vrstva (uvnitř 5 °C). [ověřeno 12. 9. 2026]"
+  },
+  "r1-031": {
+    "season_note_2026": "resort a bazény v provozu do 1. 11. 2026; bazény pro veřejnost (cca 20 $, časové sloty, koupit online nebo na místě); Sol Duc Road v NP — 30 $. [ověřeno 12. 9. 2026]"
   }
 }

@@ -1,0 +1,44 @@
+g-r1-014	429	Scarecrow Video	https://scarecrowvideo.org/
+g-r5-029	404	Bumpass Hell Trailhead	https://www.nps.gov/lavo/planyourvisit/bumpass-hell.htm
+g-r7-022	403	Jade Cove	https://www.visitcalifornia.com/experience/jade-cove/
+g-r8-017	403	Pann's Restaurant	https://panns.com/
+g-r8a-007	403	Lizard's Mouth	https://www.fs.usda.gov/r05/lospadres
+g-r8b-016	403	Kwaaymii Point	https://www.fs.usda.gov/cleveland
+g-r9-014	404	Wildrose Charcoal Kilns	https://www.nps.gov/deva/learn/historyculture/charcoal-kilns.htm
+g-r9-016	403	Deep Creek Hot Springs	https://www.fs.usda.gov/recarea/sbnf/recarea/?recid=34152	-> http://www.fs.usda.gov/r05/sanbernardino/recreation
+gem-011	403	Gallery Bookshop	https://gallerybookshop.com/
+gem-015	307	City Lights Booksellers & Publishers	https://citylights.com/
+gem-016	403	Amoeba Music — San Francisco	https://www.amoeba.com/our-stores/
+gem-029	403	Amoeba Music — Hollywood	https://www.amoeba.com/our-stores/
+r1-003	202	Easy Street Records & Cafe	https://easystreetonline.com/
+r2-002	404	North Head Lighthouse	https://parks.wa.gov/about/news-center/field-guide-blog/north-head-lighthouse-cape-disappointment
+r2-019	403	Haystack Rock — Cannon Beach	https://www.ci.cannon-beach.or.us/HRAP
+r2-024	404	Neahkahnie Mountain Viewpoint — US-101	https://www.oregon.gov/odot/regions/pages/region-2.aspx
+r2-035	404	Drift Creek Falls Trail	https://www.fs.usda.gov/r06/siuslaw/recreation/drift-creek-falls-trail-1378
+r2-043	403	Powell's City of Books	https://www.powells.com/locations/powells-city-of-books
+r2-044	403	Hollywood Theatre	https://hollywoodtheatre.org/
+r2-056	404	Trillium Lake	https://www.fs.usda.gov/r06/mthood/recreation/trillium-lake
+r2-058	404	Marys Peak	https://www.fs.usda.gov/r06/siuslaw/recreation/marys-peak
+r3-066	403	Redwood Nature Trail — northernmost coast redwoods	https://www.fs.usda.gov/rogue-siskiyou	-> https://www.fs.usda.gov/r06/rogue-siskiyou
+r4-017	404	Upper Table Rock	https://www.blm.gov/visit/table-rocks
+r5-001	503	Battery Point Lighthouse	https://www.delnortehistory.org/lighthouse/
+r5-005	404	Stout Memorial Grove	https://www.nps.gov/places/stout-grove.htm
+r5-009	403	Forks River Access and Boat Ramp	https://www.fs.usda.gov/r06/sixrivers	-> http://www.fs.usda.gov/r05/sixrivers
+r5-010	403	Sand Camp — South Fork Smith River	https://www.fs.usda.gov/r06/sixrivers	-> https://www.fs.usda.gov/r05/sixrivers
+r5-012	fetch failed	Smith River Scenic Byway — US 199	https://quickmap.dot.ca.gov/
+r5-028	403	Trinidad Head Loop	https://www.trinidad.ca.gov/
+r5-061	fetch failed	CA-299 — Trinity River Scenic Drive	https://quickmap.dot.ca.gov/
+r5-062	fetch failed	CA-96 — Klamath River Canyon	https://quickmap.dot.ca.gov/
+r6-021	404	Point Reyes – Chimney Rock	https://www.nps.gov/pore/planyourvisit/chimneyrock.htm
+r6-023	404	Point Reyes – Tomales Point Trail (Tule Elk)	https://www.nps.gov/pore/planyourvisit/tomalespoint.htm
+r7-013	404	Marin Headlands – Hawk Hill	https://www.nps.gov/goga/learn/historyculture/wlc-golden-gate-headlands.htm
+r7-050	404	Carrizo Plain National Monument	https://www.blm.gov/carrizo
+r8-002	404	Piedras Blancas Elephant Seal Rookery	https://www.blm.gov/visit/piedras-blancas-light
+r8-014	404	El Matador State Beach	https://www.malibucity.org/194/State-Parks
+r8b-004	404	Black's Beach	https://www.sandiego.gov/park-and-recreation/parks-regional/coastal
+r9-019	404	Amboy Crater (Mojave)	https://www.nps.gov/moja/planyourvisit/amboy-crater.htm
+r9b-001	404	Barker Dam	https://www.nps.gov/jotr/planyourvisit/barker-dam.htm
+r9b-003	404	Ryan Mountain	https://www.nps.gov/thingstodo/ryan-mountain.htm
+x-001	fetch failed	Crystal Pier Hotel & Cottages (Pacific Beach)	https://www.crystalpier.com/
+x-017	404	Badwater Basin (Death Valley)	https://www.nps.gov/deva/planyourvisit/badwater-basin.htm
+x-018	404	Dante's View (Death Valley)	https://www.nps.gov/deva/planyourvisit/dantes-view.htm
