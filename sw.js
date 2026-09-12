@@ -1,6 +1,6 @@
 /* Pacifik service worker — offline-first.
    CACHE_V bumpni při každé změně dat/appky (scripts/sw-build.js to dělá automaticky). */
-const CACHE_V = 'pacifik-bc63a2ad';
+const CACHE_V = 'pacifik-370ce6e7';
 const STATIC = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png'];
 const DATA = ['./data/places.json', './data/loops.json'];
 const CDN = ['https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
@@ -38,13 +38,14 @@ self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-  const isData = url.pathname.endsWith('.json') && url.pathname.includes('/data/');
+  // network-first: data, index.html (update z motelu dorazí hned, offline fallback z cache)
+  const isData = (url.pathname.endsWith('.json') && url.pathname.includes('/data/')) || url.pathname.endsWith('/') || url.pathname.endsWith('/index.html');
   if (isData) {
     // network-first (update z motelu dorazí), fallback cache
     e.respondWith((async () => {
       const c = await caches.open(CACHE_V);
       try { const r = await fetch(req); if (r.ok) c.put(req, r.clone()); return r; }
-      catch (_) { return (await c.match(req)) || new Response('[]', { headers: { 'Content-Type': 'application/json' } }); }
+      catch (_) { return (await c.match(req, { ignoreSearch: true })) || (await c.match('./index.html')) || new Response('[]', { headers: { 'Content-Type': 'application/json' } }); }
     })());
     return;
   }
