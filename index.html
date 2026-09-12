@@ -137,6 +137,26 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .doc .v a{color:var(--water);text-decoration:none}
 .mantra{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--accent);text-align:center;padding:14px;border:1px dashed rgba(217,164,65,.4);border-radius:12px;margin:10px 0}
 .prak li{margin:6px 0;font-size:14px}
+.sub-tabs{display:flex;gap:6px;padding:8px 0 4px}
+.sub-tabs button{flex:1;padding:7px 0;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden}
+.sub-tabs button.on{background:var(--accent);color:#1a1408;font-weight:600;border-color:var(--accent)}
+.pl{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}
+.pl .name{cursor:pointer}.pl .done .name{text-decoration:line-through;color:var(--dim)}
+.pl input[type=checkbox]{width:20px;height:20px;accent-color:var(--ok)}
+.pl .x{color:var(--dim);padding:4px 8px}
+.day{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:10px 0}
+.day h3{margin:0 0 6px;font:600 12px var(--mono);color:var(--accent);display:flex;justify-content:space-between}
+.day input{margin-bottom:6px}
+.day .vis{font:11px var(--mono);color:var(--muted);margin-bottom:6px}
+.spend-form{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0}
+.spend-form input,.spend-form select{padding:9px;border-radius:8px;background:var(--bg);color:var(--text);border:1px solid var(--line);font:14px var(--ui)}
+.spend-form .full{grid-column:1/3}
+.stat{display:flex;gap:8px;margin:10px 0}
+.stat div{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.stat b{display:block;font:600 18px var(--mono)}.stat small{color:var(--muted);font:11px var(--mono)}
+.stat .over b{color:var(--warn)} .stat .under b{color:var(--ok)}
+.sp{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px;align-items:center}
+.sp .amt{font:600 14px var(--mono);width:70px}.sp .cat{color:var(--muted);font:11px var(--mono);width:60px}.sp .note{flex:1}
 #map{position:fixed;left:0;right:0;top:0;bottom:0;z-index:5;background:#0b1015;display:none}
 #map.on{display:block}
 .mapctl{position:fixed;right:10px;z-index:15;display:flex;flex-direction:column;gap:6px}
@@ -229,6 +249,30 @@ function swimOK(p){ return p.swim && p.swim.possible && ['allowed','tolerated'].
 let toastT; function toast(msg, ms=2200){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'), ms); }
 function pina(){ const p=$('#pina'); p.style.display='flex'; p.style.animation='none'; void p.offsetWidth; p.style.animation=''; setTimeout(()=>p.style.display='none',1500); }
 
+// ====================== SLUNCE (NOAA zjednodušeně) ======================
+function sunTimes(lat, lng, date = new Date()){
+  const rad = Math.PI/180, J1970 = 2440588, J2000 = 2451545;
+  const toJ = (d) => d.valueOf()/864e5 - 0.5 + J1970, fromJ = (j) => new Date((j + 0.5 - J1970) * 864e5);
+  const d = toJ(date) - J2000, n = Math.round(d - 0.0009 + lng/360), ds = 0.0009 - lng/360 + n;
+  const M = rad * (357.5291 + 0.98560028 * ds), C = rad * (1.9148*Math.sin(M) + 0.02*Math.sin(2*M) + 0.0003*Math.sin(3*M));
+  const L = M + C + rad*102.9372 + Math.PI, dec = Math.asin(Math.sin(L)*Math.sin(rad*23.4397));
+  const Jnoon = J2000 + ds + 0.0053*Math.sin(M) - 0.0069*Math.sin(2*L);
+  const h0 = rad * -0.833, phi = rad*lat;
+  const w = Math.acos((Math.sin(h0) - Math.sin(phi)*Math.sin(dec)) / (Math.cos(phi)*Math.cos(dec)));
+  const Jset = J2000 + (w/(2*Math.PI)) - lng/360 + n + 0.0009 + 0.0053*Math.sin(M) - 0.0069*Math.sin(2*L);
+  return { sunset: fromJ(Jset), sunrise: fromJ(Jnoon - (Jset - Jnoon)) };
+}
+function sunTxt(){
+  if (!S.pos) return '';
+  try {
+    const now = new Date(); let { sunset, sunrise } = sunTimes(S.pos.lat, S.pos.lng, now);
+    const hm = (d) => d.toLocaleTimeString('cs-CZ', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Los_Angeles' });
+    if (now < sunset) { const min = Math.round((sunset - now)/60000); return `🌇 ${hm(sunset)} −${Math.floor(min/60)}:${String(min%60).padStart(2,'0')}`; }
+    const t = sunTimes(S.pos.lat, S.pos.lng, new Date(now.getTime() + 864e5));
+    return `🌅 ${hm(t.sunrise)}`;
+  } catch(e) { return ''; }
+}
+
 // ====================== ODPOČET ======================
 function countdown(){
   const now = new Date(); const d = (a,b)=>Math.ceil((a-b)/864e5);
@@ -236,7 +280,7 @@ function countdown(){
   if (now < TRIP.start) t = `za ${d(TRIP.start, now)} d`;
   else if (now <= TRIP.end) t = `den ${d(now, TRIP.start)+1}/${TRIP.days}`;
   else t = 'doma';
-  $('#countdown').textContent = t;
+  $('#countdown').textContent = t + (sunTxt() ? ' · ' + sunTxt() : '');
 }
 
 // ====================== POLOHA ======================
@@ -246,6 +290,7 @@ function setPos(lat, lng, mode){
   if (mode === 'gps') { S.store.lastPos = { lat, lng, t: Date.now() }; save(); }
   const g = $('#gpsBtn'); g.className = 'gps ' + (mode==='gps' ? 'on' : mode==='sim' ? 'sim' : '');
   $('#gpsTxt').textContent = mode==='gps' ? 'GPS' : mode==='sim' ? 'SIM' : mode==='last' ? 'POSL.' : '—';
+  countdown();
   if (S.tab === 'map' && M.map) { drawMe(); drawMarkers(); } else render();
 }
 function startGPS(){
@@ -317,12 +362,13 @@ function render(){
   renderNav();
   $('#toolbar').innerHTML = S.tab==='near' ? toolbarNear() : '';
   const m = $('#main');
+  if (S.tab !== 'map') hideMap();
   if (S.tab === 'near') renderNear(m);
   else if (S.tab === 'loops') renderLoops(m);
   else if (S.tab === 'docs') renderDocs(m);
+  else if (S.tab === 'plan') renderPlan(m);
   else if (S.tab === 'map') { renderMap(m); return; }
   else m.innerHTML = `<div class="soon">${{loops:'Odbočky',map:'Mapa',plan:'Plán & deník',docs:'Papíry'}[S.tab]} — brzy. 🥥</div>`;
-  hideMap();
 }
 function renderNav(){
   const tabs = [['near','📍','Kolem mě'],['loops','🔁','Odbočky'],['map','🗺','Mapa'],['plan','📝','Plán'],['docs','📄','Papíry']];
@@ -333,6 +379,7 @@ function toolbarNear(){
     ${RANGES.map(r=>`<button class="chip range ${S.range===r?'on':''}" data-range="${r}">${r===Infinity?'vše S→J':r+' km'}</button>`).join('')}
     <button class="chip ${S.south?'on':''}" data-toggle="south">⬇ jen dál po trase</button>
     <button class="chip ${S.rank1?'on':''}" data-toggle="rank1">⭐ jen top</button>
+    <button class="chip" data-surprise="1">🎲 překvap mě</button>
   </div>
   <div style="padding:6px 0 2px"><input type="search" id="q" placeholder="🔍 hledat místo, město, tag…" value="${esc(S.q)}" style="padding:7px 10px;font-size:14px"></div>
   <div class="chips">${FILTERS.map(f=>`<button class="chip ${f.cls||''} ${S.filters.has(f.id)?'on':''}" data-filter="${f.id}">${f.l}</button>`).join('')}</div>`;
@@ -417,6 +464,105 @@ function openLoop(id){
     </div>`;
   $('#sheet').classList.add('open');
   $('#close').onclick = closeDetail;
+}
+
+// ====================== PLÁN / DENÍK / ÚTRATA / ZÁLOHA ======================
+const SPEND_CATS = { nocleh:'🛏', jidlo:'🍽', benzin:'⛽', vstupy:'🎫', ostatni:'📦' };
+const BUDGET = 4300, CZK = 21;
+const today = () => new Date().toISOString().slice(0,10);
+const fmtDate = (d) => { const [y,m,dd] = d.split('-'); return `${+dd}. ${+m}.`; };
+function renderPlan(m){
+  S.sub = S.sub || 'plan';
+  const tabs = [['plan','📝 Plán'],['diary','📓 Deník'],['spend','💵 Útrata'],['backup','💾 Záloha']];
+  $('#count').textContent = '';
+  let html = `<div class="sub-tabs">${tabs.map(t=>`<button data-sub="${t[0]}" class="${S.sub===t[0]?'on':''}">${t[1]}</button>`).join('')}</div>`;
+  if (S.sub === 'plan') html += planHtml();
+  else if (S.sub === 'diary') html += diaryHtml();
+  else if (S.sub === 'spend') html += spendHtml();
+  else html += backupHtml();
+  m.innerHTML = html;
+  bindPlan();
+}
+function planHtml(){
+  const items = S.store.plan.map(id => S.places.find(p => p.id === id)).filter(Boolean).sort((a,b) => a.spineIndex - b.spineIndex);
+  if (!items.length) return '<div class="empty">Plán je prázdný.<br><small>➕ Do plánu v detailu místa. Řadí se sever → jih po trase.</small></div>';
+  const done = S.store.planDone || {};
+  return items.map(p => `<div class="pl ${done[p.id]?'done':''}">
+    <input type="checkbox" data-done="${p.id}" ${done[p.id]?'checked':''}>
+    <div class="body" style="flex:1"><div class="name" data-id="${p.id}">${esc(p.name)} <span class="star">${'★'.repeat(4-p.rank)}</span></div>
+      <div class="meta"><span>${esc((p.nearest_town||'').split(',')[0])}</span>${S.pos ? `<span>${fmtKm(hav(S.pos,p))} ${dirName(bearing(S.pos,p))}</span>` : ''}${swimOK(p)?'<span class="w">💧</span>':''}</div></div>
+    <button class="x" data-unplan="${p.id}">✕</button></div>`).join('') + `<div class="sub" style="padding:10px 0">${items.length} míst · hotovo ${items.filter(p=>done[p.id]).length}</div>`;
+}
+function diaryHtml(){
+  const d = S.store.diary || {};
+  const days = []; const start = new Date(TRIP.start), end = new Date(Math.min(Date.now(), TRIP.end));
+  for (let t = new Date(start); t <= end; t.setDate(t.getDate()+1)) days.push(t.toISOString().slice(0,10));
+  if (!days.length) days.push(today());
+  const vis = (date) => Object.entries(S.store.visited).filter(([,v]) => v === date).map(([id]) => S.places.find(p=>p.id===id)).filter(Boolean);
+  return days.reverse().map((date, i) => { const e = d[date] || {}; const v = vis(date); const n = Math.round((new Date(date) - TRIP.start)/864e5)+1;
+    return `<div class="day"><h3><span>${fmtDate(date)} · den ${n}</span><span>${date===today()?'dnes':''}</span></h3>
+      <input type="text" data-sleep="${date}" placeholder="🛏 kde spím" value="${esc(e.sleep||'')}">
+      ${v.length ? `<div class="vis">✓ ${v.map(p=>esc(p.name)).join(' · ')}</div>` : ''}
+      <textarea data-diary="${date}" placeholder="…">${esc(e.text||'')}</textarea></div>`; }).join('')
+    + `<div class="btns"><button class="btn" id="exportMd">📄 Export deníku (.md)</button></div>`;
+}
+function spendHtml(){
+  const list = S.store.spend || [];
+  const total = list.reduce((a,x)=>a+x.usd,0);
+  const byDay = {}; for (const x of list) byDay[x.d] = (byDay[x.d]||0) + x.usd;
+  const dayN = Math.max(1, Math.min(TRIP.days, Math.round((Date.now()-TRIP.start)/864e5)+1));
+  const plan = BUDGET / TRIP.days * dayN;
+  const t = today();
+  return `<div class="stat">
+      <div><small>dnes</small><b>${(byDay[t]||0).toFixed(0)} $</b><small>${((byDay[t]||0)*CZK).toFixed(0)} Kč</small></div>
+      <div class="${total > plan ? 'over':'under'}"><small>celkem</small><b>${total.toFixed(0)} $</b><small>${(total*CZK).toFixed(0)} Kč · ${total>plan?'nad':'pod'} plánem o ${Math.abs(total-plan).toFixed(0)} $</small></div>
+      <div><small>zbývá</small><b>${(BUDGET-total).toFixed(0)} $</b><small>z ${BUDGET} $ · ${((BUDGET-total)/Math.max(1,TRIP.days-dayN+1)).toFixed(0)} $/den</small></div>
+    </div>
+    <div class="spend-form">
+      <input type="number" id="spUsd" placeholder="$" inputmode="decimal">
+      <select id="spCat">${Object.entries(SPEND_CATS).map(([k,v])=>`<option value="${k}">${v} ${k}</option>`).join('')}</select>
+      <input type="text" id="spNote" class="full" placeholder="poznámka (motel, diner…)">
+      <button class="btn primary full" id="spAdd">➕ Zapsat</button>
+    </div>
+    ${list.slice().reverse().map((x,i) => `<div class="sp"><span class="amt">${x.usd.toFixed(0)} $</span><span class="cat">${SPEND_CATS[x.cat]} ${fmtDate(x.d)}</span><span class="note">${esc(x.note||'')}</span><button class="x" data-unspend="${list.length-1-i}">✕</button></div>`).join('')}`;
+}
+function backupHtml(){
+  const n = { plan: S.store.plan.length, visited: Object.keys(S.store.visited).length, notes: Object.keys(S.store.notes).length, diary: Object.keys(S.store.diary||{}).length, spend: (S.store.spend||[]).length };
+  return `<div class="doc"><h3>💾 Záloha</h3>
+    <div class="sub">plán ${n.plan} · navštíveno ${n.visited} · poznámky ${n.notes} · deník ${n.diary} dní · útrata ${n.spend}</div>
+    <div class="btns"><button class="btn primary" id="expJson">⬇ Export JSON</button><button class="btn" id="copyJson">📋 Zkopírovat JSON</button></div>
+    <label class="l">Import (vlep JSON nebo vyber soubor)</label>
+    <textarea id="impTxt" placeholder='{"plan":[...]}'></textarea>
+    <div class="btns"><input type="file" id="impFile" accept=".json" style="font-size:13px"><button class="btn" id="impBtn">⬆ Importovat</button></div>
+    <div class="sub">Chrome → „Cookies and site data" smaže všechno. Exportuj po každém dni, pošli si to mailem.</div>
+    ${(S.store.badPhotos||[]).length ? `<label class="l">🚫 Špatné fotky (pošli Kokosákovi)</label><textarea readonly>${(S.store.badPhotos||[]).join(', ')}</textarea>` : ''}
+  </div>`;
+}
+function bindPlan(){
+  document.querySelectorAll('[data-done]').forEach(el => el.onchange = () => { S.store.planDone = S.store.planDone || {}; el.checked ? S.store.planDone[el.dataset.done] = today() : delete S.store.planDone[el.dataset.done]; save(); renderPlan($('#main')); });
+  document.querySelectorAll('[data-unplan]').forEach(el => el.onclick = () => { S.store.plan = S.store.plan.filter(x => x !== el.dataset.unplan); save(); renderPlan($('#main')); });
+  document.querySelectorAll('[data-diary]').forEach(el => el.oninput = () => { S.store.diary = S.store.diary || {}; const e = S.store.diary[el.dataset.diary] = S.store.diary[el.dataset.diary] || {}; e.text = el.value; save(); });
+  document.querySelectorAll('[data-sleep]').forEach(el => el.oninput = () => { S.store.diary = S.store.diary || {}; const e = S.store.diary[el.dataset.sleep] = S.store.diary[el.dataset.sleep] || {}; e.sleep = el.value; save(); });
+  const md = $('#exportMd'); if (md) md.onclick = () => {
+    const d = S.store.diary || {}; const dates = Object.keys(d).sort();
+    const vis = (date) => Object.entries(S.store.visited).filter(([,v]) => v === date).map(([id]) => (S.places.find(p=>p.id===id)||{}).name).filter(Boolean);
+    const out = ['# Pacifik 2026 — deník', ''].concat(dates.map(date => { const n = Math.round((new Date(date)-TRIP.start)/864e5)+1; return `## ${fmtDate(date)} 2026 · den ${n}\n${d[date].sleep ? '🛏 ' + d[date].sleep + '\n' : ''}${vis(date).length ? '✓ ' + vis(date).join(' · ') + '\n' : ''}\n${d[date].text||''}\n`; }));
+    const notes = Object.entries(S.store.notes).map(([id,t]) => `- **${(S.places.find(p=>p.id===id)||{}).name||id}**: ${t}`);
+    if (notes.length) out.push('## Poznámky k místům', ...notes);
+    download('pacifik-denik.md', out.join('\n'), 'text/markdown');
+  };
+  const add = $('#spAdd'); if (add) add.onclick = () => { const usd = parseFloat($('#spUsd').value); if (!usd) return toast('Kolik?'); S.store.spend = S.store.spend || []; S.store.spend.push({ d: today(), usd, cat: $('#spCat').value, note: $('#spNote').value.trim() }); save(); renderPlan($('#main')); toast(`${usd} $ · ${(usd*CZK).toFixed(0)} Kč`); };
+  document.querySelectorAll('[data-unspend]').forEach(el => el.onclick = () => { S.store.spend.splice(+el.dataset.unspend, 1); save(); renderPlan($('#main')); });
+  const ej = $('#expJson'); if (ej) ej.onclick = () => download(`pacifik-zaloha-${today()}.json`, JSON.stringify(S.store, null, 1), 'application/json');
+  const cj = $('#copyJson'); if (cj) cj.onclick = () => { copy(JSON.stringify(S.store)); toast('JSON v schránce'); };
+  const ib = $('#impBtn'); if (ib) ib.onclick = async () => {
+    let txt = $('#impTxt').value.trim(); const file = $('#impFile').files[0]; if (!txt && file) txt = await file.text();
+    if (!txt) return toast('Nic k importu');
+    try { const j = JSON.parse(txt); if (!j || typeof j !== 'object' || !('plan' in j)) throw 0; S.store = Object.assign(loadStore(), j); save(); toast('Importováno ✓'); renderPlan($('#main')); } catch(e) { toast('Neplatný JSON'); }
+  };
+}
+function download(name, text, type){
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 }
 
 // ====================== PAPÍRY ======================
@@ -561,6 +707,7 @@ function openDetail(id){
         <button class="btn ${inPlan?'on':''}" id="planBtn">${inPlan ? '✓ V plánu' : '➕ Do plánu'}</button>
         <button class="btn ${visited?'on':''}" id="visitBtn">${visited ? `✓ Byl jsem ${visited}` : '✓ Byl jsem tu'}</button>
         <button class="btn" id="copyBtn">📋 ${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}</button>
+        ${p.photo_local ? `<button class="btn" id="badPhoto">🚫 špatná fotka</button>` : ''}
       </div>
       <label class="l">📝 Poznámka</label>
       <textarea id="note" placeholder="…">${esc(S.store.notes[p.id]||'')}</textarea>
@@ -571,6 +718,7 @@ function openDetail(id){
   $('#close').onclick = closeDetail;
   const on = $('#offlineNav'); if (on) on.onclick = (e) => { e.preventDefault(); copy(`${p.lat},${p.lng}`); toast('Offline — souřadnice zkopírovány'); };
   $('#copyBtn').onclick = () => { copy(`${p.lat},${p.lng}`); toast('Souřadnice zkopírovány'); };
+  const bp = $('#badPhoto'); if (bp) bp.onclick = () => { S.store.badPhotos = S.store.badPhotos || []; if (!S.store.badPhotos.includes(p.id)) S.store.badPhotos.push(p.id); save(); toast('Zapsáno do Záloha → špatné fotky'); };
   $('#planBtn').onclick = () => { const i = S.store.plan.indexOf(p.id); i<0 ? S.store.plan.push(p.id) : S.store.plan.splice(i,1); save(); openDetail(id); render(); };
   $('#visitBtn').onclick = () => {
     if (S.store.visited[p.id]) { delete S.store.visited[p.id]; }
@@ -584,7 +732,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -592,6 +740,8 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.filter) { const f = t.dataset.filter; S.filters.has(f) ? S.filters.delete(f) : S.filters.add(f); S.shown = 100; render(); }
   else if (t.dataset.id) { e.preventDefault(); openDetail(t.dataset.id); }
   else if (t.dataset.loop) openLoop(t.dataset.loop);
+  else if (t.dataset.sub) { S.sub = t.dataset.sub; renderPlan($('#main')); }
+  else if (t.dataset.surprise) { const l = computed().filter(x => !S.store.visited[x.p.id]); const top = l.filter(x => x.p.rank === 1); const pool = top.length ? top : l; if (!pool.length) return toast('Nic v dosahu — rozšiř'); openDetail(pool[Math.floor(Math.random()*pool.length)].p.id); }
   else if (t.id === 'more') { S.shown += 100; render(); }
 });
 $('#gpsBtn').onclick = openPosSheet;
