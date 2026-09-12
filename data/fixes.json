@@ -496,7 +496,7 @@
   "r8a-013": {
     "description": "Dostavníková stanice z roku 1865 v kaňonu pod průsmykem San Marcos, dnes hospoda s krbem, tri-tip sendviči a o víkendu živým blues a country venku u potoka mezi harleyi. Dřevo, petrolejky, žádný signál.",
     "why_bob": "Hospoda ze zlaté horečky v kaňonu, kde v neděli odpoledne hraje blues pro motorkáře a Bob má tri-tip a pivo — nejvíc americká hodina cesty.",
-    "season_note_2026": "otevřeno denně, kuchyň cca 11–20 h; živá hudba pá–ne odpoledne; ověř na coldspringtavern.com"
+    "season_note_2026": "ÚT+ST ZAVŘENO; po/čt 11:30–15, pá–ne 11:30–16 (kuchyně); živá hudba so+ne odpoledne (tri-tip gril venku); 5995 Stagecoach Rd. [ověřeno 12. 9. 2026]"
   },
   "r8a-014": {
     "why_bob": "Útesy nad tuleňskou kolonií (v zimě plná, v říjnu pár), Channel Islands na obzoru a vlak Amtraku pod nohama — půl hodiny, které stojí za odbočku."
@@ -526,7 +526,7 @@
   },
   "r9-006": {
     "why_bob": "Honky-tonk v kulisách westernu, kde hráli Paul McCartney i Robert Plant nečekaně na malém pódiu — jestli něco hraje, sem, a spát v Pioneertown Motel vedle.",
-    "season_note_2026": "obvykle zavřeno út–st, program na pappyandharriets.com; na jídlo rezervace, na bar ne; ověř"
+    "season_note_2026": "OTEVŘENO 7 DNÍ v týdnu 11–23 (poslední večeře 21:30); bez rezervace (do 8 lidí), waitlist na místě; koncerty pappyandharriets.com/live-music. [ověřeno 12. 9. 2026]"
   },
   "r9-007": {
     "why_bob": "Deset akrů soch z odpadu, které Purifoy stavěl v poušti do svých 87 let — outsider art bez plotu, bez vstupného, s větrem."
@@ -580,7 +580,7 @@
   },
   "r9-020": {
     "why_bob": "Neon ROY'S z roku 1959 nad prázdnou pumpou v Amboy, které má čtyři obyvatele — nejčistší Hopper celé cesty, zvlášť za soumraku.",
-    "season_note_2026": "obchod otevřen denně cca 8–19, benzín drahý, motel stále zavřený; neon svítí po setmění"
+    "season_note_2026": "obchod + pumpa denně 8–20:30; kavárna a 6 chatek se renovují, cíl otevřít 2026 (100 let Route 66) — možná už jedou, ověř na místě; neon svítí. [ověřeno 12. 9. 2026]"
   },
   "r9-021": {
     "why_bob": "Pět set tufových věží z dna zaniklého jezera, kde se točil Planet opic i Star Trek — a v noci hvězdy, protože tady na sto kilometrů nikdo nesvítí.",
@@ -629,11 +629,12 @@
     "name": "Twentynine Palms — murály, 29 Palms Inn, Harmony Motel",
     "description": "Vojenské město u severního vstupu do parku: přes 20 murálů na fasádách (Oasis of Murals), 29 Palms Inn — adobe chatky z 20. let u oázy Mara s restaurací a hospodou, a Harmony Motel, kde bydleli U2 při focení obalu The Joshua Tree. Neon, prach, mariňáci.",
     "why_bob": "Motel, kde U2 spali kvůli Joshua Tree, a adobe chatky u oázy — Hopper v poušti, a Pappy's je 40 minut.",
-    "season_note_2026": "29 Palms Inn cca 130–200 $/noc, Harmony Motel cca 100–130 $; ověř"
+    "season_note_2026": "29 Palms Inn cca 130–200 $/noc, Harmony Motel cca 100–130 $; 29 Palms Inn: restaurace st–ne (oběd 12–16, večeře 17–20:30), akustická hudba večer, adobe chatky u oázy Mara. [ověřeno 12. 9. 2026]"
   },
   "r9b-007": {
     "why_bob": "Kupole postavená pro omlazení a antigravitaci podle instrukcí od Venušanů, dnes zvukové koupele s křišťálovými mísami — hodinu ležet v dokonalé akustice, ať si o tom myslí cokoli.",
-    "season_note_2026": "sound bath jen na rezervaci (integratron.com), cca 50 $, obvykle st–ne; zvenku vidět vždy"
+    "season_note_2026": "veřejné sound bath 63 $/os., vyprodáno týdny dopředu — rezervuj hned (integratron.com); ZAVŘENO ne–út; zvenku vidět kdykoli. [ověřeno 12. 9. 2026]",
+    "fee": "63 $ (sound bath)"
   },
   "r9b-008": {
     "why_bob": "Sedmipatrový balvan, u kterého se v 50. letech scházely UFO konvence, dnes posprejovaný a prasklý — Americana v ryzí, prašné podobě, 3 km písčité cesty."
@@ -731,10 +732,10 @@
     "season_note_2026": "Hwy 62 je podle NPS Current Conditions otevřená a Godfrey Glen Trail není na seznamu uzávěr. Stav po časném říjnovém sněhu ověřit před cestou. · NP 30 $/auto; Rim Drive otevřená; POZOR: Cleetwood Cove (jediný přístup k vodě) zavřen 2026–2028 — koupání ne. [ověřeno 12. 9. 2026]"
   },
   "r7-034": {
-    "season_note_2026": "otevřeno (síňa s vyhlídkou) · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "denně 11:30–22 (oběd do 16:30, večeře od 17); Café Kevah 9–15; bez rezervace fronta — přijď 11:30 nebo 16; Highway 1 průjezdná. [ověřeno 12. 9. 2026]"
   },
   "r7-035": {
-    "season_note_2026": "otevřeno (napiš malo), koncerty dle programu · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "otevřeno denně 11–17 (kromě akcí); dobrovolný příspěvek; program koncertů henrymiller.org. [ověřeno 12. 9. 2026]"
   },
   "r7-036": {
     "season_note_2026": "otevřeno (bezdňrkní), památka vyliděna · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
@@ -750,7 +751,7 @@
     "season_note_2026": "otevřeno · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
   },
   "gem-021": {
-    "season_note_2026": "K 7. 9. 2026 je po srpnových požárních omezeních znovu otevřeno. Přístup ze severu po Highway 1 funguje, ale stav silnice jižně od Big Sur se v roce 2026 mění kvůli požárům a uzávěrám — kontrola v den jízdy je nutná. · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
+    "season_note_2026": "otevřeno denně 11–17 (kromě akcí); dobrovolný příspěvek; program koncertů henrymiller.org. [ověřeno 12. 9. 2026]"
   },
   "r7-040": {
     "season_note_2026": "otevřeno · Highway 1 Big Sur PRŮJEZDNÁ celá (Regent's Slide otevřen 14. 1. 2026 po 3 letech); občas krátké uzávěry kvůli pracím — Caltrans QuickMap. [ověřeno 12. 9. 2026]"
@@ -1002,5 +1003,155 @@
   },
   "g-r1-025": {
     "season_note_2026": "silnice na Artist Point otevřená od 10. 6. 2026, obvykle do října; NW Forest Pass 5 $. [ověřeno 12. 9. 2026]"
+  },
+  "r1-020": {
+    "fee": "10 $",
+    "season_note_2026": "denně 10–17; Makah Recreation Pass (20 $/auto, pro Cape Flattery/Hobuck/Shi Shi) koupíš v obchodech v Neah Bay. [ověřeno 12. 9. 2026]"
+  },
+  "gem-001": {
+    "season_note_2026": "denně 9–19 (cherry pie, damn fine coffee); 137 W North Bend Way. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-014": {
+    "season_note_2026": "denně 11–20 (st do 22); 5030 Roosevelt Way NE, U-District; půjčovna — jen koukat a žasnout. [ověřeno 12. 9. 2026]"
+  },
+  "r1-004": {
+    "season_note_2026": "otevřeno jen v den koncertu (obvykle od 20 h); program tractortavern.com — koukni na 16.–17. 9. [ověřeno 12. 9. 2026]"
+  },
+  "r1-003": {
+    "season_note_2026": "po–so 8–21, ne 8–19; kavárna 7–15; 4559 California Ave SW, West Seattle. [ověřeno 12. 9. 2026]"
+  },
+  "gem-004": {
+    "season_note_2026": "po–pá 7–18, so–ne 8–18; kavárna Caffe Vita, zdarma; občas live session — program kexp.org. [ověřeno 12. 9. 2026]"
+  },
+  "gem-002": {
+    "season_note_2026": "denně 9–22; 1521 10th Ave, Capitol Hill. [ověřeno 12. 9. 2026]"
+  },
+  "g-r1-020": {
+    "season_note_2026": "SOUKROMÝ areál (svatby) — návštěvu filmových míst nutno domluvit e-mailem min. 48 h předem (kianalodge.com/twin-peaks); jinak jen zvenku od vody. [ověřeno 12. 9. 2026]",
+    "rank": 2
+  },
+  "gem-005": {
+    "season_note_2026": "v provozu, recepce 9–21; 131 W Marine Dr, Astoria; rezervuj (malé, oblíbené). [ověřeno 12. 9. 2026]"
+  },
+  "gem-010": {
+    "season_note_2026": "denně 7:30–19; 69501 US-101 Leggett; venkovní gril, občas živá hudba o víkendu. [ověřeno 12. 9. 2026]"
+  },
+  "g-r2-021": {
+    "season_note_2026": "denně 12–19; 5202 N Albina Ave. [ověřeno 12. 9. 2026]"
+  },
+  "g-r2-024": {
+    "season_note_2026": "po 11–17, út–čt 10–18, pá–so 10–19, ne 11–17; 715 SE Grand Ave. [ověřeno 12. 9. 2026]"
+  },
+  "r2-044": {
+    "season_note_2026": "nezisková kina od 1926, program hollywoodtheatre.org (často 35mm, kultovky) — koukni, co hrají večer. [ověřeno 12. 9. 2026]"
+  },
+  "r2-043": {
+    "season_note_2026": "denně 10–21 (Rare Book Room 10–17); 1005 W Burnside; počítej s hodinou minimálně. [ověřeno 12. 9. 2026]"
+  },
+  "g-r2-019": {
+    "season_note_2026": "v provozu, recepce nonstop; 3801 N Interstate Ave; neon palma s opicí svítí po setmění. [ověřeno 12. 9. 2026]"
+  },
+  "g-r2-015": {
+    "fee": "zdarma (parkování zdarma)",
+    "season_note_2026": "lodge otevřená veřejnosti denně 7–23 (vstup, bar Ram's Head, výhledy); parkování na dolním Main Lot zdarma; exteriér Overlooku z The Shining. [ověřeno 12. 9. 2026]"
+  },
+  "g-r4-023": {
+    "fee": "jen s noclehem (kabina/kemp), DAY USE NENÍ",
+    "season_note_2026": "DENNÍ KOUPÁNÍ NEPOVOLENO — jen pro ubytované, rezervace nutná (summerlakehotsprings.com, 541 943 3931); bazény ne/čt zavřené 21–7 na čištění; venkovní kamenné tůně cca 40 °C, nonstop. [ověřeno 12. 9. 2026]"
+  },
+  "r5-003": {
+    "season_note_2026": "v provozu, recepce nonstop; 701 US-101 S Crescent City; celý motel z jednoho sekvojového kmene (1957). [ověřeno 12. 9. 2026]"
+  },
+  "r2-007": {
+    "fee": "parkování 10 $ (platí rok), vstup zdarma",
+    "season_note_2026": "park denně 5–22, sloup a schody (164) zdarma; parkování 10 $/auto (zdvojnásobeno 2026). [ověřeno 12. 9. 2026]"
+  },
+  "gem-011": {
+    "season_note_2026": "denně 10–18; roh Main a Kasten St, Mendocino. [ověřeno 12. 9. 2026]"
+  },
+  "gem-013": {
+    "season_note_2026": "otevřeno jen ve dnech koncertů (program sweetwatermusichall.org), Bob Weir's klub; 19 Corte Madera Ave, Mill Valley. [ověřeno 12. 9. 2026]"
+  },
+  "gem-015": {
+    "season_note_2026": "denně 10–22; 261 Columbus Ave; poezie v patře. [ověřeno 12. 9. 2026]"
+  },
+  "gem-018": {
+    "season_note_2026": "ne–čt 11–1, pá–so 11–2; 255 Columbus, hned vedle City Lights přes Jack Kerouac Alley. [ověřeno 12. 9. 2026]"
+  },
+  "gem-017": {
+    "season_note_2026": "denně 12–2; živé blues 16–20 a 21:30–1:30 — každý den; 1232 Grant Ave; vstup zdarma/klobouk, jen hotovost. [ověřeno 12. 9. 2026]"
+  },
+  "gem-020": {
+    "fee": "15 $",
+    "season_note_2026": "denně 10–17; 1 Main St, Salinas. [ověřeno 12. 9. 2026]"
+  },
+  "gem-025": {
+    "season_note_2026": "ÚT+ST ZAVŘENO; po/čt 11:30–15, pá–ne 11:30–16 (kuchyně); živá hudba so+ne odpoledne (tri-tip gril venku); 5995 Stagecoach Rd. [ověřeno 12. 9. 2026]"
+  },
+  "gem-039": {
+    "season_note_2026": "OTEVŘENO 7 DNÍ v týdnu 11–23 (poslední večeře 21:30); bez rezervace (do 8 lidí), waitlist na místě; koncerty pappyandharriets.com/live-music. [ověřeno 12. 9. 2026]"
+  },
+  "gem-040": {
+    "season_note_2026": "OTEVŘENO 7 DNÍ v týdnu 11–23 (poslední večeře 21:30); bez rezervace (do 8 lidí), waitlist na místě; koncerty pappyandharriets.com/live-music. [ověřeno 12. 9. 2026]"
+  },
+  "x-005": {
+    "fee": "prohlídka (registrace předem)",
+    "season_note_2026": "nádvoří JEN v rámci registrované prohlídky: st–pá 10:00 a 11:30 (salk.edu/about/visiting-salk, rezervují 3 měsíce dopředu — zkus hned, Bob je v SD st–pá 7.–9. 10.); bez registrace nepustí za bránu. [ověřeno 12. 9. 2026]",
+    "rank": 1
+  },
+  "x-001": {
+    "season_note_2026": "chatky 225–600 $/noc, rezervace 4–11 měsíců dopředu — na říjen šance jen na storno (crystalpier.com, 800 748 5894); molo zdarma 8–20 pro veřejnost. [ověřeno 12. 9. 2026]",
+    "rank": 2
+  },
+  "gem-038": {
+    "season_note_2026": "koncerty denně od 20:30, 21+; 2501 Kettner Blvd; program casbahmusic.com — koukni na 7.–9. 10. [ověřeno 12. 9. 2026]"
+  },
+  "x-003": {
+    "season_note_2026": "program bellyup.com/calendar; 143 S Cedros Ave, Solana Beach; koukni na 6.–9. 10. [ověřeno 12. 9. 2026]"
+  },
+  "r8-023": {
+    "season_note_2026": "koncerty skoro denně, all ages; 9081 Santa Monica Blvd; program troubadour.com/calendar. [ověřeno 12. 9. 2026]"
+  },
+  "gem-030": {
+    "season_note_2026": "koncerty skoro denně, all ages; 9081 Santa Monica Blvd; program troubadour.com/calendar. [ověřeno 12. 9. 2026]"
+  },
+  "gem-031": {
+    "season_note_2026": "po–pá 7–22, so 8–22, ne 8–21; 2108 Laurel Canyon Blvd; Jim Morrison bydlel naproti. [ověřeno 12. 9. 2026]"
+  },
+  "gem-026": {
+    "season_note_2026": "denně 6:30–14 (jen snídaně/oběd!); 2901 Pico Blvd, Santa Monica; hotovost. [ověřeno 12. 9. 2026]"
+  },
+  "gem-028": {
+    "season_note_2026": "PONDĚLÍ ZAVŘENO; út–ne 11–15 a 16:30–22; 5233 W Sunset Blvd (Thai Town); jižní thajská, ostré. [ověřeno 12. 9. 2026]"
+  },
+  "gem-027": {
+    "season_note_2026": "PONDĚLÍ ZAVŘENO; út–čt+ne 11–21, pá–so 11–22; 4905 Santa Monica Blvd (Little Armenia); libanonsko-arménská. [ověřeno 12. 9. 2026]"
+  },
+  "gem-029": {
+    "season_note_2026": "po–čt 11–20, pá–ne 11–21; 6200 Hollywood Blvd (nová adresa od 2021). [ověřeno 12. 9. 2026]"
+  },
+  "r7-005": {
+    "season_note_2026": "denně 11–19; 1855 Haight St. [ověřeno 12. 9. 2026]"
+  },
+  "gem-016": {
+    "season_note_2026": "denně 11–19; 1855 Haight St. [ověřeno 12. 9. 2026]"
+  },
+  "gem-023": {
+    "season_note_2026": "po–so 10–18, ne 11–18; 978 Monterey St, SLO. [ověřeno 12. 9. 2026]"
+  },
+  "gem-022": {
+    "season_note_2026": "v provozu, recepce 7:30–21; 939 Spring St, Paso Robles; neon. [ověřeno 12. 9. 2026]"
+  },
+  "gem-024": {
+    "season_note_2026": "PO+NE ZAVŘENO; út–so 10–15; 1065 Guadalupe St; expozice o pohřbených kulisách DeMilleova Desatera. [ověřeno 12. 9. 2026]"
+  },
+  "gem-034": {
+    "season_note_2026": "už NE nonstop: po–čt+ne 6–22, pá–so 6–24; 16341 PCH, Sunset Beach; diner od 1939. [ověřeno 12. 9. 2026]"
+  },
+  "gem-035": {
+    "season_note_2026": "v provozu, recepce nonstop; 1333 Hotel Circle S (Mission Valley) — mid-century motor inn s neonem, Waffle Spot. [ověřeno 12. 9. 2026]"
+  },
+  "gem-036": {
+    "season_note_2026": "ne/po/st/čt 10–18, pá–so 10–19, út 12–18; 3793 30th St, North Park. [ověřeno 12. 9. 2026]"
   }
 }
