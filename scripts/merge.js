@@ -60,6 +60,9 @@ const MERGE_PAIRS = (fixes._merge_pairs || []).map((pr) => pr.join("|"));
 delete fixes._comment; delete fixes._merge_pairs;
 
 const loops = JSON.parse(fs.readFileSync(path.join(RAW, "loops.json"), "utf8"));
+const loopsExtra = path.join(OUT, "loops-extra.json");
+if (fs.existsSync(loopsExtra)) loops.push(...JSON.parse(fs.readFileSync(loopsExtra, "utf8")));
+const geo = require("./geo.js");
 
 // ---------- 3. Fixes + normalizace ----------
 const trim = (v) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim() : v);
@@ -156,6 +159,15 @@ for (const l of loops) {
     return id;
   });
 }
+// "po cestě": všechna místa v koridoru trasy, seřazená podél ní
+for (const l of loops) {
+  const line = (l.waypoints || []).filter((w) => typeof w.lat === "number");
+  if (line.length < 2) { l.near_ids = []; continue; }
+  l.near_ids = places.filter((p) => geo.distToPolyline(p, line) <= geo.CORRIDOR_KM)
+    .map((p) => ({ id: p.id, pos: geo.alongPolyline(p, line) })).sort((a, b) => a.pos - b.pos).map((x) => x.id);
+  l.stop_ids = l.stop_ids || [];
+}
+for (const p of places) p.loop_ids = loops.filter((l) => l.near_ids.includes(p.id)).map((l) => l.id);
 loops.sort((a, b) => a.rank - b.rank);
 
 // ---------- 8. Výstup ----------
@@ -176,7 +188,7 @@ console.log(`Swim:      possible=${places.filter((p) => p.swim.possible).length}
 console.log(`Photo:     lokální=${places.filter((p) => p.photo_local).length}  bez=${places.filter((p) => !p.photo_local).length}`);
 console.log(`Wiki link: ${places.filter((p) => p.links.wiki).length}`);
 console.log(`Fixes aplikováno: ${fixedIds.size}`);
-console.log(`Loops: ${loops.length}, stops match ${stopHits}/${stopHits + stopMiss}`);
+console.log(`Loops: ${loops.length}, stops match ${stopHits}/${stopHits + stopMiss}, po cestě celkem ${loops.reduce((a, l) => a + l.near_ids.length, 0)}, vnitrozemí nepokryto: ${places.filter((p) => geo.distToPolyline(p, geo.SPINE) > geo.SPINE_KM && !p.loop_ids.length).length}`);
 if (removed.length) console.log(`\nDuplicity:\n  ` + removed.join("\n  "));
 if (warn.length) console.log(`\nWarnings (${warn.length}):\n  ` + warn.join("\n  "));
 console.log(`\n-> data/places.json (${(fs.statSync(path.join(OUT, "places.json")).size / 1024).toFixed(0)} kB), data/loops.json`);

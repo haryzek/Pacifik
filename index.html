@@ -455,6 +455,7 @@ function itemHtml({ p, km, b }){
 }
 
 // ====================== ODBOČKY ======================
+const sample = (arr, n) => arr.length <= n ? arr : Array.from({ length: n }, (_, i) => arr[Math.round(i * (arr.length - 1) / (n - 1))]);
 const RQ = (q) => { q = q || ''; const cls = /4x4|rough|dirt/.test(q) ? 'bad' : /narrow|gravel|mixed|steep/.test(q) ? 'mid' : 'good'; return `<span class="rq ${cls}">${esc(q.replace(/_/g,' '))}</span>`; };
 function renderLoops(m){
   const list = S.loops.map(l => ({ l, km: S.pos && l.waypoints[0] ? hav(S.pos, l.waypoints[0]) : null }))
@@ -462,7 +463,7 @@ function renderLoops(m){
   $('#count').textContent = `${list.length} odboček`;
   m.innerHTML = list.map(({ l, km }) => `<div class="loop" data-loop="${l.id}">
     <div class="t"><div class="name">${esc(l.name)}</div><div class="star">#${l.rank}</div></div>
-    <div class="meta"><span class="dist">${km != null ? 'start ' + fmtKm(km) : ''}</span><span>${l.total_km} km</span><span>${l.driving_hours} h jízdy</span><span>${l.days} d</span>${RQ(l.road_quality)}</div>
+    <div class="meta"><span class="dist">${km != null ? 'start ' + fmtKm(km) : ''}</span><span>${l.total_km} km</span><span>${l.driving_hours} h</span><span>${l.days} d</span><span>📍 ${(l.near_ids||[]).length} míst</span>${RQ(l.road_quality)}</div>
     <div class="why">${esc(l.why_bob)}</div>
   </div>`).join('');
 }
@@ -470,7 +471,7 @@ function openLoop(id){
   const l = S.loops.find(x => x.id === id); if (!l) return;
   const wps = l.waypoints || [];
   const wp = wps.map(w => `${w.lat},${w.lng}`);
-  const dir = wp.length >= 2 ? `https://www.google.com/maps/dir/?api=1&origin=${wp[0]}&destination=${wp[wp.length-1]}&travelmode=driving${wp.length > 2 ? '&waypoints=' + wp.slice(1, -1).slice(0, 9).join('|') : ''}` : null;
+  const dir = wp.length >= 2 ? `https://www.google.com/maps/dir/?api=1&origin=${wp[0]}&destination=${wp[wp.length-1]}&travelmode=driving${wp.length > 2 ? '&waypoints=' + sample(wp.slice(1, -1), 9).join('|') : ''}` : null;
   const stops = (l.stops || []).map((s, i) => { const pid = l.stop_ids && l.stop_ids[i]; return pid ? `<a href="#" data-id="${pid}">${esc(s)}</a>` : esc(s); }).join(' → ');
   $('#panel').innerHTML = `
     <div class="hero c-scenic_drive">🔁<button class="close" id="close">✕</button></div>
@@ -485,8 +486,13 @@ function openLoop(id){
         <div class="row"><div class="k">zpět</div><div class="v">${esc(l.rejoin_spine)}</div></div>
         ${l.overnight ? `<div class="row"><div class="k">nocleh</div><div class="v">${esc(l.overnight)}</div></div>` : ''}
         <div class="row"><div class="k">trasa</div><div class="v stops">${wps.map(w => esc(w.name)).join(' → ')}</div></div>
-        <div class="row"><div class="k">zastávky</div><div class="v stops">${stops}</div></div>
       </div>
+      <h4 style="margin:14px 0 4px;font:600 12px var(--mono);letter-spacing:.05em;color:var(--accent)">PO CESTĚ · ${(l.near_ids||[]).length} míst v koridoru 15 km</h4>
+      <div class="sub" style="margin-bottom:6px">v pořadí trasy · tap = detail</div>
+      ${(l.near_ids||[]).map(id => S.places.find(p => p.id === id)).filter(Boolean).map(p => `<div class="pl" data-id="${p.id}" style="cursor:pointer">
+        <div class="thumb c-${p.category}" style="width:56px;height:42px;font-size:18px">${p.photo_local ? `<img src="photos/${p.photo_local}.jpg" loading="lazy" alt="" onerror="this.remove()">` : (CATS[p.category]||'📍')}</div>
+        <div class="body" style="flex:1;min-width:0"><div class="name" style="font-size:14px">${esc(p.name)} <span class="star">${'★'.repeat(4-p.rank)}</span></div>
+        <div class="meta">${swimOK(p)?'<span class="w">💧</span>':''}<span>${CATS[p.category]||''} ${esc(p.subcategory||p.category)}</span>${S.store.visited[p.id]?'<span>✓</span>':''}${S.store.plan.includes(p.id)?'<span>➕</span>':''}</div></div></div>`).join('')}
       <div class="btns">
         ${dir ? `<a class="btn primary" href="${dir}" target="_blank" rel="noopener">🧭 Naviguj celou smyčku</a>` : ''}
         <button class="btn" id="showOnMap" data-tab="map" data-loopmap="${l.id}">🗺 Na mapě</button>
@@ -513,6 +519,13 @@ function renderPlan(m){
   m.innerHTML = html;
   bindPlan();
 }
+function planRouteUrl(items){
+  const pts = items.slice(0, 10).map(p => `${p.lat},${p.lng}`);
+  if (pts.length < 2) return pts.length ? `https://www.google.com/maps/search/?api=1&query=${pts[0]}` : '#';
+  const origin = S.pos ? `${S.pos.lat},${S.pos.lng}` : pts.shift();
+  const dest = pts.pop();
+  return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${dest}&travelmode=driving${pts.length ? '&waypoints=' + pts.join('|') : ''}`;
+}
 function planHtml(){
   const items = S.store.plan.map(id => S.places.find(p => p.id === id)).filter(Boolean).sort((a,b) => a.spineIndex - b.spineIndex);
   if (!items.length) return '<div class="empty">Plán je prázdný.<br><small>➕ Do plánu v detailu místa. Řadí se sever → jih po trase.</small></div>';
@@ -521,7 +534,9 @@ function planHtml(){
     <input type="checkbox" data-done="${p.id}" ${done[p.id]?'checked':''}>
     <div class="body" style="flex:1"><div class="name" data-id="${p.id}">${esc(p.name)} <span class="star">${'★'.repeat(4-p.rank)}</span></div>
       <div class="meta"><span>${esc((p.nearest_town||'').split(',')[0])}</span>${S.pos ? `<span>${fmtKm(hav(S.pos,p))} ${dirName(bearing(S.pos,p))}</span>` : ''}${swimOK(p)?'<span class="w">💧</span>':''}</div></div>
-    <button class="x" data-unplan="${p.id}">✕</button></div>`).join('') + `<div class="sub" style="padding:10px 0">${items.length} míst · hotovo ${items.filter(p=>done[p.id]).length}</div>`;
+    <button class="x" data-unplan="${p.id}">✕</button></div>`).join('') + `<div class="sub" style="padding:10px 0">${items.length} míst · hotovo ${items.filter(p=>done[p.id]).length}</div>
+  <div class="btns"><a class="btn primary" target="_blank" rel="noopener" href="${planRouteUrl(items.filter(p=>!done[p.id]))}">🧭 Naviguj plán jako trasu (${Math.min(10, items.filter(p=>!done[p.id]).length)} zastávek)</a></div>
+  <div class="sub">Google Maps bere max 10 bodů — bere prvních 10 nehotových v pořadí S→J. Odškrtávej, jak jedeš.</div>`;
 }
 function diaryHtml(){
   const d = S.store.diary || {};
@@ -744,6 +759,7 @@ function openDetail(id){
       </div>
       <label class="l">📝 Poznámka</label>
       <textarea id="note" placeholder="…">${esc(S.store.notes[p.id]||'')}</textarea>
+      ${(p.loop_ids||[]).length ? `<div class="box" style="background:var(--card2);border:1px solid var(--line)"><h4>🔁 Součást odboček</h4>${p.loop_ids.map(id => { const l = S.loops.find(x => x.id === id); return l ? `<div><a href="#" data-loop="${l.id}" style="color:var(--accent);text-decoration:none">${esc(l.name)}</a> <span class="sub">${l.total_km} km · ${l.days} d</span></div>` : ''; }).join('')}</div>` : ''}
       <div class="tags">${(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
       <div class="sub" style="margin-top:10px">${p.id}${p.aliases ? ' · ' + p.aliases.join(', ') : ''}</div>
     </div>`;
@@ -774,7 +790,7 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.toggle) { S[t.dataset.toggle] = !S[t.dataset.toggle]; S.shown = 100; render(); }
   else if (t.dataset.filter) { const f = t.dataset.filter; S.filters.has(f) ? S.filters.delete(f) : S.filters.add(f); S.shown = 100; render(); }
   else if (t.dataset.id) { e.preventDefault(); openDetail(t.dataset.id); }
-  else if (t.dataset.loop) openLoop(t.dataset.loop);
+  else if (t.dataset.loop) { e.preventDefault(); openLoop(t.dataset.loop); }
   else if (t.dataset.sub) { S.sub = t.dataset.sub; renderPlan($('#main')); }
   else if (t.dataset.region) { S.region = S.region === t.dataset.region ? null : t.dataset.region; S.shown = 100; render(); window.scrollTo(0,0); }
   else if (t.id === 'qClear') { S.q = ''; render(); }
