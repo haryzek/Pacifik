@@ -124,6 +124,18 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 #pina{position:fixed;inset:0;display:none;align-items:center;justify-content:center;font-size:96px;z-index:50;pointer-events:none;animation:pina 1.5s ease-out forwards}
 @keyframes pina{0%{opacity:0;transform:scale(.5)}20%{opacity:1;transform:scale(1.1)}70%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.3) translateY(-40px)}}
 .soon{padding:60px 20px;text-align:center;color:var(--muted);font-family:var(--serif)}
+.loop{padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.loop .t{gap:8px}.loop .rq{font:10px var(--mono);padding:2px 6px;border-radius:4px;background:var(--card2)}
+.rq.good{color:var(--ok)} .rq.mid{color:var(--accent)} .rq.bad{color:var(--warn)}
+.stops{font:12px var(--mono);color:var(--muted);margin-top:4px;line-height:1.6}
+.stops a{color:var(--water);text-decoration:none}
+.story{font-family:var(--serif);font-size:15px;line-height:1.55}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.doc h3{margin:0 0 8px;font:600 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.doc .row .k{width:110px}.doc .v{font-family:var(--mono);font-size:13px;user-select:all}
+.doc .v a{color:var(--water);text-decoration:none}
+.mantra{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--accent);text-align:center;padding:14px;border:1px dashed rgba(217,164,65,.4);border-radius:12px;margin:10px 0}
+.prak li{margin:6px 0;font-size:14px}
 </style>
 </head>
 <body>
@@ -149,7 +161,7 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 'use strict';
 // ====================== KONSTANTY ======================
 const TRIP = { start: new Date('2026-09-16T00:00:00'), end: new Date('2026-10-10T23:59:59'), days: 24 };
-const RANGES = [30, 100, 300, 500];
+const RANGES = [30, 100, 300, 500, Infinity];
 const CATS = { coast:'🌊', forest:'🌲', desert:'🏜', geology:'🏜', mountain:'🏔', lake_river:'💧', waterfall:'💧', hot_spring:'♨️', scenic_drive:'🛣', town:'🏘', motel_gem:'🛏', food_gem:'🍽', culture:'🎸', oddity:'👁', dark_sky:'🌌' };
 const FILTERS = [
   { id:'coast', l:'🌊 Pobřeží', cats:['coast'] },
@@ -177,7 +189,7 @@ const LS_KEY = 'pacifik.v1';
 
 // ====================== STAV ======================
 const S = {
-  places: [], loops: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100,
+  places: [], loops: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100, q: '',
   pos: null, posMode: 'none', // 'gps' | 'sim' | 'last'
   store: loadStore(),
 };
@@ -261,21 +273,24 @@ function openPosSheet(){
 
 // ====================== VÝPOČET SEZNAMU ======================
 function computed(){
-  if (!S.pos) return [];
+  const all = S.range === Infinity;
+  if (!S.pos && !all) return [];
+  const q = S.q.trim().toLowerCase();
   const out = [];
   for (const p of S.places) {
-    const km = hav(S.pos, p);
-    if (km > S.range) continue;
-    if (S.south && p.lat > S.pos.lat + 0.05) continue;
+    if (q && !(`${p.name} ${p.nearest_town||''} ${p.why_bob} ${p.region} ${(p.tags||[]).join(' ')}`.toLowerCase().includes(q))) continue;
+    const km = S.pos ? hav(S.pos, p) : null;
+    if (!all && km > S.range) continue;
+    if (S.south && S.pos && p.lat > S.pos.lat + 0.05) continue;
     if (S.rank1 && p.rank !== 1) continue;
     if (S.filters.size) {
       let ok = false;
       for (const f of FILTERS) if (S.filters.has(f.id) && (f.cats.includes(p.category) || (f.swim && swimOK(p)))) { ok = true; break; }
       if (!ok) continue;
     }
-    out.push({ p, km, b: bearing(S.pos, p) });
+    out.push({ p, km, b: S.pos ? bearing(S.pos, p) : 0 });
   }
-  out.sort((a, b) => a.km - b.km);
+  if (all) out.sort((a, b) => a.p.spineIndex - b.p.spineIndex || a.p.rank - b.p.rank); else out.sort((a, b) => a.km - b.km);
   return out;
 }
 
@@ -285,6 +300,8 @@ function render(){
   $('#toolbar').innerHTML = S.tab==='near' ? toolbarNear() : '';
   const m = $('#main');
   if (S.tab === 'near') renderNear(m);
+  else if (S.tab === 'loops') renderLoops(m);
+  else if (S.tab === 'docs') renderDocs(m);
   else m.innerHTML = `<div class="soon">${{loops:'Odbočky',map:'Mapa',plan:'Plán & deník',docs:'Papíry'}[S.tab]} — brzy. 🥥</div>`;
 }
 function renderNav(){
@@ -293,10 +310,11 @@ function renderNav(){
 }
 function toolbarNear(){
   return `<div class="chips">
-    ${RANGES.map(r=>`<button class="chip range ${S.range===r?'on':''}" data-range="${r}">${r} km</button>`).join('')}
+    ${RANGES.map(r=>`<button class="chip range ${S.range===r?'on':''}" data-range="${r}">${r===Infinity?'vše S→J':r+' km'}</button>`).join('')}
     <button class="chip ${S.south?'on':''}" data-toggle="south">⬇ jen dál po trase</button>
     <button class="chip ${S.rank1?'on':''}" data-toggle="rank1">⭐ jen top</button>
   </div>
+  <div style="padding:6px 0 2px"><input type="search" id="q" placeholder="🔍 hledat místo, město, tag…" value="${esc(S.q)}" style="padding:7px 10px;font-size:14px"></div>
   <div class="chips">${FILTERS.map(f=>`<button class="chip ${f.cls||''} ${S.filters.has(f.id)?'on':''}" data-filter="${f.id}">${f.l}</button>`).join('')}</div>`;
 }
 function quickHtml(){
@@ -308,10 +326,11 @@ function renderNear(m){
   const list = computed();
   $('#count').textContent = S.pos ? `${list.length}/${S.places.length}` : '';
   let html = quickHtml();
-  if (!S.pos) html += `<div class="empty">Čekám na polohu…<br><small>nebo tapni na GPS vpravo nahoře a nastav ji ručně</small></div>`;
+  if (!S.pos && S.range !== Infinity) html += `<div class="empty">Čekám na polohu…<br><small>nebo tapni na GPS vpravo nahoře a nastav ji ručně</small></div>`;
   else if (!list.length) {
     const next = RANGES.find(r => r > S.range);
-    html += `<div class="empty">V dosahu ${S.range} km nic.<br>${next ? `<button class="btn" data-range="${next}" style="margin-top:12px">Rozšířit na ${next} km</button>` : 'Zkus vypnout filtry.'}</div>`;
+    if (S.q) { html += `<div class="empty">Nic pro „${esc(S.q)}“.</div>`; m.innerHTML = html; return; }
+    html += `<div class="empty">V dosahu ${S.range} km nic.<br>${next ? `<button class="btn" data-range="${next}" style="margin-top:12px">Rozšířit na ${next===Infinity?'vše':next+' km'}</button>` : 'Zkus vypnout filtry.'}</div>`;
   } else {
     html += list.slice(0, S.shown).map(itemHtml).join('');
     if (list.length > S.shown) html += `<button class="more" id="more">zobrazit další (${list.length - S.shown})</button>`;
@@ -329,13 +348,105 @@ function itemHtml({ p, km, b }){
   if (S.store.plan.includes(p.id)) icons.push('➕ v plánu');
   if (visited) icons.push('✓');
   return `<div class="item" data-id="${p.id}">
-    <div class="thumb c-${p.category}">${p.photo_local ? `<img src="photos/${p.id}.jpg" loading="lazy" alt="">` : (CATS[p.category]||'📍')}${p.region ? `<span class="badge">${esc(p.region)}</span>` : ''}</div>
+    <div class="thumb c-${p.category}">${p.photo_local ? `<img src="photos/${p.photo_local}.jpg" loading="lazy" alt="" onerror="this.remove()">` : (CATS[p.category]||'📍')}${p.region ? `<span class="badge">${esc(p.region)}</span>` : ''}</div>
     <div class="body">
       <div class="t"><div class="name">${esc(p.name)}</div><div class="star">${'★'.repeat(4 - p.rank)}</div></div>
-      <div class="meta"><span class="dist">${fmtKm(km)} <span class="arrow" style="transform:rotate(${Math.round(b)}deg)">↑</span> ${dirName(b)}</span><span>~${fmtMin(driveMin(km, p.road_access))}</span><span>${CATS[p.category]||''} ${esc(p.subcategory||p.category)}</span></div>
+      <div class="meta">${km != null ? `<span class="dist">${fmtKm(km)} <span class="arrow" style="transform:rotate(${Math.round(b)}deg)">↑</span> ${dirName(b)}</span><span>~${fmtMin(driveMin(km, p.road_access))}</span>` : `<span class="dist">${esc((p.nearest_town||'').split(',')[0])}</span>`}<span>${CATS[p.category]||''} ${esc(p.subcategory||p.category)}</span></div>
       <div class="why">${esc(p.why_bob)}</div>
       ${icons.length ? `<div class="icons">${icons.join(' · ')}</div>` : ''}
     </div></div>`;
+}
+
+// ====================== ODBOČKY ======================
+const RQ = (q) => { q = q || ''; const cls = /4x4|rough|dirt/.test(q) ? 'bad' : /narrow|gravel|mixed|steep/.test(q) ? 'mid' : 'good'; return `<span class="rq ${cls}">${esc(q.replace(/_/g,' '))}</span>`; };
+function renderLoops(m){
+  const list = S.loops.map(l => ({ l, km: S.pos && l.waypoints[0] ? hav(S.pos, l.waypoints[0]) : null }))
+    .sort((a, b) => (a.km ?? 1e9) - (b.km ?? 1e9) || a.l.rank - b.l.rank);
+  $('#count').textContent = `${list.length} odboček`;
+  m.innerHTML = list.map(({ l, km }) => `<div class="loop" data-loop="${l.id}">
+    <div class="t"><div class="name">${esc(l.name)}</div><div class="star">#${l.rank}</div></div>
+    <div class="meta"><span class="dist">${km != null ? 'start ' + fmtKm(km) : ''}</span><span>${l.total_km} km</span><span>${l.driving_hours} h jízdy</span><span>${l.days} d</span>${RQ(l.road_quality)}</div>
+    <div class="why">${esc(l.why_bob)}</div>
+  </div>`).join('');
+}
+function openLoop(id){
+  const l = S.loops.find(x => x.id === id); if (!l) return;
+  const wps = l.waypoints || [];
+  const wp = wps.map(w => `${w.lat},${w.lng}`);
+  const dir = wp.length >= 2 ? `https://www.google.com/maps/dir/?api=1&origin=${wp[0]}&destination=${wp[wp.length-1]}&travelmode=driving${wp.length > 2 ? '&waypoints=' + wp.slice(1, -1).slice(0, 9).join('|') : ''}` : null;
+  const stops = (l.stops || []).map((s, i) => { const pid = l.stop_ids && l.stop_ids[i]; return pid ? `<a href="#" data-id="${pid}">${esc(s)}</a>` : esc(s); }).join(' → ');
+  $('#panel').innerHTML = `
+    <div class="hero c-scenic_drive">🔁<button class="close" id="close">✕</button></div>
+    <div class="pad">
+      <h2>${esc(l.name)}</h2>
+      <div class="sub">#${l.rank} · ${l.total_km} km · ${l.driving_hours} h · ${l.days} d · ${RQ(l.road_quality)}</div>
+      <div class="whybig">${esc(l.why_bob)}</div>
+      <div class="story">${esc(l.story)}</div>
+      ${l.season_note_2026 ? `<div class="box yellow"><h4>2026</h4>${esc(l.season_note_2026)}</div>` : ''}
+      <div class="rows">
+        <div class="row"><div class="k">z páteře</div><div class="v">${esc(l.from_spine)}</div></div>
+        <div class="row"><div class="k">zpět</div><div class="v">${esc(l.rejoin_spine)}</div></div>
+        ${l.overnight ? `<div class="row"><div class="k">nocleh</div><div class="v">${esc(l.overnight)}</div></div>` : ''}
+        <div class="row"><div class="k">trasa</div><div class="v stops">${wps.map(w => esc(w.name)).join(' → ')}</div></div>
+        <div class="row"><div class="k">zastávky</div><div class="v stops">${stops}</div></div>
+      </div>
+      <div class="btns">
+        ${dir ? `<a class="btn primary" href="${dir}" target="_blank" rel="noopener">🧭 Naviguj celou smyčku</a>` : ''}
+        <button class="btn" id="showOnMap" data-tab="map" data-loopmap="${l.id}">🗺 Na mapě</button>
+      </div>
+    </div>`;
+  $('#sheet').classList.add('open');
+  $('#close').onclick = closeDetail;
+}
+
+// ====================== PAPÍRY ======================
+function renderDocs(m){
+  const now = new Date(), d = (a,b)=>Math.ceil((a-b)/864e5);
+  const cd = now < TRIP.start ? `Odlet za ${d(TRIP.start, now)} dní` : now <= TRIP.end ? `Den ${d(now, TRIP.start)+1} z ${TRIP.days} · domů za ${d(TRIP.end, now)} d` : 'Doma.';
+  const row = (k, v) => `<div class="row"><div class="k">${k}</div><div class="v">${v}</div></div>`;
+  const tel = (n) => `<a href="tel:${n.replace(/[^+d]/g,'')}">${n}</a>`;
+  $('#count').textContent = '';
+  m.innerHTML = `
+    <div class="mantra">${cd}</div>
+    <div class="doc"><h3>✈ Lety</h3>
+      ${row('tam', 'Condor DE4410 / DE2032 · 16. 9. 11:40 → SEA 15:40 · PNR <b>XHHYY9</b>')}
+      ${row('zpět', 'United UA8900 / UA9398 · LAX 9. 10. 18:40 → PRG 10. 10. 17:50 · PNR <b>N6J3J2</b>')}
+      ${row('Expedia', 'itinerary 73520795213002')}
+      ${row('Kiwi CZ', tel('+420 228 880 071'))}
+    </div>
+    <div class="doc"><h3>🚗 Sixt</h3>
+      ${row('rezervace', '<b>9944431604</b>')}
+      ${row('výdej', 'SEA 17. 9. 9:00')}
+      ${row('vrácení', 'LAX 7. 10. 10:00')}
+      ${row('depozit', '$200')}
+      ${row('tel', tel('001 888 749 8227'))}
+      ${row('mantra', '<i>„No, thank you, I have my own coverage."</i>')}
+    </div>
+    <div class="doc"><h3>🛡 Pojištění & doklady</h3>
+      ${row('AIG policy', '1005999350')}
+      ${row('AIG itinerary', '73520815879469')}
+      ${row('ESTA', '2P0708W78P527J65')}
+      ${row('ČSOB asist.', '<span id="csob">' + esc(S.store.csob || '— doplň v poznámce níže —') + '</span>')}
+      ${row('tísňová', tel('911'))}
+    </div>
+    <div class="doc"><h3>🛏 Noclehy pevné</h3>
+      ${row('16. 9.', 'Motel 6 Sea-Tac')}
+      ${row('7.–9. 10.', 'Ocean Park Hotel, Ocean Beach, San Diego')}
+    </div>
+    <div class="doc"><h3>🧭 Praktikum</h3><ul class="prak">
+      <li>⛽ Pod půlku = tankuj. Plná: <b>Forks, Grants Pass, Fort Bragg, Brookings</b>. ZIP na pumpě: <b>99999</b>.</li>
+      <li>🌉 Golden Gate mýto online (do 48 h po přejezdu, bay.area FasTrak „one-time payment").</li>
+      <li>🌊 Sneaker waves — nikdy zády k oceánu, klády v příboji.</li>
+      <li>🚗 V autě nic viditelného. Ani bundu.</li>
+      <li>🕷 Klíšťata: Tomales Bay, Point Reyes, tráva obecně — večer kontrola.</li>
+      <li>💵 Spropitné 18–20 % u stolu, 0 na stojáka. Ceny bez daně.</li>
+      <li>📵 Signál není v Olympic, Lost Coast, Big Sur, Crater Lake, Mojave — Naviguj offline = souřadnice.</li>
+      <li>🐻 Jídlo v autě ne přes noc v Olympic/Redwoods (medvědi, mývalové).</li>
+    </ul></div>
+    <div class="doc"><h3>📝 Vlastní poznámky (uloží se)</h3>
+      <textarea id="docNotes" placeholder="ČSOB asistenční linka, PIN k něčemu, cokoli…">${esc(S.store.docNotes || '')}</textarea>
+    </div>`;
+  $('#docNotes').oninput = (e) => { S.store.docNotes = e.target.value; save(); };
 }
 
 // ====================== DETAIL ======================
@@ -358,7 +469,7 @@ function openDetail(id){
   const visited = S.store.visited[p.id]; const inPlan = S.store.plan.includes(p.id);
   const geo = `geo:${p.lat},${p.lng}?q=${p.lat},${p.lng}(${encodeURIComponent(p.name)})`;
   $('#panel').innerHTML = `
-    <div class="hero c-${p.category}">${p.photo_local ? `<img src="photos/${p.id}.jpg" alt="">` : (CATS[p.category]||'📍')}<button class="close" id="close">✕</button>${p.photo_local && p.photo ? `<div class="credit">${esc(p.photo.credit||'')} ${esc(p.photo.license||'')}</div>` : ''}</div>
+    <div class="hero c-${p.category}">${p.photo_local ? `<img src="photos/${p.photo_local}.jpg" alt="" onerror="this.remove()">` : (CATS[p.category]||'📍')}<button class="close" id="close">✕</button>${p.photo_local && p.photo && (p.photo.credit||p.photo.license) ? `<div class="credit">${p.photo.page ? `<a href="${esc(p.photo.page)}" target="_blank" rel="noopener" style="color:#ccc">` : ''}📷 ${esc(p.photo.credit||'')} · ${esc(p.photo.license||'')}${p.photo.page ? '</a>' : ''}</div>` : ''}</div>
     <div class="pad">
       <h2>${esc(p.name)}</h2>
       <div class="sub">${esc(p.nearest_town||'')} · ${esc(p.region)} · ${'★'.repeat(4-p.rank)}${km!=null ? ` · ${fmtKm(km)} ${dirName(b)} · ~${fmtMin(driveMin(km, p.road_access))}` : ''}</div>
@@ -372,6 +483,7 @@ function openDetail(id){
         <a class="btn" href="${geo}">📱 Mapy app</a>
         ${p.links.official ? `<a class="btn" href="${esc(p.links.official)}" target="_blank" rel="noopener">🌐 Web</a>` : ''}
         ${p.links.wiki ? `<a class="btn" href="${esc(p.links.wiki)}" target="_blank" rel="noopener">📖 Wiki</a>` : ''}
+        <a class="btn" href="https://www.google.com/search?tbm=isch&q=${encodeURIComponent(p.name + ' ' + (p.nearest_town||'').split(',')[0])}" target="_blank" rel="noopener">🖼 Fotky online</a>
       </div>
       <div class="btns">
         <button class="btn ${inPlan?'on':''}" id="planBtn">${inPlan ? '✓ V plánu' : '➕ Do plánu'}</button>
@@ -400,23 +512,25 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
-  if (t.dataset.tab) { S.tab = t.dataset.tab; S.shown = 100; render(); window.scrollTo(0,0); }
-  else if (t.dataset.range) { S.range = +t.dataset.range; S.store.range = S.range; save(); S.shown = 100; render(); }
+  if (t.dataset.tab) { S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
+  else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
   else if (t.dataset.toggle) { S[t.dataset.toggle] = !S[t.dataset.toggle]; S.shown = 100; render(); }
   else if (t.dataset.filter) { const f = t.dataset.filter; S.filters.has(f) ? S.filters.delete(f) : S.filters.add(f); S.shown = 100; render(); }
-  else if (t.dataset.id) openDetail(t.dataset.id);
+  else if (t.dataset.id) { e.preventDefault(); openDetail(t.dataset.id); }
+  else if (t.dataset.loop) openLoop(t.dataset.loop);
   else if (t.id === 'more') { S.shown += 100; render(); }
 });
 $('#gpsBtn').onclick = openPosSheet;
+document.addEventListener('input', (e) => { if (e.target.id === 'q') { S.q = e.target.value; S.shown = 100; renderNear($('#main')); } });
 window.addEventListener('online', () => toast('Online'));
 window.addEventListener('offline', () => toast('Offline — Naviguj ukáže souřadnice'));
 
 // ====================== START ======================
 async function init(){
   countdown(); setInterval(countdown, 60000);
-  S.range = S.store.range || 100;
+  S.range = S.store.range === null ? Infinity : (S.store.range || 100);
   render();
   try {
     const [pl, lo] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json())]);

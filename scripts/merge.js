@@ -121,8 +121,18 @@ for (const p of places) {
 }
 places = merged;
 
-// ---------- 6. spineIndex (lat jako proxy, S→J) ----------
-for (const p of places) p.spineIndex = Math.round((49.5 - p.lat) * 100) / 100;
+// ---------- 6. spineIndex (lat jako proxy, S→J) + lokální fotky ----------
+const photoMeta = fs.existsSync(path.join(OUT, "photos.json")) ? JSON.parse(fs.readFileSync(path.join(OUT, "photos.json"), "utf8")) : {};
+for (const p of places) {
+  p.spineIndex = Math.round((49.5 - p.lat) * 100) / 100;
+  const local = fs.existsSync(path.join(ROOT, "photos", p.id + ".jpg")) || (p.aliases || []).some((a) => fs.existsSync(path.join(ROOT, "photos", a + ".jpg")));
+  if (local) {
+    const id = fs.existsSync(path.join(ROOT, "photos", p.id + ".jpg")) ? p.id : (p.aliases || []).find((a) => fs.existsSync(path.join(ROOT, "photos", a + ".jpg")));
+    const m = photoMeta[id] || {};
+    p.photo_local = id; // photos/{photo_local}.jpg
+    p.photo = { url: p.photo && p.photo.url || null, credit: m.credit || "", license: m.license || "", source: m.source || "", page: m.page || null };
+  } else p.photo_local = null;
+}
 places.sort((a, b) => a.spineIndex - b.spineIndex);
 for (const p of places) delete p._bonus;
 
@@ -163,7 +173,7 @@ console.log(`Category:  ${fmt(count((p) => p.category))}`);
 console.log(`Rank:      ${fmt(count((p) => p.rank))}`);
 console.log(`Road:      ${fmt(count((p) => p.road_access))}`);
 console.log(`Swim:      possible=${places.filter((p) => p.swim.possible).length}  nabízené (allowed/tolerated)=${places.filter((p) => p.swim.possible && ["allowed", "tolerated"].includes(p.swim.legal)).length}`);
-console.log(`Photo:     set=${places.filter((p) => p.photo).length}  null=${places.filter((p) => !p.photo).length}`);
+console.log(`Photo:     lokální=${places.filter((p) => p.photo_local).length}  bez=${places.filter((p) => !p.photo_local).length}`);
 console.log(`Wiki link: ${places.filter((p) => p.links.wiki).length}`);
 console.log(`Fixes aplikováno: ${fixedIds.size}`);
 console.log(`Loops: ${loops.length}, stops match ${stopHits}/${stopHits + stopMiss}`);
