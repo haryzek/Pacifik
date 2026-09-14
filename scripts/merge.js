@@ -63,6 +63,8 @@ const loops = JSON.parse(fs.readFileSync(path.join(RAW, "loops.json"), "utf8"));
 const loopsExtra = path.join(OUT, "loops-extra.json");
 if (fs.existsSync(loopsExtra)) loops.push(...JSON.parse(fs.readFileSync(loopsExtra, "utf8")));
 const geo = require("./geo.js");
+const GEOM = fs.existsSync(path.join(OUT, "route-geom.json")) ? JSON.parse(fs.readFileSync(path.join(OUT, "route-geom.json"), "utf8")) : {};
+const geomLine = (id) => GEOM[id] ? GEOM[id].pts.map(([lat, lng]) => ({ lat, lng })) : null;
 
 // ---------- 3. Fixes + normalizace ----------
 const trim = (v) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim() : v);
@@ -161,8 +163,9 @@ for (const l of loops) {
 }
 // "po cestě": všechna místa v koridoru trasy, seřazená podél ní
 for (const l of loops) {
-  const line = (l.waypoints || []).filter((w) => typeof w.lat === "number");
+  const line = geomLine(l.id) || (l.waypoints || []).filter((w) => typeof w.lat === "number");
   if (line.length < 2) { l.near_ids = []; continue; }
+  if (GEOM[l.id]) { l.geom = GEOM[l.id].pts; l.total_km = GEOM[l.id].km; l.driving_hours = GEOM[l.id].h; }
   l.near_ids = places.filter((p) => geo.distToPolyline(p, line) <= geo.CORRIDOR_KM)
     .map((p) => ({ id: p.id, pos: geo.alongPolyline(p, line) })).sort((a, b) => a.pos - b.pos).map((x) => x.id);
   l.stop_ids = l.stop_ids || [];
@@ -174,7 +177,7 @@ const spineFile = path.join(OUT, "spine.json");
 let spineOut = null;
 if (fs.existsSync(spineFile)) {
   const sp = JSON.parse(fs.readFileSync(spineFile, "utf8"));
-  const days = sp.days.map((d) => ({ ...d, line: d.wp.map(([lat, lng]) => ({ lat, lng })) }));
+  const days = sp.days.map((d) => { const g = GEOM["spine-" + d.day]; return { ...d, line: g ? g.pts.map(([lat, lng]) => ({ lat, lng })) : d.wp.map(([lat, lng]) => ({ lat, lng })), geom: g ? g.pts : null, km: g ? g.km : d.km, h: g ? g.h : null }; });
   for (const d of days) {
     d.must_ids = (d.must || []).map((n) => {
       const nn = norm(n); let id = byName.get(nn);

@@ -56,7 +56,10 @@
     "Point No Point Lighthouse",
     "Fort Worden — Artillery Hill batteries"
    ],
-   "note": "Sixt SEA 9:00. Twin Peaks pouť (North Bend, Snoqualmie), pak trajekt Edmonds–Kingston (bez rezervace, jezdí po 40 min) a po Kitsapu do Port Townsend. Večer Fort Worden bunkry nad průlivem."
+   "note": "Sixt SEA 9:00. Twin Peaks pouť (North Bend, Snoqualmie), pak trajekt Edmonds–Kingston (bez rezervace, jezdí po 40 min) a po Kitsapu do Port Townsend. Večer Fort Worden bunkry nad průlivem.",
+   "ferries": [
+    5
+   ]
   },
   {
    "day": 2,

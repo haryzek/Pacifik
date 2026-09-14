@@ -576,7 +576,7 @@ function spineHtml(){
       const wp = d.wp.map(w => w.join(',')); const dir = wp.length >= 2 ? `https://www.google.com/maps/dir/?api=1&origin=${wp[0]}&destination=${wp[wp.length-1]}&travelmode=driving${wp.length > 2 ? '&waypoints=' + sample(wp.slice(1,-1), 9).join('|') : ''}` : '#';
       return `<div class="dayc ${cls}" id="spd${d.day}">
         <h3>D${d.day} · ${fmtDate(d.date)} — ${esc(d.title)}</h3>
-        <div class="dm"><span>🛏 <b>${esc(d.sleep)}</b></span><span>${d.km} km</span><span>${near} míst na trase</span>${d.date === t ? '<span style="color:var(--accent)">● DNES</span>' : ''}</div>
+        <div class="dm"><span>🛏 <b>${esc(d.sleep)}</b></span><span>${d.km} km${d.h ? ' · ' + d.h + ' h jízdy' : ''}</span><span>${near} míst na trase</span>${d.date === t ? '<span style="color:var(--accent)">● DNES</span>' : ''}</div>
         <div class="note">${esc(d.note||'')}</div>
         <div class="must">${musts.map(p => `<a href="#" data-id="${p.id}" class="mm ${S.store.visited[p.id]?'done':''}">${S.store.visited[p.id]?'✓ ':'★ '}${esc(p.name)}</a>`).join('')}</div>
         <div class="btns" style="margin:10px 0 2px"><a class="btn" href="${dir}" target="_blank" rel="noopener">🧭 Naviguj den</a><button class="btn" data-spinelist="${d.day}">📍 Místa dne (${near + musts.length})</button><button class="btn" data-spinemap="${d.day}">🗺</button></div>
@@ -728,7 +728,7 @@ function dayFocus(day){
   if (!day) { $('#dayban').hidden = true; if (M.showSpine) M.spine.addTo(M.map); drawMarkers(); return; }
   const d = S.spine.days.find(x => x.day === day); if (!d) return;
   M.map.removeLayer(M.spine);
-  const pts = d.wp.map(w => [w[0], w[1]]);
+  const pts = d.geom || d.wp.map(w => [w[0], w[1]]);
   M.dayLayer = L.layerGroup([
     L.polyline(pts, { color: '#0f1419', weight: 9, opacity: .6 }),
     L.polyline(pts, { color: '#4fc3c9', weight: 5, opacity: 1 }),
@@ -755,7 +755,7 @@ function renderMap(m){
     $('#mapCluster').onclick = () => { M.map.removeLayer(M.layer); M.clustered = !M.clustered; S.store.mapCluster = M.clustered; save(); M.layer = (M.clustered ? M.cluster : M.plain).addTo(M.map); $('#mapCluster').classList.toggle('on', M.clustered); drawMarkers(); toast(M.clustered ? 'Shlukování zapnuto' : 'Všechna místa', 1200); };
     M.loops = L.layerGroup();
     M.spine = L.layerGroup();
-    if (S.spine) { for (const d of S.spine.days) { const pts = d.wp.map(w => [w[0], w[1]]); M.spine.addLayer(L.polyline(pts, { color: '#4fc3c9', weight: 4, opacity: .75 }).bindTooltip(`D${d.day} · ${d.title}`, { sticky: true })); } }
+    if (S.spine) { for (const d of S.spine.days) { const pts = d.geom || d.wp.map(w => [w[0], w[1]]); M.spine.addLayer(L.polyline(pts, { color: '#4fc3c9', weight: 4, opacity: .75 }).bindTooltip(`D${d.day} · ${d.title}`, { sticky: true })); } }
     M.showSpine = S.store.mapSpine !== false; if (M.showSpine) M.spine.addTo(M.map); $('#mapSpine').classList.toggle('on', M.showSpine);
     $('#mapSpine').onclick = () => { M.showSpine = !M.showSpine; S.store.mapSpine = M.showSpine; save(); M.showSpine ? M.spine.addTo(M.map) : M.map.removeLayer(M.spine); $('#mapSpine').classList.toggle('on', M.showSpine); };
     M.map.on('moveend', () => { if (!M.clustered || M.map.getZoom() >= 10) drawMarkers(); });
@@ -794,7 +794,7 @@ function drawMarkers(){
 }
 function drawLoops(){
   for (const l of S.loops) {
-    const pts = (l.waypoints || []).map(w => [w.lat, w.lng]); if (pts.length < 2) continue;
+    const pts = l.geom || (l.waypoints || []).map(w => [w.lat, w.lng]); if (pts.length < 2) continue;
     const pl = L.polyline(pts, { color: '#D9A441', weight: 3, opacity: .8, dashArray: '6 6' }).bindPopup(`<b>${esc(l.name)}</b>${l.total_km} km · ${l.driving_hours} h<br><a href="#" data-loop="${l.id}" style="color:var(--accent)">otevřít →</a>`);
     M.loops.addLayer(pl);
   }

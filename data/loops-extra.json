@@ -77,7 +77,11 @@
   "why_bob": "Prázdné větrné bluffy, staré pevnosti, dva trajekty a Twin Peaks na začátek — Olympic zezadu, bez I-5.",
   "overnight": "Port Townsend (viktoriánské město, Fort Worden)",
   "season_note_2026": "trajekt Coupeville–Port Townsend rezervuj online (wsdot.com/ferries), jinak fronta; Mukilteo bez rezervace",
-  "rank": 21
+  "rank": 21,
+  "ferries": [
+   2,
+   9
+  ]
  },
  {
   "id": "loop-22",
