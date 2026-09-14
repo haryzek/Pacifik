@@ -6,6 +6,8 @@ Live: **https://haryzek.github.io/Pacifik/** (GitHub Pages z `main`, žádný bu
 ## Stav (2026-09-14, před odletem)
 | Část | Stav |
 |---|---|
+| Páteř (`data/spine.json` → merge → `spine-out.json`) | ✅ 21 dní, 130 MUST, p.spine {day,km,must}; Plán → 🧭 Páteř, mapa dne A→B, chip 🧭 dnes |
+| Trasy po silnicích (`scripts/route-geom.js`, OSRM) | ✅ `data/route-geom.json`; `ferries: [i]` = úsek i→i+1 rovně; km/h z OSRM |
 | Data merge (`scripts/merge.js`) | ✅ 833 POI (550 research + 282 rychlé mapování + extra), 41 odboček (20 research + 21 vlastních v `data/loops-extra.json`), koridor 15 km → `near_ids`, vnitrozemí pokryto 268/274 |
 | Kolem mě + filtry + dosah (30/100/300/500/vše S→J) + hledání + 🎲 | ✅ |
 | Detail (fotka, koupání, 2026, Naviguj, plán, navštíveno, poznámka, 🚫 fotka) | ✅ |
@@ -43,6 +45,7 @@ prompts/              prompty pro research; prompts/gaps/ = rychlé mapování
 node scripts/gaps-import.js   # jen když přibyly data/gaps/*.json
 node scripts/merge.js         # -> data/places.json, loops.json (+ photo_local)
 node scripts/photos.js        # idempotentní; --only id,id --force pro konkrétní; reject list se aplikuje sám
+node scripts/route-geom.js    # jen když se změnily waypointy páteře/odboček (OSRM, ~1 min)
 node scripts/sw-build.js      # PHOTOS + CACHE_V do sw.js
 git add -A && git commit && git push
 ```
@@ -52,6 +55,8 @@ Fotky: kontrola `node scripts/contact-sheet.js --skip N` → `_screeny/contact.j
 `node scripts/merge.js` → načte raw (opraví rozbité JSONy R6–R8: CRLF, `\xe1`, `\,`, neukončené stringy, próza za polem),
 bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, dedupe (Jaccard názvů ≥ 0.6 && < 1,5 km, nebo `_merge_pairs`),
 `spineIndex` = 49.5 − lat, loops `stop_ids` (match názvu + do 60 km od waypointu). Vytiskne report.
+
+**Jak změnit páteř (z motelu):** uprav den v `data/spine.json` (wp, must názvy, sleep, note) → `node scripts/route-geom.js && node scripts/merge.js && node scripts/sw-build.js` → push. Bob obnoví tahem dolů.
 
 **Jak přidat odbočku:** objekt do `data/loops-extra.json` (waypoints = souřadnice po silnici, stačí každých 20–40 km) → merge spočítá `near_ids` (místa do 15 km od trasy). `node scripts/loops-cover.js` ukáže nepokryté vnitrozemí.
 
