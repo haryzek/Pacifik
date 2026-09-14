@@ -313,8 +313,10 @@ function sunTxt(){
 function countdown(){
   const now = new Date(); const d = (a,b)=>Math.ceil((a-b)/864e5);
   let t;
+  const car = new Date('2026-09-17T00:00:00');
   if (now < TRIP.start) t = `za ${d(TRIP.start, now)} d`;
-  else if (now <= TRIP.end) t = `den ${d(now, TRIP.start)+1}/${TRIP.days}`;
+  else if (now < car) t = '✈ letím';
+  else if (now <= TRIP.end) { const dn = d(now, car) + 1; t = dn <= 21 ? `D${dn}` : `SM ${dn - 21}`; }
   else t = 'doma';
   $('#countdown').textContent = t + (sunTxt() ? ' · ' + sunTxt() : '');
 }
