@@ -3,21 +3,21 @@
 Offline PWA pro Bobův road trip Seattle → San Diego (16. 9. – 10. 10. 2026). Zadání: `PACIFIK-SPEC.md`.
 Live: **https://haryzek.github.io/Pacifik/** (GitHub Pages z `main`, žádný build step).
 
-## Stav (2026-09-12, session 2)
+## Stav (2026-09-14, před odletem)
 | Část | Stav |
 |---|---|
-| Data merge (`scripts/merge.js`) | ✅ 832 POI (550 research + 282 rychlé mapování), 20 loops |
+| Data merge (`scripts/merge.js`) | ✅ 833 POI (550 research + 282 rychlé mapování + extra), 41 odboček (20 research + 21 vlastních v `data/loops-extra.json`), koridor 15 km → `near_ids`, vnitrozemí pokryto 268/274 |
 | Kolem mě + filtry + dosah (30/100/300/500/vše S→J) + hledání + 🎲 | ✅ |
 | Detail (fotka, koupání, 2026, Naviguj, plán, navštíveno, poznámka, 🚫 fotka) | ✅ |
 | Poloha (GPS / poslední / simulovaná) + západ slunce (PT) | ✅ |
-| Odbočky (20 loopů, Naviguj celou smyčku) | ✅ |
-| Mapa (Leaflet, noční OSM, markery dle kategorie, loopy) | ✅ online podklad, offline jen z cache |
+| Odbočky (41, „po cestě“ automaticky z koridoru, Naviguj celou smyčku, místo zná své odbočky, Plán → trasa) | ✅ |
+| Mapa (Leaflet, noční OSM, markercluster přepínatelný, loopy, 📌 fix polohy, ovládání u palce) | ✅ online podklad, offline jen z cache |
 | Plán / Deník (.md export) / Útrata (4 300 $, 21 Kč) / Záloha (JSON export-import) | ✅ |
 | Papíry (lety, Sixt, ESTA, praktikum, vlastní poznámky) | ✅ |
-| Fotky (`scripts/photos.js`) | ✅ 787/832, 17,6 MB, v SW cache |
+| Fotky (`scripts/photos.js`) | ✅ 784/833, 17,5 MB, v SW cache; reject list |
 | PWA (manifest, ikony, sw.js, instalace, „Offline připraveno ✓") | ✅ |
-| Verify pass (hodiny/ceny 2026 u rank 1) | ⏳ |
-| Ruční kontrola fotek (reject list) | ⏳ průběžně — ~10 % je mimo |
+| Verify pass (uzávěry, permity, hodiny/ceny u 80 ⭐ podniků, mrtvé odkazy) | ✅ 12. 9. 2026 — „[ověřeno 12. 9. 2026]“ v season_note; uzávěry v `data/alerts.json` (Papíry → 🚧) |
+| Ruční kontrola fotek | ⏳ průběžně z cesty (🚫 v detailu → Záloha → id) |
 
 ## Struktura
 ```
@@ -33,7 +33,8 @@ data/places.json      VÝSTUP merge — appka čte tohle
 data/loops.json       VÝSTUP merge
 data/photos.json      credit/licence/zdroj fotek; data/photo-reject.json = zamítnuté; data/missing-photos.txt
 photos/{id}.jpg       ~480 px JPEG; photos/manual/{id}.jpg = ruční (vyhrává)
-scripts/              merge.js, gaps-import.js, gaps-review.js, gap-prompts.js, photos.js, contact-sheet.js, sw-build.js, icons.js
+data/alerts.json      uzávěry silnic (Papíry → 🚧), ručně; data/loops-extra.json = vlastní odbočky
+scripts/              merge.js, geo.js (páteř, koridor), loops-cover.js (pokrytí vnitrozemí), gaps-import.js, gaps-review.js, gap-prompts.js, photos.js, contact-sheet.js, verify-links.js, sw-build.js, icons.js
 prompts/              prompty pro research; prompts/gaps/ = rychlé mapování
 ```
 
@@ -51,6 +52,8 @@ Fotky: kontrola `node scripts/contact-sheet.js --skip N` → `_screeny/contact.j
 `node scripts/merge.js` → načte raw (opraví rozbité JSONy R6–R8: CRLF, `\xe1`, `\,`, neukončené stringy, próza za polem),
 bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, dedupe (Jaccard názvů ≥ 0.6 && < 1,5 km, nebo `_merge_pairs`),
 `spineIndex` = 49.5 − lat, loops `stop_ids` (match názvu + do 60 km od waypointu). Vytiskne report.
+
+**Jak přidat odbočku:** objekt do `data/loops-extra.json` (waypoints = souřadnice po silnici, stačí každých 20–40 km) → merge spočítá `near_ids` (místa do 15 km od trasy). `node scripts/loops-cover.js` ukáže nepokryté vnitrozemí.
 
 **Jak přidat / opravit místo:** nový → `data/extra.json`; oprava existujícího → `data/fixes.json` pod jeho id (přepíše jen uvedená pole). Pak merge + commit.
 
