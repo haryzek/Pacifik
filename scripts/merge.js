@@ -168,6 +168,31 @@ for (const l of loops) {
   l.stop_ids = l.stop_ids || [];
 }
 for (const p of places) p.loop_ids = loops.filter((l) => l.near_ids.includes(p.id)).map((l) => l.id);
+
+// ---------- 7b. Páteř (data/spine.json): must názvy -> id, vzdálenost každého místa od trasy dne ----------
+const spineFile = path.join(OUT, "spine.json");
+let spineOut = null;
+if (fs.existsSync(spineFile)) {
+  const sp = JSON.parse(fs.readFileSync(spineFile, "utf8"));
+  const days = sp.days.map((d) => ({ ...d, line: d.wp.map(([lat, lng]) => ({ lat, lng })) }));
+  for (const d of days) {
+    d.must_ids = (d.must || []).map((n) => {
+      const nn = norm(n); let id = byName.get(nn);
+      if (!id) { const c = places.map((p) => ({ p, o: overlap(p.name, n) })).filter((x) => x.o >= 0.5).sort((a, b) => b.o - a.o)[0]; id = c ? c.p.id : null; }
+      if (!id) W(`spine den ${d.day}: must "${n}" nenalezeno`);
+      return id;
+    }).filter(Boolean);
+    delete d.line_; 
+  }
+  for (const p of places) {
+    let best = { day: null, km: Infinity };
+    for (const d of days) { const km = geo.distToPolyline(p, d.line); if (km < best.km) best = { day: d.day, km }; }
+    p.spine = best.km <= 50 ? { day: best.day, km: Math.round(best.km) } : null;
+    const md = days.find((d) => d.must_ids.includes(p.id)); if (md) { p.spine = p.spine || { day: md.day, km: Math.round(best.km) }; p.spine.must = true; p.spine.day = md.day; }
+  }
+  spineOut = { updated: sp.updated || null, days: days.map(({ line, ...d }) => d) };
+  fs.writeFileSync(path.join(OUT, "spine-out.json"), JSON.stringify(spineOut, null, 0));
+}
 loops.sort((a, b) => a.rank - b.rank);
 
 // ---------- 8. Výstup ----------
@@ -188,6 +213,7 @@ console.log(`Swim:      possible=${places.filter((p) => p.swim.possible).length}
 console.log(`Photo:     lokální=${places.filter((p) => p.photo_local).length}  bez=${places.filter((p) => !p.photo_local).length}`);
 console.log(`Wiki link: ${places.filter((p) => p.links.wiki).length}`);
 console.log(`Fixes aplikováno: ${fixedIds.size}`);
+if (spineOut) console.log(`Páteř: ${spineOut.days.length} dní, must ${spineOut.days.reduce((a, d) => a + d.must_ids.length, 0)}, na trase ≤15 km: ${places.filter((p) => p.spine && p.spine.km <= 15).length}, kousek ≤50: ${places.filter((p) => p.spine && p.spine.km > 15).length}`);
 console.log(`Loops: ${loops.length}, stops match ${stopHits}/${stopHits + stopMiss}, po cestě celkem ${loops.reduce((a, l) => a + l.near_ids.length, 0)}, vnitrozemí nepokryto: ${places.filter((p) => geo.distToPolyline(p, geo.SPINE) > geo.SPINE_KM && !p.loop_ids.length).length}`);
 if (removed.length) console.log(`\nDuplicity:\n  ` + removed.join("\n  "));
 if (warn.length) console.log(`\nWarnings (${warn.length}):\n  ` + warn.join("\n  "));

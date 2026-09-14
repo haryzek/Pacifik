@@ -1,0 +1,1208 @@
+{
+ "_comment": "Páteř cesty — 20 dní s autem. must = názvy míst (merge je přeloží na id), wp = trasa dne (lat,lng) pro koridor a mapu. Upravitelné z motelu.",
+ "days": [
+  {
+   "day": 1,
+   "date": "2026-09-17",
+   "title": "Seattle → Twin Peaks → Port Townsend",
+   "sleep": "Port Townsend (nebo Whidbey)",
+   "km": 230,
+   "wp": [
+    [
+     47.4489,
+     -122.3094
+    ],
+    [
+     47.6062,
+     -122.3321
+    ],
+    [
+     47.4957,
+     -121.7868
+    ],
+    [
+     47.5416,
+     -121.837
+    ],
+    [
+     47.6062,
+     -122.3321
+    ],
+    [
+     47.811,
+     -122.377
+    ],
+    [
+     47.798,
+     -122.497
+    ],
+    [
+     47.9122,
+     -122.5268
+    ],
+    [
+     47.853,
+     -122.584
+    ],
+    [
+     48.117,
+     -122.76
+    ]
+   ],
+   "must": [
+    "Twede's Cafe",
+    "Snoqualmie Falls & Salish Lodge exterior",
+    "Reinig Bridge — Ronette's Bridge",
+    "Point No Point Lighthouse",
+    "Fort Worden — Artillery Hill batteries"
+   ],
+   "note": "Sixt SEA 9:00. Twin Peaks pouť (North Bend, Snoqualmie), pak trajekt Edmonds–Kingston (bez rezervace, jezdí po 40 min) a po Kitsapu do Port Townsend. Večer Fort Worden bunkry nad průlivem."
+  },
+  {
+   "day": 2,
+   "date": "2026-09-18",
+   "title": "Hurricane Ridge → Lake Crescent → Sol Duc → Forks",
+   "sleep": "Forks",
+   "km": 220,
+   "wp": [
+    [
+     48.117,
+     -122.76
+    ],
+    [
+     48.1181,
+     -123.4307
+    ],
+    [
+     47.969,
+     -123.498
+    ],
+    [
+     48.1181,
+     -123.4307
+    ],
+    [
+     48.057,
+     -123.799
+    ],
+    [
+     48.0701,
+     -123.9181
+    ],
+    [
+     47.9554,
+     -123.835
+    ],
+    [
+     47.9503,
+     -124.3854
+    ]
+   ],
+   "must": [
+    "Hurricane Ridge",
+    "Hurricane Hill",
+    "Lake Crescent — Bovee's Meadow",
+    "Fairholme — Lake Crescent west shore",
+    "Sol Duc Falls",
+    "Sol Duc Hot Springs"
+   ],
+   "note": "Hurricane Ridge: nahoře žádná voda ani jídlo — vezmi. Koupání v Lake Crescent (Fairholme, ledové, křišťál). Sol Duc Falls 1,3 km lesem, pak horké prameny (do 1. 11.). Forks = nic, což je ono."
+  },
+  {
+   "day": 3,
+   "date": "2026-09-19",
+   "title": "Neah Bay — Cape Flattery — Hobuck → La Push",
+   "sleep": "Forks / La Push",
+   "km": 240,
+   "wp": [
+    [
+     47.9503,
+     -124.3854
+    ],
+    [
+     48.1181,
+     -123.4307
+    ],
+    [
+     48.163,
+     -123.7
+    ],
+    [
+     48.254,
+     -124.262
+    ],
+    [
+     48.368,
+     -124.624
+    ],
+    [
+     48.385,
+     -124.716
+    ],
+    [
+     48.3381,
+     -124.6647
+    ],
+    [
+     48.254,
+     -124.262
+    ],
+    [
+     47.9503,
+     -124.3854
+    ],
+    [
+     47.903,
+     -124.621
+    ]
+   ],
+   "must": [
+    "Strait of Juan de Fuca Highway — SR 112",
+    "Cape Flattery",
+    "Makah Cultural & Research Center",
+    "Hobuck Beach",
+    "Second Beach"
+   ],
+   "note": "Makah Recreation Pass 20 $ v Neah Bay. Cape Flattery = konec kontinentu. Rialto je ZAVŘENÁ (Mora Rd do 15. 10.) → Second Beach z La Push na západ slunce. Alternativa dne: Ozette Triangle (15 km)."
+  },
+  {
+   "day": 4,
+   "date": "2026-09-20",
+   "title": "Hoh Rain Forest → Ruby Beach → Quinault → Astoria",
+   "sleep": "Astoria (Atomic Motel)",
+   "km": 330,
+   "wp": [
+    [
+     47.9503,
+     -124.3854
+    ],
+    [
+     47.861,
+     -123.935
+    ],
+    [
+     47.807,
+     -124.251
+    ],
+    [
+     47.709,
+     -124.416
+    ],
+    [
+     47.638,
+     -124.393
+    ],
+    [
+     47.464,
+     -123.853
+    ],
+    [
+     46.9754,
+     -123.8157
+    ],
+    [
+     46.586,
+     -123.921
+    ],
+    [
+     46.276,
+     -124.052
+    ],
+    [
+     46.1879,
+     -123.8313
+    ]
+   ],
+   "must": [
+    "Hoh Rain Forest — Hall of Mosses + Spruce Trail",
+    "Ruby Beach",
+    "Beach 4 — tidepools",
+    "Lake Quinault — Willaby lake access",
+    "Cape Disappointment Lighthouse",
+    "Atomic Motel"
+   ],
+   "note": "Hoh most: dnes otevřen přes den (noční uzávěra 22:30–5:30) — od 24. 9. zavřený, takže dnes je ten den. Ráno Hoh, Ruby Beach v poledne, Quinault koupání, Cape Disappointment při západu, Astoria na noc."
+  },
+  {
+   "day": 5,
+   "date": "2026-09-21",
+   "title": "Astoria → Cannon Beach → Three Capes → Pacific City",
+   "sleep": "Pacific City / Lincoln City",
+   "km": 200,
+   "wp": [
+    [
+     46.1879,
+     -123.8313
+    ],
+    [
+     46.183,
+     -123.805
+    ],
+    [
+     45.9192,
+     -123.9749
+    ],
+    [
+     45.8918,
+     -123.9615
+    ],
+    [
+     45.752,
+     -123.945
+    ],
+    [
+     45.596,
+     -123.943
+    ],
+    [
+     45.4864,
+     -123.9743
+    ],
+    [
+     45.364,
+     -123.97
+    ],
+    [
+     45.218,
+     -123.97
+    ],
+    [
+     44.9958,
+     -124.0086
+    ]
+   ],
+   "must": [
+    "Astoria Column",
+    "Ecola Point",
+    "Haystack Rock — Cannon Beach",
+    "Cape Meares Lighthouse",
+    "Cape Kiwanda",
+    "Whistling Winds Motel"
+   ],
+   "note": "Astoria Column ráno (10 $ parkování). Ecola/Cannon Beach = Goonies pobřeží. Three Capes Scenic Route místo 101. Cape Kiwanda duna při západu."
+  },
+  {
+   "day": 6,
+   "date": "2026-09-22",
+   "title": "Newport → Cape Perpetua → Heceta → Florence → Reedsport",
+   "sleep": "Reedsport / Florence",
+   "km": 180,
+   "wp": [
+    [
+     44.9958,
+     -124.0086
+    ],
+    [
+     44.8279,
+     -124.0646
+    ],
+    [
+     44.6765,
+     -124.0787
+    ],
+    [
+     44.6368,
+     -124.0535
+    ],
+    [
+     44.3107,
+     -124.101
+    ],
+    [
+     44.281,
+     -124.108
+    ],
+    [
+     44.137,
+     -124.128
+    ],
+    [
+     43.9826,
+     -124.0998
+    ],
+    [
+     43.93,
+     -124.11
+    ],
+    [
+     43.702,
+     -124.097
+    ]
+   ],
+   "must": [
+    "Yaquina Head Lighthouse",
+    "Cape Perpetua Overlook — Whispering Spruce",
+    "Thor's Well",
+    "Heceta Head Lighthouse",
+    "Sea Lion Caves",
+    "Woahink Lake — Honeyman South Day Use",
+    "Oregon Dunes Overlook"
+   ],
+   "note": "Thor's Well při přílivu (tabulka!), Cape Perpetua vyhlídka. Odpoledne duny a koupání v Cleawox/Woahink. Zítra začíná velký okruh — plná nádrž v Reedsportu."
+  },
+  {
+   "day": 7,
+   "date": "2026-09-23",
+   "title": "North Umpqua: vodopády, horké prameny → Diamond Lake",
+   "sleep": "Diamond Lake (resort/motel)",
+   "km": 260,
+   "wp": [
+    [
+     43.702,
+     -124.097
+    ],
+    [
+     43.636,
+     -123.568
+    ],
+    [
+     43.2165,
+     -123.3417
+    ],
+    [
+     43.3,
+     -123.1
+    ],
+    [
+     43.302,
+     -122.836
+    ],
+    [
+     43.349,
+     -122.727
+    ],
+    [
+     43.263,
+     -122.427
+    ],
+    [
+     43.295,
+     -122.362
+    ],
+    [
+     43.246,
+     -122.39
+    ],
+    [
+     43.256,
+     -122.378
+    ],
+    [
+     43.129,
+     -122.132
+    ]
+   ],
+   "must": [
+    "North Umpqua Highway — OR-138",
+    "Susan Creek Falls",
+    "Steamboat Falls",
+    "Toketee Falls",
+    "Umpqua Hot Springs",
+    "Watson Falls",
+    "Diamond Lake — South Shore"
+   ],
+   "note": "Umpqua HS 5 $ jen kartou, den. Steamboat Falls = koupání pod prahem. Toketee 200 schodů. Diamond Lake na noc, ráno Crater."
+  },
+  {
+   "day": 8,
+   "date": "2026-09-24",
+   "title": "CRATER LAKE — celý den",
+   "sleep": "Prospect / Union Creek",
+   "km": 150,
+   "wp": [
+    [
+     43.129,
+     -122.132
+    ],
+    [
+     43.004,
+     -122.116
+    ],
+    [
+     42.97,
+     -122.12
+    ],
+    [
+     42.939,
+     -122.169
+    ],
+    [
+     42.9114,
+     -122.1483
+    ],
+    [
+     42.86,
+     -122.168
+    ],
+    [
+     42.914,
+     -122.447
+    ],
+    [
+     42.747,
+     -122.495
+    ]
+   ],
+   "must": [
+    "Pumice Desert",
+    "Watchman Peak Trail",
+    "Crater Lake — Rim Village & Sinnott Memorial Overlook",
+    "Discovery Point Trail",
+    "Garfield Peak Trail",
+    "Cloudcap Overlook"
+   ],
+   "note": "NP 30 $. Cleetwood Cove (voda) ZAVŘEN. East Rim HQ↔Phantom Ship zavřená — Cloudcap/Phantom Ship jen od North Junction. Watchman na západ slunce (1 h nahoru). Pak dolů OR-62 na Union Creek/Prospect."
+  },
+  {
+   "day": 9,
+   "date": "2026-09-25",
+   "title": "Rogue → Table Rock → Jacksonville → OR-42 → Bandon",
+   "sleep": "Bandon",
+   "km": 330,
+   "wp": [
+    [
+     42.747,
+     -122.495
+    ],
+    [
+     42.895,
+     -122.461
+    ],
+    [
+     42.914,
+     -122.447
+    ],
+    [
+     42.747,
+     -122.495
+    ],
+    [
+     42.685,
+     -122.624
+    ],
+    [
+     42.468,
+     -122.907
+    ],
+    [
+     42.313,
+     -122.966
+    ],
+    [
+     42.439,
+     -123.328
+    ],
+    [
+     43.2165,
+     -123.3417
+    ],
+    [
+     43.04,
+     -123.85
+    ],
+    [
+     43.119,
+     -124.4084
+    ]
+   ],
+   "must": [
+    "Rogue Gorge",
+    "Natural Bridge — Rogue River",
+    "Prospect — Mill Creek Falls, Barr Creek Falls & Avenue of the Giant Boulders",
+    "Upper Table Rock",
+    "Jacksonville Historic District",
+    "Face Rock & Wizard's Hat — beach walk"
+   ],
+   "note": "Rogue Gorge/Natural Bridge NEKOUPAT. Table Rock ráno (horko). Jacksonville oběd. Pak OR-42 přes Coast Range (3 h) zpátky k moři — Bandon Face Rock při západu. Alternativa: Oregon Caves + US-199 (loop-33) a vynechat jižní pobřeží."
+  },
+  {
+   "day": 10,
+   "date": "2026-09-26",
+   "title": "Cape Blanco → Port Orford → Boardman corridor → Crescent City",
+   "sleep": "Crescent City (Curly Redwood Lodge)",
+   "km": 200,
+   "wp": [
+    [
+     43.119,
+     -124.4084
+    ],
+    [
+     42.903,
+     -124.502
+    ],
+    [
+     42.837,
+     -124.564
+    ],
+    [
+     42.7402,
+     -124.499
+    ],
+    [
+     42.6194,
+     -124.3999
+    ],
+    [
+     42.4057,
+     -124.4218
+    ],
+    [
+     42.25,
+     -124.38
+    ],
+    [
+     42.17,
+     -124.3598
+    ],
+    [
+     42.0526,
+     -124.284
+    ],
+    [
+     41.7558,
+     -124.2026
+    ]
+   ],
+   "must": [
+    "Cape Blanco Lighthouse",
+    "Port of Port Orford — dolly dock",
+    "Sisters Rock State Park",
+    "Natural Bridges — official overlook",
+    "Secret Beach",
+    "Thunder Rock Cove",
+    "Harris Beach"
+   ],
+   "note": "Nejlepší den oregonského pobřeží: Boardman corridor — každý turnout je jiný svět. Whaleshead, Indian Sands. Večer Crescent City, Curly Redwood Lodge (motel z jednoho stromu)."
+  },
+  {
+   "day": 11,
+   "date": "2026-09-27",
+   "title": "Redwoods: Stout Grove, Howland Hill, Fern Canyon → Eureka",
+   "sleep": "Eureka / Arcata",
+   "km": 170,
+   "wp": [
+    [
+     41.7558,
+     -124.2026
+    ],
+    [
+     41.79,
+     -124.09
+    ],
+    [
+     41.7558,
+     -124.2026
+    ],
+    [
+     41.55,
+     -124.08
+    ],
+    [
+     41.401,
+     -124.065
+    ],
+    [
+     41.357,
+     -124.04
+    ],
+    [
+     41.268,
+     -124.0928
+    ],
+    [
+     41.0587,
+     -124.143
+    ],
+    [
+     40.8665,
+     -124.0828
+    ],
+    [
+     40.8021,
+     -124.1637
+    ]
+   ],
+   "must": [
+    "Stout Memorial Grove",
+    "Howland Hill Road",
+    "Fern Canyon",
+    "Newton B. Drury Scenic Parkway",
+    "Trinidad Head Loop",
+    "Arcata Plaza & Minor Theatre"
+   ],
+   "note": "Fern Canyon bez permitu (po 15. 9.), Davison Rd štěrk + brody. Prairie Creek elk na louce. Trinidad Head na západ. Večer Arcata (knihkupectví, plaza) nebo Eureka Old Town."
+  },
+  {
+   "day": 12,
+   "date": "2026-09-28",
+   "title": "Lost Coast — Mattole Road → Avenue of the Giants",
+   "sleep": "Garberville / Miranda",
+   "km": 200,
+   "wp": [
+    [
+     40.8021,
+     -124.1637
+    ],
+    [
+     40.5762,
+     -124.2637
+    ],
+    [
+     40.4394,
+     -124.4094
+    ],
+    [
+     40.3251,
+     -124.2859
+    ],
+    [
+     40.289,
+     -124.356
+    ],
+    [
+     40.2449,
+     -124.1223
+    ],
+    [
+     40.3519,
+     -123.994
+    ],
+    [
+     40.321,
+     -123.921
+    ],
+    [
+     40.25,
+     -123.86
+    ],
+    [
+     40.1,
+     -123.79
+    ]
+   ],
+   "must": [
+    "Cape Mendocino",
+    "Mattole Beach",
+    "Honeydew Bridge & Mattole Valley",
+    "Rockefeller Forest — Giant Tree",
+    "Avenue of the Giants",
+    "Benbow State Recreation Area — South Fork Eel River"
+   ],
+   "note": "Loop-01. Mattole Road je pomalá a děravá — celý den. Mattole Beach = nejzápadnější prázdno. Bull Creek Flats/Rockefeller = nejvyšší stromy. Koupání v South Fork Eel."
+  },
+  {
+   "day": 13,
+   "date": "2026-09-29",
+   "title": "Leggett → Hwy 1 → Fort Bragg → Mendocino",
+   "sleep": "Mendocino / Point Arena",
+   "km": 190,
+   "wp": [
+    [
+     40.1,
+     -123.79
+    ],
+    [
+     39.867,
+     -123.716
+    ],
+    [
+     39.63,
+     -123.785
+    ],
+    [
+     39.4457,
+     -123.8053
+    ],
+    [
+     39.453,
+     -123.813
+    ],
+    [
+     39.307,
+     -123.799
+    ],
+    [
+     39.1749,
+     -123.6775
+    ],
+    [
+     38.955,
+     -123.714
+    ]
+   ],
+   "must": [
+    "The Peg House",
+    "MacKerricher State Park – Glass Beach",
+    "Mendocino Headlands State Park",
+    "Gallery Bookshop",
+    "Big River Beach",
+    "Point Arena Lighthouse"
+   ],
+   "note": "Peg House snídaně. Hwy 1 od Leggettu = 35 km serpentin, pak Pacifik. Glass Beach při odlivu. Mendocino odpoledne — útesy + kniha. Point Arena maják při západu (5 $)."
+  },
+  {
+   "day": 14,
+   "date": "2026-09-30",
+   "title": "Sea Ranch → Salt Point → Fort Ross → Jenner → Tomales Bay",
+   "sleep": "Point Reyes Station / Inverness",
+   "km": 220,
+   "wp": [
+    [
+     38.955,
+     -123.714
+    ],
+    [
+     38.8707,
+     -123.6583
+    ],
+    [
+     38.6895,
+     -123.4535
+    ],
+    [
+     38.5638,
+     -123.3272
+    ],
+    [
+     38.514,
+     -123.244
+    ],
+    [
+     38.45,
+     -123.12
+    ],
+    [
+     38.311,
+     -123.066
+    ],
+    [
+     38.24,
+     -122.97
+    ],
+    [
+     38.1094,
+     -122.8654
+    ],
+    [
+     38.069,
+     -122.8069
+    ]
+   ],
+   "must": [
+    "Bowling Ball Beach",
+    "Sea Ranch Chapel",
+    "Salt Point State Park – Tafoni Caves",
+    "Fort Ross State Historic Park",
+    "Jenner at Russian River Mouth",
+    "Bodega Head",
+    "Tomales Bay – Heart's Desire Beach (Tomales Bay State Park)"
+   ],
+   "note": "Bowling Ball Beach jen při odlivu (tabulka!). Sea Ranch kaple 10 min. Salt Point tafoni. Jenner tuleni. Tomales Bay = nejlepší koupání (chráněné, 15 °C). Klíšťata."
+  },
+  {
+   "day": 15,
+   "date": "2026-10-01",
+   "title": "Point Reyes → Mt. Tam → Marin Headlands → Golden Gate → SF",
+   "sleep": "San Francisco (Ocean Park Motel)",
+   "km": 150,
+   "wp": [
+    [
+     38.069,
+     -122.8069
+    ],
+    [
+     38.0958,
+     -122.8874
+    ],
+    [
+     37.996,
+     -123.021
+    ],
+    [
+     38.0288,
+     -122.8822
+    ],
+    [
+     37.923,
+     -122.596
+    ],
+    [
+     37.863,
+     -122.586
+    ],
+    [
+     37.829,
+     -122.499
+    ],
+    [
+     37.828,
+     -122.482
+    ],
+    [
+     37.808,
+     -122.4737
+    ],
+    [
+     37.7364,
+     -122.504
+    ]
+   ],
+   "must": [
+    "Point Reyes Lighthouse",
+    "Point Reyes – Chimney Rock",
+    "Limantour Beach",
+    "Mount Tamalpais State Park – East Peak",
+    "Marin Headlands – Hawk Hill",
+    "Marin Headlands – Battery Spencer",
+    "Fort Point National Historic Site"
+   ],
+   "note": "Čtvrtek — maják otevřen (čt–po). 313 schodů, vítr. Mt. Tam nad mlhou. Hawk Hill + Battery Spencer = most z bunkrů. Golden Gate mýto 10,50 $ → bayareafastrak.org/paytoll do 48 h. Fort Point = Vertigo."
+  },
+  {
+   "day": 16,
+   "date": "2026-10-02",
+   "title": "SAN FRANCISCO — pěšky",
+   "sleep": "San Francisco",
+   "km": 30,
+   "wp": [
+    [
+     37.7364,
+     -122.504
+    ],
+    [
+     37.78,
+     -122.514
+    ],
+    [
+     37.7976,
+     -122.4066
+    ],
+    [
+     37.769,
+     -122.427
+    ],
+    [
+     37.7594,
+     -122.4148
+    ],
+    [
+     37.7524,
+     -122.4478
+    ],
+    [
+     37.7364,
+     -122.504
+    ]
+   ],
+   "must": [
+    "Land's End & Sutro Baths",
+    "City Lights Booksellers & Publishers",
+    "Vesuvio Cafe",
+    "The Saloon",
+    "Amoeba Music San Francisco",
+    "Twin Peaks",
+    "Rooky Ricardo's Records"
+   ],
+   "note": "Auto nech u motelu. Sutro Baths ráno, North Beach (City Lights, Vesuvio, Saloon blues od 16 h), Haight (Amoeba), Mission murály, Twin Peaks večer. Muni/Uber."
+  },
+  {
+   "day": 17,
+   "date": "2026-10-03",
+   "title": "Devil's Slide → Pescadero → Santa Cruz → Monterey → Point Lobos → Big Sur",
+   "sleep": "Big Sur (Ripplewood / Glen Oaks / Fernwood)",
+   "km": 260,
+   "wp": [
+    [
+     37.7364,
+     -122.504
+    ],
+    [
+     37.576,
+     -122.515
+    ],
+    [
+     37.293,
+     -122.407
+    ],
+    [
+     37.1818,
+     -122.394
+    ],
+    [
+     36.9741,
+     -122.0308
+    ],
+    [
+     36.6002,
+     -121.8947
+    ],
+    [
+     36.5421,
+     -121.9323
+    ],
+    [
+     36.516,
+     -121.943
+    ],
+    [
+     36.372,
+     -121.901
+    ],
+    [
+     36.2704,
+     -121.8081
+    ]
+   ],
+   "must": [
+    "Devil's Slide Trail",
+    "Pigeon Point Light Station",
+    "Bean Hollow State Beach",
+    "Point Pinos Lighthouse",
+    "Tor House and Hawk Tower",
+    "Point Lobos State Reserve",
+    "Bixby Creek Bridge"
+   ],
+   "note": "Hwy 1 celá průjezdná. Pescadero (Duarte's oběd), Point Lobos 2 h (parkuj na Hwy 1 zdarma), Bixby při západu. Big Sur nocleh rezervuj (drahé, plno)."
+  },
+  {
+   "day": 18,
+   "date": "2026-10-04",
+   "title": "BIG SUR → Ragged Point → Cambria → SLO",
+   "sleep": "San Luis Obispo / Cambria",
+   "km": 230,
+   "wp": [
+    [
+     36.2704,
+     -121.8081
+    ],
+    [
+     36.2394,
+     -121.749
+    ],
+    [
+     36.238,
+     -121.816
+    ],
+    [
+     36.22,
+     -121.758
+    ],
+    [
+     36.2481,
+     -121.789
+    ],
+    [
+     36.158,
+     -121.672
+    ],
+    [
+     35.9036,
+     -121.4638
+    ],
+    [
+     35.781,
+     -121.323
+    ],
+    [
+     35.662,
+     -121.257
+    ],
+    [
+     35.5479,
+     -121.0973
+    ],
+    [
+     35.37,
+     -120.865
+    ],
+    [
+     35.2828,
+     -120.6596
+    ]
+   ],
+   "must": [
+    "Pfeiffer Beach",
+    "Big Sur River Gorge (Pfeiffer SP)",
+    "Henry Miller Memorial Library",
+    "Nepenthe",
+    "McWay Falls (Julia Pfeiffer Burns SP)",
+    "Piedras Blancas Elephant Seals",
+    "Madonna Inn"
+   ],
+   "note": "Neděle — Henry Miller 11–17. Pfeiffer Beach 15 $ hotově, ráno. Gorge koupání. Nepenthe oběd 11:30. McWay 5 min. Tuleni Piedras Blancas. Madonna Inn růžový bar na noc (nebo Cambria)."
+  },
+  {
+   "day": 19,
+   "date": "2026-10-05",
+   "title": "Figueroa Mountain → Santa Barbara → Ventura → Malibu → LA",
+   "sleep": "Los Angeles (Hollywood / Silver Lake)",
+   "km": 400,
+   "wp": [
+    [
+     35.2828,
+     -120.6596
+    ],
+    [
+     35,
+     -120.55
+    ],
+    [
+     34.662,
+     -120.1197
+    ],
+    [
+     34.7414,
+     -119.9858
+    ],
+    [
+     34.662,
+     -120.1197
+    ],
+    [
+     34.578,
+     -119.98
+    ],
+    [
+     34.4208,
+     -119.6982
+    ],
+    [
+     34.2805,
+     -119.2945
+    ],
+    [
+     34.04,
+     -118.7
+    ],
+    [
+     34.027,
+     -118.779
+    ],
+    [
+     34.04,
+     -118.7
+    ],
+    [
+     34.0195,
+     -118.4912
+    ],
+    [
+     34.1019,
+     -118.3268
+    ]
+   ],
+   "must": [
+    "Figueroa Mountain Road — dubová savana",
+    "Santa Barbara County Courthouse",
+    "Ventura Pier",
+    "El Matador State Beach",
+    "Point Dume State Beach",
+    "Amoeba Music (Hollywood)"
+   ],
+   "note": "Dlouhý den. Figueroa ráno (2 h, zlatá savana s lišejníkem — TVOJE krajina). Cold Spring Tavern je v pondělí ZAVŘENÁ. SB rychle (věž soudu), Ventura molo, Malibu El Matador při západu, LA na noc. Jitlada/Marouch v pondělí zavřeno → Canter's."
+  },
+  {
+   "day": 20,
+   "date": "2026-10-06",
+   "title": "LA ráno → PCH jih → Crystal Cove → San Diego",
+   "sleep": "San Diego (Ocean Beach / Kings Inn)",
+   "km": 250,
+   "wp": [
+    [
+     34.1019,
+     -118.3268
+    ],
+    [
+     34.1184,
+     -118.3004
+    ],
+    [
+     34.0522,
+     -118.2437
+    ],
+    [
+     33.7701,
+     -118.1937
+    ],
+    [
+     33.57,
+     -117.84
+    ],
+    [
+     33.5427,
+     -117.7854
+    ],
+    [
+     33.427,
+     -117.612
+    ],
+    [
+     33.1959,
+     -117.3795
+    ],
+    [
+     33.0345,
+     -117.2938
+    ],
+    [
+     32.8871,
+     -117.246
+    ],
+    [
+     32.85,
+     -117.27
+    ],
+    [
+     32.748,
+     -117.25
+    ]
+   ],
+   "must": [
+    "Griffith Observatory",
+    "The Last Bookstore (Los Angeles)",
+    "Crystal Cove State Park",
+    "San Onofre State Beach",
+    "Swami's Beach (Encinitas)",
+    "La Jolla Cove",
+    "Sunset Cliffs Natural Park",
+    "Ocean Beach Pier"
+   ],
+   "note": "Úterý — Jitlada/Marouch otevřeno na oběd. Griffith ráno, Last Bookstore, pak PCH na jih. La Jolla Cove koupání 19 °C. Sunset Cliffs při západu, Ocean Beach molo, Hodad's. Casbah večer?"
+  },
+  {
+   "day": 21,
+   "date": "2026-10-07",
+   "title": "San Diego 6:30 → LAX 10:00 (Sixt) → Santa Monica",
+   "sleep": "Ocean Park Hotel, Santa Monica (7.–9. 10., bez auta)",
+   "km": 210,
+   "wp": [
+    [
+     32.748,
+     -117.25
+    ],
+    [
+     33.1959,
+     -117.3795
+    ],
+    [
+     33.7701,
+     -118.1937
+    ],
+    [
+     33.9416,
+     -118.4085
+    ],
+    [
+     34.009,
+     -118.49
+    ]
+   ],
+   "must": [
+    "Salk Institute (La Jolla)",
+    "Torrey Pines State Natural Reserve"
+   ],
+   "note": "Vyjet 6:30 (I-5, 2,5–3 h, ranní špička v LA!). Salk/Torrey Pines jen pokud vyjedeš v 5 a stihneš (Salk nádvoří jen s prohlídkou st–pá 10:00 — to už nestihneš, jen zvenku). Po vrácení auta: LAX → Santa Monica 25 min (Uber/bus 3). 7.–9. 10. pěšky: Venice, molo, Getty Villa busem, Rae's snídaně. 9. 10. let 18:40."
+  }
+ ],
+ "updated": "2026-09-14"
+}
