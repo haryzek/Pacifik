@@ -58,6 +58,8 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 
 **Jak změnit páteř (z motelu):** uprav den v `data/spine.json` (wp, must názvy, sleep, note) → `node scripts/route-geom.js && node scripts/merge.js && node scripts/sw-build.js` → push. Bob obnoví tahem dolů.
 
+**Past:** po *každé* změně `index.html` (i jen CSS) spustit `node scripts/sw-build.js` — jinak zůstane starý `CACHE_V` a telefon nový index nechytí. A cokoli fixed u spodního okraje mapy (Leaflet `.leaflet-bottom`: měřítko, attribution) musí být posunuté nad nav lištu (`--sab` + 60 px), jinak je schované pod taby.
+
 **Jak přidat odbočku:** objekt do `data/loops-extra.json` (waypoints = souřadnice po silnici, stačí každých 20–40 km) → merge spočítá `near_ids` (místa do 15 km od trasy). `node scripts/loops-cover.js` ukáže nepokryté vnitrozemí.
 
 **Jak přidat / opravit místo:** nový → `data/extra.json`; oprava existujícího → `data/fixes.json` pod jeho id (přepíše jen uvedená pole). Pak merge + commit.
