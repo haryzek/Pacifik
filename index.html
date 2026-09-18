@@ -193,6 +193,11 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .sp .e{background:none;border:0;color:var(--muted);font-size:15px;cursor:pointer;padding:0 4px}
 .sp-edit{background:var(--card);border:1px solid var(--accent);border-radius:10px;padding:8px;margin:6px 0}
 .sp-edit .spend-form{margin:0}
+.sp-tog{display:flex;gap:6px;margin:10px 0 4px}
+.sp-tog button{flex:1;padding:7px;border-radius:8px;background:var(--card);color:var(--muted);border:1px solid var(--line);font:600 12px var(--mono);cursor:pointer}
+.sp-tog button.on{color:var(--accent);border-color:var(--accent)}
+.spd{display:flex;gap:8px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px;align-items:baseline}
+.spd .dd{font:600 12px var(--mono);width:70px;color:var(--muted)}.spd .amt{font:600 14px var(--mono);width:70px}.spd .br{flex:1;font:11px var(--mono);color:var(--muted)}.spd.today .dd{color:var(--accent)}
 #map{position:fixed;left:0;right:0;top:0;bottom:0;z-index:5;background:#0b1015;display:none}
 #map.on{display:block}
 #map.on::after{content:'';position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border:1.5px solid rgba(217,164,65,.55);border-radius:50%;pointer-events:none;z-index:400;box-shadow:0 0 0 2px rgba(0,0,0,.25)}
@@ -631,8 +636,20 @@ function spendHtml(){
       <input type="text" id="spNote" class="full" placeholder="poznámka (motel, diner…)">
       <button class="btn primary full" id="spAdd">➕ Zapsat</button>
     </div>
-    ${list.map((x,i) => [x,i]).reverse().map(([x,i]) => i === S.spendEdit ? spendEditHtml(x, i)
+    <div class="sp-tog"><button data-spview="list" class="${S.spendView==='days'?'':'on'}">📋 Zápisy</button><button data-spview="days" class="${S.spendView==='days'?'on':''}">📅 Po dnech</button></div>
+    ${S.spendView === 'days' ? spendDaysHtml(list) : list.map((x,i) => [x,i]).reverse().map(([x,i]) => i === S.spendEdit ? spendEditHtml(x, i)
       : `<div class="sp"><span class="amt">${x.usd.toFixed(0)} $</span><span class="cat">${SPEND_CATS[x.cat]} ${fmtDate(x.d)}</span><span class="note">${esc(x.note||'')}</span><button class="e" data-editspend="${i}" title="upravit">✎</button><button class="x" data-unspend="${i}">✕</button></div>`).join('')}`;
+}
+function spendDaysHtml(list){
+  if (!list.length) return '<div class="empty">Zatím nic zapsaného.</div>';
+  const byDay = {};
+  for (const x of list){ const d = byDay[x.d] = byDay[x.d] || { total: 0, cats: {} }; d.total += x.usd; d.cats[x.cat] = (d.cats[x.cat]||0) + x.usd; }
+  const t = today();
+  const dates = Object.keys(byDay).sort().reverse();
+  const sum = dates.reduce((a,d) => a + byDay[d].total, 0);
+  return dates.map(d => { const e = byDay[d]; const n = Math.round((new Date(d) - TRIP.start)/864e5)+1;
+    return `<div class="spd ${d===t?'today':''}"><span class="dd">${fmtDate(d)} · d${n}</span><span class="amt">${e.total.toFixed(0)} $</span><span class="br">${Object.entries(e.cats).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`${SPEND_CATS[k]} ${v.toFixed(0)}`).join('  ')}</span><span class="br" style="flex:0;text-align:right">${(e.total*CZK).toFixed(0)} Kč</span></div>`; }).join('')
+    + `<div class="sub" style="padding:10px 0">${dates.length} ${dates.length===1?'den':dates.length<5?'dny':'dní'} se zápisem · průměr ${(sum/dates.length).toFixed(0)} $/den · celkem ${sum.toFixed(0)} $</div>`;
 }
 function spendEditHtml(x, i){
   return `<div class="sp-edit"><div class="spend-form">
@@ -670,6 +687,7 @@ function bindPlan(){
   };
   const add = $('#spAdd'); if (add) add.onclick = () => { const usd = parseFloat($('#spUsd').value); if (!usd) return toast('Kolik?'); S.store.spend = S.store.spend || []; S.store.spend.push({ d: today(), usd, cat: $('#spCat').value, note: $('#spNote').value.trim() }); save(); renderPlan($('#main')); toast(`${usd} $ · ${(usd*CZK).toFixed(0)} Kč`); };
   document.querySelectorAll('[data-unspend]').forEach(el => el.onclick = () => { S.store.spend.splice(+el.dataset.unspend, 1); S.spendEdit = null; save(); renderPlan($('#main')); });
+  document.querySelectorAll('[data-spview]').forEach(el => el.onclick = () => { S.spendView = el.dataset.spview; S.spendEdit = null; renderPlan($('#main')); });
   document.querySelectorAll('[data-editspend]').forEach(el => el.onclick = () => { S.spendEdit = +el.dataset.editspend; renderPlan($('#main')); });
   const edC = $('#edCancel'); if (edC) edC.onclick = () => { S.spendEdit = null; renderPlan($('#main')); };
   const edS = $('#edSave'); if (edS) edS.onclick = () => {
