@@ -161,11 +161,17 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .bedpin small{font-weight:400;font-size:9px;opacity:.8}
 .bedbtn{flex:0 0 auto;align-self:flex-start;margin-left:2px;padding:6px 8px;font-size:17px;color:var(--muted);background:none;border:none;line-height:1}
 .bedbtn:active{color:var(--accent)}
+.bedcol{display:flex;flex-direction:column;gap:2px;flex:0 0 auto;align-self:flex-start}
+.bedcol .bedbtn{font-size:15px;padding:4px 7px;text-decoration:none}
 .ds.bed{align-items:baseline}
 .ds .bp{flex:0 0 26px;text-align:center;font:700 11px var(--mono);color:#0f1419;background:var(--bc);border-radius:7px;padding:2px 0}
 .ds .usd{flex:0 0 auto;font:11px var(--mono);color:var(--muted)}
 .ds .nm[data-bedzoom]{color:var(--water)}
 #daylist .bedwhy{padding:0 0 6px 34px;font-size:11px;color:var(--muted);line-height:1.35}
+#daylist .blinks{display:inline-flex;gap:4px;margin-left:4px;vertical-align:baseline}
+#daylist .blinks a{font:700 10px var(--mono);color:var(--water);border:1px solid rgba(79,195,201,.45);border-radius:6px;padding:2px 5px;text-decoration:none}
+#daylist .gbeds{display:flex;gap:6px;flex-wrap:wrap;padding:8px 0 4px}
+#daylist .gbeds .btn{flex:1;min-width:46%;text-align:center;font-size:12px;padding:9px 6px}
 #daylist{position:fixed;left:0;right:0;bottom:calc(60px + var(--sab));z-index:16;background:rgba(15,20,25,.96);border-top:1px solid rgba(79,195,201,.45);backdrop-filter:blur(8px);font:13px var(--ui)}
 #daylist .dl-h{display:flex;align-items:center;gap:8px;padding:8px 12px}
 #daylist .dl-h b{flex:1;font-family:var(--serif);font-weight:normal;font-size:14px;color:var(--water)}
@@ -613,7 +619,7 @@ function itemHtml({ p, km, b }){
       <div class="meta">${km != null ? `<span class="dist">${fmtKm(km)} <span class="arrow" style="transform:rotate(${Math.round(b)}deg)">↑</span> ${dirName(b)}</span><span>~${fmtMin(driveMin(km, p.road_access))}</span>` : `<span class="dist">${esc((p.nearest_town||'').split(',')[0])}</span>`}<span>${CATS[p.category]||''} ${esc(p.subcategory||p.category)}</span></div>
       <div class="why">${esc(p.why_bob)}</div>
       ${(icons.length || p.spine) ? `<div class="icons">${spBadge(p)}${icons.join(' · ')}</div>` : ''}
-    </div><button class="bedbtn" data-bed="${p.id}" title="Ubytko do ${BED_R} km">🛏</button></div>`;
+    </div><div class="bedcol"><button class="bedbtn" data-bed="${p.id}" title="Ubytko do ${BED_R} km (moje mapa, jde offline)">🛏</button><a class="bedbtn" href="${googleBedsMap(p)}" target="_blank" rel="noopener" title="Ceny v Google Maps, okolí ~${BED_R} km" onclick="event.stopPropagation()">🔎</a></div></div>`;
 }
 
 // ====================== ODBOČKY ======================
@@ -883,7 +889,35 @@ const BED_COLOR = { '$': '#7bb661', '$$': '#D9A441', '$$$': '#e0654a' };
 function bedsNear(p, r = BED_R){
   return S.beds.map(b => ({ b, km: hav(p, b) })).filter(x => x.km <= r).sort((a, b) => a.km - b.km);
 }
-function bedSearchUrl(b){ return `https://www.google.com/maps/search/motel/@${b.lat.toFixed(5)},${b.lng.toFixed(5)},13z`; }
+// Zoom tak, aby vyrez odpovidal prumeru 2*r km. Google Maps nema radius param, jen zoom,
+// takze je to priblizne — pixelova sirka se lisi podle zarizeni (pocitano na ~400 px).
+function zoomForRadius(lat, r = BED_R){
+  const z = Math.log2(400 * 156543.03 * Math.cos(lat * Math.PI / 180) / (r * 2000));
+  return Math.max(4, Math.min(14, Math.round(z * 10) / 10));
+}
+// Noc, na kterou se hleda: datum dne pateře, do kterého destinace patri, jinak dnes.
+function bedNight(p){
+  let d = today();
+  if (p && p.spine && S.spine) { const day = S.spine.days.find(x => x.day === p.spine.day); if (day && day.date >= today()) d = day.date; }
+  const out = new Date(d + 'T12:00:00'); out.setDate(out.getDate() + 1);
+  return { in: d, out: out.toISOString().slice(0, 10) };
+}
+// 1) Googlova MAPA ubytovani v okoli destinace — jeho piny, jeho ceny. Tohle Bob chtel.
+function googleBedsMap(p){ return `https://www.google.com/maps/search/lodging/@${p.lat.toFixed(5)},${p.lng.toFixed(5)},${zoomForRadius(p.lat)}z`; }
+// 2) Google Hotels — seznam s cenami na konkretni noc.
+function googleHotels(p){ const n = bedNight(p); const q = (p.nearest_town || p.name || '').split(',')[0];
+  return `https://www.google.com/travel/search?q=${encodeURIComponent('hotels near ' + q)}&checkin=${n.in}&checkout=${n.out}`; }
+// Prokliky u konkretni lokality, s predvyplnenou noci. Jen skladane URL, zadne API.
+function bedLinks(b, p){
+  const n = bedNight(p), q = encodeURIComponent(b.name.split(/ [—/(]/)[0].trim());
+  return [
+    ['🗺', 'Maps', `https://www.google.com/maps/search/lodging/@${b.lat.toFixed(5)},${b.lng.toFixed(5)},12z`],
+    ['🏨', 'Google', `https://www.google.com/travel/search?q=${q}&checkin=${n.in}&checkout=${n.out}`],
+    ['B.', 'Booking', `https://www.booking.com/searchresults.html?ss=${q}&checkin=${n.in}&checkout=${n.out}&group_adults=1&no_rooms=1`],
+    ['E.', 'Expedia', `https://www.expedia.com/Hotel-Search?destination=${q}&startDate=${n.in}&endDate=${n.out}&adults=1`],
+  ];
+}
+function bedSearchUrl(b){ return `https://www.google.com/maps/search/lodging/@${b.lat.toFixed(5)},${b.lng.toFixed(5)},12z`; }
 
 // ====================== MAPA ======================
 const CAT_COLOR = { coast:'#4fc3c9', forest:'#5aa66a', desert:'#d98b41', geology:'#c9764f', mountain:'#9aa6b8', lake_river:'#4f9fd9', waterfall:'#6fc6e6', scenic_drive:'#b8a06a', town:'#d9c78a', motel_gem:'#d95f8a', food_gem:'#e08a3a', culture:'#a97bd9', oddity:'#b6d94f', dark_sky:'#6f7fd9', hot_spring:'#e0654a' };
@@ -964,7 +998,7 @@ function bedFocus(id){
   for (const x of list) layers.push(L.marker([x.b.lat, x.b.lng], {
     icon: L.divIcon({ className: '', html: `<div class="bedpin" style="--bc:${BED_COLOR[x.b.price]}">${x.b.price}<small>${esc(x.b.usd)}</small></div>`, iconSize: [62, 22], iconAnchor: [31, 11] }),
     zIndexOffset: 400 + (x.b.price === '$' ? 100 : 0),
-  }).bindPopup(`<b>${esc(x.b.name)}</b><br>${esc(x.b.usd)} $ · ${esc(x.b.type||'')}<br>${fmtKm(x.km)} od ${esc(p.name)}${x.b.why ? '<br><i>' + esc(x.b.why) + '</i>' : ''}<br><a href="${bedSearchUrl(x.b)}" target="_blank" rel="noopener" style="color:var(--accent)">🔎 hledat motely zde →</a>`));
+  }).bindPopup(`<b>${esc(x.b.name)}</b><br>${esc(x.b.usd)} $ (odhad) · ${esc(x.b.type||'')}<br>${fmtKm(x.km)} od ${esc(p.name)}${x.b.why ? '<br><i>' + esc(x.b.why) + '</i>' : ''}<br>${bedLinks(x.b, p).map(l => `<a href="${l[2]}" target="_blank" rel="noopener" style="color:var(--accent)">${l[1]}</a>`).join(' · ')}`));
   M.bedLayer = L.layerGroup(layers).addTo(M.map);
   drawMarkers();
   $('#daybanT').textContent = `🛏 Ubytko do ${BED_R} km — ${p.name}`; $('#dayban').hidden = false; $('#dayban').style.top = ($('header').offsetHeight + 8) + 'px';
@@ -974,15 +1008,21 @@ function bedFocus(id){
 function bedListHtml(p, list){
   const el = $('#daylist'); if (!el) return;
   const far = list.length ? null : S.beds.map(b => ({ b, km: hav(p, b) })).sort((a, b) => a.km - b.km).slice(0, 3);
+  const n = bedNight(p);
   el.innerHTML = `<div class="dl-h"><b>🛏 ${list.length ? list.length + ' ubytek do ' + BED_R + ' km' : 'do ' + BED_R + ' km nic'}</b><button id="dlToggle">▾</button></div>
     <div class="dl-b">
+      <div class="gbeds">
+        <a class="btn primary" href="${googleBedsMap(p)}" target="_blank" rel="noopener">🔎 Ceny v Google Maps (okolí ~${BED_R} km)</a>
+        <a class="btn" href="${googleHotels(p)}" target="_blank" rel="noopener">🏨 Google Hotels na ${fmtDate(n.in)}</a>
+      </div>
+      <div class="sub">Reálné ceny umí jen Google sám — do téhle mapy je vytáhnout nejde (nemá to veřejné API). Tady jsou moje odhady hladiny, které fungují i offline; tapem výš dostaneš skutečná čísla.</div>
       ${list.map(x => `<div class="ds bed"><span class="bp" style="--bc:${BED_COLOR[x.b.price]}">${x.b.price}</span>
         <span class="nm" data-bedzoom="${x.b.lat},${x.b.lng}">${esc(x.b.name)} <i>· ${fmtKm(x.km)}</i></span>
-        <span class="usd">${esc(x.b.usd)} $</span>
-        <a class="x" href="${bedSearchUrl(x.b)}" target="_blank" rel="noopener" title="Hledat motely zde">🔎</a></div>
-        ${x.b.why ? `<div class="bedwhy">${esc(x.b.type||'')}${x.b.why ? ' — ' + esc(x.b.why) : ''}</div>` : ''}`).join('')}
+        <span class="usd">${esc(x.b.usd)} $</span></div>
+        <div class="bedwhy">${esc(x.b.type||'')}${x.b.why ? ' — ' + esc(x.b.why) : ''}
+          <span class="blinks">${bedLinks(x.b, p).map(l => `<a href="${l[2]}" target="_blank" rel="noopener" title="${l[1]} · noc ${n.in}">${l[0]}</a>`).join('')}</span></div>`).join('')}
       ${far ? `<div class="sub">Tady je pustina. Nejblíž: ${far.map(f => esc(f.b.name) + ' ' + fmtKm(f.km)).join(' · ')}.</div>` : ''}
-      <div class="sub">Ceny jsou odhad hladiny za noc pro konec září a začátek října 2026, ne živá dostupnost. 🔎 otevře hledání motelů v Google Maps kolem té lokality.</div>
+      <div class="sub">Prokliky mají předvyplněnou noc ${fmtDate(n.in)} → ${fmtDate(n.out)}, 1 osoba. Hladiny $/$$/$$$ jsou můj odhad pro konec září a začátek října 2026.</div>
     </div>`;
   el.hidden = false; document.body.classList.add('dl'); el.classList.toggle('open', S.store.dlOpen !== false);
   $('#dlToggle').onclick = () => { S.store.dlOpen = !el.classList.contains('open'); save(); el.classList.toggle('open'); $('#dlToggle').textContent = el.classList.contains('open') ? '▾' : '▴'; };
@@ -1101,6 +1141,7 @@ function openDetail(id){
         <button class="btn ${visited?'on':''}" id="visitBtn">${visited ? `✓ Byl jsem ${visited}` : '✓ Byl jsem tu'}</button>
         <button class="btn" id="mapBtn">🗺 Na mapě</button>
         <button class="btn" id="bedBtn">🛏 Ubytko do ${BED_R} km</button>
+        <a class="btn" href="${googleBedsMap(p)}" target="_blank" rel="noopener">🔎 Ceny v Googlu (~${BED_R} km)</a>
         <button class="btn ${S.posMode==='sim' && S.pos && Math.abs(S.pos.lat-p.lat)<1e-6 ? 'on' : ''}" id="hereBtn">📌 Jsem tu</button>
         <button class="btn" id="copyBtn">📋 ${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}</button>
         ${p.photo_local ? `<button class="btn" id="badPhoto">🚫 špatná fotka</button>` : ''}

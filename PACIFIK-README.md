@@ -15,7 +15,7 @@ Live: **https://haryzek.github.io/Pacifik/** (GitHub Pages z `main`, žádný bu
 | Odbočky (41, „po cestě“ automaticky z koridoru, Naviguj celou smyčku, místo zná své odbočky, Plán → trasa) | ✅ |
 | Mapa (Leaflet, noční OSM, markercluster přepínatelný, loopy, 📌 fix polohy, ovládání u palce) | ✅ online podklad, offline jen z cache |
 | Mapa dne (číslované zastávky v pořadí jízdy, ostruhy, A/B, panel zastávek, ➕ do trasy) | ✅ 19. 9. 2026 |
-| Ubytko do 50 km u každé destinace (🛏 ve výpisu i v detailu) | ✅ 19. 9. 2026, `data/ubytko.json` 177 lokalit |
+| Ubytko do 50 km u každé destinace (🛏 moje mapa offline + 🔎 ceny v Googlu) | ✅ 19. 9. 2026, `data/ubytko.json` 177 lokalit |
 | Poloha — zaseknutý FIX, zastaralá fixace, retry, re-arm po probuzení | ✅ opraveno 19. 9. 2026 |
 | Plán / Deník (.md export) / Útrata (4 300 $, 21 Kč) / Záloha (JSON export-import) | ✅ |
 | Papíry (lety, Sixt, ESTA, praktikum, vlastní poznámky) | ✅ |
@@ -69,6 +69,9 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 - `bedFocus(id)` = režim ubytek: destinace ve středu, kruh 50 km, JEN ubytka v něm (`drawMarkers` se v tom režimu hned vrací, páteř i loopy se shodí). `dayFocus` a `bedFocus` se navzájem ruší; `#daybanX` zavírá ten aktivní. `#daylist` je společný spodní panel pro oba režimy.
 - `data/ubytko.json` je **ruční obsah, ne build z jiných dat** — mění se editací `scripts/beds.js` a spuštěním `node scripts/beds.js`. Cenové hladiny jsou odhad z charakteru trhu pro konec září / začátek října 2026, appka to v panelu říká. Spine `sleep_opts` v `data/spine.json` drží navíc den-specifické „proč to navazuje na ráno" a zůstává oddělené.
 - Pokrytí: 829 z 833 destinací má ubytko do 50 km; 4 zbylé (Ubehebe Crater, Carrizo Plain, Hole-in-the-Wall, Mitchell Caverns) dostanou hlášku „tady je pustina" s nejbližšími třemi.
+- **Ceny: dvě cesty, protože jinak to nejde.** Ceny hotelů nejsou v žádném veřejném API (ani v Places API s placeným klíčem) — existují jen uvnitř Googlu a přes CORS je do vlastní stránky nedostaneš; klíč s fakturací by navíc ležel čitelně ve veřejném repu. Proto: **moje mapa** kreslí `data/ubytko.json` s odhadem hladiny a **funguje offline**, a **🔎 / tlačítka v panelu** posílají do Googlu na skutečné ceny. Appka dál nevolá nic cizího — všechna externí URL jen otevírá.
+- `zoomForRadius(lat, r)` spočítá zoom tak, aby výřez Google Maps odpovídal průměru 2r km (ověřeno: 99–103 km napříč trasou). Google Maps **nemá radius parametr**, jen zoom, takže je to přibližné a na širším displeji ukáže víc.
+- `bedNight(p)` bere noc z dne páteře, do kterého destinace patří (minulý den se ignoruje → padne na dnes), `bedLinks()` z toho skládá Maps / Google Hotels / Booking / Expedia s předvyplněným `checkin`/`checkout`. Čisté skládání URL, žádný klíč. **Past:** tyhle URL vzory weby občas mění — Google Maps search je nejstabilnější, Booking a Expedia se můžou rozbít; je to jeden řádek v `bedLinks()`.
 - **Past:** nové JSONy patří i do `DATA` v `sw.js`, jinak offline nejsou.
 
 **Poloha — co bylo špatně (19. 9. 2026).** `startGPS()` při nastaveném `store.sim` watch vůbec nezaložil, takže jeden tap na 📌 zamkl appku na ruční fix natrvalo. `fallbackPos()` se navíc vždy vracel, když `posMode==='gps'`, takže výpadek GPS za jízdy nikdo nepoznal. Teď: `S.posT` + `posStale()` (2 min) → badge `GPS?`, `retryGPS()` s backoffem 20 s → 5 min, `visibilitychange` obnoví watch, `useGPS()` je jediná cesta z fixu a startovní toast na fix upozorní.
@@ -88,7 +91,7 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 - Kontrola po změně: `node -e "new Function(src)"` na obsah `<script>`, párování `<div>`.
 
 ## Testy (headless)
-`npm i --no-save jsdom`, pak `node _scratch/test_gps.js` (26 kontrol polohy), `test_ui.js` (17 — render tabů, karta dne, panel zastávek), `test_bed.js` (22 — ubytko; má vlastní Leaflet stub, který si pamatuje, co se přidalo na mapu). Bar: nula FAIL, `window errors: none`. `_scratch/` je mimo git.
+`npm i --no-save jsdom`, pak `node _scratch/test_gps.js` (26 kontrol polohy), `test_ui.js` (17 — render tabů, karta dne, panel zastávek), `test_bed.js` (30 — ubytko; má vlastní Leaflet stub, který si pamatuje, co se přidalo na mapu), `test_google.js` (31 — zoom vs. radius, noc z dne páteře, skládané URL, kontrola že appka nevolá nic cizího). Bar: nula FAIL, `window errors: none`. `_scratch/` je mimo git.
 
 **Past:** `S` je lexikální `const`, ne property `window` → na stav se v jsdom sahá přes `window.eval('S.posMode')`, ne `window.S`. A `pkill -f test_x.js` sestřelí i vlastní shell, protože se matchne na svůj příkazový řádek.
 
