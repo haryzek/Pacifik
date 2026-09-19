@@ -14,6 +14,9 @@ Live: **https://haryzek.github.io/Pacifik/** (GitHub Pages z `main`, žádný bu
 | Poloha (GPS / poslední / simulovaná) + západ slunce (PT) | ✅ |
 | Odbočky (41, „po cestě“ automaticky z koridoru, Naviguj celou smyčku, místo zná své odbočky, Plán → trasa) | ✅ |
 | Mapa (Leaflet, noční OSM, markercluster přepínatelný, loopy, 📌 fix polohy, ovládání u palce) | ✅ online podklad, offline jen z cache |
+| Mapa dne (číslované zastávky v pořadí jízdy, ostruhy, A/B, panel zastávek, ➕ do trasy) | ✅ 19. 9. 2026 |
+| Ubytko do 50 km u každé destinace (🛏 ve výpisu i v detailu) | ✅ 19. 9. 2026, `data/ubytko.json` 177 lokalit |
+| Poloha — zaseknutý FIX, zastaralá fixace, retry, re-arm po probuzení | ✅ opraveno 19. 9. 2026 |
 | Plán / Deník (.md export) / Útrata (4 300 $, 21 Kč) / Záloha (JSON export-import) | ✅ |
 | Papíry (lety, Sixt, ESTA, praktikum, vlastní poznámky) | ✅ |
 | Fotky (`scripts/photos.js`) | ✅ 784/833, 17,5 MB, v SW cache; reject list |
@@ -36,6 +39,7 @@ data/loops.json       VÝSTUP merge
 data/photos.json      credit/licence/zdroj fotek; data/photo-reject.json = zamítnuté; data/missing-photos.txt
 photos/{id}.jpg       ~480 px JPEG; photos/manual/{id}.jpg = ruční (vyhrává)
 data/alerts.json      uzávěry silnic (Papíry → 🚧), ručně; data/loops-extra.json = vlastní odbočky
+data/ubytko.json      177 ubytovacích lokalit podél trasy (price $/$$/$$$, usd rozpětí, type, why); generátor scripts/beds.js
 scripts/              merge.js, geo.js (páteř, koridor), loops-cover.js (pokrytí vnitrozemí), gaps-import.js, gaps-review.js, gap-prompts.js, photos.js, contact-sheet.js, verify-links.js, sw-build.js, icons.js
 prompts/              prompty pro research; prompts/gaps/ = rychlé mapování
 ```
@@ -60,6 +64,15 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 
 **Past:** po *každé* změně `index.html` (i jen CSS) spustit `node scripts/sw-build.js` — jinak zůstane starý `CACHE_V` a telefon nový index nechytí. A cokoli fixed u spodního okraje mapy (Leaflet `.leaflet-bottom`: měřítko, attribution) musí být posunuté nad nav lištu (`--sab` + 60 px), jinak je schované pod taby.
 
+**Mapa dne a ubytko (19. 9. 2026).**
+- `projectOn(pts, p)` promítne místo na silniční geometrii dne → postup v km po trase + odchylka od ní. `dayStops(d)` z toho staví zastávky (MUST + ručně přidané z `store.dayAdd[day]`), řadí podle postupu a nocleh (`motel_gem`) posouvá na konec. **Řadit podle `lat` nejde** — D3 jede na západ a zpátky, D17 zahýbá do Monterey.
+- `bedFocus(id)` = režim ubytek: destinace ve středu, kruh 50 km, JEN ubytka v něm (`drawMarkers` se v tom režimu hned vrací, páteř i loopy se shodí). `dayFocus` a `bedFocus` se navzájem ruší; `#daybanX` zavírá ten aktivní. `#daylist` je společný spodní panel pro oba režimy.
+- `data/ubytko.json` je **ruční obsah, ne build z jiných dat** — mění se editací `scripts/beds.js` a spuštěním `node scripts/beds.js`. Cenové hladiny jsou odhad z charakteru trhu pro konec září / začátek října 2026, appka to v panelu říká. Spine `sleep_opts` v `data/spine.json` drží navíc den-specifické „proč to navazuje na ráno" a zůstává oddělené.
+- Pokrytí: 829 z 833 destinací má ubytko do 50 km; 4 zbylé (Ubehebe Crater, Carrizo Plain, Hole-in-the-Wall, Mitchell Caverns) dostanou hlášku „tady je pustina" s nejbližšími třemi.
+- **Past:** nové JSONy patří i do `DATA` v `sw.js`, jinak offline nejsou.
+
+**Poloha — co bylo špatně (19. 9. 2026).** `startGPS()` při nastaveném `store.sim` watch vůbec nezaložil, takže jeden tap na 📌 zamkl appku na ruční fix natrvalo. `fallbackPos()` se navíc vždy vracel, když `posMode==='gps'`, takže výpadek GPS za jízdy nikdo nepoznal. Teď: `S.posT` + `posStale()` (2 min) → badge `GPS?`, `retryGPS()` s backoffem 20 s → 5 min, `visibilitychange` obnoví watch, `useGPS()` je jediná cesta z fixu a startovní toast na fix upozorní.
+
 **Jak přidat odbočku:** objekt do `data/loops-extra.json` (waypoints = souřadnice po silnici, stačí každých 20–40 km) → merge spočítá `near_ids` (místa do 15 km od trasy). `node scripts/loops-cover.js` ukáže nepokryté vnitrozemí.
 
 **Jak přidat / opravit místo:** nový → `data/extra.json`; oprava existujícího → `data/fixes.json` pod jeho id (přepíše jen uvedená pole). Pak merge + commit.
@@ -73,6 +86,11 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 - Jízda: km/70 km/h, ne-asfalt ×1.6. „Jen dál po trase" = lat < moje lat + 0.05.
 - Fotky: `p.photo_local` (nastaví photos.js) → `photos/{id}.jpg`, jinak gradient dle kategorie.
 - Kontrola po změně: `node -e "new Function(src)"` na obsah `<script>`, párování `<div>`.
+
+## Testy (headless)
+`npm i --no-save jsdom`, pak `node _scratch/test_gps.js` (26 kontrol polohy), `test_ui.js` (17 — render tabů, karta dne, panel zastávek), `test_bed.js` (22 — ubytko; má vlastní Leaflet stub, který si pamatuje, co se přidalo na mapu). Bar: nula FAIL, `window errors: none`. `_scratch/` je mimo git.
+
+**Past:** `S` je lexikální `const`, ne property `window` → na stav se v jsdom sahá přes `window.eval('S.posMode')`, ne `window.S`. A `pkill -f test_x.js` sestřelí i vlastní shell, protože se matchne na svůj příkazový řádek.
 
 ## Lokální běh
 `npx serve -l 8765 .` (nebo `.claude/launch.json` → preview „pacifik").

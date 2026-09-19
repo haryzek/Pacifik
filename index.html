@@ -156,6 +156,16 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .nb.must{background:#D9A441;color:#0f1419}
 .nb.add{background:#4fc3c9;color:#0f1419}
 .nb.done{background:#7BB661;color:#0f1419}
+/* ubytko: pilulka s cenovou hladinou na mape + tlacitko ve vypisu */
+.bedpin{width:62px;height:22px;border-radius:11px;display:flex;align-items:center;justify-content:center;gap:3px;font:700 11px var(--mono);background:var(--bc);color:#0f1419;border:2px solid #0f1419;box-shadow:0 2px 6px rgba(0,0,0,.55)}
+.bedpin small{font-weight:400;font-size:9px;opacity:.8}
+.bedbtn{flex:0 0 auto;align-self:flex-start;margin-left:2px;padding:6px 8px;font-size:17px;color:var(--muted);background:none;border:none;line-height:1}
+.bedbtn:active{color:var(--accent)}
+.ds.bed{align-items:baseline}
+.ds .bp{flex:0 0 26px;text-align:center;font:700 11px var(--mono);color:#0f1419;background:var(--bc);border-radius:7px;padding:2px 0}
+.ds .usd{flex:0 0 auto;font:11px var(--mono);color:var(--muted)}
+.ds .nm[data-bedzoom]{color:var(--water)}
+#daylist .bedwhy{padding:0 0 6px 34px;font-size:11px;color:var(--muted);line-height:1.35}
 #daylist{position:fixed;left:0;right:0;bottom:calc(60px + var(--sab));z-index:16;background:rgba(15,20,25,.96);border-top:1px solid rgba(79,195,201,.45);backdrop-filter:blur(8px);font:13px var(--ui)}
 #daylist .dl-h{display:flex;align-items:center;gap:8px;padding:8px 12px}
 #daylist .dl-h b{flex:1;font-family:var(--serif);font-weight:normal;font-size:14px;color:var(--water)}
@@ -316,7 +326,7 @@ const LS_KEY = 'pacifik.v1';
 
 // ====================== STAV ======================
 const S = {
-  places: [], loops: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100, q: '', region: null, spineOnly: false,
+  places: [], loops: [], beds: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100, q: '', region: null, spineOnly: false,
   pos: null, posMode: 'none', posT: null, posAcc: null, // 'gps' | 'sim' | 'last'
   store: loadStore(),
 };
@@ -603,7 +613,7 @@ function itemHtml({ p, km, b }){
       <div class="meta">${km != null ? `<span class="dist">${fmtKm(km)} <span class="arrow" style="transform:rotate(${Math.round(b)}deg)">↑</span> ${dirName(b)}</span><span>~${fmtMin(driveMin(km, p.road_access))}</span>` : `<span class="dist">${esc((p.nearest_town||'').split(',')[0])}</span>`}<span>${CATS[p.category]||''} ${esc(p.subcategory||p.category)}</span></div>
       <div class="why">${esc(p.why_bob)}</div>
       ${(icons.length || p.spine) ? `<div class="icons">${spBadge(p)}${icons.join(' · ')}</div>` : ''}
-    </div></div>`;
+    </div><button class="bedbtn" data-bed="${p.id}" title="Ubytko do ${BED_R} km">🛏</button></div>`;
 }
 
 // ====================== ODBOČKY ======================
@@ -867,12 +877,21 @@ function renderDocs(m){
   $('#docNotes').oninput = (e) => { S.store.docNotes = e.target.value; save(); };
 }
 
+// --- ubytko do 50 km od destinace (jen tohle okoli, nic jineho) ---
+const BED_R = 50;
+const BED_COLOR = { '$': '#7bb661', '$$': '#D9A441', '$$$': '#e0654a' };
+function bedsNear(p, r = BED_R){
+  return S.beds.map(b => ({ b, km: hav(p, b) })).filter(x => x.km <= r).sort((a, b) => a.km - b.km);
+}
+function bedSearchUrl(b){ return `https://www.google.com/maps/search/motel/@${b.lat.toFixed(5)},${b.lng.toFixed(5)},13z`; }
+
 // ====================== MAPA ======================
 const CAT_COLOR = { coast:'#4fc3c9', forest:'#5aa66a', desert:'#d98b41', geology:'#c9764f', mountain:'#9aa6b8', lake_river:'#4f9fd9', waterfall:'#6fc6e6', scenic_drive:'#b8a06a', town:'#d9c78a', motel_gem:'#d95f8a', food_gem:'#e08a3a', culture:'#a97bd9', oddity:'#b6d94f', dark_sky:'#6f7fd9', hot_spring:'#e0654a' };
-const M = { map: null, layer: null, cluster: null, plain: null, loops: null, spine: null, dayLayer: null, dayFocus: null, dayIds: null, me: null, showLoops: false, showSpine: true, top: false, clustered: true, ready: false };
-function hideMap(){ $('#map').classList.remove('on'); $('#mapctl').hidden = true; $('#dayban').hidden = true; $('#daylist').hidden = true; document.body.classList.remove('dl'); $('#main').style.display = ''; }
+const M = { map: null, layer: null, cluster: null, plain: null, loops: null, spine: null, dayLayer: null, dayFocus: null, dayIds: null, bedLayer: null, bedFocus: null, me: null, showLoops: false, showSpine: true, top: false, clustered: true, ready: false };
+function hideMap(){ if (M.bedLayer && M.map) { M.map.removeLayer(M.bedLayer); M.bedLayer = null; } M.bedFocus = null; $('#map').classList.remove('on'); $('#mapctl').hidden = true; $('#dayban').hidden = true; $('#daylist').hidden = true; document.body.classList.remove('dl'); $('#main').style.display = ''; }
 function dayFocus(day){
   if (!M.map) return;
+  if (M.bedLayer) { M.map.removeLayer(M.bedLayer); M.bedLayer = null; M.bedFocus = null; }
   if (M.dayLayer) { M.map.removeLayer(M.dayLayer); M.dayLayer = null; }
   M.dayFocus = day;
   M.dayIds = null;
@@ -927,6 +946,53 @@ function dayListHtml(d, stops){
   $('#dlToggle').textContent = el.classList.contains('open') ? '▾' : '▴';
 }
 
+// Mapa ubytek: destinace ve stredu, kruh 50 km, JEN ubytka v nem. Zadne jine POI, zadna pater.
+function bedFocus(id){
+  if (!M.map) return;
+  if (M.bedLayer) { M.map.removeLayer(M.bedLayer); M.bedLayer = null; }
+  if (!id) { M.bedFocus = null; $('#dayban').hidden = true; $('#daylist').hidden = true; document.body.classList.remove('dl'); if (M.showSpine) M.spine.addTo(M.map); drawMarkers(); return; }
+  const p = S.places.find(x => x.id === id); if (!p) return;
+  if (M.dayFocus) { if (M.dayLayer) { M.map.removeLayer(M.dayLayer); M.dayLayer = null; } M.dayFocus = null; M.dayIds = null; }
+  M.bedFocus = id;
+  M.map.removeLayer(M.spine);
+  if (M.showLoops) { M.map.removeLayer(M.loops); }
+  const list = bedsNear(p);
+  const layers = [
+    L.circle([p.lat, p.lng], { radius: BED_R * 1000, color: '#4fc3c9', weight: 1.5, opacity: .55, fillColor: '#4fc3c9', fillOpacity: .05, dashArray: '6 6' }),
+    L.marker([p.lat, p.lng], { icon: L.divIcon({ className: '', html: '<div class="ab a">📍</div>', iconSize: [26, 26], iconAnchor: [13, 13] }), zIndexOffset: 900 }).bindTooltip(esc(p.name), { permanent: false }),
+  ];
+  for (const x of list) layers.push(L.marker([x.b.lat, x.b.lng], {
+    icon: L.divIcon({ className: '', html: `<div class="bedpin" style="--bc:${BED_COLOR[x.b.price]}">${x.b.price}<small>${esc(x.b.usd)}</small></div>`, iconSize: [62, 22], iconAnchor: [31, 11] }),
+    zIndexOffset: 400 + (x.b.price === '$' ? 100 : 0),
+  }).bindPopup(`<b>${esc(x.b.name)}</b><br>${esc(x.b.usd)} $ · ${esc(x.b.type||'')}<br>${fmtKm(x.km)} od ${esc(p.name)}${x.b.why ? '<br><i>' + esc(x.b.why) + '</i>' : ''}<br><a href="${bedSearchUrl(x.b)}" target="_blank" rel="noopener" style="color:var(--accent)">🔎 hledat motely zde →</a>`));
+  M.bedLayer = L.layerGroup(layers).addTo(M.map);
+  drawMarkers();
+  $('#daybanT').textContent = `🛏 Ubytko do ${BED_R} km — ${p.name}`; $('#dayban').hidden = false; $('#dayban').style.top = ($('header').offsetHeight + 8) + 'px';
+  bedListHtml(p, list);
+  M.map.fitBounds(L.latLng(p.lat, p.lng).toBounds(BED_R * 2100), { padding: [20, 20] });
+}
+function bedListHtml(p, list){
+  const el = $('#daylist'); if (!el) return;
+  const far = list.length ? null : S.beds.map(b => ({ b, km: hav(p, b) })).sort((a, b) => a.km - b.km).slice(0, 3);
+  el.innerHTML = `<div class="dl-h"><b>🛏 ${list.length ? list.length + ' ubytek do ' + BED_R + ' km' : 'do ' + BED_R + ' km nic'}</b><button id="dlToggle">▾</button></div>
+    <div class="dl-b">
+      ${list.map(x => `<div class="ds bed"><span class="bp" style="--bc:${BED_COLOR[x.b.price]}">${x.b.price}</span>
+        <span class="nm" data-bedzoom="${x.b.lat},${x.b.lng}">${esc(x.b.name)} <i>· ${fmtKm(x.km)}</i></span>
+        <span class="usd">${esc(x.b.usd)} $</span>
+        <a class="x" href="${bedSearchUrl(x.b)}" target="_blank" rel="noopener" title="Hledat motely zde">🔎</a></div>
+        ${x.b.why ? `<div class="bedwhy">${esc(x.b.type||'')}${x.b.why ? ' — ' + esc(x.b.why) : ''}</div>` : ''}`).join('')}
+      ${far ? `<div class="sub">Tady je pustina. Nejblíž: ${far.map(f => esc(f.b.name) + ' ' + fmtKm(f.km)).join(' · ')}.</div>` : ''}
+      <div class="sub">Ceny jsou odhad hladiny za noc pro konec září a začátek října 2026, ne živá dostupnost. 🔎 otevře hledání motelů v Google Maps kolem té lokality.</div>
+    </div>`;
+  el.hidden = false; document.body.classList.add('dl'); el.classList.toggle('open', S.store.dlOpen !== false);
+  $('#dlToggle').onclick = () => { S.store.dlOpen = !el.classList.contains('open'); save(); el.classList.toggle('open'); $('#dlToggle').textContent = el.classList.contains('open') ? '▾' : '▴'; };
+  $('#dlToggle').textContent = el.classList.contains('open') ? '▾' : '▴';
+}
+function openBeds(id){
+  closeDetail(); S.tab = 'map'; render();
+  const go = () => M.map ? bedFocus(id) : setTimeout(go, 200);
+  setTimeout(go, 250);
+}
 function renderMap(m){
   m.style.display = 'none'; $('#toolbar').innerHTML = '';
   if (typeof L === 'undefined') { m.style.display = ''; m.innerHTML = '<div class="empty">Mapa potřebuje první načtení online (Leaflet z CDN).<br><small>Markery bez podkladu nejdou zobrazit bez knihovny — připoj se a obnov.</small></div>'; return; }
@@ -951,7 +1017,7 @@ function renderMap(m){
     M.map.on('zoomend', drawMarkers);
     $('#mapMe').onclick = () => { if (S.pos) M.map.setView([S.pos.lat, S.pos.lng], Math.max(M.map.getZoom(), 10)); else toast('Poloha neznámá'); };
     $('#mapLoops').onclick = () => { M.showLoops = !M.showLoops; $('#mapLoops').classList.toggle('on', M.showLoops); M.showLoops ? M.loops.addTo(M.map) : M.map.removeLayer(M.loops); if (M.showLoops && !M.loops.getLayers().length) drawLoops(); };
-    $('#daybanX').onclick = () => dayFocus(null);
+    $('#daybanX').onclick = () => { if (M.bedFocus) bedFocus(null); else dayFocus(null); };
     $('#mapFix').onclick = () => { const c = M.map.getCenter(); fixPos(c.lat, c.lng, 'střed mapy'); };
     $('#mapTop').onclick = () => { M.top = !M.top; $('#mapTop').classList.toggle('on', M.top); drawMarkers(); };
     if (!navigator.onLine) toast('Offline: podkladová mapa jen z cache', 3000);
@@ -965,6 +1031,7 @@ function drawMe(){
 }
 function drawMarkers(){
   if (!M.map) return;
+  if (M.bedFocus) { M.layer.clearLayers(); return; } // rezim ubytek: jen ubytka, nic jineho
   const b = M.map.getBounds().pad(0.2), z = M.map.getZoom();
   M.layer.clearLayers();
   const batch = [];
@@ -1033,6 +1100,7 @@ function openDetail(id){
         <button class="btn ${inPlan?'on':''}" id="planBtn">${inPlan ? '✓ V plánu' : '➕ Do plánu'}</button>
         <button class="btn ${visited?'on':''}" id="visitBtn">${visited ? `✓ Byl jsem ${visited}` : '✓ Byl jsem tu'}</button>
         <button class="btn" id="mapBtn">🗺 Na mapě</button>
+        <button class="btn" id="bedBtn">🛏 Ubytko do ${BED_R} km</button>
         <button class="btn ${S.posMode==='sim' && S.pos && Math.abs(S.pos.lat-p.lat)<1e-6 ? 'on' : ''}" id="hereBtn">📌 Jsem tu</button>
         <button class="btn" id="copyBtn">📋 ${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}</button>
         ${p.photo_local ? `<button class="btn" id="badPhoto">🚫 špatná fotka</button>` : ''}
@@ -1048,6 +1116,7 @@ function openDetail(id){
   const on = $('#offlineNav'); if (on) on.onclick = (e) => { e.preventDefault(); copy(`${p.lat},${p.lng}`); toast('Offline — souřadnice zkopírovány'); };
   $('#copyBtn').onclick = () => { copy(`${p.lat},${p.lng}`); toast('Souřadnice zkopírovány'); };
   $('#mapBtn').onclick = () => showOnMap(p.id);
+  $('#bedBtn').onclick = () => openBeds(p.id);
   $('#hereBtn').onclick = () => { fixPos(p.lat, p.lng, p.name); closeDetail(); };
   const bp = $('#badPhoto'); if (bp) bp.onclick = () => { S.store.badPhotos = S.store.badPhotos || []; if (!S.store.badPhotos.includes(p.id)) S.store.badPhotos.push(p.id); save(); toast('Zapsáno do Záloha → špatné fotky'); };
   $('#planBtn').onclick = () => { const i = S.store.plan.indexOf(p.id); i<0 ? S.store.plan.push(p.id) : S.store.plan.splice(i,1); save(); openDetail(id); render(); };
@@ -1065,7 +1134,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],#qClear,#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],[data-bed],[data-bedzoom],#qClear,#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { if (t.dataset.tab === 'map' && M.dayFocus) dayFocus(null); S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -1078,6 +1147,8 @@ document.addEventListener('click', (e) => {
   else if (t.id === 'qClear') { S.q = ''; render(); }
   else if (t.dataset.spineday) { e.preventDefault(); closeDetail(); S.tab = 'plan'; S.sub = 'spine'; render(); const el = document.getElementById('spd' + t.dataset.spineday); if (el) el.scrollIntoView({ block: 'start' }); }
   else if (t.dataset.spinelist) { const day = +t.dataset.spinelist; if (S.tab === 'near' && S.spineOnly && S.spineDay === day) { S.spineOnly = false; S.spineDay = null; } else { S.tab = 'near'; S.range = Infinity; S.region = null; S.q = ''; S.spineOnly = true; S.spineDay = day; } render(); window.scrollTo(0,0); }
+  else if (t.dataset.bed) { e.preventDefault(); e.stopPropagation(); openBeds(t.dataset.bed); }
+  else if (t.dataset.bedzoom) { e.preventDefault(); const [la, ln] = t.dataset.bedzoom.split(',').map(Number); if (M.map) M.map.setView([la, ln], 11); }
   else if (t.dataset.dayadd || t.dataset.dayrm) {
     e.preventDefault();
     const [day, id] = (t.dataset.dayadd || t.dataset.dayrm).split(':'); const k = +day;
@@ -1112,8 +1183,8 @@ async function init(){
   S.range = S.store.range === null ? Infinity : (S.store.range || 100);
   render();
   try {
-    const [pl, lo, al, sp] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json()), fetch('data/alerts.json').then(r=>r.json()).catch(()=>null), fetch('data/spine-out.json').then(r=>r.json()).catch(()=>null)]);
-    S.places = pl; S.loops = lo; S.alerts = al; S.spine = sp;
+    const [pl, lo, al, sp, bd] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json()), fetch('data/alerts.json').then(r=>r.json()).catch(()=>null), fetch('data/spine-out.json').then(r=>r.json()).catch(()=>null), fetch('data/ubytko.json').then(r=>r.json()).catch(()=>[])]);
+    S.places = pl; S.loops = lo; S.alerts = al; S.spine = sp; S.beds = bd || [];
   } catch(e) { $('#main').innerHTML = `<div class="empty">Nepodařilo se načíst data.<br><small>${esc(e.message)}</small></div>`; return; }
   startGPS();
   if (S.store.sim) setTimeout(() => toast('📌 Poloha je ručně fixnutá, ne živá GPS — tapni na FIX vpravo nahoře', 5000, () => openPosSheet()), 1200);
