@@ -74,6 +74,8 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 - `bedNight(p)` bere noc z dne páteře, do kterého destinace patří (minulý den se ignoruje → padne na dnes), `bedLinks()` z toho skládá Maps / Google Hotels / Booking / Expedia s předvyplněným `checkin`/`checkout`. Čisté skládání URL, žádný klíč. **Past:** tyhle URL vzory weby občas mění — Google Maps search je nejstabilnější, Booking a Expedia se můžou rozbít; je to jeden řádek v `bedLinks()`.
 - **Past:** nové JSONy patří i do `DATA` v `sw.js`, jinak offline nejsou.
 
+**Past: `render()` přepisuje celý `#main`, takže zabíjí rozepsané pole.** Na mobilu to znamená, že se uživateli zasune klávesnice uprostřed psaní. `setPos()` se volá z `watchPosition` každou chvíli, takže dokud volal `render()` bezpodmínečně, nešlo v Útratě ani v deníku nic napsat. Řeší to `isTyping()` (skip + `renderPending`, dožene se na `focusout`) a `tabUsesPos()` — Útrata, deník, záloha a Papíry na poloze nestojí, tam se z GPS tiku nepřekresluje vůbec. **Kdykoli přidáš další periodické překreslování, prožeň ho stejnou branou.**
+
 **Poloha — co bylo špatně (19. 9. 2026).** `startGPS()` při nastaveném `store.sim` watch vůbec nezaložil, takže jeden tap na 📌 zamkl appku na ruční fix natrvalo. `fallbackPos()` se navíc vždy vracel, když `posMode==='gps'`, takže výpadek GPS za jízdy nikdo nepoznal. Teď: `S.posT` + `posStale()` (2 min) → badge `GPS?`, `retryGPS()` s backoffem 20 s → 5 min, `visibilitychange` obnoví watch, `useGPS()` je jediná cesta z fixu a startovní toast na fix upozorní.
 
 **Jak přidat odbočku:** objekt do `data/loops-extra.json` (waypoints = souřadnice po silnici, stačí každých 20–40 km) → merge spočítá `near_ids` (místa do 15 km od trasy). `node scripts/loops-cover.js` ukáže nepokryté vnitrozemí.
@@ -91,7 +93,7 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 - Kontrola po změně: `node -e "new Function(src)"` na obsah `<script>`, párování `<div>`.
 
 ## Testy (headless)
-`npm i --no-save jsdom`, pak `node _scratch/test_gps.js` (26 kontrol polohy), `test_ui.js` (17 — render tabů, karta dne, panel zastávek), `test_bed.js` (30 — ubytko; má vlastní Leaflet stub, který si pamatuje, co se přidalo na mapu), `test_google.js` (31 — zoom vs. radius, noc z dne páteře, skládané URL, kontrola že appka nevolá nic cizího). Bar: nula FAIL, `window errors: none`. `_scratch/` je mimo git.
+`npm i --no-save jsdom`, pak `node _scratch/test_gps.js` (26 kontrol polohy), `test_ui.js` (17 — render tabů, karta dne, panel zastávek), `test_bed.js` (30 — ubytko; má vlastní Leaflet stub, který si pamatuje, co se přidalo na mapu), `test_google.js` (31 — zoom vs. radius, noc z dne páteře, skládané URL, kontrola že appka nevolá nic cizího), `test_kb.js` (21 — psaní do formulářů přežije GPS tiky; ověřeno, že proti staré verzi test opravdu padá). Bar: nula FAIL, `window errors: none`. `_scratch/` je mimo git.
 
 **Past:** `S` je lexikální `const`, ne property `window` → na stav se v jsdom sahá přes `window.eval('S.posMode')`, ne `window.S`. A `pkill -f test_x.js` sestřelí i vlastní shell, protože se matchne na svůj příkazový řádek.
 

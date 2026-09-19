@@ -434,14 +434,33 @@ const GPS_STALE_MS = 120000; // po 2 min bez nové fixace už polohu neber jako 
 function posAge(){ return (S.posMode === 'gps' && S.posT) ? Date.now() - S.posT : null; }
 function posStale(){ const a = posAge(); return a !== null && a > GPS_STALE_MS; }
 function fmtAge(ms){ const s = Math.round(ms/1000); return s < 60 ? s + ' s' : Math.round(s/60) + ' min'; }
+// Pise uzivatel do nejakeho pole? render() prepisuje cely #main, takze by pole zahodil,
+// focus by zmizel a mobilni klavesnice se zasunula. Nikdy pri psani neprekresluj.
+function isTyping(){
+  const a = document.activeElement;
+  return !!a && (a.tagName === 'INPUT' || a.tagName === 'TEXTAREA' || a.tagName === 'SELECT' || a.isContentEditable);
+}
+// Ukazuje aktualni obrazovka neco, co zavisi na poloze? Utrata, denik, zaloha ani papiry ne.
+function tabUsesPos(){
+  if (S.tab === 'near' || S.tab === 'loops') return true;
+  if (S.tab === 'plan') return S.sub === 'plan';
+  return false;
+}
+let renderPending = false;
+function renderWhenDone(){ // po odchodu z pole dozenem, co GPS tik mezitim chtel
+  if (!renderPending || isTyping()) return;
+  renderPending = false; render();
+}
+document.addEventListener('focusout', () => setTimeout(renderWhenDone, 60));
 function setPos(lat, lng, mode, acc){
   S.pos = { lat, lng }; S.posMode = mode; S.posAcc = acc ?? null;
   if (mode === 'gps') { S.posT = Date.now(); S.store.lastPos = { lat, lng, t: S.posT }; saveThrottled(); }
   paintGps();
   countdown();
-  if (S.tab === 'map' && M.map) { drawMe(); drawMarkers(); }
-  else if (document.activeElement && document.activeElement.id === 'q') { /* neprepisuj hledani pod rukama */ }
-  else render();
+  if (S.tab === 'map' && M.map) { drawMe(); drawMarkers(); return; }
+  if (!tabUsesPos()) return;          // Utrata, denik, papiry — poloha je tam k nicemu
+  if (isTyping()) { renderPending = true; return; }  // pod rukama se neprekresluje
+  render();
 }
 // hlavicka: GPS / GPS? (zastarala) / POSL. / FIX
 function paintGps(){
