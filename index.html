@@ -33,6 +33,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(15,20,25,.92);backdrop-f
 .gps b{width:8px;height:8px;border-radius:50%;background:var(--dim);display:inline-block}
 .gps.on b{background:var(--ok);box-shadow:0 0 6px var(--ok)}
 .gps.sim b{background:var(--accent)}
+.gps.stale b{background:var(--warn);box-shadow:0 0 6px var(--warn)}
+.gps.stale{color:var(--warn)}
+.settings .warn{margin:8px 0;padding:8px 10px;border:1px solid var(--warn);border-radius:10px;background:rgba(217,164,65,.08);font-size:13px;color:var(--warn);line-height:1.4}
 .count{font:11px var(--mono);color:var(--muted)}
 
 /* chips */
@@ -314,11 +317,13 @@ const LS_KEY = 'pacifik.v1';
 // ====================== STAV ======================
 const S = {
   places: [], loops: [], tab: 'near', range: 100, filters: new Set(), rank1: false, south: false, shown: 100, q: '', region: null, spineOnly: false,
-  pos: null, posMode: 'none', // 'gps' | 'sim' | 'last'
+  pos: null, posMode: 'none', posT: null, posAcc: null, // 'gps' | 'sim' | 'last'
   store: loadStore(),
 };
 function loadStore(){ try { return Object.assign({ plan:[], visited:{}, notes:{}, lastPos:null, sim:null, range:100 }, JSON.parse(localStorage.getItem(LS_KEY)||'{}')); } catch(e){ return { plan:[], visited:{}, notes:{}, lastPos:null, sim:null, range:100 }; } }
 function save(){ try { localStorage.setItem(LS_KEY, JSON.stringify(S.store)); } catch(e){ toast('localStorage plný nebo blokovaný'); } }
+let saveT = null;
+function saveThrottled(){ if (saveT) return; saveT = setTimeout(() => { saveT = null; save(); }, 10000); }
 
 // ====================== UTIL ======================
 const $ = (s) => document.querySelector(s);
@@ -408,36 +413,62 @@ function countdown(){
 }
 
 // ====================== POLOHA ======================
-let watchId = null;
-function setPos(lat, lng, mode){
-  S.pos = { lat, lng }; S.posMode = mode;
-  if (mode === 'gps') { S.store.lastPos = { lat, lng, t: Date.now() }; save(); }
-  const g = $('#gpsBtn'); g.className = 'gps ' + (mode==='gps' ? 'on' : mode==='sim' ? 'sim' : '');
-  $('#gpsTxt').textContent = mode==='gps' ? 'GPS' : mode==='sim' ? 'FIX' : mode==='last' ? 'POSL.' : '—';
+let watchId = null, gpsRetry = null, gpsTries = 0;
+const GPS_STALE_MS = 120000; // po 2 min bez nové fixace už polohu neber jako živou
+function posAge(){ return (S.posMode === 'gps' && S.posT) ? Date.now() - S.posT : null; }
+function posStale(){ const a = posAge(); return a !== null && a > GPS_STALE_MS; }
+function fmtAge(ms){ const s = Math.round(ms/1000); return s < 60 ? s + ' s' : Math.round(s/60) + ' min'; }
+function setPos(lat, lng, mode, acc){
+  S.pos = { lat, lng }; S.posMode = mode; S.posAcc = acc ?? null;
+  if (mode === 'gps') { S.posT = Date.now(); S.store.lastPos = { lat, lng, t: S.posT }; saveThrottled(); }
+  paintGps();
   countdown();
-  if (S.tab === 'map' && M.map) { drawMe(); drawMarkers(); } else render();
+  if (S.tab === 'map' && M.map) { drawMe(); drawMarkers(); }
+  else if (document.activeElement && document.activeElement.id === 'q') { /* neprepisuj hledani pod rukama */ }
+  else render();
 }
+// hlavicka: GPS / GPS? (zastarala) / POSL. / FIX
+function paintGps(){
+  const g = $('#gpsBtn'); if (!g) return;
+  const stale = posStale();
+  g.className = 'gps ' + (S.posMode === 'gps' ? (stale ? 'stale' : 'on') : S.posMode === 'sim' ? 'sim' : '');
+  $('#gpsTxt').textContent = S.posMode === 'gps' ? (stale ? 'GPS?' : 'GPS') : S.posMode === 'sim' ? 'FIX' : S.posMode === 'last' ? 'POSL.' : '—';
+}
+setInterval(paintGps, 20000); // at zastarala fixace zezelena/zsedne sama
 function startGPS(){
+  clearTimeout(gpsRetry); gpsRetry = null;
   if (S.store.sim) { const s = S.store.sim; setPos(s.lat, s.lng, 'sim'); return; }
   if (!navigator.geolocation) { fallbackPos('GPS není k dispozici'); return; }
   if (watchId !== null) navigator.geolocation.clearWatch(watchId);
   watchId = navigator.geolocation.watchPosition(
-    (p) => setPos(p.coords.latitude, p.coords.longitude, 'gps'),
-    (e) => fallbackPos(e.code===1 ? 'GPS odmítnuto' : 'GPS nedostupné'),
+    (p) => { gpsTries = 0; setPos(p.coords.latitude, p.coords.longitude, 'gps', p.coords.accuracy); },
+    (e) => {
+      if (e.code === 1) { toast('GPS zamítnuta — povol polohu v nastavení prohlížeče', 4000); fallbackPos('GPS odmítnuto'); return; }
+      fallbackPos(e.code === 3 ? 'GPS se nechytila' : 'GPS nedostupné');
+      retryGPS(); // signal se muze vratit za kopcem, zkousej dal
+    },
     { enableHighAccuracy: true, maximumAge: 15000, timeout: 20000 }
   );
 }
+function retryGPS(){
+  if (S.store.sim || gpsRetry) return;
+  const wait = Math.min(300000, 20000 * Math.pow(2, Math.min(gpsTries++, 4))); // 20 s → 5 min
+  gpsRetry = setTimeout(() => { gpsRetry = null; startGPS(); }, wait);
+}
 function fallbackPos(why){
-  if (S.pos && S.posMode==='gps') return; // už máme, jen výpadek
+  if (S.pos && S.posMode === 'gps' && !posStale()) return; // mame svezi fixaci, jen chvilkovy vypadek
+  if (S.pos && S.posMode === 'gps' && posStale()) { paintGps(); toast(`${why} — poloha je ${fmtAge(posAge())} stará`, 3500); return; }
   const l = S.store.lastPos;
-  if (l) { setPos(l.lat, l.lng, 'last'); toast(`${why} — poslední známá poloha`); }
-  else { setPos(SIM[0][1], SIM[0][2], 'sim'); toast(`${why} — nastav polohu ručně (tap na GPS)`); }
+  if (l) { setPos(l.lat, l.lng, 'last'); S.posT = l.t; toast(`${why} — poslední známá poloha (${fmtAge(Date.now() - l.t)})`, 3500); }
+  else { setPos(SIM[0][1], SIM[0][2], 'sim'); toast(`${why} — nastav polohu ručně (tap na GPS)`, 4000); }
 }
 function fixPos(lat, lng, label){
   S.store.sim = { lat, lng }; save();
   if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; }
-  setPos(lat, lng, 'sim'); toast(`📌 Poloha: ${label || (lat.toFixed(3) + ', ' + lng.toFixed(3))}`);
+  clearTimeout(gpsRetry); gpsRetry = null;
+  setPos(lat, lng, 'sim'); toast(`📌 FIX: ${label || (lat.toFixed(3) + ', ' + lng.toFixed(3))} — zpět na GPS tapem na FIX`, 3500, () => openPosSheet());
 }
+function useGPS(){ S.store.sim = null; save(); gpsTries = 0; startGPS(); }
 function showOnMap(id){
   const p = S.places.find(x => x.id === id); if (!p) return;
   closeDetail(); S.tab = 'map'; render();
@@ -448,7 +479,9 @@ function openPosSheet(){
   const cur = S.store.sim ? SIM.findIndex(s=>s[1]===S.store.sim.lat && s[2]===S.store.sim.lng) : -1;
   $('#posPanel').innerHTML = `
     <h2>Kde jsem</h2>
-    <div class="sub">${S.pos ? `${S.pos.lat.toFixed(4)}, ${S.pos.lng.toFixed(4)} · ${S.posMode}` : 'poloha neznámá'}</div>
+    <div class="sub">${S.pos ? `${S.pos.lat.toFixed(4)}, ${S.pos.lng.toFixed(4)} · ${{gps:'živá GPS',last:'poslední známá',sim:'ručně fixnutá'}[S.posMode] || S.posMode}${S.posAcc ? ` · ±${Math.round(S.posAcc)} m` : ''}${posAge() !== null ? ` · ${fmtAge(posAge())} zpět` : ''}` : 'poloha neznámá'}</div>
+    ${S.store.sim ? '<div class="warn">📌 Poloha je ručně fixnutá, živá GPS je vypnutá. Tapni „Použít GPS“.</div>' : ''}
+    ${S.posMode === 'gps' && posStale() ? '<div class="warn">⚠ Poloha je zastaralá — GPS se dlouho neozvala.</div>' : ''}
     <div class="btns"><button class="btn primary" id="useGps">📡 Použít GPS</button></div>
     <label class="l">Fixní poloha (bez signálu / plánování / test z Podolí)</label>
     <select id="simSel"><option value="">— vypnuto —</option>${SIM.map((s,i)=>`<option value="${i}" ${i===cur?'selected':''}>${esc(s[0])}</option>`).join('')}</select>
@@ -458,7 +491,7 @@ function openPosSheet(){
     <div class="btns" style="margin-top:20px"><button class="btn" id="updBtn">🔄 Zkontrolovat novou verzi</button></div>
     <div class="sub">verze ${esc(S.store.offlineReady || '—')} · ${S.places.length} míst · ${navigator.onLine ? 'online' : 'offline'}</div>`;
   $('#posSheet').classList.add('open');
-  $('#useGps').onclick = () => { S.store.sim = null; save(); $('#posSheet').classList.remove('open'); startGPS(); };
+  $('#useGps').onclick = () => { $('#posSheet').classList.remove('open'); useGPS(); toast('Zkouším GPS…', 1500); };
   $('#posClose').onclick = () => $('#posSheet').classList.remove('open');
   $('#updBtn').onclick = () => { toast('Kontroluji…', 1500); checkUpdate(false); };
   $('#simOk').onclick = () => {
@@ -466,7 +499,7 @@ function openPosSheet(){
     let lat, lng;
     if (txt) { const m = txt.match(/(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)/); if (!m) return toast('formát: lat, lng'); lat=+m[1]; lng=+m[2]; }
     else if (i !== '') { lat = SIM[i][1]; lng = SIM[i][2]; }
-    else { S.store.sim = null; save(); $('#posSheet').classList.remove('open'); startGPS(); return; }
+    else { $('#posSheet').classList.remove('open'); useGPS(); return; }
     S.store.sim = { lat, lng }; save(); if (watchId!==null) { navigator.geolocation.clearWatch(watchId); watchId=null; }
     setPos(lat, lng, 'sim'); $('#posSheet').classList.remove('open');
   };
@@ -1083,6 +1116,7 @@ async function init(){
     S.places = pl; S.loops = lo; S.alerts = al; S.spine = sp;
   } catch(e) { $('#main').innerHTML = `<div class="empty">Nepodařilo se načíst data.<br><small>${esc(e.message)}</small></div>`; return; }
   startGPS();
+  if (S.store.sim) setTimeout(() => toast('📌 Poloha je ručně fixnutá, ne živá GPS — tapni na FIX vpravo nahoře', 5000, () => openPosSheet()), 1200);
   render();
   initSW();
   const ls = document.createElement('script'); ls.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'; ls.onload = () => { const cs = document.createElement('script'); cs.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js'; cs.onload = cs.onerror = () => { if (S.tab === 'map') render(); }; document.head.appendChild(cs); }; document.head.appendChild(ls);
@@ -1117,7 +1151,7 @@ function initSW(){
       w.addEventListener('statechange', () => { if (w.state === 'installed' && navigator.serviceWorker.controller) toast('Nová verze stažena — tapni pro obnovení', 8000, reloadApp); });
     });
     // kontrola při každém návratu do appky (PWA nemá pull-to-refresh)
-    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checkUpdate(true); });
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') { checkUpdate(true); if (!S.store.sim) startGPS(); } });
     setInterval(() => checkUpdate(true), 30 * 60 * 1000);
   }).catch(() => {});
   if (navigator.serviceWorker.controller && S.store.offlineReady) $('#gpsTxt').title = 'offline ✓';
