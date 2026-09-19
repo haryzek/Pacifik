@@ -86,6 +86,7 @@ main{flex:1;padding:8px 12px calc(var(--sab) + 72px)}
 .dayc .must a{font-size:12px;padding:4px 8px;border-radius:8px;background:var(--card2);border:1px solid var(--line);color:var(--text);text-decoration:none}
 .dayc .must a.done{color:var(--ok);border-color:rgba(123,182,97,.5)}
 .dayc .must a.mm{border-color:rgba(217,164,65,.5)}
+.dayc .cheap{margin-top:8px;font-size:12px;color:var(--ok);font-family:var(--mono)}
 .empty{padding:40px 16px;text-align:center;color:var(--muted);font-family:var(--serif)}
 .more{display:block;width:100%;padding:12px;text-align:center;color:var(--accent);font-family:var(--mono);font-size:13px}
 
@@ -148,6 +149,36 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 #dayban b{font-family:var(--serif);font-weight:normal;font-size:15px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #dayban button{color:var(--muted);font-size:18px;padding:0 4px}
 .ab{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 13px var(--mono);color:#0f1419;border:2px solid #0f1419;box-shadow:0 2px 6px rgba(0,0,0,.5)}
+.nb{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 12px var(--mono);border:2px solid #0f1419;box-shadow:0 2px 6px rgba(0,0,0,.55)}
+.nb.must{background:#D9A441;color:#0f1419}
+.nb.add{background:#4fc3c9;color:#0f1419}
+.nb.done{background:#7BB661;color:#0f1419}
+#daylist{position:fixed;left:0;right:0;bottom:calc(60px + var(--sab));z-index:16;background:rgba(15,20,25,.96);border-top:1px solid rgba(79,195,201,.45);backdrop-filter:blur(8px);font:13px var(--ui)}
+#daylist .dl-h{display:flex;align-items:center;gap:8px;padding:8px 12px}
+#daylist .dl-h b{flex:1;font-family:var(--serif);font-weight:normal;font-size:14px;color:var(--water)}
+#daylist .dl-h button{color:var(--muted);font-size:16px;padding:0 6px}
+#daylist .dl-b{display:none;max-height:44vh;overflow-y:auto;padding:0 12px 10px;-webkit-overflow-scrolling:touch}
+#daylist.open .dl-b{display:block}
+#daylist .dl-h2{padding:10px 0 4px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);margin-top:8px}
+.ds{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.ds .n{flex:0 0 22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 11px var(--mono);color:#0f1419;background:#D9A441}
+.ds .n.add{background:#4fc3c9}
+.ds .n.o{background:none;color:var(--muted);font-size:9px}
+.ds.done .n{background:#7BB661}
+.ds .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ds .nm i{color:var(--muted);font-style:normal;font-size:11px}
+.ds.done .nm{color:var(--muted);text-decoration:line-through}
+.ds.other .nm{color:var(--muted2,var(--muted))}
+.ds .x{color:var(--muted);font-size:15px;padding:2px 6px;flex:0 0 auto}
+#daylist .dl-bed{margin-top:10px;padding:8px 10px;border:1px solid rgba(217,164,65,.4);border-radius:10px;background:rgba(217,164,65,.07)}
+#daylist .dl-bed .k{color:var(--accent);font-size:12px}
+#daylist .dl-bed .v{font-family:var(--serif);font-size:15px;margin:2px 0 6px}
+#daylist .opt{display:flex;gap:8px;align-items:baseline;padding:3px 0;font-size:12px}
+#daylist .opt .p{flex:0 0 34px;font:700 12px var(--mono);color:var(--ok)}
+#daylist .opt .t{flex:0 0 auto;max-width:42%;color:var(--text)}
+#daylist .opt .t[data-dayzoom]{color:var(--water);text-decoration:underline dotted}
+#daylist .opt .w{flex:1;color:var(--muted)}
+#daylist .sub{padding-top:6px}
 .ab.a{background:var(--ok)} .ab.b{background:var(--accent)}
 #ptr{position:fixed;left:50%;top:calc(var(--sat) + 8px);transform:translateX(-50%) translateY(-60px);z-index:26;width:40px;height:40px;border-radius:50%;background:var(--card2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--accent);transition:transform .15s;box-shadow:0 2px 10px rgba(0,0,0,.4)}
 #ptr.ready{background:var(--accent);color:#1a1408}
@@ -202,6 +233,8 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 #map.on{display:block}
 #map.on::after{content:'';position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border:1.5px solid rgba(217,164,65,.55);border-radius:50%;pointer-events:none;z-index:400;box-shadow:0 0 0 2px rgba(0,0,0,.25)}
 .mapctl{position:fixed;right:12px;bottom:calc(var(--sab) + 72px);z-index:15;display:flex;flex-direction:column;gap:8px}
+body.dl .mapctl{z-index:17;bottom:calc(var(--sab) + 110px)}
+body.dl .leaflet-bottom{bottom:calc(var(--sab) + 98px)}
 .mapctl[hidden]{display:none}
 .mapctl button{width:44px;height:44px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
 .mapctl button.on{background:var(--accent);color:#1a1408}
@@ -230,6 +263,7 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
   <main id="main"></main>
   <div id="map"></div>
   <div id="dayban" hidden><b id="daybanT"></b><button id="daybanX">✕</button></div>
+  <div id="daylist" hidden></div>
   <div class="mapctl" id="mapctl" hidden>
     <button id="mapMe" title="Kde jsem">📍</button>
     <button id="mapLoops" title="Odbočky">🔁</button>
@@ -298,6 +332,42 @@ function driveMin(km, road){ const v = (road==='paved') ? 70 : 70/1.6; return Ma
 function fmtMin(m){ return m<60 ? `${m} min` : `${Math.floor(m/60)} h ${String(m%60).padStart(2,'0')}`; }
 function fmtKm(km){ return km<10 ? km.toFixed(1)+' km' : Math.round(km)+' km'; }
 function swimOK(p){ return p.swim && p.swim.possible && ['allowed','tolerated'].includes(p.swim.legal); }
+
+// --- projekce místa na trasu dne: kde na silnici je mu nejblíž (postup v km) a jak daleko od ní je ---
+function routeCum(pts){ if (pts._cum) return pts._cum; const c = [0]; for (let i = 1; i < pts.length; i++) c.push(c[i-1] + hav({lat:pts[i-1][0],lng:pts[i-1][1]}, {lat:pts[i][0],lng:pts[i][1]})); try { Object.defineProperty(pts, '_cum', { value: c, enumerable: false }); } catch(e){} return c; }
+function projectOn(pts, p){
+  const cum = routeCum(pts); let best = { t: 0, d: Infinity, at: pts[0] };
+  const kx = Math.cos(p.lat * Math.PI / 180); // lng zkrácená podle šířky, ať projekce nelže
+  for (let i = 1; i < pts.length; i++) {
+    const ay = pts[i-1][0], ax = pts[i-1][1] * kx, by = pts[i][0], bx = pts[i][1] * kx;
+    const py = p.lat, px = p.lng * kx;
+    const dy = by - ay, dx = bx - ax, len2 = dy*dy + dx*dx;
+    let u = len2 ? ((py - ay) * dy + (px - ax) * dx) / len2 : 0; u = Math.max(0, Math.min(1, u));
+    const qy = ay + u * dy, qx = (ax + u * dx) / kx;
+    const d = hav(p, { lat: qy, lng: qx });
+    if (d < best.d) best = { t: cum[i-1] + u * (cum[i] - cum[i-1]), d, at: [qy, qx] };
+  }
+  return best;
+}
+// --- itinerář dne: zastávky v pořadí, jak je trasa míjí (MUST + ručně přidané) ---
+function dayStops(d){
+  if (!d) return [];
+  const pts = d.geom || d.wp.map(w => [w[0], w[1]]);
+  const extra = (S.store.dayAdd && S.store.dayAdd[d.day]) || [];
+  const ids = [...new Set([...(d.must_ids || []), ...extra])];
+  const out = [];
+  for (const id of ids) {
+    const p = S.places.find(x => x.id === id); if (!p) continue;
+    const pr = projectOn(pts, p);
+    out.push({ p, t: pr.t, off: pr.d, at: pr.at, must: (d.must_ids || []).includes(id) });
+  }
+  out.sort((a, b) => a.t - b.t);
+  // nocleh patří na konec dne, i když ho trasa mine dřív (Astoria, SF)
+  const bed = out.findIndex(s => s.p.category === 'motel_gem');
+  if (bed > -1 && bed < out.length - 1) out.push(out.splice(bed, 1)[0]);
+  out.forEach((s, i) => s.n = i + 1);
+  return out;
+}
 let toastT; function toast(msg, ms=2200, onClick=null){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); t.classList.toggle('action', !!onClick); t.onclick = onClick; clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'), ms); }
 function pina(){ const p=$('#pina'); p.style.display='flex'; p.style.animation='none'; void p.offsetWidth; p.style.animation=''; setTimeout(()=>p.style.display='none',1500); }
 
@@ -455,6 +525,7 @@ function toolbarNear(){
     <button class="chip ${S.rank1?'on':''}" data-toggle="rank1">⭐ jen top</button>
     ${todayDay() ? `<button class="chip ${S.spineOnly && S.spineDay === todayDay() ? 'on' : ''}" data-spinelist="${todayDay()}">🧭 dnes D${todayDay()}</button>` : ''}
     <button class="chip ${S.spineOnly?'on':''}" data-toggle="spineOnly">🧭 ${S.spineOnly && S.spineDay ? 'den ' + S.spineDay : 'jen páteř'}</button>
+    ${S.spineOnly && S.spineDay ? `<button class="chip" data-spinemap="${S.spineDay}">🗺 mapa dne ${S.spineDay}</button>` : ''}
     <button class="chip" data-surprise="1">🎲 překvap mě</button>
   </div>
   ${all ? `<div class="chips">${REGIONS.map(([id,l])=>`<button class="chip region ${S.region===id?'on':''}" data-region="${id}">${l}</button>`).join('')}</div>` : ''}
@@ -590,7 +661,8 @@ function spineHtml(){
         <div class="dm"><span>🛏 <b>${esc(d.sleep)}</b></span><span>${d.km} km${d.h ? ' · ' + d.h + ' h jízdy' : ''}</span><span>${near} míst na trase</span>${d.date === t ? '<span style="color:var(--accent)">● DNES</span>' : ''}</div>
         <div class="note">${esc(d.note||'')}</div>
         <div class="must">${musts.map(p => `<a href="#" data-id="${p.id}" class="mm ${S.store.visited[p.id]?'done':''}">${S.store.visited[p.id]?'✓ ':'★ '}${esc(p.name)}</a>`).join('')}</div>
-        <div class="btns" style="margin:10px 0 2px"><a class="btn" href="${dir}" target="_blank" rel="noopener">🧭 Naviguj den</a><button class="btn" data-spinelist="${d.day}">📍 Místa dne (${near + musts.length})</button><button class="btn" data-spinemap="${d.day}">🗺</button></div>
+        ${(d.sleep_opts||[]).filter(o => o.price === '$').length ? `<div class="cheap">💵 levněji: ${(d.sleep_opts||[]).filter(o => o.price === '$').map(o => esc(o.town)).join(' · ')}</div>` : ''}
+        <div class="btns" style="margin:10px 0 2px"><a class="btn" href="${dir}" target="_blank" rel="noopener">🧭 Naviguj den</a><button class="btn" data-spinelist="${d.day}">📍 Místa dne (${near + musts.length})</button><button class="btn" data-spinemap="${d.day}">🗺 Mapa dne</button></div>
       </div>`; }).join('');
 }
 function planHtml(){
@@ -764,26 +836,64 @@ function renderDocs(m){
 
 // ====================== MAPA ======================
 const CAT_COLOR = { coast:'#4fc3c9', forest:'#5aa66a', desert:'#d98b41', geology:'#c9764f', mountain:'#9aa6b8', lake_river:'#4f9fd9', waterfall:'#6fc6e6', scenic_drive:'#b8a06a', town:'#d9c78a', motel_gem:'#d95f8a', food_gem:'#e08a3a', culture:'#a97bd9', oddity:'#b6d94f', dark_sky:'#6f7fd9', hot_spring:'#e0654a' };
-const M = { map: null, layer: null, cluster: null, plain: null, loops: null, spine: null, dayLayer: null, dayFocus: null, me: null, showLoops: false, showSpine: true, top: false, clustered: true, ready: false };
-function hideMap(){ $('#map').classList.remove('on'); $('#mapctl').hidden = true; $('#dayban').hidden = true; $('#main').style.display = ''; }
+const M = { map: null, layer: null, cluster: null, plain: null, loops: null, spine: null, dayLayer: null, dayFocus: null, dayIds: null, me: null, showLoops: false, showSpine: true, top: false, clustered: true, ready: false };
+function hideMap(){ $('#map').classList.remove('on'); $('#mapctl').hidden = true; $('#dayban').hidden = true; $('#daylist').hidden = true; document.body.classList.remove('dl'); $('#main').style.display = ''; }
 function dayFocus(day){
   if (!M.map) return;
   if (M.dayLayer) { M.map.removeLayer(M.dayLayer); M.dayLayer = null; }
   M.dayFocus = day;
-  if (!day) { $('#dayban').hidden = true; if (M.showSpine) M.spine.addTo(M.map); drawMarkers(); return; }
+  M.dayIds = null;
+  if (!day) { $('#dayban').hidden = true; $('#daylist').hidden = true; document.body.classList.remove('dl'); if (M.showSpine) M.spine.addTo(M.map); drawMarkers(); return; }
   const d = S.spine.days.find(x => x.day === day); if (!d) return;
   M.map.removeLayer(M.spine);
   const pts = d.geom || d.wp.map(w => [w[0], w[1]]);
-  M.dayLayer = L.layerGroup([
+  const stops = dayStops(d);
+  M.dayIds = new Set(stops.map(s => s.p.id));
+  const layers = [
     L.polyline(pts, { color: '#0f1419', weight: 9, opacity: .6 }),
     L.polyline(pts, { color: '#4fc3c9', weight: 5, opacity: 1 }),
-    L.marker(pts[0], { icon: L.divIcon({ className: '', html: '<div class="ab a">A</div>', iconSize: [26, 26], iconAnchor: [13, 13] }) }).bindTooltip('start'),
-    L.marker(pts[pts.length - 1], { icon: L.divIcon({ className: '', html: '<div class="ab b">B</div>', iconSize: [26, 26], iconAnchor: [13, 13] }) }).bindTooltip(`🛏 ${esc(d.sleep)}`),
-  ]).addTo(M.map);
+  ];
+  // ostruha od silnice k zastávce, která leží mimo páteř
+  for (const s of stops) if (s.off > 0.6) layers.push(L.polyline([s.at, [s.p.lat, s.p.lng]], { color: '#4fc3c9', weight: 2, opacity: .7, dashArray: '4 5' }));
+  // číslované zastávky v pořadí jízdy
+  for (const s of stops) layers.push(L.marker([s.p.lat, s.p.lng], {
+    icon: L.divIcon({ className: '', html: `<div class="nb ${s.must ? 'must' : 'add'} ${S.store.visited[s.p.id] ? 'done' : ''}">${S.store.visited[s.p.id] ? '✓' : s.n}</div>`, iconSize: [24, 24], iconAnchor: [12, 12] }),
+    zIndexOffset: 500,
+  }).bindPopup(`<b>${s.n}. ${esc(s.p.name)}</b> ${CATS[s.p.category]||''}${s.off > 0.6 ? '<br>' + fmtKm(s.off) + ' z trasy' : ''}<br><a href="#" data-id="${s.p.id}" style="color:var(--accent)">otevřít →</a>`));
+  layers.push(L.marker(pts[0], { icon: L.divIcon({ className: '', html: '<div class="ab a">A</div>', iconSize: [26, 26], iconAnchor: [13, 13] }) }).bindTooltip('start dne'));
+  layers.push(L.marker(pts[pts.length - 1], { icon: L.divIcon({ className: '', html: '<div class="ab b">B</div>', iconSize: [26, 26], iconAnchor: [13, 13] }) }).bindTooltip(`🛏 ${esc(d.sleep)}`));
+  M.dayLayer = L.layerGroup(layers).addTo(M.map);
   $('#daybanT').textContent = `D${d.day} · ${d.title}`; $('#dayban').hidden = false; $('#dayban').style.top = ($('header').offsetHeight + 8) + 'px';
   drawMarkers();
+  dayListHtml(d, stops);
   M.map.fitBounds(pts, { padding: [40, 40] });
 }
+// seznam zastávek dne pod mapou: pořadí, MUST vs. přidané, ostatní po cestě, nocleh
+function dayListHtml(d, stops){
+  const el = $('#daylist'); if (!el) return;
+  const near = S.places.filter(p => p.spine && p.spine.day === d.day && p.spine.km <= 15 && !stops.some(s => s.p.id === p.id))
+    .map(p => ({ p, ...projectOn(d.geom || d.wp.map(w => [w[0], w[1]]), p) })).sort((a, b) => a.t - b.t);
+  const row = (s) => `<div class="ds ${S.store.visited[s.p.id] ? 'done' : ''}">
+    <span class="n ${s.must ? 'must' : 'add'}">${S.store.visited[s.p.id] ? '✓' : s.n}</span>
+    <span class="nm" data-id="${s.p.id}">${CATS[s.p.category]||''} ${esc(s.p.name)}${s.off > 0.6 ? ` <i>· ${fmtKm(s.off)} z trasy</i>` : ''}</span>
+    ${s.must ? '' : `<button class="x" data-dayrm="${d.day}:${s.p.id}" title="Ven z trasy">✕</button>`}</div>`;
+  const opts = d.sleep_opts || [];
+  el.innerHTML = `<div class="dl-h"><b>Zastávky dne — ${stops.length}</b><button id="dlToggle">▾</button></div>
+    <div class="dl-b">
+      ${stops.map(row).join('') || '<div class="sub">Den nemá MUST místa.</div>'}
+      <div class="dl-bed"><div class="k">🛏 B — kde spát</div><div class="v">${esc(d.sleep)}</div>
+        ${opts.map(o => `<div class="opt"><span class="p">${esc(o.price || '')}</span><span class="t" ${o.lat ? `data-dayzoom="${o.lat},${o.lng}"` : ''}>${esc(o.town)}</span><span class="w">${esc(o.why || '')}</span></div>`).join('')}
+        ${opts.length ? '<div class="sub">Cenová hladina = odhad pro konec září / začátek října, ne živé ceny. Konec dne je zvolený tak, aby ráno navazoval na další den.</div>' : ''}
+      </div>
+      ${near.length ? `<div class="dl-h2">Ostatní po cestě (${near.length}) — ➕ zařadí do trasy</div>${near.map(s => `<div class="ds other">
+        <span class="n o">●</span><span class="nm" data-id="${s.p.id}">${CATS[s.p.category]||''} ${esc(s.p.name)}${s.d > 0.6 ? ` <i>· ${fmtKm(s.d)} z trasy</i>` : ''}</span>
+        <button class="x" data-dayadd="${d.day}:${s.p.id}" title="Do trasy dne">➕</button></div>`).join('')}` : ''}
+    </div>`;
+  el.hidden = false; document.body.classList.add('dl'); el.classList.toggle('open', S.store.dlOpen !== false);
+  $('#dlToggle').onclick = () => { S.store.dlOpen = !el.classList.contains('open'); save(); el.classList.toggle('open'); $('#dlToggle').textContent = el.classList.contains('open') ? '▾' : '▴'; };
+  $('#dlToggle').textContent = el.classList.contains('open') ? '▾' : '▴';
+}
+
 function renderMap(m){
   m.style.display = 'none'; $('#toolbar').innerHTML = '';
   if (typeof L === 'undefined') { m.style.display = ''; m.innerHTML = '<div class="empty">Mapa potřebuje první načtení online (Leaflet z CDN).<br><small>Markery bez podkladu nejdou zobrazit bez knihovny — připoj se a obnov.</small></div>'; return; }
@@ -826,7 +936,10 @@ function drawMarkers(){
   M.layer.clearLayers();
   const batch = [];
   for (const p of S.places) {
-    if (M.dayFocus) { if (!(p.spine && p.spine.day === M.dayFocus && (p.spine.must || p.spine.km <= 15))) continue; }
+    if (M.dayFocus) {
+      if (!(p.spine && p.spine.day === M.dayFocus && (p.spine.must || p.spine.km <= 15))) continue;
+      if (M.dayIds && M.dayIds.has(p.id)) continue; // uz je na mape jako cislovana zastavka
+    }
     else { if (M.top && p.rank !== 1) continue; if (z < 7 && p.rank === 3) continue; }
     if (!M.clustered && !b.contains([p.lat, p.lng])) continue;
     if (S.filters.size) { let ok = false; for (const f of FILTERS) if (S.filters.has(f.id) && (f.cats.includes(p.category) || (f.swim && swimOK(p)))) { ok = true; break; } if (!ok) continue; }
@@ -919,7 +1032,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],#qClear,#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],#qClear,#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { if (t.dataset.tab === 'map' && M.dayFocus) dayFocus(null); S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -932,6 +1045,15 @@ document.addEventListener('click', (e) => {
   else if (t.id === 'qClear') { S.q = ''; render(); }
   else if (t.dataset.spineday) { e.preventDefault(); closeDetail(); S.tab = 'plan'; S.sub = 'spine'; render(); const el = document.getElementById('spd' + t.dataset.spineday); if (el) el.scrollIntoView({ block: 'start' }); }
   else if (t.dataset.spinelist) { const day = +t.dataset.spinelist; if (S.tab === 'near' && S.spineOnly && S.spineDay === day) { S.spineOnly = false; S.spineDay = null; } else { S.tab = 'near'; S.range = Infinity; S.region = null; S.q = ''; S.spineOnly = true; S.spineDay = day; } render(); window.scrollTo(0,0); }
+  else if (t.dataset.dayadd || t.dataset.dayrm) {
+    e.preventDefault();
+    const [day, id] = (t.dataset.dayadd || t.dataset.dayrm).split(':'); const k = +day;
+    S.store.dayAdd = S.store.dayAdd || {}; const cur = S.store.dayAdd[k] || [];
+    S.store.dayAdd[k] = t.dataset.dayadd ? [...new Set([...cur, id])] : cur.filter(x => x !== id);
+    save(); dayFocus(k);
+    toast(t.dataset.dayadd ? 'Zařazeno do trasy dne' : 'Vyřazeno z trasy dne', 1200);
+  }
+  else if (t.dataset.dayzoom) { e.preventDefault(); const [la, ln] = t.dataset.dayzoom.split(',').map(Number); if (M.map) M.map.setView([la, ln], 11); }
   else if (t.dataset.spinemap) { const day = +t.dataset.spinemap; S.tab = 'map'; render(); const go = () => M.map ? dayFocus(day) : setTimeout(go, 200); setTimeout(go, 250); }
   else if (t.dataset.here) { e.preventDefault(); const p = S.places.find(x => x.id === t.dataset.here); if (p) { fixPos(p.lat, p.lng, p.name); M.map && M.map.closePopup(); } }
   else if (t.dataset.surprise) { const l = computed().filter(x => !S.store.visited[x.p.id]); const top = l.filter(x => x.p.rank === 1); const pool = top.length ? top : l; if (!pool.length) return toast('Nic v dosahu — rozšiř'); openDetail(pool[Math.floor(Math.random()*pool.length)].p.id); }

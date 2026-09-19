@@ -166,7 +166,23 @@
     "Hobuck Beach",
     "Second Beach"
    ],
-   "note": "Makah Recreation Pass 20 $ v Neah Bay. Cape Flattery = konec kontinentu. Rialto je ZAVŘENÁ (Mora Rd do 15. 10.) → Second Beach z La Push na západ slunce. Alternativa dne: Ozette Triangle (15 km)."
+   "note": "Makah Recreation Pass 20 $ v Neah Bay. Cape Flattery = konec kontinentu. Rialto je ZAVŘENÁ (Mora Rd do 15. 10.) → Second Beach z La Push na západ slunce. Alternativa dne: Ozette Triangle (15 km).",
+   "sleep_opts": [
+    {
+     "town": "Forks",
+     "price": "$",
+     "lat": 47.9503,
+     "lng": -124.3854,
+     "why": "dřevařské město, motelová řada na 101 — nejlevnější v okolí a 20 min nad odbočkou na Hoh (start D4)"
+    },
+    {
+     "town": "La Push (Quileute)",
+     "price": "$$$",
+     "lat": 47.9067,
+     "lng": -124.6357,
+     "why": "u vody, ale draho a rychle vyprodané"
+    }
+   ]
   },
   {
    "day": 4,
@@ -224,7 +240,23 @@
     "Cape Disappointment Lighthouse",
     "Atomic Motel"
    ],
-   "note": "Hoh most: dnes otevřen přes den (noční uzávěra 22:30–5:30) — od 24. 9. zavřený, takže dnes je ten den. Ráno Hoh, Ruby Beach v poledne, Quinault koupání, Cape Disappointment při západu, Astoria na noc."
+   "note": "Hoh most: dnes otevřen přes den (noční uzávěra 22:30–5:30) — od 24. 9. zavřený, takže dnes je ten den. Ráno Hoh, Ruby Beach v poledne, Quinault koupání, Cape Disappointment při západu, Astoria na noc.",
+   "sleep_opts": [
+    {
+     "town": "Astoria",
+     "price": "$$",
+     "lat": 46.1879,
+     "lng": -123.8313,
+     "why": "Atomic Motel; centrum draží o víkendu, ráno rovnou na 101 k jihu"
+    },
+    {
+     "town": "Warrenton / Hammond",
+     "price": "$",
+     "lat": 46.1651,
+     "lng": -123.9226,
+     "why": "10 min od Astorie, řetězce u 101 — levnější a stejný start D5"
+    }
+   ]
   },
   {
    "day": 5,
@@ -282,7 +314,23 @@
     "Cape Kiwanda",
     "Whistling Winds Motel"
    ],
-   "note": "Astoria Column ráno (10 $ parkování). Ecola/Cannon Beach = Goonies pobřeží. Three Capes Scenic Route místo 101. Cape Kiwanda duna při západu."
+   "note": "Astoria Column ráno (10 $ parkování). Ecola/Cannon Beach = Goonies pobřeží. Three Capes Scenic Route místo 101. Cape Kiwanda duna při západu.",
+   "sleep_opts": [
+    {
+     "town": "Lincoln City",
+     "price": "$",
+     "lat": 44.9582,
+     "lng": -124.0179,
+     "why": "velký motelový trh = konkurence a nejnižší ceny; navíc 40 km jižněji = kratší D6"
+    },
+    {
+     "town": "Pacific City",
+     "price": "$$$",
+     "lat": 45.2003,
+     "lng": -123.962,
+     "why": "Cape Kiwanda je krásná, ale zaplatíš výhled"
+    }
+   ]
   },
   {
    "day": 6,
@@ -341,7 +389,23 @@
     "Woahink Lake — Honeyman South Day Use",
     "Oregon Dunes Overlook"
    ],
-   "note": "Thor's Well při přílivu (tabulka!), Cape Perpetua vyhlídka. Odpoledne duny a koupání v Cleawox/Woahink. Zítra začíná velký okruh — plná nádrž v Reedsportu."
+   "note": "Thor's Well při přílivu (tabulka!), Cape Perpetua vyhlídka. Odpoledne duny a koupání v Cleawox/Woahink. Zítra začíná velký okruh — plná nádrž v Reedsportu.",
+   "sleep_opts": [
+    {
+     "town": "Reedsport",
+     "price": "$",
+     "lat": 43.7023,
+     "lng": -124.0976,
+     "why": "pracovní město bez turistů; leží přímo v ústí Hwy 38 = ráno rovnou na Diamond Lake (D7)"
+    },
+    {
+     "town": "Florence (Old Town)",
+     "price": "$$",
+     "lat": 43.9826,
+     "lng": -124.0998,
+     "why": "hezčí, ale turistické a 30 km severněji = delší D7"
+    }
+   ]
   },
   {
    "day": 7,
@@ -404,7 +468,23 @@
     "Watson Falls",
     "Diamond Lake — South Shore"
    ],
-   "note": "Umpqua HS 5 $ jen kartou, den. Steamboat Falls = koupání pod prahem. Toketee 200 schodů. Diamond Lake na noc, ráno Crater."
+   "note": "Umpqua HS 5 $ jen kartou, den. Steamboat Falls = koupání pod prahem. Toketee 200 schodů. Diamond Lake na noc, ráno Crater.",
+   "sleep_opts": [
+    {
+     "town": "Chemult",
+     "price": "$",
+     "lat": 43.2201,
+     "lng": -121.7795,
+     "why": "motelová řada na Hwy 97, celoročně otevřeno a levně; 45 min k severní bráně Crater Lake"
+    },
+    {
+     "town": "Diamond Lake Resort",
+     "price": "$$",
+     "lat": 43.156,
+     "lng": -122.139,
+     "why": "nejblíž jezeru, ale málo pokojů a začátkem října už zavírá — ověř telefonem"
+    }
+   ]
   },
   {
    "day": 8,
@@ -454,7 +534,30 @@
     "Garfield Peak Trail",
     "Cloudcap Overlook"
    ],
-   "note": "NP 30 $. Cleetwood Cove (voda) ZAVŘEN. East Rim HQ↔Phantom Ship zavřená — Cloudcap/Phantom Ship jen od North Junction. Watchman na západ slunce (1 h nahoru). Pak dolů OR-62 na Union Creek/Prospect."
+   "note": "NP 30 $. Cleetwood Cove (voda) ZAVŘEN. East Rim HQ↔Phantom Ship zavřená — Cloudcap/Phantom Ship jen od North Junction. Watchman na západ slunce (1 h nahoru). Pak dolů OR-62 na Union Creek/Prospect.",
+   "sleep_opts": [
+    {
+     "town": "Shady Cove / Trail",
+     "price": "$",
+     "lat": 42.6112,
+     "lng": -122.812,
+     "why": "dolů po Rogue na 62, levné motýlky a ráno blíž k jihu (D9 má 429 km)"
+    },
+    {
+     "town": "Grants Pass",
+     "price": "$",
+     "lat": 42.439,
+     "lng": -123.3284,
+     "why": "I-5 řetězce, nejjistější levné ubytko v regionu"
+    },
+    {
+     "town": "Union Creek / Prospect",
+     "price": "$$",
+     "lat": 42.907,
+     "lng": -122.467,
+     "why": "lodge u parku, atmosféra ano, cena a kapacita ne"
+    }
+   ]
   },
   {
    "day": 9,
@@ -516,7 +619,30 @@
     "Jacksonville Historic District",
     "Face Rock & Wizard's Hat — beach walk"
    ],
-   "note": "Rogue Gorge/Natural Bridge NEKOUPAT. Table Rock ráno (horko). Jacksonville oběd. Pak OR-42 přes Coast Range (3 h) zpátky k moři — Bandon Face Rock při západu. Alternativa: Oregon Caves + US-199 (loop-33) a vynechat jižní pobřeží."
+   "note": "Rogue Gorge/Natural Bridge NEKOUPAT. Table Rock ráno (horko). Jacksonville oběd. Pak OR-42 přes Coast Range (3 h) zpátky k moři — Bandon Face Rock při západu. Alternativa: Oregon Caves + US-199 (loop-33) a vynechat jižní pobřeží.",
+   "sleep_opts": [
+    {
+     "town": "Port Orford",
+     "price": "$",
+     "lat": 42.7457,
+     "lng": -124.4976,
+     "why": "malinké a levné, a 45 km jižněji než Bandon = lepší start D10"
+    },
+    {
+     "town": "Coos Bay / North Bend",
+     "price": "$",
+     "lat": 43.3665,
+     "lng": -124.2179,
+     "why": "přístavní pracovní město, nejlevnější motely — ale je to na severu, D10 se prodlouží"
+    },
+    {
+     "town": "Bandon (Old Town)",
+     "price": "$$",
+     "lat": 43.119,
+     "lng": -124.4084,
+     "why": "Face Rock za rozsvitu stojí za to, cena střední"
+    }
+   ]
   },
   {
    "day": 10,
@@ -575,7 +701,23 @@
     "Thunder Rock Cove",
     "Harris Beach"
    ],
-   "note": "Nejlepší den oregonského pobřeží: Boardman corridor — každý turnout je jiný svět. Whaleshead, Indian Sands. Večer Crescent City, Curly Redwood Lodge (motel z jednoho stromu)."
+   "note": "Nejlepší den oregonského pobřeží: Boardman corridor — každý turnout je jiný svět. Whaleshead, Indian Sands. Večer Crescent City, Curly Redwood Lodge (motel z jednoho stromu).",
+   "sleep_opts": [
+    {
+     "town": "Crescent City",
+     "price": "$",
+     "lat": 41.7558,
+     "lng": -124.2026,
+     "why": "Curly Redwood Lodge; město má malou poptávku, takže levně celý rok — dobrá volba, neměň"
+    },
+    {
+     "town": "Klamath",
+     "price": "$$",
+     "lat": 41.5262,
+     "lng": -124.0381,
+     "why": "blíž redwoodům, ale pár pokojů a bez konkurence"
+    }
+   ]
   },
   {
    "day": 11,
@@ -633,7 +775,30 @@
     "Trinidad Head Loop",
     "Arcata Plaza & Minor Theatre"
    ],
-   "note": "Fern Canyon bez permitu (po 15. 9.), Davison Rd štěrk + brody. Prairie Creek elk na louce. Trinidad Head na západ. Večer Arcata (knihkupectví, plaza) nebo Eureka Old Town."
+   "note": "Fern Canyon bez permitu (po 15. 9.), Davison Rd štěrk + brody. Prairie Creek elk na louce. Trinidad Head na západ. Večer Arcata (knihkupectví, plaza) nebo Eureka Old Town.",
+   "sleep_opts": [
+    {
+     "town": "Fortuna",
+     "price": "$",
+     "lat": 40.5982,
+     "lng": -124.1573,
+     "why": "řetězce u 101, nejlevnější v Humboldtu a 30 km jižněji = kratší D12"
+    },
+    {
+     "town": "Eureka (Broadway)",
+     "price": "$",
+     "lat": 40.8021,
+     "lng": -124.1637,
+     "why": "motelová řada, levné; Old Town na večeři"
+    },
+    {
+     "town": "Arcata",
+     "price": "$$",
+     "lat": 40.8665,
+     "lng": -124.0828,
+     "why": "studentské město — když je na Humboldt State akce, ceny vyletí"
+    }
+   ]
   },
   {
    "day": 12,
@@ -691,7 +856,23 @@
     "Avenue of the Giants",
     "Benbow State Recreation Area — South Fork Eel River"
    ],
-   "note": "Loop-01. Mattole Road je pomalá a děravá — celý den. Mattole Beach = nejzápadnější prázdno. Bull Creek Flats/Rockefeller = nejvyšší stromy. Koupání v South Fork Eel."
+   "note": "Loop-01. Mattole Road je pomalá a děravá — celý den. Mattole Beach = nejzápadnější prázdno. Bull Creek Flats/Rockefeller = nejvyšší stromy. Koupání v South Fork Eel.",
+   "sleep_opts": [
+    {
+     "town": "Garberville / Redway",
+     "price": "$",
+     "lat": 40.1007,
+     "lng": -123.793,
+     "why": "zvláštní městečko, levné motely, přímo na 101 = čistý start D13"
+    },
+    {
+     "town": "Miranda / Avenue of the Giants",
+     "price": "$$",
+     "lat": 40.24,
+     "lng": -123.82,
+     "why": "lodge mezi sekvojemi, dražší a málo míst"
+    }
+   ]
   },
   {
    "day": 13,
@@ -741,7 +922,30 @@
     "Big River Beach",
     "Point Arena Lighthouse"
    ],
-   "note": "Peg House snídaně. Hwy 1 od Leggettu = 35 km serpentin, pak Pacifik. Glass Beach při odlivu. Mendocino odpoledne — útesy + kniha. Point Arena maják při západu (5 $)."
+   "note": "Peg House snídaně. Hwy 1 od Leggettu = 35 km serpentin, pak Pacifik. Glass Beach při odlivu. Mendocino odpoledne — útesy + kniha. Point Arena maják při západu (5 $).",
+   "sleep_opts": [
+    {
+     "town": "Point Arena / Gualala",
+     "price": "$",
+     "lat": 38.9088,
+     "lng": -123.6931,
+     "why": "nejlevnější na tomhle úseku a 50 km jižněji = D14 do Point Reyes se zkrátí"
+    },
+    {
+     "town": "Fort Bragg",
+     "price": "$",
+     "lat": 39.4457,
+     "lng": -123.8053,
+     "why": "pracovní město 15 min nad Mendocinem, poloviční ceny — ale je to na severu"
+    },
+    {
+     "town": "Mendocino",
+     "price": "$$$",
+     "lat": 39.3076,
+     "lng": -123.7995,
+     "why": "vesnice samých B&B, nejdražší bod celého Oregonu i severní Kalifornie"
+    }
+   ]
   },
   {
    "day": 14,
@@ -800,7 +1004,30 @@
     "Bodega Head",
     "Tomales Bay – Heart's Desire Beach (Tomales Bay State Park)"
    ],
-   "note": "Bowling Ball Beach jen při odlivu (tabulka!). Sea Ranch kaple 10 min. Salt Point tafoni. Jenner tuleni. Tomales Bay = nejlepší koupání (chráněné, 15 °C). Klíšťata."
+   "note": "Bowling Ball Beach jen při odlivu (tabulka!). Sea Ranch kaple 10 min. Salt Point tafoni. Jenner tuleni. Tomales Bay = nejlepší koupání (chráněné, 15 °C). Klíšťata.",
+   "sleep_opts": [
+    {
+     "town": "Petaluma",
+     "price": "$",
+     "lat": 38.2324,
+     "lng": -122.6367,
+     "why": "40 min do vnitrozemí, řetězce u 101 — v Marinu jinak levně nespíš; ráno přes Golden Gate do SF"
+    },
+    {
+     "town": "Novato",
+     "price": "$",
+     "lat": 38.1074,
+     "lng": -122.5697,
+     "why": "totéž, o 15 min blíž SF"
+    },
+    {
+     "town": "Point Reyes Station / Inverness",
+     "price": "$$$",
+     "lat": 38.0648,
+     "lng": -122.8069,
+     "why": "krásné, ale Marin ceny a málo pokojů"
+    }
+   ]
   },
   {
    "day": 15,
@@ -859,7 +1086,30 @@
     "Marin Headlands – Battery Spencer",
     "Fort Point National Historic Site"
    ],
-   "note": "Čtvrtek — maják otevřen (čt–po). 313 schodů, vítr. Mt. Tam nad mlhou. Hawk Hill + Battery Spencer = most z bunkrů. Golden Gate mýto 10,50 $ → bayareafastrak.org/paytoll do 48 h. Fort Point = Vertigo."
+   "note": "Čtvrtek — maják otevřen (čt–po). 313 schodů, vítr. Mt. Tam nad mlhou. Hawk Hill + Battery Spencer = most z bunkrů. Golden Gate mýto 10,50 $ → bayareafastrak.org/paytoll do 48 h. Fort Point = Vertigo.",
+   "sleep_opts": [
+    {
+     "town": "Daly City / South SF",
+     "price": "$",
+     "lat": 37.6879,
+     "lng": -122.4702,
+     "why": "motely za městem s BART do centra — v SF nejlevnější reálná varianta a ráno rovnou na Hwy 1 k jihu (D17)"
+    },
+    {
+     "town": "Pacifica",
+     "price": "$$",
+     "lat": 37.6138,
+     "lng": -122.4869,
+     "why": "u oceánu, střední cena, Devil’s Slide hned za rohem"
+    },
+    {
+     "town": "SF — Ocean Park Motel",
+     "price": "$$",
+     "lat": 37.728,
+     "lng": -122.503,
+     "why": "u Sunsetu, jeden z mála levnějších v samotném městě"
+    }
+   ]
   },
   {
    "day": 16,
@@ -965,7 +1215,30 @@
     "Point Lobos State Reserve",
     "Bixby Creek Bridge"
    ],
-   "note": "Hwy 1 celá průjezdná. Pescadero (Duarte's oběd), Point Lobos 2 h (parkuj na Hwy 1 zdarma), Bixby při západu. Big Sur nocleh rezervuj (drahé, plno)."
+   "note": "Hwy 1 celá průjezdná. Pescadero (Duarte's oběd), Point Lobos 2 h (parkuj na Hwy 1 zdarma), Bixby při západu. Big Sur nocleh rezervuj (drahé, plno).",
+   "sleep_opts": [
+    {
+     "town": "Seaside / Marina (u Monterey)",
+     "price": "$",
+     "lat": 36.6111,
+     "lng": -121.8517,
+     "why": "levné řetězce vedle drahého Monterey; Big Sur pak jedeš ráno za světla místo v noci"
+    },
+    {
+     "town": "King City",
+     "price": "$",
+     "lat": 36.2128,
+     "lng": -121.126,
+     "why": "vnitrozemí na 101, nejlevnější — ale Big Sur ti úplně uteče"
+    },
+    {
+     "town": "Big Sur (Fernwood / Ripplewood)",
+     "price": "$$$",
+     "lat": 36.2404,
+     "lng": -121.777,
+     "why": "spát v Big Suru je zážitek i rána; 250–400 $ a nutná rezervace"
+    }
+   ]
   },
   {
    "day": 18,
@@ -1032,7 +1305,30 @@
     "Piedras Blancas Elephant Seals",
     "Madonna Inn"
    ],
-   "note": "Neděle — Henry Miller 11–17. Pfeiffer Beach 15 $ hotově, ráno. Gorge koupání. Nepenthe oběd 11:30. McWay 5 min. Tuleni Piedras Blancas. Madonna Inn růžový bar na noc (nebo Cambria)."
+   "note": "Neděle — Henry Miller 11–17. Pfeiffer Beach 15 $ hotově, ráno. Gorge koupání. Nepenthe oběd 11:30. McWay 5 min. Tuleni Piedras Blancas. Madonna Inn růžový bar na noc (nebo Cambria).",
+   "sleep_opts": [
+    {
+     "town": "Santa Maria",
+     "price": "$",
+     "lat": 34.953,
+     "lng": -120.4357,
+     "why": "zemědělské město, řetězce, nejnižší ceny v regionu; 60 km jižněji = kratší D19 (má 394 km)"
+    },
+    {
+     "town": "Grover Beach / Oceano",
+     "price": "$",
+     "lat": 35.1216,
+     "lng": -120.6213,
+     "why": "vedle Pisma, ale bez jeho cen"
+    },
+    {
+     "town": "SLO / Cambria",
+     "price": "$$",
+     "lat": 35.2828,
+     "lng": -120.6596,
+     "why": "SLO střed, Cambria draho"
+    }
+   ]
   },
   {
    "day": 19,
@@ -1102,7 +1398,30 @@
     "Point Dume State Beach",
     "Amoeba Music (Hollywood)"
    ],
-   "note": "Dlouhý den. Figueroa ráno (2 h, zlatá savana s lišejníkem — TVOJE krajina). Cold Spring Tavern je v pondělí ZAVŘENÁ. SB rychle (věž soudu), Ventura molo, Malibu El Matador při západu, LA na noc. Jitlada/Marouch v pondělí zavřeno → Canter's."
+   "note": "Dlouhý den. Figueroa ráno (2 h, zlatá savana s lišejníkem — TVOJE krajina). Cold Spring Tavern je v pondělí ZAVŘENÁ. SB rychle (věž soudu), Ventura molo, Malibu El Matador při západu, LA na noc. Jitlada/Marouch v pondělí zavřeno → Canter's.",
+   "sleep_opts": [
+    {
+     "town": "Long Beach / Torrance",
+     "price": "$",
+     "lat": 33.7701,
+     "lng": -118.1937,
+     "why": "jižní LA je levnější a ráno tě to na D20 do San Diega pustí bez průjezdu celým městem"
+    },
+    {
+     "town": "Koreatown",
+     "price": "$",
+     "lat": 34.0578,
+     "lng": -118.3009,
+     "why": "nejlevnější motely v samotném LA, žrádlo do půlnoci"
+    },
+    {
+     "town": "Hollywood / Silver Lake",
+     "price": "$$",
+     "lat": 34.09,
+     "lng": -118.27,
+     "why": "atmosféra ano, cena i parkování ne"
+    }
+   ]
   },
   {
    "day": 20,
@@ -1170,7 +1489,30 @@
     "Sunset Cliffs Natural Park",
     "Ocean Beach Pier"
    ],
-   "note": "Úterý — Jitlada/Marouch otevřeno na oběd. Griffith ráno, Last Bookstore, pak PCH na jih. La Jolla Cove koupání 19 °C. Sunset Cliffs při západu, Ocean Beach molo, Hodad's. Casbah večer?"
+   "note": "Úterý — Jitlada/Marouch otevřeno na oběd. Griffith ráno, Last Bookstore, pak PCH na jih. La Jolla Cove koupání 19 °C. Sunset Cliffs při západu, Ocean Beach molo, Hodad's. Casbah večer?",
+   "sleep_opts": [
+    {
+     "town": "Hotel Circle, Mission Valley",
+     "price": "$",
+     "lat": 32.7676,
+     "lng": -117.1661,
+     "why": "Kings Inn a spol.; v SD nejlevnější hladina a přímo na I-8/I-5 = ráno rovnou na sever (D21)"
+    },
+    {
+     "town": "El Cajon / Chula Vista",
+     "price": "$",
+     "lat": 32.7948,
+     "lng": -116.9625,
+     "why": "ještě levněji, ale 20 min z centra"
+    },
+    {
+     "town": "Ocean Beach",
+     "price": "$$",
+     "lat": 32.7494,
+     "lng": -117.2491,
+     "why": "nejlepší atmosféra, střední až vysoká cena"
+    }
+   ]
   },
   {
    "day": 21,
@@ -1207,5 +1549,5 @@
    "note": "Vyjet 6:30 (I-5, 2,5–3 h, ranní špička v LA!). Salk/Torrey Pines jen pokud vyjedeš v 5 a stihneš (Salk nádvoří jen s prohlídkou st–pá 10:00 — to už nestihneš, jen zvenku). Po vrácení auta: LAX → Santa Monica 25 min (Uber/bus 3). 7.–9. 10. pěšky: Venice, molo, Getty Villa busem, Rae's snídaně. 9. 10. let 18:40."
   }
  ],
- "updated": "2026-09-14"
+ "updated": "2026-09-19"
 }
