@@ -163,6 +163,7 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .bedbtn:active{color:var(--accent)}
 .bedcol{display:flex;flex-direction:column;gap:2px;flex:0 0 auto;align-self:flex-start}
 .bedcol .bedbtn{font-size:15px;padding:4px 7px;text-decoration:none}
+.bedcol .absbtn.on{color:var(--accent)}
 .ds.bed{align-items:baseline}
 .ds .bp{flex:0 0 26px;text-align:center;font:700 11px var(--mono);color:#0f1419;background:var(--bc);border-radius:7px;padding:2px 0}
 .ds .usd{flex:0 0 auto;font:11px var(--mono);color:var(--muted)}
@@ -336,7 +337,7 @@ const S = {
   pos: null, posMode: 'none', posT: null, posAcc: null, // 'gps' | 'sim' | 'last'
   store: loadStore(),
 };
-function loadStore(){ try { return Object.assign({ plan:[], visited:{}, notes:{}, lastPos:null, sim:null, range:100 }, JSON.parse(localStorage.getItem(LS_KEY)||'{}')); } catch(e){ return { plan:[], visited:{}, notes:{}, lastPos:null, sim:null, range:100 }; } }
+function loadStore(){ try { return Object.assign({ plan:[], visited:{}, abs:[], notes:{}, lastPos:null, sim:null, range:100 }, JSON.parse(localStorage.getItem(LS_KEY)||'{}')); } catch(e){ return { plan:[], visited:{}, abs:[], notes:{}, lastPos:null, sim:null, range:100 }; } }
 function save(){ try { localStorage.setItem(LS_KEY, JSON.stringify(S.store)); } catch(e){ toast('localStorage plný nebo blokovaný'); } }
 let saveT = null;
 function saveThrottled(){ if (saveT) return; saveT = setTimeout(() => { saveT = null; save(); }, 10000); }
@@ -638,7 +639,7 @@ function itemHtml({ p, km, b }){
       <div class="meta">${km != null ? `<span class="dist">${fmtKm(km)} <span class="arrow" style="transform:rotate(${Math.round(b)}deg)">↑</span> ${dirName(b)}</span><span>~${fmtMin(driveMin(km, p.road_access))}</span>` : `<span class="dist">${esc((p.nearest_town||'').split(',')[0])}</span>`}<span>${CATS[p.category]||''} ${esc(p.subcategory||p.category)}</span></div>
       <div class="why">${esc(p.why_bob)}</div>
       ${(icons.length || p.spine) ? `<div class="icons">${spBadge(p)}${icons.join(' · ')}</div>` : ''}
-    </div><div class="bedcol"><button class="bedbtn" data-bed="${p.id}" title="Ubytko do ${BED_R} km (moje mapa, jde offline)">🛏</button><a class="bedbtn" href="${googleBedsMap(p)}" target="_blank" rel="noopener" title="Ceny v Google Maps, okolí ~${BED_R} km" onclick="event.stopPropagation()">🔎</a></div></div>`;
+    </div><div class="bedcol"><button class="bedbtn" data-bed="${p.id}" title="Ubytko do ${BED_R} km (moje mapa, jde offline)">🛏</button><a class="bedbtn" href="${googleBedsMap(p)}" target="_blank" rel="noopener" title="Ceny v Google Maps, okolí ~${BED_R} km" onclick="event.stopPropagation()">🔎</a><button class="bedbtn absbtn ${isAbs(p.id)?'on':''}" data-abs="${p.id}" title="${isAbs(p.id)?'Zrušit absolutku':'Do Absolutek'}">${isAbs(p.id)?'★':'☆'}</button></div></div>`;
 }
 
 // ====================== ODBOČKY ======================
@@ -694,6 +695,29 @@ const SPEND_CATS = { nocleh:'🛏', jidlo:'🍽', benzin:'⛽', vstupy:'🎫', o
 const BUDGET = 4300, CZK = 21;
 const today = () => new Date().toISOString().slice(0,10);
 const fmtDate = (d) => { const [y,m,dd] = d.split('-'); return `${+dd}. ${+m}.`; };
+const isAbs = (id) => (S.store.abs||[]).includes(id);
+function toggleAbs(id){
+  S.store.abs = S.store.abs || [];
+  const i = S.store.abs.indexOf(id);
+  if (i >= 0) { S.store.abs.splice(i,1); toast('☆ Ven z Absolutek'); }
+  else { S.store.abs.push(id); toast('★ Absolutka'); }
+  save();
+}
+// Absolutky: hvezdickou oznacena mista, razena od nejblizsiho podle GPS
+function absHtml(){
+  const items = (S.store.abs||[]).map(id => S.places.find(p => p.id === id)).filter(Boolean)
+    .map(p => ({ p, km: S.pos ? hav(S.pos, p) : null }))
+    .sort((a,b) => (a.km ?? 1e9) - (b.km ?? 1e9) || a.p.name.localeCompare(b.p.name));
+  const body = items.length
+    ? items.map(({p,km}) => `<div class="ds${S.store.visited[p.id] ? ' done' : ''}">
+        <span class="n must">★</span>
+        <span class="nm" data-id="${p.id}">${CATS[p.category]||''} ${esc(p.name)}${km != null ? ` <i>· ${fmtKm(km)} ${dirName(bearing(S.pos,p))}</i>` : ''}</span>
+        <button class="x" data-unabs="${p.id}" title="Ven z Absolutek">✕</button></div>`).join('')
+      + `<div class="sub" style="padding:8px 0 2px">${items.length} absolutek · ${S.pos ? 'řazeno od nejbližší (GPS)' : 'bez GPS — řazeno abecedně'}</div>`
+      + `<div class="btns"><a class="btn primary" target="_blank" rel="noopener" href="${planRouteUrl(items.filter(x=>!S.store.visited[x.p.id]).map(x=>x.p))}">🧭 Naviguj absolutky (max 10)</a></div>`
+    : '<div class="sub" style="padding:6px 0">Zatím nic. Klikni ☆ u místa (v Místech dne i kdekoli v seznamu) a přistane tady.</div>';
+  return `<div class="dayc" id="absBox"><h3>⭐ Absolutky</h3>${body}</div>`;
+}
 function renderPlan(m){
   S.sub = S.sub || 'spine';
   if (S.sub !== 'spend') S.spendEdit = null;
@@ -718,7 +742,7 @@ function planRouteUrl(items){
 function spineHtml(){
   if (!S.spine) return '<div class="empty">Páteř se nenačetla.</div>';
   const t = today();
-  return `<div class="sub" style="padding:4px 0 6px">20 dní s autem · ★ MUST = nevynechat · ostatní místa s „● na trase“ jsou do 15 km od páteře dne</div>` +
+  return absHtml() + `<div class="sub" style="padding:4px 0 6px">20 dní s autem · ★ MUST = nevynechat · ostatní místa s „● na trase“ jsou do 15 km od páteře dne</div>` +
     S.spine.days.map(d => {
       const cls = d.date === t ? 'today' : d.date < t ? 'past' : '';
       const musts = (d.must_ids||[]).map(id => S.places.find(p => p.id === id)).filter(Boolean);
@@ -1194,7 +1218,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],[data-bed],[data-bedzoom],#qClear,#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],[data-bed],[data-bedzoom],[data-abs],[data-unabs],#qClear,#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { if (t.dataset.tab === 'map' && M.dayFocus) dayFocus(null); S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -1206,6 +1230,8 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.region) { S.region = S.region === t.dataset.region ? null : t.dataset.region; S.shown = 100; render(); window.scrollTo(0,0); }
   else if (t.id === 'qClear') { S.q = ''; render(); }
   else if (t.dataset.spineday) { e.preventDefault(); closeDetail(); S.tab = 'plan'; S.sub = 'spine'; render(); const el = document.getElementById('spd' + t.dataset.spineday); if (el) el.scrollIntoView({ block: 'start' }); }
+  else if (t.dataset.abs) { e.stopPropagation(); toggleAbs(t.dataset.abs); render(); }
+  else if (t.dataset.unabs) { toggleAbs(t.dataset.unabs); renderPlan($('#main')); }
   else if (t.dataset.spinelist) { const day = +t.dataset.spinelist; if (S.tab === 'near' && S.spineOnly && S.spineDay === day) { S.spineOnly = false; S.spineDay = null; } else { S.tab = 'near'; S.range = Infinity; S.region = null; S.q = ''; S.spineOnly = true; S.spineDay = day; } render(); window.scrollTo(0,0); }
   else if (t.dataset.bed) { e.preventDefault(); e.stopPropagation(); openBeds(t.dataset.bed); }
   else if (t.dataset.bedzoom) { e.preventDefault(); const [la, ln] = t.dataset.bedzoom.split(',').map(Number); if (M.map) M.map.setView([la, ln], 11); }
