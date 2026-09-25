@@ -81,6 +81,9 @@ main{flex:1;padding:8px 12px calc(var(--sab) + 72px)}
 .dayc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:10px 0}
 .dayc.today{border-color:var(--accent);box-shadow:0 0 0 1px rgba(217,164,65,.3)}
 .dayc.past{opacity:.55}
+.dayc.now-box{border-color:var(--accent)}
+.dayc h3 small.orig{font:11px var(--mono);color:var(--muted);text-decoration:line-through}
+.past-row{display:block;width:100%;text-align:left;background:var(--card2);border:1px dashed var(--line);border-radius:10px;color:var(--muted);font:12px var(--mono);padding:9px 12px;margin:8px 0}
 .dayc h3{margin:0;font-family:var(--serif);font-weight:normal;font-size:17px;line-height:1.25}
 .dayc .dm{font:11px var(--mono);color:var(--muted);margin:3px 0 6px;display:flex;gap:10px;flex-wrap:wrap}
 .dayc .dm b{color:var(--accent);font-weight:600}
@@ -424,7 +427,7 @@ function countdown(){
   const car = new Date('2026-09-17T00:00:00');
   if (now < TRIP.start) t = `za ${d(TRIP.start, now)} d`;
   else if (now < car) t = '✈ letím';
-  else if (now <= TRIP.end) { const dn = d(now, car) + 1; t = dn <= 21 ? `D${dn}` : `SM ${dn - 21}`; }
+  else if (now <= TRIP.end) { const dn = d(now, car) + 1, c = curDay(), lead = c ? c.day - calDay() : 0; t = c ? `D${c.day}${lead ? (lead > 0 ? ' +' : ' ') + lead : ''}` : dn <= 21 ? `D${dn}` : `SM ${dn - 21}`; }
   else t = 'doma';
   $('#countdown').textContent = t + (sunTxt() ? ' · ' + sunTxt() : '');
 }
@@ -444,7 +447,7 @@ function isTyping(){
 // Ukazuje aktualni obrazovka neco, co zavisi na poloze? Utrata, denik, zaloha ani papiry ne.
 function tabUsesPos(){
   if (S.tab === 'near' || S.tab === 'loops') return true;
-  if (S.tab === 'plan') return S.sub === 'plan';
+  if (S.tab === 'plan') return S.sub === 'plan' || (S.sub === 'spine' && todayDay() !== S.spineDrawnDay); // pater jen kdyz se zmeni den
   return false;
 }
 let renderPending = false;
@@ -458,7 +461,7 @@ function setPos(lat, lng, mode, acc){
   if (mode === 'gps') { S.posT = Date.now(); S.store.lastPos = { lat, lng, t: S.posT }; saveThrottled(); }
   paintGps();
   countdown();
-  if (S.tab === 'map' && M.map) { drawMe(); drawMarkers(); return; }
+  if (S.tab === 'map' && M.map) { drawMe(); return; } // markery na poloze nezavisi, km v bubline se pocita pri otevreni
   if (!tabUsesPos()) return;          // Utrata, denik, papiry — poloha je tam k nicemu
   if (isTyping()) { renderPending = true; return; }  // pod rukama se neprekresluje
   render();
@@ -592,7 +595,7 @@ function toolbarNear(){
     ${RANGES.filter(r=>r!==Infinity).map(r=>`<button class="chip range ${S.range===r?'on':''}" data-range="${r}">${r} km</button>`).join('')}
     <button class="chip ${S.south?'on':''}" data-toggle="south">⬇ jen dál po trase</button>
     <button class="chip ${S.rank1?'on':''}" data-toggle="rank1">⭐ jen top</button>
-    ${todayDay() ? `<button class="chip ${S.spineOnly && S.spineDay === todayDay() ? 'on' : ''}" data-spinelist="${todayDay()}">🧭 dnes D${todayDay()}</button>` : ''}
+    ${todayDay() ? `<button class="chip ${S.spineOnly && S.spineDay === todayDay() ? 'on' : ''}" data-spinelist="${todayDay()}">🧭 teď D${todayDay()}</button>` : ''}
     <button class="chip ${S.spineOnly?'on':''}" data-toggle="spineOnly">🧭 ${S.spineOnly && S.spineDay ? 'den ' + S.spineDay : 'jen páteř'}</button>
     ${S.spineOnly && S.spineDay ? `<button class="chip" data-spinemap="${S.spineDay}">🗺 mapa dne ${S.spineDay}</button>` : ''}
     <button class="chip" data-surprise="1">🎲 překvap mě</button>
@@ -620,7 +623,43 @@ function renderNear(m){
   }
   m.innerHTML = html;
 }
-function todayDay(){ if (!S.spine) return null; const t = today(); const d = S.spine.days.find(x => x.date === t); return d ? d.day : null; }
+// ====================== AKTUÁLNÍ DEN ======================
+// Data v páteři jsou jen původní plán. Kde Bob je, se bere z GPS (nejbližší úsek páteře),
+// ruční „📍 jsem tady“ platí do konce dne, bez polohy kalendář.
+function calDay(){ return S.spine ? dayDiff(today(), S.spine.days[0].date) + 1 : null; }
+let posDayMemo = null;
+function posDay(){
+  if (!S.spine || !S.pos) return null;
+  const t = today(), prev = S.store.dayPos, key = `${S.pos.lat.toFixed(3)},${S.pos.lng.toFixed(3)},${t},${prev ? prev.day + prev.d : ''}`;
+  if (posDayMemo && posDayMemo.key === key) return posDayMemo.day;
+  const dist = S.spine.days.map(d => { let km = Infinity; for (const w of (d.geom || d.wp)) km = Math.min(km, hav(S.pos, { lat: w[0], lng: w[1] })); return { day: d.day, km }; });
+  const min = Math.min(...dist.map(x => x.km));
+  const cand = dist.filter(x => x.km <= min + Math.max(3, min * 0.3)).map(x => x.day); // nocoviste = konec dne N i zacatek N+1
+  let day;
+  if (prev && prev.d === t && cand.includes(prev.day)) day = prev.day;                  // porad tentyz den
+  else if (prev && prev.d < t && cand.includes(prev.day + 1)) day = prev.day + 1;        // rano na nocovisti = dalsi den
+  else if (prev) day = cand.reduce((a, b) => Math.abs(b - prev.day) < Math.abs(a - prev.day) ? b : a);
+  else day = new Date().getHours() < 15 ? Math.max(...cand) : Math.min(...cand);
+  if (!prev || prev.day !== day || prev.d !== t) { S.store.dayPos = { day, d: t }; saveThrottled(); }
+  posDayMemo = { key: `${S.pos.lat.toFixed(3)},${S.pos.lng.toFixed(3)},${t},${day + t}`, day };
+  return day;
+}
+// { day, how: 'ruce' | 'gps' | 'kalendar' } nebo null mimo cestu autem
+function curDay(){
+  if (!S.spine) return null;
+  const pin = S.store.dayPin, n = S.spine.days.length;
+  if (pin && pin.d === today()) return { day: pin.day, how: 'ruce' };
+  const pd = posDay(); if (pd) return { day: pd, how: 'gps' };
+  const c = calDay(); return c >= 1 && c <= n ? { day: c, how: 'kalendar' } : null;
+}
+const projDate = (day) => { const c = curDay(); return c ? addDays(today(), day - c.day) : S.spine.days[day - 1].date; };
+function pinDay(day){
+  const pin = S.store.dayPin;
+  if (pin && pin.d === today() && pin.day === day) { S.store.dayPin = null; toast('📍 Zpátky na GPS'); }
+  else { S.store.dayPin = { day, d: today() }; S.store.dayPos = { day, d: today() }; toast(`📍 Jsem v D${day} — platí do půlnoci, pak zase GPS`, 2500); }
+  save(); countdown(); render();
+}
+function todayDay(){ const c = curDay(); return c ? c.day : null; }
 function spBadge(p){ if (!p.spine) return ''; const x = p.spine; return x.must ? `<span class="sp must">★ MUST D${x.day}</span>` : x.km <= 15 ? `<span class="sp">D${x.day} ● na trase</span>` : `<span class="sp near">D${x.day} ○ kousek ${x.km} km</span>`; }
 function itemHtml({ p, km, b }){
   const visited = S.store.visited[p.id];
@@ -693,7 +732,11 @@ function openLoop(id){
 // ====================== PLÁN / DENÍK / ÚTRATA / ZÁLOHA ======================
 const SPEND_CATS = { nocleh:'🛏', jidlo:'🍽', benzin:'⛽', vstupy:'🎫', ostatni:'📦' };
 const BUDGET = 4300, CZK = 21;
-const today = () => new Date().toISOString().slice(0,10);
+// Datum vzdy v mistnim case telefonu. toISOString je UTC — v Kalifornii od 17:00 uz zitrek.
+const ymd = (t = new Date()) => `${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;
+const today = () => ymd();
+const addDays = (d, n) => { const t = new Date(d + 'T12:00:00'); t.setDate(t.getDate() + n); return ymd(t); };
+const dayDiff = (a, b) => Math.round((new Date(a + 'T12:00:00') - new Date(b + 'T12:00:00')) / 864e5);
 const fmtDate = (d) => { const [y,m,dd] = d.split('-'); return `${+dd}. ${+m}.`; };
 const isAbs = (id) => (S.store.abs||[]).includes(id);
 function toggleAbs(id){
@@ -741,20 +784,34 @@ function planRouteUrl(items){
 }
 function spineHtml(){
   if (!S.spine) return '<div class="empty">Páteř se nenačetla.</div>';
-  const t = today();
-  return absHtml() + `<div class="sub" style="padding:4px 0 6px">20 dní s autem · ★ MUST = nevynechat · ostatní místa s „● na trase“ jsou do 15 km od páteře dne</div>` +
-    S.spine.days.map(d => {
-      const cls = d.date === t ? 'today' : d.date < t ? 'past' : '';
+  const c = curDay(), cur = c ? c.day : null, last = S.spine.days[S.spine.days.length - 1];
+  S.spineDrawnDay = cur;
+  const lead = c ? cur - calDay() : 0, pinned = c && c.how === 'ruce';
+  const relDate = (date) => { const k = dayDiff(date, today()); return k === 0 ? 'dnes' : k === 1 ? 'zítra' : k === 2 ? 'pozítří' : fmtDate(date); };
+  const nDays = (k) => `${k} ${k === 1 ? 'den' : k < 5 ? 'dny' : 'dní'}`;
+  const status = c ? `<div class="dayc now-box"><h3>📍 Jsi v D${cur} — ${esc(S.spine.days[cur - 1].title)}</h3>
+      <div class="dm"><span>${{ gps: 'podle GPS', ruce: 'ručně nastaveno', kalendar: 'podle kalendáře (bez polohy)' }[c.how]}</span>
+      ${lead > 0 ? `<span><b>+${nDays(lead)} náskok</b></span>` : lead < 0 ? `<span><b>${nDays(-lead)} skluz</b></span>` : '<span>přesně podle plánu</span>'}</div>
+      <div class="note">${lead > 0 ? `Auto vracíš ${fmtDate(last.date)} — když pojedeš dál tímhle tempem, máš <b>${nDays(lead)} v zásobě</b> na odbočky navíc.` : lead < 0 ? `Tímhle tempem by byl konec trasy ${fmtDate(projDate(last.day))}, auto vracíš ${fmtDate(last.date)} — někde zrychli nebo škrtni.` : `Auto vracíš ${fmtDate(last.date)}.`}
+      Data u dnů níž jsou přepočítaná od dneška, původní plán je šedě.</div>
+      ${pinned ? `<div class="btns" style="margin:8px 0 2px"><button class="btn" data-pinday="${cur}">↺ Zpátky na GPS</button></div>` : ''}</div>` : '';
+  const past = cur ? S.spine.days.filter(d => d.day < cur) : [];
+  const pastRow = past.length ? `<button class="past-row" data-showpast="1">✓ D1–D${cur - 1} projeto · ${S.showPast ? 'sbalit ▴' : 'ukázat ▾'}</button>` : '';
+  return absHtml() + status + `<div class="sub" style="padding:4px 0 6px">★ MUST = nevynechat · ostatní místa s „● na trase“ jsou do 15 km od páteře dne · 📍 jsem tady = ruční přepnutí dne</div>` + pastRow +
+    S.spine.days.filter(d => !cur || d.day >= cur || S.showPast).map(d => {
+      const cls = d.day === cur ? 'today' : cur && d.day < cur ? 'past' : '';
+      const pd = cur && d.day >= cur ? projDate(d.day) : d.date;
+      const dateHtml = pd !== d.date ? `${relDate(pd)} <small class="orig">plán ${fmtDate(d.date)}</small>` : cur && d.day >= cur ? relDate(pd) : fmtDate(d.date);
       const musts = (d.must_ids||[]).map(id => S.places.find(p => p.id === id)).filter(Boolean);
       const near = S.places.filter(p => p.spine && p.spine.day === d.day && !p.spine.must && p.spine.km <= 15).length;
       const wp = d.wp.map(w => w.join(',')); const dir = wp.length >= 2 ? `https://www.google.com/maps/dir/?api=1&origin=${wp[0]}&destination=${wp[wp.length-1]}&travelmode=driving${wp.length > 2 ? '&waypoints=' + sample(wp.slice(1,-1), 9).join('|') : ''}` : '#';
       return `<div class="dayc ${cls}" id="spd${d.day}">
-        <h3>D${d.day} · ${fmtDate(d.date)} — ${esc(d.title)}</h3>
-        <div class="dm"><span>🛏 <b>${esc(d.sleep)}</b></span><span>${d.km} km${d.h ? ' · ' + d.h + ' h jízdy' : ''}</span><span>${near} míst na trase</span>${d.date === t ? '<span style="color:var(--accent)">● DNES</span>' : ''}</div>
+        <h3>D${d.day} · ${dateHtml} — ${esc(d.title)}</h3>
+        <div class="dm"><span>🛏 <b>${esc(d.sleep)}</b></span><span>${d.km} km${d.h ? ' · ' + d.h + ' h jízdy' : ''}</span><span>${near} míst na trase</span>${d.day === cur ? '<span style="color:var(--accent)">● TEĎ</span>' : ''}</div>
         <div class="note">${esc(d.note||'')}</div>
         <div class="must">${musts.map(p => `<a href="#" data-id="${p.id}" class="mm ${S.store.visited[p.id]?'done':''}">${S.store.visited[p.id]?'✓ ':'★ '}${esc(p.name)}</a>`).join('')}</div>
         ${(d.sleep_opts||[]).filter(o => o.price === '$').length ? `<div class="cheap">💵 levněji: ${(d.sleep_opts||[]).filter(o => o.price === '$').map(o => esc(o.town)).join(' · ')}</div>` : ''}
-        <div class="btns" style="margin:10px 0 2px"><a class="btn" href="${dir}" target="_blank" rel="noopener">🧭 Naviguj den</a><button class="btn" data-spinelist="${d.day}">📍 Místa dne (${near + musts.length})</button><button class="btn" data-spinemap="${d.day}">🗺 Mapa dne</button></div>
+        <div class="btns" style="margin:10px 0 2px"><a class="btn" href="${dir}" target="_blank" rel="noopener">🧭 Naviguj den</a><button class="btn" data-spinelist="${d.day}">📍 Místa dne (${near + musts.length})</button><button class="btn" data-spinemap="${d.day}">🗺 Mapa dne</button>${d.day !== cur ? `<button class="btn" data-pinday="${d.day}">📍 jsem tady</button>` : ''}</div>
       </div>`; }).join('');
 }
 function planHtml(){
@@ -772,7 +829,7 @@ function planHtml(){
 function diaryHtml(){
   const d = S.store.diary || {};
   const days = []; const start = new Date(TRIP.start), end = new Date(Math.min(Date.now(), TRIP.end));
-  for (let t = new Date(start); t <= end; t.setDate(t.getDate()+1)) days.push(t.toISOString().slice(0,10));
+  for (let t = new Date(start); t <= end; t.setDate(t.getDate()+1)) days.push(ymd(t));
   if (!days.length) days.push(today());
   const vis = (date) => Object.entries(S.store.visited).filter(([,v]) => v === date).map(([id]) => S.places.find(p=>p.id===id)).filter(Boolean);
   return days.reverse().map((date, i) => { const e = d[date] || {}; const v = vis(date); const n = Math.round((new Date(date) - TRIP.start)/864e5)+1;
@@ -849,7 +906,7 @@ function bindPlan(){
     if (notes.length) out.push('## Poznámky k místům', ...notes);
     download('pacifik-denik.md', out.join('\n'), 'text/markdown');
   };
-  const add = $('#spAdd'); if (add) add.onclick = () => { const usd = parseFloat($('#spUsd').value); if (!usd) return toast('Kolik?'); S.store.spend = S.store.spend || []; S.store.spend.push({ d: today(), usd, cat: $('#spCat').value, note: $('#spNote').value.trim() }); save(); renderPlan($('#main')); toast(`${usd} $ · ${(usd*CZK).toFixed(0)} Kč`); };
+  const add = $('#spAdd'); if (add) add.onclick = () => { const usd = parseFloat($('#spUsd').value); if (!usd) return toast('Kolik?'); S.store.spend = S.store.spend || []; S.store.spend.push({ d: today(), t: Date.now(), usd, cat: $('#spCat').value, note: $('#spNote').value.trim() }); save(); renderPlan($('#main')); toast(`${usd} $ · ${(usd*CZK).toFixed(0)} Kč`); };
   document.querySelectorAll('[data-unspend]').forEach(el => el.onclick = () => { S.store.spend.splice(+el.dataset.unspend, 1); S.spendEdit = null; save(); renderPlan($('#main')); });
   document.querySelectorAll('[data-spview]').forEach(el => el.onclick = () => { S.spendView = el.dataset.spview; S.spendEdit = null; renderPlan($('#main')); });
   document.querySelectorAll('[data-editspend]').forEach(el => el.onclick = () => { S.spendEdit = +el.dataset.editspend; renderPlan($('#main')); });
@@ -938,12 +995,11 @@ function zoomForRadius(lat, r = BED_R){
   const z = Math.log2(400 * 156543.03 * Math.cos(lat * Math.PI / 180) / (r * 2000));
   return Math.max(4, Math.min(14, Math.round(z * 10) / 10));
 }
-// Noc, na kterou se hleda: datum dne pateře, do kterého destinace patri, jinak dnes.
+// Noc, na kterou se hleda: odhadovane datum dne pateře (podle toho, kde Bob opravdu je), jinak dnes.
 function bedNight(p){
   let d = today();
-  if (p && p.spine && S.spine) { const day = S.spine.days.find(x => x.day === p.spine.day); if (day && day.date >= today()) d = day.date; }
-  const out = new Date(d + 'T12:00:00'); out.setDate(out.getDate() + 1);
-  return { in: d, out: out.toISOString().slice(0, 10) };
+  if (p && p.spine && S.spine) { const cd = curDay(); if (cd && p.spine.day > cd.day) d = projDate(p.spine.day); }
+  return { in: d, out: addDays(d, 1) };
 }
 // 1) Googlova MAPA ubytovani v okoli destinace — jeho piny, jeho ceny. Tohle Bob chtel.
 function googleBedsMap(p){ return `https://www.google.com/maps/search/lodging/@${p.lat.toFixed(5)},${p.lng.toFixed(5)},${zoomForRadius(p.lat)}z`; }
@@ -1082,7 +1138,7 @@ function renderMap(m){
   $('#map').classList.add('on'); $('#mapctl').hidden = false;
   $('#count').textContent = '';
   if (!M.map) {
-    M.map = L.map('map', { zoomControl: false, attributionControl: true }).setView(S.pos ? [S.pos.lat, S.pos.lng] : [40.5, -122.5], S.pos ? 9 : 5);
+    M.map = L.map('map', { zoomControl: false, attributionControl: true, renderer: L.canvas({ padding: 0.5, tolerance: 12 }) }).setView(S.pos ? [S.pos.lat, S.pos.lng] : [40.5, -122.5], S.pos ? 9 : 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© OpenStreetMap' }).addTo(M.map);
     L.control.scale({ position: 'bottomleft', imperial: false, maxWidth: 140 }).addTo(M.map);
     M.cluster = L.markerClusterGroup ? L.markerClusterGroup({ disableClusteringAtZoom: 10, maxClusterRadius: 44, showCoverageOnHover: false, spiderfyOnMaxZoom: false, iconCreateFunction: (c) => L.divIcon({ html: c.getChildCount(), className: 'mc', iconSize: [34, 34] }) }) : null;
@@ -1096,10 +1152,13 @@ function renderMap(m){
     if (S.spine) { for (const d of S.spine.days) { const pts = d.geom || d.wp.map(w => [w[0], w[1]]); M.spine.addLayer(L.polyline(pts, { color: '#4fc3c9', weight: 4, opacity: .75 }).bindTooltip(`D${d.day} · ${d.title}`, { sticky: true })); } }
     M.showSpine = S.store.mapSpine !== false; if (M.showSpine) M.spine.addTo(M.map); $('#mapSpine').classList.toggle('on', M.showSpine);
     $('#mapSpine').onclick = () => { M.showSpine = !M.showSpine; S.store.mapSpine = M.showSpine; save(); M.showSpine ? M.spine.addTo(M.map) : M.map.removeLayer(M.spine); $('#mapSpine').classList.toggle('on', M.showSpine); };
-    M.map.on('moveend', () => { if (!M.clustered || M.map.getZoom() >= 10) drawMarkers(); });
-    M.map.on('zoomend', drawMarkers);
+    M.map.on('moveend', () => { if (!M.clustered || M.map.getZoom() >= 10) autoDraw(); });
+    M.map.on('zoomend', autoDraw);
+    // otevrena bublina = nesahat na markery (autopan bubliny sam hybe mapou a smazal by ji)
+    M.map.on('popupopen', () => { M.popOpen = true; });
+    M.map.on('popupclose', () => { M.popOpen = false; if (M.drawPending) { M.drawPending = false; setTimeout(drawMarkers, 0); } });
     $('#mapMe').onclick = () => { if (S.pos) M.map.setView([S.pos.lat, S.pos.lng], Math.max(M.map.getZoom(), 10)); else toast('Poloha neznámá'); };
-    $('#mapLoops').onclick = () => { M.showLoops = !M.showLoops; $('#mapLoops').classList.toggle('on', M.showLoops); M.showLoops ? M.loops.addTo(M.map) : M.map.removeLayer(M.loops); if (M.showLoops && !M.loops.getLayers().length) drawLoops(); };
+    $('#mapLoops').onclick = () => { M.showLoops = !M.showLoops; $('#mapLoops').classList.toggle('on', M.showLoops); M.showLoops ? M.loops.addTo(M.map) : M.map.removeLayer(M.loops); if (M.showLoops && !M.loops.getLayers().length) drawLoops(); if (M.showLoops) drawMarkers(); }; // mista nad smyckami
     $('#daybanX').onclick = () => { if (M.bedFocus) bedFocus(null); else dayFocus(null); };
     $('#mapFix').onclick = () => { const c = M.map.getCenter(); fixPos(c.lat, c.lng, 'střed mapy'); };
     $('#mapTop').onclick = () => { M.top = !M.top; $('#mapTop').classList.toggle('on', M.top); drawMarkers(); };
@@ -1107,6 +1166,7 @@ function renderMap(m){
   }
   setTimeout(() => { M.map.invalidateSize(); drawMe(); drawMarkers(); }, 50);
 }
+function autoDraw(){ if (M.popOpen) { M.drawPending = true; return; } drawMarkers(); }
 function drawMe(){
   if (!M.map || !S.pos) return;
   if (M.me) M.me.setLatLng([S.pos.lat, S.pos.lng]);
@@ -1129,7 +1189,7 @@ function drawMarkers(){
     const r = p.rank === 1 ? 7 : p.rank === 2 ? 5 : 4;
     const must = p.spine && p.spine.must;
     const mk = L.circleMarker([p.lat, p.lng], { radius: must ? r + 2 : r, color: must ? '#D9A441' : '#0f1419', weight: must ? 3 : 1, fillColor: CAT_COLOR[p.category] || '#aaa', fillOpacity: .95 });
-    mk.bindPopup(`<b>${esc(p.name)}</b>${CATS[p.category]||''} ${'★'.repeat(4-p.rank)}${S.pos ? ' · ' + fmtKm(hav(S.pos, p)) : ''}${swimOK(p) ? ' · 💧' : ''}${p.spine ? '<br>' + spBadge(p) : ''}<br><a href="#" data-id="${p.id}" style="color:var(--accent)">otevřít →</a> &nbsp; <a href="#" data-here="${p.id}" style="color:var(--muted)">📌 jsem tu</a>`);
+    mk.bindPopup(() => `<b>${esc(p.name)}</b>${CATS[p.category]||''} ${'★'.repeat(4-p.rank)}${S.pos ? ' · ' + fmtKm(hav(S.pos, p)) : ''}${swimOK(p) ? ' · 💧' : ''}${p.spine ? '<br>' + spBadge(p) : ''}<br><a href="#" data-id="${p.id}" style="color:var(--accent)">otevřít →</a> &nbsp; <a href="#" data-here="${p.id}" style="color:var(--muted)">📌 jsem tu</a>`);
     batch.push(mk);
   }
   M.layer.addLayers ? M.layer.addLayers(batch) : batch.forEach((mk) => M.layer.addLayer(mk));
@@ -1206,7 +1266,7 @@ function openDetail(id){
   $('#planBtn').onclick = () => { const i = S.store.plan.indexOf(p.id); i<0 ? S.store.plan.push(p.id) : S.store.plan.splice(i,1); save(); openDetail(id); render(); };
   $('#visitBtn').onclick = () => {
     if (S.store.visited[p.id]) { delete S.store.visited[p.id]; }
-    else { S.store.visited[p.id] = new Date().toISOString().slice(0,10); if (p.rank === 1) pina(); }
+    else { S.store.visited[p.id] = today(); if (p.rank === 1) pina(); }
     save(); openDetail(id); render();
   };
   $('#note').oninput = (e) => { const v = e.target.value; if (v) S.store.notes[p.id] = v; else delete S.store.notes[p.id]; save(); };
@@ -1218,7 +1278,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],[data-bed],[data-bedzoom],[data-abs],[data-unabs],#qClear,#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],[data-bed],[data-bedzoom],[data-abs],[data-unabs],[data-pinday],[data-showpast],#qClear,#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { if (t.dataset.tab === 'map' && M.dayFocus) dayFocus(null); S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -1232,6 +1292,8 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.spineday) { e.preventDefault(); closeDetail(); S.tab = 'plan'; S.sub = 'spine'; render(); const el = document.getElementById('spd' + t.dataset.spineday); if (el) el.scrollIntoView({ block: 'start' }); }
   else if (t.dataset.abs) { e.stopPropagation(); toggleAbs(t.dataset.abs); render(); }
   else if (t.dataset.unabs) { toggleAbs(t.dataset.unabs); renderPlan($('#main')); }
+  else if (t.dataset.pinday) { pinDay(+t.dataset.pinday); }
+  else if (t.dataset.showpast) { S.showPast = !S.showPast; renderPlan($('#main')); }
   else if (t.dataset.spinelist) { const day = +t.dataset.spinelist; if (S.tab === 'near' && S.spineOnly && S.spineDay === day) { S.spineOnly = false; S.spineDay = null; } else { S.tab = 'near'; S.range = Infinity; S.region = null; S.q = ''; S.spineOnly = true; S.spineDay = day; } render(); window.scrollTo(0,0); }
   else if (t.dataset.bed) { e.preventDefault(); e.stopPropagation(); openBeds(t.dataset.bed); }
   else if (t.dataset.bedzoom) { e.preventDefault(); const [la, ln] = t.dataset.bedzoom.split(',').map(Number); if (M.map) M.map.setView([la, ln], 11); }
@@ -1263,6 +1325,15 @@ window.addEventListener('offline', () => toast('Offline — Naviguj ukáže sou�
   document.addEventListener('touchend', () => { if (!active) return; active = false; if (dy >= TH) { el.classList.add('spin'); el.textContent = '↻'; el.style.transform = 'translateX(-50%) translateY(10px)'; checkUpdate(true); setTimeout(() => location.reload(), 300); } else { el.style.transform = ''; el.classList.remove('ready'); } dy = 0; }, { passive: true });
 })();
 
+// Do 25. 9. se datum bralo v UTC, takze odpoledne v Kalifornii padalo na zitrek.
+// Co je dnes v budoucnosti, je urcite tenhle posun — vratit o den.
+function fixFutureDates(){
+  const t = today(); let n = 0;
+  for (const x of (S.store.spend || [])) if (x.d > t) { x.d = addDays(x.d, -1); n++; }
+  for (const o of [S.store.visited, S.store.planDone || {}]) for (const k in o) if (o[k] > t) { o[k] = addDays(o[k], -1); n++; }
+  if (n) { save(); toast(`🕐 ${n}× datum z budoucnosti vráceno na správný den`, 3500); }
+}
+
 // ====================== START ======================
 async function init(){
   countdown(); setInterval(countdown, 60000);
@@ -1272,6 +1343,7 @@ async function init(){
     const [pl, lo, al, sp, bd] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json()), fetch('data/alerts.json').then(r=>r.json()).catch(()=>null), fetch('data/spine-out.json').then(r=>r.json()).catch(()=>null), fetch('data/ubytko.json').then(r=>r.json()).catch(()=>[])]);
     S.places = pl; S.loops = lo; S.alerts = al; S.spine = sp; S.beds = bd || [];
   } catch(e) { $('#main').innerHTML = `<div class="empty">Nepodařilo se načíst data.<br><small>${esc(e.message)}</small></div>`; return; }
+  fixFutureDates();
   startGPS();
   if (S.store.sim) setTimeout(() => toast('📌 Poloha je ručně fixnutá, ne živá GPS — tapni na FIX vpravo nahoře', 5000, () => openPosSheet()), 1200);
   render();
