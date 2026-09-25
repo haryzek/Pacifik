@@ -83,6 +83,11 @@ main{flex:1;padding:8px 12px calc(var(--sab) + 72px)}
 .dayc.past{opacity:.55}
 .dayc.now-box{border-color:var(--accent)}
 .dayc h3 small.orig{font:11px var(--mono);color:var(--muted);text-decoration:line-through}
+.pust-tips{margin:6px 0 0;padding-left:0;list-style:none;font-size:13px;line-height:1.45;color:#c9c2b4}
+.pust-tips li{margin:5px 0}
+.dayc .night{font-size:13px;color:#b9c3e6;margin:6px 0;line-height:1.45}
+.dayc .bedrow{display:flex;gap:8px;align-items:baseline;font-size:13px;margin:6px 0;line-height:1.4}
+.dayc .bedrow a{color:var(--text);text-decoration:none;border-bottom:1px dotted var(--muted)}
 .past-row{display:block;width:100%;text-align:left;background:var(--card2);border:1px dashed var(--line);border-radius:10px;color:var(--muted);font:12px var(--mono);padding:9px 12px;margin:8px 0}
 .dayc h3{margin:0;font-family:var(--serif);font-weight:normal;font-size:17px;line-height:1.25}
 .dayc .dm{font:11px var(--mono);color:var(--muted);margin:3px 0 6px;display:flex;gap:10px;flex-wrap:wrap}
@@ -224,8 +229,9 @@ label.l{display:block;font:12px var(--mono);color:var(--muted);margin:10px 0 4px
 .doc .v a{color:var(--water);text-decoration:none}
 .mantra{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--accent);text-align:center;padding:14px;border:1px dashed rgba(217,164,65,.4);border-radius:12px;margin:10px 0}
 .prak li{margin:6px 0;font-size:14px}
-.sub-tabs{display:flex;gap:6px;padding:8px 0 4px}
-.sub-tabs button{flex:1;padding:7px 0;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden}
+.sub-tabs{display:flex;gap:6px;padding:8px 0 4px;overflow-x:auto;scrollbar-width:none}
+.sub-tabs::-webkit-scrollbar{display:none}
+.sub-tabs button{flex:1 0 auto;padding:7px 9px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden}
 .sub-tabs button.on{background:var(--accent);color:#1a1408;font-weight:600;border-color:var(--accent)}
 .pl{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}
 .pl .name{cursor:pointer}.pl .done .name{text-decoration:line-through;color:var(--dim)}
@@ -764,16 +770,49 @@ function absHtml(){
 function renderPlan(m){
   S.sub = S.sub || 'spine';
   if (S.sub !== 'spend') S.spendEdit = null;
-  const tabs = [['spine','🧭 Páteř'],['plan','📝 Plán'],['diary','📓 Deník'],['spend','💵 Útrata'],['backup','💾 Záloha']];
+  const tabs = [['spine','🧭 Páteř'],['pust','🌵 Poušť'],['plan','📝 Plán'],['diary','📓 Deník'],['spend','💵 Útrata'],['backup','💾 Záloha']];
   $('#count').textContent = '';
   let html = `<div class="sub-tabs">${tabs.map(t=>`<button data-sub="${t[0]}" class="${S.sub===t[0]?'on':''}">${t[1]}</button>`).join('')}</div>`;
   if (S.sub === 'spine') html += spineHtml();
   else if (S.sub === 'plan') html += planHtml();
+  else if (S.sub === 'pust') html += pustHtml();
   else if (S.sub === 'diary') html += diaryHtml();
   else if (S.sub === 'spend') html += spendHtml();
   else html += backupHtml();
   m.innerHTML = html;
   bindPlan();
+}
+// ====================== POUŠŤ (volné dny) ======================
+// data/pust.json: ruční plán na dny navíc, P1–P4. Dny jedou stejnou mapou dne jako páteř (dayFocus s id 'P1'…).
+const findDay = (day) => (S.spine && S.spine.days.find(x => x.day === day)) || (S.pust && S.pust.days.find(x => x.day === day)) || null;
+function dirUrl(wp){
+  const w = wp.map(x => x.join(','));
+  return w.length >= 2 ? `https://www.google.com/maps/dir/?api=1&origin=${w[0]}&destination=${w[w.length-1]}&travelmode=driving${w.length > 2 ? '&waypoints=' + sample(w.slice(1,-1), 9).join('|') : ''}` : '#';
+}
+function pustHtml(){
+  const P = S.pust; if (!P) return '<div class="empty">Plán pouště se nenačetl.</div>';
+  const byId = (id) => S.places.find(p => p.id === id);
+  // odhad data: P1 = den po D20 (podle toho, kde Bob je), dal po dni
+  const d20 = S.spine && S.spine.days.find(x => x.day === 20);
+  const start = d20 ? addDays(curDay() ? projDate(20) : d20.date, 1) : null;
+  const sleep = P.sleep.map(o => { const p = o.id && byId(o.id);
+    return `<div class="bedrow"><span>🛏</span><span>${p ? `<a href="#" data-id="${p.id}">${esc(p.name)}</a> — ` : ''}${esc(o.note || o.text || '')}${p ? ` <button class="btn" style="padding:2px 8px;font-size:11px" data-bed="${p.id}">ubytka okolo</button>` : ''}</span></div>`; }).join('');
+  return `<div class="dayc now-box"><h3>${esc(P.title)}</h3>
+      <div class="note">${esc(P.intro)}</div>
+      <ul class="pust-tips">${P.tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+      <div class="sub" style="padding:8px 0 2px">Kde spát</div>${sleep}</div>` +
+    P.days.map((d, i) => {
+      const musts = d.must_ids.map(byId).filter(Boolean);
+      const date = start ? addDays(start, i) : null;
+      return `<div class="dayc" id="pust${d.day}">
+        <h3>${d.day}${date ? ` · <small class="orig" style="text-decoration:none">odhad ${fmtDate(date)}</small>` : ''} — ${esc(d.title)}</h3>
+        <div class="dm"><span>🛏 <b>${esc(d.sleep)}</b></span><span>~${d.km} km · ~${d.h} h jízdy</span></div>
+        <div class="note">${esc(d.note)}</div>
+        ${d.night ? `<div class="night">🌙 ${esc(d.night)}</div>` : ''}
+        <div class="must">${musts.map(p => `<a href="#" data-id="${p.id}" class="mm ${S.store.visited[p.id]?'done':''}">${S.store.visited[p.id]?'✓ ':'★ '}${esc(p.name)}</a>`).join('')}</div>
+        <div class="btns" style="margin:10px 0 2px"><a class="btn" href="${dirUrl(d.wp)}" target="_blank" rel="noopener">🧭 Naviguj den</a><button class="btn" data-pustmap="${d.day}">🗺 Mapa dne</button></div>
+      </div>`; }).join('') +
+    `<div class="sub" style="padding:6px 0 12px">Km a hodiny jsou odhad. Naviguj den vede přes hlavní body; na mapě dne je trasa jen přímkami mezi nimi, ne po silnici.</div>`;
 }
 function planRouteUrl(items){
   const pts = items.slice(0, 10).map(p => `${p.lat},${p.lng}`);
@@ -794,6 +833,7 @@ function spineHtml(){
       ${lead > 0 ? `<span><b>+${nDays(lead)} náskok</b></span>` : lead < 0 ? `<span><b>${nDays(-lead)} skluz</b></span>` : '<span>přesně podle plánu</span>'}</div>
       <div class="note">${lead > 0 ? `Auto vracíš ${fmtDate(last.date)} — když pojedeš dál tímhle tempem, máš <b>${nDays(lead)} v zásobě</b> na odbočky navíc.` : lead < 0 ? `Tímhle tempem by byl konec trasy ${fmtDate(projDate(last.day))}, auto vracíš ${fmtDate(last.date)} — někde zrychli nebo škrtni.` : `Auto vracíš ${fmtDate(last.date)}.`}
       Data u dnů níž jsou přepočítaná od dneška, původní plán je šedě.</div>
+      ${lead > 0 && S.pust ? `<div class="btns" style="margin:8px 0 2px"><button class="btn" data-sub="pust">🌵 Plán na volné dny: poušť →</button></div>` : ''}
       ${pinned ? `<div class="btns" style="margin:8px 0 2px"><button class="btn" data-pinday="${cur}">↺ Zpátky na GPS</button></div>` : ''}</div>` : '';
   const past = cur ? S.spine.days.filter(d => d.day < cur) : [];
   const pastRow = past.length ? `<button class="past-row" data-showpast="1">✓ D1–D${cur - 1} projeto · ${S.showPast ? 'sbalit ▴' : 'ukázat ▾'}</button>` : '';
@@ -1027,17 +1067,19 @@ function dayFocus(day){
   if (M.bedLayer) { M.map.removeLayer(M.bedLayer); M.bedLayer = null; M.bedFocus = null; }
   if (M.dayLayer) { M.map.removeLayer(M.dayLayer); M.dayLayer = null; }
   M.dayFocus = day;
-  M.dayIds = null;
+  M.dayIds = null; M.dayNear = null;
   if (!day) { $('#dayban').hidden = true; $('#daylist').hidden = true; document.body.classList.remove('dl'); if (M.showSpine) M.spine.addTo(M.map); drawMarkers(); return; }
-  const d = S.spine.days.find(x => x.day === day); if (!d) return;
+  const d = findDay(day); if (!d) return;
   M.map.removeLayer(M.spine);
   const pts = d.geom || d.wp.map(w => [w[0], w[1]]);
   const stops = dayStops(d);
   M.dayIds = new Set(stops.map(s => s.p.id));
   const layers = [
     L.polyline(pts, { color: '#0f1419', weight: 9, opacity: .6 }),
-    L.polyline(pts, { color: '#4fc3c9', weight: 5, opacity: 1 }),
+    L.polyline(pts, { color: '#4fc3c9', weight: 5, opacity: 1, dashArray: d.geom ? null : '10 8' }),
   ];
+  // pustovy den nema p.spine — mista kolem trasy se spocitaji tady
+  M.dayNear = d.geom ? null : new Set(S.places.filter(p => !M.dayIds.has(p.id) && projectOn(pts, p).d <= 8).map(p => p.id));
   // ostruha od silnice k zastávce, která leží mimo páteř
   for (const s of stops) if (s.off > 0.6) layers.push(L.polyline([s.at, [s.p.lat, s.p.lng]], { color: '#4fc3c9', weight: 2, opacity: .7, dashArray: '4 5' }));
   // číslované zastávky v pořadí jízdy
@@ -1048,7 +1090,7 @@ function dayFocus(day){
   layers.push(L.marker(pts[0], { icon: L.divIcon({ className: '', html: '<div class="ab a">A</div>', iconSize: [26, 26], iconAnchor: [13, 13] }) }).bindTooltip('start dne'));
   layers.push(L.marker(pts[pts.length - 1], { icon: L.divIcon({ className: '', html: '<div class="ab b">B</div>', iconSize: [26, 26], iconAnchor: [13, 13] }) }).bindTooltip(`🛏 ${esc(d.sleep)}`));
   M.dayLayer = L.layerGroup(layers).addTo(M.map);
-  $('#daybanT').textContent = `D${d.day} · ${d.title}`; $('#dayban').hidden = false; $('#dayban').style.top = ($('header').offsetHeight + 8) + 'px';
+  $('#daybanT').textContent = `${typeof d.day === 'number' ? 'D' : ''}${d.day} · ${d.title}`; $('#dayban').hidden = false; $('#dayban').style.top = ($('header').offsetHeight + 8) + 'px';
   drawMarkers();
   dayListHtml(d, stops);
   M.map.fitBounds(pts, { padding: [40, 40] });
@@ -1056,7 +1098,7 @@ function dayFocus(day){
 // seznam zastávek dne pod mapou: pořadí, MUST vs. přidané, ostatní po cestě, nocleh
 function dayListHtml(d, stops){
   const el = $('#daylist'); if (!el) return;
-  const near = S.places.filter(p => p.spine && p.spine.day === d.day && p.spine.km <= 15 && !stops.some(s => s.p.id === p.id))
+  const near = S.places.filter(p => (M.dayNear ? M.dayNear.has(p.id) : p.spine && p.spine.day === d.day && p.spine.km <= 15) && !stops.some(s => s.p.id === p.id))
     .map(p => ({ p, ...projectOn(d.geom || d.wp.map(w => [w[0], w[1]]), p) })).sort((a, b) => a.t - b.t);
   const row = (s) => `<div class="ds ${S.store.visited[s.p.id] ? 'done' : ''}">
     <span class="n ${s.must ? 'must' : 'add'}">${S.store.visited[s.p.id] ? '✓' : s.n}</span>
@@ -1180,7 +1222,7 @@ function drawMarkers(){
   const batch = [];
   for (const p of S.places) {
     if (M.dayFocus) {
-      if (!(p.spine && p.spine.day === M.dayFocus && (p.spine.must || p.spine.km <= 15))) continue;
+      if (M.dayNear ? !M.dayNear.has(p.id) : !(p.spine && p.spine.day === M.dayFocus && (p.spine.must || p.spine.km <= 15))) continue;
       if (M.dayIds && M.dayIds.has(p.id)) continue; // uz je na mape jako cislovana zastavka
     }
     else { if (M.top && p.rank !== 1) continue; if (z < 7 && p.rank === 3) continue; }
@@ -1278,7 +1320,7 @@ function copy(t){ try { navigator.clipboard.writeText(t); } catch(e) { prompt('Z
 
 // ====================== EVENTY ======================
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],[data-bed],[data-bedzoom],[data-abs],[data-unabs],[data-pinday],[data-showpast],#qClear,#more');
+  const t = e.target.closest('[data-tab],[data-range],[data-toggle],[data-filter],[data-id],[data-loop],[data-sub],[data-surprise],[data-region],[data-here],[data-spineday],[data-spinelist],[data-spinemap],[data-dayadd],[data-dayrm],[data-dayzoom],[data-bed],[data-bedzoom],[data-abs],[data-unabs],[data-pinday],[data-showpast],[data-pustmap],#qClear,#more');
   if (!t) { if (e.target === $('#sheet')) closeDetail(); if (e.target === $('#posSheet')) $('#posSheet').classList.remove('open'); return; }
   if (t.dataset.tab) { if (t.dataset.tab === 'map' && M.dayFocus) dayFocus(null); S.tab = t.dataset.tab; S.shown = 100; closeDetail(); render(); window.scrollTo(0,0); }
   else if (t.dataset.range) { S.range = t.dataset.range === 'Infinity' ? Infinity : +t.dataset.range; S.store.range = S.range === Infinity ? null : S.range; save(); S.shown = 100; render(); }
@@ -1286,7 +1328,7 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.filter) { const f = t.dataset.filter; S.filters.has(f) ? S.filters.delete(f) : S.filters.add(f); S.shown = 100; render(); }
   else if (t.dataset.id) { e.preventDefault(); openDetail(t.dataset.id); }
   else if (t.dataset.loop) { e.preventDefault(); openLoop(t.dataset.loop); }
-  else if (t.dataset.sub) { S.sub = t.dataset.sub; renderPlan($('#main')); }
+  else if (t.dataset.sub) { S.sub = t.dataset.sub; renderPlan($('#main')); window.scrollTo(0,0); }
   else if (t.dataset.region) { S.region = S.region === t.dataset.region ? null : t.dataset.region; S.shown = 100; render(); window.scrollTo(0,0); }
   else if (t.id === 'qClear') { S.q = ''; render(); }
   else if (t.dataset.spineday) { e.preventDefault(); closeDetail(); S.tab = 'plan'; S.sub = 'spine'; render(); const el = document.getElementById('spd' + t.dataset.spineday); if (el) el.scrollIntoView({ block: 'start' }); }
@@ -1299,13 +1341,14 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.bedzoom) { e.preventDefault(); const [la, ln] = t.dataset.bedzoom.split(',').map(Number); if (M.map) M.map.setView([la, ln], 11); }
   else if (t.dataset.dayadd || t.dataset.dayrm) {
     e.preventDefault();
-    const [day, id] = (t.dataset.dayadd || t.dataset.dayrm).split(':'); const k = +day;
+    const [day, id] = (t.dataset.dayadd || t.dataset.dayrm).split(':'); const k = isNaN(+day) ? day : +day;
     S.store.dayAdd = S.store.dayAdd || {}; const cur = S.store.dayAdd[k] || [];
     S.store.dayAdd[k] = t.dataset.dayadd ? [...new Set([...cur, id])] : cur.filter(x => x !== id);
     save(); dayFocus(k);
     toast(t.dataset.dayadd ? 'Zařazeno do trasy dne' : 'Vyřazeno z trasy dne', 1200);
   }
   else if (t.dataset.dayzoom) { e.preventDefault(); const [la, ln] = t.dataset.dayzoom.split(',').map(Number); if (M.map) M.map.setView([la, ln], 11); }
+  else if (t.dataset.pustmap) { const day = t.dataset.pustmap; S.tab = 'map'; render(); const go = () => M.map ? dayFocus(day) : setTimeout(go, 200); setTimeout(go, 250); }
   else if (t.dataset.spinemap) { const day = +t.dataset.spinemap; S.tab = 'map'; render(); const go = () => M.map ? dayFocus(day) : setTimeout(go, 200); setTimeout(go, 250); }
   else if (t.dataset.here) { e.preventDefault(); const p = S.places.find(x => x.id === t.dataset.here); if (p) { fixPos(p.lat, p.lng, p.name); M.map && M.map.closePopup(); } }
   else if (t.dataset.surprise) { const l = computed().filter(x => !S.store.visited[x.p.id]); const top = l.filter(x => x.p.rank === 1); const pool = top.length ? top : l; if (!pool.length) return toast('Nic v dosahu — rozšiř'); openDetail(pool[Math.floor(Math.random()*pool.length)].p.id); }
@@ -1340,8 +1383,8 @@ async function init(){
   S.range = S.store.range === null ? Infinity : (S.store.range || 100);
   render();
   try {
-    const [pl, lo, al, sp, bd] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json()), fetch('data/alerts.json').then(r=>r.json()).catch(()=>null), fetch('data/spine-out.json').then(r=>r.json()).catch(()=>null), fetch('data/ubytko.json').then(r=>r.json()).catch(()=>[])]);
-    S.places = pl; S.loops = lo; S.alerts = al; S.spine = sp; S.beds = bd || [];
+    const [pl, lo, al, sp, bd, pu] = await Promise.all([fetch('data/places.json').then(r=>r.json()), fetch('data/loops.json').then(r=>r.json()), fetch('data/alerts.json').then(r=>r.json()).catch(()=>null), fetch('data/spine-out.json').then(r=>r.json()).catch(()=>null), fetch('data/ubytko.json').then(r=>r.json()).catch(()=>[]), fetch('data/pust.json').then(r=>r.json()).catch(()=>null)]);
+    S.places = pl; S.loops = lo; S.alerts = al; S.spine = sp; S.beds = bd || []; S.pust = pu;
   } catch(e) { $('#main').innerHTML = `<div class="empty">Nepodařilo se načíst data.<br><small>${esc(e.message)}</small></div>`; return; }
   fixFutureDates();
   startGPS();

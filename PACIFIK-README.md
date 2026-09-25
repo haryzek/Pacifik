@@ -84,6 +84,12 @@ bonus ids → `gem-NNN`, aplikuje `fixes.json`, přidá `extra.json`, validuje, 
 
 **Známé vlastnosti raw dat:** research (ChatGPT deep research) kolabuje kolem 20–35 záznamů — R6–R9b jsou kratší a texty ke konci horší (přepsáno ve fixes). Různým místům v jednom parku dává stejné souřadnice → dedupe jde podle názvu. `photo` URL u 143 míst neověřené.
 
+**Den podle GPS a volné dny (25. 9. 2026).**
+- `curDay()` = aktuální den páteře: ruční `store.dayPin` (platí do půlnoci) → `posDay()` (nejbližší úsek geom páteře, na nocovišti ráno další den, `store.dayPos` pamatuje včerejšek) → kalendář. `projDate(day)` přepočítá data zbývajících dnů od dneška; hlavička ukazuje `D13 +4`.
+- `today()` je v místním čase telefonu (dřív UTC → v Kalifornii od 17:00 zítřek). `fixFutureDates()` při startu vrací o den zápisy s datem v budoucnosti.
+- Mapa: jeden canvas renderer s `tolerance: 12` (tap vedle puntíku se chytí); dokud je otevřená bublina, `autoDraw()` nepřekresluje (GPS tik ani autopan ji nezavřou).
+- **Poušť** (`data/pust.json`, Plán → 🌵 Poušť): ruční plán na volné dny P1–P4 (Anza-Borrego, Salton Sea, Blair Valley → SD). Dny mají `wp` + `must_ids` jako páteř a jedou stejnou mapou dne (`findDay()`, čárkovaná přímka, okolí do 8 km v `M.dayNear`). Nová místa `x-bor-*` v `extra.json`, Font's Point má opravené souřadnice ve `fixes.json`.
+
 ## Appka
 - Stav v `S`, úložiště `localStorage['pacifik.v1']` = `{plan[], visited{id:date}, notes{id}, lastPos, sim, range}`.
 - Poloha: `watchPosition` → při chybě poslední známá → jinak Seattle sim. Tap na GPS v hlavičce = ruční/simulovaná poloha (25 měst po trase nebo `lat, lng`).

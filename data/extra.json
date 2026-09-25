@@ -1263,5 +1263,299 @@
       "added_by_claude"
     ],
     "rank": 3
+  },
+  {
+    "id": "x-bor-01",
+    "region": "R9b",
+    "name": "Pictograph Trail & Smuggler's Canyon — Blair Valley",
+    "category": "culture",
+    "subcategory": "trail",
+    "lat": 33.01964,
+    "lng": -116.35984,
+    "nearest_town": "Blair Valley (S2), CA",
+    "distance_from_spine_km": null,
+    "description": "Krátká pěšinka přes nízký hřbet v Little Blair Valley k balvanu s červenožlutými malbami Kumeyaayů. O půl míle dál končí stezka nad suchým vodopádem Smuggler's Canyon — skalní brána a pod ní najednou celé Vallecito Valley.",
+    "why_bob": "Tři kilometry žulových balvanů, stará malba a pak hrana, za kterou se poušť propadne do nekonečna — přesně ta dávka 'sednu si na šutr a čumím', jen s vůní kreozotu.",
+    "time_needed": "1,5–2 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 3,
+      "elevation_m": 90,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "gravel_ok_sedan",
+    "best_time": "ráno nebo pozdní odpoledne",
+    "season_note_2026": "Trailhead 33.01964, -116.35984; ~5 km po udržované prašné cestě z S2 přes Blair Valley (sedan za sucha ok, Trailblazer v klidu). Malby ~0,9 km, vyhlídka nad vodopádem dalších ~0,8 km. [ověřeno 25. 9. 2026]",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.01964,-116.35984",
+      "official": "https://www.hikespeak.com/trails/pictograph-trail-anza-borrego-desert/",
+      "wiki": null
+    },
+    "photo": {
+      "url": null,
+      "credit": "",
+      "license": "",
+      "source": "",
+      "page": null
+    },
+    "tags": [
+      "pust",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-bor-02",
+    "region": "R9b",
+    "name": "Wind Caves — Split Mountain",
+    "category": "geology",
+    "subcategory": "trail",
+    "lat": 32.9931,
+    "lng": -116.1184,
+    "nearest_town": "Ocotillo Wells, CA",
+    "distance_from_spine_km": null,
+    "description": "Pískovcové jeskyňky a okna vyfoukané větrem na hřebeni nad kaňonem Split Mountain. Samotná cesta tam vede korytem Fish Creek skrz rozťatou horu — stěny vrásněné jako těsto.",
+    "why_bob": "Vítr jako sochař, díry ve skále, kterými se kouká do badlands, a k tomu jízda pískem mezi stěnami hory — Mars s Trailblazerem.",
+    "time_needed": "2–3 h i s jízdou",
+    "effort": {
+      "type": "hike",
+      "distance_km": 2,
+      "elevation_m": 75,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "rough_caution",
+    "best_time": "ráno (chládek, světlo do kaňonu)",
+    "season_note_2026": "Z CA-78 v Ocotillo Wells na Split Mountain Rd (asfalt), pak ~6 km pískem Fish Creek Wash — doporučeno 4WD/vyšší podvozek; Trailblazer 4WD ok, v měkkém písku nezastavovat, jet plynule. Stezka 2 km tam a zpět, +75 m. Nejezdit po dešti. [ověřeno 25. 9. 2026]",
+    "fee": "zdarma",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.9931,-116.1184",
+      "official": "https://www.hikespeak.com/trails/wind-caves-trail-anza-borrego-desert/",
+      "wiki": null
+    },
+    "photo": {
+      "url": null,
+      "credit": "",
+      "license": "",
+      "source": "",
+      "page": null
+    },
+    "tags": [
+      "pust",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-bor-03",
+    "region": "R9b",
+    "name": "Anza-Borrego Visitor Center",
+    "category": "culture",
+    "subcategory": "visitor center",
+    "lat": 33.25587,
+    "lng": -116.40334,
+    "nearest_town": "Borrego Springs, CA",
+    "distance_from_spine_km": null,
+    "description": "Budova zahrabaná pod zemí jako nora, kolem pouštní botanická zahrádka a jezírko s kaprovcem pouštním (pupfish). Rangeři ti řeknou, co se kde děje, jaký je stav washů a kde se zrovna ukazují ovce.",
+    "why_bob": "Deset minut, které ti řeknou, jestli je Font's Wash sjízdný a kde jsou ovce — a u toho pupfish, rybka, co přežila vysychání celé pouště.",
+    "time_needed": "30–45 min",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "9–17 h",
+    "season_note_2026": "Od 1. 10. otevřeno denně 9–17 h (v září jen víkendy); parkoviště u centra 10 $/den (platí i pro Palm Canyon). [ověřeno 25. 9. 2026]",
+    "fee": "parkovné 10 $",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.25587,-116.40334",
+      "official": "https://www.parks.ca.gov/anzaborrego",
+      "wiki": null
+    },
+    "photo": {
+      "url": null,
+      "credit": "",
+      "license": "",
+      "source": "",
+      "page": null
+    },
+    "tags": [
+      "pust",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-bor-04",
+    "region": "R8b",
+    "name": "Desert View Tower & Boulder Park",
+    "category": "oddity",
+    "subcategory": "roadside",
+    "lat": 32.65917,
+    "lng": -116.09917,
+    "nearest_town": "Jacumba Hot Springs, CA",
+    "distance_from_spine_km": null,
+    "description": "Kamenná věž z 20. let přímo u I-8 na hraně hor, výhled dolů do pouště k Mexiku. Vedle Boulder Park: balvany, do kterých nezaměstnaný inženýr Merle Ratcliff za Velké krize vytesal ještěry, lebky, medvědy a bizony.",
+    "why_bob": "Čistá americká silniční absurdita — Trees of Mystery pro pouštní duši. Prolézání mezi vytesanými obludami a z věže výhled do nekonečna.",
+    "time_needed": "45 min–1 h",
+    "effort": {
+      "type": "walk",
+      "distance_km": 0.5,
+      "elevation_m": 20,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": false,
+      "water": null,
+      "temp_c_sept_oct": null,
+      "legal": null,
+      "solitude": null,
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "odpoledne",
+    "season_note_2026": "I-8 exit In-Ko-Pah Park Rd, severní strana. Denně cca 9–17 h (v létě 8–18), v silném větru či vedru může zavřít; malé vstupné. [ověřeno 25. 9. 2026]",
+    "fee": "malé vstupné",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=32.65917,-116.09917",
+      "official": "https://desertviewtower.website/visitor-info",
+      "wiki": null
+    },
+    "photo": {
+      "url": null,
+      "credit": "",
+      "license": "",
+      "source": "",
+      "page": null
+    },
+    "tags": [
+      "pust",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-bor-05",
+    "region": "R9b",
+    "name": "Borrego Valley Inn",
+    "category": "motel_gem",
+    "subcategory": "inn",
+    "lat": 33.2553,
+    "lng": -116.3928,
+    "nearest_town": "Borrego Springs, CA",
+    "distance_from_spine_km": null,
+    "description": "Adults-only adobe inn s 15 pokoji a soukromými terásky. Dva bazény — jeden vyhřívaný, druhý clothing optional — a dvě vířivky, jedna z nich taky bez plavek. Snídaně (croissanty, ovoce) ti přinesou na pokoj, check-in je virtuální.",
+    "why_bob": "Nahatej v bazénu, nad tebou Mléčná dráha v první Dark Sky komunitě Kalifornie. Tohle je místo přesně pro tebe — i když za to zaplatíš.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "pool",
+      "temp_c_sept_oct": "26–30",
+      "legal": "allowed",
+      "solitude": "high",
+      "safety": "jeden bazén clothing optional"
+    },
+    "road_access": "paved",
+    "best_time": "večer a noc",
+    "season_note_2026": "Jen dospělí; odhad ~230–290 $/noc (dražší). Adresa 405 Palm Canyon Dr — pin v mapě je přibližný, naviguj podle jména. [ověřeno 25. 9. 2026]",
+    "fee": "~230–290 $/noc",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=Borrego+Valley+Inn+Borrego+Springs",
+      "official": "https://www.borregovalleyinn.com/",
+      "wiki": null
+    },
+    "photo": {
+      "url": null,
+      "credit": "",
+      "license": "",
+      "source": "",
+      "page": null
+    },
+    "tags": [
+      "pust",
+      "added_by_claude"
+    ],
+    "rank": 1
+  },
+  {
+    "id": "x-bor-06",
+    "region": "R9b",
+    "name": "The Palms at Indian Head",
+    "category": "motel_gem",
+    "subcategory": "hotel",
+    "lat": 33.264,
+    "lng": -116.4,
+    "nearest_town": "Borrego Springs, CA",
+    "distance_from_spine_km": null,
+    "description": "Mid-century hotel na úpatí hor u vjezdu do parku, kam jezdili Marilyn Monroe a Marlon Brando. Olympijský bazén — a od července 2026 pod ním The Dive Bar, lounge s okny přímo do bazénu.",
+    "why_bob": "Zašlá hollywoodská sláva uprostřed pouště, drink pod hladinou bazénu a výhled na Indian Head. Lynch by tu natáčel.",
+    "time_needed": "noc",
+    "effort": {
+      "type": "none",
+      "distance_km": 0,
+      "elevation_m": 0,
+      "difficulty": "easy"
+    },
+    "swim": {
+      "possible": true,
+      "water": "pool",
+      "temp_c_sept_oct": "26–28",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": null
+    },
+    "road_access": "paved",
+    "best_time": "večer",
+    "season_note_2026": "2220 Hoberg Rd — pin v mapě je přibližný, naviguj podle jména. Cena kolísá, ověř. [ověřeno 25. 9. 2026]",
+    "fee": "cena kolísá",
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=The+Palms+at+Indian+Head+Borrego+Springs",
+      "official": "https://www.thepalmsatindianhead.com/",
+      "wiki": null
+    },
+    "photo": {
+      "url": null,
+      "credit": "",
+      "license": "",
+      "source": "",
+      "page": null
+    },
+    "tags": [
+      "pust",
+      "added_by_claude"
+    ],
+    "rank": 1
   }
 ]
