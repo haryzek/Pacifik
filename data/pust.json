@@ -1,0 +1,263 @@
+{
+ "title": "🌵 Poušť: Anza-Borrego & okolí",
+ "updated": "2026-09-25",
+ "intro": "Čtyři volné dny ze San Diega a zpátky, akorát než 7. 10. vracíš auto na LAX. Tempo jako na Whaleshead: ráno a večer venku, přes poledne bazén a Densmore. Každý den jde zkrátit, P3 (Salton Sea) klidně vyhoď a zůstaň v Borregu.",
+ "tips": [
+  "🌡 Začátkem října bývá přes den 32–38 °C, v noci kolem 20 °C. Chodit do 10:30 a od 16:30, přes poledne ležet.",
+  "💧 V autě galon vody (a pít z něj, ne jen vozit). Na každou túru aspoň litr, i na tu krátkou.",
+  "⛽ V Borregu je benzín dražší a pump málo. Tankuj plnou v San Diegu / Julianu a v Brawley.",
+  "🚙 Písečné washe (Font's Point, Wind Caves): zapnout 4WD, jet plynule, v měkkém písku nezastavovat a neotáčet se. Ne po dešti, ne za tmy.",
+  "🌑 Měsíc: poslední čtvrť 3. 10., nov 10. 10. — večery do půlnoci tmavé, Mléčná dráha hned po setmění. Západ slunce kolem 18:25.",
+  "🦂 UV baterka (365 nm, pár dolarů v Home Depot / Walmartu cestou) — štíři ve tmě svítí modrozeleně. Pevné boty, ruce nestrkat pod kameny, svítit před sebe: chřestýši jsou za teplých nocí venku.",
+  "📵 Mimo Borrego a Salton Sea často bez signálu — stáhni offline mapu oblasti v Google Maps.",
+  "🍳 Snídaně: Red Ocotillo (7:30–11). Večer mexické u Carmelita's. Jablečný koláč v Julianu."
+ ],
+ "sleep": [
+  {
+   "id": "x-bor-05",
+   "note": "adults-only, bazén i vířivka clothing optional, ~230–290 $ — na jednu noc jako odměna"
+  },
+  {
+   "id": "x-bor-06",
+   "note": "mid-century Hollywood, olympijský bazén s barem pod hladinou"
+  },
+  {
+   "text": "Levněji: Stanlunds Resort Inn nebo Hacienda del Sol v Borregu — obyčejné pouštní motýlky, ověř, jestli už po létě otevřeli."
+  },
+  {
+   "text": "Na P4 klidně chatka v Agua Caliente County Park (termální bazény na dosah) — rezervace přes San Diego County Parks."
+  }
+ ],
+ "days": [
+  {
+   "day": "P1",
+   "title": "San Diego → Julian → Yaqui Pass → Borrego",
+   "km": 190,
+   "h": 3.2,
+   "sleep": "Borrego Springs",
+   "note": "Ráno pomalu z pobřeží do hor: Ramona, dubová savana, Julian na oběd a jablečný koláč. Pak Banner Grade dolů do pouště a Yaqui Pass — za zatáčkou se otevře celé Borrego Valley. Do 17 h stihni visitor center (zeptej se na stav Font's Wash), ubytuj se, skoč do bazénu. Na západ slunce Font's Point: badlands pod tebou zoranžoví jako Mars. Po setmění had Galleta Meadows pod hvězdami.",
+   "night": "Serpent u Borrego Springs Rd s čelovkou, pak světla zhasnout a lehnout si na kapotu. Mléčná dráha přes celé nebe.",
+   "wp": [
+    [
+     32.7157,
+     -117.1611
+    ],
+    [
+     33.0417,
+     -116.8681
+    ],
+    [
+     33.0787,
+     -116.602
+    ],
+    [
+     33.0966,
+     -116.4749
+    ],
+    [
+     33.1464,
+     -116.3517
+    ],
+    [
+     33.2559,
+     -116.375
+    ],
+    [
+     33.3034,
+     -116.239
+    ],
+    [
+     33.25789,
+     -116.23342
+    ],
+    [
+     33.28345,
+     -116.37381
+    ]
+   ],
+   "must_ids": [
+    "r8b-020",
+    "r9b-018",
+    "x-bor-03",
+    "r9-011",
+    "r9-012",
+    "r9b-017"
+   ]
+  },
+  {
+   "day": "P2",
+   "title": "Borrego: palmy, ovce, štěrbina",
+   "km": 90,
+   "h": 1.5,
+   "sleep": "Borrego Springs",
+   "note": "Za svítání (~6:50) Borrego Palm Canyon — kamenitým kaňonem k háji divokých palem, a s trochou štěstí pouštní ovce u vody. Snídaně v Red Ocotillo. Dopoledne The Slot: štěrbina na šířku ramen, v poledne v ní ještě stín. Přes vedro bazén, spánek, čtení. Pozdní odpoledne objeď autem kovové obludy v Galleta Meadows (mamuti, šavlozubí tygři, škorpion) a na západ slunce vyjeď serpentiny Montezuma Valley Road — celé údolí pod tebou.",
+   "night": "Lov štírů s UV baterkou na kraji pouště za městem. Pak ležet a koukat — Borrego je první Dark Sky komunita v Kalifornii.",
+   "wp": [
+    [
+     33.2559,
+     -116.375
+    ],
+    [
+     33.2695,
+     -116.4167
+    ],
+    [
+     33.2559,
+     -116.375
+    ],
+    [
+     33.1821,
+     -116.2142
+    ],
+    [
+     33.2559,
+     -116.375
+    ],
+    [
+     33.28345,
+     -116.37381
+    ],
+    [
+     33.2131,
+     -116.4236
+    ]
+   ],
+   "must_ids": [
+    "r9-013",
+    "r9b-016",
+    "r9-012",
+    "g-r8b-012"
+   ]
+  },
+  {
+   "day": "P3",
+   "title": "Split Mountain → Salton Sea (volitelné)",
+   "km": 330,
+   "h": 5.2,
+   "sleep": "Borrego Springs",
+   "note": "Brzo ráno na východ po CA-78, v Ocotillo Wells doprava na Split Mountain Rd a 4WD pískem skrz rozťatou horu k Wind Caves — pískovcová okna vyfoukaná větrem. Pak dál do Imperial Valley k Salton Sea: bublající bahenní sopky na zlomu San Andreas, Salvation Mountain, Slab City a East Jesus (poslední svobodné místo v Americe). Na západ slunce Bombay Beach — umělecká kolonie na konci světa, slunce zapadá přímo do jezera. Zpátky kolem North Shore Yacht Club a po S22 za tmy do Borrega.",
+   "night": "Cestou zpátky po S22 zastav kdekoli v Borrego Badlands, zhasni a vystup. Absolutní ticho a tma.",
+   "wp": [
+    [
+     33.2559,
+     -116.375
+    ],
+    [
+     33.142,
+     -116.135
+    ],
+    [
+     32.9931,
+     -116.1184
+    ],
+    [
+     33.142,
+     -116.135
+    ],
+    [
+     32.9787,
+     -115.5303
+    ],
+    [
+     33.2003,
+     -115.5787
+    ],
+    [
+     33.2542,
+     -115.4725
+    ],
+    [
+     33.2681,
+     -115.4551
+    ],
+    [
+     33.3498,
+     -115.7265
+    ],
+    [
+     33.5194,
+     -115.9372
+    ],
+    [
+     33.2986,
+     -115.9561
+    ],
+    [
+     33.2559,
+     -116.375
+    ]
+   ],
+   "must_ids": [
+    "x-bor-02",
+    "x-027",
+    "r9-008",
+    "x-026",
+    "r9-010",
+    "g-r9-015"
+   ]
+  },
+  {
+   "day": "P4",
+   "title": "Blair Valley → horké prameny → Carrizo → San Diego",
+   "km": 280,
+   "h": 4.3,
+   "sleep": "San Diego (pak D21 → LAX)",
+   "note": "Přes Yaqui Pass a Scissors Crossing na starou dostavníkovou S2. Ráno v Blair Valley: Pictograph Trail k malbám Kumeyaayů a dál k suchému vodopádu Smuggler's Canyon s výhledem do Vallecito Valley. Kdo chce, vyleze na Ghost Mountain k troskám domu rodiny Marshalových. Vallecito Stage Station, pak koupačka v termálních bazénech Agua Caliente (9:30–17). Carrizo Badlands Overlook — apokalypsa přímo z asfaltu. U I-8 Desert View Tower s vytesanými obludami (do cca 17 h) a pak dolů k Pacifiku do San Diega.",
+   "night": "Poslední večer: projdi se v San Diegu k oceánu a řekni poušti i Pacifiku ahoj.",
+   "wp": [
+    [
+     33.2559,
+     -116.375
+    ],
+    [
+     33.1464,
+     -116.3517
+    ],
+    [
+     33.0966,
+     -116.4749
+    ],
+    [
+     33.01964,
+     -116.35984
+    ],
+    [
+     33.00381,
+     -116.37943
+    ],
+    [
+     32.97616,
+     -116.35446
+    ],
+    [
+     32.95172,
+     -116.30585
+    ],
+    [
+     32.82695,
+     -116.16434
+    ],
+    [
+     32.738,
+     -115.994
+    ],
+    [
+     32.65917,
+     -116.09917
+    ],
+    [
+     32.7157,
+     -117.1611
+    ]
+   ],
+   "must_ids": [
+    "x-bor-01",
+    "g-r8b-008",
+    "g-r8b-009",
+    "g-r8b-002",
+    "g-r8b-010",
+    "x-bor-04"
+   ]
+  }
+ ]
+}

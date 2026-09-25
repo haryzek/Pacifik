@@ -545,14 +545,36 @@
   },
   "r9-011": {
     "road_access": "rough_caution",
-    "season_note_2026": "6 km písčitým washem Font's Wash — sedany to jezdí, ale zahrabání je reálné; jeď rychle a nezastavuj v měkkém písku, nebo dojdi pěšky (1 h). Vstup zdarma.",
-    "why_bob": "Nejlepší badlands na západě: z ostrohu sto metrů nad rozeklanou hlínou, při západu slunce oranžová jako Mars — pokud si na ten wash troufne."
+    "season_note_2026": "Odbočka z S22 u km/mile 29 (33.3034, −116.2390), pak ~6,5 km pískem Font's Wash na jih k vyhlídce (33.2579, −116.2334). 4WD doporučeno, Trailblazer ok; v měkkém písku nezastavovat. Nahoře 150 m pěšky. [souřadnice opraveny 25. 9. 2026 — dřív ukazovaly do centra Borrega]",
+    "why_bob": "Nejlepší badlands na západě: z ostrohu sto metrů nad rozeklanou hlínou, při západu slunce oranžová jako Mars — pokud si na ten wash troufne.",
+    "lat": 33.25789,
+    "lng": -116.23342,
+    "rank": 1,
+    "links": {
+      "maps": "https://www.google.com/maps/search/?api=1&query=33.25789,-116.23342",
+      "official": null,
+      "wiki": "https://en.wikipedia.org/wiki/Anza-Borrego_Desert_State_Park"
+    }
   },
   "r9-012": {
-    "why_bob": "Sto třicet kovových zvířat — mamuti, šavlozubí tygři, 100 m dlouhý had přes silnici — rozeseté v poušti kolem Borrego Springs; hledat je autem je půlka zábavy."
+    "why_bob": "Sto třicet kovových zvířat — mamuti, šavlozubí tygři, 100 m dlouhý had přes silnici — rozeseté v poušti kolem Borrego Springs; hledat je autem je půlka zábavy.",
+    "rank": 1,
+    "lat": 33.28345,
+    "lng": -116.37381,
+    "best_time": "pozdní odpoledne a v noci s čelovkou (had pod hvězdami)"
   },
   "r9-013": {
-    "why_bob": "Pět kilometrů suchým kaňonem a najednou háj tisíců palem s vodou — oáza doslova, nejlepší ráno v Anza-Borrego."
+    "why_bob": "Kamenitým kaňonem k háji divokých palem s potůčkem — a za svítání šance na pouštní ovce tlustorohé, podle kterých se celé Borrego jmenuje. Vem dalekohled nebo zoom.",
+    "rank": 1,
+    "time_needed": "2–3 h",
+    "effort": {
+      "type": "hike",
+      "distance_km": 5,
+      "elevation_m": 180,
+      "difficulty": "easy"
+    },
+    "best_time": "hned po východu slunce — ovce (borregos) chodí k vodě u palem",
+    "season_note_2026": "~5 km tam a zpět, nejlepší říjen–květen; parkovné 10 $ (sdílené s visitor center). [ověřeno 25. 9. 2026]"
   },
   "r9-014": {
     "fee": "zdarma (Mojave National Preserve nemá vstupné)",
@@ -674,10 +696,12 @@
   "r9b-016": {
     "fee": "zdarma",
     "season_note_2026": "otevřeno, zdarma; 2 km štěrkové cesty z CA-78, sedan ok za sucha; kaňon 1,5 km, místy na šířku ramen",
-    "why_bob": "Kaňon úzký na šířku ramen, stěny z hlíny a slunce jen v poledne — deset minut jiného světa, a nikdo tam není."
+    "why_bob": "Kaňon úzký na šířku ramen, stěny z hlíny a slunce jen v poledne — deset minut jiného světa, a nikdo tam není.",
+    "rank": 1
   },
   "r9b-017": {
-    "why_bob": "První Dark Sky Community v Kalifornii — sednout na kapotu kdekoli za městem a Mléčná dráha přes celé nebe, bez dalekohledu."
+    "why_bob": "První Dark Sky Community v Kalifornii — sednout na kapotu kdekoli za městem a Mléčná dráha přes celé nebe, bez dalekohledu.",
+    "rank": 1
   },
   "r9b-018": {
     "why_bob": "Serpentiny z hor do pouště, kde se za jednou zatáčkou otevře celé Borrego Valley — jet pomalu a zastavit na vyhlídce."
@@ -1203,5 +1227,16 @@
   },
   "r6-001": {
     "season_note_2026": "Hwy 1 Westport–Wages Creek jednosměrka nonstop do 12/2026, zdržení do 10 min. [ověřeno 12. 9. 2026]"
+  },
+  "g-r8b-002": {
+    "season_note_2026": "Otevřeno od pátku Labor Day víkendu do Memorial Day (v říjnu tedy ano). Day use 9:30–17 h; venkovní bazén a vnitřní spa ~39 °C z termálního pramene; 7 chatek k pronájmu. [ověřeno 25. 9. 2026]",
+    "swim": {
+      "possible": true,
+      "water": "hot_spring",
+      "temp_c_sept_oct": "32–39",
+      "legal": "allowed",
+      "solitude": "medium",
+      "safety": null
+    }
   }
 }
