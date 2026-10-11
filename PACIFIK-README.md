@@ -3,6 +3,9 @@
 Offline PWA pro Bobův road trip Seattle → San Diego (16. 9. – 10. 10. 2026). Zadání: `PACIFIK-SPEC.md`.
 Live: **https://haryzek.github.io/Pacifik/** (GitHub Pages z `main`, žádný build step).
 
+## ✅ CESTA HOTOVÁ — archivní režim (11. 10. 2026)
+Trip proběhl 16. 9. – 10. 10. 2026, appka jela celých 24 dní v terénu. Projekt je uzavřený, repo slouží jako záloha. Skutečná trasa se od páteře utrhla: Olympic zkrácen („únik z roští“), Crater Lake už 22. 9. přes Chemult, do LA o týden dřív → Venice, pak poušť Anza-Borrego (2.–5. 10.) a zpět Venice. Útrata z appky 3 860 $ (plán 4 165 $); deník a záloha JSON jsou u Boba mimo git (osobní).
+
 ## Stav (2026-09-14, před odletem)
 | Část | Stav |
 |---|---|
